@@ -17,7 +17,7 @@ from bs4 import BeautifulSoup
 import time
 counter = 0  # Initialize the global counter
 
-url = "https://www.continente.pt/loja-online/contactos/"
+url = "https://appserver2.ctt.pt/femgu/app/open/enroll/showUserEnrollAction.jspx?lang=def&redirect=https://www.ctt.pt/ajuda/particulares/receber/gerir-correio-e-encomendas/reter-tudo-que-recebo-numa-loja-ctt#fndtn-panel2-2"
 
 # Set up the API key
 os.environ["MISTRAL_API_KEY"] = "vZYsFYM6r2E9JWyD3GYPdLfR34kI2EcO"
@@ -261,7 +261,7 @@ class InteractiveCuesEvaluator(dspy.Module):
         )
 
 
-#TODO Falta testar inputs por causa do read only e disabled e há casos aqui para outros testes diferentes
+#TODO Falta testar inputs por causa do read only e disabled e há casos aqui para outros testes , tudo há base do required
 trainset = [
     # Error message appears when required field is left empty (valid behavior).
     dspy.Example(
@@ -334,11 +334,41 @@ trainset = [
         evaluation="Pass: The field is readonly and does not incorrectly show an error message."
     ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines"),
 
+]
 
+#TODO expand
+trainset_no_submit = [
+    # Example where a required field is present, but no error appears since the submit button is unclickable.
+    dspy.Example(
+        html_snippet_before="""<label for='username'>*Username:</label>
+                           <input type='text' name='username' id='username' required>""",
+        html_snippet_after=None,
+        retrieved_guidelines="Forms should ensure required fields are properly marked.",
+        evaluation="Pass: The field is properly marked as required"
+    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines"),
+
+    # Example where an optional field exists, but since submission isn't possible, it can't generate an error.
+    dspy.Example(
+        html_snippet_before="""<label for='phone'>*Phone Number:</label>
+                           <input type='tel' name='phone' id='phone'>""",
+        html_snippet_after=None,
+        retrieved_guidelines="Forms should ensure required fields are identificated with the 'required' attribute.",
+        evaluation="Fail: The form field is not properly identificated as required with 'required attribute'."
+    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines"),
 ]
 
 teleprompter = BootstrapFewShot(metric=lambda ex, pred, trace=None: "Pass" in pred.evaluation)
-compiled_evaluator = teleprompter.compile(InteractiveCuesEvaluator(), teacher=InteractiveCuesEvaluator(passages_per_hop=2), trainset=trainset)
+
+compiled_evaluator_submit = teleprompter.compile(
+    InteractiveCuesEvaluator(), 
+    teacher=InteractiveCuesEvaluator(passages_per_hop=2), 
+    trainset=trainset
+)
+compiled_evaluator_no_submit = teleprompter.compile(
+    InteractiveCuesEvaluator(), 
+    teacher=InteractiveCuesEvaluator(passages_per_hop=2), 
+    trainset=trainset_no_submit
+)
 
 
 html_before, html_after = extract_html_with_states(url)
@@ -353,13 +383,13 @@ if html_before:
         #print("===== FORM AFTER INTERACTION =====")
         #print(formatted_after)
 
-        pred = compiled_evaluator(formatted_before, formatted_after)
+        pred = compiled_evaluator_submit(formatted_before, formatted_after)
     else:
         #print("===== FORM WITHOUT INTERACTION =====")
         #print(formatted_before)
         #print("Submit button missing or unclickable. Evaluating static form.")
 
-        pred = compiled_evaluator(formatted_before, None)  # Evaluate only "before" HTML
+        pred = compiled_evaluator_no_submit(formatted_before, None)  # Evaluate only "before" HTML
 
     print(f"Accessibility Evaluation:\n{pred.evaluation}")
     print(f"Retrieved Information:\n{pred.retrieved_guidelines}")
