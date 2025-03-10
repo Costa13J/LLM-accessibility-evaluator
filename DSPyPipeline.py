@@ -13,14 +13,19 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 from bs4 import BeautifulSoup
+from dotenv import load_dotenv
 
 import time
 counter = 0  # Initialize the global counter
 
 url = "https://appserver2.ctt.pt/femgu/app/open/enroll/showUserEnrollAction.jspx?lang=def&redirect=https://www.ctt.pt/ajuda/particulares/receber/gerir-correio-e-encomendas/reter-tudo-que-recebo-numa-loja-ctt#fndtn-panel2-2"
 
-# Set up the API key
-os.environ["MISTRAL_API_KEY"] = "vZYsFYM6r2E9JWyD3GYPdLfR34kI2EcO"
+
+load_dotenv()
+os.environ["MISTRAL_API_KEY"] = os.getenv("MISTRAL_API_KEY", "")
+
+if not os.environ["MISTRAL_API_KEY"]:
+    raise ValueError("MISTRAL_API_KEY not found. Check your .env file.")
 
 # Configure DSPy with the model and retriever
 mini = dspy.LM('mistral/mistral-large-latest')
@@ -30,7 +35,7 @@ dspy.configure(lm=mini, rm=rm)
 def setup_webdriver():
     """Configures and launches a headless Chrome browser."""
     chrome_options = Options()
-    #chrome_options.add_argument("--headless")  # Run without UI
+    chrome_options.add_argument("--headless")  # Run without UI
     chrome_options.add_argument("--disable-gpu")
     chrome_options.add_argument("--no-sandbox")
     service = Service(ChromeDriverManager().install())  
