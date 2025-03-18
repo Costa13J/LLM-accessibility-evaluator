@@ -18,7 +18,10 @@ from dotenv import load_dotenv
 import time
 counter = 0  # Initialize the global counter
 
-url = "https://appserver2.ctt.pt/femgu/app/open/enroll/showUserEnrollAction.jspx?lang=def&redirect=https://www.ctt.pt/ajuda/particulares/receber/gerir-correio-e-encomendas/reter-tudo-que-recebo-numa-loja-ctt#fndtn-panel2-2"
+url = "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62"
+#url = "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b" #Tem erros de cues e lança submit
+#url = "https://www.continente.pt/loja-online/contactos/" #Tem erros de cues mas não lança submit
+
 
 
 load_dotenv()
@@ -35,7 +38,7 @@ dspy.configure(lm=mini, rm=rm)
 def setup_webdriver():
     """Configures and launches a headless Chrome browser."""
     chrome_options = Options()
-    chrome_options.add_argument("--headless")  # Run without UI
+    #chrome_options.add_argument("--headless")  # Run without UI
     chrome_options.add_argument("--disable-gpu")
     chrome_options.add_argument("--no-sandbox")
     service = Service(ChromeDriverManager().install())  
@@ -80,8 +83,8 @@ def extract_visible_fields(driver):
 
     return {"fields": fields, "errors": errors + field_errors}
 
+# Extracts all buttons and any element with an onclick event to pass to the LLM.
 def extract_buttons_for_llm(driver):
-    """Extracts all buttons and any element with an onclick event to pass to the LLM."""
     soup = BeautifulSoup(driver.page_source, 'html.parser')
     elements = []
 
@@ -111,7 +114,7 @@ def extract_buttons_for_llm(driver):
 class IdentifySubmitButton(dspy.Signature):
 
     buttons_info = dspy.InputField(desc="List of all button elements on the form (text, id, name, onclick, type).")
-    predicted_button_id = dspy.OutputField(desc="The string of the ID of the button that is the most likely submit button of the form (or 'None' if no ID exists).")
+    predicted_button_id = dspy.OutputField(desc="The exact XPATH of the button that is the most likely submit or advance button of the form (or 'None' if no ID exists).")
 
 identify_submit_button = dspy.ChainOfThought(IdentifySubmitButton)
 
@@ -119,12 +122,29 @@ identify_submit_button = dspy.ChainOfThought(IdentifySubmitButton)
 def get_submit_button_id_from_llm(buttons):
 
     response = identify_submit_button(buttons_info=str(buttons))
+    print("====BUTTON XPATH GIVEN BY THE LLM====")
+    print(response.predicted_button_id)
     return response.predicted_button_id if response.predicted_button_id != "None" else None
+
+# Loads and injects an external JavaScript file for mutation observation
+def inject_mutation_observer(driver, script_path="mutationObserver.js"):
+    
+    try:
+        with open(script_path, "r", encoding="utf-8") as file:
+            mutation_script = file.read()
+        
+        driver.execute_script(mutation_script)
+        print("Mutation Observer injected successfully.")
+    except FileNotFoundError:
+        print(f"Error: JavaScript file '{script_path}' not found.")
+    except Exception as e:
+        print(f"Unexpected error while injecting Mutation Observer: {e}")
 
 # Finds and clicks the submit button using an LLM to identify it.
 def find_and_click_submit_button(driver):
 
     try:
+        inject_mutation_observer(driver)
         buttons = extract_buttons_for_llm(driver)
         if not buttons:
             print("No buttons found on the page.")
@@ -139,7 +159,7 @@ def find_and_click_submit_button(driver):
 
         try:
             submit_button = WebDriverWait(driver, 5).until(
-                EC.element_to_be_clickable((By.ID, submit_button_id))
+                EC.element_to_be_clickable((By.XPATH, submit_button_id)) #TODO button can have no id 
             )
             submit_button.click()
             print("Submit button clicked!")
@@ -149,6 +169,7 @@ def find_and_click_submit_button(driver):
             print(f"Error clicking submit button: {e}")
             print("Trying JavaScript click...")
     
+            #TODO should be removed
             try:
                 driver.execute_script("arguments[0].click();", submit_button)
                 print("JavaScript click executed successfully!")
@@ -163,13 +184,16 @@ def find_and_click_submit_button(driver):
         print(f"Unexpected error in find_and_click_submit_button: {e}")
         return None
 
+# Retrieves captured mutations from the Mutation Observer.
+def extract_mutation_observer_results(driver):
+    return driver.execute_script("return window.mutationRecords;")
+
 # Loads a webpage, extracts form fields before and after interaction.
 def extract_html_with_states(url):
 
     driver = setup_webdriver()
     driver.get(url)
 
-    # Extract initial state of relevant fields
     initial_data = extract_visible_fields(driver)
 
     action_result = find_and_click_submit_button(driver)
@@ -177,11 +201,13 @@ def extract_html_with_states(url):
     if action_result == "clicked":
         time.sleep(2)  # Allow errors to appear
         updated_data = extract_visible_fields(driver)
+        mutations = extract_mutation_observer_results(driver)
     else:
         updated_data = None  # No post-submission state available
+        mutations = None
 
     driver.quit()
-    return initial_data, updated_data
+    return initial_data, updated_data, mutations
 
 # Formats extracted fields and errors for model input.
 def format_for_model(data):
@@ -196,14 +222,18 @@ def format_for_model(data):
 
 
 # Define signatures for evaluation
+#TODO maybe split into different signatures
 class EvaluateInteractiveCues(dspy.Signature):
     """Check if form fields use appropriate cues (disabled, readonly, and required attributes) if they adopt those states."""
     html_snippet_before = dspy.InputField(desc="HTML before user interaction.")
     html_snippet_after = dspy.InputField(desc="HTML after user interaction (if available, else None)..")
     retrieved_guidelines = dspy.InputField(desc="Relevant WCAG guidelines and techniques for interactive cues.")
+    mutations = dspy.InputField(desc="List of DOM mutations detected after submission, capturing error messages and attribute changes.")
     reasoning = dspy.OutputField(desc="Individual Explanation of whether the disabled, readonly, and required attributes were correctly used or not.")
     evaluation = dspy.OutputField(desc="A structrured list of all the elements evaluating, with Pass/Fail/Inapplicable, each field based on its interactive cues (considering raised error messages after interaction).")
 
+
+#TODO Perceber a estrutura do que é passado ao llm
 class GenerateSearchQuery(dspy.Signature):
     """Generate a search query to find relevant WCAG guidelines and techniques for interactive cues."""
     html_snippet = dspy.InputField(desc="Form field attributes before and after user interaction.")
@@ -217,7 +247,23 @@ class InteractiveCuesEvaluator(dspy.Module):
         self.evaluate_cues = dspy.ChainOfThought(EvaluateInteractiveCues)
         self.max_hops = max_hops
 
-    def forward(self, html_snippet_before, html_snippet_after, retrieved_guidelines=None):
+    def process_mutations(self, mutations):
+        """Formats mutation records into a structured text summary."""
+        if not mutations:
+            return "No dynamic changes detected after form submission."
+
+        summary = []
+        for mutation in mutations:
+            if mutation["type"] == "childList":
+                added = ", ".join(mutation["addedNodes"]) if mutation["addedNodes"] else "None"
+                removed = ", ".join(mutation["removedNodes"]) if mutation["removedNodes"] else "None"
+                summary.append(f"Added Nodes: {added}, Removed Nodes: {removed}")
+            elif mutation["type"] == "attributes":
+                summary.append(f"Element Changed: {mutation['target']}, Attribute Modified: {mutation['attributeChanges']}")
+
+        return "\n".join(summary)
+
+    def forward(self, html_snippet_before, html_snippet_after, mutations, retrieved_guidelines=None):
         retrieved_guidelines = []
         queries = set()
 
@@ -229,12 +275,13 @@ class InteractiveCuesEvaluator(dspy.Module):
                 passages = self.retrieve(query).passages
                 if not passages:
                     fallback_queries = [ #TODO review fallback queries
-                        "WCAG best practices for required, disabled, and readonly attributes",
+                        "WCAG best practices for the required cue attribute",
                         "Ensuring error messages are programmatically linked to input fields",
                         "Improving accessibility of dynamic form validation messages"
                     ]
                     for fallback in fallback_queries:
                         passages = self.retrieve(fallback).passages
+                        print("used fallback")
                         if passages:
                             break
                 
@@ -242,16 +289,24 @@ class InteractiveCuesEvaluator(dspy.Module):
             except Exception as e:
                 print(f"Error during retrieval at hop {hop + 1}: {e}")
                 continue
+        print("===== QUERIES =====")
+        print(queries)
+        print("===== RETRIEVED GUIDELINES =====")
+        print(retrieved_guidelines)
 
+        
 #TODO
         if html_snippet_after is None:
             reasoning = "No post-interaction state available. Evaluating only initial form attributes."
         else:
             reasoning = None
+
+        mutation_summary = self.process_mutations(mutations)
         
         pred = self.evaluate_cues(
             html_snippet_before=html_snippet_before,
             html_snippet_after=html_snippet_after,
+            mutations=mutation_summary,
             retrieved_guidelines=retrieved_guidelines
         )   
 
@@ -276,8 +331,9 @@ trainset = [
                           <input type='password' name='password' id='password' required>
                           <span class='error' id='password-error'>This field is required.</span>""",
         retrieved_guidelines="Forms should provide error messages when required fields are left empty.",
+        mutations=None,
         evaluation="Pass: The form correctly displays an error message when the required field is empty."
-    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines"),
+    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines", "mutations"),
 
     # Asterisk.
     dspy.Example(
@@ -285,8 +341,9 @@ trainset = [
                            <input type='password' name='password' id='password'>""",
         html_snippet_after=None,
         retrieved_guidelines="Fields with '*' usually means the field is required",
+        mutations=None,
         evaluation="Fail: The Field has an asterisk that symbolizes its requirement, but has no required attribute ."
-    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines"),
+    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines", "mutations"),
 
     # Error message appears but field not marked as required (incorrect behavior).
     dspy.Example(
@@ -296,8 +353,9 @@ trainset = [
                           <input type='password' name='password' id='password'>
                           <span class='error' id='password-error'>This field is required.</span>""",
         retrieved_guidelines="If an input field raises a required error message, it must provide the 'required' or aria-required='true' cue.",
+        mutations=None,
         evaluation="Fail: The field raises an error because it is required but it has no required."
-    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines"),
+    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines", "mutations"),
 
     # No error message appears for a required field (incorrect behavior).
     dspy.Example(
@@ -306,8 +364,9 @@ trainset = [
         html_snippet_after="""<label for='email'>*Email:</label>
                           <input type='text' name='email' id='email' required>""",
         retrieved_guidelines="Forms should provide error messages when required fields are left empty.",
+        mutations=None,
         evaluation="Fail: The required field does not display an error message when left empty."
-    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines"),
+    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines", "mutations"),
 
     
 
@@ -318,8 +377,9 @@ trainset = [
         html_snippet_after="""<label for='phone'>*Phone:</label>
                           <input type='tel' name='phone' id='phone' aria-required='true'>""",
         retrieved_guidelines="ARIA attributes like 'aria-required' should be accompanied by proper error messages.",
+        mutations=None,
         evaluation="Fail: The form does not display an error message despite 'aria-required' being set."
-    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines"),
+    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines", "mutations"),
 
     dspy.Example(
         html_snippet_before="""<label for='age'>*Age:</label>
@@ -327,8 +387,9 @@ trainset = [
         html_snippet_after="""<label for='age'>*Age:</label>
                           <input type='number' name='age' id='age' disabled>""",
         retrieved_guidelines="Disabled fields should not trigger required field error messages.",
+        mutations=None,
         evaluation="Pass: The field is disabled and does not incorrectly show an error message."
-    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines"),
+    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines", "mutations"),
 
     dspy.Example(
         html_snippet_before="""<label for='country'>*Country:</label>
@@ -336,8 +397,9 @@ trainset = [
         html_snippet_after="""<label for='country'>*Country:</label>
                           <input type='text' name='country' id='country' value='USA' readonly>""",
         retrieved_guidelines="Readonly fields should not trigger required field error messages.",
+        mutations=None,
         evaluation="Pass: The field is readonly and does not incorrectly show an error message."
-    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines"),
+    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines", "mutations"),
 
 ]
 
@@ -349,8 +411,9 @@ trainset_no_submit = [
                            <input type='text' name='username' id='username' required>""",
         html_snippet_after=None,
         retrieved_guidelines="Forms should ensure required fields are properly marked.",
+        mutations=None,
         evaluation="Pass: The field is properly marked as required"
-    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines"),
+    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines", "mutations"),
 
     # Example where an optional field exists, but since submission isn't possible, it can't generate an error.
     dspy.Example(
@@ -358,11 +421,18 @@ trainset_no_submit = [
                            <input type='tel' name='phone' id='phone'>""",
         html_snippet_after=None,
         retrieved_guidelines="Forms should ensure required fields are identificated with the 'required' attribute.",
+        mutations=None,
         evaluation="Fail: The form field is not properly identificated as required with 'required attribute'."
-    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines"),
+    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines", "mutations"),
 ]
 
 teleprompter = BootstrapFewShot(metric=lambda ex, pred, trace=None: "Pass" in pred.evaluation)
+
+for ex in trainset:
+    print(ex)
+
+for ex in trainset_no_submit:
+    print(ex)
 
 compiled_evaluator_submit = teleprompter.compile(
     InteractiveCuesEvaluator(), 
@@ -376,7 +446,7 @@ compiled_evaluator_no_submit = teleprompter.compile(
 )
 
 
-html_before, html_after = extract_html_with_states(url)
+html_before, html_after, mutations = extract_html_with_states(url)
 
 if html_before:
     formatted_before = format_for_model(html_before)
@@ -388,16 +458,17 @@ if html_before:
         #print("===== FORM AFTER INTERACTION =====")
         #print(formatted_after)
 
-        pred = compiled_evaluator_submit(formatted_before, formatted_after)
+        pred = compiled_evaluator_submit(formatted_before, formatted_after, mutations)
     else:
         #print("===== FORM WITHOUT INTERACTION =====")
         #print(formatted_before)
         #print("Submit button missing or unclickable. Evaluating static form.")
 
-        pred = compiled_evaluator_no_submit(formatted_before, None)  # Evaluate only "before" HTML
+        pred = compiled_evaluator_no_submit(formatted_before, None, None)  # Evaluate only "before" HTML
 
     print(f"Accessibility Evaluation:\n{pred.evaluation}")
     print(f"Retrieved Information:\n{pred.retrieved_guidelines}")
+    print(f"Observed Mutations:\n{mutations}")
 
 else:
     print("Failed to retrieve form data from the page.")
