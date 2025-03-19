@@ -14,6 +14,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
+from trainsets import trainset, trainset_no_submit
+
 
 import time
 counter = 0  # Initialize the global counter
@@ -38,7 +40,7 @@ dspy.configure(lm=mini, rm=rm)
 def setup_webdriver():
     """Configures and launches a headless Chrome browser."""
     chrome_options = Options()
-    #chrome_options.add_argument("--headless")  # Run without UI
+    chrome_options.add_argument("--headless")  # Run without UI
     chrome_options.add_argument("--disable-gpu")
     chrome_options.add_argument("--no-sandbox")
     service = Service(ChromeDriverManager().install())  
@@ -68,9 +70,9 @@ def extract_visible_fields(driver):
             "id": input_field.get("id", ""),
             "type": input_field.get("type", ""),
             "value": input_field.get("value", ""),
-            "required": "required" if input_field.has_attr("required") else "not required",
-            "disabled": "disabled" if input_field.has_attr("disabled") else "not disabled",
-            "readonly": "readonly" if input_field.has_attr("readonly") else "not readonly",
+            "required": "required" if input_field.has_attr("required") else "no",
+            "disabled": "disabled" if input_field.has_attr("disabled") else "no",
+            "readonly": "readonly" if input_field.has_attr("readonly") else "no",
             "errors": error_messages
         }
         fields.append(field_info)
@@ -169,7 +171,7 @@ def find_and_click_submit_button(driver):
             print(f"Error clicking submit button: {e}")
             print("Trying JavaScript click...")
     
-            #TODO should be removed
+            #TODO should be removed because to fall into this click can mean button is disabled or not available
             try:
                 driver.execute_script("arguments[0].click();", submit_button)
                 print("JavaScript click executed successfully!")
@@ -240,7 +242,7 @@ class GenerateSearchQuery(dspy.Signature):
     query = dspy.OutputField(desc="Search query focusing on accessibility best practices for required, disabled, and readonly attributes.")
 
 class InteractiveCuesEvaluator(dspy.Module):
-    def __init__(self, passages_per_hop=1, max_hops=2):
+    def __init__(self, passages_per_hop=1, max_hops=3):
         super().__init__()
         self.generate_query = [dspy.ChainOfThought(GenerateSearchQuery) for _ in range(max_hops)]
         self.retrieve = dspy.Retrieve(k=passages_per_hop)
@@ -291,8 +293,6 @@ class InteractiveCuesEvaluator(dspy.Module):
                 continue
         print("===== QUERIES =====")
         print(queries)
-        print("===== RETRIEVED GUIDELINES =====")
-        print(retrieved_guidelines)
 
         
 #TODO
@@ -321,118 +321,10 @@ class InteractiveCuesEvaluator(dspy.Module):
         )
 
 
-#TODO Falta testar inputs por causa do read only e disabled e há casos aqui para outros testes , tudo há base do required
-trainset = [
-    # Error message appears when required field is left empty (valid behavior).
-    dspy.Example(
-        html_snippet_before="""<label for='password'>*Password:</label>
-                           <input type='password' name='password' id='password' required>""",
-        html_snippet_after="""<label for='password'>*Password:</label>
-                          <input type='password' name='password' id='password' required>
-                          <span class='error' id='password-error'>This field is required.</span>""",
-        retrieved_guidelines="Forms should provide error messages when required fields are left empty.",
-        mutations=None,
-        evaluation="Pass: The form correctly displays an error message when the required field is empty."
-    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines", "mutations"),
 
-    # Asterisk.
-    dspy.Example(
-        html_snippet_before="""<label for='password'>*Password:</label>
-                           <input type='password' name='password' id='password'>""",
-        html_snippet_after=None,
-        retrieved_guidelines="Fields with '*' usually means the field is required",
-        mutations=None,
-        evaluation="Fail: The Field has an asterisk that symbolizes its requirement, but has no required attribute ."
-    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines", "mutations"),
-
-    # Error message appears but field not marked as required (incorrect behavior).
-    dspy.Example(
-        html_snippet_before="""<label for='password'>Password:</label>
-                           <input type='password' name='password' id='password'>""",
-        html_snippet_after="""<label for='password'>Password:</label>
-                          <input type='password' name='password' id='password'>
-                          <span class='error' id='password-error'>This field is required.</span>""",
-        retrieved_guidelines="If an input field raises a required error message, it must provide the 'required' or aria-required='true' cue.",
-        mutations=None,
-        evaluation="Fail: The field raises an error because it is required but it has no required."
-    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines", "mutations"),
-
-    # No error message appears for a required field (incorrect behavior).
-    dspy.Example(
-        html_snippet_before="""<label for='email'>*Email:</label>
-                           <input type='text' name='email' id='email' required>""",
-        html_snippet_after="""<label for='email'>*Email:</label>
-                          <input type='text' name='email' id='email' required>""",
-        retrieved_guidelines="Forms should provide error messages when required fields are left empty.",
-        mutations=None,
-        evaluation="Fail: The required field does not display an error message when left empty."
-    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines", "mutations"),
-
-    
-
-    # Required field is marked with 'aria-required' but lacks an error message after submission.
-    dspy.Example(
-        html_snippet_before="""<label for='phone'>*Phone:</label>
-                           <input type='tel' name='phone' id='phone' aria-required='true'>""",
-        html_snippet_after="""<label for='phone'>*Phone:</label>
-                          <input type='tel' name='phone' id='phone' aria-required='true'>""",
-        retrieved_guidelines="ARIA attributes like 'aria-required' should be accompanied by proper error messages.",
-        mutations=None,
-        evaluation="Fail: The form does not display an error message despite 'aria-required' being set."
-    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines", "mutations"),
-
-    dspy.Example(
-        html_snippet_before="""<label for='age'>*Age:</label>
-                           <input type='number' name='age' id='age' disabled>""",
-        html_snippet_after="""<label for='age'>*Age:</label>
-                          <input type='number' name='age' id='age' disabled>""",
-        retrieved_guidelines="Disabled fields should not trigger required field error messages.",
-        mutations=None,
-        evaluation="Pass: The field is disabled and does not incorrectly show an error message."
-    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines", "mutations"),
-
-    dspy.Example(
-        html_snippet_before="""<label for='country'>*Country:</label>
-                           <input type='text' name='country' id='country' value='USA' readonly>""",
-        html_snippet_after="""<label for='country'>*Country:</label>
-                          <input type='text' name='country' id='country' value='USA' readonly>""",
-        retrieved_guidelines="Readonly fields should not trigger required field error messages.",
-        mutations=None,
-        evaluation="Pass: The field is readonly and does not incorrectly show an error message."
-    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines", "mutations"),
-
-]
-
-#TODO expand
-trainset_no_submit = [
-    # Example where a required field is present, but no error appears since the submit button is unclickable.
-    dspy.Example(
-        html_snippet_before="""<label for='username'>*Username:</label>
-                           <input type='text' name='username' id='username' required>""",
-        html_snippet_after=None,
-        retrieved_guidelines="Forms should ensure required fields are properly marked.",
-        mutations=None,
-        evaluation="Pass: The field is properly marked as required"
-    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines", "mutations"),
-
-    # Example where an optional field exists, but since submission isn't possible, it can't generate an error.
-    dspy.Example(
-        html_snippet_before="""<label for='phone'>*Phone Number:</label>
-                           <input type='tel' name='phone' id='phone'>""",
-        html_snippet_after=None,
-        retrieved_guidelines="Forms should ensure required fields are identificated with the 'required' attribute.",
-        mutations=None,
-        evaluation="Fail: The form field is not properly identificated as required with 'required attribute'."
-    ).with_inputs("html_snippet_before", "html_snippet_after", "retrieved_guidelines", "mutations"),
-]
 
 teleprompter = BootstrapFewShot(metric=lambda ex, pred, trace=None: "Pass" in pred.evaluation)
 
-for ex in trainset:
-    print(ex)
-
-for ex in trainset_no_submit:
-    print(ex)
 
 compiled_evaluator_submit = teleprompter.compile(
     InteractiveCuesEvaluator(), 
@@ -448,6 +340,7 @@ compiled_evaluator_no_submit = teleprompter.compile(
 
 html_before, html_after, mutations = extract_html_with_states(url)
 
+#Output
 if html_before:
     formatted_before = format_for_model(html_before)
     
@@ -455,20 +348,18 @@ if html_before:
         formatted_after = format_for_model(html_after)
         #print("===== FORM BEFORE INTERACTION =====")
         #print(formatted_before)
-        #print("===== FORM AFTER INTERACTION =====")
-        #print(formatted_after)
+        print("===== FORM AFTER INTERACTION =====")
+        print(formatted_after)
 
         pred = compiled_evaluator_submit(formatted_before, formatted_after, mutations)
     else:
-        #print("===== FORM WITHOUT INTERACTION =====")
-        #print(formatted_before)
-        #print("Submit button missing or unclickable. Evaluating static form.")
-
+        print("Submit button missing or unclickable. Evaluating static form.")
         pred = compiled_evaluator_no_submit(formatted_before, None, None)  # Evaluate only "before" HTML
 
-    print(f"Accessibility Evaluation:\n{pred.evaluation}")
-    print(f"Retrieved Information:\n{pred.retrieved_guidelines}")
-    print(f"Observed Mutations:\n{mutations}")
+    
+    print(f"===== EVALUATION =====\n{pred.evaluation}")
+    print(f"===== RETRIEVED INFO =====\n{pred.retrieved_guidelines}")
+    print(f"===== MUTATIONS OBSERVED =====\n{mutations}")
 
 else:
     print("Failed to retrieve form data from the page.")
