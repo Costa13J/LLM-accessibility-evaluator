@@ -1,0 +1,91 @@
+[
+    {
+        "id": 1,
+        "field_type": "input instructions",
+        "guideline": "WCAG 1.3.5 Identify Input Purpose",
+        "failure_example": "<input type='text' name='cc-number'>",
+        "best_practice": "<input type='text' name='cc-number' autocomplete='cc-number'>",
+        "explanation": "Using the 'autocomplete' attribute helps assistive technologies identify input purposes."
+    },
+    {
+        "id": 2,
+        "field_type": "expiration date",
+        "guideline": "WCAG 1.3.5 Identify Input Purpose",
+        "failure_example": "<input type='text' name='cc-exp'>",
+        "best_practice": "<input type='text' name='cc-exp' autocomplete='cc-exp'>",
+        "explanation": "Ensuring input purpose is identified helps users and assistive tech."
+    },
+    {
+        "id": 3,
+        "field_type": "phone number",
+        "guideline": "WCAG 1.3.5 Identify Input Purpose",
+        "failure_example": "<input type='tel' name='phone'>",
+        "best_practice": "<input type='tel' name='phone' autocomplete='tel'>",
+        "explanation": "The autocomplete attribute ensures the input purpose is recognized."
+    },
+    {
+        "id": 4,
+        "field_type": "keyboard navigation",
+        "guideline": "WCAG 2.5.3 Label in Name",
+        "failure_example": "<button aria-label='Search'></button>",
+        "best_practice": "<button aria-label='Search'>Search</button>",
+        "explanation": "The visible text on a control should match its accessible name to ensure consistency for speech input users."
+    },
+    {
+        "id": 5,
+        "field_type": "password",
+        "guideline": "WCAG 3.3.1 Error Identification",
+        "failure_example": "<input type='password' name='password' id='password' required><span class='error' style='display: none;'>This field is required.</span>",
+        "best_practice": "<input type='password' name='password' id='password' required><span class='error' id='password-error'>This field is required.</span>",
+        "explanation": "Error messages should be visible when relevant, not hidden via CSS."
+    },
+    {
+        "id": 6,
+        "field_type": "checkbox",
+        "guideline": "WCAG 3.3.1 Error Identification",
+        "failure_example": "<input type='checkbox' name='terms' id='terms' required>",
+        "best_practice": "<input type='checkbox' name='terms' id='terms' required><label for='terms'>I agree to the terms</label><span class='error'>You must accept the terms to proceed.</span>",
+        "explanation": "Required checkboxes must provide clear error messages when left unchecked."
+    },
+    {
+        "id": 7,
+        "field_type": "email",
+        "guideline": "WCAG 3.3.1 Error Identification",
+        "failure_example": "<input type='email' name='email' id='email' required>",
+        "best_practice": "<input type='email' name='email' id='email' required><span class='error'>Please enter a valid email address.</span>",
+        "explanation": "Email fields must display error messages when input is invalid."
+    },
+    {
+        "id": 8,
+        "field_type": "ARIA error handling",
+        "guideline": "WCAG 3.3.1 Error Identification",
+        "failure_example": "<input type='email' id='email'><span class='error'>Invalid email</span>",
+        "best_practice": "<input type='email' id='email' aria-describedby='email-error'><span id='email-error' class='error'>Invalid email. Please use format: user@example.com</span>",
+        "explanation": "Providing an ARIA relationship ensures screen readers announce errors properly."
+    },
+    {
+        "id": 9,
+        "field_type": "text",
+        "guideline": "WCAG 3.3.2 Labels or Instructions",
+        "failure_example": "<input type='text' name='username' id='username' placeholder='Enter your username'>",
+        "best_practice": "<label for='username'>Username:</label><input type='text' name='username' id='username' required>",
+        "explanation": "Placeholders should not be the only indicator of a field’s purpose. Labels must be present and programmatically associated."
+    },
+    {
+        "id": 10,
+        "field_type": "radio",
+        "guideline": "WCAG 3.3.2 Labels or Instructions",
+        "failure_example": "<input type='radio' name='gender' value='male'> Male <input type='radio' name='gender' value='female'> Female",
+        "best_practice": "<fieldset><legend>Select your gender:</legend><input type='radio' name='gender' value='male'> Male <input type='radio' name='gender' value='female'> Female</fieldset>",
+        "explanation": "Radio button groups should use a <fieldset> and <legend> for accessibility."
+    },
+    {
+        "id": 11,
+        "field_type": "error message",
+        "guideline": "WCAG 3.3.3 Error Suggestion",
+        "failure_example": "<span class='error'>Invalid input</span>",
+        "best_practice": "<span class='error'>Invalid input. Please enter in YYYY-MM-DD format.</span>",
+        "explanation": "Error messages should provide suggestions for correction, not just indicate failure."
+    }
+    
+]
