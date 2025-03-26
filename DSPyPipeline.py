@@ -1,5 +1,5 @@
 import dspy
-from dsp.utils import deduplicate
+from dspy.dsp.utils import deduplicate 
 import os
 from dspy.teleprompt import BootstrapFewShot
 from dspy.evaluate.evaluate import Evaluate
@@ -15,15 +15,22 @@ from selenium.webdriver.common.action_chains import ActionChains
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 from trainsets import trainset, trainset_no_submit
+import json
+import numpy as np
+from sentence_transformers import SentenceTransformer
+from dspy import Embedder
+import chromadb
+from chromadb.utils import embedding_functions
+from dspy.retrieve.chromadb_rm import ChromadbRM
 
 
 import time
+
 counter = 0  # Initialize the global counter
 
 url = "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62"
 #url = "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b" #Tem erros de cues e lança submit
 #url = "https://www.continente.pt/loja-online/contactos/" #Tem erros de cues mas não lança submit
-
 
 
 load_dotenv()
@@ -32,10 +39,21 @@ os.environ["MISTRAL_API_KEY"] = os.getenv("MISTRAL_API_KEY", "")
 if not os.environ["MISTRAL_API_KEY"]:
     raise ValueError("MISTRAL_API_KEY not found. Check your .env file.")
 
+chroma_client = chromadb.PersistentClient(path="./chroma_db")
+collection = chroma_client.get_or_create_collection(name="wcag_guidelines")
+
+embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
+
+crm = ChromadbRM(
+    collection_name="wcag_guidelines",
+    persist_directory="./chroma_db",
+    embedding_function=embedding_model.encode,
+    k=5  # Retrieve top 5 relevant documents
+)
+
 # Configure DSPy with the model and retriever
 mini = dspy.LM('mistral/mistral-large-latest')
-rm = dspy.ColBERTv2(url='http://20.102.90.50:2017/wiki17_abstracts')
-dspy.configure(lm=mini, rm=rm)
+dspy.settings.configure(lm=mini, rm=crm)
 
 def setup_webdriver():
     """Configures and launches a headless Chrome browser."""

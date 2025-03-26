@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "field_type": "input instructions",
+        "field_type": "credit card",
         "guideline": "WCAG 1.3.5 Identify Input Purpose",
         "failure_example": "<input type='text' name='cc-number'>",
         "best_practice": "<input type='text' name='cc-number' autocomplete='cc-number'>",
@@ -25,14 +25,6 @@
     },
     {
         "id": 4,
-        "field_type": "keyboard navigation",
-        "guideline": "WCAG 2.5.3 Label in Name",
-        "failure_example": "<button aria-label='Search'></button>",
-        "best_practice": "<button aria-label='Search'>Search</button>",
-        "explanation": "The visible text on a control should match its accessible name to ensure consistency for speech input users."
-    },
-    {
-        "id": 5,
         "field_type": "password",
         "guideline": "WCAG 3.3.1 Error Identification",
         "failure_example": "<input type='password' name='password' id='password' required><span class='error' style='display: none;'>This field is required.</span>",
@@ -40,7 +32,7 @@
         "explanation": "Error messages should be visible when relevant, not hidden via CSS."
     },
     {
-        "id": 6,
+        "id": 5,
         "field_type": "checkbox",
         "guideline": "WCAG 3.3.1 Error Identification",
         "failure_example": "<input type='checkbox' name='terms' id='terms' required>",
@@ -48,7 +40,7 @@
         "explanation": "Required checkboxes must provide clear error messages when left unchecked."
     },
     {
-        "id": 7,
+        "id": 6,
         "field_type": "email",
         "guideline": "WCAG 3.3.1 Error Identification",
         "failure_example": "<input type='email' name='email' id='email' required>",
@@ -56,7 +48,7 @@
         "explanation": "Email fields must display error messages when input is invalid."
     },
     {
-        "id": 8,
+        "id": 7,
         "field_type": "ARIA error handling",
         "guideline": "WCAG 3.3.1 Error Identification",
         "failure_example": "<input type='email' id='email'><span class='error'>Invalid email</span>",
@@ -64,7 +56,7 @@
         "explanation": "Providing an ARIA relationship ensures screen readers announce errors properly."
     },
     {
-        "id": 9,
+        "id": 8,
         "field_type": "text",
         "guideline": "WCAG 3.3.2 Labels or Instructions",
         "failure_example": "<input type='text' name='username' id='username' placeholder='Enter your username'>",
@@ -72,7 +64,7 @@
         "explanation": "Placeholders should not be the only indicator of a field’s purpose. Labels must be present and programmatically associated."
     },
     {
-        "id": 10,
+        "id": 9,
         "field_type": "radio",
         "guideline": "WCAG 3.3.2 Labels or Instructions",
         "failure_example": "<input type='radio' name='gender' value='male'> Male <input type='radio' name='gender' value='female'> Female",
@@ -80,7 +72,7 @@
         "explanation": "Radio button groups should use a <fieldset> and <legend> for accessibility."
     },
     {
-        "id": 11,
+        "id": 10,
         "field_type": "error message",
         "guideline": "WCAG 3.3.3 Error Suggestion",
         "failure_example": "<span class='error'>Invalid input</span>",
