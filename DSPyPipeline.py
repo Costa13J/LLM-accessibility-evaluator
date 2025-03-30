@@ -28,9 +28,9 @@ import time
 
 counter = 0  # Initialize the global counter
 
-url = "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62"
+#url = "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62"
 #url = "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b" #Tem erros de cues e lança submit
-#url = "https://www.continente.pt/loja-online/contactos/" #Tem erros de cues mas não lança submit
+url = "https://www.continente.pt/loja-online/contactos/" #Tem erros de cues mas não lança submit
 
 
 load_dotenv()
@@ -48,7 +48,7 @@ crm = ChromadbRM(
     collection_name="wcag_guidelines",
     persist_directory="./chroma_db",
     embedding_function=embedding_model.encode,
-    k=5  # Retrieve top 5 relevant documents
+    k=8  # top-k
 )
 
 # Configure DSPy with the model and retriever
@@ -252,15 +252,22 @@ class EvaluateInteractiveCues(dspy.Signature):
     reasoning = dspy.OutputField(desc="Individual Explanation of whether the disabled, readonly, and required attributes were correctly used or not.")
     evaluation = dspy.OutputField(desc="A structrured list of all the elements evaluating, with Pass/Fail/Inapplicable, each field based on its interactive cues (considering raised error messages after interaction).")
 
-
-#TODO Perceber a estrutura do que é passado ao llm
+# Generate a search query to find relevant WCAG guidelines and techniques for interactive cues.
 class GenerateSearchQuery(dspy.Signature):
-    """Generate a search query to find relevant WCAG guidelines and techniques for interactive cues."""
-    html_snippet = dspy.InputField(desc="Form field attributes before and after user interaction.")
-    query = dspy.OutputField(desc="Search query focusing on accessibility best practices for required, disabled, and readonly attributes.")
+    html_snippet = dspy.InputField(desc=(
+        "A structured HTML snippet representing form field attributes before and after user interaction. "
+        "This includes relevant states such as `required`, `disabled`, `readonly`, and associated validation feedback."
+    ))
+    query = dspy.OutputField(desc=(
+        "A well-formed search query designed to retrieve the most relevant WCAG guidelines and best practices. "
+        "The query should focus on accessibility issues related to form cues, ensuring proper use of `required`, `disabled`, "
+        "and `readonly` attributes. It should also prioritize guidelines discussing error messages, validation feedback, "
+        "and how assistive technologies interpret these attributes."
+    ))
+
 
 class InteractiveCuesEvaluator(dspy.Module):
-    def __init__(self, passages_per_hop=1, max_hops=3):
+    def __init__(self, passages_per_hop=4, max_hops=2):
         super().__init__()
         self.generate_query = [dspy.ChainOfThought(GenerateSearchQuery) for _ in range(max_hops)]
         self.retrieve = dspy.Retrieve(k=passages_per_hop)
@@ -295,9 +302,11 @@ class InteractiveCuesEvaluator(dspy.Module):
                 passages = self.retrieve(query).passages
                 if not passages:
                     fallback_queries = [ #TODO review fallback queries
-                        "WCAG best practices for the required cue attribute",
-                        "Ensuring error messages are programmatically linked to input fields",
-                        "Improving accessibility of dynamic form validation messages"
+                        "Best practices for the 'required' attribute in forms under WCAG.",
+                        "Ensuring error messages are programmatically linked to form inputs for accessibility.",
+                        "How should the 'disabled' attribute be used to comply with accessibility standards?",
+                        "Impact of dynamically changing form attributes on assistive technology.",
+                        "What ARIA attributes can be used to enhance form cues and validation feedback?"
                     ]
                     for fallback in fallback_queries:
                         passages = self.retrieve(fallback).passages
