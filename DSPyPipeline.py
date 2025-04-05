@@ -281,13 +281,13 @@ def format_for_model(data):
 # Define signatures for evaluation
 #TODO maybe split into different signatures
 class EvaluateInteractiveCues(dspy.Signature):
-    """Check if form fields use appropriate cues (disabled, readonly, and required attributes) if they adopt those states."""
+    """Check if form fields use appropriate required attribute(s) if they adopt that state."""
     html_snippet_before = dspy.InputField(desc="HTML before user interaction.")
     html_snippet_after = dspy.InputField(desc="HTML after user interaction (if available, else None)..")
-    retrieved_guidelines = dspy.InputField(desc="Relevant WCAG guidelines and techniques for interactive cues.")
+    retrieved_guidelines = dspy.InputField(desc="Relevant examples and best practices for the use of required attributes in form fields.")
     mutations = dspy.InputField(desc="List of DOM mutations detected after submission, capturing error messages and attribute changes.")
-    reasoning = dspy.OutputField(desc="Individual Explanation of whether the disabled, readonly, and required attributes were correctly used or not.")
-    evaluation = dspy.OutputField(desc="A structrured list of all the elements evaluating, with Pass/Fail/Inapplicable, each field based on its interactive cues (considering raised error messages after interaction).")
+    evaluation = dspy.OutputField(desc="An individual evalaution of each field based on their use of the required attribute, assigning Pass/Fail/Inapplicable to each of them with a brief explanation on the evaluation performed.")
+
 
 # Generate a search query to find relevant WCAG guidelines and techniques for interactive cues.
 class GenerateSearchQuery(dspy.Signature):
@@ -296,15 +296,13 @@ class GenerateSearchQuery(dspy.Signature):
         "This includes relevant states such as `required`, `disabled`, `readonly`, and associated validation feedback."
     ))
     query = dspy.OutputField(desc=(
-        "A well-formed search query designed to retrieve the most relevant WCAG guidelines and best practices. "
-        "The query should focus on accessibility issues related to form cues, ensuring proper use of `required`, `disabled`, "
-        "and `readonly` attributes. It should also prioritize guidelines discussing error messages, validation feedback, "
-        "and how assistive technologies interpret these attributes."
+        "A well-formed search query designed to retrieve the most relevant examples from wcag and best practices. "
+        "The query should focus on accessibility issues related to form cues, ensuring proper use of `required`attributes."
     ))
 
 
 class InteractiveCuesEvaluator(dspy.Module):
-    def __init__(self, passages_per_hop=4, max_hops=2):
+    def __init__(self, passages_per_hop=3, max_hops=2):
         super().__init__()
         self.generate_query = [dspy.ChainOfThought(GenerateSearchQuery) for _ in range(max_hops)]
         self.retrieve = dspy.Retrieve(k=passages_per_hop)
@@ -410,10 +408,11 @@ if html_before:
     
     if html_after:
         formatted_after = format_for_model(html_after)
-        #print("===== FORM BEFORE INTERACTION =====")
-        #print(formatted_before)
-        #print("===== FORM AFTER INTERACTION =====")
-        #print(formatted_after)
+        print("===== FORM BEFORE INTERACTION =====")
+        print(formatted_before)
+        print("===== FORM AFTER INTERACTION =====")
+        print(formatted_after)
+        
 
         pred = compiled_evaluator_submit(formatted_before, formatted_after, mutations)
     else:
