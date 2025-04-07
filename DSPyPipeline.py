@@ -22,11 +22,13 @@ from dspy import Embedder
 import chromadb
 from chromadb.utils import embedding_functions
 from dspy.retrieve.chromadb_rm import ChromadbRM
+from selenium.common.exceptions import JavascriptException
 
 
 import time
 
 counter = 0  # Initialize the global counter
+clicked = False #Initialize "clicked" boolean
 
 url = "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62"
 #url = "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b" #Tem erros de cues e lança submit
@@ -68,7 +70,7 @@ def setup_webdriver():
 
 from bs4 import BeautifulSoup
 
-#TODO review this code 
+#Extracts the fields from the form, with their attributes and also errors 
 def extract_fields(driver):
     soup = BeautifulSoup(driver.page_source, 'html.parser')
     fields = []
@@ -220,6 +222,7 @@ def find_and_click_submit_button(driver):
             )
             submit_button.click()
             print("Submit button clicked!")
+            clicked = True
             return "clicked"
 
         except Exception as e:
@@ -230,6 +233,7 @@ def find_and_click_submit_button(driver):
             try:
                 driver.execute_script("arguments[0].click();", submit_button)
                 print("JavaScript click executed successfully!")
+                clicked = True
                 return "clicked"
     
             except Exception as js_e:
@@ -243,7 +247,26 @@ def find_and_click_submit_button(driver):
 
 # Retrieves captured mutations from the Mutation Observer.
 def extract_mutation_observer_results(driver):
-    return driver.execute_script("return window.mutationRecords;")
+    raw_mutations = driver.execute_script("return window.mutationRecords || []")
+
+    structured_mutations = []
+    for m in raw_mutations:
+        structured_mutations.append({
+            "type": m.get("type"),
+            "target": m.get("target", ""),
+            "targetTag": m.get("targetTag", ""),
+            "targetId": m.get("targetId", ""),
+            "targetClass": m.get("targetClass", ""),
+            "attributeChanged": m.get("attributeChanged", ""),
+            "newValue": m.get("newValue", ""),
+            "validationFlag": m.get("validationFlag", False),
+            "addedNodes": m.get("addedNodes", []),
+            "removedNodes": m.get("removedNodes", []),
+            "possibleErrorMessages": m.get("possibleErrorMessages", []),
+            "timestamp": m.get("timestamp", None),
+        })
+
+    return structured_mutations
 
 # Loads a webpage, extracts form fields before and after interaction.
 def extract_html_with_states(url):
@@ -257,14 +280,12 @@ def extract_html_with_states(url):
 
     if action_result == "clicked":
         time.sleep(2)  # Allow errors to appear
-        updated_data = extract_fields(driver)
         mutations = extract_mutation_observer_results(driver)
     else:
-        updated_data = None  # No post-submission state available
         mutations = None
 
     driver.quit()
-    return initial_data, updated_data, mutations
+    return initial_data, mutations
 
 # Formats extracted fields and errors for model input.
 def format_for_model(data):
@@ -278,15 +299,13 @@ def format_for_model(data):
     return "\n".join(field_descriptions) + f"\nErrors: {error_messages}"
 
 
-# Define signatures for evaluation
-#TODO maybe split into different signatures
+# Signature for evaluation
 class EvaluateInteractiveCues(dspy.Signature):
     """Check if form fields use appropriate required attribute(s) if they adopt that state."""
-    html_snippet_before = dspy.InputField(desc="HTML before user interaction.")
-    html_snippet_after = dspy.InputField(desc="HTML after user interaction (if available, else None)..")
+    html_snippet_before = dspy.InputField(desc="Form HTML snippet before user interaction.")
+    mutations = dspy.InputField(desc="List of DOM mutations detected after submission of the form left empty, capturing error messages and attribute changes.")
     retrieved_guidelines = dspy.InputField(desc="Relevant examples and best practices for the use of required attributes in form fields.")
-    mutations = dspy.InputField(desc="List of DOM mutations detected after submission, capturing error messages and attribute changes.")
-    evaluation = dspy.OutputField(desc="An individual evalaution of each field based on their use of the required attribute, assigning Pass/Fail/Inapplicable to each of them with a brief explanation on the evaluation performed.")
+    evaluation = dspy.OutputField(desc="An individual evaluation of each field based on their use of the required attribute, assigning Pass/Fail/Inapplicable to each of them with a brief explanation on the evaluation performed.")
 
 
 # Generate a search query to find relevant WCAG guidelines and techniques for interactive cues.
@@ -297,7 +316,7 @@ class GenerateSearchQuery(dspy.Signature):
     ))
     query = dspy.OutputField(desc=(
         "A well-formed search query designed to retrieve the most relevant examples from wcag and best practices. "
-        "The query should focus on accessibility issues related to form cues, ensuring proper use of `required`attributes."
+        "The query should focus on accessibility issues related to form cues, ensuring proper use of `required` attributes."
     ))
 
 
@@ -312,20 +331,41 @@ class InteractiveCuesEvaluator(dspy.Module):
     #Formats mutation records into a structured text summary
     def process_mutations(self, mutations):
         if not mutations:
-            return "No dynamic changes detected after form submission."
+            return "No dynamic changes detected after form interaction."
 
         summary = []
-        for mutation in mutations:
-            if mutation["type"] == "childList":
-                added = ", ".join(mutation["addedNodes"]) if mutation["addedNodes"] else "None"
-                removed = ", ".join(mutation["removedNodes"]) if mutation["removedNodes"] else "None"
-                summary.append(f"Added Nodes: {added}, Removed Nodes: {removed}")
-            elif mutation["type"] == "attributes":
-                summary.append(f"Element Changed: {mutation['target']}, Attribute Modified: {mutation['attributeChanges']}")
+        for m in mutations:
+            target = f"<{m.get('targetTag', '?')}>#{m.get('targetId', '')}".strip("#")
+
+            if m["type"] == "attributes":
+                attr = m.get("attributeChanged")
+                val = m.get("newValue")
+                note = "⚠️ Validation-related attribute changed." if m.get("validationFlag") else ""
+                if attr in ["style", "class"] and m.get("possibleErrorMessages"):
+                    for msg in m["possibleErrorMessages"]:
+                        summary.append(f" [Visible Error Message Revealed] {msg}")
+                else:
+                    summary.append(f"[Attribute Change] {target} → '{attr}' updated to '{val}'. {note}".strip())
+
+            elif m["type"] == "childList":
+                added = m.get("addedNodes", [])
+                removed = m.get("removedNodes", [])
+                error_msgs = m.get("possibleErrorMessages", [])
+
+                for msg in error_msgs:
+                    summary.append(f" [Error Message Added] {msg}")
+
+                for node_html in added:
+                    snippet = node_html.strip().replace("\n", " ")[:200]
+                    summary.append(f"[DOM Node Added] Snippet: {snippet}...")
+
+                for node_html in removed:
+                    snippet = node_html.strip().replace("\n", " ")[:200]
+                    summary.append(f"[DOM Node Removed] Snippet: {snippet}...")
 
         return "\n".join(summary)
 
-    def forward(self, html_snippet_before, html_snippet_after, mutations, retrieved_guidelines=None):
+    def forward(self, html_snippet_before, mutations, retrieved_guidelines=None):
         retrieved_guidelines = []
         queries = set()
 
@@ -340,8 +380,7 @@ class InteractiveCuesEvaluator(dspy.Module):
                         "Best practices for the 'required' attribute in forms under WCAG.",
                         "Ensuring error messages are programmatically linked to form inputs for accessibility.",
                         "How should the 'disabled' attribute be used to comply with accessibility standards?",
-                        "Impact of dynamically changing form attributes on assistive technology.",
-                        "What ARIA attributes can be used to enhance form cues and validation feedback?"
+                        "What ARIA attributes can be used to enhance form cues?"
                     ]
                     for fallback in fallback_queries:
                         passages = self.retrieve(fallback).passages
@@ -356,34 +395,21 @@ class InteractiveCuesEvaluator(dspy.Module):
         print("===== QUERIES =====")
         print(queries)
 
-        
-#TODO
-        if html_snippet_after is None:
-            reasoning = "No post-interaction state available. Evaluating only initial form attributes."
-        else:
-            reasoning = None
-
-        mutation_summary = self.process_mutations(mutations)
+        mutation_summary = self.process_mutations(mutations) if mutations else "No form interaction or dynamic changes to analyze."
+        print(mutation_summary)
         
         pred = self.evaluate_cues(
             html_snippet_before=html_snippet_before,
-            html_snippet_after=html_snippet_after,
             mutations=mutation_summary,
             retrieved_guidelines=retrieved_guidelines
         )   
 
-        # Use pred.reasoning only if html_snippet_after exists
-        reasoning = pred.reasoning if html_snippet_after else reasoning
-
         return dspy.Prediction(
             retrieved_guidelines=retrieved_guidelines,
             evaluation=pred.evaluation,
-            reasoning=reasoning,
+            mutation_summary=mutation_summary,
             queries=list(queries)
         )
-
-
-
 
 teleprompter = BootstrapFewShot(metric=lambda ex, pred, trace=None: "Pass" in pred.evaluation)
 
@@ -400,29 +426,23 @@ compiled_evaluator_no_submit = teleprompter.compile(
 )
 
 
-html_before, html_after, mutations = extract_html_with_states(url)
+html_before, mutations = extract_html_with_states(url)
 
 #Output
 if html_before:
-    formatted_before = format_for_model(html_before)
+    formatted_html = format_for_model(html_before)
     
-    if html_after:
-        formatted_after = format_for_model(html_after)
-        print("===== FORM BEFORE INTERACTION =====")
-        print(formatted_before)
-        print("===== FORM AFTER INTERACTION =====")
-        print(formatted_after)
-        
-
-        pred = compiled_evaluator_submit(formatted_before, formatted_after, mutations)
+    if clicked or mutations:
+        print("Evaluating dynamic form interaction.")
+        pred = compiled_evaluator_submit(formatted_html, mutations)
     else:
-        print("Submit button missing or unclickable. Evaluating static form.")
-        pred = compiled_evaluator_no_submit(formatted_before, None, None)  # Evaluate only "before" HTML
+        print("Submit button unclickable. Evaluating static form.")
+        pred = compiled_evaluator_no_submit(formatted_html, None)  # Evaluate only HTML
 
     
     print(f"===== EVALUATION =====\n{pred.evaluation}")
     print(f"===== RETRIEVED INFO =====\n{pred.retrieved_guidelines}")
-    #print(f"===== MUTATIONS OBSERVED =====\n{mutations}")
+    print(f"===== MUTATIONS OBSERVED =====\n{pred.mutation_summary}")
 
 else:
     print("Failed to retrieve form data from the page.")
