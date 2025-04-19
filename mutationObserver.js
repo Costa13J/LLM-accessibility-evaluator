@@ -1,7 +1,37 @@
 window.mutationRecords = [];
 
+function findAssociatedFieldInfo(target) {
+    let field = target;
+
+    // If the target is not a form control, try to walk up the DOM
+    while (field && !['INPUT', 'TEXTAREA', 'SELECT'].includes(field.tagName)) {
+        field = field.parentElement;
+    }
+
+    if (!field) return {};
+
+    const name = field.getAttribute('name') || '';
+    const id = field.id || '';
+
+    // Try to find a label
+    let label = '';
+    if (id) {
+        const labelElem = document.querySelector(`label[for="${id}"]`);
+        if (labelElem) label = labelElem.innerText.trim();
+    }
+
+    // If no label found via `for`, check for wrapping label
+    if (!label && field.closest('label')) {
+        label = field.closest('label').innerText.trim();
+    }
+
+    return { fieldName: name, fieldId: id, fieldLabel: label };
+}
+
 const observer = new MutationObserver(function (mutationsList) {
     for (const mutation of mutationsList) {
+        const fieldInfo = findAssociatedFieldInfo(mutation.target);
+
         const record = {
             type: mutation.type,
             target: mutation.target.outerHTML || "",
@@ -15,6 +45,9 @@ const observer = new MutationObserver(function (mutationsList) {
             removedNodes: [],
             possibleErrorMessages: [],
             timestamp: new Date().toISOString(),
+            fieldName: fieldInfo.fieldName || "",
+            fieldId: fieldInfo.fieldId || "",
+            fieldLabel: fieldInfo.fieldLabel || "",
         };
 
         if (mutation.type === "childList") {
@@ -36,6 +69,8 @@ const observer = new MutationObserver(function (mutationsList) {
             const attrName = mutation.attributeName;
             record.attributeChanged = attrName;
             record.newValue = mutation.target.getAttribute(attrName);
+
+            
 
             if (["style", "class"].includes(attrName)) {
                 const visibleText = mutation.target.innerText?.trim();
