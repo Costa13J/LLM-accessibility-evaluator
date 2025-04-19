@@ -23,17 +23,18 @@ import chromadb
 from chromadb.utils import embedding_functions
 from dspy.retrieve.chromadb_rm import ChromadbRM
 from selenium.common.exceptions import JavascriptException
+from bs4 import BeautifulSoup
 
 
 import time
 
-counter = 0  # Initialize the global counter
-clicked = False #Initialize "clicked" boolean
+counter = 0  #global counter
+clicked = False #global"clicked" boolean
 
 url = "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62"
 #url = "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b" #Tem erros de cues e lança submit
 #url = "https://www.continente.pt/loja-online/contactos/" #Tem erros de cues mas não lança submit
-#url = "https://business.quora.com/contact-us/" #formulario so abre quando clickado um botao para abrir modal dialog
+#url = "https://business.quora.com/contact-us/" #NAO FUNCIONA formulario so abre quando clickado um botao para abrir modal dialog
 #url = "https://www.nba.com/account/sign-up"
 #url = "https://www.gsmarena.com/tipus.php3"
 
@@ -68,7 +69,19 @@ def setup_webdriver():
     service = Service(ChromeDriverManager().install())  
     return webdriver.Chrome(service=service, options=chrome_options)
 
-from bs4 import BeautifulSoup
+def extract_form_html(driver):
+    """Extracts raw HTML of all <form> elements as strings."""
+    soup = BeautifulSoup(driver.page_source, 'html.parser')
+    forms = soup.find_all("form")
+    if forms:
+        html_list = [str(form) for form in forms]
+        for idx, html in enumerate(html_list, 1):
+            print(f"--- FORM #{idx} ---\n{html}\n")
+        return html_list
+    else:
+        print("No forms found on the page.")
+        return []
+
 
 #Extracts the fields from the form, with their attributes and also errors 
 def extract_fields(driver):
@@ -123,9 +136,9 @@ def extract_fields(driver):
             "id": input_field.get("id", ""),
             "type": input_field.get("type", ""),
             "value": value,
-            "required": "yes" if input_field.has_attr("required") else "no",
-            "disabled": "yes" if input_field.has_attr("disabled") else "no",
-            "readonly": "yes" if input_field.has_attr("readonly") else "no",
+            "required": "yes" if input_field.has_attr("required") else "no required attribute",
+            "disabled": "yes" if input_field.has_attr("disabled") else "no disabled attribute",
+            "readonly": "yes" if input_field.has_attr("readonly") else "no read-only attribute",
             "errors": list(set(error_messages))  # Remove duplicates
         }
         fields.append(field_info)
@@ -166,7 +179,6 @@ def extract_buttons_for_llm(driver):
             "onclick": elem.get("onclick", "No OnClick"),
             "type": elem.name
         })
-    print(elements)
     return elements
 
 # LLM identifies the actual submit button 
@@ -268,13 +280,14 @@ def extract_mutation_observer_results(driver):
 
     return structured_mutations
 
-# Loads a webpage, extracts form fields before and after interaction.
+# Loads a webpage, extracts form fields before interaction.
 def extract_html_with_states(url):
 
     driver = setup_webdriver()
     driver.get(url)
 
-    initial_data = extract_fields(driver)
+    #initial_data = extract_form_html(driver) #Use this for full form
+    initial_data = extract_fields(driver) #Use this for fields
 
     action_result = find_and_click_submit_button(driver)
 
@@ -301,12 +314,16 @@ def format_for_model(data):
 
 # Signature for evaluation
 class EvaluateInteractiveCues(dspy.Signature):
-    """Check if form fields use appropriate required attribute(s) if they adopt that state."""
+    """Check if form fields use appropriate required attributes if they adopt that state."""
     html_snippet_before = dspy.InputField(desc="Form HTML snippet before user interaction.")
-    mutations = dspy.InputField(desc="List of DOM mutations detected after submission of the form left empty, capturing error messages and attribute changes.")
+    mutations = dspy.InputField(desc="List of DOM mutations detected after submission of the form when left empty, capturing error messages and attribute changes.")
     retrieved_guidelines = dspy.InputField(desc="Relevant examples and best practices for the use of required attributes in form fields.")
-    evaluation = dspy.OutputField(desc="An individual evaluation of each field based on their use of the required attribute, assigning Pass/Fail/Inapplicable to each of them with a brief explanation on the evaluation performed.")
-
+    evaluation = dspy.OutputField(desc="An individual evaluation of each field based on their use of the required attribute, assigning Pass/Fail/Inapplicable to each of them with a brief explanation on the accessibility evaluation performed.")
+    format = dspy.OutputField(desc="""Use this exact structure for each evaluated field without the information in brackets:
+        -Identification(label or name of the field): <extracted info> 
+        -Evaluation("pass" or "fail" or "inapplicable"): <result>
+        -Reasoning(explanation of the evaluation result): <reason>
+        Ensure this format is followed exactly with no additional explanation.""")
 
 # Generate a search query to find relevant WCAG guidelines and techniques for interactive cues.
 class GenerateSearchQuery(dspy.Signature):
@@ -329,41 +346,59 @@ class InteractiveCuesEvaluator(dspy.Module):
         self.max_hops = max_hops
 
     #Formats mutation records into a structured text summary
+    from collections import Counter
+
     def process_mutations(self, mutations):
         if not mutations:
             return "No dynamic changes detected after form interaction."
 
         summary = []
-        for m in mutations:
-            target = f"<{m.get('targetTag', '?')}>#{m.get('targetId', '')}".strip("#")
 
-            if m["type"] == "attributes":
+        for m in mutations:
+            if not isinstance(m, dict):
+                summary.append(f"[Warning] Unexpected mutation format: {m}")
+                continue  # skip invalid mutation entries
+
+            target_tag = m.get('targetTag', '?')
+            target_id = m.get('targetId', '')
+            target = f"<{target_tag}>#{target_id}" if target_id else f"<{target_tag}>"
+
+            field_label = m.get("fieldLabel", "")
+            field_name = m.get("fieldName", "")
+            field_info = f" (Field: '{field_label}' | name='{field_name}')" if field_label or field_name else ""
+
+
+            if m.get("type") == "attributes":
                 attr = m.get("attributeChanged")
                 val = m.get("newValue")
-                note = "⚠️ Validation-related attribute changed." if m.get("validationFlag") else ""
+                note = "Validation-related attribute changed." if m.get("validationFlag") else ""
+
                 if attr in ["style", "class"] and m.get("possibleErrorMessages"):
                     for msg in m["possibleErrorMessages"]:
-                        summary.append(f" [Visible Error Message Revealed] {msg}")
+                        summary.append(f"[Visible Error Message Revealed] {msg}{field_info}")
                 else:
-                    summary.append(f"[Attribute Change] {target} → '{attr}' updated to '{val}'. {note}".strip())
+                    summary.append(f"[Attribute Change] {target} → '{attr}' updated to '{val}'{field_info}. {note}".strip())
 
-            elif m["type"] == "childList":
+            elif m.get("type") == "childList":
                 added = m.get("addedNodes", [])
                 removed = m.get("removedNodes", [])
                 error_msgs = m.get("possibleErrorMessages", [])
 
                 for msg in error_msgs:
-                    summary.append(f" [Error Message Added] {msg}")
+                    summary.append(f"[Error Message Added] {msg}{field_info}")
 
                 for node_html in added:
                     snippet = node_html.strip().replace("\n", " ")[:200]
-                    summary.append(f"[DOM Node Added] Snippet: {snippet}...")
+                    summary.append(f"[DOM Node Added] Snippet: {snippet}...{field_info}")
 
                 for node_html in removed:
                     snippet = node_html.strip().replace("\n", " ")[:200]
-                    summary.append(f"[DOM Node Removed] Snippet: {snippet}...")
+                    summary.append(f"[DOM Node Removed] Snippet: {snippet}...{field_info}")
 
-        return "\n".join(summary)
+        cleaned_summary = deduplicate(summary)
+        return "\n".join(cleaned_summary)
+
+
 
     def forward(self, html_snippet_before, mutations, retrieved_guidelines=None):
         retrieved_guidelines = []
@@ -392,12 +427,11 @@ class InteractiveCuesEvaluator(dspy.Module):
             except Exception as e:
                 print(f"Error during retrieval at hop {hop + 1}: {e}")
                 continue
-        print("===== QUERIES =====")
+        print("===== QUERY =====")
         print(queries)
 
         mutation_summary = self.process_mutations(mutations) if mutations else "No form interaction or dynamic changes to analyze."
-        print(mutation_summary)
-        
+
         pred = self.evaluate_cues(
             html_snippet_before=html_snippet_before,
             mutations=mutation_summary,
@@ -430,8 +464,9 @@ html_before, mutations = extract_html_with_states(url)
 
 #Output
 if html_before:
-    formatted_html = format_for_model(html_before)
-    
+    formatted_html = format_for_model(html_before) #Use this for fields
+    #formatted_html = html_before #Use this for full html
+
     if clicked or mutations:
         print("Evaluating dynamic form interaction.")
         pred = compiled_evaluator_submit(formatted_html, mutations)
@@ -441,8 +476,8 @@ if html_before:
 
     
     print(f"===== EVALUATION =====\n{pred.evaluation}")
-    print(f"===== RETRIEVED INFO =====\n{pred.retrieved_guidelines}")
-    print(f"===== MUTATIONS OBSERVED =====\n{pred.mutation_summary}")
+    #print(f"===== RETRIEVED INFO =====\n{pred.retrieved_guidelines}")
+    #print(f"===== MUTATIONS OBSERVED =====\n{pred.mutation_summary}")
 
 else:
     print("Failed to retrieve form data from the page.")
