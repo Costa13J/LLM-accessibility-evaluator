@@ -73,6 +73,18 @@ trainset = [
 -Reasoning: The field is disabled and does not incorrectly show an error message."""
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
 
+    #6B FAIL - Incorrectly triggers error on a disabled field
+    dspy.Example(
+        html_snippet_before="""<label for='zipcode'>*ZIP Code:</label>
+    <input type='text' name='zipcode' id='zipcode' disabled>""",
+        retrieved_guidelines="Disabled fields should not trigger required field error messages.",
+        mutations="[Error Message Added] ZIP Code is required. (Field: '*ZIP Code:' | name='zipcode')",
+        evaluation="""-Identification: *ZIP Code
+-Evaluation: fail
+-Reasoning: The field is disabled but still triggers a required error, which should not happen."""
+    ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
+
+
     #7 PASS - Read-only field does not trigger an error
     dspy.Example(
         html_snippet_before="""<label for='country'>*Country:</label>
@@ -118,6 +130,60 @@ trainset = [
 -Evaluation: pass
 -Reasoning: The form correctly displays an error message when the required checkbox is not checked."""
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
+
+    #10B FAIL - Required checkbox doesn’t show an error, TODO review because can be misleading 
+    dspy.Example(
+        html_snippet_before="""<label for='consent'>*I consent to data collection:</label>
+    <input type='checkbox' id='consent' name='consent' required>""",
+        retrieved_guidelines="Required checkboxes should trigger an error if left unchecked.",
+        mutations="No dynamic changes detected after form interaction.",
+        evaluation="""-Identification: *I consent to data collection
+-Evaluation: fail
+-Reasoning: The required checkbox does not display an error message when left unchecked."""
+    ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
+
+    #11 INAPPLICABLE - Hidden input
+    dspy.Example(
+        html_snippet_before="""<input type='hidden' name='csrf_token' value='abc123'>""",
+        retrieved_guidelines="The 'required' attribute is not applicable to hidden input fields.",
+        mutations="No dynamic changes detected after form interaction.",
+        evaluation="""-Identification: csrf_token
+-Evaluation: inapplicable
+-Reasoning: Hidden fields are not meant to be user-editable and do not require the 'required' attribute."""
+    ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
+
+    #12 INAPPLICABLE - Disabled input
+    dspy.Example(
+        html_snippet_before="""<label for='promo'>Promo Code:</label>
+    <input type='text' name='promo' id='promo' disabled>""",
+        retrieved_guidelines="Disabled fields are excluded from validation and should not be evaluated for 'required' logic.",
+        mutations="No dynamic changes detected after form interaction.",
+        evaluation="""-Identification: Promo Code
+-Evaluation: inapplicable
+-Reasoning: The field is disabled and therefore excluded from validation logic including required checks."""
+    ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
+
+    #13 PASS - Optional Field with No Requirement or Error
+    dspy.Example(
+        html_snippet_before="""<label for='middle-name'>Middle Name (Optional):</label>
+    <input type='text' name='middle-name' id='middle-name'>""",
+        retrieved_guidelines="Optional fields do not require the 'required' attribute or related validation feedback.",
+        mutations="No dynamic changes detected after form interaction.",
+        evaluation="""-Identification: Middle Name (Optional)
+-Evaluation: pass
+-Reasoning: The field is intentionally optional and no validation logic is triggered on submit."""
+    ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
+
+    #14 INAPPLICABLE - Submit Button
+    dspy.Example(
+        html_snippet_before="""<input type='submit' value='Submit Form'>""",
+        retrieved_guidelines="The 'required' attribute does not apply to submit buttons.",
+        mutations="No dynamic changes detected after form interaction.",
+        evaluation="""-Identification: Submit Button
+-Evaluation: inapplicable
+-Reasoning: Buttons are not user-input fields and are unaffected by required validation rules."""
+    ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations")
+
 ]
 
 #TODO expand
