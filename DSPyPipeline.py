@@ -31,8 +31,8 @@ import time
 counter = 0  #global counter
 clicked = False #global"clicked" boolean
 
-url = "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62"
-#url = "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b" #Tem erros de cues e lança submit
+#url = "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62"
+url = "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b" #Tem erros de cues e lança submit
 #url = "https://www.continente.pt/loja-online/contactos/" #Tem erros de cues mas não lança submit
 #url = "https://business.quora.com/contact-us/" #NAO FUNCIONA formulario so abre quando clickado um botao para abrir modal dialog
 #url = "https://www.nba.com/account/sign-up"
@@ -83,76 +83,88 @@ def extract_form_html(driver):
         return []
 
 
-#Extracts the fields from the form, with their attributes and also errors 
+#Extracts the fields from the form, with their attributes and also errors  TODO doesnt exclude visibility:hidden as of now
 def extract_fields(driver):
     soup = BeautifulSoup(driver.page_source, 'html.parser')
     fields = []
 
-    #Just captures input related fields
     for input_field in soup.find_all(['input', 'textarea', 'select']):
+        # Skip non-user inputs
         if input_field.get('type') in ['hidden', 'submit', 'button']:
-            continue  # Ignore non-user input fields
+            continue
 
-        # Find the associated label, can be in 'for' attribute
-        label = None
+        # Skip elements with display: none in inline style
+        style = input_field.get("style", "").lower()
+        if "display:none" in style or "display: none" in style:
+            continue
+
+        # Skip inputs inside hidden containers (simplified check)
+        hidden_parent = input_field.find_parent(style=lambda s: s and "display: none" in s.lower())
+        if hidden_parent:
+            continue
+
+        # === Label extraction logic ===
+        label_text = None
+
+        # 1. label[for=id]
         if input_field.has_attr("id"):
-            label = soup.find("label", {"for": input_field["id"]})  # Look for associated label
-        if not label:
-            label = input_field.find_parent("label")  # Look for wrapped label
+            label_elem = soup.find("label", {"for": input_field["id"]})
+            if label_elem:
+                label_text = label_elem.text.strip()
 
-        # Extract error messages from elements associated with the field
-        error_messages = []
-        
-        # Check aria-describedby for error messages
-        if input_field.has_attr("aria-describedby"):
-            error_refs = input_field["aria-describedby"].split()
-            for ref in error_refs:
-                error_element = soup.find(id=ref)
-                if error_element:
-                    error_messages.append(error_element.text.strip())
+        # 2. <label> wrapping the input
+        if not label_text:
+            wrapping_label = input_field.find_parent("label")
+            if wrapping_label:
+                label_text = wrapping_label.text.strip()
 
-        # Extract error messages from elements with 'error' class near the input
-        for error_element in input_field.find_next_siblings():
-            if "error" in error_element.get("class", []):
-                error_messages.append(error_element.text.strip())
+        # 3. aria-labelledby references
+        if not label_text and input_field.has_attr("aria-labelledby"):
+            ids = input_field["aria-labelledby"].split()
+            parts = []
+            for ref_id in ids:
+                label_ref = soup.find(id=ref_id)
+                if label_ref:
+                    parts.append(label_ref.text.strip())
+            if parts:
+                label_text = " ".join(parts)
 
-        # Extract additional error-related attributes
-        if input_field.has_attr("aria-invalid") and input_field["aria-invalid"] == "true":
-            error_messages.append("Invalid input")
+        # 4. fallback to placeholder
+        if not label_text and input_field.has_attr("placeholder"):
+            label_text = f"[placeholder] {input_field['placeholder'].strip()}"
 
-        # Special handling for select elements (extract selected option)
+        if not label_text:
+            label_text = "No Label"
+
+        # === Value extraction logic ===
         value = input_field.get("value", "")
         if input_field.name == "select":
             selected_option = input_field.find("option", selected=True)
             value = selected_option.text.strip() if selected_option else ""
 
-        # Special handling for checkboxes and radio buttons
         if input_field.get("type") in ["checkbox", "radio"]:
             value = "checked" if input_field.has_attr("checked") else "unchecked"
 
+        # === Field info dictionary ===
         field_info = {
-            "label": label.text.strip() if label else "No Label",
+            "label": label_text,
             "name": input_field.get("name", ""),
             "id": input_field.get("id", ""),
-            "type": input_field.get("type", ""),
+            "type": input_field.get("type", input_field.name),  # fallback to tag name
             "value": value,
             "required": "yes" if input_field.has_attr("required") else "no required attribute",
             "disabled": "yes" if input_field.has_attr("disabled") else "no disabled attribute",
             "readonly": "yes" if input_field.has_attr("readonly") else "no read-only attribute",
-            "errors": list(set(error_messages))  # Remove duplicates
+            "autocomplete": input_field.get("autocomplete", "no autocomplete"),
+            "inputmode": input_field.get("inputmode", "no inputmode")
         }
+
         fields.append(field_info)
 
-    # Extract global error messages
-    errors = [e.text.strip() for e in soup.select(".error") if e.get('style') != 'display:none;']
-
-    # Collect non-empty field-specific errors
-    field_errors = [msg for f in fields for msg in f["errors"] if msg]
-
     print("===== FIELDS PASSED TO LM =====")
-    print(fields + list(set(errors + field_errors)))
+    print(fields)
 
-    return {"fields": fields, "errors": list(set(errors + field_errors))}  # Remove duplicate errors
+    return {"fields": fields}
 
 
 # Extracts all buttons and any element with an onclick event to pass to the LLM.
@@ -300,22 +312,23 @@ def extract_html_with_states(url):
     driver.quit()
     return initial_data, mutations
 
-# Formats extracted fields and errors for model input.
+# Formats extracted fields for model input.
 def format_for_model(data):
-
     field_descriptions = [
-        f"{field['label']} ({field['type']}): required={field['required']}, disabled={field['disabled']}, readonly={field['readonly']}"
+        f"{field['label']} ({field['type']}): "
+        f"required={field['required']}, disabled={field['disabled']}, readonly={field['readonly']}, "
+        f"autocomplete={field['autocomplete']}"
         for field in data["fields"]
     ]
-    error_messages = " | ".join(data["errors"]) if data["errors"] else "None"
 
-    return "\n".join(field_descriptions) + f"\nErrors: {error_messages}"
+    return "\n".join(field_descriptions)
 
 
 # Signature for evaluation
 class EvaluateInteractiveCues(dspy.Signature):
     """Check if form fields use appropriate required attributes if they adopt that state."""
-    html_snippet_before = dspy.InputField(desc="Form HTML snippet before user interaction.")
+    #html_snippet_before = dspy.InputField(desc="Form HTML snippet before user interaction.") #Use this for full form
+    html_snippet_before = dspy.InputField(desc="A list of the fields from the form to evaluate before user interaction.") #Use this for fields
     mutations = dspy.InputField(desc="List of DOM mutations detected after submission of the form when left empty, capturing error messages and attribute changes.")
     retrieved_guidelines = dspy.InputField(desc="Relevant examples and best practices for the use of required attributes in form fields.")
     evaluation = dspy.OutputField(desc="An individual evaluation of each field based on their use of the required attribute, assigning Pass/Fail/Inapplicable to each of them with a brief explanation on the accessibility evaluation performed.")
@@ -445,20 +458,7 @@ class InteractiveCuesEvaluator(dspy.Module):
             queries=list(queries)
         )
 
-teleprompter = BootstrapFewShot(metric=lambda ex, pred, trace=None: "Pass" in pred.evaluation)
-
-
-compiled_evaluator_submit = teleprompter.compile(
-    InteractiveCuesEvaluator(), 
-    teacher=InteractiveCuesEvaluator(passages_per_hop=2), 
-    trainset=trainset
-)
-compiled_evaluator_no_submit = teleprompter.compile(
-    InteractiveCuesEvaluator(), 
-    teacher=InteractiveCuesEvaluator(passages_per_hop=2), 
-    trainset=trainset_no_submit
-)
-
+teleprompter = BootstrapFewShot(metric=lambda ex, pred, trace=None: "Pass" in pred.evaluation) #TODO changed from pass to "fail" not, review but i think its better this way
 
 html_before, mutations = extract_html_with_states(url)
 
@@ -469,9 +469,19 @@ if html_before:
 
     if clicked or mutations:
         print("Evaluating dynamic form interaction.")
+        compiled_evaluator_submit = teleprompter.compile(
+            InteractiveCuesEvaluator(), 
+            teacher=InteractiveCuesEvaluator(passages_per_hop=2), 
+            trainset=trainset
+        )
         pred = compiled_evaluator_submit(formatted_html, mutations)
     else:
         print("Submit button unclickable. Evaluating static form.")
+        compiled_evaluator_no_submit = teleprompter.compile(
+            InteractiveCuesEvaluator(), 
+            teacher=InteractiveCuesEvaluator(passages_per_hop=2), 
+            trainset=trainset_no_submit
+        )
         pred = compiled_evaluator_no_submit(formatted_html, None)  # Evaluate only HTML
 
     
