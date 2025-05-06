@@ -37,6 +37,7 @@ url = "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b" #Tem err
 #url = "https://business.quora.com/contact-us/" #NAO FUNCIONA formulario so abre quando clickado um botao para abrir modal dialog
 #url = "https://www.nba.com/account/sign-up"
 #url = "https://www.gsmarena.com/tipus.php3"
+#url = "https://www.net-empregos.com/" #NO labels just placeholders
 
 load_dotenv()
 os.environ["MISTRAL_API_KEY"] = os.getenv("MISTRAL_API_KEY", "")
@@ -197,7 +198,7 @@ def extract_buttons_for_llm(driver):
 class IdentifySubmitButton(dspy.Signature):
 
     buttons_info = dspy.InputField(desc="List of all button elements on the form (text, id, name, onclick, type).")
-    predicted_button_id = dspy.OutputField(desc="The exact XPATH of the button that is the most likely submit or advance button of the form (or 'None' if no ID exists).")
+    predicted_button_id = dspy.OutputField(desc="The XPATH of the button that is the most likely submit or advance button of the form (or 'None' if no such button exists).")
 
 identify_submit_button = dspy.ChainOfThought(IdentifySubmitButton)
 
@@ -331,12 +332,16 @@ class EvaluateInteractiveCues(dspy.Signature):
     html_snippet_before = dspy.InputField(desc="A list of the fields from the form to evaluate before user interaction.") #Use this for fields
     mutations = dspy.InputField(desc="List of DOM mutations detected after submission of the form when left empty, capturing error messages and attribute changes.")
     retrieved_guidelines = dspy.InputField(desc="Relevant examples and best practices for the use of required attributes in form fields.")
-    evaluation = dspy.OutputField(desc="An individual evaluation of each field based on their use of the required attribute, assigning Pass/Fail/Inapplicable to each of them with a brief explanation on the accessibility evaluation performed.")
-    format = dspy.OutputField(desc="""Use this exact structure for each evaluated field without the information in brackets:
-        -Identification(label or name of the field): <extracted info> 
-        -Evaluation("pass" or "fail" or "inapplicable"): <result>
-        -Reasoning(explanation of the evaluation result): <reason>
-        Ensure this format is followed exactly with no additional explanation.""")
+    identification = dspy.OutputField(desc="For each field, extract and list its identification (preferably its label or name attribute) from the HTML snippet.")
+    evaluation = dspy.OutputField(desc="""For each field, assess whether it correctly uses the 'required' attribute when appropriate based on the field’s behavior after submission (using the provided DOM mutations and best practice guidelines).
+Assign a simple result: 'pass', 'fail', or 'inapplicable' for each field.""")
+    reasoning = dspy.OutputField(desc="""For each field, explain briefly why the evaluation was 'pass', 'fail', or 'inapplicable'. 
+Focus the reasoning on accessibility concerns related to form validation cues (such as missing required attributes, inappropriate required attributes, or use of other mechanisms instead of HTML5 native required attribute).""")
+    format = dspy.OutputField(desc="""After filling Identification, Evaluation, and Reasoning individually for each field, assemble the final output with this structure for each field:
+-Identification(label or name of the field): <identification> 
+-Evaluation("pass" or "fail" or "inapplicable"): <evaluation>
+-Reasoning(explanation of the evaluation result): <reasoning>
+    Ensure this exact structure is followed without any additional commentary.""")
 
 # Generate a search query to find relevant WCAG guidelines and techniques for interactive cues.
 class GenerateSearchQuery(dspy.Signature):
@@ -454,6 +459,9 @@ class InteractiveCuesEvaluator(dspy.Module):
         return dspy.Prediction(
             retrieved_guidelines=retrieved_guidelines,
             evaluation=pred.evaluation,
+            identification=pred.identification,
+            reasoning=pred.reasoning,
+            format=pred.format,
             mutation_summary=mutation_summary,
             queries=list(queries)
         )
@@ -485,7 +493,9 @@ if html_before:
         pred = compiled_evaluator_no_submit(formatted_html, None)  # Evaluate only HTML
 
     
-    print(f"===== EVALUATION =====\n{pred.evaluation}")
+    #print(f"===== EVALUATION =====\n{pred.evaluation}")
+    print(f"===== EVALUATION =====\n{pred.format}")
+
     #print(f"===== RETRIEVED INFO =====\n{pred.retrieved_guidelines}")
     #print(f"===== MUTATIONS OBSERVED =====\n{pred.mutation_summary}")
 

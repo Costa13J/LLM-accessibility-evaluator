@@ -9,7 +9,10 @@ trainset = [
         
         retrieved_guidelines="Forms should provide error messages when required fields are left empty.",
         mutations="[Error Message Added] Password is required. (Field: '*Password:' | name='password')&&[DOM Node Added] Snippet: <span class='error' id='error-password'>Password is required.</span>... (Field: '*Password:' | name='password')",
-        evaluation="""-Identification: *Password
+        identification="*Password",
+        evaluation="pass",
+        reasoning="The field is marked with the required attribute and triggers an error message when left empty, meeting accessibility expectations.",
+        format="""-Identification: *Password
 -Evaluation: pass
 -Reasoning: The field is marked with the required attribute and triggers an error message when left empty, meeting accessibility expectations."""
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
@@ -21,18 +24,23 @@ trainset = [
        
         retrieved_guidelines="If an input field raises a required error message, it must provide the 'required' or aria-required='true' cue.",
         mutations="[Visible Error Message Revealed] Email is required. (Field: 'Email:' | name='email')&&[DOM Node Added] Snippet: <span class='error' id='error-email'>Email is required.</span>... (Field: 'Email:' | name='email')",
-        evaluation="""-Identification: *Email
+        identification="*Email",
+        evaluation="fail",
+        reasoning="The field raises an error because it is required but lacks the 'required' attribute.",
+        format="""-Identification: *Email
 -Evaluation: fail
 -Reasoning: The field raises an error because it is required but lacks the 'required' attribute."""
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
 
     #3 FAIL - Placeholder as a required indicator
     dspy.Example(
-        html_snippet_before="""<input type='text' name='username' id='username' placeholder='Enter your username (required)'>""",
-        
+        html_snippet_before="""<input type='text' name='username' id='username' placeholder='Enter your username (required)'>""", 
         retrieved_guidelines="Placeholders should not be the only indicator of a required field.",
         mutations="No dynamic changes detected after form interaction.",
-        evaluation="""-Identification: username
+        identification="username",
+        evaluation="fail",
+        reasoning="Placeholder text is not a reliable accessibility cue.",
+        format="""-Identification: username
 -Evaluation: fail
 -Reasoning: Placeholder text is not a reliable accessibility cue."""
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
@@ -44,19 +52,24 @@ trainset = [
         
         retrieved_guidelines="Forms should provide error messages when required fields are left empty.",
         mutations="No dynamic changes detected after form interaction.",
-        evaluation="""-Identification: *Email:
+        identification="*Email:",
+        evaluation="fail",
+        reasoning="The required field does not display an error message when left empty.",
+        format="""-Identification: *Email:
 -Evaluation: fail
--Reasoning: The required field does not display an error message when left empty."""
+-Reasoning: The required field does not display an error message when left empty."""        
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
 
     #5 FAIL - aria-required="true" used but no error message
     dspy.Example(
         html_snippet_before="""<label for='phone'>*Phone:</label>
                            <input type='tel' name='phone' id='phone' aria-required='true'>""",
-        
         retrieved_guidelines="ARIA attributes like 'aria-required' should be accompanied by proper error messages.",
         mutations="No dynamic changes detected after form interaction.",
-        evaluation="""-Identification: *Phone:
+        identification="*Phone:",
+        evaluation="fail",
+        reasoning="The form does not display an error message despite 'aria-required' being set.",
+        format="""-Identification: *Phone:
 -Evaluation: fail
 -Reasoning: The form does not display an error message despite 'aria-required' being set."""
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
@@ -65,10 +78,12 @@ trainset = [
     dspy.Example(
         html_snippet_before="""<label for='age'>*Age:</label>
                            <input type='number' name='age' id='age' disabled>""",
-        
         retrieved_guidelines="Disabled fields should not trigger required field error messages.",
         mutations=None,
-        evaluation="""-Identification: *Age:
+        identification="*Age:",
+        evaluation="pass",
+        reasoning="The field is disabled and does not incorrectly show an error message.",
+        format="""-Identification: *Age:
 -Evaluation: pass
 -Reasoning: The field is disabled and does not incorrectly show an error message."""
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
@@ -79,7 +94,10 @@ trainset = [
     <input type='text' name='zipcode' id='zipcode' disabled>""",
         retrieved_guidelines="Disabled fields should not trigger required field error messages.",
         mutations="[Error Message Added] ZIP Code is required. (Field: '*ZIP Code:' | name='zipcode')",
-        evaluation="""-Identification: *ZIP Code
+        identification="*ZIP Code",
+        evaluation="fail",
+        reasoning="The field is disabled but still triggers a required error, which should not happen.",
+        format="""-Identification: *ZIP Code
 -Evaluation: fail
 -Reasoning: The field is disabled but still triggers a required error, which should not happen."""
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
@@ -92,9 +110,13 @@ trainset = [
         
         retrieved_guidelines="Readonly fields should not trigger required field error messages.",
         mutations="No dynamic changes detected after form interaction.",
-        evaluation="""-Identification: *Country:
+        identification="*Country:",
+        evaluation="pass",
+        reasoning="The field is readonly and does not incorrectly show an error message.",
+        format="""-Identification: *Country:
 -Evaluation: pass
 -Reasoning: The field is readonly and does not incorrectly show an error message."""
+
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
 
     #8 FAIL - Required Field with Hidden Error Message
@@ -104,7 +126,10 @@ trainset = [
         
         retrieved_guidelines="Error messages should be programmatically visible and not hidden with CSS.",
         mutations="[Hidden Error Message Detected] Username is required. (Field: '*Username:' | name='username')",
-        evaluation="""-Identification: *Username:
+        identification="*Username:",
+        evaluation="fail",
+        reasoning="The error message is present but visually hidden, which is an accessibility issue.",
+        format="""-Identification: *Username:
 -Evaluation: fail
 -Reasoning: The error message is present but visually hidden, which is an accessibility issue."""
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
@@ -114,7 +139,10 @@ trainset = [
         html_snippet_before="""<input type='text' name='email' id='email' aria-invalid='true'>""",
         retrieved_guidelines="Fields marked with 'aria-invalid' should be accompanied by an error message.",
         mutations="No dynamic changes detected after form interaction.",
-        evaluation="""-Identification: email
+        identification="email",
+        evaluation="fail",
+        reasoning="The field is marked as invalid but lacks an error message.",
+        format="""-Identification: email
 -Evaluation: fail
 -Reasoning: The field is marked as invalid but lacks an error message."""
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
@@ -126,7 +154,10 @@ trainset = [
         
         retrieved_guidelines="Required checkboxes should trigger an error if left unchecked .",
         mutations="[Visible Error Message Revealed] You must agree to the terms. (Field: 'I agree to the terms' | name='terms')&&[DOM Node Added] Snippet: <div class='error'>You must agree to the terms.</div>...(Field: 'I agree to the terms' | name='terms')",
-        evaluation="""-Identification: *I agree to the terms:
+        identification="*I agree to the terms:",
+        evaluation="pass",
+        reasoning="The form correctly displays an error message when the required checkbox is not checked.",
+        format="""-Identification: *I agree to the terms:
 -Evaluation: pass
 -Reasoning: The form correctly displays an error message when the required checkbox is not checked."""
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
@@ -137,7 +168,10 @@ trainset = [
     <input type='checkbox' id='consent' name='consent' required>""",
         retrieved_guidelines="Required checkboxes should trigger an error if left unchecked.",
         mutations="No dynamic changes detected after form interaction.",
-        evaluation="""-Identification: *I consent to data collection
+        identification="*I consent to data collection",
+        evaluation="fail",
+        reasoning="The required checkbox does not display an error message when left unchecked.",
+        format="""-Identification: *I consent to data collection
 -Evaluation: fail
 -Reasoning: The required checkbox does not display an error message when left unchecked."""
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
@@ -147,7 +181,10 @@ trainset = [
         html_snippet_before="""<input type='hidden' name='csrf_token' value='abc123'>""",
         retrieved_guidelines="The 'required' attribute is not applicable to hidden input fields.",
         mutations="No dynamic changes detected after form interaction.",
-        evaluation="""-Identification: csrf_token
+        identification="csrf_token",
+        evaluation="inapplicable",
+        reasoning="Hidden fields are not meant to be user-editable and do not require the 'required' attribute.",
+        format="""-Identification: csrf_token
 -Evaluation: inapplicable
 -Reasoning: Hidden fields are not meant to be user-editable and do not require the 'required' attribute."""
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
@@ -158,7 +195,10 @@ trainset = [
     <input type='text' name='promo' id='promo' disabled>""",
         retrieved_guidelines="Disabled fields are excluded from validation and should not be evaluated for 'required' logic.",
         mutations="No dynamic changes detected after form interaction.",
-        evaluation="""-Identification: Promo Code
+        identification="Promo Code",
+        evaluation="inapplicable",
+        reasoning="The field is disabled and therefore excluded from validation logic including required checks.",
+        format="""-Identification: Promo Code
 -Evaluation: inapplicable
 -Reasoning: The field is disabled and therefore excluded from validation logic including required checks."""
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
@@ -169,7 +209,10 @@ trainset = [
     <input type='text' name='middle-name' id='middle-name'>""",
         retrieved_guidelines="Optional fields do not require the 'required' attribute or related validation feedback.",
         mutations="No dynamic changes detected after form interaction.",
-        evaluation="""-Identification: Middle Name (Optional)
+        identification="Middle Name (Optional)",
+        evaluation="pass",
+        reasoning="The field is intentionally optional and no validation logic is triggered on submit.",
+        format="""-Identification: Middle Name (Optional)
 -Evaluation: pass
 -Reasoning: The field is intentionally optional and no validation logic is triggered on submit."""
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
@@ -179,7 +222,10 @@ trainset = [
         html_snippet_before="""<input type='submit' value='Submit Form'>""",
         retrieved_guidelines="The 'required' attribute does not apply to submit buttons.",
         mutations="No dynamic changes detected after form interaction.",
-        evaluation="""-Identification: Submit Button
+        identification="Submit Button",
+        evaluation="inapplicable",
+        reasoning="Buttons are not user-input fields and are unaffected by required validation rules.",
+        format="""-Identification: Submit Button
 -Evaluation: inapplicable
 -Reasoning: Buttons are not user-input fields and are unaffected by required validation rules."""
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations")
