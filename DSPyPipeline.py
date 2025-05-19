@@ -24,20 +24,60 @@ from chromadb.utils import embedding_functions
 from dspy.retrieve.chromadb_rm import ChromadbRM
 from selenium.common.exceptions import JavascriptException
 from bs4 import BeautifulSoup
-
-
 import time
+from collections import Counter
+import re
+import logging
 
+logging.getLogger("chromadb").setLevel(logging.ERROR)
 counter = 0  #global counter
 clicked = False #global"clicked" boolean
 
+#Lança submit
 #url = "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62"
-url = "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b" #Tem erros de cues e lança submit
-#url = "https://www.continente.pt/loja-online/contactos/" #Tem erros de cues mas não lança submit
-#url = "https://business.quora.com/contact-us/" #NAO FUNCIONA formulario so abre quando clickado um botao para abrir modal dialog
-#url = "https://www.nba.com/account/sign-up"
+#url = "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b" #Tem erros de cues e lança submit
+#url = "https://www.nba.com/account/sign-up" #Lança submit e tem erros
+#url = "https://appserver2.ctt.pt/feapl_2/app/open/stationSearch/stationSearch.jspx?lang=def"
+#url = "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"
+#url = "https://www.ilovepdf.com/contact"
+#url = "https://support.fandango.com/fandangosupport/s/contactsupport"
+
+
+# NÃO lança submit
+#url = "https://www.continente.pt/loja-online/contactos/" #Tem erros de cues 
+#url = "https://www.continente.pt/checkout/entrega/" 
+#url = "https://www.ipma.pt/pt/siteinfo/contactar.jsp"
+#url = "https://suporte.decathlon.pt/hc/pt/requests/new?ticket_form_id=4421041894417" #REFRESH DA PAGINA AO SUBMETER
+#url = "https://appserver2.ctt.pt/femgu/app/open/enroll/showUserEnrollAction.jspx?lang=def&redirect=https://www.ctt.pt/ajuda/particulares/receber/gerir-correio-e-encomendas/reter-tudo-que-recebo-numa-loja-ctt#fndtn-panel2-2" #BOTAO BLOQUEADO SE NAO SELCIONAR UMA CHECKBOX ANTES
+#url = "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel"
+#url = "https://business.quora.com/contact-us/"
+#url = "https://cookpad.com/us/premium_signup/unified_subscription_purchases/new?web_subscription_plan_id=47" #Resultados estranhos para a pagina que é
+#url = "https://cam.merriam-webster.com/registration?utm_source=mw&utm_medium=global-nav-join&utm_campaign=evergreen&partnerCode=default_partner&_gl=1*s07wn2*_ga*NjcwNzY4MzE2LjE3MzkwMzc0NzA.*_ga_821K16B669*MTczOTAzNzQ3MC4xLjAuMTczOTAzNzQ3MC4wLjAuMA..&offerCode=mwu-monthly-free-trial"
+url = "https://www.medicalnewstoday.com/articles/323586#bmi-calculators"
 #url = "https://www.gsmarena.com/tipus.php3"
-#url = "https://www.net-empregos.com/" #NO labels just placeholders
+#url = "https://www.istockphoto.com/customer-support"
+#url = "https://www.infinite.media/bible-gateway/"
+
+
+#Não funciona
+#url = "https://www.net-empregos.com/" #NO labels just placeholders  DA ERRO A CORRER NORMAL TODO PERCEBER PQQ DA ERRO
+#url = "https://www.cricbuzz.com/info/contact"
+#url = "https://doctor.webmd.com/learnmore/profile"
+#url = "https://www.accuweather.com/en/contact"
+#url = "https://business.trustpilot.com/signup?cta=free-signup_header_home"
+#url = "https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360006586013"
+
+
+
+
+#Preciso estar logged - nao funciona
+#url = "https://loja.meo.pt/compra?modalidade-compra=pronto-pagamento" 
+#url = "https://www.decathlon.pt/p-r/calcado-de-caminhada-merrell-crosslander-mulher/_/R-p-X8761333?mc=8761333&offer=8761333" 
+#url = "https://www.decathlon.pt/checkout/shipping" 
+#url = "https://www.amazon.com/checkout/p/p-106-8712704-0157058/address?pipelineType=Chewbacca&referrer=address" 
+#url = "https://contribute.imdb.com/updates/edit?update=title&ref_=czone_ra_new_title"
+#url = "https://www.etsy.com/your/shops/me/onboarding/listing-editor/create#about"
+#url = "https://genius.com/new"
 
 load_dotenv()
 os.environ["MISTRAL_API_KEY"] = os.getenv("MISTRAL_API_KEY", "")
@@ -47,6 +87,7 @@ if not os.environ["MISTRAL_API_KEY"]:
 
 chroma_client = chromadb.PersistentClient(path="./chroma_db")
 collection = chroma_client.get_or_create_collection(name="wcag_guidelines")
+
 
 embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
 
@@ -86,6 +127,7 @@ def extract_form_html(driver):
 
 #Extracts the fields from the form, with their attributes and also errors  TODO doesnt exclude visibility:hidden as of now
 def extract_fields(driver):
+
     soup = BeautifulSoup(driver.page_source, 'html.parser')
     fields = []
 
@@ -94,17 +136,19 @@ def extract_fields(driver):
         if input_field.get('type') in ['hidden', 'submit', 'button']:
             continue
 
-        # Skip elements with display: none in inline style
+        # Skip inline styles that hide the field
         style = input_field.get("style", "").lower()
-        if "display:none" in style or "display: none" in style:
+        if any(s in style for s in ["display: none", "display:none", "visibility:hidden", "visibility: hidden"]):
             continue
 
-        # Skip inputs inside hidden containers (simplified check)
-        hidden_parent = input_field.find_parent(style=lambda s: s and "display: none" in s.lower())
+        # Skip fields inside visually hidden containers
+        hidden_parent = input_field.find_parent(
+            style=lambda s: s and any(x in s.lower() for x in ["display: none", "visibility: hidden"])
+        )
         if hidden_parent:
             continue
 
-        # === Label extraction logic ===
+        # === Label Extraction ===
         label_text = None
 
         # 1. label[for=id]
@@ -113,13 +157,13 @@ def extract_fields(driver):
             if label_elem:
                 label_text = label_elem.text.strip()
 
-        # 2. <label> wrapping the input
+        # 2. <label> wrapper
         if not label_text:
             wrapping_label = input_field.find_parent("label")
             if wrapping_label:
                 label_text = wrapping_label.text.strip()
 
-        # 3. aria-labelledby references
+        # 3. aria-labelledby
         if not label_text and input_field.has_attr("aria-labelledby"):
             ids = input_field["aria-labelledby"].split()
             parts = []
@@ -130,14 +174,14 @@ def extract_fields(driver):
             if parts:
                 label_text = " ".join(parts)
 
-        # 4. fallback to placeholder
+        # 4. placeholder fallback
         if not label_text and input_field.has_attr("placeholder"):
             label_text = f"[placeholder] {input_field['placeholder'].strip()}"
 
         if not label_text:
             label_text = "No Label"
 
-        # === Value extraction logic ===
+        # === Value Extraction ===
         value = input_field.get("value", "")
         if input_field.name == "select":
             selected_option = input_field.find("option", selected=True)
@@ -146,12 +190,12 @@ def extract_fields(driver):
         if input_field.get("type") in ["checkbox", "radio"]:
             value = "checked" if input_field.has_attr("checked") else "unchecked"
 
-        # === Field info dictionary ===
+        # === Field Metadata ===
         field_info = {
             "label": label_text,
             "name": input_field.get("name", ""),
             "id": input_field.get("id", ""),
-            "type": input_field.get("type", input_field.name),  # fallback to tag name
+            "type": input_field.get("type", input_field.name),  # fallback to tag
             "value": value,
             "required": "yes" if input_field.has_attr("required") else "no required attribute",
             "disabled": "yes" if input_field.has_attr("disabled") else "no disabled attribute",
@@ -166,6 +210,7 @@ def extract_fields(driver):
     print(fields)
 
     return {"fields": fields}
+
 
 
 # Extracts all buttons and any element with an onclick event to pass to the LLM.
@@ -198,7 +243,7 @@ def extract_buttons_for_llm(driver):
 class IdentifySubmitButton(dspy.Signature):
 
     buttons_info = dspy.InputField(desc="List of all button elements on the form (text, id, name, onclick, type).")
-    predicted_button_id = dspy.OutputField(desc="The XPATH of the button that is the most likely submit or advance button of the form (or 'None' if no such button exists).")
+    predicted_button_id = dspy.OutputField(desc="The exact XPATH of the button that is the most likely submit or advance button of the form, only one (or 'None' if no such button exists).")
 
 identify_submit_button = dspy.ChainOfThought(IdentifySubmitButton)
 
@@ -226,6 +271,7 @@ def inject_mutation_observer(driver, script_path="mutationObserver.js"):
 
 # Finds and clicks the submit button using an LLM to identify it.
 def find_and_click_submit_button(driver):
+    global clicked
 
     try:
         inject_mutation_observer(driver)
@@ -325,6 +371,48 @@ def format_for_model(data):
     return "\n".join(field_descriptions)
 
 
+def save_to_json(prediction, url, submit_clicked, filename="results.json"):
+    field_blocks = re.split(r"-Identification:", prediction.format)[1:]  # Skip empty first part
+    structured_fields = []
+
+    for block in field_blocks:
+        try:
+            identification_match = re.search(r"^(.*?)\n", block.strip())
+            evaluation_match = re.search(r"-Evaluation:\s*(.*?)\n", block)
+            reasoning_match = re.search(r"-Reasoning:\s*(.*)", block, re.DOTALL)
+
+            field_info = {
+                "identification": identification_match.group(1).strip() if identification_match else "Unknown",
+                "evaluation": evaluation_match.group(1).strip() if evaluation_match else "Unknown",
+                "reasoning": reasoning_match.group(1).strip() if reasoning_match else "No reasoning provided"
+            }
+
+            structured_fields.append(field_info)
+        except Exception as e:
+            print(f"Error parsing field block: {e}\nBlock content:\n{block}")
+
+    result_entry = {
+        "url": url,
+        "submit_clicked": submit_clicked,
+        "fields": structured_fields
+    }
+
+    try:
+        if os.path.exists(filename):
+            with open(filename, "r", encoding="utf-8") as f:
+                existing_data = json.load(f)
+        else:
+            existing_data = []
+
+        existing_data.append(result_entry)
+
+        with open(filename, "w", encoding="utf-8") as f:
+            json.dump(existing_data, f, indent=4, ensure_ascii=False)
+        print(f"Structured results saved to {filename}")
+    except Exception as e:
+        print(f"Error saving structured results: {e}")
+
+
 # Signature for evaluation
 class EvaluateInteractiveCues(dspy.Signature):
     """Check if form fields use appropriate required attributes if they adopt that state."""
@@ -364,8 +452,6 @@ class InteractiveCuesEvaluator(dspy.Module):
         self.max_hops = max_hops
 
     #Formats mutation records into a structured text summary
-    from collections import Counter
-
     def process_mutations(self, mutations):
         if not mutations:
             return "No dynamic changes detected after form interaction."
@@ -385,25 +471,38 @@ class InteractiveCuesEvaluator(dspy.Module):
             field_name = m.get("fieldName", "")
             field_info = f" (Field: '{field_label}' | name='{field_name}')" if field_label or field_name else ""
 
+            warning_notes = []
 
             if m.get("type") == "attributes":
                 attr = m.get("attributeChanged")
                 val = m.get("newValue")
                 note = "Validation-related attribute changed." if m.get("validationFlag") else ""
 
-                if attr in ["style", "class"] and m.get("possibleErrorMessages"):
-                    for msg in m["possibleErrorMessages"]:
-                        summary.append(f"[Visible Error Message Revealed] {msg}{field_info}")
-                else:
-                    summary.append(f"[Attribute Change] {target} → '{attr}' updated to '{val}'{field_info}. {note}".strip())
+                if attr in ["style", "class"] and not m.get("validationFlag"):
+                    warning_notes.append("Style change not accompanied by semantic cues (e.g., ARIA).")
+
+                if attr in ["aria-invalid", "aria-describedby"]:
+                    note = "Semantic attribute updated."
+
+                for msg in m.get("possibleErrorMessages", []):
+                    summary.append(f"[Message Revealed] {msg}{field_info}")
+                    if not field_label and not field_name:
+                        warning_notes.append("Unlinked message: not programmatically associated with any input field.")
+
+                summary.append(f"[Attribute Change] {target} → '{attr}' updated to '{val}'{field_info}. {note}".strip())
+                if warning_notes:
+                    for w in warning_notes:
+                        summary.append(f"[Warning] {w}")
 
             elif m.get("type") == "childList":
                 added = m.get("addedNodes", [])
                 removed = m.get("removedNodes", [])
-                error_msgs = m.get("possibleErrorMessages", [])
+                messages = m.get("possibleErrorMessages", [])
 
-                for msg in error_msgs:
-                    summary.append(f"[Error Message Added] {msg}{field_info}")
+                for msg in messages:
+                    summary.append(f"[Visible Message] {msg}{field_info}")
+                    if not field_label and not field_name:
+                        summary.append(f"[Warning] Message not programmatically linked to any input field.")
 
                 for node_html in added:
                     snippet = node_html.strip().replace("\n", " ")[:200]
@@ -415,7 +514,6 @@ class InteractiveCuesEvaluator(dspy.Module):
 
         cleaned_summary = deduplicate(summary)
         return "\n".join(cleaned_summary)
-
 
 
     def forward(self, html_snippet_before, mutations, retrieved_guidelines=None):
@@ -466,8 +564,7 @@ class InteractiveCuesEvaluator(dspy.Module):
             queries=list(queries)
         )
 
-teleprompter = BootstrapFewShot(metric=lambda ex, pred, trace=None: "Pass" in pred.evaluation) #TODO changed from pass to "fail" not, review but i think its better this way
-
+teleprompter = BootstrapFewShot(metric=lambda ex, pred, trace=None: "Pass" in pred.evaluation)
 html_before, mutations = extract_html_with_states(url)
 
 #Output
@@ -483,6 +580,8 @@ if html_before:
             trainset=trainset
         )
         pred = compiled_evaluator_submit(formatted_html, mutations)
+        save_to_json(pred, url, submit_clicked=True)
+
     else:
         print("Submit button unclickable. Evaluating static form.")
         compiled_evaluator_no_submit = teleprompter.compile(
@@ -491,13 +590,13 @@ if html_before:
             trainset=trainset_no_submit
         )
         pred = compiled_evaluator_no_submit(formatted_html, None)  # Evaluate only HTML
+        save_to_json(pred, url, submit_clicked=False)
 
     
     #print(f"===== EVALUATION =====\n{pred.evaluation}")
-    print(f"===== EVALUATION =====\n{pred.format}")
-
     #print(f"===== RETRIEVED INFO =====\n{pred.retrieved_guidelines}")
     #print(f"===== MUTATIONS OBSERVED =====\n{pred.mutation_summary}")
+    print(f"===== EVALUATION ===== {url} =====\n{pred.format}")
 
 else:
     print("Failed to retrieve form data from the page.")
