@@ -37,11 +37,13 @@ clicked = False #global"clicked" boolean
 #url = "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62"
 #url = "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b" #Tem erros de cues e lança submit
 #url = "https://www.nba.com/account/sign-up" #Lança submit e tem erros
-#url = "https://appserver2.ctt.pt/feapl_2/app/open/stationSearch/stationSearch.jspx?lang=def"
-#url = "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"
+url = "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"
 #url = "https://www.ilovepdf.com/contact"
 #url = "https://support.fandango.com/fandangosupport/s/contactsupport"
+#url = "https://www.staples.pt/pt/pt/registo"
 
+#url="https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta"
+#url="https://www.business.reddit.com/speak-with-a-reddit-ads-expert?utm_product=ads-register-landing-page_product&utm_source=web3x_consumer"
 
 # NÃO lança submit
 #url = "https://www.continente.pt/loja-online/contactos/" #Tem erros de cues 
@@ -53,22 +55,20 @@ clicked = False #global"clicked" boolean
 #url = "https://business.quora.com/contact-us/"
 #url = "https://cookpad.com/us/premium_signup/unified_subscription_purchases/new?web_subscription_plan_id=47" #Resultados estranhos para a pagina que é
 #url = "https://cam.merriam-webster.com/registration?utm_source=mw&utm_medium=global-nav-join&utm_campaign=evergreen&partnerCode=default_partner&_gl=1*s07wn2*_ga*NjcwNzY4MzE2LjE3MzkwMzc0NzA.*_ga_821K16B669*MTczOTAzNzQ3MC4xLjAuMTczOTAzNzQ3MC4wLjAuMA..&offerCode=mwu-monthly-free-trial"
-url = "https://www.medicalnewstoday.com/articles/323586#bmi-calculators"
+#url = "https://www.medicalnewstoday.com/articles/323586#bmi-calculators"
 #url = "https://www.gsmarena.com/tipus.php3"
 #url = "https://www.istockphoto.com/customer-support"
 #url = "https://www.infinite.media/bible-gateway/"
 
 
 #Não funciona
-#url = "https://www.net-empregos.com/" #NO labels just placeholders  DA ERRO A CORRER NORMAL TODO PERCEBER PQQ DA ERRO
-#url = "https://www.cricbuzz.com/info/contact"
-#url = "https://doctor.webmd.com/learnmore/profile"
-#url = "https://www.accuweather.com/en/contact"
-#url = "https://business.trustpilot.com/signup?cta=free-signup_header_home"
-#url = "https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360006586013"
-
-
-
+#url = "https://www.net-empregos.com/" #Lança submit mas tem cookie popup que é avaliado instead  
+#url = "https://www.cricbuzz.com/info/contact"# não identifica fields
+#url = "https://doctor.webmd.com/learnmore/profile"#não identifica fields nem submit button
+#url = "https://www.accuweather.com/en/contact"#não identifica fields nem submit button
+#url = "https://business.trustpilot.com/signup?cta=free-signup_header_home"# não identifica fields
+#url = "https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360006586013"#não identifica fields nem submit button
+#url = "https://appserver2.ctt.pt/feapl_2/app/open/stationSearch/stationSearch.jspx?lang=def" #avalia os fields todos ao mesmo tempo
 
 #Preciso estar logged - nao funciona
 #url = "https://loja.meo.pt/compra?modalidade-compra=pronto-pagamento" 
@@ -105,7 +105,7 @@ dspy.settings.configure(lm=mini, rm=crm)
 def setup_webdriver():
     """Configures and launches a headless Chrome browser."""
     chrome_options = Options()
-    chrome_options.add_argument("--headless")  # Run without UI
+    #chrome_options.add_argument("--headless")  # Run without UI
     chrome_options.add_argument("--disable-gpu")
     chrome_options.add_argument("--no-sandbox")
     service = Service(ChromeDriverManager().install())  
@@ -148,20 +148,23 @@ def extract_fields(driver):
         if hidden_parent:
             continue
 
-        # === Label Extraction ===
+        # === Label Extraction with Source Annotation ===
         label_text = None
+        label_source = None
 
         # 1. label[for=id]
         if input_field.has_attr("id"):
             label_elem = soup.find("label", {"for": input_field["id"]})
-            if label_elem:
+            if label_elem and label_elem.text.strip():
                 label_text = label_elem.text.strip()
+                label_source = "label[for]"
 
         # 2. <label> wrapper
         if not label_text:
             wrapping_label = input_field.find_parent("label")
-            if wrapping_label:
+            if wrapping_label and wrapping_label.text.strip():
                 label_text = wrapping_label.text.strip()
+                label_source = "label-wrapper"
 
         # 3. aria-labelledby
         if not label_text and input_field.has_attr("aria-labelledby"):
@@ -169,17 +172,32 @@ def extract_fields(driver):
             parts = []
             for ref_id in ids:
                 label_ref = soup.find(id=ref_id)
-                if label_ref:
+                if label_ref and label_ref.text.strip():
                     parts.append(label_ref.text.strip())
             if parts:
                 label_text = " ".join(parts)
+                label_source = "aria-labelledby"
 
-        # 4. placeholder fallback
+        # 4. aria-label
+        if not label_text and input_field.has_attr("aria-label"):
+            label_text = input_field["aria-label"].strip()
+            label_source = "aria-label"
+
+        # 5. placeholder
         if not label_text and input_field.has_attr("placeholder"):
-            label_text = f"[placeholder] {input_field['placeholder'].strip()}"
+            label_text = input_field["placeholder"].strip()
+            label_source = "placeholder"
 
+        # 6. title
+        if not label_text and input_field.has_attr("title"):
+            label_text = input_field["title"].strip()
+            label_source = "title"
+
+        # 7. fallback
         if not label_text:
             label_text = "No Label"
+            label_source = "none"
+
 
         # === Value Extraction ===
         value = input_field.get("value", "")
@@ -193,6 +211,7 @@ def extract_fields(driver):
         # === Field Metadata ===
         field_info = {
             "label": label_text,
+            "label_source": label_source,
             "name": input_field.get("name", ""),
             "id": input_field.get("id", ""),
             "type": input_field.get("type", input_field.name),  # fallback to tag
@@ -344,6 +363,18 @@ def extract_html_with_states(url):
 
     driver = setup_webdriver()
     driver.get(url)
+    time.sleep(2)  # give time for banners to appear
+    inject_cookie_dismiss_script(driver)
+
+    # Wait up to 10 seconds for a form element to be present
+    try:
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.TAG_NAME, "form"))
+        )
+        print("Form loaded.")
+    except Exception as e:
+        print(f"Form did not load within timeout: {e}")
+
 
     #initial_data = extract_form_html(driver) #Use this for full form
     initial_data = extract_fields(driver) #Use this for fields
@@ -411,6 +442,32 @@ def save_to_json(prediction, url, submit_clicked, filename="results.json"):
         print(f"Structured results saved to {filename}")
     except Exception as e:
         print(f"Error saving structured results: {e}")
+
+def inject_cookie_dismiss_script(driver):
+    js = """
+    const selectors = [
+        'button[id*="cookie"]',
+        'button[class*="cookie"]',
+        'button[name*="cookie"]',
+        '[id*="cookie"] button',
+        '[class*="cookie"] button',
+        '[id*="consent"] button',
+        '[class*="consent"] button',
+        '[aria-label*="cookie"]',
+        '[data-testid*="cookie"]'
+    ];
+
+    selectors.forEach(sel => {
+        const btns = document.querySelectorAll(sel);
+        btns.forEach(btn => {
+            if (btn && btn.offsetParent !== null) {
+                try { btn.click(); } catch (e) {}
+            }
+        });
+    });
+    """
+    driver.execute_script(js)
+
 
 
 # Signature for evaluation
