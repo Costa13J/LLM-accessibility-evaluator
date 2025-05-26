@@ -1,0 +1,373 @@
+{
+    "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62": [
+        {
+            "evaluated_fields": 4,
+            "matched": 4,
+            "mismatched": 0,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 0,
+            "submit_clicked": false
+        },
+        {
+            "evaluated_fields": 4,
+            "matched": 4,
+            "mismatched": 0,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 0,
+            "submit_clicked": true
+        },
+        {
+            "evaluated_fields": 4,
+            "matched": 4,
+            "mismatched": 0,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 0,
+            "submit_clicked": true
+        },
+        {
+            "evaluated_fields": 4,
+            "matched": 4,
+            "mismatched": 0,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 0,
+            "submit_clicked": true
+        },
+        {
+            "evaluated_fields": 4,
+            "matched": 4,
+            "mismatched": 0,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 0,
+            "submit_clicked": true
+        }
+    ],
+    "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b": [
+        {
+            "evaluated_fields": 5,
+            "matched": 4,
+            "mismatched": 0,
+            "absent": 1,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 0,
+            "submit_clicked": false
+        },
+        {
+            "evaluated_fields": 6,
+            "matched": 5,
+            "mismatched": 1,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 0,
+            "submit_clicked": false
+        },
+        {
+            "evaluated_fields": 6,
+            "matched": 5,
+            "mismatched": 1,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 0,
+            "submit_clicked": true
+        },
+        {
+            "evaluated_fields": 6,
+            "matched": 5,
+            "mismatched": 1,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 0,
+            "submit_clicked": true
+        },
+        {
+            "evaluated_fields": 6,
+            "matched": 5,
+            "mismatched": 0,
+            "absent": 1,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 0,
+            "submit_clicked": true
+        }
+    ],
+    "https://www.nba.com/account/sign-up": [
+        {
+            "evaluated_fields": 10,
+            "matched": 4,
+            "mismatched": 3,
+            "absent": 2,
+            "reasoning_mismatches": 3,
+            "no_benchmark_found": 1,
+            "submit_clicked": false
+        },
+        {
+            "evaluated_fields": 9,
+            "matched": 5,
+            "mismatched": 3,
+            "absent": 1,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 0,
+            "submit_clicked": true
+        },
+        {
+            "evaluated_fields": 9,
+            "matched": 6,
+            "mismatched": 2,
+            "absent": 1,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 0,
+            "submit_clicked": true
+        },
+        {
+            "evaluated_fields": 9,
+            "matched": 5,
+            "mismatched": 0,
+            "absent": 4,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 0,
+            "submit_clicked": true
+        },
+        {
+            "evaluated_fields": 9,
+            "matched": 5,
+            "mismatched": 3,
+            "absent": 1,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 0,
+            "submit_clicked": true
+        }
+    ],
+    "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0": [
+        {
+            "evaluated_fields": 5,
+            "matched": 1,
+            "mismatched": 0,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 4,
+            "submit_clicked": false
+        },
+        {
+            "evaluated_fields": 4,
+            "matched": 1,
+            "mismatched": 0,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 3,
+            "submit_clicked": true
+        },
+        {
+            "evaluated_fields": 4,
+            "matched": 1,
+            "mismatched": 0,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 3,
+            "submit_clicked": true
+        },
+        {
+            "evaluated_fields": 5,
+            "matched": 1,
+            "mismatched": 0,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 4,
+            "submit_clicked": true
+        }
+    ],
+    "https://www.ilovepdf.com/contact": [
+        {
+            "evaluated_fields": 6,
+            "matched": 6,
+            "mismatched": 0,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 0,
+            "submit_clicked": false
+        }
+    ],
+    "https://support.fandango.com/fandangosupport/s/contactsupport": [
+        {
+            "evaluated_fields": 8,
+            "matched": 0,
+            "mismatched": 1,
+            "absent": 7,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 0,
+            "submit_clicked": false
+        },
+        {
+            "evaluated_fields": 13,
+            "matched": 7,
+            "mismatched": 1,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 5,
+            "submit_clicked": false
+        }
+    ],
+    "https://www.continente.pt/loja-online/contactos/": [
+        {
+            "evaluated_fields": 9,
+            "matched": 0,
+            "mismatched": 0,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 9,
+            "submit_clicked": false
+        },
+        {
+            "evaluated_fields": 9,
+            "matched": 0,
+            "mismatched": 0,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 9,
+            "submit_clicked": false
+        }
+    ],
+    "https://www.continente.pt/checkout/entrega/": [
+        {
+            "evaluated_fields": 5,
+            "matched": 0,
+            "mismatched": 0,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 5,
+            "submit_clicked": false
+        }
+    ],
+    "https://www.ipma.pt/pt/siteinfo/contactar.jsp": [
+        {
+            "evaluated_fields": 9,
+            "matched": 0,
+            "mismatched": 0,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 9,
+            "submit_clicked": false
+        }
+    ],
+    "https://suporte.decathlon.pt/hc/pt/requests/new?ticket_form_id=4421041894417": [
+        {
+            "evaluated_fields": 6,
+            "matched": 0,
+            "mismatched": 0,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 6,
+            "submit_clicked": false
+        }
+    ],
+    "https://appserver2.ctt.pt/femgu/app/open/enroll/showUserEnrollAction.jspx?lang=def&redirect=https://www.ctt.pt/ajuda/particulares/receber/gerir-correio-e-encomendas/reter-tudo-que-recebo-numa-loja-ctt#fndtn-panel2-2": [
+        {
+            "evaluated_fields": 1,
+            "matched": 0,
+            "mismatched": 0,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 1,
+            "submit_clicked": false
+        }
+    ],
+    "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel": [
+        {
+            "evaluated_fields": 8,
+            "matched": 0,
+            "mismatched": 0,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 8,
+            "submit_clicked": false
+        }
+    ],
+    "https://business.quora.com/contact-us/": [
+        {
+            "evaluated_fields": 10,
+            "matched": 0,
+            "mismatched": 0,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 10,
+            "submit_clicked": false
+        }
+    ],
+    "https://cookpad.com/us/premium_signup/unified_subscription_purchases/new?web_subscription_plan_id=47": [
+        {
+            "evaluated_fields": 6,
+            "matched": 0,
+            "mismatched": 0,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 6,
+            "submit_clicked": false
+        }
+    ],
+    "https://cam.merriam-webster.com/registration?utm_source=mw&utm_medium=global-nav-join&utm_campaign=evergreen&partnerCode=default_partner&_gl=1*s07wn2*_ga*NjcwNzY4MzE2LjE3MzkwMzc0NzA.*_ga_821K16B669*MTczOTAzNzQ3MC4xLjAuMTczOTAzNzQ3MC4wLjAuMA..&offerCode=mwu-monthly-free-trial": [
+        {
+            "evaluated_fields": 6,
+            "matched": 0,
+            "mismatched": 0,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 6,
+            "submit_clicked": false
+        }
+    ],
+    "https://www.medicalnewstoday.com/articles/323586#bmi-calculators": [
+        {
+            "evaluated_fields": 6,
+            "matched": 0,
+            "mismatched": 0,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 6,
+            "submit_clicked": false
+        },
+        {
+            "evaluated_fields": 6,
+            "matched": 0,
+            "mismatched": 0,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 6,
+            "submit_clicked": false
+        }
+    ],
+    "https://www.gsmarena.com/tipus.php3": [
+        {
+            "evaluated_fields": 8,
+            "matched": 0,
+            "mismatched": 0,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 8,
+            "submit_clicked": false
+        }
+    ],
+    "https://www.istockphoto.com/customer-support": [
+        {
+            "evaluated_fields": 9,
+            "matched": 0,
+            "mismatched": 0,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 9,
+            "submit_clicked": false
+        }
+    ],
+    "https://www.infinite.media/bible-gateway/": [
+        {
+            "evaluated_fields": 5,
+            "matched": 0,
+            "mismatched": 0,
+            "absent": 0,
+            "reasoning_mismatches": 0,
+            "no_benchmark_found": 5,
+            "submit_clicked": false
+        }
+    ]
+}

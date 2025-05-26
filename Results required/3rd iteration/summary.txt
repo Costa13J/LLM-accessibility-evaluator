@@ -1,0 +1,10 @@
+https://www.staples.pt/pt/pt/registo: 100.00% (6/6 correct), Reasoning mismatches: 0
+https://www.ilovepdf.com/contact: 100.00% (6/6 correct), Reasoning mismatches: 0
+https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0: 33.33% (1/3 correct), Reasoning mismatches: 0
+https://www.nba.com/account/sign-up: 66.67% (4/6 correct), Reasoning mismatches: 0
+https://support.fandango.com/fandangosupport/s/contactsupport: 100.00% (8/8 correct), Reasoning mismatches: 0
+https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b: 83.33% (5/6 correct), Reasoning mismatches: 0
+https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62: 100.00% (4/4 correct), Reasoning mismatches: 0
+
+Overall Accuracy: 87.18% (34/39 correct)
+Total Reasoning Mismatches: 0
