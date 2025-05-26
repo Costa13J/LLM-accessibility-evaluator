@@ -1,5 +1,7 @@
 import json
 import difflib
+import os
+from collections import defaultdict
 
 valid_values = {"pass", "fail", "inapplicable"}
 
@@ -23,6 +25,7 @@ benchmarks = {
         "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve. (checkbox)": "fail"
     },
     "https://www.nba.com/account/sign-up": {
+        "Search Players or Teams (search)": "pass",
         "Email": "fail",
         "Password": "fail",
         "First Name (optional)": "pass",
@@ -48,12 +51,12 @@ benchmarks = {
     "https://www.ilovepdf.com/contact":{
         "Your Name": "pass",
         "Your Email": "pass",
-        "Subject (select)": "fail",
-        "Message": "fail",
-        "I accept Terms & Conditions and Legal & Privacy (checkbox)" : "fail",
-        "Informação pessoal (checkbox)": "pass"
+        "Subject (select)": "pass",
+        "Message": "pass",
+        "I accept Terms & Conditions and Legal & Privacy (checkbox)" : "pass"
     },
     "https://support.fandango.com/fandangosupport/s/contactsupport": {
+        "Search the knowledgebase": "pass",
         "First Name (Required)": "pass",
         "Last Name (Required)": "pass",
         "Email (Required)": "pass",
@@ -61,12 +64,22 @@ benchmarks = {
         "Subject (Required)": "pass",
         "Brand (Required) (select)": "pass",
         "How Can We Help? (Required) (textarea)": "pass"
+    },
+    "https://www.staples.pt/pt/pt/registo": {
+        "Nome": "fail",
+        "Email": "fail",
+        "Password": "fail",
+        "Divulgação a terceiros (checkbox)": "pass",
+        "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal, como descrito na Política de Privacidade. (checkbox)": "pass",
+        "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (checkbox)": "fail"
     }
 }
 
-# To store unmatched info
 unmatched_fields_by_url = {}
+summary_stats = {}
+grouped_by_url = defaultdict(list)
 
+# Match benchmark values to each run entry
 for entry in data:
     url = entry["url"]
     benchmark_map = benchmarks.get(url, {})
@@ -77,7 +90,7 @@ for entry in data:
         ident = field["identification"]
         eval_ = field["evaluation"].strip().lower()
 
-        # Try to find a close benchmark label
+        # Find closest benchmark label
         closest = difflib.get_close_matches(ident, benchmark_map.keys(), n=1, cutoff=0.5)
         if closest:
             matched_benchmark = closest[0]
@@ -89,12 +102,14 @@ for entry in data:
             else:
                 field["match"] = ""
 
+            field["reasoning_mismatch"] = False
+
             matched_benchmark_keys.add(matched_benchmark)
             matched_field_keys.add(ident)
-
         else:
             field["benchmark"] = "N/A"
             field["match"] = ""
+            field["reasoning_mismatch"] = False
 
     # Identify unmatched predictions and benchmark entries
     predicted_fields = {field["identification"] for field in entry["fields"]}
@@ -103,15 +118,86 @@ for entry in data:
     unmatched_predictions = predicted_fields - matched_field_keys
     unmatched_benchmark = benchmark_fields - matched_benchmark_keys
 
-    unmatched_fields_by_url[url] = {
-        "extra_model_fields": list(unmatched_predictions),
-        "missing_model_fields": list(unmatched_benchmark)
-    }
+    unmatched_fields_by_url.setdefault(url, {
+        "extra_model_fields": [],
+        "missing_model_fields": []
+    })
+    unmatched_fields_by_url[url]["extra_model_fields"].extend(list(unmatched_predictions))
+    unmatched_fields_by_url[url]["missing_model_fields"].extend(list(unmatched_benchmark))
+    unmatched_fields_by_url[url]["missing_model_fields"].extend([
+        {"label": key, "expected": benchmark_map[key]} for key in unmatched_benchmark
+    ])
+    
+    # Add "absent" placeholder for fields missing from model output
+    for label in unmatched_benchmark:
+        entry["fields"].append({
+            "identification": label,
+            "evaluation": "absent",
+            "benchmark": benchmark_map[label],
+            "match": "absent",
+            "reasoning_mismatch": False
+        })
 
-# Save enriched comparison
+    matched = sum(1 for f in entry["fields"] if f.get("match") == "✅")
+    mismatched = sum(1 for f in entry["fields"] if f.get("match") == "❌")
+    absent = sum(1 for f in entry["fields"] if f.get("match") == "absent")
+    no_benchmark = len(entry["fields"]) - matched - mismatched - absent
+
+    summary_stats.setdefault(url, []).append({
+        "evaluated_fields": len(entry["fields"]),
+        "matched": matched,
+        "mismatched": mismatched,
+        "absent": absent,
+        "no_benchmark_found": no_benchmark,
+        "submit_clicked": entry.get("submit_clicked", False)
+    })
+
+    grouped_by_url[url].append(entry)
+
+# Aggregate field stats
+aggregated_results = {}
+
+for url, runs in grouped_by_url.items():
+    benchmark_map = benchmarks.get(url, {})
+    field_stats = {}
+
+    for run in runs:
+        for field in run["fields"]:
+            ident = field["identification"]
+            eval_ = field["evaluation"].strip().lower()
+            match = field.get("match", "")
+            benchmark_val = field.get("benchmark", "N/A")
+            reasoning_mismatch = field.get("reasoning_mismatch", False)
+
+            if ident not in field_stats:
+                field_stats[ident] = {
+                    "total_evaluations": 0,
+                    "matches": 0,
+                    "mismatches": 0,
+                    "absent": 0,
+                    "reasoning_mismatches": 0,
+                    "benchmark": benchmark_val,
+                    "evaluations": []
+                }
+
+            field_stats[ident]["total_evaluations"] += 1
+            if match == "✅":
+                field_stats[ident]["matches"] += 1
+            elif match == "❌":
+                field_stats[ident]["mismatches"] += 1
+            elif match == "absent":
+                field_stats[ident]["absent"] += 1
+
+            if reasoning_mismatch:
+                field_stats[ident]["reasoning_mismatches"] += 1
+
+            field_stats[ident]["evaluations"].append(eval_)
+
+    aggregated_results[url] = field_stats
+
+# Save updated results
 with open("results_with_benchmarks.json", "w", encoding="utf-8") as f:
     json.dump(data, f, indent=4, ensure_ascii=False)
 
-# Save unmatched field report
 with open("unmatched_fields_report.json", "w", encoding="utf-8") as f:
     json.dump(unmatched_fields_by_url, f, indent=4, ensure_ascii=False)
