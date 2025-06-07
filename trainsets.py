@@ -1,10 +1,24 @@
 import dspy
 
 trainset = [
-    #1  PASS - Required field with an error message when empty.
+    #1  PASS - Required field with an error message when empty and correct attribute 'required'.
     dspy.Example(
         html_snippet_before="""<label for='password'>*Password:</label>
                            <input type='password' name='password' id='password' required>""",
+        retrieved_guidelines="Forms should provide error messages when required fields are left empty.",
+        mutations="[Error Message Added] Password is required. (Field: '*Password:' | name='password')&&[DOM Node Added] Snippet: <span class='error' id='error-password'>Password is required.</span>... (Field: '*Password:' | name='password')",
+        identification="*Password",
+        evaluation="pass",
+        reasoning="The field is marked with the required attribute and triggers an error message when left empty, meeting accessibility expectations.",
+        format="""-Identification: *Password
+-Evaluation: pass
+-Reasoning: The field is marked with the required attribute and triggers an error message when left empty, meeting accessibility expectations."""
+    ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
+
+    #1B  PASS - Required field with an error message when empty and correct attribute 'aria-required=true'.
+    dspy.Example(
+        html_snippet_before="""<label for='password'>*Password:</label>
+                           <input type='password' name='password' id='password' aria-required=true>""",
         retrieved_guidelines="Forms should provide error messages when required fields are left empty.",
         mutations="[Error Message Added] Password is required. (Field: '*Password:' | name='password')&&[DOM Node Added] Snippet: <span class='error' id='error-password'>Password is required.</span>... (Field: '*Password:' | name='password')",
         identification="*Password",
@@ -249,7 +263,7 @@ trainset = [
 
 ]
 
-#TODO expand
+
 trainset_no_submit = [
     #1 INAPPLICABLE - Required field cannot be validated without submit
     dspy.Example(
@@ -259,7 +273,7 @@ trainset_no_submit = [
         mutations="Unavailable: Submit interaction not possible.",
         identification="*Password:",
         evaluation="inapplicable",
-        reasoning="Can't confirm whether error messages appear for required fields without form submission..",
+        reasoning="Unable to determine if the required field triggers an error message without form submission.",
         format="""-Identification: *Password:
 -Evaluation: innaplicable
 -Reasoning: Unable to confirm whether error messages appear for required fields without form submission."""
@@ -279,17 +293,17 @@ trainset_no_submit = [
 -Reasoning: The field is missing a required attribute, as it has an asterisk"""
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
 
-    #3 FAIL - Placeholder as a required indicator
+    # 3 FAIL - Required indicated only by placeholder
     dspy.Example(
-        html_snippet_before="""<input type='text' name='username' id='username' placeholder='Enter your username (required)'>""",
+        html_snippet_before="""<input type='text' name='address' id='address' placeholder='Address (required)'>""",
         retrieved_guidelines="Placeholders should not be the only indicator of a required field.",
         mutations="Unavailable: Submit interaction not possible.",
-        identification="username",
+        identification="address",
         evaluation="fail",
-        reasoning="Placeholder text is not a reliable accessibility cue.",
-        format="""-Identification: username
+        reasoning="The field appears to be required via placeholder, but lacks 'required' or 'aria-required', which is insufficient.",
+        format="""-Identification: address
 -Evaluation: fail
--Reasoning: Placeholder text is not a reliable accessibility cue."""
+-Reasoning: The field appears to be required via placeholder, but lacks 'required' or 'aria-required', which is insufficient."""
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
 
     #4 INAPPLICABLE - Error message absence cannot be confirmed
@@ -300,27 +314,13 @@ trainset_no_submit = [
         mutations="Unavailable: Submit interaction not possible.",
         identification="*Email:",
         evaluation="inapplicable",
-        reasoning="Cannot confirm whether the form shows an error message for this required field.",
+        reasoning="Without submission, it's unclear whether the required field provides error feedback.",
         format="""-Identification: *Email:
 -Evaluation: inapplicable
--Reasoning: Cannot confirm whether the form shows an error message for this required field."""
+-Reasoning: Without submission, it's unclear whether the required field provides error feedback."""
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
 
-    #5 INAPPLICABLE - Cannot verify error feedback on aria-required
-    dspy.Example(
-        html_snippet_before="""<label for='phone'>*Phone:</label>
-                           <input type='tel' name='phone' id='phone' aria-required='true'>""",
-        retrieved_guidelines="ARIA attributes like 'aria-required' should be accompanied by proper error messages.",
-        mutations="Unavailable: Submit interaction not possible.",
-        identification="*Phone:",
-        evaluation="inapplicable",
-        reasoning="Error message behavior cannot be determined without form submission.",
-        format="""-Identification: *Phone:
--Evaluation: inapplicable
--Reasoning: Error message behavior cannot be determined without form submission."""
-    ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
-
-    #6 PASS - Disabled field does not require submit to evaluate
+    #5 PASS - Disabled field does not require submit to evaluate
     dspy.Example(
         html_snippet_before="""<label for='age'>*Age:</label>
                            <input type='number' name='age' id='age' disabled>""",
@@ -334,7 +334,7 @@ trainset_no_submit = [
 -Reasoning: Disabled fields are exempt from required field validation, regardless of interaction."""
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
 
-    #7 PASS - Read-only field does not require submit to evaluate
+    #6 PASS - Read-only field does not require submit to evaluate
     dspy.Example(
         html_snippet_before="""<label for='country'>*Country:</label>
                            <input type='text' name='country' id='country' value='USA' readonly>""",
@@ -348,34 +348,20 @@ trainset_no_submit = [
 -Reasoning: Readonly fields are correctly excluded from validation requirements."""
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
 
-    #8 INAPPLICABLE - Cannot verify visibility of error message
+    # 7 FAIL - aria-invalid used statically without context
     dspy.Example(
-        html_snippet_before="""<label for='username'>*Username:</label>
-                        <input type='text' name='username' id='username' required>""",
-        retrieved_guidelines="Error messages should be programmatically visible and not hidden with CSS.",
-        mutations="Unavailable: Submit interaction not possible.",
-        identification="*Username:",
-        evaluation="inapplicable",
-        reasoning="Cannot confirm whether an error message exists or is hidden.",
-        format="""-Identification: *Username:
--Evaluation: inapplicable
--Reasoning: Cannot confirm whether an error message exists or is hidden."""
-    ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
-
-    #9 FAIL - aria-invalid used without supporting context (static issue)
-    dspy.Example(
-        html_snippet_before="""<input type='text' name='email' id='email' aria-invalid='true'>""",
+        html_snippet_before="""<input type='text' name='state' id='state' aria-invalid='true'>""",
         retrieved_guidelines="Fields marked with 'aria-invalid' should be accompanied by an error message.",
         mutations="Unavailable: Submit interaction not possible.",
-        identification="email",
+        identification="state",
         evaluation="fail",
-        reasoning="Field marked as invalid but lacks structural indication of an accompanying error message.",
-        format="""-Identification: email
+        reasoning="The field is marked as invalid but no error message is visible or present in the code structure.",
+        format="""-Identification: state
 -Evaluation: fail
--Reasoning: Field marked as invalid but lacks structural indication of an accompanying error message."""
+-Reasoning: The field is marked as invalid but no error message is visible or present in the code structure."""
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
 
-    #10 INAPPLICABLE - Required checkbox error behavior cannot be confirmed
+    #8 INAPPLICABLE - Required checkbox error behavior cannot be confirmed
     dspy.Example(
         html_snippet_before="""<label for='terms'>*I agree to the terms:</label>
                         <input type='checkbox' id='terms' name='terms' required>""",
@@ -383,10 +369,65 @@ trainset_no_submit = [
         mutations="Unavailable: Submit interaction not possible.",
         identification="*I agree to the terms:",
         evaluation="inapplicable",
-        reasoning="Cannot confirm whether the form provides feedback when the checkbox is left unchecked.",
+        reasoning="Cannot confirm whether feedback appears for unchecked required checkbox without submission.",
         format="""-Identification: *I agree to the terms:
 -Evaluation: inapplicable
--Reasoning: Cannot confirm whether the form provides feedback when the checkbox is left unchecked."""
+-Reasoning: Cannot confirm whether feedback appears for unchecked required checkbox without submission."""
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
-    
+
+    # 9 PASS - Optional field clearly labeled
+    dspy.Example(
+        html_snippet_before="""<label for='middle-name'>Middle Name (Optional):</label>
+                        <input type='text' name='middle-name' id='middle-name'>""",
+        retrieved_guidelines="Optional fields do not require the 'required' attribute or validation feedback.",
+        mutations="Unavailable: Submit interaction not possible.",
+        identification="Middle Name (Optional)",
+        evaluation="pass",
+        reasoning="This optional field lacks any required marker and is consistent with accessibility expectations.",
+        format="""-Identification: Middle Name (Optional)
+-Evaluation: pass
+-Reasoning: This optional field lacks any required marker and is consistent with accessibility expectations."""
+    ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
+
+    # 10 FAIL - aria-required used without visible cue or context
+    dspy.Example(
+        html_snippet_before="""<input type='text' name='nickname' id='nickname' aria-required='true'>""",
+        retrieved_guidelines="If 'aria-required' is used, additional cues should exist to help users understand the requirement.",
+        mutations="Unavailable: Submit interaction not possible.",
+        identification="nickname",
+        evaluation="fail",
+        reasoning="The field uses 'aria-required' without visible text or labels to indicate it is mandatory, harming accessibility.",
+        format="""-Identification: nickname
+-Evaluation: fail
+-Reasoning: The field uses 'aria-required' without visible text or labels to indicate it is mandatory, harming accessibility."""
+    ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
+
+    # 11 PASS - Disabled field correctly excluded
+    dspy.Example(
+        html_snippet_before="""<label for='discount'>*Discount Code:</label>
+                        <input type='text' name='discount' id='discount' disabled>""",
+        retrieved_guidelines="Disabled fields are excluded from validation and do not require error messaging.",
+        mutations="Unavailable: Submit interaction not possible.",
+        identification="*Discount Code:",
+        evaluation="pass",
+        reasoning="Disabled fields are correctly excluded from validation and do not require feedback.",
+        format="""-Identification: *Discount Code:
+-Evaluation: pass
+-Reasoning: Disabled fields are correctly excluded from validation and do not require feedback."""
+    ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
+
+    #12 INAPPLICABLE - Can't verify visible feedback
+    dspy.Example(
+        html_snippet_before="""<label for='city'>*City:</label>
+                        <input type='text' name='city' id='city' aria-required='true'>""",
+        retrieved_guidelines="Fields using 'aria-required' should behave like required fields and trigger visible error messages when empty.",
+        mutations="Unavailable: Submit interaction not possible.",
+        identification="*City:",
+        evaluation="inapplicable",
+        reasoning="Without submission, it's not possible to confirm whether the expected error message appears.",
+        format="""-Identification: *City:
+-Evaluation: inapplicable
+-Reasoning: Without submission, it's not possible to confirm whether the expected error message appears."""
+    ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
+
 ]

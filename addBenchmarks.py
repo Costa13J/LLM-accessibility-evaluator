@@ -30,11 +30,11 @@ benchmarks = {
         "Password": "fail",
         "First Name (optional)": "pass",
         "Last Name (optional)": "pass",
-        "Data de nascimento (MM)": "fail",
-        "Data de nascimento (AAAA)": "fail",
-        "País/Região/Território (select)": "fail",
-        "Termos de responsabilidade (checkbox)" : "fail",
-        "Informação pessoal (checkbox)": "pass"
+        "Birthdate (MM)": "fail",
+        "Birthdate (AAAA)": "fail",
+        "Country/Region/Territory (select)": "fail",
+        "I agree to the terms(checkbox)" : "fail",
+        "Personal information (checkbox)": "pass"
     },
     "https://appserver2.ctt.pt/feapl_2/app/open/stationSearch/stationSearch.jspx?lang=def":{
         "Distrito (select)": "pass",
@@ -46,7 +46,10 @@ benchmarks = {
         "Aberto aos sábados e domingos (checkbox)": "pass"
     },
     "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0": {
-        "Enter your mobile number or email": "fail"
+        "Your name": "pass",
+        "Mobile number or email": "pass",
+        "Password": "pass",
+        "Re-enter password": "pass",
     },
     "https://www.ilovepdf.com/contact":{
         "Your Name": "pass",
@@ -57,13 +60,13 @@ benchmarks = {
     },
     "https://support.fandango.com/fandangosupport/s/contactsupport": {
         "Search the knowledgebase": "pass",
-        "First Name (Required)": "pass",
-        "Last Name (Required)": "pass",
-        "Email (Required)": "pass",
-        "Phone (Required)": "pass",
-        "Subject (Required)": "pass",
-        "Brand (Required) (select)": "pass",
-        "How Can We Help? (Required) (textarea)": "pass"
+        "First Name": "pass",
+        "Last Name": "pass",
+        "Email": "pass",
+        "Phone": "pass",
+        "Subject": "pass",
+        "Brand (select)": "pass",
+        "How Can We Help? (textarea)": "pass"
     },
     "https://www.staples.pt/pt/pt/registo": {
         "Nome": "fail",
