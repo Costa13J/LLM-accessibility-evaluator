@@ -37,10 +37,10 @@ clicked = False #global"clicked" boolean
 #url = "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62"
 #url = "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b" #Tem erros de cues e lança submit
 #url = "https://www.nba.com/account/sign-up" #Lança submit e tem erros
-url = "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"
+#url = "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"
 #url = "https://www.ilovepdf.com/contact"
 #url = "https://support.fandango.com/fandangosupport/s/contactsupport"
-#url = "https://www.staples.pt/pt/pt/registo"
+url = "https://www.staples.pt/pt/pt/registo"
 
 #url="https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta"
 #url="https://www.business.reddit.com/speak-with-a-reddit-ads-expert?utm_product=ads-register-landing-page_product&utm_source=web3x_consumer"
@@ -216,7 +216,12 @@ def extract_fields(driver):
             "id": input_field.get("id", ""),
             "type": input_field.get("type", input_field.name),  # fallback to tag
             "value": value,
-            "required": "yes" if input_field.has_attr("required") else "no required attribute",
+            "required": "yes" if input_field.has_attr("required") or input_field.get("aria-required", "").strip().lower() == "true" else "no required attribute",
+            "required_source": (
+                "required attribute" if input_field.has_attr("required")
+                else "aria-required" if input_field.get("aria-required", "").strip().lower() == "true"
+                else "none"
+            ),
             "disabled": "yes" if input_field.has_attr("disabled") else "no disabled attribute",
             "readonly": "yes" if input_field.has_attr("readonly") else "no read-only attribute",
             "autocomplete": input_field.get("autocomplete", "no autocomplete"),
@@ -337,6 +342,7 @@ def find_and_click_submit_button(driver):
 
 # Retrieves captured mutations from the Mutation Observer.
 def extract_mutation_observer_results(driver):
+    time.sleep(0.5)
     raw_mutations = driver.execute_script("return window.mutationRecords || []")
 
     structured_mutations = []
