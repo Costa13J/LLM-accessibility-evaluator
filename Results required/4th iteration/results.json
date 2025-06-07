@@ -1,0 +1,151 @@
+[
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your name (text)",
+                "evaluation": "pass",
+                "reasoning": "The field is required and correctly displays an error message when left empty. It also updates the `aria-invalid` and `aria-describedby` attributes appropriately."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is disabled and does not trigger any required validation, which is correct behavior for a disabled field."
+            },
+            {
+                "identification": "Mobile number or email (email)",
+                "evaluation": "pass",
+                "reasoning": "The field is required and correctly displays an error message when left empty. It also updates the `aria-invalid` and `aria-describedby` attributes appropriately."
+            },
+            {
+                "identification": "Password (password)",
+                "evaluation": "pass",
+                "reasoning": "The field is required and correctly displays an error message when left empty. It also updates the `aria-invalid` and `aria-describedby` attributes appropriately."
+            },
+            {
+                "identification": "Re-enter password (password)",
+                "evaluation": "pass",
+                "reasoning": "The field is required and correctly displays an error message when left empty. It also updates the `aria-invalid` and `aria-describedby` attributes appropriately."
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field triggers an error message when left empty, indicating it is required, but it lacks the 'required' attribute and the message is not programmatically linked."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The field triggers an error message when left empty, indicating it is required, but it lacks the 'required' attribute and the message is not programmatically linked."
+            },
+            {
+                "identification": "Data de nascimento (MM)",
+                "evaluation": "fail",
+                "reasoning": "The field triggers an error message when left empty, indicating it is required, but it lacks the 'required' attribute and the message is not programmatically linked."
+            },
+            {
+                "identification": "Data de nascimento (AAAA)",
+                "evaluation": "fail",
+                "reasoning": "The field triggers an error message when left empty, indicating it is required, but it lacks the 'required' attribute and the message is not programmatically linked."
+            },
+            {
+                "identification": "*I agree to the terms",
+                "evaluation": "fail",
+                "reasoning": "The field triggers an error message when left unchecked, indicating it is required, but it lacks the 'required' attribute and the message is not programmatically linked."
+            },
+            {
+                "identification": "Various checkboxes and text fields without specific labels",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific mutations or guidelines directly affect their 'required' attribute status."
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field triggers an error message when left empty, indicating it is required, but it lacks the 'required' attribute and the message is not programmatically linked."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The field triggers an error message when left empty, indicating it is required, but it lacks the 'required' attribute and the message is not programmatically linked."
+            },
+            {
+                "identification": "Data de nascimento (MM)",
+                "evaluation": "fail",
+                "reasoning": "The field triggers an error message when left empty, indicating it is required, but it lacks the 'required' attribute and the message is not programmatically linked."
+            },
+            {
+                "identification": "Data de nascimento (AAAA)",
+                "evaluation": "fail",
+                "reasoning": "The field triggers an error message when left empty, indicating it is required, but it lacks the 'required' attribute and the message is not programmatically linked."
+            },
+            {
+                "identification": "*I agree to the terms",
+                "evaluation": "fail",
+                "reasoning": "The field triggers an error message when left unchecked, indicating it is required, but it lacks the 'required' attribute and the message is not programmatically linked."
+            },
+            {
+                "identification": "Various checkboxes and text fields without specific labels",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific mutations or guidelines directly affect their 'required' attribute status."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the knowledgebase...",
+                "evaluation": "pass",
+                "reasoning": "This field does not have the 'required' attribute and is not marked as readonly or disabled. No validation-related changes are detected, so it is correctly not required."
+            },
+            {
+                "identification": "*First Name (Required)",
+                "evaluation": "pass",
+                "reasoning": "This field has the 'required' attribute and no dynamic changes indicate any issues with this requirement."
+            },
+            {
+                "identification": "*Last Name (Required)",
+                "evaluation": "pass",
+                "reasoning": "This field has the 'required' attribute and no dynamic changes indicate any issues with this requirement."
+            },
+            {
+                "identification": "*Email (Required)",
+                "evaluation": "pass",
+                "reasoning": "This field has the 'required' attribute and no dynamic changes indicate any issues with this requirement."
+            },
+            {
+                "identification": "*Phone (Required)",
+                "evaluation": "pass",
+                "reasoning": "This field has the 'required' attribute and no dynamic changes indicate any issues with this requirement."
+            },
+            {
+                "identification": "*Subject (Required)",
+                "evaluation": "pass",
+                "reasoning": "This field has the 'required' attribute and no dynamic changes indicate any issues with this requirement."
+            },
+            {
+                "identification": "*",
+                "evaluation": "pass",
+                "reasoning": "This field has the 'required' attribute and no dynamic changes indicate any issues with this requirement."
+            },
+            {
+                "identification": "*",
+                "evaluation": "pass",
+                "reasoning": "This field has the 'required' attribute and no dynamic changes indicate any issues with this requirement."
+            }
+        ]
+    }
+]

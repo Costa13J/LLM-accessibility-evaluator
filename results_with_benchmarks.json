@@ -1,0 +1,346 @@
+[
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail",
+                "evaluation": "fail",
+                "reasoning": "The field lacks the 'required' attribute but triggers a validation error message, indicating it is required. This discrepancy fails accessibility expectations as it does not provide a clear, programmatically determinable indication of its required status.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "evaluation": "fail",
+                "reasoning": "Similar to the email field, this field also lacks the 'required' attribute but shows an error message when left empty, failing to meet accessibility standards for required fields.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "País de residência",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the 'required' attribute but is expected to be required based on the context. The lack of the 'required' attribute and no error message on submission indicates a failure in accessibility.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve.",
+                "evaluation": "fail",
+                "reasoning": "The field lacks the 'required' attribute but is essential for legal compliance. The absence of the 'required' attribute and no error message on submission indicates a failure in accessibility.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "evaluation": "fail",
+                "reasoning": "The field triggers a validation message but lacks the 'required' attribute.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field triggers a validation message but lacks the 'required' attribute.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telemóvel (opcional)",
+                "evaluation": "pass",
+                "reasoning": "The field is optional and does not trigger validation, which is correct.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The field triggers a validation message but lacks the 'required' attribute.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Li e aceito as condições de utilização.",
+                "evaluation": "fail",
+                "reasoning": "The field triggers a validation message but lacks the 'required' attribute.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "País",
+                "evaluation": "fail",
+                "reasoning": "The field triggers a validation message but lacks the 'required' attribute.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": true
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Players or Teams",
+                "evaluation": "pass",
+                "reasoning": "The field does not have a 'required' attribute and no dynamic changes were detected, indicating it is optional.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Data de nascimento (MM)",
+                "evaluation": "fail",
+                "reasoning": "The field triggers a validation message indicating it is required but lacks the 'required' attribute.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Data de nascimento (AAAA)",
+                "evaluation": "fail",
+                "reasoning": "The field triggers a validation message indicating it is required but lacks the 'required' attribute.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field triggers a validation message indicating it is required but lacks the 'required' attribute. The style change is not sufficient for accessibility.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The field triggers a validation message indicating it is required but lacks the 'required' attribute. The style change is not sufficient for accessibility.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Tens de aceitar as Condições Gerais de Utilização e a Política de Privacidade",
+                "evaluation": "fail",
+                "reasoning": "The field triggers a validation message indicating it is required but lacks the 'required' attribute.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Personal information (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name (optional)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name (optional)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country/Region/Territory (select)",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your name (text)",
+                "evaluation": "pass",
+                "reasoning": "The field is required and correctly displays an error message when left empty. It also updates the `aria-invalid` and `aria-describedby` attributes appropriately.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is disabled and does not trigger any required validation, which is correct behavior for a disabled field.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile number or email (email)",
+                "evaluation": "pass",
+                "reasoning": "The field is required and correctly displays an error message when left empty. It also updates the `aria-invalid` and `aria-describedby` attributes appropriately.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password (password)",
+                "evaluation": "pass",
+                "reasoning": "The field is required and correctly displays an error message when left empty. It also updates the `aria-invalid` and `aria-describedby` attributes appropriately.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Re-enter password (password)",
+                "evaluation": "pass",
+                "reasoning": "The field is required and correctly displays an error message when left empty. It also updates the `aria-invalid` and `aria-describedby` attributes appropriately.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.ilovepdf.com/contact",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your Name",
+                "evaluation": "pass",
+                "reasoning": "The field is correctly marked as required.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your Email",
+                "evaluation": "pass",
+                "reasoning": "The field is correctly marked as required.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The field is correctly marked as required.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your Surname",
+                "evaluation": "pass",
+                "reasoning": "The field is correctly marked as not required.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "pass",
+                "reasoning": "The field is correctly marked as required.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I accept Terms & Conditions and Legal & Privacy",
+                "evaluation": "pass",
+                "reasoning": "The field is correctly marked as required.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the knowledgebase...",
+                "evaluation": "pass",
+                "reasoning": "The field does not have the 'required' attribute and is not marked as disabled or readonly. It does not trigger any validation errors, so it passes the evaluation.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "*First Name (Required)",
+                "evaluation": "pass",
+                "reasoning": "The field has the 'required' attribute and triggers a validation error when left empty, meeting accessibility expectations.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "*Last Name (Required)",
+                "evaluation": "pass",
+                "reasoning": "The field has the 'required' attribute and triggers a validation error when left empty, meeting accessibility expectations.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "*Email (Required)",
+                "evaluation": "pass",
+                "reasoning": "The field has the 'required' attribute and triggers a validation error when left empty, meeting accessibility expectations.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "*Phone (Required)",
+                "evaluation": "pass",
+                "reasoning": "The field has the 'required' attribute and triggers a validation error when left empty, meeting accessibility expectations.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "*Subject (Required)",
+                "evaluation": "pass",
+                "reasoning": "The field has the 'required' attribute and triggers a validation error when left empty, meeting accessibility expectations.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "* (select)",
+                "evaluation": "pass",
+                "reasoning": "The field has the 'required' attribute and triggers a validation error when left empty, meeting accessibility expectations.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "* (textarea)",
+                "evaluation": "pass",
+                "reasoning": "The field has the 'required' attribute and triggers a validation error when left empty, meeting accessibility expectations.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]
