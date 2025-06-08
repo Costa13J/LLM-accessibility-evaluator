@@ -1,0 +1,82 @@
+{
+    "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62": {
+        "extra_model_fields": [],
+        "missing_model_fields": []
+    },
+    "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b": {
+        "extra_model_fields": [],
+        "missing_model_fields": []
+    },
+    "https://www.nba.com/account/sign-up": {
+        "extra_model_fields": [
+            "Data de nascimento (AAAA)",
+            "Data de nascimento (MM)",
+            "Tens de aceitar as Condições Gerais de Utilização e a Política de Privacidade"
+        ],
+        "missing_model_fields": [
+            "Personal information (checkbox)",
+            "Birthdate (MM)",
+            "Last Name (optional)",
+            "First Name (optional)",
+            "Birthdate (AAAA)",
+            "Country/Region/Territory (select)",
+            "I agree to the terms(checkbox)",
+            {
+                "label": "Personal information (checkbox)",
+                "expected": "pass"
+            },
+            {
+                "label": "Birthdate (MM)",
+                "expected": "fail"
+            },
+            {
+                "label": "Last Name (optional)",
+                "expected": "pass"
+            },
+            {
+                "label": "First Name (optional)",
+                "expected": "pass"
+            },
+            {
+                "label": "Birthdate (AAAA)",
+                "expected": "fail"
+            },
+            {
+                "label": "Country/Region/Territory (select)",
+                "expected": "fail"
+            },
+            {
+                "label": "I agree to the terms(checkbox)",
+                "expected": "fail"
+            }
+        ]
+    },
+    "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0": {
+        "extra_model_fields": [
+            "No Label (select)"
+        ],
+        "missing_model_fields": []
+    },
+    "https://www.ilovepdf.com/contact": {
+        "extra_model_fields": [],
+        "missing_model_fields": []
+    },
+    "https://support.fandango.com/fandangosupport/s/contactsupport": {
+        "extra_model_fields": [
+            "*Email (Required)",
+            "*Phone (Required)"
+        ],
+        "missing_model_fields": [
+            "Email",
+            "Phone",
+            {
+                "label": "Email",
+                "expected": "pass"
+            },
+            {
+                "label": "Phone",
+                "expected": "pass"
+            }
+        ]
+    }
+}
