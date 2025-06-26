@@ -5,7 +5,7 @@ from collections import defaultdict
 
 valid_values = {"pass", "fail", "inapplicable"}
 
-with open("results_required.json", "r", encoding="utf-8") as f:
+with open("results_wcag-3.3.1.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 # Define your benchmarks here
@@ -13,53 +13,44 @@ benchmarks = {
     "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b": {
         "Nome": "fail",
         "Email": "fail",
-        "(+)351 (Portugal) (select)": "pass",
-        'Telemóvel': "pass",
+        "(+)351 (Portugal) (select)": "inapplicable",
+        'Telemóvel': "inapplicable",
         "Password": "fail",
         "Checkbox:Li e aceito as condições de utilização.": "fail"
     },
     "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62": {
         "Endereço de e-mail": "fail",
         "Confirma o teu endereço": "fail",
-        "País de residência (select)": "fail",
+        "País de residência (select)": "inapplicable",
         "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve. (checkbox)": "fail"
     },
     "https://www.nba.com/account/sign-up": {
-        "Search Players or Teams (search)": "pass",
+        "Search Players or Teams (search)": "inapplicable",
         "Email": "fail",
         "Password": "fail",
-        "First Name (optional)": "pass",
-        "Last Name (optional)": "pass",
+        "First Name (optional)": "inapplicable",
+        "Last Name (optional)": "inapplicable",
         "Birthdate (MM)": "fail",
         "Birthdate (AAAA)": "fail",
-        "Country/Region/Territory (select)": "fail",
+        "Country/Region/Territory (select)": "inapplicable",
         "I agree to the terms(checkbox)" : "fail",
-        "Personal information (checkbox)": "pass"
-    },
-    "https://appserver2.ctt.pt/feapl_2/app/open/stationSearch/stationSearch.jspx?lang=def":{
-        "Distrito (select)": "pass",
-        "Concelho (select)": "pass",
-        "Freguesia (select)": "pass",
-        "Localização": "pass",
-        "Horário (select)": "pass",
-        "Aberto depois das 18h (checkbox)": "pass",
-        "Aberto aos sábados e domingos (checkbox)": "pass"
-    },
+        "Personal information (checkbox)": "inapplicable"
+    },    
     "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0": {
         "Your name": "pass",
         "Mobile number or email": "pass",
         "Password": "pass",
-        "Re-enter password": "pass",
+        "Re-enter password": "fail",
     },
     "https://www.ilovepdf.com/contact":{
-        "Your Name": "pass",
-        "Your Email": "pass",
-        "Subject (select)": "pass",
-        "Message": "pass",
-        "I accept Terms & Conditions and Legal & Privacy (checkbox)" : "pass"
+        "Your Name": "fail",
+        "Your Email": "fail",
+        "Subject (select)": "fail",
+        "Message": "fail",
+        "I accept Terms & Conditions and Legal & Privacy (checkbox)" : "fail"
     },
     "https://support.fandango.com/fandangosupport/s/contactsupport": {
-        "Search the knowledgebase": "pass",
+        "Search the knowledgebase": "inapplicable",
         "First Name": "pass",
         "Last Name": "pass",
         "Email": "pass",
@@ -67,14 +58,6 @@ benchmarks = {
         "Subject": "pass",
         "Brand (select)": "pass",
         "How Can We Help? (textarea)": "pass"
-    },
-    "https://www.staples.pt/pt/pt/registo": {
-        "Nome": "fail",
-        "Email": "fail",
-        "Password": "fail",
-        "Divulgação a terceiros (checkbox)": "pass",
-        "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal, como descrito na Política de Privacidade. (checkbox)": "pass",
-        "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (checkbox)": "fail"
     }
 }
 
@@ -199,8 +182,8 @@ for url, runs in grouped_by_url.items():
     aggregated_results[url] = field_stats
 
 # Save updated results
-with open("results_with_benchmarks_required.json", "w", encoding="utf-8") as f:
+with open("results_with_benchmarks_wcag-3.3.1.json", "w", encoding="utf-8") as f:
     json.dump(data, f, indent=4, ensure_ascii=False)
 
-#with open("unmatched_fields_report_required.json", "w", encoding="utf-8") as f:
+#with open("unmatched_fields_report.json", "w", encoding="utf-8") as f:
 #    json.dump(unmatched_fields_by_url, f, indent=4, ensure_ascii=False)

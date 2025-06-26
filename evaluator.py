@@ -4,6 +4,7 @@ from dspy.teleprompt import BootstrapFewShot
 from llm_signatures import EvaluateInteractiveCues, GenerateSearchQuery, EvaluateErrorIdentification
 from constants import FALLBACK_QUERIES, FALLBACK_QUERIES_ERROR_IDENTIFICATION
 from trainsets import trainset, trainset_no_submit
+from trainsets_error import trainset_error_identification, trainset_error_identification_no_submit
 
 class InteractiveCuesEvaluator(dspy.Module):
     def __init__(self, passages_per_hop=3, max_hops=2):
@@ -128,10 +129,71 @@ class InteractiveCuesEvaluator(dspy.Module):
             queries=list(queries)
         )
     
-def run_evaluation(html_before, mutations, url, submit_clicked):
-    teleprompter = BootstrapFewShot(metric=lambda ex, pred, trace=None: "Pass" in pred.evaluation)
-    evaluator = InteractiveCuesEvaluator(passages_per_hop=2)
-    compiled = teleprompter.compile(evaluator, teacher=evaluator, trainset=(trainset if submit_clicked else trainset_no_submit))
+def run_evaluation(html_before, mutations, url, submit_clicked, evaluation_mode="wcag-3.3.1"):
+    from dspy.teleprompt import BootstrapFewShot
+
+    if evaluation_mode == "required":
+        from llm_signatures import EvaluateInteractiveCues, GenerateSearchQuery as GenerateSearchRequired
+        from trainsets import trainset, trainset_no_submit
+        signature_cls = EvaluateInteractiveCues
+        search_query_cls = GenerateSearchRequired
+        selected_trainset = trainset if submit_clicked else trainset_no_submit 
+
+    elif evaluation_mode == "wcag-3.3.1":
+        from llm_signatures import EvaluateErrorIdentification, GenerateSearchQuery as GenerateSearchError
+        from trainsets_error import trainset_error_identification, trainset_error_identification_no_submit
+        signature_cls = EvaluateErrorIdentification
+        search_query_cls = GenerateSearchError
+        selected_trainset = trainset_error_identification if submit_clicked else trainset_error_identification_no_submit
+
+    else:
+        raise ValueError(f"Unsupported evaluation_mode: {evaluation_mode}")
+
+    class DynamicEvaluator(dspy.Module):
+        def __init__(self, evaluate_signature, search_query_signature, passages_per_hop=2, max_hops=2):
+            super().__init__()
+            self.generate_query = [dspy.ChainOfThought(search_query_signature) for _ in range(max_hops)]
+            self.retrieve = dspy.Retrieve(k=passages_per_hop)
+            self.evaluate = dspy.ChainOfThought(evaluate_signature)
+            self.max_hops = max_hops
+
+        def forward(self, html_snippet_before, mutations, retrieved_guidelines=None):
+            retrieved_guidelines = []
+            queries = set()
+
+            for hop in range(self.max_hops):
+                try:
+                    query = self.generate_query[hop](html_snippet=html_snippet_before).query
+                    queries.add(query)
+
+                    passages = self.retrieve(query).passages
+                    if not passages:
+                        print("No passages retrieved. Using fallback.")
+                        passages = []  # You can add a fallback strategy here
+
+                    retrieved_guidelines = deduplicate(retrieved_guidelines + passages)
+                except Exception as e:
+                    print(f"[Hop {hop+1}] Retrieval error: {e}")
+                    continue
+
+            pred = self.evaluate(
+                html_snippet_before=html_snippet_before,
+                mutations=mutations or "No form interaction or dynamic changes to analyze.",
+                retrieved_guidelines=retrieved_guidelines
+            )
+
+            return dspy.Prediction(
+                retrieved_guidelines=retrieved_guidelines,
+                evaluation=pred.evaluation,
+                identification=pred.identification,
+                reasoning=pred.reasoning,
+                format=pred.format,
+                queries=list(queries)
+            )
+
+    evaluator = DynamicEvaluator(signature_cls, search_query_cls)
+    teleprompter = BootstrapFewShot(metric=lambda ex, pred, trace=None: "pass" in pred.evaluation.lower())
+    compiled = teleprompter.compile(evaluator, teacher=evaluator, trainset=selected_trainset)
 
     formatted_html = "\n".join(
         [

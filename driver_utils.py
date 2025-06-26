@@ -14,25 +14,57 @@ def setup_webdriver():
 
 def inject_cookie_dismiss_script(driver):
     js = """
-    const selectors = [
+    const buttonSelectors = [
+        '[id*="onetrust"] button',
+        '[class*="onetrust"] button',
+        'button[aria-label*="cookie"]',
+        'button[aria-label*="consent"]',
         'button[id*="cookie"]',
         'button[class*="cookie"]',
         'button[name*="cookie"]',
         '[id*="cookie"] button',
         '[class*="cookie"] button',
         '[id*="consent"] button',
-        '[class*="consent"] button',
-        '[aria-label*="cookie"]',
-        '[data-testid*="cookie"]'
+        '[class*="consent"] button'
     ];
 
-    selectors.forEach(sel => {
+    let clicked = false;
+
+    // First: Try all known/selective button selectors
+    buttonSelectors.forEach(sel => {
         const btns = document.querySelectorAll(sel);
         btns.forEach(btn => {
-            if (btn && btn.offsetParent !== null) {
-                try { btn.click(); } catch (e) {}
+            if (btn && btn.offsetParent !== null && !clicked) {
+                try {
+                    const text = btn.innerText.toLowerCase();
+                    if (text.includes("accept") || text.includes("yes")) {
+                        btn.click();
+                        clicked = true;
+                        console.log("Clicked button:", sel);
+                    }
+                } catch (e) {}
             }
         });
     });
+
+    // Second: If no buttons matched, try containers with aria-label and click buttons inside
+    if (!clicked) {
+        const containers = document.querySelectorAll('[aria-label*="cookie"], [aria-label*="consent"]');
+        containers.forEach(container => {
+            const buttons = container.querySelectorAll('button');
+            buttons.forEach(btn => {
+                if (btn && btn.offsetParent !== null && !clicked) {
+                    try {
+                        const text = btn.innerText.toLowerCase();
+                        if (text.includes("accept") || text.includes("yes") || text.includes("agree")) {
+                            btn.click();
+                            clicked = true;
+                            console.log("Clicked fallback button inside container:", text);
+                        }
+                    } catch (e) {}
+                }
+            });
+        });
+    }
     """
     driver.execute_script(js)

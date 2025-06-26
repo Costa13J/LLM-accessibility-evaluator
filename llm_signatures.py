@@ -19,7 +19,7 @@ Focus the reasoning on accessibility concerns related to form validation cues (s
     Ensure this exact structure is followed without any additional commentary.""")
 
 # Generate a search query to find relevant WCAG guidelines and techniques for interactive cues.
-"""class GenerateSearchQuery(dspy.Signature):
+class GenerateSearchRequired(dspy.Signature):
     html_snippet = dspy.InputField(desc=(
         "A structured HTML snippet representing form field attributes before and after user interaction. "
         "This includes relevant states such as `required`, `disabled`, `readonly`, and associated validation feedback."
@@ -27,7 +27,7 @@ Focus the reasoning on accessibility concerns related to form validation cues (s
     query = dspy.OutputField(desc=(
         "A well-formed search query designed to retrieve the most relevant examples from wcag and best practices. "
         "The query should focus on accessibility issues related to form cues, ensuring proper use of `required` attributes."
-    ))"""
+    ))
 
 # Generate a search query to find relevant WCAG guidelines and techniques for error identification.
 class GenerateSearchQuery(dspy.Signature):
@@ -43,37 +43,27 @@ class GenerateSearchQuery(dspy.Signature):
 
 #Failure to identify errors
 class EvaluateErrorIdentification(dspy.Signature):
-    html_snippet_before = dspy.InputField(desc=(
-        "List of form fields with their attributes before user interaction. "
-        "Each field includes label, type, required status, and any accessibility attributes."
-    ))
-
+    html_snippet_before = dspy.InputField(desc=("A list of the fields from the form to evaluate before user interaction."))
     mutations = dspy.InputField(desc=(
         "Summary of DOM mutations after form submission. Includes error messages, attribute changes "
         "like aria-invalid or aria-describedby, and whether messages are linked to input fields."
     ))
-
-    retrieved_guidelines = dspy.InputField(desc=(
-        "Relevant examples and best practices for identifying input errors and associating messages with fields."
-    ))
-
-    identification = dspy.OutputField(desc=(
-        "For each field, identify it by its label (preferred), or name/id if no label is available."
-    ))
-
+    retrieved_guidelines = dspy.InputField(desc=("Relevant examples and best practices for identifying input errors and associating messages with fields."))
+    identification = dspy.OutputField(desc=("For each field, identify it by its label (preferred), or name/id if no label is available."))
     evaluation = dspy.OutputField(desc=(
-        "For each field, state one of: 'pass', 'fail', or 'inapplicable'.\n"
-        "- pass: A visible error message is shown when the field is left empty, and it is programmatically or visually linked to the field.\n"
-        "- fail: No error message is shown, or it appears but is not clearly or programmatically linked to the field (e.g., missing aria-describedby, visual proximity, or clear label reference).\n"
-        "- inapplicable: The field is not expected to trigger a validation message (e.g., optional field)."
+    "For each field, assess whether it correctly identifies errors when they are thrown after submission, classifying them as 'pass', 'fail', or 'inapplicable'.\n"
+    "- pass: A text-based error message is shown when the field is empty, linked to the input, and explains the cause of the error.\n"
+    "- fail: The error message is missing, not linked, or too vague (e.g., just 'Invalid input').\n"
+    "- inapplicable: The field is optional or does not require validation for empty submission."
     ))
+
 
     reasoning = dspy.OutputField(desc=(
-        "For each field, explain why it passed, failed, or was inapplicable. "
+        "For each field, explain brieflt why the evaluation was 'pass', 'fail', or 'inapplicable' "
         "- Specify if an error message appeared after submission.\n"
     "- State whether the message was programmatically linked (e.g., via aria-describedby, 'for' attributes) or visually associated with the input.\n"
     "- Mention if semantic indicators like aria-invalid were added.\n"
-    "- If the field is inapplicable, explain why it is considered optional or not expected to show errors."
+    "- If the field is inapplicable, explain why."
     ))
 
     format = dspy.OutputField(desc=(
