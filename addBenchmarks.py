@@ -75,6 +75,47 @@ benchmarks = {
         "Divulgação a terceiros (checkbox)": "pass",
         "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal, como descrito na Política de Privacidade. (checkbox)": "pass",
         "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (checkbox)": "fail"
+    },
+    "https://www.infinite.media/bible-gateway/": {
+        "First Name": "pass",
+        "last Name": "pass",
+        "Email": "pass",
+        "Organization": "pass",
+        "Website": "pass"
+    },
+    "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta": {
+        "Email": "fail"
+    },
+    "https://www.ipma.pt/pt/siteinfo/contactar.jsp":{
+        "Nome": "pass",
+        "Organização": "pass",
+        "Email": "pass",
+        "Telefone": "pass",
+        "Assunto": "pass",
+        "Tema": "pass",
+        "Mensagem": "pass"
+    },
+    "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel":{  
+        "Distrito": "pass",
+        "Concelho": "pass",
+        "Localidade": "pass",
+        "Arruamento": "pass",
+        "NºPorta": "pass"
+    },
+    "https://doctor.webmd.com/learnmore/profile":{
+        "Email": "pass",
+        "Practice Name": "pass",
+        "Provider First Name": "pass",
+        "Provider Last Name": "pass",
+        "Direct Phone Number": "pass"
+    },
+    "https://www.cricbuzz.com/info/contact":{
+        "Name": "pass",
+        "Email": "pass",
+        "Subject": "pass",
+        "Message": "pass",
+        "Upload Screenshot (jpg,png,gif,bmp) (file)": "pass",
+        "Captcha": "inapplicable"
     }
 }
 

@@ -1,0 +1,345 @@
+[
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail (text): email",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically linked to the input field using `aria-describedby`, which is necessary for screen readers to announce the errors properly. The messages are also not visually associated with the input fields, and there is no indication of `aria-invalid` or similar semantic attributes being added.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirma o teu endereço (text): reenter_email",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically linked to the input field using `aria-describedby`, which is necessary for screen readers to announce the errors properly. The messages are also not visually associated with the input fields, and there is no indication of `aria-invalid` or similar semantic attributes being added.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "País de residência (select): country",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required and does not trigger validation errors.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve. (checkbox): terms_agreement",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is a checkbox for agreement and does not trigger validation errors.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "evaluation": "fail",
+                "reasoning": "The \"Nome\" field displays an error message \"Inserir nome\" but it is not programmatically associated with the input field, failing to meet the guidelines for error identification.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The \"Email\" field displays an error message \"Inserir email\" but it is not programmatically associated with the input field, failing to meet the guidelines for error identification.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The \"Password\" field displays an error message \"Defina uma password.\" but it is not programmatically associated with the input field, failing to meet the guidelines for error identification.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Li e aceito as condições de utilização.",
+                "evaluation": "fail",
+                "reasoning": "The \"Li e aceito as condições de utilização.\" checkbox displays an error message \"É necessário ler e aceitar as condições de utilização.\" but it is not programmatically associated with the input field, failing to meet the guidelines for error identification.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telemóvel (opcional)",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"Telemóvel (opcional)\" field is optional and does not require validation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "(+)351 (Portugal) (select)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "evaluation": "fail",
+                "reasoning": "The email field shows a visible error message but lacks semantic indicators like aria-invalid or aria-describedby.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "password",
+                "evaluation": "fail",
+                "reasoning": "The password field shows a visible error message but lacks semantic indicators like aria-invalid or aria-describedby.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Data de nascimento (MM)",
+                "evaluation": "fail",
+                "reasoning": "The month select field shows a visible error message but lacks semantic indicators like aria-invalid or aria-describedby.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Data de nascimento (AAAA)",
+                "evaluation": "fail",
+                "reasoning": "The year select field shows a visible error message but lacks semantic indicators like aria-invalid or aria-describedby.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "fail",
+                "reasoning": "The checkbox field does not show any error messages or semantic indicators.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "fail",
+                "reasoning": "The checkbox field does not show any error messages or semantic indicators.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Search Players or Teams (search)",
+                "evaluation": "inapplicable",
+                "reasoning": "The search field is inapplicable as it does not require validation for empty submission.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name (optional)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name (optional)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country/Region/Territory (select)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your name",
+                "evaluation": "pass",
+                "reasoning": "The error message is revealed and programmatically linked via aria-describedby. The input is marked as invalid with aria-invalid.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is disabled and does not require validation.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile number or email",
+                "evaluation": "pass",
+                "reasoning": "The error message is revealed and programmatically linked via aria-describedby. The input is marked as invalid with aria-invalid.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "The error message is revealed and programmatically linked via aria-describedby. The input is marked as invalid with aria-invalid.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Re-enter password",
+                "evaluation": "fail",
+                "reasoning": "The error message is revealed but not programmatically linked to the input field. The input is not marked as invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.ilovepdf.com/contact",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your Name",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is shown or linked.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your Email",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is shown or linked.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is shown or linked.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your Surname",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is shown or linked.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I accept Terms & Conditions and Legal & Privacy",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is shown or linked.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The mutations and error messages revealed do not pertain to the validation of this field.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The mutations and error messages revealed do not pertain to the validation of this field.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The mutations and error messages revealed do not pertain to the validation of this field.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The mutations and error messages revealed do not pertain to the validation of this field.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The mutations and error messages revealed do not pertain to the validation of this field.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "(select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The mutations and error messages revealed do not pertain to the validation of this field.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "(textarea)",
+                "evaluation": "inapplicable",
+                "reasoning": "The mutations and error messages revealed do not pertain to the validation of this field.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Search the knowledgebase",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

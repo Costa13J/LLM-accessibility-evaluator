@@ -1,0 +1,489 @@
+[
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail (text)",
+                "evaluation": "pass",
+                "reasoning": "The field does not have a required attribute, and there is no indication that it is mandatory."
+            },
+            {
+                "identification": "Confirma o teu endereço (text)",
+                "evaluation": "pass",
+                "reasoning": "The field does not have a required attribute, and there is no indication that it is mandatory."
+            },
+            {
+                "identification": "País de residência (select)",
+                "evaluation": "pass",
+                "reasoning": "The field does not have a required attribute, and there is no indication that it is mandatory."
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve. (checkbox)",
+                "evaluation": "pass",
+                "reasoning": "The field does not have a required attribute, and there is no indication that it is mandatory."
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Nome (text):",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute and is not marked as disabled or read-only. Since there is no form interaction, it is inapplicable to determine if it should have a required attribute."
+            },
+            {
+                "identification": "Email (email):",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute and is not marked as disabled or read-only. Since there is no form interaction, it is inapplicable to determine if it should have a required attribute."
+            },
+            {
+                "identification": "+351 (Portugal) (select):",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute and is not marked as disabled or read-only. Since there is no form interaction, it is inapplicable to determine if it should have a required attribute."
+            },
+            {
+                "identification": "Telemóvel (opcional) (tel):",
+                "evaluation": "pass",
+                "reasoning": "The field is optional and does not require a required attribute."
+            },
+            {
+                "identification": "Password (password):",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute and is not marked as disabled or read-only. Since there is no form interaction, it is inapplicable to determine if it should have a required attribute."
+            },
+            {
+                "identification": "Li e aceito as condições de utilização. (checkbox):",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute and is not marked as disabled or read-only. Since there is no form interaction, it is inapplicable to determine if it should have a required attribute."
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "pass",
+                "reasoning": "The field lacks a label and does not have a required attribute, making it optional."
+            },
+            {
+                "identification": "Search Players or Teams (search)",
+                "evaluation": "pass",
+                "reasoning": "The field lacks a required attribute, making it optional."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "pass",
+                "reasoning": "The field lacks a label and does not have a required attribute, making it optional."
+            },
+            {
+                "identification": "No Label (password)",
+                "evaluation": "pass",
+                "reasoning": "The field lacks a label and does not have a required attribute, making it optional."
+            },
+            {
+                "identification": "No Label (text) (second instance)",
+                "evaluation": "pass",
+                "reasoning": "The field lacks a label and does not have a required attribute, making it optional."
+            },
+            {
+                "identification": "No Label (text) (third instance)",
+                "evaluation": "pass",
+                "reasoning": "The field lacks a label and does not have a required attribute, making it optional."
+            },
+            {
+                "identification": "Data de nascimento (MM) (select)",
+                "evaluation": "pass",
+                "reasoning": "The field lacks a required attribute, making it optional."
+            },
+            {
+                "identification": "Data de nascimento (AAAA) (select)",
+                "evaluation": "pass",
+                "reasoning": "The field lacks a required attribute, making it optional."
+            },
+            {
+                "identification": "País/Região/Território (select)",
+                "evaluation": "pass",
+                "reasoning": "The field lacks a required attribute, making it optional."
+            },
+            {
+                "identification": "No Label (checkbox) (second instance)",
+                "evaluation": "pass",
+                "reasoning": "The field lacks a label and does not have a required attribute, making it optional."
+            },
+            {
+                "identification": "No Label (checkbox) (third instance)",
+                "evaluation": "pass",
+                "reasoning": "The field lacks a label and does not have a required attribute, making it optional."
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Your name (text)",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks the 'required' attribute, which is necessary for accessibility."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "pass",
+                "reasoning": "The field is disabled, so it does not need a 'required' attribute."
+            },
+            {
+                "identification": "Mobile number or email (email)",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks the 'required' attribute, which is necessary for accessibility."
+            },
+            {
+                "identification": "Password (password)",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks the 'required' attribute, which is necessary for accessibility."
+            },
+            {
+                "identification": "Re-enter password (password)",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks the 'required' attribute, which is necessary for accessibility."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ilovepdf.com/contact",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Your Name (text)",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks the 'required' attribute, which is necessary for accessibility."
+            },
+            {
+                "identification": "Your Email (text)",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks the 'required' attribute, which is necessary for accessibility."
+            },
+            {
+                "identification": "Subject (select)",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks the 'required' attribute, which is necessary for accessibility."
+            },
+            {
+                "identification": "Your Surname (text)",
+                "evaluation": "pass",
+                "reasoning": "The field is not required and does not need the 'required' attribute."
+            },
+            {
+                "identification": "Message (textarea)",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks the 'required' attribute, which is necessary for accessibility."
+            },
+            {
+                "identification": "I accept Terms & Conditions and Legal & Privacy (checkbox)",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks the 'required' attribute, which is necessary for accessibility."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Search the knowledgebase... (text)",
+                "evaluation": "pass",
+                "reasoning": "The field is not required and does not need a required attribute."
+            },
+            {
+                "identification": "First Name (Required) (text)",
+                "evaluation": "pass",
+                "reasoning": "The field is correctly marked as required."
+            },
+            {
+                "identification": "Last Name (Required) (text)",
+                "evaluation": "pass",
+                "reasoning": "The field is correctly marked as required."
+            },
+            {
+                "identification": "Email (Required) (text)",
+                "evaluation": "pass",
+                "reasoning": "The field is correctly marked as required."
+            },
+            {
+                "identification": "Phone (Required) (tel)",
+                "evaluation": "pass",
+                "reasoning": "The field is correctly marked as required."
+            },
+            {
+                "identification": "Subject (Required) (text)",
+                "evaluation": "pass",
+                "reasoning": "The field is correctly marked as required."
+            },
+            {
+                "identification": "select",
+                "evaluation": "pass",
+                "reasoning": "The field is correctly marked as required."
+            },
+            {
+                "identification": "textarea",
+                "evaluation": "pass",
+                "reasoning": "The field is correctly marked as required."
+            },
+            {
+                "identification": "Cookie list search (text)",
+                "evaluation": "pass",
+                "reasoning": "The field is not required and does not need a required attribute."
+            },
+            {
+                "identification": "checkbox label (checkbox)",
+                "evaluation": "pass",
+                "reasoning": "The field is not required and does not need a required attribute."
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Nome * (text)",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but lacks the 'required' attribute."
+            },
+            {
+                "identification": "Email * (email)",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but lacks the 'required' attribute."
+            },
+            {
+                "identification": "Password * (password)",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but lacks the 'required' attribute."
+            },
+            {
+                "identification": "NIF * (text)",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but lacks the 'required' attribute."
+            },
+            {
+                "identification": "Nome do cliente embaixador (text)",
+                "evaluation": "pass",
+                "reasoning": "The field is not required and correctly does not have the 'required' attribute."
+            },
+            {
+                "identification": "Permissão de aparecer nos dados do amigo que o convidou (checkbox)",
+                "evaluation": "pass",
+                "reasoning": "The field is not required and correctly does not have the 'required' attribute."
+            },
+            {
+                "identification": "Divulgação a terceiros (checkbox)",
+                "evaluation": "pass",
+                "reasoning": "The field is not required and correctly does not have the 'required' attribute."
+            },
+            {
+                "identification": "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal, como descrito na Política de Privacidade. (checkbox)",
+                "evaluation": "pass",
+                "reasoning": "The field is not required and correctly does not have the 'required' attribute."
+            },
+            {
+                "identification": "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (checkbox)",
+                "evaluation": "pass",
+                "reasoning": "The field is not required and correctly does not have the 'required' attribute."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "fail",
+                "reasoning": "The checkbox lacks a label, making it inaccessible as users may not understand its purpose."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail",
+                "evaluation": "fail",
+                "reasoning": "This field should be required for form submission as it is essential for user communication. The lack of a 'required' attribute may lead to invalid submissions without user notification."
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "evaluation": "fail",
+                "reasoning": "This field should also be required to ensure email confirmation. Without the 'required' attribute, the form may not prompt users to fill in this critical information."
+            },
+            {
+                "identification": "País de residência",
+                "evaluation": "fail",
+                "reasoning": "This field is typically required for compliance and localization purposes. The absence of a 'required' attribute might result in incomplete user data."
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve.",
+                "evaluation": "fail",
+                "reasoning": "This checkbox should be required to ensure users agree to the terms and conditions. The lack of a 'required' attribute could allow form submission without necessary consent."
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a 'required' attribute and no dynamic changes are detected, so it is not possible to determine if it should be required."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a 'required' attribute and no dynamic changes are detected, so it is not possible to determine if it should be required."
+            },
+            {
+                "identification": "Telemóvel (opcional) (tel)",
+                "evaluation": "pass",
+                "reasoning": "The field is optional and does not have a 'required' attribute, which is correct."
+            },
+            {
+                "identification": "Password (password)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a 'required' attribute and no dynamic changes are detected, so it is not possible to determine if it should be required."
+            },
+            {
+                "identification": "Li e aceito as condições de utilização. (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a 'required' attribute and no dynamic changes are detected, so it is not possible to determine if it should be required."
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is a checkbox and does not have a required attribute. Checkboxes typically do not use the 'required' attribute as they are not text input fields."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "Similar to the previous checkbox, this field does not have a required attribute, which is standard for checkboxes."
+            },
+            {
+                "identification": "Search Players or Teams (search)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute, which is appropriate if it is not a mandatory field for form submission."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute. Without more context, it is inapplicable to determine if this is correct or not."
+            },
+            {
+                "identification": "No Label (password)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute. Without more context, it is inapplicable to determine if this is correct or not."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute. Without more context, it is inapplicable to determine if this is correct or not.\n\n-"
+            }
+        ]
+    },
+    {
+        "url": "https://www.ilovepdf.com/contact",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your Name",
+                "evaluation": "pass",
+                "reasoning": "The field is required and does not have disabled or readonly attributes, so it should correctly use the 'required' attribute."
+            },
+            {
+                "identification": "Your Email",
+                "evaluation": "pass",
+                "reasoning": "The field is required and does not have disabled or readonly attributes, so it should correctly use the 'required' attribute."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The field is required and does not have disabled or readonly attributes, so it should correctly use the 'required' attribute."
+            },
+            {
+                "identification": "Your Surname",
+                "evaluation": "pass",
+                "reasoning": "The field is not required and does not have disabled or readonly attributes, so it does not need the 'required' attribute."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "pass",
+                "reasoning": "The field is required and does not have disabled or readonly attributes, so it should correctly use the 'required' attribute."
+            },
+            {
+                "identification": "I accept Terms & Conditions and Legal & Privacy",
+                "evaluation": "pass",
+                "reasoning": "The field is required and does not have disabled or readonly attributes, so it should correctly use the 'required' attribute."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the knowledgebase...",
+                "evaluation": "pass",
+                "reasoning": "The field is not required and does not need a 'required' attribute."
+            },
+            {
+                "identification": "*First Name (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is marked as required and should trigger an error message when left empty."
+            },
+            {
+                "identification": "*Last Name (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is marked as required and should trigger an error message when left empty."
+            },
+            {
+                "identification": "*Email (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is marked as required and should trigger an error message when left empty."
+            },
+            {
+                "identification": "*Phone (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is marked as required and should trigger an error message when left empty."
+            },
+            {
+                "identification": "*Subject (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is marked as required and should trigger an error message when left empty."
+            },
+            {
+                "identification": "*",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is marked as required and should trigger an error message when left empty."
+            },
+            {
+                "identification": "*",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is marked as required and should trigger an error message when left empty."
+            },
+            {
+                "identification": "Cookie list search",
+                "evaluation": "pass",
+                "reasoning": "The field is not required and does not need a 'required' attribute."
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "pass",
+                "reasoning": "The fields are not required and do not need a 'required' attribute."
+            }
+        ]
+    }
+]

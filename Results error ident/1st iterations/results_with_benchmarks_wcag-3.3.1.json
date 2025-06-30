@@ -1,0 +1,334 @@
+[
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the autocomplete attribute, which helps users and assistive technologies identify the input purpose.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the autocomplete attribute, which helps users and assistive technologies identify the input purpose.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "País de residência",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the autocomplete attribute, which helps users and assistive technologies identify the input purpose.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve.",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the autocomplete attribute, but it is a checkbox for agreement and does not require autocomplete.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute and there is no indication of any dynamic changes or error messages upon interaction.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute and there is no indication of any dynamic changes or error messages upon interaction.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "select",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute and there is no indication of any dynamic changes or error messages upon interaction.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telemóvel (opcional)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute and there is no indication of any dynamic changes or error messages upon interaction.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Li e aceito as condições de utilização.",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute and there is no indication of any dynamic changes or error messages upon interaction.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "(+)351 (Portugal) (select)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Players or Teams (search)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger validation feedback.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger validation feedback.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger validation feedback.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Data de nascimento (MM) (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger validation feedback.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Data de nascimento (AAAA) (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger validation feedback.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "País/Região/Território (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger validation feedback.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger validation feedback.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger validation feedback.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Personal information (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Birthdate (MM)",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Birthdate (AAAA)",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name (optional)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name (optional)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is required but no interaction or dynamic changes were detected to evaluate error identification.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is required but no interaction or dynamic changes were detected to evaluate error identification.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is required but no interaction or dynamic changes were detected to evaluate error identification.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is required but no interaction or dynamic changes were detected to evaluate error identification.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is required but no interaction or dynamic changes were detected to evaluate error identification.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is required but no interaction or dynamic changes were detected to evaluate error identification.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Textarea",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is required but no interaction or dynamic changes were detected to evaluate error identification.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Cookie list search",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "checkbox label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "These fields are optional and do not require validation.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How Can We Help? (textarea)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Brand (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

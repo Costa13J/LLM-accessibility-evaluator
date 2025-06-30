@@ -58,7 +58,60 @@ benchmarks = {
         "Subject": "pass",
         "Brand (select)": "pass",
         "How Can We Help? (textarea)": "pass"
+    },
+    "https://www.staples.pt/pt/pt/registo": {
+        "Nome": "fail",
+        "Email": "fail",
+        "Password": "fail",
+        "Divulgação a terceiros (checkbox)": "inapplicable",
+        "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal, como descrito na Política de Privacidade. (checkbox)": "inapplicable",
+        "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (checkbox)": "fail"
+    },
+    "https://www.infinite.media/bible-gateway/": {
+        "First Name": "pass",
+        "last Name": "pass",
+        "Email": "pass",
+        "Organization": "pass",
+        "Website": "inapplicable"
+    },
+    "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta": {
+        "Email": "fail"
+    },
+    "https://www.ipma.pt/pt/siteinfo/contactar.jsp":{
+        "Nome": "fail",
+        "Organização": "inapplicable",
+        "Email": "fail",
+        "Telefone": "inapplicable",
+        "Assunto": "inapplicable",
+        "Tema": "inapplicable",
+        "Mensagem": "fail"
+    },
+    "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel":{
+        "Distrito": "inapplicable",
+        "Concelho": "inapplicable",
+        "Localidade": "pass",
+        "Arruamento": "inapplicable",
+        "NºPorta": "inapplicable"
+    },
+    "https://doctor.webmd.com/learnmore/profile":{
+        "Email": "fail",
+        "Practice Name": "fail",
+        "Provider First Name": "fail",
+        "Provider Last Name": "fail",
+        "Direct Phone Number": "fail"
+    },
+    "https://www.cricbuzz.com/info/contact":{
+        "Name": "pass",
+        "Email": "pass",
+        "Subject": "pass",
+        "Message": "pass",
+        "Upload Screenshot (jpg,png,gif,bmp) (file)": "inapplicable",
+        "Captcha": "pass"
     }
+
+
+
+
 }
 
 unmatched_fields_by_url = {}

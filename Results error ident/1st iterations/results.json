@@ -1,0 +1,1284 @@
+[
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail (text): email",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically linked to the input field using `aria-describedby`, which is necessary for screen readers to announce the errors properly. The messages are also not visually associated with the input fields, and there is no indication of `aria-invalid` or similar semantic attributes being added."
+            },
+            {
+                "identification": "Confirma o teu endereço (text): reenter_email",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically linked to the input field using `aria-describedby`, which is necessary for screen readers to announce the errors properly. The messages are also not visually associated with the input fields, and there is no indication of `aria-invalid` or similar semantic attributes being added."
+            },
+            {
+                "identification": "País de residência (select): country",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required and does not trigger validation errors."
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve. (checkbox): terms_agreement",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is a checkbox for agreement and does not trigger validation errors."
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "evaluation": "fail",
+                "reasoning": "The \"Nome\" field displays an error message \"Inserir nome\" but it is not programmatically associated with the input field, failing to meet the guidelines for error identification."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The \"Email\" field displays an error message \"Inserir email\" but it is not programmatically associated with the input field, failing to meet the guidelines for error identification."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The \"Password\" field displays an error message \"Defina uma password.\" but it is not programmatically associated with the input field, failing to meet the guidelines for error identification."
+            },
+            {
+                "identification": "Li e aceito as condições de utilização.",
+                "evaluation": "fail",
+                "reasoning": "The \"Li e aceito as condições de utilização.\" checkbox displays an error message \"É necessário ler e aceitar as condições de utilização.\" but it is not programmatically associated with the input field, failing to meet the guidelines for error identification."
+            },
+            {
+                "identification": "Telemóvel (opcional)",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"Telemóvel (opcional)\" field is optional and does not require validation."
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "evaluation": "fail",
+                "reasoning": "The email field shows a visible error message but lacks semantic indicators like aria-invalid or aria-describedby."
+            },
+            {
+                "identification": "password",
+                "evaluation": "fail",
+                "reasoning": "The password field shows a visible error message but lacks semantic indicators like aria-invalid or aria-describedby."
+            },
+            {
+                "identification": "Data de nascimento (MM)",
+                "evaluation": "fail",
+                "reasoning": "The month select field shows a visible error message but lacks semantic indicators like aria-invalid or aria-describedby."
+            },
+            {
+                "identification": "Data de nascimento (AAAA)",
+                "evaluation": "fail",
+                "reasoning": "The year select field shows a visible error message but lacks semantic indicators like aria-invalid or aria-describedby."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "fail",
+                "reasoning": "The checkbox field does not show any error messages or semantic indicators."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "fail",
+                "reasoning": "The checkbox field does not show any error messages or semantic indicators."
+            },
+            {
+                "identification": "Search Players or Teams (search)",
+                "evaluation": "inapplicable",
+                "reasoning": "The search field is inapplicable as it does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your name",
+                "evaluation": "pass",
+                "reasoning": "The error message is revealed and programmatically linked via aria-describedby. The input is marked as invalid with aria-invalid."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is disabled and does not require validation."
+            },
+            {
+                "identification": "Mobile number or email",
+                "evaluation": "pass",
+                "reasoning": "The error message is revealed and programmatically linked via aria-describedby. The input is marked as invalid with aria-invalid."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "The error message is revealed and programmatically linked via aria-describedby. The input is marked as invalid with aria-invalid."
+            },
+            {
+                "identification": "Re-enter password",
+                "evaluation": "fail",
+                "reasoning": "The error message is revealed but not programmatically linked to the input field. The input is not marked as invalid."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ilovepdf.com/contact",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your Name",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is shown or linked."
+            },
+            {
+                "identification": "Your Email",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is shown or linked."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is shown or linked."
+            },
+            {
+                "identification": "Your Surname",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is shown or linked."
+            },
+            {
+                "identification": "I accept Terms & Conditions and Legal & Privacy",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is shown or linked."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The mutations and error messages revealed do not pertain to the validation of this field."
+            },
+            {
+                "identification": "Last Name (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The mutations and error messages revealed do not pertain to the validation of this field."
+            },
+            {
+                "identification": "Email (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The mutations and error messages revealed do not pertain to the validation of this field."
+            },
+            {
+                "identification": "Phone (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The mutations and error messages revealed do not pertain to the validation of this field."
+            },
+            {
+                "identification": "Subject (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The mutations and error messages revealed do not pertain to the validation of this field."
+            },
+            {
+                "identification": "(select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The mutations and error messages revealed do not pertain to the validation of this field."
+            },
+            {
+                "identification": "(textarea)",
+                "evaluation": "inapplicable",
+                "reasoning": "The mutations and error messages revealed do not pertain to the validation of this field."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not a form element and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": []
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not a form element and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "N/A (No specific form fields identified)",
+                "evaluation": "inapplicable",
+                "reasoning": "The mutations indicate that the messages revealed are not associated with any specific input field. They appear to be general notices or chat status updates rather than error messages for form fields. Since there are no form fields identified in the HTML snippet or the mutations, and the messages are not linked to any input, the evaluation focuses on the general lack of association."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "The messages revealed are not associated with any specific input field and are not programmatically linked. They appear to be general notifications or UI changes rather than error messages for form fields."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not a form element and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": []
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not a form element and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "N/A (No specific field identified)",
+                "evaluation": "fail",
+                "reasoning": "The mutations log indicates multiple unlinked error messages and attribute changes that are not associated with any specific input field. These messages are not programmatically linked to any form fields, and there is no clear indication of which field they are related to. This violates WCAG 3.3.1, which requires error messages to be programmatically associated with the relevant input fields."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "N/A",
+                "evaluation": "N/A",
+                "reasoning": "No fields to evaluate as no form interaction or dynamic changes occurred."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "N/A",
+                "evaluation": "N/A",
+                "reasoning": "No fields to evaluate as no form interaction or dynamic changes occurred."
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required, and there is no indication of any error message or aria-describedby linkage for validation feedback."
+            }
+        ]
+    },
+    {
+        "url": "https://www.business.reddit.com/speak-with-a-reddit-ads-expert?utm_product=ads-register-landing-page_product&utm_source=web3x_consumer",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Not applicable (no specific fields identified in the input)",
+                "evaluation": "fail",
+                "reasoning": "The mutations indicate multiple unlinked error messages that are not programmatically associated with any input field. These messages do not provide clear guidance on which fields are in error, failing to meet WCAG 3.3.1 guidelines. The changes in attributes like 'style' and 'class' are not accompanied by semantic cues such as aria-invalid or aria-describedby, making it difficult for assistive technologies to convey error information effectively."
+            }
+        ]
+    },
+    {
+        "url": "https://www.business.reddit.com/speak-with-a-reddit-ads-expert?utm_product=ads-register-landing-page_product&utm_source=web3x_consumer",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "N/A (No specific fields identified)",
+                "evaluation": "fail",
+                "reasoning": "The mutations log indicates multiple unlinked error messages and attribute changes that are not associated with any specific input field. These messages are not programmatically linked to any form fields, which means they do not meet the WCAG 3.3.1 requirement for error identification. The guidelines specify that error messages must be programmatically linked via 'aria-describedby' or similar mechanisms to ensure screen readers announce them properly."
+            }
+        ]
+    },
+    {
+        "url": "https://www.continente.pt/loja-online/contactos/",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "- Estritamente Necessários (checkbox)\n- Funcionais (checkbox)\n- Analíticos (checkbox)\n- Marketing / Publicitários (checkbox)\n- Estritamente Necessários (checkbox)\n- Funcionais (checkbox)\n- Analíticos (checkbox)\n- Marketing / Publicitários (checkbox)\n- Do not sell or share my personal information (checkbox)\n- O que procura? (search)\n- Insira o seu e-mail (text)\n- Consinto que a Modelo Continente Hipermercados, S.A. (MCH) me envie comunicações informativas e de marketing direto alusivas às suas marcas. (checkbox)",
+                "evaluation": "- inapplicable\n- inapplicable\n- inapplicable\n- inapplicable\n- inapplicable\n- inapplicable\n- inapplicable\n- inapplicable\n- inapplicable\n- inapplicable\n- fail\n- fail",
+                "reasoning": "- **Estritamente Necessários (checkbox)**: This field is disabled and does not require validation.\n- **Funcionais (checkbox)**: This field is not required and does not need validation.\n- **Analíticos (checkbox)**: This field is not required and does not need validation.\n- **Marketing / Publicitários (checkbox)**: This field is not required and does not need validation.\n- **Estritamente Necessários (checkbox)**: This field is disabled and does not require validation.\n- **Funcionais (checkbox)**: This field is not required and does not need validation.\n- **Analíticos (checkbox)**: This field is not required and does not need validation.\n- **Marketing / Publicitários (checkbox)**: This field is not required and does not need validation.\n- **Do not sell or share my personal information (checkbox)**: This field is not required and does not need validation.\n- **O que procura? (search)**: This field is not required and does not need validation.\n- **Insira o seu e-mail (text)**: This field is required but no error message or aria-describedby linkage is present.\n- **Consinto que a Modelo Continente Hipermercados, S.A. (MCH) me envie comunicações informativas e de marketing direto alusivas às suas marcas. (checkbox)**: This field is required but no error message or aria-describedby linkage is present."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "- Search the knowledgebase... (text)\n- First Name (Required) (text)\n- Last Name (Required) (text)\n- Email (Required) (text)\n- Phone (Required) (tel)\n- Subject (Required) (text)\n- Cookie list search (text)\n- checkbox label (checkbox)\n- Live chat: Chat with an Expert",
+                "evaluation": "- Search the knowledgebase... (text): inapplicable\n- First Name (Required) (text): fail\n- Last Name (Required) (text): fail\n- Email (Required) (text): fail\n- Phone (Required) (tel): fail\n- Subject (Required) (text): fail\n- Cookie list search (text): inapplicable\n- checkbox label (checkbox): inapplicable\n- Live chat: Chat with an Expert: fail",
+                "reasoning": "- **Search the knowledgebase... (text)**: This field is not required and does not trigger validation errors.\n- **First Name (Required) (text)**: This field is required but no error message or attribute change is mentioned, indicating a failure to identify errors.\n- **Last Name (Required) (text)**: This field is required but no error message or attribute change is mentioned, indicating a failure to identify errors.\n- **Email (Required) (text)**: This field is required but no error message or attribute change is mentioned, indicating a failure to identify errors.\n- **Phone (Required) (tel)**: This field is required but no error message or attribute change is mentioned, indicating a failure to identify errors.\n- **Subject (Required) (text)**: This field is required but no error message or attribute change is mentioned, indicating a failure to identify errors.\n- **Cookie list search (text)**: This field is not required and does not trigger validation errors.\n- **checkbox label (checkbox)**: These fields are not required and do not trigger validation errors.\n- **Live chat: Chat with an Expert**: The message is not programmatically associated with any input field, failing to meet WCAG 3.3.1 guidelines."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "N/A (No specific input fields identified in the provided snippet)",
+                "evaluation": "fail",
+                "reasoning": "The mutations log indicates several unlinked error messages that are not associated with any specific input field. These messages are not programmatically linked to any input fields via mechanisms like aria-describedby or similar, and they do not provide clear guidance on which field they are related to. This violates WCAG 3.3.1 and its ACT Rule, which require error messages to be programmatically associated with the relevant input fields."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "The input field does not have any associated error messages or validation attributes. The revealed messages are not related to the input field but rather to cookies and live chat functionality."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "1. email\n2. reenter_email\n3. captcha_text\n4. Unlinked Error Message (ACORDO DE SUBSCRIÇÃO STEAM®)",
+                "evaluation": "1. fail\n2. fail\n3. inapplicable\n4. fail",
+                "reasoning": "1. **email**:\n   - **Evaluation**: Fail\n   - **Reasoning**: The error message is not programmatically linked to the input field using `aria-describedby`. The message is only visually associated through proximity, which is insufficient for screen reader users.\n\n2. **reenter_email**:\n   - **Evaluation**: Fail\n   - **Reasoning**: Similar to the 'email' field, the error message is not programmatically linked to the input field using `aria-describedby`. The message is only visually associated through proximity, which is insufficient for screen reader users.\n\n3. **captcha_text**:\n   - **Evaluation**: Inapplicable\n   - **Reasoning**: The mutations do not indicate any error message or validation feedback for this field.\n\n4. **Unlinked Error Message (ACORDO DE SUBSCRIÇÃO STEAM®)**:\n   - **Evaluation**: Fail\n   - **Reasoning**: The error message is not programmatically associated with any input field. It is not linked using `aria-describedby` or any other ARIA attribute, making it inaccessible to screen reader users."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "- Endereço de e-mail (email)\n- Confirma o teu endereço (reenter_email)\n- ACORDO DE SUBSCRIÇÃO STEAM® (not associated with any field)",
+                "evaluation": "- Endereço de e-mail (email): fail\n- Confirma o teu endereço (reenter_email): fail\n- ACORDO DE SUBSCRIÇÃO STEAM®: inapplicable",
+                "reasoning": "The error messages for the fields \"Endereço de e-mail\" and \"Confirma o teu endereço\" are not programmatically linked to the input fields. The messages are revealed but not associated with the inputs via 'aria-describedby' or any other ARIA attribute. The 'style' changes indicate validation-related updates but do not include semantic indicators like 'aria-invalid'. The unlinked message \"ACORDO DE SUBSCRIÇÃO STEAM®\" is not associated with any field and does not provide context-specific error information."
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "1. Nome (text)\n2. Email (email)\n3. +351 (Portugal) (select)\n4. Telemóvel (opcional) (tel)\n5. Password (password)\n6. Li e aceito as condições de utilização. (checkbox)",
+                "evaluation": "1. fail\n2. fail\n3. inapplicable\n4. inapplicable\n5. fail\n6. fail",
+                "reasoning": "1. **Nome (text)**: The field is not marked as required, and no error message is directly associated with it upon submission. The revealed message \"Inserir nome\" is not programmatically linked to the input field.\n2. **Email (email)**: The field is not marked as required, and no error message is directly associated with it upon submission. The revealed message \"Inserir email\" is not programmatically linked to the input field.\n3. **+351 (Portugal) (select)**: This field is a select dropdown for country codes and does not require validation for empty submission.\n4. **Telemóvel (opcional) (tel)**: This field is optional and does not require validation for empty submission.\n5. **Password (password)**: The field is not marked as required, and no error message is directly associated with it upon submission. The revealed message \"Defina uma password\" is not programmatically linked to the input field.\n6. **Li e aceito as condições de utilização. (checkbox)**: The field is not marked as required, and no error message is directly associated with it upon submission. The revealed message \"É necessário ler e aceitar as condições de utilização\" is not programmatically linked to the input field."
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "- Nome\n- Email\n- Password\n- Telemóvel (opcional)",
+                "evaluation": "- fail\n- fail\n- fail\n- inapplicable",
+                "reasoning": "- The error messages for 'Nome', 'Email', and 'Password' are revealed but not programmatically associated with their respective input fields. This violates WCAG 3.3.1 as the errors are not linked via mechanisms like aria-describedby.\n- The message 'É necessário ler e aceitar as condições de utilização.' is also not linked to any specific field, making it unclear which input it refers to.\n- The 'Telemóvel (opcional)' field is optional and does not require validation, making error identification inapplicable."
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "- Nome\n- Email\n- Password\n- Telemóvel (opcional)",
+                "evaluation": "- fail\n- fail\n- fail\n- inapplicable",
+                "reasoning": "- The error messages for 'Nome', 'Email', and 'Password' are revealed but not programmatically associated with their respective input fields. This violates WCAG 3.3.1 as the errors are not linked via mechanisms like aria-describedby.\n- The message 'É necessário ler e aceitar as condições de utilização.' is also not linked to any specific field, making it unclear which input it refers to.\n- The 'Telemóvel (opcional)' field is optional and does not require validation, making error identification inapplicable."
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "- Nome\n- Email\n- Password\n- Telemóvel (opcional)",
+                "evaluation": "- fail\n- fail\n- fail\n- inapplicable",
+                "reasoning": "- The error messages for 'Nome', 'Email', and 'Password' are revealed but not programmatically associated with their respective input fields. This violates WCAG 3.3.1 as the errors are not linked via mechanisms like aria-describedby.\n- The message 'É necessário ler e aceitar as condições de utilização.' is also not linked to any specific field, making it unclear which input it refers to.\n- The 'Telemóvel (opcional)' field is optional and does not require validation, making error identification inapplicable."
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "- Nome\n- Email\n- Password\n- Li e aceito as condições de utilização\n- Telemóvel (opcional)\n- select\n- Cookie consent message",
+                "evaluation": "- fail\n- fail\n- fail\n- fail\n- inapplicable\n- inapplicable\n- inapplicable",
+                "reasoning": "- The \"Nome\" field does not have a required attribute and no error message is programmatically associated with it. The revealed message 'Inserir nome' is not linked to any field.\n- The \"Email\" field does not have a required attribute and no error message is programmatically associated with it. The revealed message 'Inserir email' is not linked to any field.\n- The \"Password\" field does not have a required attribute and no error message is programmatically associated with it. The revealed message 'Defina uma password' is not linked to any field.\n- The \"Li e aceito as condições de utilização\" checkbox does not have a required attribute and no error message is programmatically associated with it. The revealed message 'É necessário ler e aceitar as condições de utilização' is not linked to any field.\n- The \"Telemóvel (opcional)\" field is optional and does not require validation.\n- The \"select\" field for country codes does not have a required attribute and no error message is programmatically associated with it.\n- The cookie consent message is not associated with any form field and is not a validation error."
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "evaluation": "fail",
+                "reasoning": "The error message is revealed but not programmatically associated with the input field, violating WCAG 3.3.1."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The error message is revealed but not programmatically associated with the input field, violating WCAG 3.3.1."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The error message is revealed but not programmatically associated with the input field, violating WCAG 3.3.1."
+            },
+            {
+                "identification": "Telemóvel (opcional)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation, making error identification inapplicable."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "N/A",
+                "evaluation": "inapplicable",
+                "reasoning": "The mutations log indicates several unlinked error messages that are not associated with any specific form field. These messages include \"Agent Offline,\" \"Live chat: Chat with an Expert,\" and various cookie consent notices. These messages are not programmatically linked to any input fields and do not provide specific error identification or suggestions for correction. They are general notifications or informational messages rather than validation errors for form fields."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not a form input element and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "N/A (No specific field identified for evaluation)",
+                "evaluation": "fail",
+                "reasoning": "The mutations log indicates multiple unlinked error messages and attribute changes that are not semantically meaningful for validation purposes. The messages revealed, such as \"Cookie Notice\" and \"Back to Fandango,\" are not associated with any specific input field and lack programmatic linking via aria-describedby or similar mechanisms. These messages are also not visually or contextually linked to any form fields, making them inaccessible to screen readers and users relying on assistive technologies."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Not explicitly identifiable from the provided information.",
+                "evaluation": "inapplicable",
+                "reasoning": "The input field is not explicitly identified in the provided snippets, and there are no direct error messages linked to any specific input field. The mutations indicate several style and class changes, as well as revealed messages, but these are not associated with any form fields. The messages revealed are general notices about cookies and consent, not specific error messages for form validation."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not a form element and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not a form element and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not need validation."
+            },
+            {
+                "identification": "(text)",
+                "evaluation": "fail",
+                "reasoning": "The field is required but does not show an error message or have any validation changes."
+            },
+            {
+                "identification": "(text)",
+                "evaluation": "fail",
+                "reasoning": "The field is required but does not show an error message or have any validation changes."
+            },
+            {
+                "identification": "(text)",
+                "evaluation": "fail",
+                "reasoning": "The field is required but does not show an error message or have any validation changes."
+            },
+            {
+                "identification": "Email (Required)",
+                "evaluation": "fail",
+                "reasoning": "The field is required but does not show an error message or have any validation changes."
+            },
+            {
+                "identification": "Phone (Required)",
+                "evaluation": "fail",
+                "reasoning": "The field is required but does not show an error message or have any validation changes."
+            },
+            {
+                "identification": "(select-one)",
+                "evaluation": "fail",
+                "reasoning": "The field is required but does not show an error message or have any validation changes."
+            },
+            {
+                "identification": "(textarea)",
+                "evaluation": "fail",
+                "reasoning": "The field is required but does not show an error message or have any validation changes."
+            },
+            {
+                "identification": "Live chat",
+                "evaluation": "fail",
+                "reasoning": "The message is not programmatically associated with any input field, failing to meet WCAG 3.3.1 guidelines."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "(text): required=False, disabled=False, readonly=False, autocomplete=",
+                "evaluation": "fail",
+                "reasoning": "The field is required but does not show any error messages or have any programmatic associations for error identification."
+            },
+            {
+                "identification": "(text): required=True, disabled=False, readonly=False, autocomplete=",
+                "evaluation": "fail",
+                "reasoning": "The field is required but does not show any error messages or have any programmatic associations for error identification."
+            },
+            {
+                "identification": "(text): required=True, disabled=False, readonly=False, autocomplete=",
+                "evaluation": "fail",
+                "reasoning": "The field is required but does not show any error messages or have any programmatic associations for error identification."
+            },
+            {
+                "identification": "*Email (Required) (text): required=True, disabled=False, readonly=False, autocomplete=",
+                "evaluation": "fail",
+                "reasoning": "The field is required but does not show any error messages or have any programmatic associations for error identification."
+            },
+            {
+                "identification": "*Phone (Required) (tel): required=True, disabled=False, readonly=False, autocomplete=",
+                "evaluation": "fail",
+                "reasoning": "The field is required but does not show any error messages or have any programmatic associations for error identification."
+            },
+            {
+                "identification": "(text): required=True, disabled=False, readonly=False, autocomplete=",
+                "evaluation": "fail",
+                "reasoning": "The field is required but does not show any error messages or have any programmatic associations for error identification."
+            },
+            {
+                "identification": "* (select-one): required=True, disabled=False, readonly=False, autocomplete=",
+                "evaluation": "fail",
+                "reasoning": "The field is required but does not show any error messages or have any programmatic associations for error identification."
+            },
+            {
+                "identification": "* (textarea): required=True, disabled=False, readonly=False, autocomplete=",
+                "evaluation": "fail",
+                "reasoning": "The field is required but does not show any error messages or have any programmatic associations for error identification."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email (Required)",
+                "evaluation": "fail",
+                "reasoning": "The error message \"Live chat: Chat with an Expert\" is revealed but is not programmatically linked to the input field. There is no aria-describedby or similar mechanism to associate the message with the field, which is required."
+            },
+            {
+                "identification": "Phone (Required)",
+                "evaluation": "fail",
+                "reasoning": "The error message \"Live chat: Chat with an Expert\" is revealed but is not programmatically linked to the input field. There is no aria-describedby or similar mechanism to associate the message with the field, which is required."
+            },
+            {
+                "identification": "(text)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not trigger validation errors."
+            },
+            {
+                "identification": "(text)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not trigger validation errors."
+            },
+            {
+                "identification": "(text)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not trigger validation errors."
+            },
+            {
+                "identification": "(select-one)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not trigger validation errors."
+            },
+            {
+                "identification": "(textarea)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not trigger validation errors."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The error messages revealed are not associated with any specific form fields. They appear to be general cookie consent notices rather than validation errors for form inputs. Since these messages are not programmatically or visually linked to any input fields, they do not fulfill the requirements for error identification as per WCAG 3.3.1."
+            },
+            {
+                "identification": "Phone (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The error messages revealed are not associated with any specific form fields. They appear to be general cookie consent notices rather than validation errors for form inputs. Since these messages are not programmatically or visually linked to any input fields, they do not fulfill the requirements for error identification as per WCAG 3.3.1."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": []
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "[placeholder]Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not trigger validation errors."
+            },
+            {
+                "identification": "(text)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field."
+            },
+            {
+                "identification": "(text)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field."
+            },
+            {
+                "identification": "Email (Required)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field."
+            },
+            {
+                "identification": "Phone (Required)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field."
+            },
+            {
+                "identification": "(text)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field."
+            },
+            {
+                "identification": "* (select-one)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field."
+            },
+            {
+                "identification": "* (textarea)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": []
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "[placeholder]Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not trigger validation errors."
+            },
+            {
+                "identification": "(text)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field."
+            },
+            {
+                "identification": "(text)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field."
+            },
+            {
+                "identification": "Email (Required)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field."
+            },
+            {
+                "identification": "Phone (Required)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field."
+            },
+            {
+                "identification": "(text)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field."
+            },
+            {
+                "identification": "* (select-one)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field."
+            },
+            {
+                "identification": "* (textarea)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": []
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "[placeholder]Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not trigger validation errors."
+            },
+            {
+                "identification": "(text)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field."
+            },
+            {
+                "identification": "(text)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field."
+            },
+            {
+                "identification": "Email (Required)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field."
+            },
+            {
+                "identification": "Phone (Required)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field."
+            },
+            {
+                "identification": "(text)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field."
+            },
+            {
+                "identification": "* (select-one)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field."
+            },
+            {
+                "identification": "* (textarea)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": []
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "[placeholder]Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "The first text input field is not required, so no error message is expected."
+            },
+            {
+                "identification": "[placeholder]<empty>",
+                "evaluation": "fail",
+                "reasoning": "The second text input field is required but does not have any error messages or aria-describedby associations."
+            },
+            {
+                "identification": "[placeholder]<empty>",
+                "evaluation": "fail",
+                "reasoning": "The third text input field is required but does not have any error messages or aria-describedby associations."
+            },
+            {
+                "identification": "Email (Required)",
+                "evaluation": "fail",
+                "reasoning": "The Email (Required) field is required but does not have any error messages or aria-describedby associations."
+            },
+            {
+                "identification": "Phone (Required)",
+                "evaluation": "fail",
+                "reasoning": "The Phone (Required) field is required but does not have any error messages or aria-describedby associations."
+            },
+            {
+                "identification": "[placeholder]<empty>",
+                "evaluation": "fail",
+                "reasoning": "The fourth text input field is required but does not have any error messages or aria-describedby associations."
+            },
+            {
+                "identification": "[placeholder]<empty>",
+                "evaluation": "fail",
+                "reasoning": "The select-one field is required but does not have any error messages or aria-describedby associations."
+            },
+            {
+                "identification": "[placeholder]<empty>",
+                "evaluation": "fail",
+                "reasoning": "The textarea field is required but does not have any error messages or aria-describedby associations."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "[placeholder]Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "The first text field is optional and does not require validation."
+            },
+            {
+                "identification": "(text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The second text field is required but no interaction or dynamic changes were detected, so it's inapplicable to evaluate error identification."
+            },
+            {
+                "identification": "(text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The third text field is required but no interaction or dynamic changes were detected, so it's inapplicable to evaluate error identification."
+            },
+            {
+                "identification": "*Email (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The Email field is required, but no interaction or dynamic changes were detected, so it's inapplicable to evaluate error identification."
+            },
+            {
+                "identification": "*Phone (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The Phone field is required, but no interaction or dynamic changes were detected, so it's inapplicable to evaluate error identification."
+            },
+            {
+                "identification": "(text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The fourth text field is required but no interaction or dynamic changes were detected, so it's inapplicable to evaluate error identification."
+            },
+            {
+                "identification": "* (select-one)",
+                "evaluation": "inapplicable",
+                "reasoning": "The select-one field is required but no interaction or dynamic changes were detected, so it's inapplicable to evaluate error identification."
+            },
+            {
+                "identification": "* (textarea)",
+                "evaluation": "inapplicable",
+                "reasoning": "The textarea field is required but no interaction or dynamic changes were detected, so it's inapplicable to evaluate error identification."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "[placeholder]Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "The first text field is optional and does not require validation."
+            },
+            {
+                "identification": "(text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The second text field is required but no interaction or dynamic changes were detected, so it's inapplicable to evaluate error identification."
+            },
+            {
+                "identification": "(text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The third text field is required but no interaction or dynamic changes were detected, so it's inapplicable to evaluate error identification."
+            },
+            {
+                "identification": "*Email (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The Email field is required, but no interaction or dynamic changes were detected, so it's inapplicable to evaluate error identification."
+            },
+            {
+                "identification": "*Phone (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The Phone field is required, but no interaction or dynamic changes were detected, so it's inapplicable to evaluate error identification."
+            },
+            {
+                "identification": "(text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The fourth text field is required but no interaction or dynamic changes were detected, so it's inapplicable to evaluate error identification."
+            },
+            {
+                "identification": "* (select-one)",
+                "evaluation": "inapplicable",
+                "reasoning": "The select-one field is required but no interaction or dynamic changes were detected, so it's inapplicable to evaluate error identification."
+            },
+            {
+                "identification": "* (textarea)",
+                "evaluation": "inapplicable",
+                "reasoning": "The textarea field is required but no interaction or dynamic changes were detected, so it's inapplicable to evaluate error identification."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "[placeholder]Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is a search box and does not require validation."
+            },
+            {
+                "identification": "[placeholder]",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not labeled or identified, and no specific error message is associated with it."
+            },
+            {
+                "identification": "[placeholder]",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not labeled or identified, and no specific error message is associated with it."
+            },
+            {
+                "identification": "*Email (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message is revealed or associated with this field."
+            },
+            {
+                "identification": "*Phone (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message is revealed or associated with this field."
+            },
+            {
+                "identification": "[placeholder]",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not labeled or identified, and no specific error message is associated with it."
+            },
+            {
+                "identification": "*",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is a select dropdown and no specific error message is revealed or associated with it."
+            },
+            {
+                "identification": "*",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is a textarea and no specific error message is revealed or associated with it."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "[placeholder]Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is a search box and does not require validation."
+            },
+            {
+                "identification": "[placeholder]",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not labeled or identified, and no specific error message is associated with it."
+            },
+            {
+                "identification": "[placeholder]",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not labeled or identified, and no specific error message is associated with it."
+            },
+            {
+                "identification": "*Email (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message is revealed or associated with this field."
+            },
+            {
+                "identification": "*Phone (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message is revealed or associated with this field."
+            },
+            {
+                "identification": "[placeholder]",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not labeled or identified, and no specific error message is associated with it."
+            },
+            {
+                "identification": "*",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is a select dropdown and no specific error message is revealed or associated with it."
+            },
+            {
+                "identification": "*",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is a textarea and no specific error message is revealed or associated with it."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "[placeholder]Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not trigger validation errors."
+            },
+            {
+                "identification": "[placeholder]",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not trigger validation errors."
+            },
+            {
+                "identification": "[placeholder]",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not trigger validation errors."
+            },
+            {
+                "identification": "Email (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message is linked to this field."
+            },
+            {
+                "identification": "Phone (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message is linked to this field."
+            },
+            {
+                "identification": "[placeholder]",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not trigger validation errors."
+            },
+            {
+                "identification": "[placeholder]",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not trigger validation errors."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "[placeholder]Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "The cookie notice messages are not associated with any specific input field and are not related to form validation. They are general informational messages about cookie usage and preferences."
+            },
+            {
+                "identification": "(text): required=False, disabled=False, readonly=False, autocomplete=",
+                "evaluation": "inapplicable",
+                "reasoning": "The cookie notice messages are not associated with any specific input field and are not related to form validation. They are general informational messages about cookie usage and preferences."
+            },
+            {
+                "identification": "(text): required=True, disabled=False, readonly=False, autocomplete=",
+                "evaluation": "inapplicable",
+                "reasoning": "The cookie notice messages are not associated with any specific input field and are not related to form validation. They are general informational messages about cookie usage and preferences."
+            },
+            {
+                "identification": "*Email (Required) (text): required=True, disabled=False, readonly=False, autocomplete=",
+                "evaluation": "inapplicable",
+                "reasoning": "The cookie notice messages are not associated with any specific input field and are not related to form validation. They are general informational messages about cookie usage and preferences."
+            },
+            {
+                "identification": "*Phone (Required) (tel): required=True, disabled=False, readonly=False, autocomplete=",
+                "evaluation": "inapplicable",
+                "reasoning": "The cookie notice messages are not associated with any specific input field and are not related to form validation. They are general informational messages about cookie usage and preferences."
+            },
+            {
+                "identification": "(text): required=True, disabled=False, readonly=False, autocomplete=",
+                "evaluation": "inapplicable",
+                "reasoning": "The cookie notice messages are not associated with any specific input field and are not related to form validation. They are general informational messages about cookie usage and preferences."
+            },
+            {
+                "identification": "* (select-one): required=True, disabled=False, readonly=False, autocomplete=",
+                "evaluation": "inapplicable",
+                "reasoning": "The cookie notice messages are not associated with any specific input field and are not related to form validation. They are general informational messages about cookie usage and preferences."
+            },
+            {
+                "identification": "Unknown",
+                "evaluation": "Unknown",
+                "reasoning": "No reasoning provided"
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "[placeholder]Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is a search box and does not require validation."
+            },
+            {
+                "identification": "[placeholder]",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not labeled or identified, and no specific error message is associated with it."
+            },
+            {
+                "identification": "[placeholder]",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not labeled or identified, and no specific error message is associated with it."
+            },
+            {
+                "identification": "*Email (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message is revealed or associated with this field."
+            },
+            {
+                "identification": "*Phone (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message is revealed or associated with this field."
+            },
+            {
+                "identification": "[placeholder]",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not labeled or identified, and no specific error message is associated with it."
+            },
+            {
+                "identification": "*",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is a select dropdown and no specific error message is revealed or associated with it."
+            },
+            {
+                "identification": "*",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is a textarea and no specific error message is revealed or associated with it."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "[placeholder]Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is a search box and does not require validation."
+            },
+            {
+                "identification": "[placeholder]",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not labeled or identified, and no specific error message is associated with it."
+            },
+            {
+                "identification": "[placeholder]",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not labeled or identified, and no specific error message is associated with it."
+            },
+            {
+                "identification": "*Email (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message is revealed or associated with this field."
+            },
+            {
+                "identification": "*Phone (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message is revealed or associated with this field."
+            },
+            {
+                "identification": "[placeholder]",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not labeled or identified, and no specific error message is associated with it."
+            },
+            {
+                "identification": "*",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is a select dropdown and no specific error message is revealed or associated with it."
+            },
+            {
+                "identification": "*",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is a textarea and no specific error message is revealed or associated with it."
+            }
+        ]
+    }
+]

@@ -1,0 +1,3926 @@
+[
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the autocomplete attribute, which helps users and assistive technologies identify the input purpose."
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the autocomplete attribute, which helps users and assistive technologies identify the input purpose."
+            },
+            {
+                "identification": "País de residência",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the autocomplete attribute, which helps users and assistive technologies identify the input purpose."
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve.",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the autocomplete attribute, but it is a checkbox for agreement and does not require autocomplete."
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute and there is no indication of any dynamic changes or error messages upon interaction."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute and there is no indication of any dynamic changes or error messages upon interaction."
+            },
+            {
+                "identification": "select",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute and there is no indication of any dynamic changes or error messages upon interaction."
+            },
+            {
+                "identification": "Telemóvel (opcional)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute and there is no indication of any dynamic changes or error messages upon interaction."
+            },
+            {
+                "identification": "Li e aceito as condições de utilização.",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute and there is no indication of any dynamic changes or error messages upon interaction."
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Players or Teams (search)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger validation feedback."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger validation feedback."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger validation feedback."
+            },
+            {
+                "identification": "Data de nascimento (MM) (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger validation feedback."
+            },
+            {
+                "identification": "Data de nascimento (AAAA) (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger validation feedback."
+            },
+            {
+                "identification": "País/Região/Território (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger validation feedback."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger validation feedback."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger validation feedback."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation."
+            },
+            {
+                "identification": "First Name (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is required but no interaction or dynamic changes were detected to evaluate error identification."
+            },
+            {
+                "identification": "Last Name (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is required but no interaction or dynamic changes were detected to evaluate error identification."
+            },
+            {
+                "identification": "Email (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is required but no interaction or dynamic changes were detected to evaluate error identification."
+            },
+            {
+                "identification": "Phone (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is required but no interaction or dynamic changes were detected to evaluate error identification."
+            },
+            {
+                "identification": "Subject (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is required but no interaction or dynamic changes were detected to evaluate error identification."
+            },
+            {
+                "identification": "Select",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is required but no interaction or dynamic changes were detected to evaluate error identification."
+            },
+            {
+                "identification": "Textarea",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is required but no interaction or dynamic changes were detected to evaluate error identification."
+            },
+            {
+                "identification": "Cookie list search",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation."
+            },
+            {
+                "identification": "checkbox label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "These fields are optional and do not require validation."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": true,
+        "fields": []
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": true,
+        "fields": []
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": true,
+        "fields": []
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": true,
+        "fields": []
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Nome",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error message or linkage is present."
+            },
+            {
+                "identification": "Organização",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error message or linkage is present."
+            },
+            {
+                "identification": "Telefone",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Assunto",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Tema",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Mensagem",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error message or linkage is present."
+            },
+            {
+                "identification": "No Label (reset)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no error message is expected."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Nome",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error message or linkage is present."
+            },
+            {
+                "identification": "Organização",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error message or linkage is present."
+            },
+            {
+                "identification": "Telefone",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Assunto",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Tema",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Mensagem",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error message or linkage is present."
+            },
+            {
+                "identification": "No Label (reset)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no error message is expected."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Nome",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error message or linkage is present."
+            },
+            {
+                "identification": "Organização",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error message or linkage is present."
+            },
+            {
+                "identification": "Telefone",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Assunto",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Tema",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Mensagem",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error message or linkage is present."
+            },
+            {
+                "identification": "No Label (reset)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no error message is expected."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Nome",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error message or linkage is present."
+            },
+            {
+                "identification": "Organização",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error message or linkage is present."
+            },
+            {
+                "identification": "Telefone",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Assunto",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Tema",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Mensagem",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error message or linkage is present."
+            },
+            {
+                "identification": "No Label (reset)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no error message is expected."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required and shows a visible error message when left empty. However, the error message is not programmatically associated with the input field using aria-describedby or any other mechanism. This fails to meet the WCAG 3.3.1 requirement for clear error identification."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required and shows a visible error message when left empty. However, the error message is not programmatically associated with the input field using aria-describedby or any other mechanism. This fails to meet the WCAG 3.3.1 requirement for clear error identification."
+            },
+            {
+                "identification": "Telefone",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation."
+            },
+            {
+                "identification": "Assunto",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation."
+            },
+            {
+                "identification": "Tema",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation."
+            },
+            {
+                "identification": "Mensagem",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required and shows a visible error message when left empty. However, the error message is not programmatically associated with the input field using aria-describedby or any other mechanism. This fails to meet the WCAG 3.3.1 requirement for clear error identification."
+            }
+        ]
+    },
+    {
+        "url": "https://www.continente.pt/loja-online/contactos/",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Estritamente Necessários",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation."
+            },
+            {
+                "identification": "Funcionais",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation."
+            },
+            {
+                "identification": "Analíticos",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation."
+            },
+            {
+                "identification": "Marketing / Publicitários",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation."
+            },
+            {
+                "identification": "Do not sell or share my personal information",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation."
+            },
+            {
+                "identification": "O que procura?",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation."
+            },
+            {
+                "identification": "Insira o seu e-mail",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is required but there is no interaction or dynamic changes to analyze for error identification."
+            },
+            {
+                "identification": "Consinto que a Modelo Continente Hipermercados, S.A. (MCH) me envie comunicações informativas e de marketing direto alusivas às suas marcas.",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is required but there is no interaction or dynamic changes to analyze for error identification."
+            }
+        ]
+    },
+    {
+        "url": "https://www.continente.pt/checkout/entrega/",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Estritamente Necessários (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkboxes are disabled and thus do not require validation."
+            },
+            {
+                "identification": "Funcionais (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Analíticos (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Marketing / Publicitários (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Do not sell or share my personal information (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is optional and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://suporte.decathlon.pt/hc/pt/requests/new?ticket_form_id=4421041894417",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Pesquisa (search)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation."
+            },
+            {
+                "identification": "Endereço de e-mail (text)",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "Assunto (text)",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "nº da sua encomenda (text)",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "Qual o nº da sua proforma? (opcional) (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation."
+            },
+            {
+                "identification": "Anexos(opcional) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation."
+            }
+        ]
+    },
+    {
+        "url": "https://suporte.decathlon.pt/hc/pt/requests/new?ticket_form_id=4421041894417",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Pesquisa (search)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation."
+            },
+            {
+                "identification": "Endereço de e-mail (text)",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "Assunto (text)",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "nº da sua encomenda (text)",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "Qual o nº da sua proforma? (opcional) (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation."
+            },
+            {
+                "identification": "Anexos(opcional) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation."
+            }
+        ]
+    },
+    {
+        "url": "https://www.continente.pt/loja-online/contactos/",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Estritamente Necessários",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation."
+            },
+            {
+                "identification": "Funcionais",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation."
+            },
+            {
+                "identification": "Analíticos",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation."
+            },
+            {
+                "identification": "Marketing / Publicitários",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation."
+            },
+            {
+                "identification": "Do not sell or share my personal information",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation."
+            },
+            {
+                "identification": "O que procura?",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation."
+            },
+            {
+                "identification": "Insira o seu e-mail",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is required but there is no interaction or dynamic changes to analyze for error identification."
+            },
+            {
+                "identification": "Consinto que a Modelo Continente Hipermercados, S.A. (MCH) me envie comunicações informativas e de marketing direto alusivas às suas marcas.",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is required but there is no interaction or dynamic changes to analyze for error identification."
+            }
+        ]
+    },
+    {
+        "url": "https://www.continente.pt/checkout/entrega/",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Estritamente Necessários (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkboxes are disabled and thus do not require validation."
+            },
+            {
+                "identification": "Funcionais (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Analíticos (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Marketing / Publicitários (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Do not sell or share my personal information (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is optional and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://www.continente.pt/checkout/entrega/",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Estritamente Necessários (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkboxes are disabled and thus do not require validation."
+            },
+            {
+                "identification": "Funcionais (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Analíticos (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Marketing / Publicitários (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Do not sell or share my personal information (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is optional and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://appserver2.ctt.pt/femgu/app/open/enroll/showUserEnrollAction.jspx?lang=def&redirect=https://www.ctt.pt/ajuda/particulares/receber/gerir-correio-e-encomendas/reter-tudo-que-recebo-numa-loja-ctt#fndtn-panel2-2",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Insira os termos de pesquisa",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and not expected to trigger an error message."
+            },
+            {
+                "identification": "Email*",
+                "evaluation": "fail",
+                "reasoning": "This field is required but there is no form interaction or dynamic changes to analyze"
+            }
+        ]
+    },
+    {
+        "url": "https://appserver2.ctt.pt/femgu/app/open/enroll/showUserEnrollAction.jspx?lang=def&redirect=https://www.ctt.pt/ajuda/particulares/receber/gerir-correio-e-encomendas/reter-tudo-que-recebo-numa-loja-ctt#fndtn-panel2-2",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Insira os termos de pesquisa",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and not expected to trigger an error message."
+            },
+            {
+                "identification": "Email*",
+                "evaluation": "fail",
+                "reasoning": "This field is required but there is no form interaction or dynamic changes to analyze"
+            }
+        ]
+    },
+    {
+        "url": "https://appserver2.ctt.pt/femgu/app/open/enroll/showUserEnrollAction.jspx?lang=def&redirect=https://www.ctt.pt/ajuda/particulares/receber/gerir-correio-e-encomendas/reter-tudo-que-recebo-numa-loja-ctt#fndtn-panel2-2",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Insira os termos de pesquisa",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and not expected to trigger an error message."
+            },
+            {
+                "identification": "Email*",
+                "evaluation": "fail",
+                "reasoning": "This field is required but there is no form interaction or dynamic changes to analyze"
+            }
+        ]
+    },
+    {
+        "url": "https://appserver2.ctt.pt/femgu/app/open/enroll/showUserEnrollAction.jspx?lang=def&redirect=https://www.ctt.pt/ajuda/particulares/receber/gerir-correio-e-encomendas/reter-tudo-que-recebo-numa-loja-ctt#fndtn-panel2-2",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Insira os termos de pesquisa",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and not expected to trigger an error message."
+            },
+            {
+                "identification": "Email*",
+                "evaluation": "fail",
+                "reasoning": "This field is required but there is no form interaction or dynamic changes to analyze"
+            }
+        ]
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "localidade",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked to the input field using the 'for' attribute, and the input is marked as required with aria-required=\"true\". This setup ensures that screen readers will announce the error message when the field is focused, satisfying WCAG guidelines."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "localidade",
+                "evaluation": "fail",
+                "reasoning": "The error message is added to the DOM but is not programmatically associated with the input field. The label is not wrapping the input, and there is no aria-describedby attribute to link the error message to the input field. This fails to meet the WCAG guidelines for error identification."
+            }
+        ]
+    },
+    {
+        "url": "https://business.quora.com/contact-us/",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "fail",
+                "reasoning": "No error message is present or linked."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "fail",
+                "reasoning": "No error message is present or linked."
+            },
+            {
+                "identification": "Company",
+                "evaluation": "fail",
+                "reasoning": "No error message is present or linked."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "No error message is present or linked, but as an email field, it should display errors for invalid inputs."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "fail",
+                "reasoning": "No error message is present or linked."
+            },
+            {
+                "identification": "Country",
+                "evaluation": "fail",
+                "reasoning": "No error message is present or linked."
+            },
+            {
+                "identification": "Potential Monthly Ads Budget on Quora",
+                "evaluation": "fail",
+                "reasoning": "No error message is present or linked."
+            },
+            {
+                "identification": "How can we be of help?",
+                "evaluation": "fail",
+                "reasoning": "No error message is present or linked."
+            },
+            {
+                "identification": "I agree to receive marketing communications from Quora. You can unsubscribe from Quora marketing emails at any time.",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation."
+            },
+            {
+                "identification": "Phone",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation."
+            }
+        ]
+    },
+    {
+        "url": "https://cam.merriam-webster.com/registration?utm_source=mw&utm_medium=global-nav-join&utm_campaign=evergreen&partnerCode=default_partner&_gl=1*s07wn2*_ga*NjcwNzY4MzE2LjE3MzkwMzc0NzA.*_ga_821K16B669*MTczOTAzNzQ3MC4xLjAuMTczOTAzNzQ3MC4wLjAuMA..&offerCode=mwu-monthly-free-trial",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Email Address",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute, so it is not mandatory."
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute, so it is not mandatory."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute, so it is not mandatory."
+            },
+            {
+                "identification": "Create Username",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute, so it is not mandatory."
+            },
+            {
+                "identification": "Create Password",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute, so it is not mandatory."
+            },
+            {
+                "identification": "By signing up, I agree that I am older than 13 years of age, agree to Terms of Service and Privacy Policy, and Cookie Use.",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute, so it is not mandatory."
+            }
+        ]
+    },
+    {
+        "url": "https://cam.merriam-webster.com/registration?utm_source=mw&utm_medium=global-nav-join&utm_campaign=evergreen&partnerCode=default_partner&_gl=1*s07wn2*_ga*NjcwNzY4MzE2LjE3MzkwMzc0NzA.*_ga_821K16B669*MTczOTAzNzQ3MC4xLjAuMTczOTAzNzQ3MC4wLjAuMA..&offerCode=mwu-monthly-free-trial",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Email Address",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute, so it is not mandatory."
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute, so it is not mandatory."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute, so it is not mandatory."
+            },
+            {
+                "identification": "Create Username",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute, so it is not mandatory."
+            },
+            {
+                "identification": "Create Password",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute, so it is not mandatory."
+            },
+            {
+                "identification": "By signing up, I agree that I am older than 13 years of age, agree to Terms of Service and Privacy Policy, and Cookie Use.",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute, so it is not mandatory."
+            }
+        ]
+    },
+    {
+        "url": "https://cam.merriam-webster.com/registration?utm_source=mw&utm_medium=global-nav-join&utm_campaign=evergreen&partnerCode=default_partner&_gl=1*s07wn2*_ga*NjcwNzY4MzE2LjE3MzkwMzc0NzA.*_ga_821K16B669*MTczOTAzNzQ3MC4xLjAuMTczOTAzNzQ3MC4wLjAuMA..&offerCode=mwu-monthly-free-trial",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Email Address",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute, so it is not mandatory."
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute, so it is not mandatory."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute, so it is not mandatory."
+            },
+            {
+                "identification": "Create Username",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute, so it is not mandatory."
+            },
+            {
+                "identification": "Create Password",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute, so it is not mandatory."
+            },
+            {
+                "identification": "By signing up, I agree that I am older than 13 years of age, agree to Terms of Service and Privacy Policy, and Cookie Use.",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute, so it is not mandatory."
+            }
+        ]
+    },
+    {
+        "url": "https://www.medicalnewstoday.com/articles/323586#bmi-calculators",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "U.S. (Imperial)",
+                "evaluation": "inapplicable",
+                "reasoning": "This radio button is part of a group and does not require individual validation."
+            },
+            {
+                "identification": "Metric",
+                "evaluation": "inapplicable",
+                "reasoning": "This radio button is part of a group and does not require individual validation."
+            },
+            {
+                "identification": "Feet",
+                "evaluation": "inapplicable",
+                "reasoning": "This field does not have a required attribute, so it is optional and does not need validation."
+            },
+            {
+                "identification": "Inches",
+                "evaluation": "inapplicable",
+                "reasoning": "This field does not have a required attribute, so it is optional and does not need validation."
+            },
+            {
+                "identification": "Pounds",
+                "evaluation": "inapplicable",
+                "reasoning": "This field does not have a required attribute, so it is optional and does not need validation."
+            },
+            {
+                "identification": "Enter your email",
+                "evaluation": "inapplicable",
+                "reasoning": "This field does not have a required attribute, so it is optional and does not need validation."
+            }
+        ]
+    },
+    {
+        "url": "https://www.gsmarena.com/tipus.php3",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"Search\" field is not required, so no error message is expected."
+            },
+            {
+                "identification": "No Label (Hidden)",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"No Label (Hidden)\" field is not required and likely not visible, so no error message is expected."
+            },
+            {
+                "identification": "No Label (Hidden)",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"No Label (Hidden)\" field is not required and likely not visible, so no error message is expected."
+            },
+            {
+                "identification": "No Label (email)",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"No Label (email)\" field is required, but without submission, we can't confirm if an error message appears or is linked."
+            },
+            {
+                "identification": "Your password",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"Your password\" field is required, but without submission, we can't confirm if an error message appears or is linked."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"Subject\" field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Share",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"Share\" field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Simple CAPTCHA. Write \"forty-two\" as a number.",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"Simple CAPTCHA. Write 'forty-two' as a number.\" field is not required, so no error message is expected."
+            }
+        ]
+    },
+    {
+        "url": "https://www.gsmarena.com/tipus.php3",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"Search\" field is not required, so no error message is expected."
+            },
+            {
+                "identification": "No Label (Hidden)",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"No Label (Hidden)\" field is not required and likely not visible, so no error message is expected."
+            },
+            {
+                "identification": "No Label (Hidden)",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"No Label (Hidden)\" field is not required and likely not visible, so no error message is expected."
+            },
+            {
+                "identification": "No Label (email)",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"No Label (email)\" field is required, but without submission, we can't confirm if an error message appears or is linked."
+            },
+            {
+                "identification": "Your password",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"Your password\" field is required, but without submission, we can't confirm if an error message appears or is linked."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"Subject\" field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Share",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"Share\" field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Simple CAPTCHA. Write \"forty-two\" as a number.",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"Simple CAPTCHA. Write 'forty-two' as a number.\" field is not required, so no error message is expected."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "No error message or aria-describedby linkage is present."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "No error message or aria-describedby linkage is present."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "No error message or aria-describedby linkage is present."
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "fail",
+                "reasoning": "No error message or aria-describedby linkage is present."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "No error message or aria-describedby linkage is present."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "No error message or aria-describedby linkage is present."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "No error message or aria-describedby linkage is present."
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "fail",
+                "reasoning": "No error message or aria-describedby linkage is present."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "No error message or aria-describedby linkage is present."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "No error message or aria-describedby linkage is present."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "No error message or aria-describedby linkage is present."
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "fail",
+                "reasoning": "No error message or aria-describedby linkage is present."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "No error message or aria-describedby linkage is present."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "No error message or aria-describedby linkage is present."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "No error message or aria-describedby linkage is present."
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "fail",
+                "reasoning": "No error message or aria-describedby linkage is present."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction."
+            },
+            {
+                "identification": "Telemóvel (opcional) (tel)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation."
+            },
+            {
+                "identification": "Password (password)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction."
+            },
+            {
+                "identification": "Li e aceito as condições de utilização. (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction."
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction."
+            },
+            {
+                "identification": "Telemóvel (opcional) (tel)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation."
+            },
+            {
+                "identification": "Password (password)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction."
+            },
+            {
+                "identification": "Li e aceito as condições de utilização. (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction."
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction, so it is inapplicable for error identification."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction, so it is inapplicable for error identification."
+            },
+            {
+                "identification": "Telemóvel (opcional) (tel)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and no error message is revealed upon interaction, so it is inapplicable for error identification."
+            },
+            {
+                "identification": "Password (password)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction, so it is inapplicable for error identification."
+            },
+            {
+                "identification": "Li e aceito as condições de utilização. (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction, so it is inapplicable for error identification."
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction, so it is considered optional."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction, so it is considered optional."
+            },
+            {
+                "identification": "(select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction, so it is considered optional."
+            },
+            {
+                "identification": "Telemóvel (opcional) (tel)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is explicitly marked as optional and no error message is revealed upon interaction."
+            },
+            {
+                "identification": "Password (password)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction, so it is considered optional."
+            },
+            {
+                "identification": "Li e aceito as condições de utilização. (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction, so it is considered optional."
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"Nome\" field does not have a required attribute, and no error message is revealed after form submission."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"Email\" field does not have a required attribute, and no error message is revealed after form submission."
+            },
+            {
+                "identification": "Password (password)",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"Password\" field does not have a required attribute, and no error message is revealed after form submission."
+            },
+            {
+                "identification": "Li e aceito as condições de utilização. (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"Li e aceito as condições de utilização.\" checkbox does not have a required attribute, and no error message is revealed after form submission."
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Players or Teams (search)",
+                "evaluation": "pass",
+                "reasoning": "The error message is revealed and programmatically linked to the input field using aria-describedby, which ensures it is announced by screen readers. This adheres to WCAG 3.3.1 and the provided best practices."
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "submit_clicked": true,
+        "fields": []
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name (text)",
+                "evaluation": "pass",
+                "reasoning": "The error message \"Enter your name\" is revealed and programmatically linked to the input field using aria-describedby. The input is also marked as invalid with aria-invalid=\"true\". This setup ensures that the error is announced by screen readers, fulfilling WCAG 3.3.1."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is disabled and does not require validation for empty submission."
+            },
+            {
+                "identification": "Mobile number or email (email)",
+                "evaluation": "pass",
+                "reasoning": "The error message \"Enter your email or mobile phone number\" is revealed and programmatically linked to the input field using aria-describedby. The input is also marked as invalid with aria-invalid=\"true\". This setup ensures that the error is announced by screen readers, fulfilling WCAG 3.3.1."
+            },
+            {
+                "identification": "Password (password)",
+                "evaluation": "pass",
+                "reasoning": "The error message \"Minimum 6 characters required\" is revealed and programmatically linked to the input field using aria-describedby. The input is also marked as invalid with aria-invalid=\"true\". This setup ensures that the error is announced by screen readers, fulfilling WCAG 3.3.1."
+            },
+            {
+                "identification": "Re-enter password (password)",
+                "evaluation": "fail",
+                "reasoning": "The error message for this field is not revealed, and there is no indication of aria-describedby or aria-invalid attributes. This suggests that the error handling for this field does not meet WCAG 3.3.1 guidelines."
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "ap_customer_name",
+                "evaluation": "pass",
+                "reasoning": "The error message \"Enter your name\" is revealed and programmatically linked to the input field using aria-describedby. The input is also marked as invalid with aria-invalid=\"true\"."
+            },
+            {
+                "identification": "Not applicable (disabled and not required)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is disabled and not required, making validation inapplicable."
+            },
+            {
+                "identification": "ap_email",
+                "evaluation": "pass",
+                "reasoning": "The error message \"Enter your email or mobile phone number\" is revealed and programmatically linked to the input field using aria-describedby. The input is also marked as invalid with aria-invalid=\"true\"."
+            },
+            {
+                "identification": "Not explicitly identified",
+                "evaluation": "pass",
+                "reasoning": "The error message \"Minimum 6 characters required\" is revealed and programmatically linked to the input field using aria-describedby. The input is also marked as invalid with aria-invalid=\"true\"."
+            },
+            {
+                "identification": "Not explicitly identified",
+                "evaluation": "inapplicable",
+                "reasoning": "There is no specific error message or validation change mentioned for this field, and it is not marked as invalid."
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your name",
+                "evaluation": "pass",
+                "reasoning": "The error message \"Enter your name\" is shown and programmatically linked to the input field via aria-describedby. The input is also marked as invalid with aria-invalid=\"true\"."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "The select field is disabled and does not require validation."
+            },
+            {
+                "identification": "Mobile number or email",
+                "evaluation": "pass",
+                "reasoning": "The error message \"Enter your email or mobile phone number\" is shown and programmatically linked to the input field via aria-describedby. The input is also marked as invalid with aria-invalid=\"true\"."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "There is no error message revealed for the password field, and it is not programmatically linked to any error message."
+            },
+            {
+                "identification": "Re-enter password",
+                "evaluation": "fail",
+                "reasoning": "There is no error message revealed for the re-enter password field, and it is not programmatically linked to any error message."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail",
+                "evaluation": "fail",
+                "reasoning": "The input field is visually highlighted with a red border, indicating an error. However, there is no text-based error message revealed or programmatically linked to the input field. The lack of an explicit error message fails to meet WCAG 3.3.1 guidelines."
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "evaluation": "fail",
+                "reasoning": "Similar to the email field, this input is visually highlighted with a red border, but there is no text-based error message revealed or programmatically linked. This also fails to meet WCAG 3.3.1 guidelines."
+            },
+            {
+                "identification": "País de residência",
+                "evaluation": "inapplicable",
+                "reasoning": "There are no dynamic changes detected, and no error messages are provided. This field is inapplicable for error message evaluation as it does not require validation for empty submission."
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve.",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is a checkbox for agreement and does not require validation for empty submission. It is inapplicable for error message evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction."
+            },
+            {
+                "identification": "+351 (Portugal)",
+                "evaluation": "inapplicable",
+                "reasoning": "This is not a form field but a part of a list of country codes."
+            },
+            {
+                "identification": "Telemóvel (opcional) (tel)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation."
+            },
+            {
+                "identification": "Password (password)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction."
+            },
+            {
+                "identification": "Li e aceito as condições de utilização. (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction."
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "evaluation": "fail",
+                "reasoning": "The error message 'Inserir nome' is hidden using display:none, making it inaccessible to screen readers."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The error message 'Inserir email' is hidden using display:none, making it inaccessible to screen readers."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The error message 'Defina uma password.' is hidden using display:none, making it inaccessible to screen readers."
+            },
+            {
+                "identification": "Li e aceito as condições de utilização.",
+                "evaluation": "fail",
+                "reasoning": "The error message 'É necessário ler e aceitar as condições de utilização.' is hidden using display:none, making it inaccessible to screen readers."
+            },
+            {
+                "identification": "select",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Telemóvel",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Players or Teams (search)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required and does not produce validation errors."
+            },
+            {
+                "identification": "Data de nascimento (MM) (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required and does not produce validation errors."
+            },
+            {
+                "identification": "Data de nascimento (AAAA) (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required and does not produce validation errors."
+            },
+            {
+                "identification": "País/Região/Território (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required and does not produce validation errors."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required and does not produce validation errors."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required and does not produce validation errors."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required and does not produce validation errors."
+            },
+            {
+                "identification": "No Label (password)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required and does not produce validation errors."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required and does not produce validation errors."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required and does not produce validation errors."
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Players or Teams",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "No Label (password)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Data de nascimento (MM)",
+                "evaluation": "fail",
+                "reasoning": "The error message is visually associated but not programmatically linked to the input field."
+            },
+            {
+                "identification": "Data de nascimento (AAAA)",
+                "evaluation": "fail",
+                "reasoning": "The error message is visually associated but"
+            }
+        ]
+    },
+    {
+        "url": "https://www.ilovepdf.com/contact",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your Name",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "Your Email",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "Your Surname",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "I accept Terms & Conditions and Legal & Privacy",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Phone",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Select",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Textarea",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Cookie list search",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Phone",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Select",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Textarea",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Cookie list search",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Phone",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Select",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Textarea",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Cookie list search",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "evaluation": "fail",
+                "reasoning": "The field is required but does not have the 'aria-required' attribute. The error message is visually indicated but not programmatically linked to the field. The error message is not announced by screen readers due to the lack of 'aria-live' or 'role=alert'."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field is required but does not have the 'aria-required' attribute. The error message is visually indicated but not programmatically linked to the field. The error message is not announced by screen readers due to the lack of 'aria-live' or 'role=alert'."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The field is required but does not have the 'aria-required' attribute. The error message is visually indicated but not programmatically linked to the field. The error message is not announced by screen readers due to the lack of 'aria-live' or 'role=alert'."
+            },
+            {
+                "identification": "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis.",
+                "evaluation": "fail",
+                "reasoning": "The field is required but does not have the 'aria-required' attribute. The error message is visually indicated but not programmatically linked to the field. The error message is not announced by screen readers due to the lack of 'aria-live' or 'role=alert'."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required and does not trigger validation errors."
+            },
+            {
+                "identification": "Nome",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is shown or programmatically linked."
+            },
+            {
+                "identification": "Organização",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required and does not trigger validation errors."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is shown or programmatically linked."
+            },
+            {
+                "identification": "Telefone",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required and does not trigger validation errors."
+            },
+            {
+                "identification": "Assunto",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required and does not trigger validation errors."
+            },
+            {
+                "identification": "Tema",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required and does not trigger validation errors."
+            },
+            {
+                "identification": "Mensagem",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is shown or programmatically linked."
+            },
+            {
+                "identification": "No Label (reset)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required and does not trigger validation errors."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"No Label (text)\" field is not required and does not need validation."
+            },
+            {
+                "identification": "Nome",
+                "evaluation": "fail",
+                "reasoning": "The \"Nome\" field is required but no error message is shown or programmatically linked."
+            },
+            {
+                "identification": "Organização",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"Organização\" field is not required and does not need validation."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The \"Email\" field is required but no error message is shown or programmatically linked."
+            },
+            {
+                "identification": "Telefone",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"Telefone\" field is not required and does not need validation."
+            },
+            {
+                "identification": "Assunto",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"Assunto\" field is not required and does not need validation."
+            },
+            {
+                "identification": "Tema",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"Tema\" field is not required and does not need validation."
+            },
+            {
+                "identification": "Mensagem",
+                "evaluation": "fail",
+                "reasoning": "The \"Mensagem\" field is required but no error message is shown or programmatically linked."
+            },
+            {
+                "identification": "No Label (reset)",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"No Label (reset)\" field is not required and does not need validation."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Insira os termos de pesquisa",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the required attribute and is optional. Therefore, it does not need validation for empty submission."
+            },
+            {
+                "identification": "Distrito",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the required attribute and is optional. Therefore, it does not need validation for empty submission."
+            },
+            {
+                "identification": "Concelho",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the required attribute and is optional. Therefore, it does not need validation for empty submission."
+            },
+            {
+                "identification": "Localidade",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the required attribute and is optional. Therefore, it does not need validation for empty submission."
+            },
+            {
+                "identification": "Arruamento",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the required attribute and is optional. Therefore, it does not need validation for empty submission."
+            },
+            {
+                "identification": "N° Porta",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the required attribute and is optional. Therefore, it does not need validation for empty submission."
+            },
+            {
+                "identification": "Código Postal *",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but does not have the required attribute. Without form interaction or dynamic changes, it is impossible to determine if error messages appear or are programmatically linked."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the required attribute and is optional. Therefore, it does not need validation for empty submission."
+            },
+            {
+                "identification": "Localidade *",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but does not have the required attribute. Without form interaction or dynamic changes, it is impossible to determine if error messages appear or are programmatically linked."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the required attribute and is optional. Therefore, it does not need validation for empty submission."
+            },
+            {
+                "identification": "Nº Apartado *",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but does not have the required attribute. Without form interaction or dynamic changes, it is impossible to determine if"
+            }
+        ]
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Insira os termos de pesquisa",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the required attribute and is optional. Therefore, it does not need validation for empty submission."
+            },
+            {
+                "identification": "Distrito",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the required attribute and is optional. Therefore, it does not need validation for empty submission."
+            },
+            {
+                "identification": "Concelho",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the required attribute and is optional. Therefore, it does not need validation for empty submission."
+            },
+            {
+                "identification": "Localidade",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the required attribute and is optional. Therefore, it does not need validation for empty submission."
+            },
+            {
+                "identification": "Arruamento",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the required attribute and is optional. Therefore, it does not need validation for empty submission."
+            },
+            {
+                "identification": "N° Porta",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the required attribute and is optional. Therefore, it does not need validation for empty submission."
+            },
+            {
+                "identification": "Código Postal *",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but does not have the required attribute. Without form interaction or dynamic changes, it is impossible to determine if error messages appear or are programmatically linked."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the required attribute and is optional. Therefore, it does not need validation for empty submission."
+            },
+            {
+                "identification": "Localidade *",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but does not have the required attribute. Without form interaction or dynamic changes, it is impossible to determine if error messages appear or are programmatically linked."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the required attribute and is optional. Therefore, it does not need validation for empty submission."
+            },
+            {
+                "identification": "Nº Apartado *",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but does not have the required attribute. Without form interaction or dynamic changes, it is impossible to determine if"
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error message or programmatic association is present after submission."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error message or programmatic association is present after submission."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error message or programmatic association is present after submission."
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error message or programmatic association is present after submission."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not need validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label (text)",
+                "evaluation": "Inapplicable",
+                "reasoning": "This field is not labeled and does not require validation for empty submission."
+            },
+            {
+                "identification": "Nome",
+                "evaluation": "Fail",
+                "reasoning": "The error message is not programmatically linked to the input field. The class change to 'field-error' does not provide a semantic association, and there is no aria-describedby or similar attribute to connect the error message to the input."
+            },
+            {
+                "identification": "Organização",
+                "evaluation": "Inapplicable",
+                "reasoning": "This field is optional and does not trigger validation errors when left empty."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "Fail",
+                "reasoning": "The error message is not programmatically linked to the input field. The class change to 'field-error' does not provide a semantic association, and there is no aria-describedby or similar attribute to connect the error message to the input."
+            },
+            {
+                "identification": "Telefone",
+                "evaluation": "Inapplicable",
+                "reasoning": "This field is optional and does not trigger validation errors when left empty."
+            },
+            {
+                "identification": "Assunto",
+                "evaluation": "Inapplicable",
+                "reasoning": "This field is optional and does not trigger validation errors when left empty."
+            },
+            {
+                "identification": "Tema",
+                "evaluation": "Inapplicable",
+                "reasoning": "This field is optional and does not trigger validation errors when left empty."
+            },
+            {
+                "identification": "Mensagem",
+                "evaluation": "Fail",
+                "reasoning": "The error message is not programmatically linked to the input field. The class change to 'field-error' does not provide a semantic association, and there is no aria-describedby or similar attribute to connect the error message to the input."
+            },
+            {
+                "identification": "No Label (reset)",
+                "evaluation": "Inapplicable",
+                "reasoning": "This field is a reset button"
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label (text)",
+                "evaluation": "Inapplicable",
+                "reasoning": "This field is not required and does not need validation."
+            },
+            {
+                "identification": "Nome",
+                "evaluation": "Fail",
+                "reasoning": "The error message is not programmatically linked to the input field. The class change to 'field-error' does not provide a programmatic association, and there is no aria-describedby or similar attribute to link the error message."
+            },
+            {
+                "identification": "Organização",
+                "evaluation": "Inapplicable",
+                "reasoning": "This field is not required and does not need validation."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "Fail",
+                "reasoning": "The error message is not programmatically linked to the input field. The class change to 'field-error' does not provide a programmatic association, and there is no aria-describedby or similar attribute to link the error message."
+            },
+            {
+                "identification": "Telefone",
+                "evaluation": "Inapplicable",
+                "reasoning": "This field is not required and does not need validation."
+            },
+            {
+                "identification": "Assunto",
+                "evaluation": "Inapplicable",
+                "reasoning": "This field is not required and does not need validation."
+            },
+            {
+                "identification": "Tema",
+                "evaluation": "Inapplicable",
+                "reasoning": "This field is not required and does not need validation."
+            },
+            {
+                "identification": "Mensagem",
+                "evaluation": "Fail",
+                "reasoning": "The error message is not programmatically linked to the input field. The class change to 'field-error' does not provide a programmatic association, and there is no aria-describedby or similar attribute to link the error message."
+            },
+            {
+                "identification": "No Label (reset)",
+                "evaluation": "Inapplicable",
+                "reasoning": "This field is not required and does not need validation."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Phone",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Select",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Textarea",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Cookie list search",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Phone",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Select",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Textarea",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Cookie list search",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "submit_clicked": true,
+        "fields": []
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "search",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Distrito",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require"
+            }
+        ]
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Insira os termos de pesquisa (search)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Distrito (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Concelho (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Localidade (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Arruamento (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "N° Porta (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Código Postal * (text)",
+                "evaluation": "fail",
+                "reasoning": "This field is required but does not show an error message when left empty."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Localidade * (text)",
+                "evaluation": "fail",
+                "reasoning": "This field shows an error message but lacks aria-describedby for programmatic association."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Nº Apartado * (text)",
+                "evaluation": "fail",
+                "reasoning": "This field is required but does not show an error message when left empty."
+            },
+            {
+                "identification": "Cookies de desempenho (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Cookies de funcionalidade (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Cookies de publicidade (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Pesquisa de lista de cookies (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Unknown",
+                "evaluation": "Unknown",
+                "reasoning": "No reasoning provided"
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail (text)",
+                "evaluation": "fail",
+                "reasoning": "The input field is not marked as required, and there is no error message revealed or programmatically linked to the input field. The style change to a red border indicates an error but does not provide a textual error message that screen readers can announce."
+            },
+            {
+                "identification": "Confirma o teu endereço (text)",
+                "evaluation": "fail",
+                "reasoning": "Similar to the email field, this field is not marked as required, and there is no error message revealed or programmatically linked to the input field. The style change to a red border indicates an error but does not provide a textual error message."
+            },
+            {
+                "identification": "País de residência (select)",
+                "evaluation": "fail",
+                "reasoning": "This field is not marked as required, and there is no error message revealed or programmatically linked to the input field. The style change to a red border indicates an error but does not provide a textual error message."
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve. (checkbox)",
+                "evaluation": "fail",
+                "reasoning": "This field is a checkbox for agreeing to terms and conditions. It is not marked as required, and there is no error message revealed or programmatically linked to the input field. The style change to a red border indicates an error but does not provide a textual error message."
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required, and no error message is revealed upon interaction."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required, and no error message is revealed upon interaction."
+            },
+            {
+                "identification": "+351 (Portugal) (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required, and no error message is revealed upon interaction."
+            },
+            {
+                "identification": "Telemóvel (opcional) (tel)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation."
+            },
+            {
+                "identification": "Password (password)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required, and no error message is revealed upon interaction."
+            },
+            {
+                "identification": "Li e aceito as condições de utilização. (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required, and no error message is revealed upon interaction."
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Players or Teams (search)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required and does not produce validation errors."
+            },
+            {
+                "identification": "Data de nascimento (MM) (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required and does not produce validation errors."
+            },
+            {
+                "identification": "Data de nascimento (AAAA) (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required and does not produce validation errors."
+            },
+            {
+                "identification": "País/Região/Território (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required and does not produce validation errors."
+            },
+            {
+                "identification": "No Label (checkbox) (multiple instances)",
+                "evaluation": "inapplicable",
+                "reasoning": "These fields are not required and do not produce validation errors."
+            },
+            {
+                "identification": "CAPTCHA",
+                "evaluation": "fail",
+                "reasoning": "The CAPTCHA validation message is visually indicated but not programmatically associated with any specific input field. The message is not linked via aria-describedby or any other semantic indicator."
+            }
+        ]
+    },
+    {
+        "url": "https://www.continente.pt/loja-online/contactos/",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Estritamente Necessários",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Funcionais",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Analíticos",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Marketing / Publicitários",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Do not sell or share my personal information",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "O que procura?",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Insira o seu e-mail",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is required but there is no form interaction or dynamic changes to analyze for error messages or validation attributes."
+            },
+            {
+                "identification": "Consinto que a Modelo Continente Hipermercados, S.A. (MCH) me envie comunicações informativas e de marketing direto alusivas às suas marcas.",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is required but there is no form interaction or dynamic changes to analyze for error messages or validation attributes."
+            }
+        ]
+    },
+    {
+        "url": "https://www.continente.pt/checkout/entrega/",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Estritamente Necessários",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Funcionais",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Analíticos",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Marketing / Publicitários",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Do not sell or share my personal information",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://www.medicalnewstoday.com/articles/323586#bmi-calculators",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "U.S. (Imperial) (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is inapplicable because it is a radio button without a required attribute, meaning it does not need validation for empty submission."
+            },
+            {
+                "identification": "Metric (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is inapplicable because it is a radio button without a required attribute, meaning it does not need validation for empty submission."
+            },
+            {
+                "identification": "Feet (number)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is inapplicable because it is a number input without a required attribute, meaning it does not need validation for empty submission."
+            },
+            {
+                "identification": "Inches (number)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is inapplicable because it is a number input without a required attribute, meaning it does not need validation for empty submission."
+            },
+            {
+                "identification": "Pounds (number)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is inapplicable because it is a number input without a required attribute, meaning it does not need validation for empty submission."
+            },
+            {
+                "identification": "Enter your email (email)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is inapplicable because it is an email input without a required attribute, meaning it does not need validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://www.istockphoto.com/customer-support",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "text (input)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Nome (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is required but no submission interaction is available to check for error messages."
+            },
+            {
+                "identification": "Endereço de e-mail (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is required but no submission interaction is available to check for error messages."
+            },
+            {
+                "identification": "Tenho uma pergunta sobre: (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Tenho um problema técnico com: (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is disabled and does not require validation for empty submission."
+            },
+            {
+                "identification": "Em que podemos ajudar? (textarea)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is required but no submission interaction is available to check for error messages."
+            },
+            {
+                "identification": "Unknown",
+                "evaluation": "Unknown",
+                "reasoning": "No reasoning provided"
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required but no error message is shown or programmatically linked."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required but no error message is shown or programmatically linked."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field is required but no error message is shown or programmatically linked."
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "fail",
+                "reasoning": "The field is required but no error message is shown or programmatically linked."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation."
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "evaluation": "fail",
+                "reasoning": "The email field does not have the required attribute and no error message is displayed upon form submission. There is no programmatic association with any error message."
+            },
+            {
+                "identification": "website",
+                "evaluation": "inapplicable",
+                "reasoning": "The website field is optional and does not require validation."
+            }
+        ]
+    },
+    {
+        "url": "https://www.business.reddit.com/speak-with-a-reddit-ads-expert?utm_product=ads-register-landing-page_product&utm_source=web3x_consumer",
+        "submit_clicked": false,
+        "fields": []
+    },
+    {
+        "url": "https://www.business.reddit.com/speak-with-a-reddit-ads-expert?utm_product=ads-register-landing-page_product&utm_source=web3x_consumer",
+        "submit_clicked": false,
+        "fields": []
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "The \"Name\" field is required and not disabled or readonly, so it should trigger an error message if left empty. However, there is no indication of an error message or any programmatic association like aria-describedby."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The \"Email\" field is required and not disabled or readonly, so it should trigger an error message if left empty. However, there is no indication of an error message or any programmatic association like aria-describedby."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "The \"Subject\" field is required and not disabled or readonly, so it should trigger an error message if left empty. However, there is no indication of an error message or any programmatic association like aria-describedby."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "fail",
+                "reasoning": "The \"No Label\" field is required and not disabled or readonly, so it should trigger an error message if left empty. However, there is no indication of an error message or any programmatic association like aria-describedby."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp)",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"(jpg,png,gif,bmp)\" field is not required, so it does not need to trigger an error message if left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required and has aria-required=\"true\", but there is no error message revealed upon submission. This fails to meet WCAG 3.3.1 as users are not informed of the error."
+            },
+            {
+                "identification": "Practice Name",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required and has aria-required=\"true\", but there is no error message revealed upon submission. This fails to meet WCAG 3.3.1 as users are not informed of the error."
+            },
+            {
+                "identification": "Provider First Name",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required and has aria-required=\"true\", but there is no error message revealed upon submission. This fails to meet WCAG 3.3.1 as users are not informed of the error."
+            },
+            {
+                "identification": "Provider Last Name",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required and has aria-required=\"true\", but there is no error message revealed upon submission. This fails to meet WCAG 3.3.1 as users are not informed of the error."
+            },
+            {
+                "identification": "Direct Phone Number",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required and has aria-required=\"true\", but there is no error message revealed upon submission. This fails to meet WCAG 3.3.1 as users are not informed of the error."
+            }
+        ]
+    },
+    {
+        "url": "https://www.accuweather.com/en/contact",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The field is required and should display an error message for invalid input, but no mutations indicate an error message appeared."
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error messages are indicated in the mutations."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error messages are indicated in the mutations."
+            },
+            {
+                "identification": "Comments...",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error messages are indicated in the mutations."
+            },
+            {
+                "identification": "Details...",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error messages are indicated in the mutations."
+            },
+            {
+                "identification": "Crash Log...",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error messages are indicated in the mutations."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "Forecast Location, Country, or Zip",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "App Name",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "Zip Code",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "No Label (input)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "No Label (input)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            }
+        ]
+    },
+    {
+        "url": "https://www.accuweather.com/en/contact",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The field is required and should display an error message for invalid input, but no mutations indicate an error message appeared."
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error messages are indicated in the mutations."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error messages are indicated in the mutations."
+            },
+            {
+                "identification": "Comments...",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error messages are indicated in the mutations."
+            },
+            {
+                "identification": "Details...",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error messages are indicated in the mutations."
+            },
+            {
+                "identification": "Crash Log...",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error messages are indicated in the mutations."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "Forecast Location, Country, or Zip",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "App Name",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "Zip Code",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "No Label (input)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "No Label (input)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            }
+        ]
+    },
+    {
+        "url": "https://business.trustpilot.com/signup?cta=free-signup_header_home",
+        "submit_clicked": true,
+        "fields": []
+    },
+    {
+        "url": "https://business.trustpilot.com/signup?cta=free-signup_header_home",
+        "submit_clicked": false,
+        "fields": []
+    },
+    {
+        "url": "https://www.accuweather.com/en/contact",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The field is required and should display an error message for invalid input, but no mutations indicate an error message appeared."
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error messages are indicated in the mutations."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error messages are indicated in the mutations."
+            },
+            {
+                "identification": "Comments...",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error messages are indicated in the mutations."
+            },
+            {
+                "identification": "Details...",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error messages are indicated in the mutations."
+            },
+            {
+                "identification": "Crash Log...",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no error messages are indicated in the mutations."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "Forecast Location, Country, or Zip",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "App Name",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "Zip Code",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "No Label (input)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            },
+            {
+                "identification": "No Label (input)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is either not required or does not have relevant mutations to evaluate."
+            }
+        ]
+    },
+    {
+        "url": "https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360006586013",
+        "submit_clicked": false,
+        "fields": []
+    },
+    {
+        "url": "https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360006586013",
+        "submit_clicked": false,
+        "fields": []
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "evaluation": "fail",
+                "reasoning": "The email field does not have the required attribute, and no error message is displayed or programmatically linked upon invalid input. This violates WCAG 3.3.1 as there is no indication of input errors for users."
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "evaluation": "inapplicable",
+                "reasoning": "The email field is not required and does not trigger validation errors."
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "evaluation": "fail",
+                "reasoning": "The error message \"Email is required\" is revealed and visually associated with the input field. However, it is not programmatically linked using aria-describedby or any other ARIA attribute. This partial fulfillment of WCAG 3.3.1 means the error might not be announced by screen readers."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": true,
+        "fields": []
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction."
+            },
+            {
+                "identification": "+351 (Portugal) (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction."
+            },
+            {
+                "identification": "Telemóvel (opcional) (tel)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and no error message is expected or revealed upon interaction."
+            },
+            {
+                "identification": "Password (password)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction."
+            },
+            {
+                "identification": "Li e aceito as condições de utilização. (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is revealed upon interaction."
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Players or Teams (search)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Data de nascimento (MM) (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Data de nascimento (AAAA) (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "País/Região/Território (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox field is optional and does not require validation."
+            },
+            {
+                "identification": "Search Players or Teams (search)",
+                "evaluation": "inapplicable",
+                "reasoning": "The search field is optional and does not require validation."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The text field is optional and does not require validation."
+            },
+            {
+                "identification": "No Label (password)",
+                "evaluation": "inapplicable",
+                "reasoning": "The password field is optional and does not require validation."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The text field is optional and does not require validation."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The text field is optional and does not require validation."
+            },
+            {
+                "identification": "Data de nascimento (MM)",
+                "evaluation": "inapplicable",
+                "reasoning": "The month selection field is optional and does not require validation."
+            },
+            {
+                "identification": "Data de nascimento (AAAA)",
+                "evaluation": "inapplicable",
+                "reasoning": "The year selection field is optional and does not require validation."
+            },
+            {
+                "identification": "País/Região/Território",
+                "evaluation": "inapplicable",
+                "reasoning": "The country selection field is optional and does not require validation."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox field is optional and does not require validation."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "Unknown",
+                "reasoning": "No reasoning provided"
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox field is optional and does not require validation."
+            },
+            {
+                "identification": "Search Players or Teams (search)",
+                "evaluation": "inapplicable",
+                "reasoning": "The search field is optional and does not require validation."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The text field is optional and does not require validation."
+            },
+            {
+                "identification": "No Label (password)",
+                "evaluation": "inapplicable",
+                "reasoning": "The password field is optional and does not require validation."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The text field is optional and does not require validation."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The text field is optional and does not require validation."
+            },
+            {
+                "identification": "Data de nascimento (MM)",
+                "evaluation": "inapplicable",
+                "reasoning": "The month selection field is optional and does not require validation."
+            },
+            {
+                "identification": "Data de nascimento (AAAA)",
+                "evaluation": "inapplicable",
+                "reasoning": "The year selection field is optional and does not require validation."
+            },
+            {
+                "identification": "País/Região/Território",
+                "evaluation": "inapplicable",
+                "reasoning": "The country selection field is optional and does not require validation."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox field is optional and does not require validation."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "Unknown",
+                "reasoning": "No reasoning provided"
+            }
+        ]
+    },
+    {
+        "url": "https://www.ilovepdf.com/contact",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your Name",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "Your Email",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "Your Surname",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "I accept Terms & Conditions and Legal & Privacy",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ilovepdf.com/contact",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your Name",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "Your Email",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "Your Surname",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "I accept Terms & Conditions and Legal & Privacy",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ilovepdf.com/contact",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your Name",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "Your Email",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "Your Surname",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "I accept Terms & Conditions and Legal & Privacy",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ilovepdf.com/contact",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your Name",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "Your Email",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "Your Surname",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "I accept Terms & Conditions and Legal & Privacy",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "submit_clicked": true,
+        "fields": []
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "ap_customer_name",
+                "evaluation": "pass",
+                "reasoning": "The error message \"Enter your name\" is programmatically linked via aria-describedby and is visually associated with the input field. The input is also marked as invalid with aria-invalid=\"true\"."
+            },
+            {
+                "identification": "Not applicable (disabled field)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is disabled and therefore does not require validation."
+            },
+            {
+                "identification": "ap_email",
+                "evaluation": "pass",
+                "reasoning": "The error message \"Enter your email or mobile phone number\" is programmatically linked via aria-describedby and is visually associated with the input field. The input is also marked as invalid with aria-invalid=\"true\"."
+            },
+            {
+                "identification": "Not explicitly identified",
+                "evaluation": "inapplicable",
+                "reasoning": "There is no specific error message or validation attribute change mentioned for this field, suggesting it may not have been validated or may not have triggered an error."
+            },
+            {
+                "identification": "Not explicitly identified",
+                "evaluation": "inapplicable",
+                "reasoning": "There is no specific error message or validation attribute change mentioned for this field, suggesting it may not have been validated or may not have triggered an error."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ilovepdf.com/contact",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your Name",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "Your Email",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "Your Surname",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is expected."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            },
+            {
+                "identification": "I accept Terms & Conditions and Legal & Privacy",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed or programmatically linked."
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the knowledgebase...",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Phone",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Select",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Textarea",
+                "evaluation": "fail",
+                "reasoning": "This field is required but no error message is displayed upon form interaction."
+            },
+            {
+                "identification": "Cookie list search",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required with an asterisk (*), but it lacks the 'required' attribute and 'aria-required' for programmatic indication. The error message is visually indicated but not programmatically associated with"
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required and does not show any error message upon submission. There is no indication of an error or any programmatic linkage (e.g., aria-describedby) to convey the error to assistive technologies."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required and does not show any error message upon submission. There is no indication of an error or any programmatic linkage (e.g., aria-describedby) to convey the error to assistive technologies."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field is required and does not show any error message upon submission. There is no indication of an error or any programmatic linkage (e.g., aria-describedby) to convey the error to assistive technologies."
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "fail",
+                "reasoning": "The field is required and does not show any error message upon submission. There is no indication of an error or any programmatic linkage (e.g., aria-describedby) to convey the error to assistive technologies."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "evaluation": "fail",
+                "reasoning": "The error message \"Email is required\" is revealed and visually associated with the input field. However, it is not programmatically linked using aria-describedby or any other ARIA attribute. This partial fulfillment of WCAG 3.3.1 means the error might not be announced by all screen readers."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "message-wrap",
+                "evaluation": "fail",
+                "reasoning": "The error message is shown but is not programmatically linked to the input fields using aria-describedby, which ensures it is announced by screen readers. This adheres to WCAG 3.3.1 and the provided best practices."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "evaluation": "pass",
+                "reasoning": "The error message is shown and programmatically linked to the input field via aria-describedby, which ensures it is announced by screen readers. This adheres to WCAG 3.3.1 and the provided best practices."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error message is shown and programmatically linked to the input field via aria-describedby, which ensures it is announced by screen readers. This adheres to WCAG 3.3.1 and the provided best practices."
+            },
+            {
+                "identification": "Assunto",
+                "evaluation": "pass",
+                "reasoning": "The error message is shown and programmatically linked to the input field via aria-describedby, which ensures it is announced by screen readers. This adheres to WCAG 3.3.1 and the provided best practices."
+            },
+            {
+                "identification": "Mensagem",
+                "evaluation": "pass",
+                "reasoning": "The error message is shown and programmatically linked to the input field via aria-describedby, which ensures it is announced by screen readers. This adheres to WCAG 3.3.1 and the provided best practices."
+            },
+            {
+                "identification": "Telefone",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "submit_clicked": true,
+        "fields": []
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "N/A",
+                "evaluation": "inapplicable",
+                "reasoning": "All fields are optional and do not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "submit_clicked": true,
+        "fields": []
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The error message is not revealed, and there is no aria-describedby or any semantic indicator like aria-invalid. The field is marked as required with aria-required=\"true\"."
+            },
+            {
+                "identification": "Practice Name",
+                "evaluation": "fail",
+                "reasoning": "The error message is not revealed, and there is no aria-describedby or any semantic indicator like aria-invalid. The field is marked as required with aria-required=\"true\"."
+            },
+            {
+                "identification": "Provider First Name",
+                "evaluation": "fail",
+                "reasoning": "The error message is not revealed, and there is no aria-describedby or any semantic indicator like aria-invalid. The field is marked as required with aria-required=\"true\"."
+            },
+            {
+                "identification": "Provider Last Name",
+                "evaluation": "fail",
+                "reasoning": "The error message is not revealed, and there is no aria-describedby or any semantic indicator like aria-invalid. The field is marked as required with aria-required=\"true\"."
+            },
+            {
+                "identification": "Direct Phone Number",
+                "evaluation": "fail",
+                "reasoning": "The error message is not revealed, and there is no aria-describedby or any semantic indicator like aria-invalid. The field is marked as required with aria-required=\"true\"."
+            }
+        ]
+    },
+    {
+        "url": "https://www.istockphoto.com/customer-support",
+        "submit_clicked": false,
+        "fields": [
+            {
+                "identification": "text (input)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Nome (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is required but no submission interaction is available to check for error messages."
+            },
+            {
+                "identification": "Endereço de e-mail (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is required but no submission interaction is available to check for error messages."
+            },
+            {
+                "identification": "Tenho uma pergunta sobre: (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "Tenho um problema técnico com: (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is disabled and does not require validation for empty submission."
+            },
+            {
+                "identification": "Em que podemos ajudar? (textarea)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is required but no submission interaction is available to check for error messages."
+            },
+            {
+                "identification": "Unknown",
+                "evaluation": "Unknown",
+                "reasoning": "No reasoning provided"
+            }
+        ]
+    }
+]

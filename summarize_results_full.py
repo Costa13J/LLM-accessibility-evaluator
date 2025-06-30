@@ -1,7 +1,7 @@
 import json
 from collections import defaultdict
 
-with open("results_with_benchmarks_required_false.json", "r", encoding="utf-8") as f:
+with open("results_with_benchmarks_required.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 # Group entries by URL

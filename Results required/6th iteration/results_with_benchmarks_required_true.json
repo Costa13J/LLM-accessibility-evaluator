@@ -1,0 +1,364 @@
+[
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail",
+                "evaluation": "fail",
+                "reasoning": "This field should be required for form submission as it is essential for user communication. The lack of a 'required' attribute may lead to invalid submissions without user notification.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "evaluation": "fail",
+                "reasoning": "This field should also be required to ensure email confirmation. Without the 'required' attribute, the form may not prompt users to fill in this critical information.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "País de residência",
+                "evaluation": "fail",
+                "reasoning": "This field is typically required for compliance and localization purposes. The absence of a 'required' attribute might result in incomplete user data.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve.",
+                "evaluation": "fail",
+                "reasoning": "This checkbox should be required to ensure users agree to the terms and conditions. The lack of a 'required' attribute could allow form submission without necessary consent.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a 'required' attribute and no dynamic changes are detected, so it is not possible to determine if it should be required.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a 'required' attribute and no dynamic changes are detected, so it is not possible to determine if it should be required.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telemóvel (opcional) (tel)",
+                "evaluation": "pass",
+                "reasoning": "The field is optional and does not have a 'required' attribute, which is correct.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password (password)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a 'required' attribute and no dynamic changes are detected, so it is not possible to determine if it should be required.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Li e aceito as condições de utilização. (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a 'required' attribute and no dynamic changes are detected, so it is not possible to determine if it should be required.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "(+)351 (Portugal) (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is a checkbox and does not have a required attribute. Checkboxes typically do not use the 'required' attribute as they are not text input fields.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "Similar to the previous checkbox, this field does not have a required attribute, which is standard for checkboxes.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Search Players or Teams (search)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute, which is appropriate if it is not a mandatory field for form submission.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute. Without more context, it is inapplicable to determine if this is correct or not.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (password)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute. Without more context, it is inapplicable to determine if this is correct or not.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute. Without more context, it is inapplicable to determine if this is correct or not.\n\n-",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Birthdate (AAAA)",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name (optional)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name (optional)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Personal information (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Birthdate (MM)",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country/Region/Territory (select)",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.ilovepdf.com/contact",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your Name",
+                "evaluation": "pass",
+                "reasoning": "The field is required and does not have disabled or readonly attributes, so it should correctly use the 'required' attribute.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your Email",
+                "evaluation": "pass",
+                "reasoning": "The field is required and does not have disabled or readonly attributes, so it should correctly use the 'required' attribute.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The field is required and does not have disabled or readonly attributes, so it should correctly use the 'required' attribute.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your Surname",
+                "evaluation": "pass",
+                "reasoning": "The field is not required and does not have disabled or readonly attributes, so it does not need the 'required' attribute.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "pass",
+                "reasoning": "The field is required and does not have disabled or readonly attributes, so it should correctly use the 'required' attribute.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I accept Terms & Conditions and Legal & Privacy",
+                "evaluation": "pass",
+                "reasoning": "The field is required and does not have disabled or readonly attributes, so it should correctly use the 'required' attribute.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://support.fandango.com/fandangosupport/s/contactsupport",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the knowledgebase...",
+                "evaluation": "pass",
+                "reasoning": "The field is not required and does not need a 'required' attribute.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "*First Name (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is marked as required and should trigger an error message when left empty.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "*Last Name (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is marked as required and should trigger an error message when left empty.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "*Email (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is marked as required and should trigger an error message when left empty.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "*Phone (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is marked as required and should trigger an error message when left empty.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "*Subject (Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is marked as required and should trigger an error message when left empty.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "*",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is marked as required and should trigger an error message when left empty.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "*",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is marked as required and should trigger an error message when left empty.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Cookie list search",
+                "evaluation": "pass",
+                "reasoning": "The field is not required and does not need a 'required' attribute.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "checkbox label",
+                "evaluation": "pass",
+                "reasoning": "The fields are not required and do not need a 'required' attribute.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Brand (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How Can We Help? (textarea)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]
