@@ -22,6 +22,7 @@ def run_pipeline(evaluation_mode="wcag-3.3.1"):
     print(json.dumps(html_before, indent=2))
     action_result = find_and_click_submit_button(driver)
     submit_clicked = (action_result == "clicked")
+    time.sleep(5)
     mutations = extract_mutation_observer_results(driver) if action_result == "clicked" else None
     print(mutations)
     driver.quit()

@@ -4,8 +4,11 @@ import dspy
 class EvaluateInteractiveCues(dspy.Signature):
     """Check if form fields use appropriate required attributes if they adopt that state."""
     #html_snippet_before = dspy.InputField(desc="Form HTML snippet before user interaction.") #Use this for full form
-    html_snippet_before = dspy.InputField(desc="A list of the fields from the form to evaluate before user interaction.") #Use this for fields
-    mutations = dspy.InputField(desc="List of DOM mutations detected after submission of the form when left empty, capturing error messages and attribute changes.")
+    html_snippet_before = dspy.InputField(desc=(
+    "A list of the fields from the form to evaluate before user interaction."))
+    mutations = dspy.InputField(desc=(
+    "List of DOM mutations detected after submission of the form when left empty. "
+    "This includes relevant changes such as visible error messages, attribute changes."))
     retrieved_guidelines = dspy.InputField(desc="Relevant examples and best practices for the use of required attributes in form fields.")
     identification = dspy.OutputField(desc="For each field, extract and list its identification (preferably its label or name attribute) from the HTML snippet.")
     evaluation = dspy.OutputField(desc="""For each field, assess whether it correctly uses the 'required' attribute when appropriate based on the field’s behavior after submission (using the provided DOM mutations and best practice guidelines).
@@ -43,36 +46,30 @@ class GenerateSearchQuery(dspy.Signature):
 
 #Failure to identify errors
 class EvaluateErrorIdentification(dspy.Signature):
-    html_snippet_before = dspy.InputField(desc=("A list of the fields from the form to evaluate before user interaction."))
+    html_snippet_before = dspy.InputField(desc=(
+    "A list of form fields before submission. May exclude fields that were filtered out as irrelevant metadata or decoration."))
     mutations = dspy.InputField(desc=(
-        "Summary of DOM mutations after form submission. Includes error messages, attribute changes "
-        "like aria-invalid or aria-describedby, and whether messages are linked to input fields."
-    ))
+    "Summary of filtered DOM mutations after form submission. Includes only relevant error messages, validation attributes "
+    "like aria-invalid or aria-describedby, and associations with input fields. Noisy or decorative mutations are excluded."))
     retrieved_guidelines = dspy.InputField(desc=("Relevant examples and best practices for identifying input errors and associating messages with fields."))
     identification = dspy.OutputField(desc=("For each field, identify it by its label (preferred), or name/id if no label is available."))
     evaluation = dspy.OutputField(desc=(
     "For each field, assess whether it correctly identifies errors when they are thrown after submission, classifying them as 'pass', 'fail', or 'inapplicable'.\n"
     "- pass: A text-based error message is shown when the field is empty, linked to the input, and explains the cause of the error.\n"
     "- fail: The error message is missing, not linked, or too vague (e.g., just 'Invalid input').\n"
-    "- inapplicable: The field is optional or does not require validation for empty submission."
-    ))
-
-
+    "- inapplicable: The field is optional or does not require validation for empty submission."))
     reasoning = dspy.OutputField(desc=(
         "For each field, explain brieflt why the evaluation was 'pass', 'fail', or 'inapplicable' "
         "- Specify if an error message appeared after submission.\n"
     "- State whether the message was programmatically linked (e.g., via aria-describedby, 'for' attributes) or visually associated with the input.\n"
     "- Mention if semantic indicators like aria-invalid were added.\n"
-    "- If the field is inapplicable, explain why."
-    ))
-
+    "- If the field is inapplicable, explain why."))
     format = dspy.OutputField(desc=(
     "Present the results for each field using this exact format. Repeat it once per field:\n\n"
     "-Identification(label or name of the field): <identification>\n"
     "-Evaluation(\"pass\" or \"fail\" or \"inapplicable\"): <evaluation>\n"
     "-Reasoning(explanation of the evaluation result): <reasoning>\n\n"
-    "Do not include any other comments or summaries. Follow this structure exactly."
-    ))
+    "Do not include any other comments or summaries. Follow this structure exactly."))
 
 
 
