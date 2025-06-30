@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+from selenium.webdriver.common.by import By
 
 def extract_form_html(driver):
     """Extracts raw HTML of all <form> elements as strings."""
@@ -125,29 +126,115 @@ def extract_fields(driver):
     return {"fields": fields}
 
 
+def get_xpath(driver, element):
+    # Recursively build XPath from the element up to the root
+    def get_element_xpath(el):
+        if el.tag_name == 'html':
+            return '/html'
+        parent = el.find_element(By.XPATH, '..')
+        siblings = parent.find_elements(By.XPATH, f"./{el.tag_name}")
+        if len(siblings) == 1:
+            return get_element_xpath(parent) + f"/{el.tag_name}"
+        else:
+            index = siblings.index(el) + 1
+            return get_element_xpath(parent) + f"/{el.tag_name}[{index}]"
+    
+    try:
+        return get_element_xpath(element)
+    except Exception as e:
+        return f"Could not determine XPath: {e}"
 
-# Extracts all buttons and any element with an onclick event to pass to the LLM.
+from bs4 import BeautifulSoup
+from selenium.webdriver.common.by import By
+
 def extract_buttons_for_llm(driver):
     soup = BeautifulSoup(driver.page_source, 'html.parser')
     elements = []
+    button_index = 0
 
-    # Find buttons and input elements
-    for elem in soup.find_all(['button', 'input']):
-        elements.append({
-            "text": elem.text.strip() if elem.name == "button" else "No Text",
-            "id": elem.get("id", "No ID"),
-            "name": elem.get("name", "No Name"),
-            "onclick": elem.get("onclick", "No OnClick"),
-            "type": elem.get("type", "No Type"),
-        })
+    # Loop through button and input tags
+    for tag in ['button', 'input']:
+        for elem in soup.find_all(tag):
+            text = elem.get_text(strip=True) if tag == "button" else "No Text"
+            title = elem.get("title") or elem.get("aria-label") or text
+            value = elem.get("value", "No Value")
 
-    # Find any element with an onclick event 
+            # Attempt to locate the same element in the DOM to check visibility
+            sel_elem = None
+            try:
+                if elem.get("id"):
+                    sel_elem = driver.find_element(By.ID, elem["id"])
+                elif elem.get("name"):
+                    sel_elem = driver.find_element(By.NAME, elem["name"])
+                elif text:
+                    sel_elem = driver.find_element(By.XPATH, f'//{tag}[normalize-space()="{text}"]')
+            except:
+                pass
+
+            if sel_elem is not None:
+                try:
+                    if not sel_elem.is_displayed():
+                        continue  # Skip hidden buttons
+                except:
+                    continue  # Skip if visibility check fails
+            else:
+                continue  # Skip if we couldn't match it in the DOM
+
+            elements.append({
+                "button_id": f"button_{button_index}",
+                "tag": tag,
+                "text": text,
+                "title": title,
+                "id": elem.get("id", "No ID"),
+                "name": elem.get("name", "No Name"),
+                "onclick": elem.get("onclick", "No OnClick"),
+                "type": elem.get("type", "No Type"),
+                "value": value,
+                "hidden": False
+            })
+            button_index += 1
+
+    # Include other clickable elements with onclick (e.g., spans/divs)
     for elem in soup.find_all(onclick=True):
+        tag = elem.name
+        text = elem.get_text(strip=True)
+        title = elem.get("title") or elem.get("aria-label") or text
+        value = elem.get("value", "No Value")
+
+        # Try to locate the element in the DOM
+        sel_elem = None
+        try:
+            if elem.get("id"):
+                sel_elem = driver.find_element(By.ID, elem["id"])
+            elif elem.get("name"):
+                sel_elem = driver.find_element(By.NAME, elem["name"])
+            elif text:
+                sel_elem = driver.find_element(By.XPATH, f'//{tag}[normalize-space()="{text}"]')
+        except:
+            pass
+
+        if sel_elem is not None:
+            try:
+                if not sel_elem.is_displayed():
+                    continue
+            except:
+                continue
+        else:
+            continue
+
         elements.append({
-            "text": elem.text.strip() or "No Text",
+            "button_id": f"button_{button_index}",
+            "tag": tag,
+            "text": text or "No Text",
+            "title": title,
             "id": elem.get("id", "No ID"),
             "name": elem.get("name", "No Name"),
             "onclick": elem.get("onclick", "No OnClick"),
-            "type": elem.name
+            "type": tag,
+            "value": value,
+            "hidden": False
         })
+        button_index += 1
+
     return elements
+
