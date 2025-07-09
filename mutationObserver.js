@@ -1,6 +1,6 @@
 window.mutationRecords = window.mutationRecords || [];
 window.mutationLogSize = 0;  
-const MAX_MUTATION_LOG_SIZE = 1000000; 
+const MAX_MUTATION_LOG_SIZE = 300000; 
 let noiseFilterEnabled = false;
 
 function findAssociatedFieldInfo(target) {
@@ -82,7 +82,7 @@ const observer = new MutationObserver(function (mutationsList) {
         if (noiseFilterEnabled && !target.closest('form')) {
             window.mutationRecords.push({
                 type: mutation.type,
-                reasonCode: "Ignored: mutation outside form (high noise mode)",
+                reasonCode: "Ignored: mutation outside form",
                 timestamp: new Date().toISOString()
             });
             continue;

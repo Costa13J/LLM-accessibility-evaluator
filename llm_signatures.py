@@ -47,10 +47,10 @@ class GenerateSearchQuery(dspy.Signature):
 #Failure to identify errors
 class EvaluateErrorIdentification(dspy.Signature):
     html_snippet_before = dspy.InputField(desc=(
-    "A list of form fields before submission. May exclude fields that were filtered out as irrelevant metadata or decoration."))
+    "A list of the fields from the form to evaluate before user interaction."))
     mutations = dspy.InputField(desc=(
-    "Summary of filtered DOM mutations after form submission. Includes only relevant error messages, validation attributes "
-    "like aria-invalid or aria-describedby, and associations with input fields. Noisy or decorative mutations are excluded."))
+    "List of DOM mutations after form submission when left empty. Includes relevant error messages, validation attributes "
+    "like aria-invalid or aria-describedby, and associations with input fields."))
     retrieved_guidelines = dspy.InputField(desc=("Relevant examples and best practices for identifying input errors and associating messages with fields."))
     identification = dspy.OutputField(desc=("For each field, identify it by its label (preferred), or name/id if no label is available."))
     evaluation = dspy.OutputField(desc=(
@@ -65,11 +65,11 @@ class EvaluateErrorIdentification(dspy.Signature):
     "- Mention if semantic indicators like aria-invalid were added.\n"
     "- If the field is inapplicable, explain why."))
     format = dspy.OutputField(desc=(
-    "Present the results for each field using this exact format. Repeat it once per field:\n\n"
+    "Assemble the final output with this exact structure for each field:\n\n"
     "-Identification(label or name of the field): <identification>\n"
     "-Evaluation(\"pass\" or \"fail\" or \"inapplicable\"): <evaluation>\n"
     "-Reasoning(explanation of the evaluation result): <reasoning>\n\n"
-    "Do not include any other comments or summaries. Follow this structure exactly."))
+    "Ensure this exact structure is followed without any additional commentary."))
 
 
 
