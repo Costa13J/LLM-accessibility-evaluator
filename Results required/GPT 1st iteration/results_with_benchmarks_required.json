@@ -1,0 +1,718 @@
+[
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "The field is correctly marked as required and provides an error message when left empty.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The field is correctly marked as required and provides an error message when left empty.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The field is correctly marked as required and provides an error message when left empty.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "pass",
+                "reasoning": "The field is correctly marked as required and provides an error message when left empty.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Upload screenshot of error or issue (optional)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is marked as optional but does not have a clear indication of its optional status in the context of required fields.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Captcha",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "evaluation": "fail",
+                "reasoning": "The field lacks a required attribute and does not display an error message when left empty.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field lacks a required attribute and does not display an error message when left empty.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The field lacks a required attribute and does not display an error message when left empty.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Li e aceito as condições de utilização",
+                "evaluation": "fail",
+                "reasoning": "The checkbox lacks a required attribute and does not display an error message when left unchecked.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "(+)351 (Portugal) (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telemóvel",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "fail",
+                "reasoning": "The form fields lack proper labels, which makes them inaccessible to screen readers. Placeholders are not sufficient as they disappear when users type, and the absence of labels violates accessibility guidelines.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Search Players or Teams (search)",
+                "evaluation": "fail",
+                "reasoning": "The form fields lack proper labels, which makes them inaccessible to screen readers. Placeholders are not sufficient as they disappear when users type, and the absence of labels violates accessibility guidelines.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "fail",
+                "reasoning": "The form fields lack proper labels, which makes them inaccessible to screen readers. Placeholders are not sufficient as they disappear when users type, and the absence of labels violates accessibility guidelines.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (password)",
+                "evaluation": "fail",
+                "reasoning": "The form fields lack proper labels, which makes them inaccessible to screen readers. Placeholders are not sufficient as they disappear when users type, and the absence of labels violates accessibility guidelines.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "fail",
+                "reasoning": "The form fields lack proper labels, which makes them inaccessible to screen readers. Placeholders are not sufficient as they disappear when users type, and the absence of labels violates accessibility guidelines.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "fail",
+                "reasoning": "The form fields lack proper labels, which makes them inaccessible to screen readers. Placeholders are not sufficient as they disappear when users type, and the absence of labels violates accessibility guidelines.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Data de nascimento (MM)",
+                "evaluation": "fail",
+                "reasoning": "The form fields lack proper labels, which makes them inaccessible to screen readers. Placeholders are not sufficient as they disappear when users type, and the absence of labels violates accessibility guidelines.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Data de nascimento (AAAA)",
+                "evaluation": "fail",
+                "reasoning": "The form fields lack proper labels, which makes them inaccessible to screen readers. Placeholders are not sufficient as they disappear when users type, and the absence of labels violates accessibility guidelines.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "País/Região/Território",
+                "evaluation": "fail",
+                "reasoning": "The form fields lack proper labels, which makes them inaccessible to screen readers. Placeholders are not sufficient as they disappear when users type, and the absence of labels violates accessibility guidelines.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "fail",
+                "reasoning": "The form fields lack proper labels, which makes them inaccessible to screen readers. Placeholders are not sufficient as they disappear when users type, and the absence of labels violates accessibility guidelines.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "fail",
+                "reasoning": "The form fields lack proper labels, which makes them inaccessible to screen readers. Placeholders are not sufficient as they disappear when users type, and the absence of labels violates accessibility guidelines.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Birthdate (AAAA)",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Birthdate (MM)",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name (optional)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Personal information (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name (optional)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your name",
+                "evaluation": "fail",
+                "reasoning": "The field is required but does not provide a visible error message when left empty, and the placeholder is not sufficient as a label.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile number or email",
+                "evaluation": "pass",
+                "reasoning": "The field is required and provides a visible error message when left empty.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "The field is required and provides a visible error message when left empty.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Re-enter password",
+                "evaluation": "pass",
+                "reasoning": "The field is required and provides a visible error message when left empty.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "evaluation": "fail",
+                "reasoning": "The form fields lack required attributes despite having visible error messages for some fields. This is a failure in accessibility as required fields should be clearly indicated with the 'required' attribute or similar cues.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The form fields lack required attributes despite having visible error messages for some fields. This is a failure in accessibility as required fields should be clearly indicated with the 'required' attribute or similar cues.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The form fields lack required attributes despite having visible error messages for some fields. This is a failure in accessibility as required fields should be clearly indicated with the 'required' attribute or similar cues.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Nome do cliente embaixador",
+                "evaluation": "fail",
+                "reasoning": "The form fields lack required attributes despite having visible error messages for some fields. This is a failure in accessibility as required fields should be clearly indicated with the 'required' attribute or similar cues.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Permissão de aparecer nos dados do amigo que o convidou",
+                "evaluation": "fail",
+                "reasoning": "The form fields lack required attributes despite having visible error messages for some fields. This is a failure in accessibility as required fields should be clearly indicated with the 'required' attribute or similar cues.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Divulgação a terceiros",
+                "evaluation": "fail",
+                "reasoning": "The form fields lack required attributes despite having visible error messages for some fields. This is a failure in accessibility as required fields should be clearly indicated with the 'required' attribute or similar cues.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal",
+                "evaluation": "fail",
+                "reasoning": "The form fields lack required attributes despite having visible error messages for some fields. This is a failure in accessibility as required fields should be clearly indicated with the 'required' attribute or similar cues.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis",
+                "evaluation": "fail",
+                "reasoning": "The form fields lack required attributes despite having visible error messages for some fields. This is a failure in accessibility as required fields should be clearly indicated with the 'required' attribute or similar cues.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "NIF",
+                "evaluation": "fail",
+                "reasoning": "The form fields lack required attributes despite having visible error messages for some fields. This is a failure in accessibility as required fields should be clearly indicated with the 'required' attribute or similar cues.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Nome da empresa",
+                "evaluation": "fail",
+                "reasoning": "The form fields lack required attributes despite having visible error messages for some fields. This is a failure in accessibility as required fields should be clearly indicated with the 'required' attribute or similar cues.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "fail",
+                "reasoning": "The form fields lack required attributes despite having visible error messages for some fields. This is a failure in accessibility as required fields should be clearly indicated with the 'required' attribute or similar cues.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The required field is correctly marked and provides an error message when left empty.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The required field is correctly marked and provides an error message when left empty.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The required field is correctly marked and provides an error message when left empty.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The required field is correctly marked and provides an error message when left empty.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "pass",
+                "reasoning": "The optional field does not require validation and does not trigger an error message.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The email field lacks the 'required' attribute and does not provide any error messages for invalid input, which does not meet accessibility standards.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and has a visible indicator.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organização",
+                "evaluation": "pass",
+                "reasoning": "The field is optional and does not require validation.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and has a visible indicator.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telefone",
+                "evaluation": "pass",
+                "reasoning": "The field is optional and does not require validation.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Assunto",
+                "evaluation": "pass",
+                "reasoning": "The field is optional and does not require validation.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Tema",
+                "evaluation": "pass",
+                "reasoning": "The field is optional and does not require validation.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mensagem",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and has a visible indicator.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Código Postal *, Localidade *, Nº Apartado *",
+                "evaluation": "fail",
+                "reasoning": "The fields do not have the required attribute or appropriate error messages for required fields, which is a violation of accessibility standards.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "NºPorta",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Distrito",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Localidade",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Arruamento",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Concelho",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "All required fields are correctly marked with the 'required' attribute, but there is no visible error message or programmatic linking for error messages, which is necessary for accessibility.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Practice Name",
+                "evaluation": "fail",
+                "reasoning": "All required fields are correctly marked with the 'required' attribute, but there is no visible error message or programmatic linking for error messages, which is necessary for accessibility.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Provider First Name",
+                "evaluation": "fail",
+                "reasoning": "All required fields are correctly marked with the 'required' attribute, but there is no visible error message or programmatic linking for error messages, which is necessary for accessibility.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Provider Last Name",
+                "evaluation": "fail",
+                "reasoning": "All required fields are correctly marked with the 'required' attribute, but there is no visible error message or programmatic linking for error messages, which is necessary for accessibility.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct Phone Number",
+                "evaluation": "fail",
+                "reasoning": "All required fields are correctly marked with the 'required' attribute, but there is no visible error message or programmatic linking for error messages, which is necessary for accessibility.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "*Email, Confirma o teu endereço, País de residência, Tenho 13 anos ou mais de idade e concordo com os termos",
+                "evaluation": "fail",
+                "reasoning": "The fields do not have the required attribute, which is necessary for indicating that they are mandatory. Additionally, the error messages are hidden, which does not comply with accessibility standards.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve. (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Endereço de e-mail",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "País de residência (select)",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Localidade",
+                "evaluation": "pass",
+                "reasoning": "The field for \"localidade\" is marked as required and displays an appropriate error message when left empty, fulfilling accessibility requirements. The use of 'aria-required' is also present, which is a good practice.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "NºPorta",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Concelho",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Distrito",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Arruamento",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "*Email, Confirma o teu endereço, País de residência, Tenho 13 anos ou mais de idade e concordo com os termos",
+                "evaluation": "fail",
+                "reasoning": "The fields do not have the required attribute, and while they trigger error messages, these messages are not visible, which does not meet accessibility standards.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve. (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Endereço de e-mail",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "País de residência (select)",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

@@ -1,0 +1,23 @@
+https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b: 100.00% (4/4 correct), Reasoning mismatches: 0
+https://www.nba.com/account/sign-up: 88.89% (8/9 correct), Reasoning mismatches: 0
+https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0: 75.00% (3/4 correct), Reasoning mismatches: 0
+https://www.staples.pt/pt/pt/registo: 30.00% (3/10 correct), Reasoning mismatches: 0
+https://www.infinite.media/bible-gateway/: 25.00% (1/4 correct), Reasoning mismatches: 0
+https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta: 50.00% (1/2 correct), Reasoning mismatches: 0
+https://www.ipma.pt/pt/siteinfo/contactar.jsp: 100.00% (3/3 correct), Reasoning mismatches: 0
+https://doctor.webmd.com/learnmore/profile: 100.00% (5/5 correct), Reasoning mismatches: 0
+https://www.cricbuzz.com/info/contact: 80.00% (4/5 correct), Reasoning mismatches: 0
+https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62: 100.00% (1/1 correct), Reasoning mismatches: 0
+https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel: 100.00% (1/1 correct), Reasoning mismatches: 0  
+https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel: 100.00% (1/1 correct), Reasoning mismatches: 0  
+
+Overall Accuracy: 70.83% (34/48 correct)
+Total Reasoning Mismatches: 0
+PS C:\Users\Utilizador\Desktop\Thesis> & C:/Users/Utilizador/AppData/Local/Programs/Python/Python312/python.exe c:/Users/Utilizador/Desktop/Thesis/summarize_results_full.py
+=== Full Summary of All Evaluated Fields ===
+Total Fields Evaluated: 64
+✅ Matches: 34 (53.12%)
+❌ Mismatches: 9 (14.06%)
+Absent Matches: 15 (23.44%)
+Benchmarked as N/A: 5 (7.81%)
+Reasoning mismatches: 0 (0.00%)

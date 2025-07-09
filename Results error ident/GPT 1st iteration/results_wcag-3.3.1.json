@@ -1,0 +1,439 @@
+[
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "evaluation": "fail",
+                "reasoning": "The error message is visible and provides specific feedback about the email input. However, it is not programmatically linked to the input fields via aria-describedby or similar mechanisms, which is necessary for accessibility compliance."
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "name",
+                "evaluation": "fail",
+                "reasoning": "The error message for the name field is hidden using CSS and not programmatically linked to the input field."
+            },
+            {
+                "identification": "email",
+                "evaluation": "fail",
+                "reasoning": "The error message for the email field is hidden using CSS and not programmatically linked to the input field."
+            },
+            {
+                "identification": "password",
+                "evaluation": "fail",
+                "reasoning": "The error message for the password field is hidden using CSS and not programmatically linked to the input field."
+            },
+            {
+                "identification": "accept-terms",
+                "evaluation": "fail",
+                "reasoning": "The error message for the terms acceptance field is hidden using CSS and not programmatically linked to the input field."
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "username",
+                "evaluation": "fail",
+                "reasoning": "Many fields lack proper labels, which makes them inaccessible to screen readers. The absence of labels violates WCAG 1.3.1 and 3.3.2, as placeholders alone do not provide sufficient context for users."
+            },
+            {
+                "identification": "email",
+                "evaluation": "fail",
+                "reasoning": "Many fields lack proper labels, which makes them inaccessible to screen readers. The absence of labels violates WCAG 1.3.1 and 3.3.2, as placeholders alone do not provide sufficient context for users."
+            },
+            {
+                "identification": "password",
+                "evaluation": "fail",
+                "reasoning": "Many fields lack proper labels, which makes them inaccessible to screen readers. The absence of labels violates WCAG 1.3.1 and 3.3.2, as placeholders alone do not provide sufficient context for users."
+            },
+            {
+                "identification": "firstName",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "lastName",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation for empty submission."
+            },
+            {
+                "identification": "dobMonth",
+                "evaluation": "fail",
+                "reasoning": "Many fields lack proper labels, which makes them inaccessible to screen readers. The absence of labels violates WCAG 1.3.1 and 3.3.2, as placeholders alone do not provide sufficient context for users."
+            },
+            {
+                "identification": "dobYear",
+                "evaluation": "fail",
+                "reasoning": "Many fields lack proper labels, which makes them inaccessible to screen readers. The absence of labels violates WCAG 1.3.1 and 3.3.2, as placeholders alone do not provide sufficient context for users."
+            },
+            {
+                "identification": "country",
+                "evaluation": "fail",
+                "reasoning": "Many fields lack proper labels, which makes them inaccessible to screen readers. The absence of labels violates WCAG 1.3.1 and 3.3.2, as placeholders alone do not provide sufficient context for users."
+            },
+            {
+                "identification": "privacyConsent",
+                "evaluation": "fail",
+                "reasoning": "Many fields lack proper labels, which makes them inaccessible to screen readers. The absence of labels violates WCAG 1.3.1 and 3.3.2, as placeholders alone do not provide sufficient context for users."
+            },
+            {
+                "identification": "emailConsent",
+                "evaluation": "fail",
+                "reasoning": "Many fields lack proper labels, which makes them inaccessible to screen readers. The absence of labels violates WCAG 1.3.1 and 3.3.2, as placeholders alone do not provide sufficient context for users."
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "username",
+                "evaluation": "pass",
+                "reasoning": "The field is required and has an appropriate error message that is visible and programmatically linked via aria-describedby."
+            },
+            {
+                "identification": "email",
+                "evaluation": "pass",
+                "reasoning": "The field is required and has an appropriate error message that is visible and programmatically linked via aria-describedby."
+            },
+            {
+                "identification": "password",
+                "evaluation": "pass",
+                "reasoning": "The field is required and has an appropriate error message that is visible and programmatically linked via aria-describedby."
+            },
+            {
+                "identification": "re-enter password",
+                "evaluation": "pass",
+                "reasoning": "The field is required and has an appropriate error message that is visible and programmatically linked via aria-describedby."
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "username",
+                "evaluation": "fail",
+                "reasoning": "The form fields do not have any required attributes, and thus do not trigger validation errors. However, the error messages for required fields are not programmatically linked to the respective inputs, violating WCAG 3.3.1."
+            },
+            {
+                "identification": "email",
+                "evaluation": "fail",
+                "reasoning": "The form fields do not have any required attributes, and thus do not trigger validation errors. However, the error messages for required fields are not programmatically linked to the respective inputs, violating WCAG 3.3.1."
+            },
+            {
+                "identification": "password",
+                "evaluation": "fail",
+                "reasoning": "The form fields do not have any required attributes, and thus do not trigger validation errors. However, the error messages for required fields are not programmatically linked to the respective inputs, violating WCAG 3.3.1."
+            },
+            {
+                "identification": "client ambassador name",
+                "evaluation": "fail",
+                "reasoning": "The form fields do not have any required attributes, and thus do not trigger validation errors. However, the error messages for required fields are not programmatically linked to the respective inputs, violating WCAG 3.3.1."
+            },
+            {
+                "identification": "permission to appear in friend data",
+                "evaluation": "fail",
+                "reasoning": "The form fields do not have any required attributes, and thus do not trigger validation errors. However, the error messages for required fields are not programmatically linked to the respective inputs, violating WCAG 3.3.1."
+            },
+            {
+                "identification": "third-party disclosure",
+                "evaluation": "fail",
+                "reasoning": "The form fields do not have any required attributes, and thus do not trigger validation errors. However, the error messages for required fields are not programmatically linked to the respective inputs, violating WCAG 3.3.1."
+            },
+            {
+                "identification": "commercial communications consent",
+                "evaluation": "fail",
+                "reasoning": "The form fields do not have any required attributes, and thus do not trigger validation errors. However, the error messages for required fields are not programmatically linked to the respective inputs, violating WCAG 3.3.1."
+            },
+            {
+                "identification": "terms and conditions agreement",
+                "evaluation": "fail",
+                "reasoning": "The form fields do not have any required attributes, and thus do not trigger validation errors. However, the error messages for required fields are not programmatically linked to the respective inputs, violating WCAG 3.3.1."
+            },
+            {
+                "identification": "NIF",
+                "evaluation": "fail",
+                "reasoning": "The form fields do not have any required attributes, and thus do not trigger validation errors. However, the error messages for required fields are not programmatically linked to the respective inputs, violating WCAG 3.3.1."
+            },
+            {
+                "identification": "company name",
+                "evaluation": "fail",
+                "reasoning": "The form fields do not have any required attributes, and thus do not trigger validation errors. However, the error messages for required fields are not programmatically linked to the respective inputs, violating WCAG 3.3.1."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "username",
+                "evaluation": "fail",
+                "reasoning": "The fields are required, but there are no visible error messages associated with them when left empty. This violates WCAG 3.3.1, which mandates that error messages must be displayed for required fields."
+            },
+            {
+                "identification": "email",
+                "evaluation": "fail",
+                "reasoning": "The fields are required, but there are no visible error messages associated with them when left empty. This violates WCAG 3.3.1, which mandates that error messages must be displayed for required fields."
+            },
+            {
+                "identification": "organization",
+                "evaluation": "fail",
+                "reasoning": "The fields are required, but there are no visible error messages associated with them when left empty. This violates WCAG 3.3.1, which mandates that error messages must be displayed for required fields."
+            },
+            {
+                "identification": "website",
+                "evaluation": "inapplicable",
+                "reasoning": "The website field is optional and does not require validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "evaluation": "inapplicable",
+                "reasoning": "No form interaction has occurred, so there are no error messages to evaluate for the email field or the text field."
+            },
+            {
+                "identification": "website",
+                "evaluation": "inapplicable",
+                "reasoning": "No form interaction has occurred, so there are no error messages to evaluate for the email field or the text field."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "evaluation": "fail",
+                "reasoning": "The input fields lack visible labels, which makes them inaccessible to screen readers. The placeholders do not fulfill the requirement for programmatic association, violating WCAG 3.3.2."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The input fields lack visible labels, which makes them inaccessible to screen readers. The placeholders do not fulfill the requirement for programmatic association, violating WCAG 3.3.2."
+            },
+            {
+                "identification": "Mensagem",
+                "evaluation": "fail",
+                "reasoning": "The input fields lack visible labels, which makes them inaccessible to screen readers. The placeholders do not fulfill the requirement for programmatic association, violating WCAG 3.3.2."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "username",
+                "evaluation": "fail",
+                "reasoning": "The fields are missing required attributes and programmatic associations. While some fields have visible error messages, they lack proper linking to the input fields via aria-describedby or similar mechanisms. This fails to meet WCAG 3.3.2 and 1.3.1."
+            },
+            {
+                "identification": "phone",
+                "evaluation": "fail",
+                "reasoning": "The fields are missing required attributes and programmatic associations. While some fields have visible error messages, they lack proper linking to the input fields via aria-describedby or similar mechanisms. This fails to meet WCAG 3.3.2 and 1.3.1."
+            },
+            {
+                "identification": "localidade",
+                "evaluation": "fail",
+                "reasoning": "The fields are missing required attributes and programmatic associations. While some fields have visible error messages, they lack proper linking to the input fields via aria-describedby or similar mechanisms. This fails to meet WCAG 3.3.2 and 1.3.1."
+            },
+            {
+                "identification": "arruamento",
+                "evaluation": "fail",
+                "reasoning": "The fields are missing required attributes and programmatic associations. While some fields have visible error messages, they lack proper linking to the input fields via aria-describedby or similar mechanisms. This fails to meet WCAG 3.3.2 and 1.3.1."
+            },
+            {
+                "identification": "numPorta",
+                "evaluation": "fail",
+                "reasoning": "The fields are missing required attributes and programmatic associations. While some fields have visible error messages, they lack proper linking to the input fields via aria-describedby or similar mechanisms. This fails to meet WCAG 3.3.2 and 1.3.1."
+            },
+            {
+                "identification": "nApartado",
+                "evaluation": "fail",
+                "reasoning": "The fields are missing required attributes and programmatic associations. While some fields have visible error messages, they lack proper linking to the input fields via aria-describedby or similar mechanisms. This fails to meet WCAG 3.3.2 and 1.3.1."
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "evaluation": "fail",
+                "reasoning": "All fields are marked as required and have the aria-required attribute, but there are no visible error messages or validation feedback provided when the fields are left empty. This fails to meet the requirements for error identification and feedback."
+            },
+            {
+                "identification": "practice-name",
+                "evaluation": "fail",
+                "reasoning": "All fields are marked as required and have the aria-required attribute, but there are no visible error messages or validation feedback provided when the fields are left empty. This fails to meet the requirements for error identification and feedback."
+            },
+            {
+                "identification": "provider-first-name",
+                "evaluation": "fail",
+                "reasoning": "All fields are marked as required and have the aria-required attribute, but there are no visible error messages or validation feedback provided when the fields are left empty. This fails to meet the requirements for error identification and feedback."
+            },
+            {
+                "identification": "provider-last-name",
+                "evaluation": "fail",
+                "reasoning": "All fields are marked as required and have the aria-required attribute, but there are no visible error messages or validation feedback provided when the fields are left empty. This fails to meet the requirements for error identification and feedback."
+            },
+            {
+                "identification": "direct-phone-number",
+                "evaluation": "fail",
+                "reasoning": "All fields are marked as required and have the aria-required attribute, but there are no visible error messages or validation feedback provided when the fields are left empty. This fails to meet the requirements for error identification and feedback."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "The error message is visible and programmatically linked to the input field, fulfilling WCAG 3.3.1."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error message is visible and programmatically linked to the input field, fulfilling WCAG 3.3.1."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The error message is visible and programmatically linked to the input field, fulfilling WCAG 3.3.1."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "fail",
+                "reasoning": "The textarea lacks a proper label, making it inaccessible to screen readers, violating WCAG 1.3.1 and 3.3.2."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation feedback."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "evaluation": "fail",
+                "reasoning": "The error message is visible and provides specific feedback about the email input. However, it is not programmatically linked to the input fields via aria-describedby or similar mechanisms, which is necessary for accessibility compliance."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "localidade",
+                "evaluation": "pass",
+                "reasoning": "The field for \"Localidade\" correctly shows an error message when left empty, and the error message is programmatically linked to the input field via the label's 'for' attribute. The error message is also visible, which meets the accessibility guidelines."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. The error messages are displayed in a separate div, which is not linked to the input via aria-describedby or similar attributes."
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. The error messages are displayed in a separate div, which is not linked to the input via aria-describedby or similar attributes."
+            },
+            {
+                "identification": "País de residência",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not need validation for empty submission."
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve.",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is not required and does not need validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "evaluation": "pass",
+                "reasoning": "The email input field displays an error message \"Email is required\" when left empty. The error message is visually associated with the input field and is presented within a div with role=\"alert\", which is accessible to assistive technologies. However, there is no programmatic link like aria-describedby to directly associate the error message with the input field."
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "evaluation": "pass",
+                "reasoning": "The email field displays an error message \"Email is required\" when left empty. The error message is visually associated with the input field and is contained within a div with role=\"alert\", which makes it perceivable by assistive technologies. This follows WCAG guidelines for error identification and association."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, and aria-invalid is set to true when the field is empty, indicating an error state."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, and aria-invalid is set to true when the field is empty, indicating an error state."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, and aria-invalid is set to true when the field is empty, indicating an error state."
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, and aria-invalid is set to true when the field is empty, indicating an error state."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation for empty submission."
+            }
+        ]
+    }
+]

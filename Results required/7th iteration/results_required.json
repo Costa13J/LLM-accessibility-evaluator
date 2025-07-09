@@ -570,5 +570,31 @@
                 "reasoning": "The field lacks the 'required' attribute but triggers an error message when left unchecked, which is appropriate for a required field."
             }
         ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail (text)",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but lacks the 'required' attribute and does not display an error message when left empty."
+            },
+            {
+                "identification": "Confirma o teu endereço (text)",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but lacks the 'required' attribute and does not display an error message when left empty."
+            },
+            {
+                "identification": "País de residência (select)",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but lacks the 'required' attribute and does not display an error message when left empty."
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve. (checkbox)",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but lacks the 'required' attribute and does not display an error message when left unchecked."
+            }
+        ]
     }
 ]
