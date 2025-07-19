@@ -1,8 +1,11 @@
+import re
 import dspy
 from extractors import extract_buttons_for_llm
+from constants import fallback_invalid_input
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import WebDriverException
 
 # LLM identifies the actual submit button 
 class IdentifySubmitButton(dspy.Signature):
@@ -108,59 +111,146 @@ def find_and_click_submit_button(driver):
         print(f"Unexpected error in find_and_click_submit_button: {e}")
         return None
     
-class IdentifyPopupDismissButton(dspy.Signature):
-    buttons_info = dspy.InputField(desc="List of visible button elements on the page (text, id, name, onclick, type).")
-    predicted_button_xpath = dspy.OutputField(desc="The exact XPATH of the button that is most likely a accept/continue/agree/dismiss button for a popup or cookie banner (or 'None' if no such popup or alert exists).")
-
-identify_popup_dismiss_button = dspy.ChainOfThought(IdentifyPopupDismissButton)
 
 
-def find_and_dismiss_popup(driver):
-    try:
-        from extractors import extract_buttons_for_llm
 
-        print("🔍 [PopupHandler] Extracting all visible buttons...")
-        buttons = extract_buttons_for_llm(driver)
-        if not buttons:
-            print("⚠️ [PopupHandler] No visible buttons found on the page.")
-            return False
-        
-        # 🔍 Print extracted button info
-        print("🧵 [PopupHandler] Extracted buttons:")
-        for i, b in enumerate(buttons):
-            print(f"  {i+1}. {b}")
+class SuggestInvalidInputsForTesting(dspy.Signature):
+    """Suggest invalid input values tailored to each field type, in order to trigger meaningful error messages."""
 
-        print(f"📦 [PopupHandler] {len(buttons)} buttons found. Sending to LLM for popup dismiss prediction.")
-        response = identify_popup_dismiss_button(buttons_info=str(buttons))
+    html_snippet_before = dspy.InputField(desc=(
+        "A list of form fields before user interaction. Includes their labels, input types (e.g., text, email, password), and any visible hints."
+    ))
 
-        dismiss_button_xpath = response.predicted_button_xpath
-        print(f"🤖 [PopupHandler] LLM Response: {dismiss_button_xpath}")
+    query_goal = dspy.InputField(desc=(
+        "Explain that the goal is to test error messages shown when users enter invalid data. The model should suggest realistic invalid values."
+    ))
 
-        if not dismiss_button_xpath or dismiss_button_xpath.strip().lower() == "none":
-            print("🚫 [PopupHandler] LLM did not identify any popup dismiss button.")
-            return False
+    suggestions = dspy.OutputField(desc=(
+        "For each field, return a test input that is intentionally incorrect. Tailor the value based on the field type, and try to variate if there are similar fields:\n"
+        "- Email: missing '@' or domain (e.g., 'user.com')\n"
+        "- Password: too short, too simple, or missing required characters\n"
+        "- Date: wrong format or invalid date (e.g., '32/13/2023')\n"
+        "- Numeric: letters instead of numbers\n\n"
+        "Return one suggested invalid value per field in a structured format:\n"
+        "- Field(label or name): <field>\n"
+        "- Suggested invalid input: <value>\n"
+    ))
 
-        # Try native click
+def get_invalid_inputs_for_fields(fields, llm):
+    prompt = "\n".join(
+        [f"- Label: {f['label']}, Type: {f['type']}" for f in fields]
+    )
+    input_example = {
+        "html_snippet_before": prompt,
+        "query_goal": "Suggest invalid inputs to trigger helpful or ambiguous error messages."
+    }
+    result = llm(**input_example)
+    lines = result.suggestions.strip().split("\n")
+    parsed = []
+    field = None
+    value = None
+
+    for line in lines:
+        if line.strip().startswith("- Field"):
+            match = re.search(r"- Field.*?:\s*(.+)", line)
+            if match:
+                field = match.group(1).strip()
+        elif line.strip().startswith("- Suggested invalid input"):
+            match = re.search(r"- Suggested invalid input:\s*(.+)", line)
+            if match:
+                value = match.group(1).strip()
+                if field and value:
+                    parsed.append({"field": field, "value": value})
+                    field = None
+                    value = None
+
+    print("================[DEBUG parsed suggestions]==================")
+    print(parsed)
+    return parsed
+    
+
+
+
+
+def type_invalid_inputs(driver, html_before, predefined_values=None):
+    typed_inputs = []
+
+    print("==========[DEBUG: Predefined Invalid Values]==========")
+    print(predefined_values)
+
+    for field in html_before["fields"]:
+        label = field.get("label", "")
+        field_id = field.get("id")
+        field_name = field.get("name")
+        field_type = field.get("type", "").lower()
+        is_disabled = str(field.get("disabled", "")).lower() in ["true", "1"]
+        is_readonly = str(field.get("readonly", "")).lower() in ["true", "1"]
+
+
+        print(f"\n[FIELD] {label} ({field_type})")
+        print(f"  - disabled={is_disabled}, readonly={is_readonly}")
+
+        if is_disabled or is_readonly:
+            print(f"  - Skipping: disabled or readonly")
+            continue
+
+        if field_type in ["hidden", "submit", "button", "fieldset", "file", "select", "checkbox"]:
+            print(f"  - Skipping: unsupported field type")
+            continue
+
+        # ✨ Pull from predefined values (LLM), else fallback
+        if predefined_values:
+            match = next((item for item in predefined_values if item["field"].strip().lower() == label.strip().lower()), None)
+            invalid_value = match["value"] if match else fallback_invalid_input(field_type, label)
+        else:
+            invalid_value = fallback_invalid_input(field_type, label)
+
+        if not invalid_value.strip():
+            print(f"  - Skipping: no invalid input generated")
+            continue
+
+        element = None
         try:
-            print(f"🎯 [PopupHandler] Trying to click button with XPath: {dismiss_button_xpath}")
-            dismiss_button = WebDriverWait(driver, 5).until(
-                EC.element_to_be_clickable((By.XPATH, dismiss_button_xpath))
-            )
-            dismiss_button.click()
-            print("✅ [PopupHandler] Click succeeded (normal click).")
-            return True
+            if field_id:
+                print(f"  - Trying ID: {field_id}")
+                element = driver.find_element(By.ID, field_id)
+            elif field_name:
+                print(f"  - Trying NAME: {field_name}")
+                elements = driver.find_elements(By.NAME, field_name)
+                for el in elements:
+                    if el.is_enabled() and el.is_displayed():
+                        element = el
+                        break
+            else:
+                print("  - Skipping: no locator (id or name)")
+                continue
 
-        except Exception as e:
-            print(f"⚠️ [PopupHandler] Normal click failed: {e}")
-            print("🧪 [PopupHandler] Attempting fallback JavaScript click...")
+            if not element:
+                print("  - Skipping: element not found")
+                continue
+
+            if not element.is_enabled() or not element.is_displayed():
+                print("  - Skipping: element not visible")
+                continue
+
             try:
-                driver.execute_script("arguments[0].click();", dismiss_button)
-                print("✅ [PopupHandler] Click succeeded (JavaScript fallback).")
-                return True
-            except Exception as js_e:
-                print(f"❌ [PopupHandler] JavaScript click also failed: {js_e}")
-                return False
+                element.clear()
+            except WebDriverException as e:
+                print(f"  - Warning: clear() failed: {e}")
 
-    except Exception as e:
-        print(f"🔥 [PopupHandler] Unexpected error: {e}")
-        return False
+            try:
+                element.send_keys(invalid_value)
+                driver.execute_script("arguments[0].blur();", element)
+                print(f"  - Typed: '{invalid_value}'")
+                typed_inputs.append({
+                    "field": label or field_name or field_id,
+                    "value": invalid_value
+                })
+            except WebDriverException as e:
+                print(f"  - Typing failed: {e}")
+
+        except WebDriverException as e:
+            print(f"  - Not interactable: {e}")
+
+    print(f"\nTyped invalid values: {typed_inputs}")
+    return typed_inputs
