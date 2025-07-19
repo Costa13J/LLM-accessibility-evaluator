@@ -1,0 +1,431 @@
+[
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "The 'Name' field is marked as required and correctly triggers an error message when left empty, indicating proper use of the 'required' attribute."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The 'Email' field is marked as required and correctly triggers an error message when left empty, indicating proper use of the 'required' attribute."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The 'Subject' field is marked as required and correctly triggers an error message when left empty, indicating proper use of the 'required' attribute."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "pass",
+                "reasoning": "The 'No Label' (textarea) field is marked as required and correctly triggers an error message when left empty, indicating proper use of the 'required' attribute."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp)",
+                "evaluation": "inapplicable",
+                "reasoning": "The '(jpg,png,gif,bmp)' (file) field is not marked as required and does not trigger an error message, indicating it is optional."
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email(Required)",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and uses the 'required' attribute appropriately. However, there is no indication of error messages being programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and uses the 'required' attribute appropriately. However, there is no indication of error messages being programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and uses the 'required' attribute appropriately. However, there is no indication of error messages being programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and uses the 'required' attribute appropriately. However, there is no indication of error messages being programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and uses the 'required' attribute appropriately. However, there is no indication of error messages being programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Insira os termos de pesquisa",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked with the 'required' attribute or 'aria-required', and no error message is triggered, indicating it is not treated as required."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not labeled and does not have a required attribute, making it unclear if it is required."
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field is required, as indicated by the visible error message when left empty, but it lacks the 'required' attribute. The placeholder text is not a sufficient indicator of the required status."
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The email field is required, as indicated by the visible error message when left empty, but it lacks the 'required' attribute. The placeholder text is not a sufficient indicator of the required status."
+            },
+            {
+                "identification": "Enter your website to explore",
+                "evaluation": "inapplicable",
+                "reasoning": "The website field does not show any required behavior or error message, indicating it is optional."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The \"First Name\" field is required and uses 'aria-required', triggering an error message when left empty."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The \"Last Name\" field is required and uses 'aria-required', triggering an error message when left empty."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The \"Email\" field is required and uses 'aria-required', triggering an error message when left empty."
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The \"Organization\" field is required and uses 'aria-required', triggering an error message when left empty."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"Website\" field is optional and does not trigger any validation errors."
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome *",
+                "evaluation": "fail",
+                "reasoning": "The field is intended to be required but lacks the 'required' attribute. Error messages are triggered, indicating it is treated as required, but the absence of the 'required' attribute means it does not meet HTML standards for indicating required fields."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "fail",
+                "reasoning": "The field is intended to be required but lacks the 'required' attribute. Error messages are triggered, indicating it is treated as required, but the absence of the 'required' attribute means it does not meet HTML standards for indicating required fields."
+            },
+            {
+                "identification": "Password *",
+                "evaluation": "fail",
+                "reasoning": "The field is intended to be required but lacks the 'required' attribute. Error messages are triggered, indicating it is treated as required, but the absence of the 'required' attribute means it does not meet HTML standards for indicating required fields."
+            },
+            {
+                "identification": "NIF *",
+                "evaluation": "fail",
+                "reasoning": "The field is intended to be required but lacks the 'required' attribute. Error messages are triggered, indicating it is treated as required, but the absence of the 'required' attribute means it does not meet HTML standards for indicating required fields."
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your name",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the 'required' attribute and triggers an error message when left empty, indicating it is required."
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional as it lacks the 'required' attribute and no validation feedback is triggered upon submission."
+            },
+            {
+                "identification": "Search Players or Teams",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional as it lacks the 'required' attribute and no validation feedback is triggered upon submission."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional as it lacks the 'required' attribute and no validation feedback is triggered upon submission."
+            },
+            {
+                "identification": "No Label (password)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional as it lacks the 'required' attribute and no validation feedback is triggered upon submission."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional as it lacks the 'required' attribute and no validation feedback is triggered upon submission."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional as it lacks the 'required' attribute and no validation feedback is triggered upon submission."
+            },
+            {
+                "identification": "Data de nascimento (MM)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional as it lacks the 'required' attribute and no validation feedback is triggered upon submission."
+            },
+            {
+                "identification": "Data de nascimento (AAAA)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional as it lacks the 'required' attribute and no validation feedback is triggered upon submission."
+            },
+            {
+                "identification": "País/Região/Território",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional as it lacks the 'required' attribute and no validation feedback is triggered upon submission."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional as it lacks the 'required' attribute and no validation feedback is triggered upon submission."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional as it lacks the 'required' attribute and no validation feedback is triggered upon submission."
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks the 'required' attribute, and no error message is displayed when left empty."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks the 'required' attribute, and no error message is displayed when left empty."
+            },
+            {
+                "identification": "Country",
+                "evaluation": "fail",
+                "reasoning": "The field is a select input without the 'required' attribute, and no error message is displayed when left empty."
+            },
+            {
+                "identification": "Telemóvel (opcional)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional, as indicated by its label, and does not require the 'required' attribute."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks the 'required' attribute, and no error message is displayed when left empty."
+            },
+            {
+                "identification": "Li e aceito as condições de utilização",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks the 'required' attribute, and no error message is displayed when left unchecked."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the 'required' attribute, yet it triggers a visual indication of being required through styling changes. This suggests it is treated as a required field but lacks the necessary semantic indication."
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the 'required' attribute, yet it triggers a visual indication of being required through styling changes. This suggests it is treated as a required field but lacks the necessary semantic indication."
+            },
+            {
+                "identification": "País de residência",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the 'required' attribute, yet it triggers a visual indication of being required through styling changes. This suggests it is treated as a required field but lacks the necessary semantic indication."
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve.",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the 'required' attribute, yet it triggers a visual indication of being required through styling changes. This suggests it is treated as a required field but lacks the necessary semantic indication."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Insira os termos de pesquisa (search)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the 'required' attribute or any equivalent semantic indicator, and no error messages are triggered, indicating it is not treated as a required field."
+            },
+            {
+                "identification": "Distrito (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the 'required' attribute or any equivalent semantic indicator, and no error messages are triggered, indicating it is not treated as a required field."
+            },
+            {
+                "identification": "Concelho (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the 'required' attribute or any equivalent semantic indicator, and no error messages are triggered, indicating it is not treated as a required field."
+            },
+            {
+                "identification": "Localidade (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the 'required' attribute or any equivalent semantic indicator, and no error messages are triggered, indicating it is not treated as a required field."
+            },
+            {
+                "identification": "Arruamento (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the 'required' attribute or any equivalent semantic indicator, and no error messages are triggered, indicating it is not treated as a required field."
+            },
+            {
+                "identification": "N° Porta (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the 'required' attribute or any equivalent semantic indicator, and no error messages are triggered, indicating it is not treated as a required field."
+            },
+            {
+                "identification": "Código Postal * (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the 'required' attribute or any equivalent semantic indicator, and no error messages are triggered, indicating it is not treated as a required field."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the 'required' attribute or any equivalent semantic indicator, and no error messages are triggered, indicating it is not treated as a required field."
+            },
+            {
+                "identification": "Localidade * (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the 'required' attribute or any equivalent semantic indicator, and no error messages are triggered, indicating it is not treated as a required field."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the 'required' attribute or any equivalent semantic indicator, and no error messages are triggered, indicating it is not treated as a required field."
+            },
+            {
+                "identification": "Nº Apartado * (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the 'required' attribute or any equivalent semantic indicator, and no error messages are triggered, indicating it is not treated as a required field."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked with the 'required' attribute and does not trigger any validation feedback, indicating it is optional."
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your name (text)",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the 'required' attribute and triggers an error message when left empty, indicating it is required."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked with the 'required' attribute and does not trigger any validation feedback, indicating it is optional."
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your name",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the 'required' attribute, and an error message is displayed when left empty, indicating it is required."
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your name (text)",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the 'required' attribute and correctly triggers a visible error message when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your name (text)",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the 'required' attribute and triggers an error message when left empty, indicating it is required."
+            }
+        ]
+    }
+]

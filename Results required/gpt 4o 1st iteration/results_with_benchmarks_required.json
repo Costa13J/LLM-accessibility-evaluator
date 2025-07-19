@@ -1,0 +1,581 @@
+[
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required and correctly triggers an error message when left empty. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field is required and correctly triggers an error message when left empty. Similar to the Name field, the error message is not programmatically linked via 'aria-describedby'.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "The field is required and correctly triggers an error message when left empty. The error message is not programmatically linked via 'aria-describedby'.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "fail",
+                "reasoning": "The field is required and correctly triggers an error message when left empty. The error message is not programmatically linked via 'aria-describedby'.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "File",
+                "evaluation": "pass",
+                "reasoning": "The field is optional and does not trigger a required error message, which is appropriate.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Captcha",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required and uses 'aria-required', but lacks visible error messages or ARIA relationships to announce errors.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Practice Name",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required and uses 'aria-required', but lacks visible error messages or ARIA relationships to announce errors.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Provider First Name",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required and uses 'aria-required', but lacks visible error messages or ARIA relationships to announce errors.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Provider Last Name",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required and uses 'aria-required', but lacks visible error messages or ARIA relationships to announce errors.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Direct Phone Number",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required and uses 'aria-required', but lacks visible error messages or ARIA relationships to announce errors.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": true
+            }
+        ]
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Localidade",
+                "evaluation": "pass",
+                "reasoning": "The field 'Localidade' is marked with 'aria-required' and provides a visible error message when left empty, aligning with accessibility guidelines.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Arruamento",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Concelho",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "NºPorta",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Distrito",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "* Nome",
+                "evaluation": "pass",
+                "reasoning": "The form fields marked as required correctly trigger error messages when left empty, aligning with accessibility guidelines.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "* Email",
+                "evaluation": "pass",
+                "reasoning": "The form fields marked as required correctly trigger error messages when left empty, aligning with accessibility guidelines.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "* Mensagem",
+                "evaluation": "pass",
+                "reasoning": "The form fields marked as required correctly trigger error messages when left empty, aligning with accessibility guidelines.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Assunto",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organização",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telefone",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Tema",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The email field triggers an error message indicating it is required, but it lacks the 'required' attribute, which is necessary for indicating that the field must be filled out.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but does not show any error messages or dynamic changes upon submission, indicating a lack of validation feedback.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but does not show any error messages or dynamic changes upon submission, indicating a lack of validation feedback.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but does not show any error messages or dynamic changes upon submission, indicating a lack of validation feedback.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but does not show any error messages or dynamic changes upon submission, indicating a lack of validation feedback.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required, so it does not need validation feedback.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome *",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but lacks the 'required' attribute. Error messages are displayed but not programmatically linked using 'aria-describedby'.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but lacks the 'required' attribute. Error messages are displayed but not programmatically linked using 'aria-describedby'.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password *",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but lacks the 'required' attribute. Error messages are displayed but not programmatically linked using 'aria-describedby'.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "NIF *",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but lacks the 'required' attribute. Error messages are displayed but not programmatically linked using 'aria-describedby'.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal, como descrito na Política de Privacidade. (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Divulgação a terceiros (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your name",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers an error message when left empty, meeting accessibility expectations.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Re-enter password",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile number or email",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "fail",
+                "reasoning": "The form fields lack the 'required' attribute, and no error messages are triggered for required fields, which is against best practices for form validation.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Search Players or Teams",
+                "evaluation": "fail",
+                "reasoning": "The form fields lack the 'required' attribute, and no error messages are triggered for required fields, which is against best practices for form validation.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The fields do not have the 'required' attribute, and no error messages are triggered, which is consistent with their optional status.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (password)",
+                "evaluation": "inapplicable",
+                "reasoning": "The fields do not have the 'required' attribute, and no error messages are triggered, which is consistent with their optional status.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The fields do not have the 'required' attribute, and no error messages are triggered, which is consistent with their optional status.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The fields do not have the 'required' attribute, and no error messages are triggered, which is consistent with their optional status.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Data de nascimento (MM)",
+                "evaluation": "inapplicable",
+                "reasoning": "The fields do not have the 'required' attribute, and no error messages are triggered, which is consistent with their optional status.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Data de nascimento (AAAA)",
+                "evaluation": "inapplicable",
+                "reasoning": "The fields do not have the 'required' attribute, and no error messages are triggered, which is consistent with their optional status.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "País/Região/Território",
+                "evaluation": "inapplicable",
+                "reasoning": "The fields do not have the 'required' attribute, and no error messages are triggered, which is consistent with their optional status.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The fields do not have the 'required' attribute, and no error messages are triggered, which is consistent with their optional status.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The fields do not have the 'required' attribute, and no error messages are triggered, which is consistent with their optional status.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name (optional)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Personal information (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name (optional)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Birthdate (MM)",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Birthdate (AAAA)",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "evaluation": "fail",
+                "reasoning": "The field lacks the 'required' attribute, and the error message is hidden, failing to provide necessary feedback. Error messages should be visible and programmatically linked to inputs using 'aria-describedby' for accessibility.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field lacks the 'required' attribute, and the error message is hidden, failing to provide necessary feedback. Error messages should be visible and programmatically linked to inputs using 'aria-describedby' for accessibility.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The field lacks the 'required' attribute, and the error message is hidden, failing to provide necessary feedback. Error messages should be visible and programmatically linked to inputs using 'aria-describedby' for accessibility.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Li e aceito as condições de utilização.",
+                "evaluation": "fail",
+                "reasoning": "The field lacks the 'required' attribute, and the error message is hidden, failing to provide necessary feedback. Error messages should be visible and programmatically linked to inputs using 'aria-describedby' for accessibility.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "(+)351 (Portugal) (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telemóvel",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the 'required' attribute, yet it triggers an error message indicating it is required. Additionally, the error message is not programmatically linked to the field using 'aria-describedby', which is necessary for screen readers to announce it properly.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the 'required' attribute, yet it triggers an error message indicating it is required. Additionally, the error message is not programmatically linked to the field using 'aria-describedby', which is necessary for screen readers to announce it properly.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "País de residência",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the 'required' attribute, yet it triggers an error message indicating it is required. Additionally, the error message is not programmatically linked to the field using 'aria-describedby', which is necessary for screen readers to announce it properly.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve.",
+                "evaluation": "fail",
+                "reasoning": "The checkbox does not have the 'required' attribute, yet it triggers an error message indicating it is required. Additionally, the error message is not programmatically linked to the checkbox using 'aria-describedby', which is necessary for screen readers to announce it properly.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

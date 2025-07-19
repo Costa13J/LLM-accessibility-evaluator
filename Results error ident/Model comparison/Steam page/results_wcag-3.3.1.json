@@ -1,0 +1,151 @@
+[
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "gpt 4o mini",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "evaluation": "fail",
+                "reasoning": "The error message is visible and clearly indicates the issues with the email fields. However, it is not programmatically linked to the input fields via aria-describedby or similar mechanisms, which is necessary for full compliance with WCAG 3.3.1."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "gpt 4o",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "evaluation": "fail",
+                "reasoning": "The error messages are displayed in a separate div and are not programmatically linked to the specific input fields. The inputs lack aria-describedby or similar attributes to associate the error messages with the fields, which does not comply with WCAG guidelines for error identification."
+            },
+            {
+                "identification": "reenter_email",
+                "evaluation": "fail",
+                "reasoning": "The error messages are displayed in a separate div and are not programmatically linked to the specific input fields. The inputs lack aria-describedby or similar attributes to associate the error messages with the fields, which does not comply with WCAG guidelines for error identification."
+            },
+            {
+                "identification": "country",
+                "evaluation": "fail",
+                "reasoning": "The error messages are displayed in a separate div and are not programmatically linked to the specific input fields. The inputs lack aria-describedby or similar attributes to associate the error messages with the fields, which does not comply with WCAG guidelines for error identification."
+            },
+            {
+                "identification": "i_agree_check",
+                "evaluation": "fail",
+                "reasoning": "The error messages are displayed in a separate div and are not programmatically linked to the specific input fields. The inputs lack aria-describedby or similar attributes to associate the error messages with the fields, which does not comply with WCAG guidelines for error identification."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "gpt 4.1",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail (text)",
+                "evaluation": "fail",
+                "reasoning": "The field is not marked as required, and while a global error message and border color change are shown, there is no programmatic association (e.g., aria-describedby) between the error message and the input. The field is not semantically marked as invalid. This does not meet WCAG 3.3.1."
+            },
+            {
+                "identification": "Confirma o teu endereço (text)",
+                "evaluation": "fail",
+                "reasoning": "The field is not marked as required, and while a global error message and border color change are shown, there is no programmatic association (e.g., aria-describedby) between the error message and the input. The field is not semantically marked as invalid. This does not meet WCAG 3.3.1."
+            },
+            {
+                "identification": "País de residência (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger validation errors, so error identification is not applicable."
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve. (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is not required and does not trigger validation errors, so error identification is not applicable."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "gpt 4.1 mini",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "The email input has visible error indication via border styling and a general error display div with error messages, but lacks programmatic association of error messages via aria-describedby or similar. This fails WCAG 3.3.1 requirements for error identification and association."
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "evaluation": "fail",
+                "reasoning": "The reenter_email input has visible error indication via border styling and a general error display div with error messages, but lacks programmatic association of error messages via aria-describedby or similar. This fails WCAG 3.3.1 requirements for error identification and association."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "mistral large",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "evaluation": "fail",
+                "reasoning": "The error messages are shown but not programmatically linked to the input fields via aria-describedby or any other mechanism. The messages are only visually associated and lack semantic indicators like aria-invalid."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "gpt 4o",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error message is displayed or programmatically linked to the input. The error display is not associated with specific fields, failing to meet WCAG guidelines for error identification and association."
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error message is displayed or programmatically linked to the input. The error display is not associated with specific fields, failing to meet WCAG guidelines for error identification and association."
+            },
+            {
+                "identification": "País de residência",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not need validation for empty submission."
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve.",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is not required and does not need validation for empty submission."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "gpt 4.1",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail (text)",
+                "evaluation": "fail",
+                "reasoning": "The field is not marked as required programmatically, and the error message is not programmatically or visually linked to the input. The error is shown in a general container and is not field-specific, failing WCAG 3.3.1 and best practices."
+            },
+            {
+                "identification": "Confirma o teu endereço (text)",
+                "evaluation": "fail",
+                "reasoning": "The field is not marked as required programmatically, and the error message is not programmatically or visually linked to the input. The error is shown in a general container and is not field-specific, failing WCAG 3.3.1 and best practices."
+            },
+            {
+                "identification": "País de residência (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger any validation or error message after submission."
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve. (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is not required and does not trigger any validation or error message after submission."
+            }
+        ]
+    }
+]

@@ -1,0 +1,313 @@
+[
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail",
+                "evaluation": "fail",
+                "reasoning": "The error message \"Introduz um endereço de e-mail válido\" clearly indicates that the email format is incorrect, but it does not provide a specific example of the correct format. The message \"Introduz o mesmo endereço em ambos os campos de e-mail\" helps the user understand that the email addresses must match, which is clear and actionable."
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' is not typical for a name field, but no validation error was triggered, and no error message was shown. Since the field is not required and no specific validation is expected, this is inapplicable."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The input 'user.com' is not a valid email format. However, the error message 'Verificar se o email está bem escrito e tentar novamente.' was not displayed due to the style being set to 'display: none;'. This fails to provide the user with necessary feedback to correct the input."
+            },
+            {
+                "identification": "Telemóvel (opcional)",
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'abc123' is not a valid phone number format. No validation error was triggered, and no error message was shown. Since the field is optional, this is inapplicable."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The input '1234' does not meet typical password requirements. The error message 'A password deve ter mais de 8 caracteres, conter pelo menos uma letra maiúscula, uma letra minúscula, um número e um caracter especial (exceto < > &).' was not displayed due to the style being set to 'display: none;'. This fails to provide the user with necessary feedback to correct the input."
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label (text)",
+                "evaluation": "fail",
+                "reasoning": "The fields with no labels received invalid inputs, but no specific error messages were shown to guide the user on how to correct the input. The lack of labels also makes it difficult to identify which field is being referred to, further complicating error resolution."
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your name",
+                "evaluation": "inapplicable",
+                "reasoning": "The message 'Enter your name' was not triggered because the input '12345' is a valid name format, even though it may not be a typical name."
+            },
+            {
+                "identification": "Mobile number or email",
+                "evaluation": "pass",
+                "reasoning": "The message 'Wrong or Invalid email address or mobile phone number. Please correct and try again.' clearly indicates the problem with the input format and suggests correction."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "The message 'Minimum 6 characters required' clearly indicates the password length requirement, helping the user understand how to correct their input."
+            },
+            {
+                "identification": "Re-enter password",
+                "evaluation": "pass",
+                "reasoning": "The message 'Passwords must match' clearly indicates the requirement for the two password fields to match, helping the user understand how to correct their input."
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome *",
+                "evaluation": "fail",
+                "reasoning": "The input '12345' is not a typical name format, but without specific validation rules or error messages, it's unclear if this input is considered invalid. The lack of feedback makes it difficult for users to know if their input is acceptable."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "The error message clearly indicates that the email format is incorrect, helping the user understand the issue and prompting them to correct it."
+            },
+            {
+                "identification": "Password *",
+                "evaluation": "pass",
+                "reasoning": "The error message specifies the minimum character requirement, guiding the user to provide a longer password."
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome *",
+                "evaluation": "fail",
+                "reasoning": "Test Input: '12345'. No validation error was triggered, and no error message was shown. Since the input is numeric and the field is likely intended for text, a validation error could be expected, but none was triggered. This indicates a lack of validation for non-text inputs."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Test Input: 'user.com'. A validation error was triggered with the message 'O formato de e-mail introduzido não é válido.' This message clearly indicates the problem with the email format, helping the user understand the need for a valid email structure."
+            },
+            {
+                "identification": "Password *",
+                "evaluation": "pass",
+                "reasoning": "Test Input: '123'. A validation error was triggered with the message 'A password não alcança o número mínimo de 8 caracteres.' This message clearly explains the issue with the password length, guiding the user to provide a longer password."
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome *",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Since the field does not have specific constraints or validation requirements, no error message is expected. Therefore, the lack of a message is acceptable."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered an error message 'O formato de e-mail introduzido não é válido.' This message clearly indicates that the email format is incorrect, helping the user understand the issue and how to correct it."
+            },
+            {
+                "identification": "Password *",
+                "evaluation": "pass",
+                "reasoning": "The input '123' triggered an error message 'A password não alcança o número mínimo de 8 caracteres.' This message clearly explains that the password is too short, guiding the user on how to fix the input."
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The fields with no labels did not trigger any validation errors or display any error messages. Since these fields are not required and have no specific validation constraints, the lack of error messages is acceptable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation errors were triggered for the fields with no labels, and no error messages were shown. Since the fields are not required and no specific validation is expected, the lack of error messages is acceptable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation errors were triggered for the input '12345', suggesting no specific validation rules were applied or activated."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation errors were triggered for the input '@#$%^', suggesting no specific validation rules were applied or activated."
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation errors were triggered for the input 'user.com', suggesting no specific validation rules were applied or activated."
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation errors were triggered for the input '!', suggesting no specific validation rules were applied or activated."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation errors were triggered for the input 'www.example', suggesting no specific validation rules were applied or activated."
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email *",
+                "evaluation": "fail",
+                "reasoning": "The input 'userexample.com' is invalid as it lacks the '@' symbol. However, no error message was displayed, and the only mutation was a class change, which does not provide user guidance. This fails to meet WCAG 3.3.1 guidelines for error identification and suggestion."
+            },
+            {
+                "identification": "Enter your website to explore",
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'not_a_website' is not a valid URL, but no validation error was triggered, and no error message was shown. Since the field is not required and no specific validation is expected, the lack of an error message is acceptable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "The input field without a label received an invalid input ('!'), but no validation error was triggered, and no error message was shown. Since the field is not required and lacks validation constraints, no error message is expected."
+            },
+            {
+                "identification": "* Nome",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' (numeric input instead of text) did not trigger a validation error or message. The field is required, but there are no specific constraints on the type of input, so no error message is expected."
+            },
+            {
+                "identification": "Organização",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!@#$%^&*()' (special characters only) did not trigger a validation error or message. The field is not required and lacks validation constraints, so no error message is expected."
+            },
+            {
+                "identification": "* Email",
+                "evaluation": "fail",
+                "reasoning": "The input 'user.com' (missing '@') triggered a validation error, and the message 'Verifique se o email inserido está correto!' was shown. This message indicates the error but does not provide specific guidance on how to correct it, such as including an '@' symbol."
+            },
+            {
+                "identification": "Telefone",
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'abcdefg' (letters instead of numbers) did not trigger a validation error or message. The field is not required and lacks validation constraints, so no error message is expected."
+            },
+            {
+                "identification": "* Mensagem",
+                "evaluation": "fail",
+                "reasoning": "The empty input did not trigger a validation error or message. As a required field, it should have prompted an error message indicating that the field cannot be left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Localidade",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation errors were triggered for the input '1234', and no error messages were displayed. Since the field is not marked as required and no specific validation constraints are indicated, the lack of error messages is consistent with the guidelines."
+            },
+            {
+                "identification": "Arruamento",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation errors were triggered for the input '!@#$%', and no error messages were displayed. Since the field is not marked as required and no specific validation constraints are indicated, the lack of error messages is consistent with the guidelines."
+            },
+            {
+                "identification": "N° Porta",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation errors were triggered for the input 'ABCD', and no error messages were displayed. Since the field is not marked as required and no specific validation constraints are indicated, the lack of error messages is consistent with the guidelines."
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email(Required)",
+                "evaluation": "fail",
+                "reasoning": "No validation error was triggered for the invalid email input 'userexample.com'. An error message should have been displayed to guide the user to enter a valid email address."
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email(Required)",
+                "evaluation": "fail",
+                "reasoning": "No validation error was triggered for the invalid email input 'userexample.com'. An error message should have been displayed to guide the user to enter a valid email address."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "The input '12345' triggered a validation error with the message 'This is not a valid Name.' This message indicates the input does not match the expected pattern, but it does not provide guidance on what constitutes a valid name. The message could be improved by specifying the expected format (e.g., letters only)."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The input 'user.com' triggered a validation error with the message 'This is not a valid Email-Id.' This message indicates the input is not a valid email format, but it does not provide guidance on the correct format. A more helpful message would suggest the correct format (e.g., user@example.com)."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The input '!' triggered a validation error with the message 'Subject should be minimum of 6 characters.' This message clearly explains the issue and how to fix it by indicating the minimum character requirement."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "pass",
+                "reasoning": "The input '!' triggered a validation error with the message 'Message should be minimum of 30 characters.' This message clearly explains the issue and how to fix it by indicating the minimum character requirement."
+            }
+        ]
+    }
+]
