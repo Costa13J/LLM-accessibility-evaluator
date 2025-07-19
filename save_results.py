@@ -3,7 +3,7 @@ import os
 import re
 
 
-def save_to_json(prediction, url, submit_clicked, evaluation_mode="wcag-3.3.1"):
+def save_to_json(prediction, url, submit_clicked, model, evaluation_mode="wcag-3.3.1"):
     filename = f"results_{evaluation_mode}.json"
     field_blocks = re.split(r"-Identification:", prediction.format)[1:]
     structured_fields = []
@@ -26,6 +26,7 @@ def save_to_json(prediction, url, submit_clicked, evaluation_mode="wcag-3.3.1"):
 
     result_entry = {
         "url": url,
+        "model": model,
         "submit_clicked": submit_clicked,
         "fields": structured_fields
     }

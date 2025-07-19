@@ -42,7 +42,9 @@ def run_pipeline(evaluation_mode="wcag-3.3.1"):
     else:
         result = run_evaluation(html_before, mutations, url, submit_clicked, evaluation_mode)
 
-    save_to_json(result, url, submit_clicked=submit_clicked, evaluation_mode=evaluation_mode)
+    model_name = dspy.settings.lm.model if hasattr(dspy.settings.lm, "model") else "unknown"
+    save_to_json(result, url, submit_clicked=submit_clicked, model=model_name, evaluation_mode=evaluation_mode)
+
 
 
 if __name__ == "__main__":
