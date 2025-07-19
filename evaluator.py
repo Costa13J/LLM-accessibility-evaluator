@@ -5,8 +5,9 @@ from llm_signatures import EvaluateInteractiveCues, GenerateSearchQuery, Evaluat
 from constants import FALLBACK_QUERIES, FALLBACK_QUERIES_ERROR_IDENTIFICATION
 from trainsets import trainset, trainset_no_submit
 from trainsets_error import trainset_error_identification, trainset_error_identification_no_submit
+from interaction import SuggestInvalidInputsForTesting, get_invalid_inputs_for_fields
 
-class InteractiveCuesEvaluator(dspy.Module):
+class InteractiveCuesEvaluator(dspy.Module):  
     def __init__(self, passages_per_hop=3, max_hops=2):
         super().__init__()
         self.generate_query = [dspy.ChainOfThought(GenerateSearchQuery) for _ in range(max_hops)]
@@ -89,7 +90,7 @@ class InteractiveCuesEvaluator(dspy.Module):
         return "\n".join(cleaned_summary)
 
 
-    def forward(self, html_snippet_before, mutations, retrieved_guidelines=None):
+    def forward(self, html_snippet_before, mutations, retrieved_guidelines=None, invalid_inputs=None):
         retrieved_guidelines = []
         queries = set()
 
@@ -113,11 +114,20 @@ class InteractiveCuesEvaluator(dspy.Module):
 
         mutation_summary = self.process_mutations(mutations) if mutations else "No form interaction or dynamic changes to analyze."
 
-        pred = self.evaluate_cues(
-            html_snippet_before=html_snippet_before,
-            mutations=mutation_summary,
-            retrieved_guidelines=retrieved_guidelines
-        )   
+        if invalid_inputs is not None:
+            pred = self.evaluate(
+                html_snippet_before=html_snippet_before,
+                mutations=mutations or "No form interaction or dynamic changes to analyze.",
+                retrieved_guidelines=retrieved_guidelines,
+                invalid_inputs=invalid_inputs
+            )
+        else:
+            pred = self.evaluate(
+                html_snippet_before=html_snippet_before,
+                mutations=mutations or "No form interaction or dynamic changes to analyze.",
+                retrieved_guidelines=retrieved_guidelines
+            )
+
 
         return dspy.Prediction(
             retrieved_guidelines=retrieved_guidelines,
@@ -129,7 +139,7 @@ class InteractiveCuesEvaluator(dspy.Module):
             queries=list(queries)
         )
     
-def run_evaluation(html_before, mutations, url, submit_clicked, evaluation_mode="wcag-3.3.1"):
+def run_evaluation(html_before, mutations, url, submit_clicked, evaluation_mode="wcag-3.3.1", invalid_inputs=None):
     from dspy.teleprompt import BootstrapFewShot
 
     if evaluation_mode == "required":
@@ -146,6 +156,14 @@ def run_evaluation(html_before, mutations, url, submit_clicked, evaluation_mode=
         search_query_cls = GenerateSearchError
         selected_trainset = trainset_error_identification if submit_clicked else trainset_error_identification_no_submit
 
+    elif evaluation_mode == "3.3.3":
+        from llm_signatures import EvaluateErrorClarity, GenerateSearchQueryErrorClarity
+        from trainsets_error_clarity import trainset_error_clarity, trainset_error_suggestion_no_submit
+        signature_cls = EvaluateErrorClarity
+        search_query_cls = GenerateSearchQueryErrorClarity
+        selected_trainset = trainset_error_clarity if submit_clicked else trainset_error_suggestion_no_submit
+
+
     else:
         raise ValueError(f"Unsupported evaluation_mode: {evaluation_mode}")
 
@@ -157,7 +175,7 @@ def run_evaluation(html_before, mutations, url, submit_clicked, evaluation_mode=
             self.evaluate = dspy.ChainOfThought(evaluate_signature)
             self.max_hops = max_hops
 
-        def forward(self, html_snippet_before, mutations, retrieved_guidelines=None):
+        def forward(self, html_snippet_before, mutations, retrieved_guidelines=None, invalid_inputs=None):
             retrieved_guidelines = []
             queries = set()
 
@@ -176,11 +194,24 @@ def run_evaluation(html_before, mutations, url, submit_clicked, evaluation_mode=
                     print(f"[Hop {hop+1}] Retrieval error: {e}")
                     continue
 
-            pred = self.evaluate(
-                html_snippet_before=html_snippet_before,
-                mutations=mutations or "No form interaction or dynamic changes to analyze.",
-                retrieved_guidelines=retrieved_guidelines
-            )
+            if invalid_inputs is not None:
+                pred = self.evaluate(
+                    html_snippet_before=html_snippet_before,
+                    mutations=mutations or "No form interaction or dynamic changes to analyze.",
+                    retrieved_guidelines=retrieved_guidelines,
+                    invalid_inputs=invalid_inputs
+                )
+            else:
+                pred = self.evaluate(
+                    html_snippet_before=html_snippet_before,
+                    mutations=mutations or "No form interaction or dynamic changes to analyze.",
+                    retrieved_guidelines=retrieved_guidelines
+                )
+
+
+            print("[DEBUG LLM RAW OUTPUT]")
+            print(pred)
+
 
             return dspy.Prediction(
                 retrieved_guidelines=retrieved_guidelines,
@@ -201,4 +232,19 @@ def run_evaluation(html_before, mutations, url, submit_clicked, evaluation_mode=
             for f in html_before["fields"]
         ]
     )
-    return compiled(formatted_html, mutations)
+    if evaluation_mode == "3.3.3":
+        if invalid_inputs is None:
+            llm = dspy.Predict(SuggestInvalidInputsForTesting)
+            invalid_inputs = get_invalid_inputs_for_fields(html_before["fields"], llm=llm)
+
+        return compiled(
+            html_snippet_before=formatted_html,
+            mutations=mutations,
+            invalid_inputs=invalid_inputs
+        )
+    else:
+        return compiled(
+            html_snippet_before=formatted_html,
+            mutations=mutations
+        )
+

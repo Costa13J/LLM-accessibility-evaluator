@@ -7,10 +7,10 @@ from dspy.retrieve.chromadb_rm import ChromadbRM
 
 load_dotenv(override=True)
 
-#os.environ["MISTRAL_API_KEY"] = os.getenv("MISTRAL_API_KEY", "")
+os.environ["MISTRAL_API_KEY"] = os.getenv("MISTRAL_API_KEY", "")
 
-#if not os.environ["MISTRAL_API_KEY"]:
-#    raise ValueError("MISTRAL_API_KEY not found. Check your .env file.")
+if not os.environ["MISTRAL_API_KEY"]:
+    raise ValueError("MISTRAL_API_KEY not found. Check your .env file.")
 
 
 chroma_client = chromadb.PersistentClient(path="./chroma_db")
@@ -27,30 +27,31 @@ crm = ChromadbRM(
 )
 
 # Configure DSPy with the model and retriever
-#mistral = dspy.LM('mistral/mistral-large-latest')
-mini = dspy.LM("openai/gpt-4o-2024-08-06")
-dspy.settings.configure(lm=mini, rm=crm)
+mistral = dspy.LM('mistral/mistral-large-latest')
+mini = dspy.LM("openai/gpt-4o-mini-2024-07-18")
+quatro = dspy.LM("openai/gpt-4o-2024-08-06")
+#mini = dspy.LM("openai/gpt-4.1-2025-04-14")
+#mini = dspy.LM("openai/gpt-4.1-mini-2025-04-14")
+dspy.settings.configure(lm=quatro, rm=crm)
 
 #Lança submit
 url = "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62"
 #url = "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b"
 #url = "https://www.nba.com/account/sign-up" #página mudou, agora tem um captcha que é o único a lançar msg de erro //// Avaliação longa, por vezes fica cortada
 #url = "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"
-
-    #url = "https://www.ilovepdf.com/contact" #Não captura mutations agora CHECKAR
-    #url = "https://support.fandango.com/fandangosupport/s/contactsupport" # não captura mutations, precisa de um time sleep sq
-
-#url = "https://www.staples.pt/pt/pt/registo" #aconteceu token exceed 1 vez
+url = "https://www.staples.pt/pt/pt/registo" #aconteceu token exceed 1 vez
 url = "https://www.infinite.media/bible-gateway/"
 #url = "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta" 
-#url = "https://www.ipma.pt/pt/siteinfo/contactar.jsp" 
-#url = "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel" #Avaliação longa, por vezes fica cortada
+#url = "https://www.ipma.pt/pt/siteinfo/contactar.jsp"  # ver ultimo field na 3rd iteration
+url = "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel" #Avaliação longa, por vezes fica cortada
 #url = "https://doctor.webmd.com/learnmore/profile"
-#url = "https://www.cricbuzz.com/info/contact"
+url = "https://www.cricbuzz.com/info/contact"
 
     #url = "https://www.net-empregos.com/" #submeter empty form lança a pesquisa porque nada é required, válido
     #url = "https://www.continente.pt/loja-online/contactos/" #Apanhar o botão de submeter do 2nd form que é para a newsletter e so tem um field ahahahaha, válido kinda 
 
+    #url = "https://www.ilovepdf.com/contact" #Não captura mutations agora CHECKAR
+    #url = "https://support.fandango.com/fandangosupport/s/contactsupport" # não captura mutations, precisa de um time sleep sq
 
 #WRONG BUTTON
 #url = "https://www.medicalnewstoday.com/articles/323586#bmi-calculators" #Wrong button selected -> selected the subscribe button instead of the calculate
