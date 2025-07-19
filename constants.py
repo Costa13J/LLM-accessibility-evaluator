@@ -12,3 +12,29 @@ FALLBACK_QUERIES_ERROR_IDENTIFICATION = [
     "ARIA attributes for validation error feedback",
     "accessible error identification in web forms"
 ]
+
+
+FALLBACK_QUERIES_ERROR_CLARITY = [
+    "wcag 3.3.3 error suggestion examples",
+    "how to make error messages clear in web forms",
+    "accessible validation feedback for incorrect inputs",
+    "best practices for helpful error messages in forms"
+]
+
+
+def fallback_invalid_input(field_type, label):
+    label = label.lower()
+    if "email" in label or field_type == "email":
+        return "userexample.com"
+    if "password" in label or field_type == "password":
+        return "1234"
+    if "date" in label or field_type in ["date", "datetime-local"]:
+        return "32/13/2023"
+    if "phone" in label or field_type == "tel":
+        return "abc123"
+    if "number" in label or field_type == "number":
+        return "abc"
+    if field_type == "url":
+        return "htp:/invalid"
+    return "!"
+
