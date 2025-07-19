@@ -226,10 +226,10 @@ trainset = [
         retrieved_guidelines="Optional fields do not require the 'required' attribute or related validation feedback.",
         mutations="No dynamic changes detected after form interaction.",
         identification="Middle Name (Optional)",
-        evaluation="pass",
+        evaluation="inapplicable",
         reasoning="The field is intentionally optional and no validation logic is triggered on submit.",
         format="""-Identification: Middle Name (Optional)
--Evaluation: pass
+-Evaluation: inapplicable
 -Reasoning: The field is intentionally optional and no validation logic is triggered on submit."""
     ).with_inputs("html_snippet_before", "retrieved_guidelines", "mutations"),
 
