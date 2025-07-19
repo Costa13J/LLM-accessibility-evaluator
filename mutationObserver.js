@@ -117,20 +117,32 @@ const observer = new MutationObserver(function (mutationsList) {
         };
 
         if (mutation.type === "childList") {
-            for (const node of mutation.addedNodes) {
-                if (node.nodeType === Node.ELEMENT_NODE) {
-                    const text = node.innerText?.trim();
-                    const isOption = node.tagName === "OPTION";
-                    const isLong = text?.length > 300;
-                    const isEmpty = !text || /^\s*$/.test(text);
-                    const isAutocomplete = node.className?.includes("autocomplete") || node.role === "option";
-
-                    if (isOption || isLong || isEmpty || isAutocomplete) continue;
-
-                    record.possibleErrorMessages.push(text);
-                    record.addedNodes.push(node.outerHTML);
+            function extractDeepText(node) {
+                const collected = [];
+                const walker = document.createTreeWalker(node, NodeFilter.SHOW_ELEMENT, null, false);
+              
+                while (walker.nextNode()) {
+                  const el = walker.currentNode;
+                  const text = el.innerText?.trim();
+                  const isLong = text?.length > 300;
+                  const isEmpty = !text || /^\s*$/.test(text);
+              
+                  if (!isLong && !isEmpty) {
+                    collected.push(text);
+                  }
                 }
-            }
+              
+                return collected;
+              }
+              
+              for (const node of mutation.addedNodes) {
+                if (node.nodeType === Node.ELEMENT_NODE) {
+                  const messages = extractDeepText(node);
+                  record.possibleErrorMessages.push(...messages);
+                  record.addedNodes.push(node.outerHTML);
+                }
+              }
+              
 
             for (const node of mutation.removedNodes) {
                 if (node.nodeType === Node.ELEMENT_NODE) {
