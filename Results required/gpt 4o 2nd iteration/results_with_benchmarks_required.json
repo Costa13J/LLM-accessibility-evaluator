@@ -31,29 +31,22 @@
                 "identification": "No Label (textarea)",
                 "evaluation": "pass",
                 "reasoning": "The 'No Label' (textarea) field is marked as required and correctly triggers an error message when left empty, indicating proper use of the 'required' attribute.",
-                "benchmark": "N/A",
-                "match": "",
+                "benchmark": "pass",
+                "match": "✅",
                 "reasoning_mismatch": false
             },
             {
                 "identification": "(jpg,png,gif,bmp)",
                 "evaluation": "inapplicable",
                 "reasoning": "The '(jpg,png,gif,bmp)' (file) field is not marked as required and does not trigger an error message, indicating it is optional.",
-                "benchmark": "pass",
-                "match": "❌",
+                "benchmark": "inapplicable",
+                "match": "✅",
                 "reasoning_mismatch": false
             },
             {
                 "identification": "Captcha",
                 "evaluation": "absent",
                 "benchmark": "inapplicable",
-                "match": "absent",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "Message",
-                "evaluation": "absent",
-                "benchmark": "pass",
                 "match": "absent",
                 "reasoning_mismatch": false
             }
@@ -101,55 +94,6 @@
                 "reasoning": "The field is marked as required and uses the 'required' attribute appropriately. However, there is no indication of error messages being programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
                 "benchmark": "pass",
                 "match": "✅",
-                "reasoning_mismatch": false
-            }
-        ]
-    },
-    {
-        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
-        "submit_clicked": true,
-        "fields": [
-            {
-                "identification": "Insira os termos de pesquisa",
-                "evaluation": "inapplicable",
-                "reasoning": "The field is not marked with the 'required' attribute or 'aria-required', and no error message is triggered, indicating it is not treated as required.",
-                "benchmark": "N/A",
-                "match": "",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "Arruamento",
-                "evaluation": "absent",
-                "benchmark": "pass",
-                "match": "absent",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "NºPorta",
-                "evaluation": "absent",
-                "benchmark": "pass",
-                "match": "absent",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "Distrito",
-                "evaluation": "absent",
-                "benchmark": "pass",
-                "match": "absent",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "Localidade",
-                "evaluation": "absent",
-                "benchmark": "pass",
-                "match": "absent",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "Concelho",
-                "evaluation": "absent",
-                "benchmark": "pass",
-                "match": "absent",
                 "reasoning_mismatch": false
             }
         ]
@@ -232,28 +176,6 @@
         ]
     },
     {
-        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
-        "submit_clicked": true,
-        "fields": [
-            {
-                "identification": "Email",
-                "evaluation": "fail",
-                "reasoning": "The email field is required, as indicated by the visible error message when left empty, but it lacks the 'required' attribute. The placeholder text is not a sufficient indicator of the required status.",
-                "benchmark": "fail",
-                "match": "✅",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "Enter your website to explore",
-                "evaluation": "inapplicable",
-                "reasoning": "The website field does not show any required behavior or error message, indicating it is optional.",
-                "benchmark": "N/A",
-                "match": "",
-                "reasoning_mismatch": false
-            }
-        ]
-    },
-    {
         "url": "https://www.infinite.media/bible-gateway/",
         "submit_clicked": true,
         "fields": [
@@ -293,8 +215,8 @@
                 "identification": "Website",
                 "evaluation": "inapplicable",
                 "reasoning": "The \"Website\" field is optional and does not trigger any validation errors.",
-                "benchmark": "pass",
-                "match": "❌",
+                "benchmark": "inapplicable",
+                "match": "✅",
                 "reasoning_mismatch": false
             }
         ]
@@ -394,142 +316,6 @@
         ]
     },
     {
-        "url": "https://www.nba.com/account/sign-up",
-        "submit_clicked": true,
-        "fields": [
-            {
-                "identification": "No Label (checkbox)",
-                "evaluation": "inapplicable",
-                "reasoning": "The field is optional as it lacks the 'required' attribute and no validation feedback is triggered upon submission.",
-                "benchmark": "fail",
-                "match": "❌",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "Search Players or Teams",
-                "evaluation": "inapplicable",
-                "reasoning": "The field is optional as it lacks the 'required' attribute and no validation feedback is triggered upon submission.",
-                "benchmark": "pass",
-                "match": "❌",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "No Label (text)",
-                "evaluation": "inapplicable",
-                "reasoning": "The field is optional as it lacks the 'required' attribute and no validation feedback is triggered upon submission.",
-                "benchmark": "N/A",
-                "match": "",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "No Label (password)",
-                "evaluation": "inapplicable",
-                "reasoning": "The field is optional as it lacks the 'required' attribute and no validation feedback is triggered upon submission.",
-                "benchmark": "fail",
-                "match": "❌",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "No Label (text)",
-                "evaluation": "inapplicable",
-                "reasoning": "The field is optional as it lacks the 'required' attribute and no validation feedback is triggered upon submission.",
-                "benchmark": "N/A",
-                "match": "",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "No Label (text)",
-                "evaluation": "inapplicable",
-                "reasoning": "The field is optional as it lacks the 'required' attribute and no validation feedback is triggered upon submission.",
-                "benchmark": "N/A",
-                "match": "",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "Data de nascimento (MM)",
-                "evaluation": "inapplicable",
-                "reasoning": "The field is optional as it lacks the 'required' attribute and no validation feedback is triggered upon submission.",
-                "benchmark": "N/A",
-                "match": "",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "Data de nascimento (AAAA)",
-                "evaluation": "inapplicable",
-                "reasoning": "The field is optional as it lacks the 'required' attribute and no validation feedback is triggered upon submission.",
-                "benchmark": "N/A",
-                "match": "",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "País/Região/Território",
-                "evaluation": "inapplicable",
-                "reasoning": "The field is optional as it lacks the 'required' attribute and no validation feedback is triggered upon submission.",
-                "benchmark": "fail",
-                "match": "❌",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "No Label (checkbox)",
-                "evaluation": "inapplicable",
-                "reasoning": "The field is optional as it lacks the 'required' attribute and no validation feedback is triggered upon submission.",
-                "benchmark": "fail",
-                "match": "❌",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "No Label (checkbox)",
-                "evaluation": "inapplicable",
-                "reasoning": "The field is optional as it lacks the 'required' attribute and no validation feedback is triggered upon submission.",
-                "benchmark": "fail",
-                "match": "❌",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "Email",
-                "evaluation": "absent",
-                "benchmark": "fail",
-                "match": "absent",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "Birthdate (AAAA)",
-                "evaluation": "absent",
-                "benchmark": "fail",
-                "match": "absent",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "Last Name (optional)",
-                "evaluation": "absent",
-                "benchmark": "pass",
-                "match": "absent",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "Birthdate (MM)",
-                "evaluation": "absent",
-                "benchmark": "fail",
-                "match": "absent",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "First Name (optional)",
-                "evaluation": "absent",
-                "benchmark": "pass",
-                "match": "absent",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "Personal information (checkbox)",
-                "evaluation": "absent",
-                "benchmark": "pass",
-                "match": "absent",
-                "reasoning_mismatch": false
-            }
-        ]
-    },
-    {
         "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
         "submit_clicked": true,
         "fields": [
@@ -553,16 +339,16 @@
                 "identification": "Country",
                 "evaluation": "fail",
                 "reasoning": "The field is a select input without the 'required' attribute, and no error message is displayed when left empty.",
-                "benchmark": "N/A",
-                "match": "",
+                "benchmark": "pass",
+                "match": "❌",
                 "reasoning_mismatch": false
             },
             {
                 "identification": "Telemóvel (opcional)",
                 "evaluation": "inapplicable",
                 "reasoning": "The field is optional, as indicated by its label, and does not require the 'required' attribute.",
-                "benchmark": "pass",
-                "match": "❌",
+                "benchmark": "inapplicable",
+                "match": "✅",
                 "reasoning_mismatch": false
             },
             {
@@ -579,13 +365,6 @@
                 "reasoning": "The field is required but lacks the 'required' attribute, and no error message is displayed when left unchecked.",
                 "benchmark": "fail",
                 "match": "✅",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "(+)351 (Portugal) (select)",
-                "evaluation": "absent",
-                "benchmark": "pass",
-                "match": "absent",
                 "reasoning_mismatch": false
             }
         ]
@@ -636,84 +415,52 @@
                 "identification": "Insira os termos de pesquisa (search)",
                 "evaluation": "inapplicable",
                 "reasoning": "The field does not have the 'required' attribute or any equivalent semantic indicator, and no error messages are triggered, indicating it is not treated as a required field.",
-                "benchmark": "N/A",
-                "match": "",
+                "benchmark": "inapplicable",
+                "match": "✅",
                 "reasoning_mismatch": false
             },
             {
                 "identification": "Distrito (select)",
                 "evaluation": "inapplicable",
                 "reasoning": "The field does not have the 'required' attribute or any equivalent semantic indicator, and no error messages are triggered, indicating it is not treated as a required field.",
-                "benchmark": "pass",
-                "match": "❌",
+                "benchmark": "inapplicable",
+                "match": "✅",
                 "reasoning_mismatch": false
             },
             {
                 "identification": "Concelho (select)",
                 "evaluation": "inapplicable",
                 "reasoning": "The field does not have the 'required' attribute or any equivalent semantic indicator, and no error messages are triggered, indicating it is not treated as a required field.",
-                "benchmark": "pass",
-                "match": "❌",
+                "benchmark": "inapplicable",
+                "match": "✅",
                 "reasoning_mismatch": false
             },
             {
                 "identification": "Localidade (text)",
                 "evaluation": "inapplicable",
                 "reasoning": "The field does not have the 'required' attribute or any equivalent semantic indicator, and no error messages are triggered, indicating it is not treated as a required field.",
-                "benchmark": "pass",
-                "match": "❌",
+                "benchmark": "inapplicable",
+                "match": "✅",
                 "reasoning_mismatch": false
             },
             {
                 "identification": "Arruamento (text)",
                 "evaluation": "inapplicable",
                 "reasoning": "The field does not have the 'required' attribute or any equivalent semantic indicator, and no error messages are triggered, indicating it is not treated as a required field.",
-                "benchmark": "pass",
-                "match": "❌",
+                "benchmark": "inapplicable",
+                "match": "✅",
                 "reasoning_mismatch": false
             },
             {
                 "identification": "N° Porta (text)",
                 "evaluation": "inapplicable",
                 "reasoning": "The field does not have the 'required' attribute or any equivalent semantic indicator, and no error messages are triggered, indicating it is not treated as a required field.",
-                "benchmark": "pass",
-                "match": "❌",
+                "benchmark": "inapplicable",
+                "match": "✅",
                 "reasoning_mismatch": false
             },
             {
                 "identification": "Código Postal * (text)",
-                "evaluation": "inapplicable",
-                "reasoning": "The field does not have the 'required' attribute or any equivalent semantic indicator, and no error messages are triggered, indicating it is not treated as a required field.",
-                "benchmark": "N/A",
-                "match": "",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "No Label (text)",
-                "evaluation": "inapplicable",
-                "reasoning": "The field does not have the 'required' attribute or any equivalent semantic indicator, and no error messages are triggered, indicating it is not treated as a required field.",
-                "benchmark": "N/A",
-                "match": "",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "Localidade * (text)",
-                "evaluation": "inapplicable",
-                "reasoning": "The field does not have the 'required' attribute or any equivalent semantic indicator, and no error messages are triggered, indicating it is not treated as a required field.",
-                "benchmark": "pass",
-                "match": "❌",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "No Label (select)",
-                "evaluation": "inapplicable",
-                "reasoning": "The field does not have the 'required' attribute or any equivalent semantic indicator, and no error messages are triggered, indicating it is not treated as a required field.",
-                "benchmark": "N/A",
-                "match": "",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "Nº Apartado * (text)",
                 "evaluation": "inapplicable",
                 "reasoning": "The field does not have the 'required' attribute or any equivalent semantic indicator, and no error messages are triggered, indicating it is not treated as a required field.",
                 "benchmark": "N/A",

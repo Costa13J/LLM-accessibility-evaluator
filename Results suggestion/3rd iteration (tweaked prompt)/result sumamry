@@ -1,0 +1,31 @@
+=== Accuracy Per URL ===
+https://store.steampowered.com/2: 100.00% (1/1 correct), 2 absent inapplicable , 1 absent pass
+
+https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b: 75.00% (3/4 correct), display none iludes this eval
+
+https://www.amazon.com/ap/register: 100.00% (4/4 correct)
+
+https://www.staples.pt/pt/pt/registo: 100.00% (3/3 correct),3 absent inapplicable
+
+https://www.infinite.media/bible-gateway/: 80.00% (4/5 correct), page changes sometimes, because captcha
+
+https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta: 0.00% (0/1 correct), tells there is no error but its there visibly
+
+https://www.ipma.pt/pt/siteinfo/contactar.jsp: 83.33% (5/6 correct), 2 absent inapplicables
+
+https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel: 100.00% (3/3 correct)
+
+https://doctor.webmd.com/learnmore/profile: 0.00% (0/1 correct), page doesnt throw errors, only color, 4 absnt inapplicable, Reasoning Mismatch: 1
+
+https://www.cricbuzz.com/info/contact: 100.00% (4/4 correct), Reasoning mismatches: 0
+
+Overall Accuracy: 84.38% (27/32 correct)
+Total Reasoning Mismatches: 1
+
+=== Full Summary of All Evaluated Fields ===
+Total Fields Evaluated: 53
+✅ Matches: 27 (50.94%)
+❌ Mismatches: 5 (9.43%)
+Absent Matches: 19 (35.84%)
+Benchmarked as N/A: 2 (3.77%)
+Reasoning mismatches: 1 (1.88%)

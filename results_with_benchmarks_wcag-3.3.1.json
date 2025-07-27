@@ -1,0 +1,243 @@
+[
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "mistral/mistral-large-latest",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required but no error message is shown, and there is no aria-describedby or other programmatic association.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required but no error message is shown, and there is no aria-describedby or other programmatic association.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error message \"Email is required.\" is shown and programmatically associated via aria-describedby. The aria-invalid attribute is also correctly used.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The error message \"Organization is required.\" is shown and programmatically associated via aria-describedby. The aria-invalid attribute is also correctly used.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-mini-2024-07-18",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The error message is visible and programmatically linked to the input field using aria-describedby, fulfilling WCAG 3.3.1. However, it does not provide specific suggestions for correction.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The error message is visible and programmatically linked to the input field using aria-describedby, fulfilling WCAG 3.3.1. However, it does not provide specific suggestions for correction.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error message is visible and programmatically linked to the input field using aria-describedby, fulfilling WCAG 3.3.1. However, it does not provide specific suggestions for correction.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The error message is visible and programmatically linked to the input field using aria-describedby, fulfilling WCAG 3.3.1. However, it does not provide specific suggestions for correction.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The First Name field is required and has an error message programmatically associated using aria-describedby. The aria-invalid attribute is also used to indicate an error state, which aligns with WCAG 3.3.1 guidelines.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The Last Name field is required and has an error message programmatically associated using aria-describedby. The aria-invalid attribute is also used to indicate an error state, which aligns with WCAG 3.3.1 guidelines.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The Email field is required and has an error message programmatically associated using aria-describedby. The aria-invalid attribute is also used to indicate an error state, which aligns with WCAG 3.3.1 guidelines.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The Organization field is required and has an error message programmatically associated using aria-describedby. The aria-invalid attribute is also used to indicate an error state, which aligns with WCAG 3.3.1 guidelines.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The Website field is optional and does not require validation when left empty.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4.1-2025-04-14",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "After submission, the input for \"First Name\" receives aria-invalid=\"true\" and aria-describedby pointing to a specific error message element. The error message \"Name is required.\" is visually present and programmatically associated, meeting WCAG 3.3.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The \"Last Name\" input also receives aria-invalid=\"true\" and aria-describedby referencing a specific error message. The error message is present and programmatically linked, meeting accessibility requirements.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The \"Email\" input receives aria-invalid=\"true\" and aria-describedby referencing a specific error message. The error message \"Email is required.\" is present and programmatically associated, meeting WCAG 3.3.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The \"Organization\" input receives aria-invalid=\"true\" and aria-describedby referencing a specific error message. The error message \"Organization is required.\" is present and programmatically associated, meeting accessibility requirements.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"Website\" field is not required and does not receive any error message or validation feedback, so error identification is inapplicable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4.1-mini-2025-04-14",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name (text)",
+                "evaluation": "fail",
+                "reasoning": "Required field but no error message or indication of validation failure is shown after submission, so fails accessible error identification.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name (text)",
+                "evaluation": "fail",
+                "reasoning": "Required field but no error message or indication of validation failure is shown after submission, so fails accessible error identification.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required) (email)",
+                "evaluation": "fail",
+                "reasoning": "Required field but no error message or indication of validation failure is shown after submission, so fails accessible error identification.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required) (text)",
+                "evaluation": "fail",
+                "reasoning": "Required field but no error message or indication of validation failure is shown after submission, so fails accessible error identification.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field, so error identification is inapplicable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

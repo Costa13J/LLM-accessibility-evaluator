@@ -1,0 +1,262 @@
+[
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "model": "mistral/mistral-large-latest",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome *",
+                "evaluation": "inapplicable",
+                "reasoning": "The test input '!' did not trigger a validation error, and no error message was shown. Since the input was accepted, no validation was expected.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "The test input 'userexample.com' triggered a validation error. The message 'O formato de e-mail introduzido não é válido.' was shown, clearly indicating the problem and guiding the user to correct the format.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password *",
+                "evaluation": "pass",
+                "reasoning": "The test input '1234' triggered a validation error. The message 'A password não alcança o número mínimo de 8 caracteres.' was shown, clearly indicating the problem and guiding the user to correct the input.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Divulgação a terceiros (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal, como descrito na Política de Privacidade. (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "model": "openai/gpt-4o-mini-2024-07-18",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome *",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' is not a valid name format, but no error message was triggered, which is acceptable as unusual input alone does not require validation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "The error message 'O formato de e-mail introduzido não é válido.' clearly indicates the issue and suggests that the user needs to correct the email format.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password *",
+                "evaluation": "pass",
+                "reasoning": "The error message 'A password não alcança o número mínimo de 8 caracteres.' clearly states the problem and how to fix it.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Divulgação a terceiros (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal, como descrito na Política de Privacidade. (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome *",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation error was triggered for the 'Nome *' field, and no error message was shown. The input '12345' was accepted, indicating that the field does not have specific validation constraints that were violated. Since WCAG 3.3.3 applies only when a validation error is triggered, the lack of a message is acceptable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "A validation error was triggered, and the message 'O formato de e-mail introduzido não é válido.' was shown. This message clearly indicates that the email format is incorrect, helping the user understand the problem and how to fix it.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password *",
+                "evaluation": "pass",
+                "reasoning": "A validation error was triggered, and the message 'A password não alcança o número mínimo de 8 caracteres.' was shown. This message clearly explains that the password is too short, guiding the user to provide a longer password.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Divulgação a terceiros (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal, como descrito na Política de Privacidade. (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "model": "openai/gpt-4.1-2025-04-14",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome *",
+                "evaluation": "inapplicable",
+                "reasoning": "The invalid input '!' did not trigger a validation error or message. Since WCAG 3.3.3 only applies when an error is triggered, this is inapplicable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "fail",
+                "reasoning": "The error message \"O formato de e-mail introduzido não é válido.\" identifies the problem but does not provide a suggestion or example of the correct format, so it does not fully help the user fix the input.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password *",
+                "evaluation": "pass",
+                "reasoning": "The error message \"A password não alcança o número mínimo de 8 caracteres.\" clearly explains the problem (not enough characters) and specifies the minimum required, helping the user understand how to fix the input.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Divulgação a terceiros (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal, como descrito na Política de Privacidade. (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "model": "openai/gpt-4.1-mini-2025-04-14",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome *",
+                "evaluation": "fail",
+                "reasoning": "The input '!' is unusual for a name, but no validation error message appeared, so no guidance was provided to correct the input. This is a fail because the user is not informed of the problem or how to fix it.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "The invalid email 'userexample.com' triggered a visible error message stating \"O formato de e-mail introduzido não é válido.\" This message clearly identifies the problem and helps the user understand the issue.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password *",
+                "evaluation": "pass",
+                "reasoning": "The password '1234' triggered a visible error message stating \"A password não alcança o número mínimo de 8 caracteres.\" This message clearly explains the problem and how to fix it.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Divulgação a terceiros (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal, como descrito na Política de Privacidade. (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

@@ -1,0 +1,86 @@
+[
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "model": "mistral/mistral-large-latest",
+        "submit_clicked": true,
+        "fields": []
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "model": "openai/gpt-4o-mini-2024-07-18",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Localidade",
+                "evaluation": "inapplicable",
+                "reasoning": "The input values for 'Localidade', 'Arruamento', and 'N° Porta' were unusual but did not trigger validation errors. The system did not provide error messages for these inputs, which is acceptable since unusual input alone does not require error messaging according to the guidelines."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Localidade",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error or message, indicating that the input was accepted as valid. Since no validation error was expected or triggered, the lack of a message is acceptable."
+            },
+            {
+                "identification": "Arruamento",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!@#$%' did not trigger any validation error or message, indicating that the input was accepted as valid. Since no validation error was expected or triggered, the lack of a message is acceptable."
+            },
+            {
+                "identification": "N° Porta",
+                "evaluation": "pass",
+                "reasoning": "The input 'ABCD' triggered a validation error with the message 'Informação não pesquisável. Por favor, digite número ou número seguido de espaço, seguido de letra (p. ex. “40” ou “52 A”).' This message clearly explains the problem and provides guidance on how to correct the input, aligning with WCAG 3.3.3 guidelines."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "model": "openai/gpt-4.1-2025-04-14",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Localidade",
+                "evaluation": "inapplicable",
+                "reasoning": "The test input '!' did not trigger a validation error or message. The field remained valid, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Arruamento",
+                "evaluation": "inapplicable",
+                "reasoning": "The test input '!' did not trigger a validation error or message. The field remained valid, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "N° Porta",
+                "evaluation": "pass",
+                "reasoning": "The test input '!' triggered a validation error. The error message \"Informação não pesquisável. Por favor, digite número ou número seguido de espaço, seguido de letra (p. ex. “40” ou “52 A”).\" clearly explains the problem and provides actionable examples, helping the user correct their input."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "model": "openai/gpt-4.1-mini-2025-04-14",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "N° Porta",
+                "evaluation": "pass",
+                "reasoning": "The error message clearly identifies the problem with the input and provides specific instructions on the acceptable format, helping the user understand how to correct the input. This aligns with WCAG 3.3.3 guidelines for error suggestions."
+            },
+            {
+                "identification": "Localidade",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no validation error was triggered for the input. Therefore, no error message is expected, making the evaluation inapplicable."
+            },
+            {
+                "identification": "Arruamento",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no validation error was triggered for the input. Therefore, no error message is expected, making the evaluation inapplicable."
+            }
+        ]
+    }    
+]

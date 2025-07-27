@@ -1,0 +1,29 @@
+https://www.cricbuzz.com/info/contact: 100.00% (5/5 correct), 1 inapplicable absent
+
+https://doctor.webmd.com/learnmore/profile: 100.00% (5/5 correct)
+
+https://www.ipma.pt/pt/siteinfo/contactar.jsp: 0.00% (0/0 correct), Missed fields (?)
+
+https://ads.reddit.com/register: 100.00% (1/1 correct)
+
+https://www.infinite.media/bible-gateway/: 100.00% (5/5 correct)
+
+https://www.staples.pt/pt/pt/registo: 60.00% (3/5 correct), One fail with N/A benchmark, 1 absent fail, 2 absent inapplicable
+
+https://www.amazon.com/: 100.00% (1/1 correct), 3 absent passes
+
+https://login.telecom.pt/: 83.33% (5/6 correct), select debatable mismatch
+
+https://store.steampowered.com/: 100.00% (4/4 correct)
+https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel: 100.00% (6/6 correct)
+
+Overall Accuracy: 92.11% (35/38 correct)
+Total Reasoning Mismatches: 0
+
+=== Full Summary of All Evaluated Fields ===
+Total Fields Evaluated: 53
+✅ Matches: 35 (66.04%)
+❌ Mismatches: 1 (1.89%)
+Absent Matches: 14 (26.42%)
+Benchmarked as N/A: 3 (5.66%)
+Reasoning mismatches: 0 (0.00%)

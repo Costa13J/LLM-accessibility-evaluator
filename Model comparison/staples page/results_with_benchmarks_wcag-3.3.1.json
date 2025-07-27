@@ -1,0 +1,401 @@
+[
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "model": "mistral/mistral-large-latest",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field. The message is contained within a div that is not directly linked to the input, failing to meet WCAG 3.3.1 requirements.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field. The message is contained within a div that is not directly linked to the input, failing to meet WCAG 3.3.1 requirements.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field. The message is contained within a div that is not directly linked to the input, failing to meet WCAG 3.3.1 requirements.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Nome do cliente embaixador",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Permissão de aparecer nos dados do amigo que o convidou",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal, como descrito na Política de Privacidade. (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Divulgação a terceiros (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "model": "openai/gpt-4o-mini-2024-07-18",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "username",
+                "evaluation": "fail",
+                "reasoning": "The form fields do not have clear error messages associated with them when left empty, particularly for required fields. While some fields are marked as required, there are no visible error messages linked to them, which violates WCAG 3.3.1.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Nome",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal, como descrito na Política de Privacidade. (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Divulgação a terceiros (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required, and no validation feedback is provided.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required, and no validation feedback is provided.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required, and no validation feedback is provided.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Nome do cliente embaixador",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required, and no validation feedback is provided.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Permissão de aparecer nos dados do amigo que o convidou",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required, and no validation feedback is provided.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Divulgação a terceiros",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required, and no validation feedback is provided.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required, and no validation feedback is provided.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Eu concordo com os Termos e Condições da Staples",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required, and no validation feedback is provided.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "NIF",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required, and no validation feedback is provided.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Nome da empresa",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required, and no validation feedback is provided.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required, and no validation feedback is provided.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "model": "openai/gpt-4.1-2025-04-14",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome *",
+                "evaluation": "fail",
+                "reasoning": "An error message appears in a visible alert after submission, but there is no evidence it is programmatically associated with the input (e.g., via aria-describedby or direct proximity). The field lacks a required attribute, but the error message is specific.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "fail",
+                "reasoning": "An error message appears in a visible alert after submission, but there is no evidence it is programmatically associated with the input. The field lacks a required attribute, but the error message is specific.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password *",
+                "evaluation": "fail",
+                "reasoning": "An error message appears in a visible alert after submission, but there is no evidence it is programmatically associated with the input. The field lacks a required attribute, but the error message is specific.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Nome do cliente embaixador",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message appears for this field after submission, and it is not marked as required.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Permissão de aparecer nos dados do amigo que o convidou",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message appears for this field after submission, and it is not marked as required.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Divulgação a terceiros",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message appears for this field after submission",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal, como descrito na Política de Privacidade. (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "model": "openai/gpt-4.1-mini-2025-04-14",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome * (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is shown, so error identification is not applicable.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email * (email)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is shown, so error identification is not applicable.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password * (password)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is shown, so error identification is not applicable.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Nome do cliente embaixador (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is shown, so error identification is not applicable.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Permissão de aparecer nos dados do amigo que o convidou (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is shown, so error identification is not applicable.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Divulgação a terceiros (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is shown, so error identification is not applicable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal, como descrito na Política de Privacidade. (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is shown, so error identification is not applicable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is shown, so error identification is not applicable.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Nome * (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is shown, so error identification is not applicable.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email * (email)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is shown, so error identification is not applicable.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password * (password)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and no error message is shown, so error identification is not applicable.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Unknown",
+                "evaluation": "Unknown",
+                "reasoning": "No reasoning provided",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Nome",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

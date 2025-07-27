@@ -1,0 +1,29 @@
+=== Accuracy Per URL ===
+https://store.steampowered.com/: 75.00% (3/4 correct)
+
+https://login.telecom.pt/: 100.00% (1/1 correct), 2 Inapplicable absents
+
+https://www.amazon.com/: 50.00% (1/2 correct), Reasoning mismatches: 0, 1 Fail absent, 2 Passes absent
+
+https://www.staples.pt/pt/pt/registo: 100.00% (1/1 correct), Everything in one
+
+https://www.infinite.media/bible-gateway/: 100.00% (5/5 correct), 
+
+https://ads.reddit.com/register: 100.00% (1/1 correct)
+
+https://www.ipma.pt/pt/siteinfo/contactar.jsp: 100.00% (1/1 correct), 3 fields in one, 4 inapplicable absents
+
+https://doctor.webmd.com/learnmore/profile: 100.00% (5/5 correct)
+
+https://www.cricbuzz.com/info/contact: 80.00% (4/5 correct), Reasoning mismatches: 1
+
+Overall Accuracy: 88.00% (22/25 correct)
+Total Reasoning Mismatches: 1
+
+=== Full Summary of All Evaluated Fields ===
+Total Fields Evaluated: 34
+✅ Matches: 22 (64.71%)
+❌ Mismatches: 2 (5.88%)
+Absent Matches: 10 (29.41%)
+Benchmarked as N/A: 0 (0.00%)
+Reasoning mismatches: 1 (2.94%)

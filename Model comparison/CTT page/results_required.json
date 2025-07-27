@@ -1,0 +1,57 @@
+[
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "model": "mistral/mistral-large-latest",
+        "submit_clicked": true,
+        "fields": []
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "model": "openai/gpt-4o-mini-2024-07-18",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Código Postal *, Localidade *, Nº Apartado *",
+                "evaluation": "fail",
+                "reasoning": "The fields marked as required do not have the 'required' attribute or equivalent cues, and they do not trigger error messages when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Insira os termos de pesquisa",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have the 'required' attribute, and no error message or validation feedback is triggered, indicating it is not treated as required."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "model": "openai/gpt-4.1-2025-04-14",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Localidade",
+                "evaluation": "fail",
+                "reasoning": "The field \"Localidade\" is required, as shown by the addition of an error message and the aria-required=\"true\" attribute after submission. However, the original HTML did not include the 'required' attribute or aria-required, and only added aria-required dynamically after validation failed. According to best practices, required fields should be programmatically indicated as required before submission, not only after validation fails."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "model": "openai/gpt-4.1-mini-2025-04-14",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Localidade",
+                "evaluation": "pass",
+                "reasoning": "The field \"Localidade\" is marked as required programmatically with 'aria-required=\"true\"' after submission, and an error message is displayed indicating it is required. Although the 'required' attribute is not present initially, the use of 'aria-required' and visible error message confirm the field is treated as required appropriately."
+            }
+        ]
+    }
+    
+]

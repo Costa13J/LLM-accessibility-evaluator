@@ -1,0 +1,229 @@
+[
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "mistral/mistral-large-latest",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "The test input '!' triggered a validation error. The message 'Captcha validation failed. Please try again.' was shown. However, this message is not relevant to the input field and does not guide the user on how to correct the input.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "The test input '!' triggered a validation error. The message 'Captcha validation failed. Please try again.' was shown. However, this message is not relevant to the input field and does not guide the user on how to correct the input.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "fail",
+                "reasoning": "The test input 'userexample.com' triggered a validation error. The message 'Captcha validation failed. Please try again.' was shown. However, this message is not relevant to the input field and does not guide the user on how to correct the input.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "fail",
+                "reasoning": "The test input '!' triggered a validation error. The message 'Captcha validation failed. Please try again.' was shown. However, this message is not relevant to the input field and does not guide the user on how to correct the input.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The test input '!' did not trigger a validation error since the field is not required. No error message was expected or shown.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-mini-2024-07-18",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "The input '12345' is not a valid name format, but no error message was shown, which is a failure to provide guidance.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "The input '!@#$%' is invalid, but again, no error message was shown, indicating a lack of feedback.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "fail",
+                "reasoning": "The input 'user.com' is an invalid email format, but no error message was displayed, failing to inform the user of the issue.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "fail",
+                "reasoning": "The input 'Org123!' may not meet expected criteria, but no error message was shown, indicating a lack of validation feedback.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "fail",
+                "reasoning": "The input 'http://invalid-url' is not a valid URL format, but no error message was displayed, failing to guide the user.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "No validation errors were triggered for the input '12345', which is not a typical first name, and no error message was displayed. This suggests a lack of validation or error messaging.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "last Name",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4.1-2025-04-14",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The input '!' triggered a validation error. The message \"Name: First Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" is shown. This message clearly identifies the problem and provides specific guidance on what characters are allowed, helping the user correct their input.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "last Name",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4.1-mini-2025-04-14",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The input '!' triggered a validation error. The error message clearly states that valid names contain only letters, numbers, spaces, apostrophes, or hyphens, guiding the user on how to correct the input.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The input '!' triggered a validation error. The error message clearly states that valid names contain only letters, numbers, spaces, apostrophes, or hyphens, providing clear guidance for correction.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "The input 'userexample.com' triggered a validation error. The error message specifies that the email is not valid and must follow the format user@domain.com, which helps the user understand how to fix the input.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "fail",
+                "reasoning": "The input '!' triggered a validation error, but no specific error message was observed in the mutations for this field, so it is unclear if the user received guidance on how to correct the input.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "pass",
+                "reasoning": "The input '!' triggered a validation error. The error message clearly states that the website must be a valid URL, providing clear guidance for correction.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]
