@@ -1,0 +1,1965 @@
+[
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The Email field is marked as required using aria-required and has a visible \"(Required)\" indicator in the label. No error cues were triggered as the interaction was an empty submit."
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The Practice Name field is marked as required using aria-required and has a visible \"(Required)\" indicator in the label. No error cues were triggered as the interaction was an empty submit."
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The Provider First Name field is marked as required using aria-required and has a visible \"(Required)\" indicator in the label. No error cues were triggered as the interaction was an empty submit."
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The Provider Last Name field is marked as required using aria-required and has a visible \"(Required)\" indicator in the label. No error cues were triggered as the interaction was an empty submit."
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The Direct Phone Number field is marked as required using aria-required and has a visible \"(Required)\" indicator in the label. No error cues were triggered as the interaction was an empty submit."
+            },
+            {
+                "identification": "Email(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required and visible text \"(Required)\" in the label, which is sufficient for indicating its required status. However, no error cues were detected in the mutations, such as aria-invalid or error messages, indicating that error states were not conveyed beyond the initial required indication."
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required and visible text \"(Required)\" in the label, which is sufficient for indicating its required status. However, no error cues were detected in the mutations, such as aria-invalid or error messages, indicating that error states were not conveyed beyond the initial required indication."
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required and visible text \"(Required)\" in the label, which is sufficient for indicating its required status. However, no error cues were detected in the mutations, such as aria-invalid or error messages, indicating that error states were not conveyed beyond the initial required indication."
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required and visible text \"(Required)\" in the label, which is sufficient for indicating its required status. However, no error cues were detected in the mutations, such as aria-invalid or error messages, indicating that error states were not conveyed beyond the initial required indication."
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required and visible text \"(Required)\" in the label, which is sufficient for indicating its required status. However, no error cues were detected in the mutations, such as aria-invalid or error messages, indicating that error states were not conveyed beyond the initial required indication."
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The Email field is marked as required using aria-required and has a visible \"(Required)\" label, which is sufficient for indicating its required status. No error cues were applicable as no invalid input was submitted."
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The Practice Name field is marked as required using aria-required and has a visible \"(Required)\" label, which is sufficient for indicating its required status. No error cues were applicable as no invalid input was submitted."
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The Provider First Name field is marked as required using aria-required and has a visible \"(Required)\" label, which is sufficient for indicating its required status. No error cues were applicable as no invalid input was submitted."
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The Provider Last Name field is marked as required using aria-required and has a visible \"(Required)\" label, which is sufficient for indicating its required status. No error cues were applicable as no invalid input was submitted."
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The Direct Phone Number field is marked as required using aria-required and has a visible \"(Required)\" label, which is sufficient for indicating its required status. No error cues were applicable as no invalid input was submitted."
+            },
+            {
+                "identification": "Email(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required and has \"(Required)\" in its label, which is sufficient for indicating its required status. However, no error cues were detected in the form of text messages or semantic attributes like aria-invalid, and no visual changes were noted in the mutations, indicating that error states were not effectively communicated."
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required and has \"(Required)\" in its label, which is sufficient for indicating its required status. However, no error cues were detected in the form of text messages or semantic attributes like aria-invalid, and no visual changes were noted in the mutations, indicating that error states were not effectively communicated."
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required and has \"(Required)\" in its label, which is sufficient for indicating its required status. However, no error cues were detected in the form of text messages or semantic attributes like aria-invalid, and no visual changes were noted in the mutations, indicating that error states were not effectively communicated."
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required and has \"(Required)\" in its label, which is sufficient for indicating its required status. However, no error cues were detected in the form of text messages or semantic attributes like aria-invalid, and no visual changes were noted in the mutations, indicating that error states were not effectively communicated."
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required and has \"(Required)\" in its label, which is sufficient for indicating its required status. However, no error cues were detected in the form of text messages or semantic attributes like aria-invalid, and no visual changes were noted in the mutations, indicating that error states were not effectively communicated."
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The field is marked as required using aria-required and has \"(Required)\" in its label, which is sufficient for indicating its required status. No error cues were triggered as the interaction was an empty submit."
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The field is marked as required using aria-required and has \"(Required)\" in its label, which is sufficient for indicating its required status. No error cues were triggered as the interaction was an empty submit."
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The field is marked as required using aria-required and has \"(Required)\" in its label, which is sufficient for indicating its required status. No error cues were triggered as the interaction was an empty submit."
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The field is marked as required using aria-required and has \"(Required)\" in its label, which is sufficient for indicating its required status. No error cues were triggered as the interaction was an empty submit."
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The field is marked as required using aria-required and has \"(Required)\" in its label, which is sufficient for indicating its required status. No error cues were triggered as the interaction was an empty submit."
+            },
+            {
+                "identification": "Email(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required, which is sufficient for indicating its required status. However, no specific error message or additional semantic cue was provided for the invalid input."
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required, which is sufficient for indicating its required status. However, no specific error message or additional semantic cue was provided for the invalid input."
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required, which is sufficient for indicating its required status. However, no specific error message or additional semantic cue was provided for the invalid input."
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required, which is sufficient for indicating its required status. However, no specific error message or additional semantic cue was provided for the invalid input."
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required, which is sufficient for indicating its required status. However, no specific error message or additional semantic cue was provided for the invalid input."
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The email field is marked as required using aria-required and \"(Required)\" in the label text, providing a programmatic and textual indicator. No error cues were triggered, making error evaluation inapplicable."
+            },
+            {
+                "identification": "practice_name",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The practice name field is marked as required using aria-required and \"(Required)\" in the label text, providing a programmatic and textual indicator. No error cues were triggered, making error evaluation inapplicable."
+            },
+            {
+                "identification": "provider_first_name",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The provider first name field is marked as required using aria-required and \"(Required)\" in the label text, providing a programmatic and textual indicator. No error cues were triggered, making error evaluation inapplicable."
+            },
+            {
+                "identification": "provider_last_name",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The provider last name field is marked as required using aria-required and \"(Required)\" in the label text, providing a programmatic and textual indicator. No error cues were triggered, making error evaluation inapplicable."
+            },
+            {
+                "identification": "direct_phone_number",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The direct phone number field is marked as required using aria-required and \"(Required)\" in the label text, providing a programmatic and textual indicator. No error cues were triggered, making error evaluation inapplicable."
+            },
+            {
+                "identification": "Email(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required, which is a programmatic indicator. However, no specific error messages or ARIA invalid attributes were added to indicate errors after invalid input submission. The lack of error-specific cues means that the error state relies on color or other non-semantic changes, which are not detailed in the mutations."
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required, which is a programmatic indicator. However, no specific error messages or ARIA invalid attributes were added to indicate errors after invalid input submission. The lack of error-specific cues means that the error state relies on color or other non-semantic changes, which are not detailed in the mutations."
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required, which is a programmatic indicator. However, no specific error messages or ARIA invalid attributes were added to indicate errors after invalid input submission. The lack of error-specific cues means that the error state relies on color or other non-semantic changes, which are not detailed in the mutations."
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required, which is a programmatic indicator. However, no specific error messages or ARIA invalid attributes were added to indicate errors after invalid input submission. The lack of error-specific cues means that the error state relies on color or other non-semantic changes, which are not detailed in the mutations."
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required, which is a programmatic indicator. However, no specific error messages or ARIA invalid attributes were added to indicate errors after invalid input submission. The lack of error-specific cues means that the error state relies on color or other non-semantic changes, which are not detailed in the mutations."
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The email field is marked as required using aria-required and includes \"(Required)\" in the label, providing both programmatic and visual cues. No error cues were applicable as the test was for required fields."
+            },
+            {
+                "identification": "practice name",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The practice name field is marked as required using aria-required and includes \"(Required)\" in the label, providing both programmatic and visual cues. No error cues were applicable as the test was for required fields."
+            },
+            {
+                "identification": "provider first name",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The provider first name field is marked as required using aria-required and includes \"(Required)\" in the label, providing both programmatic and visual cues. No error cues were applicable as the test was for required fields."
+            },
+            {
+                "identification": "provider last name",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The provider last name field is marked as required using aria-required and includes \"(Required)\" in the label, providing both programmatic and visual cues. No error cues were applicable as the test was for required fields."
+            },
+            {
+                "identification": "direct phone number",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The direct phone number field is marked as required using aria-required and includes \"(Required)\" in the label, providing both programmatic and visual cues. No error cues were applicable as the test was for required fields."
+            },
+            {
+                "identification": "Email(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required, which is a programmatic indicator. However, no specific error messages or ARIA invalid attributes were added to indicate errors after invalid input submission. The form relies on color changes or other non-semantic cues for error indication, which were not detected in the mutations."
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required, which is a programmatic indicator. However, no specific error messages or ARIA invalid attributes were added to indicate errors after invalid input submission. The form relies on color changes or other non-semantic cues for error indication, which were not detected in the mutations."
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required, which is a programmatic indicator. However, no specific error messages or ARIA invalid attributes were added to indicate errors after invalid input submission. The form relies on color changes or other non-semantic cues for error indication, which were not detected in the mutations."
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required, which is a programmatic indicator. However, no specific error messages or ARIA invalid attributes were added to indicate errors after invalid input submission. The form relies on color changes or other non-semantic cues for error indication, which were not detected in the mutations."
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required, which is a programmatic indicator. However, no specific error messages or ARIA invalid attributes were added to indicate errors after invalid input submission. The form relies on color changes or other non-semantic cues for error indication, which were not detected in the mutations."
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The email field is marked as required using aria-required and a visible \"(Required)\" label, which are appropriate non-color indicators. No error cues were triggered since the interaction was an empty submit, and no error messages or color changes were observed."
+            },
+            {
+                "identification": "practice_name",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The practice name field is marked as required using aria-required and a visible \"(Required)\" label, which are appropriate non-color indicators. No error cues were triggered since the interaction was an empty submit, and no error messages or color changes were observed."
+            },
+            {
+                "identification": "provider_first_name",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The provider first name field is marked as required using aria-required and a visible \"(Required)\" label, which are appropriate non-color indicators. No error cues were triggered since the interaction was an empty submit, and no error messages or color changes were observed."
+            },
+            {
+                "identification": "provider_last_name",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The provider last name field is marked as required using aria-required and a visible \"(Required)\" label, which are appropriate non-color indicators. No error cues were triggered since the interaction was an empty submit, and no error messages or color changes were observed."
+            },
+            {
+                "identification": "direct_phone_number",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The direct phone number field is marked as required using aria-required and a visible \"(Required)\" label, which are appropriate non-color indicators. No error cues were triggered since the interaction was an empty submit, and no error messages or color changes were observed."
+            },
+            {
+                "identification": "Email(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required, which is a programmatic indicator. However, no specific error messages or ARIA invalid attributes were added to indicate errors after invalid input submission."
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required, which is a programmatic indicator. However, no specific error messages or ARIA invalid attributes were added to indicate errors after invalid input submission."
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required, which is a programmatic indicator. However, no specific error messages or ARIA invalid attributes were added to indicate errors after invalid input submission."
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required, which is a programmatic indicator. However, no specific error messages or ARIA invalid attributes were added to indicate errors after invalid input submission."
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required, which is a programmatic indicator. However, no specific error messages or ARIA invalid attributes were added to indicate errors after invalid input submission."
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The email field is marked as required using aria-required and a visible \"(Required)\" label, which are non-color cues. No error cues were triggered since the interaction was an empty submit, and no error messages or visual changes were observed."
+            },
+            {
+                "identification": "practice name",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The practice name field is marked as required using aria-required and a visible \"(Required)\" label, which are non-color cues. No error cues were triggered since the interaction was an empty submit, and no error messages or visual changes were observed."
+            },
+            {
+                "identification": "provider first name",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The provider first name field is marked as required using aria-required and a visible \"(Required)\" label, which are non-color cues. No error cues were triggered since the interaction was an empty submit, and no error messages or visual changes were observed."
+            },
+            {
+                "identification": "provider last name",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The provider last name field is marked as required using aria-required and a visible \"(Required)\" label, which are non-color cues. No error cues were triggered since the interaction was an empty submit, and no error messages or visual changes were observed."
+            },
+            {
+                "identification": "direct phone number",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The direct phone number field is marked as required using aria-required and a visible \"(Required)\" label, which are non-color cues. No error cues were triggered since the interaction was an empty submit, and no error messages or visual changes were observed."
+            },
+            {
+                "identification": "Email(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required, which is a non-color cue. However, no error message or ARIA-invalid attribute was added to indicate the invalid email format, relying solely on color changes for error indication."
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required. No error message or ARIA-invalid attribute was added to indicate the invalid input, relying solely on color changes for error indication."
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required. No error message or ARIA-invalid attribute was added to indicate the invalid input, relying solely on color changes for error indication."
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required. No error message or ARIA-invalid attribute was added to indicate the invalid input, relying solely on color changes for error indication."
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required. No error message or ARIA-invalid attribute was added to indicate the invalid input, relying solely on color changes for error indication."
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "required_evaluation": "fail",
+                "error_evaluation": "pass",
+                "reasoning": "The Email field is visually marked as required with an asterisk but lacks a programmatic required attribute. Upon empty submission, an error message \"Email is required\" is displayed, which is a non-color cue. The field also uses a red border to indicate an error, but the presence of the error message ensures compliance with WCAG guidelines."
+            },
+            {
+                "identification": "insights-search",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The Enter your website to explore field is not required, and no error cues were triggered, making both required and error cues inapplicable."
+            },
+            {
+                "identification": "Email *",
+                "required_evaluation": "fail",
+                "error_evaluation": "fail",
+                "reasoning": "For the \"Email *\" field, the required status is indicated by an asterisk in the label, but there is no programmatic indication (e.g., aria-required), which is a fail for required cues. The error state is indicated by a class change that results in a red border, but there is no ARIA-invalid attribute or error message, which fails the error cue evaluation."
+            },
+            {
+                "identification": "Enter your website to explore",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "fail",
+                "reasoning": "For the \"Enter your website to explore\" field, there is no indication that it is required, and no error cues were programmatically associated with the field. The error state is indicated by a class change, but without any ARIA attributes or error messages, which fails the error cue evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "required_evaluation": "fail",
+                "error_evaluation": "pass",
+                "reasoning": "The Email field is marked with an asterisk in the label, suggesting it is required, but lacks a programmatic indicator like `aria-required`. The error state is indicated by a role=\"alert\" message \"Email is required,\" which is programmatically associated with the input, providing a non-color cue."
+            },
+            {
+                "identification": "insights-search",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The Enter your website to explore field is not marked as required and no validation or error cues were triggered, making required and error cue evaluations inapplicable."
+            },
+            {
+                "identification": "Email *",
+                "required_evaluation": "fail",
+                "error_evaluation": "fail",
+                "reasoning": "The asterisk suggests the field is required, but there is no programmatic indication like `aria-required` or a `required` attribute. The error state is indicated by a class change that results in a red border, which is a color-only cue without any programmatic support like `aria-invalid` or an error message."
+            },
+            {
+                "identification": "Enter your website to explore",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "There is no indication that the field is required, and no error cues were detected in the mutations. The field does not have any programmatic or visual cues indicating an error state."
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "required_evaluation": "fail",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue: asterisk in label, but no `required` attribute or `aria-required`. Error cue: 'Email is required' message provided in a role=\"alert\" container, which is programmatically associated with the input."
+            },
+            {
+                "identification": "email",
+                "required_evaluation": "fail",
+                "error_evaluation": "fail",
+                "reasoning": "Required cue: Asterisk in label, but no programmatic indicator like `aria-required`. Error cue: Border color changed to red, no additional error message provided."
+            },
+            {
+                "identification": "insights-search",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: None present. Error cue: No visual or semantic changes detected."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue: 'required' attribute present. Error cue: red border and error message 'Preencha os campos obrigatórios!' provided."
+            },
+            {
+                "identification": "Email",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue: 'required' attribute present. Error cue: red border and error message 'Preencha os campos obrigatórios!' provided."
+            },
+            {
+                "identification": "Mensagem",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue: 'required' attribute present. Error cue: red border and error message 'Preencha os campos obrigatórios!' provided."
+            },
+            {
+                "identification": "No Label",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: none present. Error cue: none present. Justification: No required or error cues detected; field is not required."
+            },
+            {
+                "identification": "Nome",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: asterisk in label, `required` attribute present. Error cue: none present. Justification: Required cue is programmatically supported; no error cue detected."
+            },
+            {
+                "identification": "Organização",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: none present. Error cue: none present. Justification: No required or error cues detected; field is not required."
+            },
+            {
+                "identification": "Email",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue: asterisk in label, `required` attribute present. Error cue: error message 'Verifique se o email inserido está correto!' displayed. Justification: Required cue is programmatically supported; error cue is textually supported."
+            },
+            {
+                "identification": "Telefone",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: none present. Error cue: none present. Justification: No required or error cues detected; field is not required."
+            },
+            {
+                "identification": "Assunto",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: none present. Error cue: none present. Justification: No required or error cues detected; field is not required."
+            },
+            {
+                "identification": "Tema",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No reasoning provided"
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "For the 'Nome' field, the required cue is indicated by a red asterisk and the 'required' attribute, satisfying the requirement for a programmatic indicator. The error cue is indicated by a red border and an error message 'Preencha os campos obrigatórios!' which is programmatically associated with the field, satisfying the requirement for a non-color indicator."
+            },
+            {
+                "identification": "Email",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "For the 'Email' field, the required cue is indicated by a red asterisk and the 'required' attribute, satisfying the requirement for a programmatic indicator. The error cue is indicated by a red border and an error message 'Preencha os campos obrigatórios!' which is programmatically associated with the field, satisfying the requirement for a non-color indicator."
+            },
+            {
+                "identification": "Mensagem",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "For the 'Mensagem' field, the required cue is indicated by a red asterisk and the 'required' attribute, satisfying the requirement for a programmatic indicator. The error cue is indicated by a red border and an error message 'Preencha os campos obrigatórios!' which is programmatically associated with the field, satisfying the requirement for a non-color indicator."
+            },
+            {
+                "identification": "No Label",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: none present. Error cue: none present. No required or error cues detected; field is not required."
+            },
+            {
+                "identification": "* Nome:",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: `required` attribute present. Error cue: none present. Required cue is programmatically indicated; no error cue detected."
+            },
+            {
+                "identification": "Organização:",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: none present. Error cue: none present. No required or error cues detected; field is not required."
+            },
+            {
+                "identification": "* Email:",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue: `required` attribute present. Error cue: Error message 'Verifique se o email inserido está correto!' displayed. Required cue is programmatically indicated; error cue is textually provided."
+            },
+            {
+                "identification": "Telefone:",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: none present. Error cue: none present. No required or error cues detected; field is not required."
+            },
+            {
+                "identification": "* Mensagem:",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: `required` attribute present. Error cue: none present. Required cue is programmatically indicated; no error cue detected."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue: Red asterisk in the label and 'required' attribute present. Error cue: Error message 'Preencha os campos obrigatórios!' displayed."
+            },
+            {
+                "identification": "Email",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue: Red asterisk in the label and 'required' attribute present. Error cue: Error message 'Preencha os campos obrigatórios!' displayed."
+            },
+            {
+                "identification": "Mensagem",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue: Red asterisk in the label and 'required' attribute present. Error cue: Error message 'Preencha os campos obrigatórios!' displayed."
+            },
+            {
+                "identification": "No Label",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: none. Error cue: none. Field not marked as required, so criterion is not applicable."
+            },
+            {
+                "identification": "Nome",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: asterisk and `required` attribute. Error cue: none detected."
+            },
+            {
+                "identification": "Organização",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: none. Error cue: none detected."
+            },
+            {
+                "identification": "Email",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue: asterisk and `required` attribute. Error cue: error message 'Verifique se o email inserido está correto!' shown."
+            },
+            {
+                "identification": "Telefone",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: none. Error cue: none detected."
+            },
+            {
+                "identification": "Assunto",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: none. Error cue: none detected."
+            },
+            {
+                "identification": "Tema",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: none. Error cue: none detected."
+            },
+            {
+                "identification": "Mensagem",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: asterisk and `required` attribute. Error cue: none detected."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue: 'Nome' field has a red asterisk and 'required' attribute, providing clear indication. Error cue: red border and error message 'Preencha os campos obrigatórios!' for empty required fields."
+            },
+            {
+                "identification": "Email",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue: 'Email' field has a red asterisk and 'required' attribute, providing clear indication. Error cue: red border and error message 'Preencha os campos obrigatórios!' for empty required fields."
+            },
+            {
+                "identification": "Mensagem",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue: 'Mensagem' field has a red asterisk and 'required' attribute, providing clear indication. Error cue: red border and error message 'Preencha os campos obrigatórios!' for empty required fields."
+            },
+            {
+                "identification": "Entidade",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: none present. Error cue: none present. Field not marked as required, so criterion is not applicable."
+            },
+            {
+                "identification": "Telefone",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: none present. Error cue: none present. Field not marked as required, so criterion is not applicable."
+            },
+            {
+                "identification": "Assunto",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: none present. Error cue: none present. Field not marked as required, so criterion is not applicable."
+            },
+            {
+                "identification": "Tema",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: none present. Error cue: none present. Field not marked as required, so criterion is not applicable."
+            },
+            {
+                "identification": "No Label",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: none. Error cue: none. Field not marked as required, so criterion is not applicable."
+            },
+            {
+                "identification": "Nome",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: asterisk in label and `required` attribute. Error cue: none detected."
+            },
+            {
+                "identification": "Organização",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: none. Error cue: none detected."
+            },
+            {
+                "identification": "Email",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue: asterisk in label and `required` attribute. Error cue: error message 'Verifique se o email inserido está correto!' provided."
+            },
+            {
+                "identification": "Telefone",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: none. Error cue: none detected."
+            },
+            {
+                "identification": "Assunto",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: none. Error cue: none detected."
+            },
+            {
+                "identification": "Tema",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: none. Error cue: none detected."
+            },
+            {
+                "identification": "Mensagem",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: asterisk in label and `required` attribute. Error cue: none detected."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue: 'Nome' field has a red asterisk and 'required' attribute, providing clear indication. Error cue: 'Nome' field shows a red border and an error message 'Preencha os campos obrigatórios!', providing textual feedback.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Email",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue: 'Email' field has a red asterisk and 'required' attribute, providing clear indication. Error cue: 'Email' field shows a red border and an error message 'Preencha os campos obrigatórios!', providing textual feedback.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Mensagem",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue: 'Mensagem' field has a red asterisk and 'required' attribute, providing clear indication. Error cue: 'Mensagem' field shows a red border and an error message 'Preencha os campos obrigatórios!', providing textual feedback.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Entidade",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: 'Entidade' field is not marked as required. Error cue: No error state triggered.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Telefone",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: 'Telefone' field is not marked as required. Error cue: No error state triggered.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Assunto",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: 'Assunto' field is not marked as required. Error cue: No error state triggered.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Tema",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: 'Tema' field is not marked as required. Error cue: No error state triggered.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "No Label",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required or error cues present.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Nome",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required attribute present, no error message detected.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Organização",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required or error cues present.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Email",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required attribute present, error message 'Verifique se o email inserido está correto!' provided.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Telefone",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required or error cues present.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Assunto",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required or error cues present.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Tema",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required or error cues present.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Mensagem",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required attribute present, no error message detected.",
+                "source": "invalid_input_submit"
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue: Fields with a red asterisk and 'required' attribute provide clear indication. Error cue: Error message 'Preencha os campos obrigatórios!' is displayed, providing a textual indication.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Email",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue: Fields with a red asterisk and 'required' attribute provide clear indication. Error cue: Error message 'Preencha os campos obrigatórios!' is displayed, providing a textual indication.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Mensagem",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue: Fields with a red asterisk and 'required' attribute provide clear indication. Error cue: Error message 'Preencha os campos obrigatórios!' is displayed, providing a textual indication.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "No Label",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required or error cues present.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Nome",
+                "error_evaluation": "fail",
+                "reasoning": "Required attribute present, error cue not detected.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Organização",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required or error cues present.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Email",
+                "error_evaluation": "pass",
+                "reasoning": "Required attribute present, error message provided.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Telefone",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required or error cues present.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Mensagem",
+                "error_evaluation": "fail",
+                "reasoning": "Required attribute present, error cue not detected.",
+                "source": "invalid_input_submit"
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The required cue is indicated by a red asterisk and the `required` attribute, providing a clear indication beyond color alone.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Email",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The required cue is indicated by a red asterisk and the `required` attribute, providing a clear indication beyond color alone.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Mensagem",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The required cue is indicated by a red asterisk and the `required` attribute, providing a clear indication beyond color alone.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "query",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required cue is present, making the criterion inapplicable.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Entidade",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required cue is present, making the criterion inapplicable.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Telefone",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required cue is present, making the criterion inapplicable.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Assunto",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required cue is present, making the criterion inapplicable.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Tema",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required cue is present, making the criterion inapplicable.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "No Label",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No error cue detected.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "* Nome",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No error cue detected.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Organização",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No error cue detected.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "* Email",
+                "error_evaluation": "pass",
+                "reasoning": "Error cue provided with a visible error message 'Verifique se o email inserido está correto!' and red border.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Telefone",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No error cue detected.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "* Mensagem",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No error cue detected.",
+                "source": "invalid_input_submit"
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue is indicated by the `required` attribute and an asterisk in the label, providing both programmatic and visual indicators. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Email",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue is indicated by the `required` attribute and an asterisk in the label, providing both programmatic and visual indicators. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Mensagem",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue is indicated by the `required` attribute and an asterisk in the label, providing both programmatic and visual indicators. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "query",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required cue present, as it is not marked as required. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Entidade",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required cue present, as it is not marked as required. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Telefone",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required cue present, as it is not marked as required. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Assunto",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required cue present, as it is not marked as required. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Tema",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required cue present, as it is not marked as required. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "No Label",
+                "error_evaluation": "fail",
+                "reasoning": "Error cue: no error message or visual indicator provided. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Nome",
+                "error_evaluation": "fail",
+                "reasoning": "Error cue: no error message or visual indicator provided. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Organização",
+                "error_evaluation": "fail",
+                "reasoning": "Error cue: no error message or visual indicator provided. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Email",
+                "error_evaluation": "pass",
+                "reasoning": "Error cue: error message 'Verifique se o email inserido está correto!' provided, not relying on color alone. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Telefone",
+                "error_evaluation": "fail",
+                "reasoning": "Error cue: no error message or visual indicator provided. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Assunto",
+                "error_evaluation": "fail",
+                "reasoning": "Error cue: no error message or visual indicator provided. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Tema",
+                "error_evaluation": "fail",
+                "reasoning": "Error cue: no error message or visual indicator provided. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Mensagem",
+                "error_evaluation": "fail",
+                "reasoning": "Error cue: no error message or visual indicator provided. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue is indicated by a red asterisk and the `required` attribute, providing both visual and programmatic indicators. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Email",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue is indicated by a red asterisk and the `required` attribute, providing both visual and programmatic indicators. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Mensagem",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue is indicated by a red asterisk and the `required` attribute, providing both visual and programmatic indicators. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "query",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required cue present, as it is not marked as required. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Entidade",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required cue present, as it is not marked as required. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Telefone",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required cue present, as it is not marked as required. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Assunto",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required cue present, as it is not marked as required. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Tema",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required cue present, as it is not marked as required. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "No Label",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Error cue: no error message or visual change detected, so error evaluation is inapplicable.\n\n2.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "* Nome",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Error cue: no error message or visual change detected, so error evaluation is inapplicable.\n\n3.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Organização",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Error cue: no error message or visual change detected, so error evaluation is inapplicable.\n\n4.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "* Email",
+                "error_evaluation": "pass",
+                "reasoning": "Error cue: error message 'Verifique se o email inserido está correto!' provided, not relying on color alone.\n\n5.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Telefone",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Error cue: no error message or visual change detected, so error evaluation is inapplicable.\n\n6.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "* Mensagem",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Error cue: no error message or visual change detected, so error evaluation is inapplicable.",
+                "source": "invalid_input_submit"
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "required_evaluation": "fail",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue indicated by red border, no programmatic or textual support like `aria-required`. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "reenter_email",
+                "required_evaluation": "fail",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue indicated by red border, no programmatic or textual support like `aria-required`. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "country",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required cue present, field is optional. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "i_agree_check",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required cue present, field is optional. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Endereço de e-mail",
+                "error_evaluation": "pass",
+                "reasoning": "Error cue for 'Endereço de e-mail': The error is indicated by a red border and a text message 'Introduz um endereço de e-mail válido', providing a non-color indicator. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "error_evaluation": "pass",
+                "reasoning": "Error cue for 'Confirma o teu endereço': The error is indicated by a red border and a text message 'Introduz o mesmo endereço em ambos os campos de e-mail', providing a non-color indicator. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "required_evaluation": "fail",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: border turned red, no programmatic or textual indicator. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "reenter_email",
+                "required_evaluation": "fail",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: border turned red, no programmatic or textual indicator. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "country",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required or error cues present, field is optional.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "i_agree_check",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required or error cues present, field is optional.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Endereço de e-mail",
+                "error_evaluation": "pass",
+                "reasoning": "Error cue for 'Endereço de e-mail': The error is indicated by a red border and a text message 'Introduz um endereço de e-mail válido', providing a non-color indicator. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "error_evaluation": "pass",
+                "reasoning": "Error cue for 'Confirma o teu endereço': The error is indicated by a red border and a text message 'Introduz o mesmo endereço em ambos os campos de e-mail', providing a non-color indicator. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "required_evaluation": "fail",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue: border turned red, no programmatic or textual indicator. Error cue: error message 'Introduz um endereço de e-mail válido' provided, not relying on color alone.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "reenter_email",
+                "required_evaluation": "fail",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue: border turned red, no programmatic or textual indicator. Error cue: error message 'Preenche o campo \"Confirma o endereço de e-mail\"' provided, not relying on color alone.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "country",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required or error cues present, field is optional.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "i_agree_check",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required or error cues present, field is optional.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Endereço de e-mail",
+                "error_evaluation": "pass",
+                "reasoning": "Error cue for 'Endereço de e-mail': Border color changed to red, but an error message 'Introduz um endereço de e-mail válido' was also displayed, providing a non-color indicator. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "error_evaluation": "pass",
+                "reasoning": "Error cue for 'Confirma o teu endereço': Border color changed to red, but an error message 'Introduz o mesmo endereço em ambos os campos de e-mail' was also displayed, providing a non-color indicator. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "required_evaluation": "fail",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue indicated by red border, but no programmatic or textual indicator like `aria-required` or visible text. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "reenter_email",
+                "required_evaluation": "fail",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue indicated by red border, but no programmatic or textual indicator like `aria-required` or visible text. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "country",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required cue present, field is optional. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "i_agree_check",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required cue present, field is optional. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Endereço de e-mail",
+                "error_evaluation": "pass",
+                "reasoning": "Error cue for 'Endereço de e-mail': The error is indicated by a red border, but also accompanied by a text message 'Introduz um endereço de e-mail válido', ensuring the error state is not conveyed by color alone. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "error_evaluation": "pass",
+                "reasoning": "Error cue for 'Confirma o teu endereço': The error is indicated by a red border and a text message 'Introduz o mesmo endereço em ambos os campos de e-mail', providing a non-color indicator. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "required_evaluation": "fail",
+                "error_evaluation": "fail",
+                "reasoning": "Required cue: no programmatic or visible text indicator of required status; error message 'Inserir nome' is hidden, not visible to users.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Email",
+                "required_evaluation": "fail",
+                "error_evaluation": "fail",
+                "reasoning": "Required cue: no programmatic or visible text indicator of required status; error message 'Inserir email' is hidden, not visible to users.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Phone Dialing Code",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: not applicable as the field is not required. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Telemóvel (opcional)",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: not applicable as the field is optional. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Password",
+                "required_evaluation": "fail",
+                "error_evaluation": "fail",
+                "reasoning": "Required cue: no programmatic or visible text indicator of required status; error message 'Defina uma password.' is hidden, not visible to users.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Accept Terms",
+                "required_evaluation": "fail",
+                "error_evaluation": "fail",
+                "reasoning": "Required cue: no programmatic or visible text indicator of required status; error message 'É necessário ler e aceitar as condições de utilização.' is hidden, not visible to users.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Nome",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No error message or visual change detected, so error evaluation is inapplicable.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Email",
+                "error_evaluation": "fail",
+                "reasoning": "Error message 'Verificar se o email está bem escrito e tentar novamente.' is present but hidden, failing to provide a visible error cue.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Telemóvel (opcional)",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No error message or visual change detected, so error evaluation is inapplicable.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Password",
+                "error_evaluation": "fail",
+                "reasoning": "Error message 'A password deve ter mais de 8 caracteres...' is present but hidden, failing to provide a visible error cue.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Accept Terms",
+                "error_evaluation": "fail",
+                "reasoning": "Error message 'É necessário ler e aceitar as condições de utilização.' is present but hidden, failing to provide a visible error cue.",
+                "source": "invalid_input_submit"
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your name",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue: `aria-required=\"true\"` indicates the field is required. Error cue: `aria-invalid=\"true\"` and error message 'Enter your name' linked via `aria-describedby` provide non-color indicators.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Mobile number or email",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue: `aria-required=\"true\"` indicates the field is required. Error cue: `aria-invalid=\"true\"` and error message 'Enter your email or mobile phone number' linked via `aria-describedby` provide non-color indicators.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Password",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue: `aria-required=\"true\"` indicates the field is required. Error cue: `aria-invalid=\"true\"` and error message 'Minimum 6 characters required' linked via `aria-describedby` provide non-color indicators.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Re-enter password",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: `aria-required=\"true\"` indicates the field is required. Error cue: not applicable as no error was triggered.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "No Label (countryCode)",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue: inapplicable as the field is disabled. Error cue: inapplicable as no error was triggered.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Insira seu número de celular ou endereço de e-mail",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Error cue: no visual or semantic changes detected after submitting invalid input, indicating no error state was presented. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "required_evaluation": "fail",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue is indicated by an asterisk in the label, but lacks programmatic support like `aria-required`. Error cue is indicated by a visible error message 'O campo nome é de preenchimento obrigatório', providing a non-color indicator.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Email",
+                "required_evaluation": "fail",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue is indicated by an asterisk in the label, but lacks programmatic support like `aria-required`. Error cue is indicated by a visible error message 'O campo email é de preenchimento obrigatório', providing a non-color indicator.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Password",
+                "required_evaluation": "fail",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue is indicated by an asterisk in the label, but lacks programmatic support like `aria-required`. Error cue is indicated by a visible error message 'O campo password é de preenchimento obrigatório', providing a non-color indicator.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Nome do cliente embaixador",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required or error cues present, as the field is optional.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Permissão de aparecer nos dados do amigo que o convidou",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required or error cues present, as the field is optional.\n\n-Identification",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Nome *",
+                "error_evaluation": "fail",
+                "reasoning": "Error cue: No specific error message or programmatic association detected for invalid input '12345'. Error state not conveyed by color alone, but no error message was provided.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Email *",
+                "error_evaluation": "pass",
+                "reasoning": "Error cue: Error message 'O formato de e-mail introduzido não é válido.' is provided and programmatically associated, so error state is not conveyed by color alone.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Password *",
+                "error_evaluation": "pass",
+                "reasoning": "Error cue: Error message 'A password não alcança o número mínimo de 8 caracteres.' is provided and programmatically associated, so error state is not conveyed by color alone.",
+                "source": "invalid_input_submit"
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Email field: Required cue is indicated by an asterisk and the text 'Email is required' in a role=\"alert\" div, providing a non-color indicator. Error cue: 'Email is required' message is programmatically associated with the input via role=\"alert\", ensuring error state is not conveyed by color alone.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "insights-search",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Website field: No required or error cues present, as it is not marked as required and no validation was triggered.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "email",
+                "error_evaluation": "pass",
+                "reasoning": "Error cue: invalid email input indicated by red border and error message \"Email must be a valid email address,\" providing a non-color indicator. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "insights-search",
+                "error_evaluation": "pass",
+                "reasoning": "Error cue: invalid URL input indicated by error message \"Enter your website to explore must be a valid URL,\" providing a non-color indicator. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The field has `aria-required=\"true\"`, providing a programmatic indicator of the required state, ensuring it is not conveyed by color alone. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "practice name",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The field has `aria-required=\"true\"`, providing a programmatic indicator of the required state, ensuring it is not conveyed by color alone. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "provider first name",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The field has `aria-required=\"true\"`, providing a programmatic indicator of the required state, ensuring it is not conveyed by color alone. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "provider last name",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The field has `aria-required=\"true\"`, providing a programmatic indicator of the required state, ensuring it is not conveyed by color alone. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "direct phone number",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The field has `aria-required=\"true\"`, providing a programmatic indicator of the required state, ensuring it is not conveyed by color alone. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Email(Required)",
+                "error_evaluation": "fail",
+                "reasoning": "Error cue: No error message or aria-invalid change detected, so error state is not conveyed by color alone. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "error_evaluation": "fail",
+                "reasoning": "Error cue: No error message or aria-invalid change detected, so error state is not conveyed by color alone. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "error_evaluation": "fail",
+                "reasoning": "Error cue: No error message or aria-invalid change detected, so error state is not conveyed by color alone. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "error_evaluation": "fail",
+                "reasoning": "Error cue: No error message or aria-invalid change detected, so error state is not conveyed by color alone. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "error_evaluation": "fail",
+                "reasoning": "Error cue: No error message or aria-invalid change detected, so error state is not conveyed by color alone. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue is indicated by '(Required)' text and `aria-required=\"true\"`, providing a non-color indicator. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue is indicated by '(Required)' text and `aria-required=\"true\"`, providing a non-color indicator. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue is indicated by '(Required)' text and `aria-required=\"true\"`, providing a non-color indicator. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue is indicated by '(Required)' text and `aria-required=\"true\"`, providing a non-color indicator. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "Required cue is indicated by '(Required)' text and `aria-required=\"true\"`, providing a non-color indicator. Error cue: not applicable in this pass.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Email(Required)",
+                "error_evaluation": "fail",
+                "reasoning": "Error cue: no error message or aria-invalid set, so error state is not conveyed by color alone. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "error_evaluation": "fail",
+                "reasoning": "Error cue: no error message or aria-invalid set, so error state is not conveyed by color alone. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "error_evaluation": "fail",
+                "reasoning": "Error cue: no error message or aria-invalid set, so error state is not conveyed by color alone. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "error_evaluation": "fail",
+                "reasoning": "Error cue: no error message or aria-invalid set, so error state is not conveyed by color alone. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "error_evaluation": "fail",
+                "reasoning": "Error cue: no error message or aria-invalid set, so error state is not conveyed by color alone. Required cue: not applicable in this pass.",
+                "source": "invalid_input_submit"
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue is indicated by the `required` attribute, and an error message 'Name is required.' is displayed, providing a non-color indicator. Error cue is also supported by text.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Email",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue is indicated by the `required` attribute, and an error message 'Email-Id is required.' is displayed, providing a non-color indicator. Error cue is also supported by text.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Subject",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue is indicated by the `required` attribute, and an error message 'Subject is required.' is displayed, providing a non-color indicator. Error cue is also supported by text.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Message",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "Required cue is indicated by the `required` attribute, and an error message 'Message is required.' is displayed, providing a non-color indicator. Error cue is also supported by text.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Upload File",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No required cue needed as the field is optional. Error cue is inapplicable as no error was triggered.",
+                "source": "empty_submit"
+            },
+            {
+                "identification": "Name",
+                "error_evaluation": "pass",
+                "reasoning": "Error cue is indicated by the text 'This is not a valid Name.' which is programmatically associated with the input field, ensuring the error state is not conveyed by color alone.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Email",
+                "error_evaluation": "pass",
+                "reasoning": "Error cue is indicated by the text 'This is not a valid Email-Id.' which is programmatically associated with the input field, ensuring the error state is not conveyed by color alone.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Subject",
+                "error_evaluation": "pass",
+                "reasoning": "Error cue is indicated by the text 'Subject should be minimum of 6 characters.' which is programmatically associated with the input field, ensuring the error state is not conveyed by color alone.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "No Label (Message)",
+                "error_evaluation": "pass",
+                "reasoning": "Error cue is indicated by the text 'Message should be minimum of 30 characters.' which is programmatically associated with the input field, ensuring the error state is not conveyed by color alone.",
+                "source": "invalid_input_submit"
+            },
+            {
+                "identification": "Upload File",
+                "error_evaluation": "inapplicable",
+                "reasoning": "No error cue is applicable as the field is optional and no validation error was triggered.",
+                "source": "invalid_input_submit"
+            }
+        ]
+    }
+]

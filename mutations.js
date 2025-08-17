@@ -71,8 +71,33 @@ const observer = new MutationObserver(function (mutationsList) {
     for (const mutation of mutationsList) {
         const target = mutation.target;
 
+        const serializedTarget = target.outerHTML || target.textContent || "";
+        window.mutationLogSize += serializedTarget.length;
+
+        if (!noiseFilterEnabled && window.mutationLogSize > MAX_MUTATION_LOG_SIZE) {
+            console.warn("High mutation volume detected — enabling noise filtering.");
+            noiseFilterEnabled = true;
+        }
+
+        if (noiseFilterEnabled && !target.closest('form')) {
+            window.mutationRecords.push({
+                type: mutation.type,
+                reasonCode: "Ignored: mutation outside form",
+                timestamp: new Date().toISOString()
+            });
+            continue;
+        }
+
         const fieldInfo = findAssociatedFieldInfo(target);
-        if (fieldInfo.skip) continue;
+
+        if (fieldInfo.skip) {
+            window.mutationRecords.push({
+                type: mutation.type,
+                reasonCode: fieldInfo.reason,
+                timestamp: new Date().toISOString()
+            });
+            continue;
+        }
 
         const record = {
             type: mutation.type,
@@ -88,58 +113,49 @@ const observer = new MutationObserver(function (mutationsList) {
             possibleErrorMessages: [],
             timestamp: new Date().toISOString(),
             ariaDescribedText: fieldInfo.ariaDescribedText || "",
-            reasonCode: fieldInfo.reason,
-            colorProperties: [],
-            computedColorStyles: [],  // <-- NEW FIELD
-            errorClasses: [],
+            reasonCode: fieldInfo.reason
         };
 
-        if (mutation.type === "attributes") {
+        if (mutation.type === "childList") {
+            function extractDeepText(node) {
+                const collected = [];
+                const walker = document.createTreeWalker(node, NodeFilter.SHOW_ELEMENT, null, false);
+              
+                while (walker.nextNode()) {
+                  const el = walker.currentNode;
+                  const text = el.innerText?.trim();
+                  const isLong = text?.length > 300;
+                  const isEmpty = !text || /^\s*$/.test(text);
+              
+                  if (!isLong && !isEmpty) {
+                    collected.push(text);
+                  }
+                }
+              
+                return collected;
+              }
+              
+              for (const node of mutation.addedNodes) {
+                if (node.nodeType === Node.ELEMENT_NODE) {
+                  const messages = extractDeepText(node);
+                  record.possibleErrorMessages.push(...messages);
+                  record.addedNodes.push(node.outerHTML);
+                }
+              }
+              
+
+            for (const node of mutation.removedNodes) {
+                if (node.nodeType === Node.ELEMENT_NODE) {
+                    record.removedNodes.push(node.outerHTML);
+                }
+            }
+        } else if (mutation.type === "attributes") {
             const attrName = mutation.attributeName;
             record.attributeChanged = attrName;
             record.newValue = target.getAttribute(attrName);
 
             if (["style", "class"].includes(attrName)) {
                 const visibleText = target.innerText?.trim();
-                const newStyle = target.getAttribute("style") || "";
-                const newClass = target.getAttribute("class") || "";
-
-                // Inline style parsing
-                const colorMatches = [];
-                const styleProperties = newStyle.toLowerCase().split(/[\s;]/);
-                for (const prop of styleProperties) {
-                    if (prop.includes("color") && !prop.includes("background-image")) {
-                        colorMatches.push(prop);
-                    }
-                }
-                if (colorMatches.length > 0) {
-                    record.colorProperties = colorMatches;
-                }
-
-                // Class-based error name detection
-                const errorClassKeywords = ["error", "invalid", "danger", "highlight"];
-                const matchingErrorClasses = errorClassKeywords.filter(keyword =>
-                    newClass.toLowerCase().includes(keyword)
-                );
-                if (matchingErrorClasses.length > 0) {
-                    record.errorClasses = matchingErrorClasses;
-                }
-
-                // Computed visual style (for LLM)
-                try {
-                    const computedStyles = window.getComputedStyle(target);
-                    const visualCues = ["border-color", "background-color", "color", "outline-color"];
-                    for (const prop of visualCues) {
-                        const val = computedStyles.getPropertyValue(prop);
-                        if (val && val !== "transparent" && val !== "initial" && val !== "rgba(0, 0, 0, 0)") {
-                            record.computedColorStyles.push(`${prop}: ${val.trim()}`);
-                        }
-                    }
-                } catch (err) {
-                    console.warn("Could not compute style for target:", err);
-                }
-
-                // Mark semantic support if any
                 if (visibleText && visibleText.length < 300) {
                     record.possibleErrorMessages.push(visibleText);
                     record.validationFlag = true;
@@ -154,7 +170,6 @@ const observer = new MutationObserver(function (mutationsList) {
         window.mutationRecords.push(record);
     }
 });
-
 
 observer.observe(document.body, {
     attributes: true,

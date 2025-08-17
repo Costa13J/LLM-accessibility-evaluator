@@ -174,6 +174,63 @@
         "failure_example": "<input type='text' value='12345'>",
         "best_practice": "<input type='text' value='12345' readonly aria-readonly='true'>",
         "explanation": "Programmatic attributes like 'readonly' should be reinforced with ARIA attributes for accessibility."
+    },
+    {
+        "id": 23,
+        "field_type": "required text input",
+        "guideline": "WCAG 3.3.2 Labels or Instructions, 1.3.1 Info and Relationships",
+        "failure_example": "<label for='name' style='color:red;'>Name</label><input id='name' type='text'>",
+        "best_practice": "<label for='name'>Name <span aria-hidden='true'>*</span></label><input id='name' type='text' required aria-required='true'>",
+        "explanation": "Required fields must not rely on color alone. Provide both visual and programmatic indicators (required attribute or aria-required) so assistive technologies announce the requirement."
+    },
+    {
+        "id": 24,
+        "field_type": "text input with error state",
+        "guideline": "WCAG 3.3.1 Error Identification, 1.4.1 Use of Color",
+        "failure_example": "<label for='email'>Email</label><input id='email' type='email' style='border-color:red;'>",
+        "best_practice": "<label for='email'>Email</label><input id='email' type='email' aria-invalid='true' aria-describedby='email-error'><span id='email-error' class='error'>Please enter a valid email address.</span>",
+        "explanation": "Errors must not be indicated by color alone. Programmatic cues like aria-invalid and text messages linked with aria-describedby help users and assistive technologies identify and correct the issue."
+    },
+    {
+        "id": 25,
+        "field_type": "text input with generic error",
+        "guideline": "WCAG 3.3.1 Error Identification, 3.3.3 Error Suggestion",
+        "failure_example": "<input type='text' id='dob'><span class='error'>Invalid input</span>",
+        "best_practice": "<input type='text' id='dob' aria-describedby='dob-error'><span id='dob-error' class='error'>Please enter your date of birth in the format YYYY-MM-DD.</span>",
+        "explanation": "Error messages should be clear and provide guidance for correction. Ambiguous or generic errors like 'Invalid input' fail to help users recover from mistakes."
+    },
+    {
+        "id": 26,
+        "field_type": "text input with missing error association",
+        "guideline": "WCAG 3.3.1 Error Identification, 4.1.2 Name Role Value",
+        "failure_example": "<input type='text' id='zip'><span class='error'>Invalid ZIP code</span>",
+        "best_practice": "<input type='text' id='zip' aria-describedby='zip-error'><span id='zip-error' class='error'>Invalid ZIP code. Please use 5 digits.</span>",
+        "explanation": "Error messages must be programmatically linked to inputs using aria-describedby so that screen readers announce the error in context."
+    },
+    {
+        "id": 27,
+        "field_type": "form validation",
+        "guideline": "WCAG 3.3.1 Error Identification, 3.3.2 Labels or Instructions, ACT Rule: Error Identification",
+        "failure_example": "<form><label for='password'>Password</label><input id='password' type='password' required><div style='color:red;'>*</div></form>",
+        "best_practice": "<form><label for='password'>Password <span aria-hidden='true'>*</span></label><input id='password' type='password' required aria-required='true' aria-describedby='pw-help'><div id='pw-help' class='instructions'>Must be at least 8 characters long.</div></form>",
+        "explanation": "Required fields indicated only by color or symbols fail WCAG. Instructions must be available in text and programmatically associated, ensuring screen readers convey the requirement."
+    },      
+    {
+        "id": 28,
+        "field_type": "required field indicated by color only",
+        "guideline": "WCAG 1.4.1 Use of Color, 3.3.2 Labels or Instructions",
+        "failure_example": "<label for='name' style='color:red;'>Name</label><input id='name' type='text'>",
+        "best_practice": "<label for='name'>Name <span aria-hidden='true'>*</span></label><input id='name' type='text' required aria-required='true'>",
+        "explanation": "Using color alone (red label) to indicate a required field fails WCAG 1.4.1. A non-color cue such as a visible asterisk and programmatic attributes (required or aria-required) must be included."
+    },
+    {
+        "id": 29,
+        "field_type": "error state indicated by color only",
+        "guideline": "WCAG 1.4.1 Use of Color, 3.3.1 Error Identification",
+        "failure_example": "<label for='email'>Email</label><input id='email' type='email' style='border:2px solid red;'>",
+        "best_practice": "<label for='email'>Email</label><input id='email' type='email' aria-invalid='true' aria-describedby='email-error'><span id='email-error' class='error'>Enter a valid email address, e.g., user@example.com</span>",
+        "explanation": "Error states indicated only by red borders or red text fail WCAG 1.4.1. Errors must include a clear text description and programmatic cues such as aria-invalid and aria-describedby."
     }
+      
         
 ]

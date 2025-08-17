@@ -1,0 +1,506 @@
+[
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "openai/gpt-4o-mini-2024-07-18",
+        "submit_clicked": true,
+        "fields": []
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "openai/gpt-4o-mini-2024-07-18",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "pass",
+                "reasoning": "The fields for email and re-enter email are optional, and no required or error cues were expected. However, after submission, an error message was displayed indicating that the email address must be valid and that the re-enter email field must be filled. This message is visible and provides clear guidance, thus meeting accessibility standards."
+            },
+            {
+                "identification": "reenter_email",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "pass",
+                "reasoning": "The fields for email and re-enter email are optional, and no required or error cues were expected. However, after submission, an error message was displayed indicating that the email address must be valid and that the re-enter email field must be filled. This message is visible and provides clear guidance, thus meeting accessibility standards."
+            },
+            {
+                "identification": "email",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "pass",
+                "reasoning": "The email fields are not marked as required, and the error state is indicated through color changes (red border) and a visible error message. The error message provides clear guidance on what is wrong, which is a good practice. However, since the fields are optional, the required cue is not applicable."
+            },
+            {
+                "identification": "reenter_email",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "pass",
+                "reasoning": "The email fields are not marked as required, and the error state is indicated through color changes (red border) and a visible error message. The error message provides clear guidance on what is wrong, which is a good practice. However, since the fields are optional, the required cue is not applicable."
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "openai/gpt-4o-mini-2024-07-18",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "input_3 (Email)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "All fields are marked as required using the aria-required attribute and visually indicated with \"(Required)\" in the label. However, since the form was submitted empty, there were no error messages or visual cues indicating the error state. Therefore, while the required cues are present, the error cues are not, leading to a failure in conveying the error state."
+            },
+            {
+                "identification": "Email(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "All fields are marked as required using the aria-required attribute, and the labels indicate that they are required. However, the error states for the invalid inputs are not communicated through any visible error messages or ARIA attributes. Instead, the only feedback is likely through color changes, which are not specified in the mutations. Therefore, the required cues are adequately conveyed, but the error cues fail to meet accessibility standards."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "The \"Name\" field is required, as indicated by the required attribute. Upon submission, an error message is displayed, providing text-based feedback that the field is required, satisfying the requirement for conveying required and error states beyond color alone."
+            },
+            {
+                "identification": "Email",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "The \"Email\" field is required, as indicated by the required attribute. Upon submission, an error message is displayed, providing text-based feedback that the field is required, satisfying the requirement for conveying required and error states beyond color alone."
+            },
+            {
+                "identification": "Subject",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "The \"Subject\" field is required, as indicated by the required attribute. Upon submission, an error message is displayed, providing text-based feedback that the field is required, satisfying the requirement for conveying required and error states beyond color alone."
+            },
+            {
+                "identification": "Message",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "The \"Message\" field is required, as indicated by the required attribute. Upon submission, an error message is displayed, providing text-based feedback that the field is required, satisfying the requirement for conveying required and error states beyond color alone."
+            },
+            {
+                "identification": "Upload",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The \"Upload\" field is optional, as indicated by the absence of a required attribute. Therefore, no required or error cues are necessary."
+            },
+            {
+                "identification": "Name",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "The required status is indicated by the required attribute, which is sufficient. The error state is communicated through a visible error message \"This is not a valid Name,\" which is beyond color alone."
+            },
+            {
+                "identification": "Email",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "The required status is indicated by the required attribute. The error state is communicated through a visible error message \"This is not a valid Email-Id,\" which is beyond color alone."
+            },
+            {
+                "identification": "Subject",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "The required status is indicated by the required attribute. The error state is communicated through a visible error message \"Subject should be minimum of 6 characters,\" which is beyond color alone."
+            },
+            {
+                "identification": "No Label (Message)",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "The required status is indicated by the required attribute. The error state is communicated through a visible error message \"Message should be minimum of 30 characters,\" which is beyond color alone."
+            },
+            {
+                "identification": "Image Upload",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "This field is optional, so no required or error cues are applicable."
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The Email field is marked as required using aria-required and has a visible \"(Required)\" indicator in the label. No error cues were expected or triggered during the empty submit."
+            },
+            {
+                "identification": "Practice Name",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The Practice Name field is marked as required using aria-required and has a visible \"(Required)\" indicator in the label. No error cues were expected or triggered during the empty submit."
+            },
+            {
+                "identification": "Provider First Name",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The Provider First Name field is marked as required using aria-required and has a visible \"(Required)\" indicator in the label. No error cues were expected or triggered during the empty submit."
+            },
+            {
+                "identification": "Provider Last Name",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The Provider Last Name field is marked as required using aria-required and has a visible \"(Required)\" indicator in the label. No error cues were expected or triggered during the empty submit."
+            },
+            {
+                "identification": "Direct Phone Number",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The Direct Phone Number field is marked as required using aria-required and has a visible \"(Required)\" indicator in the label. No error cues were expected or triggered during the empty submit."
+            },
+            {
+                "identification": "Email(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required and has \"(Required)\" in its label, which is sufficient for indicating its required status. However, no error cues were detected in the mutations, such as aria-invalid changes or error messages, indicating that error states were not communicated beyond the initial required indication."
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required and has \"(Required)\" in its label, which is sufficient for indicating its required status. However, no error cues were detected in the mutations, such as aria-invalid changes or error messages, indicating that error states were not communicated beyond the initial required indication."
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required and has \"(Required)\" in its label, which is sufficient for indicating its required status. However, no error cues were detected in the mutations, such as aria-invalid changes or error messages, indicating that error states were not communicated beyond the initial required indication."
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required and has \"(Required)\" in its label, which is sufficient for indicating its required status. However, no error cues were detected in the mutations, such as aria-invalid changes or error messages, indicating that error states were not communicated beyond the initial required indication."
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The field is marked as required using aria-required and has \"(Required)\" in its label, which is sufficient for indicating its required status. However, no error cues were detected in the mutations, such as aria-invalid changes or error messages, indicating that error states were not communicated beyond the initial required indication."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "The \"Nome\" field is marked as required with an asterisk and the required attribute. Upon submission, if left empty, it is highlighted with a red border and an error message is displayed, providing both visual and textual cues."
+            },
+            {
+                "identification": "Nome",
+                "required_evaluation": "pass",
+                "error_evaluation": "fail",
+                "reasoning": "The \"Nome\" field is marked as required using an asterisk and the required attribute, which is sufficient for indicating its required status. However, no error message or additional semantic cues are provided when invalid input is submitted."
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "required_evaluation": "fail",
+                "error_evaluation": "pass",
+                "reasoning": "The email field is indicated as required by an asterisk in the label, but lacks a programmatic required attribute. Upon empty submission, an error message \"Email is required\" is displayed, which effectively communicates the error state beyond color alone."
+            },
+            {
+                "identification": "email",
+                "required_evaluation": "fail",
+                "error_evaluation": "fail",
+                "reasoning": "The email field is marked with an asterisk, suggesting it is required, but it lacks a programmatic required attribute like aria-required or required. The error state is indicated by a class change, but there is no accompanying text message or ARIA attribute to describe the error, relying solely on class changes for visual indication."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "The First Name field is marked as required using aria-required. Upon submission, an error message was added, and aria-invalid was set to true, providing both visual and programmatic cues beyond color."
+            },
+            {
+                "identification": "First Name",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The \"First Name\" field is marked as required using aria-required. No error state was triggered, so error cues are inapplicable."
+            },
+            {
+                "identification": "Last Name",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "The \"Last Name\" field is marked as required using aria-required. The error state is effectively communicated through an ARIA-invalid attribute and a specific error message indicating invalid characters."
+            },
+            {
+                "identification": "Email",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "The \"Email\" field is marked as required using aria-required. The error state is effectively communicated through an ARIA-invalid attribute and a specific error message indicating an invalid email format."
+            },
+            {
+                "identification": "Organization",
+                "required_evaluation": "pass",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The \"Organization\" field is marked as required using aria-required. No error state was triggered, so error cues are inapplicable."
+            },
+            {
+                "identification": "Website",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The \"Website\" field is optional, and no validation or styling changes were triggered. Required and error cues are not applicable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "The \"Nome\" field is marked with an asterisk, indicating it is required. An error message was displayed upon submission, providing text-based feedback that it is required."
+            },
+            {
+                "identification": "Email",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "The \"Email\" field is marked with an asterisk, indicating it is required. An error message was displayed upon submission, providing text-based feedback that it is required."
+            },
+            {
+                "identification": "Password",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "The \"Password\" field is marked with an asterisk, indicating it is required. An error message was displayed upon submission, providing text-based feedback that it is required."
+            },
+            {
+                "identification": "Permissão de aparecer nos dados do amigo que o convidou",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The \"Permissão de aparecer nos dados do amigo que o convidou\" checkbox is not marked as required, and no error messages were triggered for it."
+            },
+            {
+                "identification": "Divulgação a terceiros",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The \"Divulgação a terceiros\" checkbox is not marked as required, and no error messages were triggered for it."
+            },
+            {
+                "identification": "Eu concordo com os Termos e Condições da Staples",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "The \"Eu concordo com os Termos e Condições da Staples\" checkbox is required, as indicated by the error message upon submission, but it lacks a programmatic 'required' attribute."
+            },
+            {
+                "identification": "Nome *",
+                "required_evaluation": "fail",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The field \"Nome *\" is marked with an asterisk to indicate it is required, but it lacks the programmatic 'required' attribute. No error message was triggered for the invalid input, so error cue evaluation is inapplicable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your name",
+                "required_evaluation": "pass",
+                "error_evaluation": "pass",
+                "reasoning": "The \"Your name\" field is marked as required using aria-required. The error state is communicated through an aria-invalid attribute and a visible error message, ensuring that color is not the sole indicator of errors."
+            },
+            {
+                "identification": "Enter your mobile number or email",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "fail",
+                "reasoning": "The email field has an aria-label but lacks any error indication or required status. No error cues were triggered upon submission with invalid input, failing to meet the guideline that errors should be indicated with more than just color or lack of feedback."
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label (checkbox)",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The form fields do not have required attributes, and no error cues were triggered for any fields during the empty submit. The only mutation observed was related to the Captcha validation, which is not directly related to the form fields themselves. Therefore, required and error cues are not applicable for these fields."
+            },
+            {
+                "identification": "Search Players or Teams",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The form fields do not have required attributes, and no error cues were triggered for any fields during the empty submit. The only mutation observed was related to the Captcha validation, which is not directly related to the form fields themselves. Therefore, required and error cues are not applicable for these fields."
+            },
+            {
+                "identification": "emailAddress",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The form fields do not have required attributes, and no error cues were triggered for any fields during the empty submit. The only mutation observed was related to the Captcha validation, which is not directly related to the form fields themselves. Therefore, required and error cues are not applicable for these fields."
+            },
+            {
+                "identification": "password",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The form fields do not have required attributes, and no error cues were triggered for any fields during the empty submit. The only mutation observed was related to the Captcha validation, which is not directly related to the form fields themselves. Therefore, required and error cues are not applicable for these fields."
+            },
+            {
+                "identification": "firstName",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The form fields do not have required attributes, and no error cues were triggered for any fields during the empty submit. The only mutation observed was related to the Captcha validation, which is not directly related to the form fields themselves. Therefore, required and error cues are not applicable for these fields."
+            },
+            {
+                "identification": "lastName",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The form fields do not have required attributes, and no error cues were triggered for any fields during the empty submit. The only mutation observed was related to the Captcha validation, which is not directly related to the form fields themselves. Therefore, required and error cues are not applicable for these fields."
+            },
+            {
+                "identification": "dobMonth",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The form fields do not have required attributes, and no error cues were triggered for any fields during the empty submit. The only mutation observed was related to the Captcha validation, which is not directly related to the form fields themselves. Therefore, required and error cues are not applicable for these fields."
+            },
+            {
+                "identification": "dobyear",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The form fields do not have required attributes, and no error cues were triggered for any fields during the empty submit. The only mutation observed was related to the Captcha validation, which is not directly related to the form fields themselves. Therefore, required and error cues are not applicable for these fields."
+            },
+            {
+                "identification": "country",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The form fields do not have required attributes, and no error cues were triggered for any fields during the empty submit. The only mutation observed was related to the Captcha"
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The checkbox field is not marked as required, and no error cues were triggered for invalid inputs. No semantic attributes or error messages were added."
+            },
+            {
+                "identification": "Search Players or Teams",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The search field is not marked as required, and no error cues were triggered for invalid inputs. No semantic attributes or error messages were added."
+            },
+            {
+                "identification": "emailAddress",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The email field is not marked as required, and no error cues were triggered for invalid inputs. No semantic attributes or error messages were added."
+            },
+            {
+                "identification": "password",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The password field is not marked as required, and no error cues were triggered for invalid inputs. No semantic attributes or error messages were added."
+            },
+            {
+                "identification": "firstName",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The first name field is not marked as required, and no error cues were triggered for invalid inputs. No semantic attributes or error messages were added."
+            },
+            {
+                "identification": "lastName",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The last name field is not marked as required, and no error cues were triggered for invalid inputs. No semantic attributes or error messages were added."
+            },
+            {
+                "identification": "dobMonth",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The month of birth field is not marked as required, and no error cues were triggered for invalid inputs. No semantic attributes or error messages were added."
+            },
+            {
+                "identification": "dobyear",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The year of birth field is not marked as required, and no error cues were triggered for invalid inputs. No semantic attributes or error messages were added."
+            },
+            {
+                "identification": "country",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The country field is not marked as required, and no error cues were triggered for invalid inputs. No semantic attributes or error messages were added."
+            },
+            {
+                "identification": "privacyConsent",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The privacy consent checkbox is not marked as required, and no error cues were triggered for invalid inputs. No semantic attributes or error messages were added."
+            },
+            {
+                "identification": "emailConsent",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "inapplicable",
+                "reasoning": "The email consent checkbox is not marked as required, and no error cues were triggered for invalid inputs. No semantic attributes or error messages were added."
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "required_evaluation": "fail",
+                "error_evaluation": "fail",
+                "reasoning": "The form fields do not have any required attributes, and no visible error messages were triggered upon submission. The error messages are present in the DOM but are set to \"display: none,\" meaning they are not visible to users. This indicates that the required and error states are not effectively communicated to users, as there are no visible cues or ARIA attributes to indicate these states."
+            },
+            {
+                "identification": "Nome",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "fail",
+                "reasoning": "The Nome field is not marked as required, so no required cue is applicable. However, the error message for invalid input is hidden, failing to provide a non-color-based cue for errors."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "pass",
+                "reasoning": "The field \"Endereço de e-mail\" was not marked as required, so no required cue was expected. The error state was indicated by a red border and an accompanying error message, \"Introduz um endereço de e-mail válido,\" providing a text-based cue."
+            },
+            {
+                "identification": "Endereço de e-mail",
+                "required_evaluation": "inapplicable",
+                "error_evaluation": "pass",
+                "reasoning": "The email field is not marked as required, so no required cues are expected. The error state is indicated by a red border and a comprehensive error message that provides specific guidance on the errors, such as entering a valid email address. The error message is text-based and not solely reliant on color."
+            }
+        ]
+    }
+]

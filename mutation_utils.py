@@ -15,7 +15,9 @@ def extract_mutation_observer_results(driver):
         # Add only non-empty fields
         for key in [
             "target", "targetTag", "targetId", "targetClass",
-            "attributeChanged", "newValue", "ariaDescribedText", "reasonCode"
+            "attributeChanged", "newValue", "ariaDescribedText", "reasonCode",
+            "computedColorStyles", "colorProperties", "errorClasses",
+            "fieldLabel", "fieldName"
         ]:
             value = m.get(key, "")
             if value:

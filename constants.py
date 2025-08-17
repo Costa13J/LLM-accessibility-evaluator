@@ -21,6 +21,19 @@ FALLBACK_QUERIES_ERROR_CLARITY = [
     "best practices for helpful error messages in forms"
 ]
 
+FALLBACK_QUERIES_USE_OF_COLOR = [
+    "color-only feedback accessibility",
+    "WCAG 1.4.1 required field color only",
+    "visual error without text accessibility"
+]
+
+
+FALLBACK_QUERIES_MAP = {
+    "wcag-3.3.1": FALLBACK_QUERIES_ERROR_IDENTIFICATION,
+    "1.4.1": FALLBACK_QUERIES_USE_OF_COLOR,
+    "required": FALLBACK_QUERIES,
+    "3.3.3": FALLBACK_QUERIES_ERROR_CLARITY,
+}
 
 def fallback_invalid_input(field_type, label):
     label = label.lower()

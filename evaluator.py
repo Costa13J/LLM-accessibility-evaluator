@@ -2,18 +2,19 @@ import dspy
 from dspy.dsp.utils import deduplicate
 from dspy.teleprompt import BootstrapFewShot
 from llm_signatures import EvaluateInteractiveCues, GenerateSearchQuery, EvaluateErrorIdentification
-from constants import FALLBACK_QUERIES, FALLBACK_QUERIES_ERROR_IDENTIFICATION
+from constants import FALLBACK_QUERIES_MAP
 from trainsets import trainset, trainset_no_submit
 from trainsets_error import trainset_error_identification, trainset_error_identification_no_submit
 from interaction import SuggestInvalidInputsForTesting, get_invalid_inputs_for_fields
 
 class InteractiveCuesEvaluator(dspy.Module):  
-    def __init__(self, passages_per_hop=3, max_hops=2):
+    def __init__(self, passages_per_hop=3, max_hops=2, evaluation_mode="wcag-3.3.1"):
         super().__init__()
         self.generate_query = [dspy.ChainOfThought(GenerateSearchQuery) for _ in range(max_hops)]
         self.retrieve = dspy.Retrieve(k=passages_per_hop)
         self.evaluate_cues = dspy.ChainOfThought(EvaluateErrorIdentification) # Change this for different issues
         self.max_hops = max_hops
+        self.evaluation_mode = evaluation_mode
 
     #Formats mutation records into a structured text summary
     def process_mutations(self, mutations):
@@ -22,18 +23,48 @@ class InteractiveCuesEvaluator(dspy.Module):
 
         summary = []
 
+        def format_css_for_llm(m):
+            props = m.get("computedColorStyles", []) + m.get("colorProperties", [])
+            if props:
+                return f"CSS Visual Cues: {', '.join(props)}"
+            return ""
+
         for m in mutations:
             if not isinstance(m, dict):
                 summary.append(f"[Warning] Unexpected mutation format: {m}")
                 continue  # skip invalid mutation entries
 
+            field_label = m.get("fieldLabel", "")
+            field_name = m.get("fieldName", "")
+            field_info = f" (Field: '{field_label}' | name='{field_name}')" if field_label or field_name else ""
+
             target_tag = m.get('targetTag', '?')
             target_id = m.get('targetId', '')
             target = f"<{target_tag}>#{target_id}" if target_id else f"<{target_tag}>"
 
-            field_label = m.get("fieldLabel", "")
-            field_name = m.get("fieldName", "")
-            field_info = f" (Field: '{field_label}' | name='{field_name}')" if field_label or field_name else ""
+            # Log color-based visual cues 
+            color_props = m.get("colorProperties", [])
+            if (color_props or error_classes) and not m.get("validationFlag"):
+                summary.append(f"[SC 1.4.1] Potential failure: visual change ({', '.join(color_props + error_classes)}) without semantic support (e.g., no ARIA or error message).")
+
+
+            style_cues = m.get("computedColorStyles", [])
+            if style_cues:
+                summary.append(f"[Computed Style Cue] {target} rendered with: {', '.join(style_cues)}{field_info}")
+
+            css_desc = format_css_for_llm(m)
+            if css_desc:
+                summary.append(f"[CSS Style Summary] {target}: {css_desc}{field_info}")
+
+
+            error_classes = m.get("errorClasses", [])
+            if error_classes:
+                summary.append(f"[Style Class Applied] {target} received error-related class(es): {', '.join(error_classes)}{field_info}")
+
+            if (color_props or error_classes) and not m.get("validationFlag"):
+                summary.append(f"[Warning] Color or class-based visual cue detected without semantic support (e.g., no ARIA or text message).")
+
+            
 
             warning_notes = []
 
@@ -90,7 +121,7 @@ class InteractiveCuesEvaluator(dspy.Module):
         return "\n".join(cleaned_summary)
 
 
-    def forward(self, html_snippet_before, mutations, retrieved_guidelines=None, invalid_inputs=None):
+    def forward(self, html_snippet_before, mutations, retrieved_guidelines=None, invalid_inputs=None, interaction_type=None):
         retrieved_guidelines = []
         queries = set()
 
@@ -101,9 +132,9 @@ class InteractiveCuesEvaluator(dspy.Module):
                 
                 passages = self.retrieve(query).passages
                 if not passages:
-                    for fallback in FALLBACK_QUERIES_ERROR_IDENTIFICATION:
+                    for fallback in FALLBACK_QUERIES_MAP.get(self.evaluation_mode, []):
                         passages = self.retrieve(fallback).passages
-                        print("used fallback")
+                        print(f"Used fallback: {fallback}")
                         if passages:
                             break
                 
@@ -114,12 +145,27 @@ class InteractiveCuesEvaluator(dspy.Module):
 
         mutation_summary = self.process_mutations(mutations) if mutations else "No form interaction or dynamic changes to analyze."
 
-        if invalid_inputs is not None:
+        if invalid_inputs is not None and interaction_type is not None:
+            pred = self.evaluate(
+                html_snippet_before=html_snippet_before,
+                mutations=mutations or "No form interaction or dynamic changes to analyze.",
+                retrieved_guidelines=retrieved_guidelines,
+                invalid_inputs=invalid_inputs,
+                interaction_type=interaction_type
+            )
+        elif invalid_inputs is not None:
             pred = self.evaluate(
                 html_snippet_before=html_snippet_before,
                 mutations=mutations or "No form interaction or dynamic changes to analyze.",
                 retrieved_guidelines=retrieved_guidelines,
                 invalid_inputs=invalid_inputs
+            )
+        elif interaction_type is not None:
+            pred = self.evaluate(
+                html_snippet_before=html_snippet_before,
+                mutations=mutations or "No form interaction or dynamic changes to analyze.",
+                retrieved_guidelines=retrieved_guidelines,
+                interaction_type=interaction_type
             )
         else:
             pred = self.evaluate(
@@ -127,6 +173,7 @@ class InteractiveCuesEvaluator(dspy.Module):
                 mutations=mutations or "No form interaction or dynamic changes to analyze.",
                 retrieved_guidelines=retrieved_guidelines
             )
+
 
 
         return dspy.Prediction(
@@ -139,7 +186,7 @@ class InteractiveCuesEvaluator(dspy.Module):
             queries=list(queries)
         )
     
-def run_evaluation(html_before, mutations, url, submit_clicked, evaluation_mode="wcag-3.3.1", invalid_inputs=None):
+def run_evaluation(html_before, mutations, url, submit_clicked, evaluation_mode="wcag-3.3.1", invalid_inputs=None, interaction_type=None):
     from dspy.teleprompt import BootstrapFewShot
 
     if evaluation_mode == "required":
@@ -163,6 +210,14 @@ def run_evaluation(html_before, mutations, url, submit_clicked, evaluation_mode=
         search_query_cls = GenerateSearchQueryErrorClarity
         selected_trainset = trainset_error_clarity if submit_clicked else trainset_error_suggestion_no_submit
 
+    elif evaluation_mode == "1.4.1":
+        from llm_signatures import EvaluateUseOfColor, GenerateSearchQueryUseOfColor
+        from trainsets_color import trainset_color, trainset_color_no_submit 
+        signature_cls = EvaluateUseOfColor
+        search_query_cls = GenerateSearchQueryUseOfColor
+        selected_trainset = trainset_color if submit_clicked else trainset_color_no_submit  # Or a fallback
+
+
 
     else:
         raise ValueError(f"Unsupported evaluation_mode: {evaluation_mode}")
@@ -175,7 +230,7 @@ def run_evaluation(html_before, mutations, url, submit_clicked, evaluation_mode=
             self.evaluate = dspy.ChainOfThought(evaluate_signature)
             self.max_hops = max_hops
 
-        def forward(self, html_snippet_before, mutations, retrieved_guidelines=None, invalid_inputs=None):
+        def forward(self, html_snippet_before, mutations, retrieved_guidelines=None, invalid_inputs=None, interaction_type=None):
             retrieved_guidelines = []
             queries = set()
 
@@ -187,27 +242,24 @@ def run_evaluation(html_before, mutations, url, submit_clicked, evaluation_mode=
                     passages = self.retrieve(query).passages
                     if not passages:
                         print("No passages retrieved. Using fallback.")
-                        passages = []  # You can add a fallback strategy here
+                        passages = []  
 
                     retrieved_guidelines = deduplicate(retrieved_guidelines + passages)
                 except Exception as e:
                     print(f"[Hop {hop+1}] Retrieval error: {e}")
                     continue
 
+            eval_kwargs = {
+                "html_snippet_before": html_snippet_before,
+                "mutations": mutations or "No form interaction or dynamic changes to analyze.",
+                "retrieved_guidelines": retrieved_guidelines
+            }
             if invalid_inputs is not None:
-                pred = self.evaluate(
-                    html_snippet_before=html_snippet_before,
-                    mutations=mutations or "No form interaction or dynamic changes to analyze.",
-                    retrieved_guidelines=retrieved_guidelines,
-                    invalid_inputs=invalid_inputs
-                )
-            else:
-                pred = self.evaluate(
-                    html_snippet_before=html_snippet_before,
-                    mutations=mutations or "No form interaction or dynamic changes to analyze.",
-                    retrieved_guidelines=retrieved_guidelines
-                )
+                eval_kwargs["invalid_inputs"] = invalid_inputs
+            if interaction_type is not None:
+                eval_kwargs["interaction_type"] = interaction_type
 
+            pred = self.evaluate(**eval_kwargs)
 
             print("[DEBUG LLM RAW OUTPUT]")
             print(pred)
@@ -240,11 +292,19 @@ def run_evaluation(html_before, mutations, url, submit_clicked, evaluation_mode=
         return compiled(
             html_snippet_before=formatted_html,
             mutations=mutations,
-            invalid_inputs=invalid_inputs
+            invalid_inputs=invalid_inputs,
         )
+    elif evaluation_mode == "1.4.1":
+        return compiled(
+            html_snippet_before=html_before,
+            mutations=mutations,
+            interaction_type=interaction_type, 
+            invalid_inputs=invalid_inputs or [],  
+        )
+
     else:
         return compiled(
             html_snippet_before=formatted_html,
-            mutations=mutations
+            mutations=mutations,
         )
 

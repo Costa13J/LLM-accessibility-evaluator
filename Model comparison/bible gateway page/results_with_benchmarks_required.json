@@ -1,0 +1,251 @@
+[
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "mistral/mistral-large-latest",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name (text)",
+                "evaluation": "pass",
+                "reasoning": "The field is correctly marked as required and triggers an error message when left empty, meeting accessibility expectations.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name (text)",
+                "evaluation": "pass",
+                "reasoning": "The field is correctly marked as required and triggers an error message when left empty, meeting accessibility expectations.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required) (email)",
+                "evaluation": "pass",
+                "reasoning": "The field is correctly marked as required and triggers an error message when left empty, meeting accessibility expectations.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required) (text)",
+                "evaluation": "pass",
+                "reasoning": "The field is correctly marked as required and triggers an error message when left empty, meeting accessibility expectations.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is intentionally optional and no validation logic is triggered on submit.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-mini-2024-07-18",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but does not provide visible error messages when left empty.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but does not provide visible error messages when left empty.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but does not provide visible error messages when left empty.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "fail",
+                "reasoning": "The field is marked as required but does not provide visible error messages when left empty.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and is therefore optional.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The \"First Name\" field is marked as required and triggers an error message when left empty, using 'aria-required' and 'aria-invalid' attributes appropriately.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The \"Last Name\" field is similarly marked as required and behaves correctly with error feedback.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The \"Email\" field is required and uses 'aria-required' and 'aria-invalid' attributes, with an error message linked via 'aria-describedby'.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The \"Organization\" field is required and also uses 'aria-required' and 'aria-invalid' attributes, with an error message linked via 'aria-describedby'.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"Website\" field is optional and does not trigger any required validation.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4.1-2025-04-14",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name (text)",
+                "evaluation": "pass",
+                "reasoning": "The field is required and uses a required attribute or equivalent (aria-required), as shown in the DOM mutations. This is an appropriate use of a required indicator.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name (text)",
+                "evaluation": "pass",
+                "reasoning": "The field is required and uses a required attribute or equivalent (aria-required), as shown in the DOM mutations. This is an appropriate use of a required indicator.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required) (email)",
+                "evaluation": "pass",
+                "reasoning": "The field is required and uses a required attribute or equivalent (aria-required), as shown in the DOM mutations. This is an appropriate use of a required indicator.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required) (text)",
+                "evaluation": "pass",
+                "reasoning": "The field is required and uses a required attribute or equivalent (aria-required), as shown in the DOM mutations. This is an appropriate use of a required indicator.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not use a required attribute or equivalent. No error is triggered after submission, so the field is optional.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4.1-mini-2025-04-14",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The field is required, uses 'aria-required' attribute, triggers visible error messages, and updates ARIA attributes appropriately on validation failure.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The field is required, uses 'aria-required' attribute, triggers visible error messages, and updates ARIA attributes appropriately on validation failure.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The field is required, uses 'aria-required' attribute, triggers visible error messages, and updates ARIA attributes appropriately on validation failure.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The field is required, uses 'aria-required' attribute, triggers visible error messages, and updates ARIA attributes appropriately on validation failure.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not trigger required validation or use the 'required' attribute.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]
