@@ -3,25 +3,22 @@ import os
 import re
 
 
-def save_to_json(prediction, url, submit_clicked, model, evaluation_mode="wcag-3.3.1"):
+def save_to_json(prediction, url, submit_clicked, model="openai/gpt-4o", evaluation_mode="wcag-3.3.1"):
     filename = f"results_{evaluation_mode}.json"
     structured_fields = []
 
     def parse_format(format_str):
-        field_blocks = re.split(r"-Identification\(label or name of the field\):", format_str)[1:]
+        field_blocks = re.split(r"-Identification.*?:", format_str)[1:]
         fields = []
         for block in field_blocks:
             try:
-                lines = block.strip().split("\n")
-                identification = lines[0].strip()
-                required_eval = re.search(r'-Required Cue Evaluation\("?(.*?)"?\)', block)
-                error_eval = re.search(r'-Error Cue Evaluation\("?(.*?)"?\)', block)
-                reasoning_match = re.search(r'-Reasoning\(.*?\):\s*(.*)', block, re.DOTALL)
+                identification_match = re.search(r"^(.*?)\n", block.strip())
+                evaluation_match = re.search(r"-Evaluation:\s*(.*?)\n", block)
+                reasoning_match = re.search(r"-Reasoning.*?:\s*(.*)", block, re.DOTALL)
 
                 field_info = {
-                    "identification": identification,
-                    "required_evaluation": required_eval.group(1).strip() if required_eval else "Unknown",
-                    "error_evaluation": error_eval.group(1).strip() if error_eval else "Unknown",
+                    "identification": identification_match.group(1).strip() if identification_match else "Unknown",
+                    "evaluation": evaluation_match.group(1).strip() if evaluation_match else "Unknown",
                     "reasoning": reasoning_match.group(1).strip() if reasoning_match else "No reasoning provided"
                 }
 
@@ -30,23 +27,48 @@ def save_to_json(prediction, url, submit_clicked, model, evaluation_mode="wcag-3
                 print(f"Error parsing block: {e}\n{block}")
         return fields
 
+    # --- CASE 1: dual-submit (empty + invalid) ---
     if isinstance(prediction, dict) and "empty_submit" in prediction and "invalid_input_submit" in prediction:
         empty_fields = parse_format(prediction["empty_submit"].format)
         for f in empty_fields:
             f["source"] = "empty_submit"
-            # Kept the full evaluation here as both required and error are meaningful on empty submission
 
         invalid_fields = parse_format(prediction["invalid_input_submit"].format)
         for f in invalid_fields:
             f["source"] = "invalid_input_submit"
-            # For invalid inputs, required cues are redundant
-            f.pop("required_evaluation", None)
 
-        structured_fields = empty_fields + invalid_fields
+        # Merge by identification
+        merged = {}
+        for f in empty_fields + invalid_fields:
+            ident = f["identification"]
+            if ident not in merged:
+                merged[ident] = {
+                    "identification": ident,
+                    "empty_submit_evaluation": "N/A",
+                    "invalid_input_submit_evaluation": "N/A",
+                    "reasonings": []
+                }
 
+            if f["source"] == "empty_submit":
+                merged[ident]["empty_submit_evaluation"] = f.get("evaluation", "Unknown")
+            else:
+                merged[ident]["invalid_input_submit_evaluation"] = f.get("evaluation", "Unknown")
+
+            merged[ident]["reasonings"].append(f["reasoning"] + f" (from {f['source']})")
+
+        structured_fields = [
+            {
+                "identification": ident,
+                "empty_submit_evaluation": data["empty_submit_evaluation"],
+                "invalid_input_submit_evaluation": data["invalid_input_submit_evaluation"],
+                "reasoning": " | ".join(data["reasonings"])
+            }
+            for ident, data in merged.items()
+        ]
+
+    # --- CASE 2: single-submit (legacy) ---
     else:
         structured_fields = parse_format(prediction.format)
-
 
     result_entry = {
         "url": url,

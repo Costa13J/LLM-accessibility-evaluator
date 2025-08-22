@@ -176,9 +176,8 @@ class EvaluateErrorClarity(dspy.Signature):
 
 class EvaluateUseOfColor(dspy.Signature):
     """
-    Evaluate whether required or error states in form fields rely solely on color, 
-    in violation of WCAG 1.4.1 ("Required Fields Indicated Only by Color" and 
-    "Error States Indicated Only by Color").
+    Evaluate whether error states in form fields rely solely on color,
+    in violation of WCAG 1.4.1. Required cues are not evaluated here.
     """
 
     html_snippet_before = dspy.InputField(desc=(
@@ -188,8 +187,9 @@ class EvaluateUseOfColor(dspy.Signature):
 
     interaction_type = dspy.InputField(desc=(
         "What kind of form interaction was simulated:\n"
-        "- 'empty_submit' → Tests required cues by submitting with all fields empty.\n"
-        "- 'invalid_input_submit' → Tests error cues by submitting with intentionally malformed values."
+        "- 'empty_submit' → Submitting with all fields empty.\n"
+        "- 'invalid_input_submit' → Submitting with intentionally malformed values.\n"
+        "Both interactions can trigger error cues."
     ))
 
     invalid_inputs = dspy.InputField(desc=(
@@ -199,13 +199,13 @@ class EvaluateUseOfColor(dspy.Signature):
 
     mutations = dspy.InputField(desc=(
         "List of DOM mutations observed after interaction. Includes any visual changes "
-        "(e.g., red border, background color), attribute changes (e.g., aria-required, aria-invalid), "
+        "(e.g., red border, background color), attribute changes (e.g., aria-invalid), "
         "and added messages (e.g., 'This field is required')."
     ))
 
     retrieved_guidelines = dspy.InputField(desc=(
-        "Relevant WCAG techniques and best practices for ensuring that input requirements "
-        "and errors are not communicated using color alone."
+        "Relevant WCAG techniques and best practices for ensuring that errors are "
+        "not communicated using color alone."
     ))
 
     identification = dspy.OutputField(desc=(
@@ -214,46 +214,35 @@ class EvaluateUseOfColor(dspy.Signature):
     ))
 
     evaluation = dspy.OutputField(desc=(
-        "For each field, provide classifications depending on the interaction_type:\n\n"
-        "- If interaction_type = 'empty_submit': evaluate both REQUIRED and ERROR cues "
-        "- If interaction_type = 'invalid_input_submit': Only evaluate ERROR cues "
-        "(ignore required cues, set them to 'inapplicable').\n\n"
-        "Use the following categories for each relevant cue: pass / fail / inapplicable.\n"
-        "1) Required cue classification:\n"
-        "   - PASS: One or more programmatic or textual indicators exist that convey 'required' "
-        "without relying on color alone. Examples: `required` attribute, `aria-required=\"true\"`, "
-        "visible text 'Required' that is programmatically associated with the field, or an icon *plus* programmatic association.\n"
-        "   - FAIL: The only indicator of 'required' is a visual treatment (color, unassociated colored asterisk, "
-        "color-only styling) with no programmatic/textual indicator.\n"
-        "   - INAPPLICABLE: The field is optional or not part of the required interaction.\n\n"
-        "2) Error cue classification:\n"
+        "For each field, classify the ERROR cue depending on the interaction_type. "
+        "Ignore required cues entirely (mark them as 'inapplicable').\n\n"
+        "Error cue classification:\n"
         "   - PASS: Error is indicated with programmatic/textual support such as `aria-invalid=\"true\"`, "
         "an error message linked via `aria-describedby`, a role=\"alert\" message associated with the input, "
         "or visible text programmatically linked to the field.\n"
         "   - FAIL: The only error indicator is a visual treatment (red border, color change) "
         "or an unlinked message/icon that does not identify the field programmatically.\n"
         "   - INAPPLICABLE: No error was triggered in this interaction.\n\n"
-        "**Only evaluate required/error cues in terms of reliance on color versus "
-        "programmatic/textual alternatives. Ignore unrelated accessibility issues.**"
+        "**Only evaluate error cues in terms of reliance on color versus programmatic/textual alternatives. "
+        "Ignore required cues and unrelated accessibility issues.**"
     ))
 
     reasoning = dspy.OutputField(desc=(
-        "For each field, briefly explain why the required cue and error cue received their evaluations:\n"
-        "- State what indicators were detected for required cues (e.g., aria-required, asterisk in label, red border).\n"
-        "- State what indicators were detected for error cues (e.g., aria-invalid, linked error message, red text).\n"
+        "For each field, briefly explain why the error cue received its evaluation:\n"
+        "- State what indicators were detected for the error cue (e.g., aria-invalid, linked error message, red text).\n"
         "- Connect each indicator to the classification (pass, fail, inapplicable).\n"
-        "- Explicitly say if a cue relies only on color, or why a cue is inapplicable.\n"
-        "Keep explanations short and focused only on required/error cues and their use of color."
+        "- Explicitly say if the error cue relies only on color, or why it is inapplicable.\n"
+        "Keep explanations short and focused only on error cues and their use of color."
     ))
 
     format = dspy.OutputField(desc=(
         "For each field, provide output in this exact format:\n\n"
         "-Identification(label or name of the field): <identification>\n"
-        "-Required Cue Evaluation(\"pass\" or \"fail\" or \"inapplicable\"): <eval>\n"
         "-Error Cue Evaluation(\"pass\" or \"fail\" or \"inapplicable\"): <eval>\n"
         "-Reasoning(explanation of the evaluation result): <reasoning>\n\n"
         "Do not combine multiple fields. Each field must be evaluated and explained independently."
     ))
+
 
 
 

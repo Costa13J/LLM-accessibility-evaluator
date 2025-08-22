@@ -212,10 +212,10 @@ def run_evaluation(html_before, mutations, url, submit_clicked, evaluation_mode=
 
     elif evaluation_mode == "1.4.1":
         from llm_signatures import EvaluateUseOfColor, GenerateSearchQueryUseOfColor
-        from trainsets_color import trainset_color, trainset_color_no_submit 
+        from trainset_color_errorstate import trainset_color_errorstate, trainset_color_no_submit 
         signature_cls = EvaluateUseOfColor
         search_query_cls = GenerateSearchQueryUseOfColor
-        selected_trainset = trainset_color if submit_clicked else trainset_color_no_submit  # Or a fallback
+        selected_trainset = trainset_color_errorstate if submit_clicked else trainset_color_no_submit  #no submit is fallback
 
 
 
