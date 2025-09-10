@@ -11,102 +11,88 @@ with open("results_1.4.1.json", "r", encoding="utf-8") as f:
 # Define your benchmarks here
 benchmarks = {
     "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b": {
-        "Nome": {"required": "fail", "error": "inapplicable"},
-        "Email": {"required": "fail", "error": "inapplicable"},
-        "(+)351 (Portugal) (select)": {"required": "fail", "error": "inapplicable"},
-        'Telemóvel': {"required": "fail", "error": "inapplicable"},
-        "Password": {"required": "fail", "error": "inapplicable"},
-        "Checkbox:Li e aceito as condições de utilização.": {"required": "fail", "error": "inapplicable"}
+        "Nome": "inapplicable",
+        "Email": "pass",
+        "(+)351 (Portugal) (select)": "inapplicable",
+        'Telemóvel': "pass",
+        "Password": "pass",
+        "Checkbox:Li e aceito as condições de utilização.": "inapplicable"
     },
     "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62": {
-        "Endereço de e-mail": {"required": "fail", "error": "inapplicable"},
-        "Confirma o teu endereço": {"required": "fail", "error": "inapplicable"},
-        "País de residência (select)": {"required": "inapplicable", "error": "inapplicable"},
-        "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve. (checkbox)": {"required": "fail", "error": "inapplicable"}
+        "Endereço de e-mail": "pass",
+        "Confirma o teu endereço": "pass",
+        "País de residência (select)": "inapplicable",
+        "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve. (checkbox)": "inapplicable"
     },
     "https://www.nba.com/account/sign-up": {
-        "Search Players or Teams (search)": {"required": "fail", "error": "inapplicable"},
-        "Email": {"required": "fail", "error": "inapplicable"},
-        "Password": {"required": "fail", "error": "inapplicable"},
-        "First Name (optional)": {"required": "fail", "error": "inapplicable"},
-        "Last Name (optional)": {"required": "fail", "error": "inapplicable"},
-        "Birthdate (MM)": {"required": "fail", "error": "inapplicable"},
-        "Birthdate (AAAA)": {"required": "fail", "error": "inapplicable"},
-        "Country/Region/Territory (select)": {"required": "fail", "error": "inapplicable"},
-        "I agree to the terms(checkbox)" : {"required": "fail", "error": "inapplicable"},
-        "Personal information (checkbox)": {"required": "fail", "error": "inapplicable"}
+        "Search Players or Teams (search)": "inapplicable",
+        "Email": "pass"
     },    
     "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0": {
-        "Your name": {"required": "fail", "error": "inapplicable"},
-        "Mobile number or email": {"required": "fail", "error": "inapplicable"},
-        "Password": {"required": "fail", "error": "inapplicable"},
-        "Re-enter password": {"required": "fail", "error": "inapplicable"},
-    },
-    "https://www.ilovepdf.com/contact":{
-        "Your Name": {"required": "fail", "error": "inapplicable"},
-        "Your Email": {"required": "fail", "error": "inapplicable"},
-        "Subject (select)": {"required": "fail", "error": "inapplicable"},
-        "Message": {"required": "fail", "error": "inapplicable"},
-        "I accept Terms & Conditions and Legal & Privacy (checkbox)" : {"required": "fail", "error": "inapplicable"}
+        "Your name": "inapplicable",
+        "Mobile number or email": "pass",
+        "Password": "pass",
+        "Re-enter password": "pass",
     },
     "https://support.fandango.com/fandangosupport/s/contactsupport": {
-        "Search the knowledgebase": {"required": "fail", "error": "inapplicable"},
-        "First Name": {"required": "fail", "error": "inapplicable"},
-        "Last Name": {"required": "fail", "error": "inapplicable"},
-        "Email": {"required": "fail", "error": "inapplicable"},
-        "Phone": {"required": "fail", "error": "inapplicable"},
-        "Subject": {"required": "fail", "error": "inapplicable"},
-        "Brand (select)": {"required": "fail", "error": "inapplicable"},
-        "How Can We Help? (textarea)": {"required": "fail", "error": "inapplicable"}
+        "Search the knowledgebase": "inapplicable",
+        "First Name": "pass",
+        "Last Name": "pass",
+        "Email": "pass",
+        "Phone": "pass",
+        "Subject": "pass",
+        "Brand (select)": "pass",
+        "How Can We Help? (textarea)": "pass"
     },
     "https://www.staples.pt/pt/pt/registo": {
-        "Nome": {"required": "fail", "error": "inapplicable"},
-        "Email": {"required": "fail", "error": "inapplicable"},
-        "Password": {"required": "fail", "error": "inapplicable"},
-        "Divulgação a terceiros (checkbox)": {"required": "fail", "error": "inapplicable"},
-        "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal, como descrito na Política de Privacidade. (checkbox)": {"required": "fail", "error": "inapplicable"},
-        "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (checkbox)": {"required": "fail", "error": "inapplicable"}
+        "Nome": "inapplicable",
+        "Email": "pass",
+        "Password": "inapplicable",
+        "Divulgação a terceiros (checkbox)": "inapplicable",
+        "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal, como descrito na Política de Privacidade. (checkbox)": "inapplicable",
+        "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (checkbox)": "pass"
     },
     "https://www.infinite.media/bible-gateway/": {
-        "First Name": {"required": "fail", "error": "inapplicable"},
-        "last Name": {"required": "fail", "error": "inapplicable"},
-        "Email": {"required": "fail", "error": "inapplicable"},
-        "Organization": {"required": "fail", "error": "inapplicable"},
-        "Website": {"required": "fail", "error": "inapplicable"}
+        "First Name": "inapplicable",
+        "last Name": "pass",
+        "Email": "pass",
+        "Organization": "inapplicable",
+        "Website": "inapplicable"
     },
     "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta": {
-        "Email": {"required": "fail", "error": "inapplicable"}
+        "Email": "inapplicable",
+        "Enter your website to explore": "pass"
     },
     "https://www.ipma.pt/pt/siteinfo/contactar.jsp":{
-        "Nome": {"required": "pass", "error": "inapplicable"},
-        "Organização": {"required": "inapplicable", "error": "inapplicable"},
-        "Email": {"required": "fail", "error": "pass"},
-        "Telefone": {"required": "inapplicable", "error": "inapplicable"},
-        "Assunto": {"required": "inapplicable", "error": "inapplicable"},
-        "Tema": {"required": "inapplicable", "error": "inapplicable"},
-        "Mensagem": {"required": "pass", "error": "inapplicable"}
+        "Nome": "inapplicable",
+        "Organização": "inapplicable",
+        "Email": "pass",
+        "Telefone": "inapplicable",
+        "Assunto": "inapplicable",
+        "Tema": "inapplicable",
+        "Mensagem": "inapplicable"
     },
     "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel":{
-        "Distrito": {"required": "fail", "error": "inapplicable"},
-        "Concelho": {"required": "fail", "error": "inapplicable"},
-        "Localidade": {"required": "fail", "error": "inapplicable"},
-        "Arruamento": {"required": "fail", "error": "inapplicable"},
-        "NºPorta": {"required": "fail", "error": "inapplicable"}
+        "Distrito": "inapplicable",
+        "Concelho": "inapplicable",
+        "Localidade": "inapplicable",
+        "Arruamento": "inapplicable",
+        "NºPorta": "pass"
     },
     "https://doctor.webmd.com/learnmore/profile":{
-        "Email": {"required": "fail", "error": "inapplicable"},
-        "Practice Name": {"required": "fail", "error": "inapplicable"},
-        "Provider First Name": {"required": "fail", "error": "inapplicable"},
-        "Provider Last Name": {"required": "fail", "error": "inapplicable"},
-        "Direct Phone Number": {"required": "fail", "error": "inapplicable"}
+        "Email": "inapplicable",
+        "Practice Name": "inapplicable",
+        "Provider First Name": "inapplicable",
+        "Provider Last Name": "inapplicable",
+        "Direct Phone Number": "inapplicable"
     },
     "https://www.cricbuzz.com/info/contact":{
-        "Name": {"required": "fail", "error": "inapplicable"},
-        "Email": {"required": "fail", "error": "inapplicable"},
-        "Subject": {"required": "fail", "error": "inapplicable"},
-        "Message": {"required": "fail", "error": "inapplicable"},
-        "Upload Screenshot (jpg,png,gif,bmp) (file)": {"required": "fail", "error": "inapplicable"},
-        "Captcha": {"required": "fail", "error": "inapplicable"}
+        "Name": "pass",
+        "Email": "pass",
+        "Subject": "pass",
+        "Message": "pass",
+        "Upload Screenshot (jpg,png,gif,bmp) (file)": "inapplicable",
+        "Captcha": "inapplicable"
     }
 
 

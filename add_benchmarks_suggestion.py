@@ -91,7 +91,7 @@ benchmarks = {
         "Concelho": "inapplicable",
         "Localidade": "inapplicable",
         "Arruamento": "inapplicable",
-        "NºPorta": "inapplicable"
+        "NºPorta": "pass"
     },
     "https://doctor.webmd.com/learnmore/profile":{
         "Email": "inapplicable",

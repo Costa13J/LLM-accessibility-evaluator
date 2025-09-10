@@ -81,7 +81,7 @@ benchmarks = {
         "last Name": "pass",
         "Email": "pass",
         "Organization": "pass",
-        "Website": "pass"
+        "Website": "inapplicable"
     },
     "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta": {
         "Email": "fail"
