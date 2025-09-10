@@ -1,6 +1,5 @@
 import time
 
-# Retrieves and filters captured mutations from the Mutation Observer
 def extract_mutation_observer_results(driver):
     time.sleep(0.5)
     raw_mutations = driver.execute_script("return window.mutationRecords || []")
@@ -12,22 +11,32 @@ def extract_mutation_observer_results(driver):
             "timestamp": m.get("timestamp"),
         }
 
-        # Add only non-empty fields
+        # Always keep target basics
         for key in [
-            "target", "targetTag", "targetId", "targetClass",
-            "attributeChanged", "newValue", "ariaDescribedText", "reasonCode",
-            "computedColorStyles", "colorProperties", "errorClasses",
-            "fieldLabel", "fieldName"
+            "targetTag", "targetId", "targetClass",
+            "attributeChanged", "oldValue", "newValue",
+            "reasonCode"
         ]:
-            value = m.get(key, "")
-            if value:
-                record[key] = value
+            if key in m and m[key] not in ("", None):
+                record[key] = m[key]
 
-        # Only include validation flag if true
+        # Keep field metadata if available
+        for key in ["fieldLabel", "fieldName", "ariaDescribedText"]:
+            if key in m and m[key]:
+                record[key] = m[key]
+
+        # Keep style diffs even if no validation flag
+        if "computedColorStyles" in m and m["computedColorStyles"]:
+            record["computedColorStyles"] = m["computedColorStyles"]
+
+        # Keep error-related cues
+        if m.get("errorClasses"):
+            record["errorClasses"] = m["errorClasses"]
+
         if m.get("validationFlag", False):
             record["validationFlag"] = True
 
-        # Only include added/removed nodes or error messages if not empty
+        # Added/removed/error message text
         for list_key in ["addedNodes", "removedNodes", "possibleErrorMessages"]:
             items = m.get(list_key, [])
             if items:

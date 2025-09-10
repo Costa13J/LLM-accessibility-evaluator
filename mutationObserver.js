@@ -1,7 +1,25 @@
 window.mutationRecords = window.mutationRecords || [];
-window.mutationLogSize = 0;  
-const MAX_MUTATION_LOG_SIZE = 300000; 
-let noiseFilterEnabled = false;
+window.mutationLogSize = 0;
+const MAX_MUTATION_LOG_SIZE = 300000;
+
+// Cache of previous styles to diff before/after
+const previousStyles = new WeakMap();
+
+function getRelevantStyles(el) {
+    const s = window.getComputedStyle(el);
+    const visualCues = [
+        "border-color",
+        "background-color",
+        "color",
+        "outline-color",
+        "box-shadow"
+    ];
+    const out = {};
+    for (const prop of visualCues) {
+        out[prop] = s.getPropertyValue(prop);
+    }
+    return out;
+}
 
 function findAssociatedFieldInfo(target) {
     let field = target;
@@ -14,8 +32,6 @@ function findAssociatedFieldInfo(target) {
     const id = field.id || '';
     const type = field.getAttribute('type') || '';
     const autocomplete = field.getAttribute('autocomplete') || '';
-
-    
 
     // Filter: Skip metadata-like fields
     const noisyPatterns = ["token", "honeypot", "build"];
@@ -76,11 +92,11 @@ const observer = new MutationObserver(function (mutationsList) {
 
         const record = {
             type: mutation.type,
-            target: target.outerHTML || "",
             targetTag: target.tagName,
             targetId: target.id || "",
             targetClass: target.className || "",
             attributeChanged: "",
+            oldValue: "",
             newValue: "",
             validationFlag: false,
             addedNodes: [],
@@ -89,76 +105,90 @@ const observer = new MutationObserver(function (mutationsList) {
             timestamp: new Date().toISOString(),
             ariaDescribedText: fieldInfo.ariaDescribedText || "",
             reasonCode: fieldInfo.reason,
-            colorProperties: [],
-            computedColorStyles: [],  // <-- NEW FIELD
             errorClasses: [],
+            computedColorStyles: {} // before/after
         };
 
+        // --- Attributes ---
         if (mutation.type === "attributes") {
             const attrName = mutation.attributeName;
             record.attributeChanged = attrName;
+            record.oldValue = mutation.oldValue || "";
             record.newValue = target.getAttribute(attrName);
 
-            if (["style", "class"].includes(attrName)) {
-                const visibleText = target.innerText?.trim();
-                const newStyle = target.getAttribute("style") || "";
-                const newClass = target.getAttribute("class") || "";
+            if (["style", "class", "hidden", "data-error"].includes(attrName)) {
+                const before = previousStyles.get(target) || {};
+                const after = getRelevantStyles(target);
+                previousStyles.set(target, after);
 
-                // Inline style parsing
-                const colorMatches = [];
-                const styleProperties = newStyle.toLowerCase().split(/[\s;]/);
-                for (const prop of styleProperties) {
-                    if (prop.includes("color") && !prop.includes("background-image")) {
-                        colorMatches.push(prop);
-                    }
-                }
-                if (colorMatches.length > 0) {
-                    record.colorProperties = colorMatches;
-                }
+                record.computedColorStyles = { before, after };
 
-                // Class-based error name detection
+                // Detect error classes
                 const errorClassKeywords = ["error", "invalid", "danger", "highlight"];
-                const matchingErrorClasses = errorClassKeywords.filter(keyword =>
-                    newClass.toLowerCase().includes(keyword)
-                );
-                if (matchingErrorClasses.length > 0) {
-                    record.errorClasses = matchingErrorClasses;
-                }
+                record.errorClasses = target.className
+                    .split(/\s+/)
+                    .filter(c => errorClassKeywords.some(k => c.toLowerCase().includes(k)));
 
-                // Computed visual style (for LLM)
-                try {
-                    const computedStyles = window.getComputedStyle(target);
-                    const visualCues = ["border-color", "background-color", "color", "outline-color"];
-                    for (const prop of visualCues) {
-                        const val = computedStyles.getPropertyValue(prop);
-                        if (val && val !== "transparent" && val !== "initial" && val !== "rgba(0, 0, 0, 0)") {
-                            record.computedColorStyles.push(`${prop}: ${val.trim()}`);
-                        }
+                // Look for nearby/sibling text cues (not just parent)
+                const siblingText = target.nextElementSibling?.innerText?.trim();
+                const parentText = target.parentElement?.innerText?.trim();
+                [siblingText, parentText].forEach(txt => {
+                    if (txt && txt.length < 300) {
+                        record.possibleErrorMessages.push(txt);
                     }
-                } catch (err) {
-                    console.warn("Could not compute style for target:", err);
-                }
+                });
 
-                // Mark semantic support if any
-                if (visibleText && visibleText.length < 300) {
-                    record.possibleErrorMessages.push(visibleText);
+                if (record.possibleErrorMessages.length > 0 || record.errorClasses.length > 0) {
                     record.validationFlag = true;
                 }
             }
 
-            if (attrName === "aria-invalid" || attrName === "aria-describedby") {
+            if (["aria-invalid", "aria-describedby"].includes(attrName)) {
                 record.validationFlag = true;
             }
+        }
+
+        // --- ChildList (new error messages) ---
+        if (mutation.type === "childList") {
+            mutation.addedNodes.forEach(node => {
+                if (node.nodeType === Node.ELEMENT_NODE) {
+                    const text = node.innerText?.trim();
+                    if (text) {
+                        record.possibleErrorMessages.push(text);
+                        record.validationFlag = true;
+                        record.addedNodes.push(node.outerHTML || "");
+                    }
+                }
+            });
+
+            mutation.removedNodes.forEach(node => {
+                if (node.nodeType === Node.ELEMENT_NODE) {
+                    record.removedNodes.push(node.outerHTML || "");
+                }
+            });
+        }
+
+        // --- Extra: capture natively invalid fields after submit ---
+        if (mutation.type === "childList" || mutation.type === "attributes") {
+            document.querySelectorAll("input:invalid, textarea:invalid, select:invalid")
+                .forEach(invalidEl => {
+                    const msg = invalidEl.validationMessage; // native browser message
+                    if (msg) {
+                        record.possibleErrorMessages.push(msg);
+                        record.validationFlag = true;
+                    }
+                });
         }
 
         window.mutationRecords.push(record);
     }
 });
 
-
 observer.observe(document.body, {
     attributes: true,
-    attributeFilter: ["style", "class", "aria-invalid", "aria-describedby"],
+    attributeOldValue: true,
+    attributeFilter: ["style", "class", "hidden", "aria-invalid", "aria-describedby", "data-error"],
     childList: true,
     subtree: true
 });
+

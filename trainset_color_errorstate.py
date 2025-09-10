@@ -3,261 +3,196 @@ import dspy
 trainset_color_errorstate = [
 
 
-#12 PASS: Required error shown with text
-dspy.Example(
-    html_snippet_before="""
-<label for='email'>Email <span style='color: red'>*</span></label>
-<input id='email' type='email'>
-""",
-    interaction_type="empty_submit",
-    invalid_inputs="[]",
-    mutations="[Text Added] 'Email is required' after submit",
-    retrieved_guidelines="WCAG 1.4.1: Provide textual error messages in addition to color.",
-    identification="email",
-    evaluation="pass",
-    reasoning="""Submitting with the field empty triggered an error state where a clear message 'Email is required' was displayed. This ensures the error is not conveyed by color alone, so it passes.""",
-    format="""-Identification(label or name of the field): email
--Evaluation: pass
--Reasoning(explanation of the evaluation result): Submitting with the field empty triggered an error state where a clear message 'Email is required' was displayed. This ensures the error is not conveyed by color alone, so it passes."""
-).with_inputs("html_snippet_before", "interaction_type", "invalid_inputs", "mutations", "retrieved_guidelines"),
-
-
-#13 INAPPLICABLE: Optional field, no error triggered
-dspy.Example(
-    html_snippet_before="""
-<label for='comment'>Comment</label>
-<textarea id='comment'></textarea>
-""",
-    interaction_type="empty_submit",
-    invalid_inputs="[]",
-    mutations="No visual or semantic changes detected.",
-    retrieved_guidelines="WCAG 1.4.1: Error evaluation is inapplicable when no error state is triggered.",
-    identification="comment",
-    evaluation="inapplicable",
-    reasoning="""Submitting with the optional field empty did not trigger any error cues. Since no error state was presented, evaluation is inapplicable.""",
-    format="""-Identification(label or name of the field): comment
--Evaluation: inapplicable
--Reasoning(explanation of the evaluation result): Submitting with the optional field empty did not trigger any error cues. Since no error state was presented, evaluation is inapplicable."""
-).with_inputs("html_snippet_before", "interaction_type", "invalid_inputs", "mutations", "retrieved_guidelines"),
-
 
     dspy.Example(
-        html_snippet_before="""
-<label for='name' style='color: red;'>Name</label>
-<input id='name' name='name'>
+    html_snippet_before="""
+<label for='name'>Name</label>
+<input id='name' name='name' type='text'>
 """,
-        interaction_type="invalid_input_submit",
-        invalid_inputs="[{'field': 'name', 'value': 'abc'}]",
-        mutations="[ComputedStyle] <label for='name'> color: red (error state)",
-        retrieved_guidelines="WCAG 1.4.1: Do not use color alone to indicate error state information.",
-        identification="name",
-        evaluation="fail",
-        reasoning="""The only change is the label turning red after invalid input. No aria-invalid attribute, no error text, and no programmatic association were detected. Since color alone is used, this fails WCAG 1.4.1.""",
-        format="""-Identification(label or name of the field): name
+    invalid_inputs="[{'field': 'name', 'value': ''}]",
+    mutations="""[ComputedStyle] <input>#name border-color: red (error state)
+[Style Class Applied] <input>#name received error-related class(es): gfield_error
+[No Programmatic Support] aria-invalid not set; no aria-describedby or error message added.""",
+    retrieved_guidelines="WCAG 1.4.1: Do not use color alone to indicate error state information.",
+    identification="name",
+    evaluation="fail",
+    reasoning="""After invalid input, the only changes were a red border and an error class applied to the field. No aria-invalid attribute, no descriptive text, and no programmatic association were detected. Since the error is indicated only through color, this fails WCAG 1.4.1.""",
+    format="""-Identification(label or name of the field): name
 -Evaluation: fail
--Reasoning(explanation of the evaluation result): The only change is the label turning red after invalid input. No aria-invalid attribute, no error text, and no programmatic association were detected. Since color alone is used, this fails WCAG 1.4.1."""
-    ).with_inputs("html_snippet_before", "interaction_type", "invalid_inputs", "mutations", "retrieved_guidelines"),
+-Reasoning(explanation of the evaluation result): After invalid input, the only changes were a red border and an error class applied to the field. No aria-invalid attribute, no descriptive text, and no programmatic association were detected. Since the error is indicated only through color, this fails WCAG 1.4.1."""
+).with_inputs("html_snippet_before", "invalid_inputs", "mutations", "retrieved_guidelines"),
+
 
 
 
     # 2 PASS: Proper required cue (asterisk + text), proper error cue (color + text)
         
     dspy.Example(
-        html_snippet_before="""
-<label for='email'>Email <span style='color: red'>*</span> (required)</label>
+    html_snippet_before="""
+<label for='email'>Email</label>
 <input id='email' type='email'>
 """,
-        interaction_type="invalid_input_submit",
-        invalid_inputs="[{'field': 'email', 'value': 'abc@abc'}]",
-        mutations="""[ComputedStyle] <label for='email'> color: red (error state)
-[Text Added] 'Enter a valid email' after invalid input""",
-        retrieved_guidelines="WCAG 1.4.1: Do not use color alone to indicate error state information.",
-        identification="email",
-        evaluation="pass",
-        reasoning="""The label turns red, but also a visible error message 'Enter a valid email' is added and programmatically associated. Since the error is not conveyed by color alone, this passes.""",
-        format="""-Identification(label or name of the field): email
+    invalid_inputs="[{'field': 'email', 'value': 'abc@abc'}]",
+    mutations="""[ComputedStyle] <input>#email border-color: red (error state)
+[Style Class Applied] <input>#email received error-related class(es): gfield_error
+[Linked Error Message] 'Enter a valid email' associated with field 'email'""",
+    retrieved_guidelines="WCAG 1.4.1: Provide text or semantic cues along with color changes.",
+    identification="email",
+    evaluation="pass",
+    reasoning="""The border turns red and an error class is applied, but importantly a visible error message 'Enter a valid email' is added and programmatically associated with the field. Since the error is not conveyed by color alone, this passes WCAG 1.4.1.""",
+    format="""-Identification(label or name of the field): email
 -Evaluation: pass
--Reasoning(explanation of the evaluation result): The label turns red, but also a visible error message 'Enter a valid email' is added and programmatically associated. Since the error is not conveyed by color alone, this passes."""
-    ).with_inputs("html_snippet_before", "interaction_type", "invalid_inputs", "mutations", "retrieved_guidelines"),
+-Reasoning(explanation of the evaluation result): The border turns red and an error class is applied, but importantly a visible error message 'Enter a valid email' is added and programmatically associated with the field. Since the error is not conveyed by color alone, this passes WCAG 1.4.1."""
+).with_inputs("html_snippet_before", "invalid_inputs", "mutations", "retrieved_guidelines"),
+
 
 
     # 3 INAPPLICABLE: Optional field, no required or error cues
     dspy.Example(
-        html_snippet_before="""
-<label for='comment'>Comment</label>
+    html_snippet_before="""
+<label for='comment'>Comment (optional)</label>
 <textarea id='comment'></textarea>
 """,
-        interaction_type="invalid_input_submit",
-        invalid_inputs="[{'field': 'comment', 'value': 'abc'}]",
-        mutations="No visual or semantic changes detected.",
-        retrieved_guidelines="WCAG 1.4.1: Criterion not applicable if field is not required and no cues shown.",
-        identification="comment",
-        evaluation="inapplicable",
-        reasoning="""The field is optional and accepts input without validation. No error cues (color, text, or semantic) were triggered. Since no error state occurred, this case is inapplicable.""",
-        format="""-Identification(label or name of the field): comment
+    invalid_inputs="[{'field': 'comment', 'value': 'abc'}]",
+    mutations="No visual or semantic changes detected after interaction.",
+    retrieved_guidelines="WCAG 1.4.1: Criterion not applicable if field is optional and no validation cues are triggered.",
+    identification="comment",
+    evaluation="inapplicable",
+    reasoning="""The field is optional and accepts input without validation. No error cues (color, text, or semantic) were triggered. Since no error state occurred, this case is inapplicable under WCAG 1.4.1.""",
+    format="""-Identification(label or name of the field): comment
 -Evaluation: inapplicable
--Reasoning(explanation of the evaluation result): The field is optional and accepts input without validation. No error cues (color, text, or semantic) were triggered. Since no error state occurred, this case is inapplicable."""
-    ).with_inputs("html_snippet_before", "interaction_type", "invalid_inputs", "mutations", "retrieved_guidelines"),
+-Reasoning(explanation of the evaluation result): The field is optional and accepts input without validation. No error cues (color, text, or semantic) were triggered. Since no error state occurred, this case is inapplicable under WCAG 1.4.1."""
+).with_inputs("html_snippet_before", "invalid_inputs", "mutations", "retrieved_guidelines"),
 
 
-#14 PASS: Border + text error
-dspy.Example(
-    html_snippet_before="""
-<label for='password'>Password</label>
-<input id='password' type='password'>
-""",
-    interaction_type="empty_submit",
-    invalid_inputs="[]",
-    mutations="""[ComputedStyle] <input>#password border-color: red (error state)
-[Text Added] 'Password is required' after empty submit""",
-    retrieved_guidelines="WCAG 1.4.1: Error cues must not rely on color alone.",
-    identification="password",
-    evaluation="pass",
-    reasoning="""The border turned red after empty submission, but a clear error message 'Password is required' was also displayed. Because the error state is supported with text, it does not rely on color alone and passes.""",
-    format="""-Identification(label or name of the field): password
--Evaluation: pass
--Reasoning(explanation of the evaluation result): The border turned red after empty submission, but a clear error message 'Password is required' was also displayed. Because the error state is supported with text, it does not rely on color alone and passes."""
-).with_inputs("html_snippet_before", "interaction_type", "invalid_inputs", "mutations",  "retrieved_guidelines"),
 
     
 # 4 Inapplicable: Required & error cues both border-color only
     dspy.Example(
-        html_snippet_before="""
+    html_snippet_before="""
 <label for='dob'>Date of Birth</label>
 <input id='dob' type='date' style='border-color: red;'>
 """,
-        interaction_type="invalid_input_submit",
-        invalid_inputs="[{'field': 'dob', 'value': '2025-13-40'}]",
-        mutations="""No additional validation mutations detected after submit.
-[Static Styling] <input>#dob has inline border-color:red before interaction.
-[No Programmatic Error State] aria-invalid not set; no aria-describedby/role=alert; no error text added.""",
-        retrieved_guidelines="WCAG 1.4.1: Only evaluate an error cue if a validation error is actually triggered; inapplicable if no error state is presented.",
-        identification="dob",
-        evaluation="inapplicable",
-        reasoning="""The field had a static red border before interaction, and no validation error was triggered (no aria-invalid, no error text). Since no new error cue was presented, this case is inapplicable.""",
-        format="""-Identification(label or name of the field): dob
+    invalid_inputs="[{'field': 'dob', 'value': '2025-13-40'}]",
+    mutations="""[Static Styling] <input>#dob has inline border-color:red before interaction
+[No Programmatic Error State] aria-invalid not set; no aria-describedby or role=alert; no error text added
+[No additional changes detected after input submission]""",
+    retrieved_guidelines="WCAG 1.4.1: Only evaluate error cues if a validation error is actually triggered; static decoration without new error is inapplicable.",
+    identification="dob",
+    evaluation="inapplicable",
+    reasoning="""The field had a red border from the start (static styling). After invalid input, no new semantic cues or error messages were triggered. Since no dynamic error cue occurred, this case is inapplicable for WCAG 1.4.1 evaluation.""",
+    format="""-Identification(label or name of the field): dob
 -Evaluation: inapplicable
--Reasoning(explanation of the evaluation result): The field had a static red border before interaction, and no validation error was triggered (no aria-invalid, no error text). Since no new error cue was presented, this case is inapplicable. """
-    ).with_inputs("html_snippet_before", "interaction_type", "invalid_inputs", "mutations", "retrieved_guidelines"),
+-Reasoning(explanation of the evaluation result): The field had a red border from the start (static styling). After invalid input, no new semantic cues or error messages were triggered. Since no dynamic error cue occurred, this case is inapplicable for WCAG 1.4.1 evaluation."""
+).with_inputs("html_snippet_before", "invalid_inputs", "mutations", "retrieved_guidelines"),
 
 
-#11 FAIL: Required error shown only with color
-dspy.Example(
-    html_snippet_before="""
-<label for='name' style='color: red;'>Name</label>
-<input id='name' name='name'>
-""",
-    interaction_type="empty_submit",
-    invalid_inputs="[]",
-    mutations="[ComputedStyle] <label for='name'> color: red (error state after empty submit)",
-    retrieved_guidelines="WCAG 1.4.1: Do not use color alone to indicate error states.",
-    identification="name",
-    evaluation="fail",
-    reasoning="""Submitting with the field empty triggered an error state where the label turned red. No aria-invalid, no error text, and no programmatic association were present. Error state relies only on color, so this fails.""",
-    format="""-Identification(label or name of the field): name
--Evaluation: fail
--Reasoning(explanation of the evaluation result): Submitting with the field empty triggered an error state where the label turned red. No aria-invalid, no error text, and no programmatic association were present. Error state relies only on color, so this fails."""
-).with_inputs("html_snippet_before", "interaction_type", "invalid_inputs", "mutations", "retrieved_guidelines"),
     
 # 5 PASS: Proper required cue, proper error cue with guidance
 
     dspy.Example(
-        html_snippet_before="""
+    html_snippet_before="""
 <label for='password'>Password <span style='color:red'>*</span> (required)</label>
 <input id='password' type='password'>
 """,
-        interaction_type="invalid_input_submit",
-        invalid_inputs="[{'field': 'password', 'value': '123'}]",
-        mutations="""[ComputedStyle] <label for='password'> color: red (error state)
-[Text Added] 'Password must be at least 8 characters' after invalid input""",
-        retrieved_guidelines="WCAG 1.4.1: Do not use color alone to indicate error state information.",
-        identification="password",
-        evaluation="pass",
-        reasoning="""The label turns red after invalid input, and a clear guidance message 'Password must be at least 8 characters' appears. The message provides textual support beyond color, so this passes.""",
-        format="""-Identification(label or name of the field): password
-- Evaluation: pass
--Reasoning(explanation of the evaluation result): The label turns red after invalid input, and a clear guidance message 'Password must be at least 8 characters' appears. The message provides textual support beyond color, so this passes."""
-    ).with_inputs("html_snippet_before", "interaction_type", "invalid_inputs", "mutations", "retrieved_guidelines"),
+    invalid_inputs="[{'field': 'password', 'value': '123'}]",
+    mutations="""[ComputedStyle] <input>#password border-color: red (error state)
+[Style Class Applied] <input>#password received error-related class(es): gfield_error
+[Linked Error Message] 'Password must be at least 8 characters' associated with field 'password'""",
+    retrieved_guidelines="WCAG 1.4.1: Do not use color alone to indicate error state information.",
+    identification="password",
+    evaluation="pass",
+    reasoning="""After invalid input, the password field border turns red and an error class is applied. Crucially, a descriptive message 'Password must be at least 8 characters' is added and programmatically associated with the field. Since the error is not conveyed by color alone, this passes WCAG 1.4.1.""",
+    format="""-Identification(label or name of the field): password
+-Evaluation: pass
+-Reasoning(explanation of the evaluation result): After invalid input, the password field border turns red and an error class is applied. Crucially, a descriptive message 'Password must be at least 8 characters' is added and programmatically associated with the field. Since the error is not conveyed by color alone, this passes WCAG 1.4.1."""
+).with_inputs("html_snippet_before", "invalid_inputs", "mutations", "retrieved_guidelines"),
+
 
 
     # 6 PASS : No required cue, proper error cue with text
 
     dspy.Example(
-        html_snippet_before="""
+    html_snippet_before="""
 <label for='zip'>ZIP Code</label>
 <input id='zip' type='text'>
 """,
-        interaction_type="invalid_input_submit",
-        invalid_inputs="[{'field': 'zip', 'value': '000'}]",
-        mutations="[Text Added] 'Invalid ZIP code' after invalid input",
-        retrieved_guidelines="WCAG 1.4.1: Provide text or semantic cues along with color changes.",
-        identification="zip",
-        evaluation="pass",
-        reasoning="""Submitting invalid input added the message 'Invalid ZIP code', programmatically linked to the field. No reliance on color styling was observed. This provides a clear error cue, so the result is a pass.""",
-        format="""-Identification(label or name of the field): zip
+    invalid_inputs="[{'field': 'zip', 'value': '000'}]",
+    mutations="""[Linked Error Message] 'Invalid ZIP code' associated with field 'zip'
+[ARIA Attribute] <input>#zip aria-invalid="true" """,
+    retrieved_guidelines="WCAG 1.4.1: Provide text or semantic cues along with color changes.",
+    identification="zip",
+    evaluation="pass",
+    reasoning="""Submitting invalid input added the message 'Invalid ZIP code', which is programmatically associated with the ZIP field via aria-invalid. Since the error is communicated with text and semantics, not color alone, this passes WCAG 1.4.1.""",
+    format="""-Identification(label or name of the field): zip
 -Evaluation: pass
--Reasoning(explanation of the evaluation result): Submitting invalid input added the message 'Invalid ZIP code', programmatically linked to the field. No reliance on color styling was observed. This provides a clear error cue, so the result is a pass."""
-    ).with_inputs("html_snippet_before", "interaction_type", "invalid_inputs", "mutations", "retrieved_guidelines"),
+-Reasoning(explanation of the evaluation result): Submitting invalid input added the message 'Invalid ZIP code', which is programmatically associated with the ZIP field via aria-invalid. Since the error is communicated with text and semantics, not color alone, this passes WCAG 1.4.1."""
+).with_inputs("html_snippet_before", "invalid_inputs", "mutations", "retrieved_guidelines"),
 
 
-    # 8 PASS: No required cue, proper error cue with border + text
-
-    dspy.Example(
-        html_snippet_before="""
-<label for='state'>State</label>
-<input id='state'>
-""",
-        interaction_type="invalid_input_submit",
-        invalid_inputs="[{'field': 'state', 'value': '??'}]",
-        mutations="""[ComputedStyle] <input>#state border-color: red (error state)
-[Text Added] 'Invalid state name' after invalid input""",
-        retrieved_guidelines="WCAG 1.4.1: Provide text or semantic cues along with color changes.",
-        identification="state",
-        evaluation="pass",
-        reasoning="""The input border turns red, but an explanatory message 'Invalid state name' is also added. The text provides semantic support, so the error is not conveyed by color alone, and this passes.""",
-        format="""-Identification(label or name of the field): state
--Evaluation: pass
--Reasoning(explanation of the evaluation result): The input border turns red, but an explanatory message 'Invalid state name' is also added. The text provides semantic support, so the error is not conveyed by color alone, and this passes."""
-    ).with_inputs("html_snippet_before", "interaction_type", "invalid_inputs", "mutations", "retrieved_guidelines"),
-
-    #9 FAIL: Border-only error (dynamic after invalid input)
+    #8 FAIL: Border-only error (dynamic after invalid input)
     dspy.Example(
     html_snippet_before="""
 <label for='age'>Age</label>
 <input id='age' type='number'>
 """,
-    interaction_type="invalid_input_submit",
     invalid_inputs="[{'field': 'age', 'value': 'abc'}]",
     mutations="""[ComputedStyle] <input>#age border-color: red (error state)
-[No error message or semantic attributes detected]""",
+[Style Class Applied] <input>#age received error-related class(es): gfield_error
+[No Programmatic Support] aria-invalid not set; no aria-describedby; no error text displayed""",
     retrieved_guidelines="WCAG 1.4.1: Do not use color alone to indicate error state information.",
     identification="age",
     evaluation="fail",
-    reasoning="""After invalid input, the only change was a red border around the field. No aria-invalid attribute, no descriptive text, and no programmatic association were provided. Since color alone indicates the error, this fails WCAG 1.4.1.""",
+    reasoning="""After invalid input, the only indicators were a red border and an error class applied to the field. No aria-invalid attribute, no linked error message, and no programmatic association were provided. Since the error is conveyed only through color, this fails WCAG 1.4.1.""",
     format="""-Identification(label or name of the field): age
 -Evaluation: fail
--Reasoning(explanation of the evaluation result): After invalid input, the only change was a red border around the field. No aria-invalid attribute, no descriptive text, and no programmatic association were provided. Since color alone indicates the error, this fails WCAG 1.4.1."""
-).with_inputs("html_snippet_before", "interaction_type", "invalid_inputs", "mutations", "retrieved_guidelines"),
+-Reasoning(explanation of the evaluation result): After invalid input, the only indicators were a red border and an error class applied to the field. No aria-invalid attribute, no linked error message, and no programmatic association were provided. Since the error is conveyed only through color, this fails WCAG 1.4.1."""
+).with_inputs("html_snippet_before", "invalid_inputs", "mutations", "retrieved_guidelines"),
 
 
-    #10 Icon-only error (no text, no programmatic link)
+
+    #9 Icon-only error (no text, no programmatic link)
     dspy.Example(
     html_snippet_before="""
 <label for='phone2'>Phone Number</label>
 <input id='phone2' type='tel'>
 """,
-    interaction_type="invalid_input_submit",
     invalid_inputs="[{'field': 'phone2', 'value': 'abcd'}]",
-    mutations="""[Icon Added] Red exclamation icon displayed next to field
-[No aria attributes, no descriptive text, no programmatic association]""",
+    mutations="""[Icon Added] Red exclamation icon displayed next to <input>#phone2
+[Style Class Applied] <input>#phone2 received error-related class(es): gfield_error
+[No Programmatic Support] aria-invalid not set; no aria-describedby; no error text displayed""",
     retrieved_guidelines="WCAG 1.4.1: Do not use icons or color alone to indicate error states without text or programmatic alternatives.",
     identification="phone2",
     evaluation="fail",
-    reasoning="""An exclamation icon in red appeared after invalid input, but no text explanation or semantic link was provided (e.g., aria-describedby). Because the error is conveyed only by color/icon, this fails WCAG 1.4.1""",
+    reasoning="""After invalid input, a red exclamation icon appeared next to the field and an error class was applied. However, no descriptive text or semantic attributes (aria-invalid, aria-describedby) were provided. Since the error is conveyed only through icon/color, this fails WCAG 1.4.1.""",
     format="""-Identification(label or name of the field): phone2
 -Evaluation: fail
--Reasoning(explanation of the evaluation result): An exclamation icon in red appeared after invalid input, but no text explanation or semantic link was provided (e.g., aria-describedby). Because the error is conveyed only by color/icon, this fails WCAG 1.4.1"""
-).with_inputs("html_snippet_before", "interaction_type", "invalid_inputs", "mutations", "retrieved_guidelines"),
+-Reasoning(explanation of the evaluation result): After invalid input, a red exclamation icon appeared next to the field and an error class was applied. However, no descriptive text or semantic attributes (aria-invalid, aria-describedby) were provided. Since the error is conveyed only through icon/color, this fails WCAG 1.4.1."""
+).with_inputs("html_snippet_before", "invalid_inputs", "mutations", "retrieved_guidelines"),
+
+    #7 PASS: No required cue, proper error cue with border + text
+
+    dspy.Example(
+    html_snippet_before="""
+<label for='state'>State</label>
+<input id='state'>
+""",
+    invalid_inputs="[{'field': 'state', 'value': '??'}]",
+    mutations="""[ComputedStyle] <input>#state border-color: red (error state)
+[Style Class Applied] <input>#state received error-related class(es): gfield_error
+[Linked Error Message] 'Invalid state name' associated with field 'state'""",
+    retrieved_guidelines="WCAG 1.4.1: Provide text or semantic cues along with color changes.",
+    identification="state",
+    evaluation="pass",
+    reasoning="""The input border turns red and an error class is applied, but a descriptive error message 'Invalid state name' is also added and programmatically associated with the field. Since the error is not conveyed by color alone, this passes WCAG 1.4.1.""",
+    format="""-Identification(label or name of the field): state
+-Evaluation: pass
+-Reasoning(explanation of the evaluation result): The input border turns red and an error class is applied, but a descriptive error message 'Invalid state name' is also added and programmatically associated with the field. Since the error is not conveyed by color alone, this passes WCAG 1.4.1."""
+).with_inputs("html_snippet_before", "invalid_inputs", "mutations", "retrieved_guidelines"),
+
+
+    
+
 
 
 

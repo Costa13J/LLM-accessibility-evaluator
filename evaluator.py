@@ -23,51 +23,52 @@ class InteractiveCuesEvaluator(dspy.Module):
 
         summary = []
 
-        def format_css_for_llm(m):
-            props = m.get("computedColorStyles", []) + m.get("colorProperties", [])
-            if props:
-                return f"CSS Visual Cues: {', '.join(props)}"
-            return ""
+        def format_style_diffs(styles):
+            """Format computedColorStyles before/after for LLM readability."""
+            if not styles:
+                return ""
+            diffs = []
+            before = styles.get("before", {})
+            after = styles.get("after", {})
+            for prop, before_val in before.items():
+                after_val = after.get(prop)
+                if before_val != after_val:
+                    diffs.append(f"{prop}: '{before_val}' → '{after_val}'")
+            return "; ".join(diffs)
 
         for m in mutations:
             if not isinstance(m, dict):
                 summary.append(f"[Warning] Unexpected mutation format: {m}")
                 continue  # skip invalid mutation entries
 
+            # Field info (label/name if available)
             field_label = m.get("fieldLabel", "")
             field_name = m.get("fieldName", "")
             field_info = f" (Field: '{field_label}' | name='{field_name}')" if field_label or field_name else ""
 
+            # Target description
             target_tag = m.get('targetTag', '?')
             target_id = m.get('targetId', '')
             target = f"<{target_tag}>#{target_id}" if target_id else f"<{target_tag}>"
 
-            # Log color-based visual cues 
-            color_props = m.get("colorProperties", [])
-            if (color_props or error_classes) and not m.get("validationFlag"):
-                summary.append(f"[SC 1.4.1] Potential failure: visual change ({', '.join(color_props + error_classes)}) without semantic support (e.g., no ARIA or error message).")
-
-
-            style_cues = m.get("computedColorStyles", [])
-            if style_cues:
-                summary.append(f"[Computed Style Cue] {target} rendered with: {', '.join(style_cues)}{field_info}")
-
-            css_desc = format_css_for_llm(m)
-            if css_desc:
-                summary.append(f"[CSS Style Summary] {target}: {css_desc}{field_info}")
-
-
+            # --- COLOR / STYLE CUES ---
+            style_diffs = format_style_diffs(m.get("computedColorStyles", {}))
             error_classes = m.get("errorClasses", [])
+
+            if style_diffs:
+                summary.append(f"[Style Change] {target} style updated: {style_diffs}{field_info}")
+
             if error_classes:
                 summary.append(f"[Style Class Applied] {target} received error-related class(es): {', '.join(error_classes)}{field_info}")
 
-            if (color_props or error_classes) and not m.get("validationFlag"):
-                summary.append(f"[Warning] Color or class-based visual cue detected without semantic support (e.g., no ARIA or text message).")
+            # If styles/classes changed but no semantic cues
+            if (style_diffs or error_classes) and not m.get("validationFlag") and not m.get("possibleErrorMessages"):
+                summary.append(
+                    f"[SC 1.4.1] Potential failure: visual-only change "
+                    f"({style_diffs or ', '.join(error_classes)}) without ARIA or text alternative."
+                )
 
-            
-
-            warning_notes = []
-
+            # --- SEMANTIC CUES ---
             if m.get("attributeChanged") == "aria-invalid" and m.get("newValue") == "true":
                 summary.append(f"[ARIA Invalid] {target} marked as invalid")
 
@@ -77,14 +78,14 @@ class InteractiveCuesEvaluator(dspy.Module):
                 else:
                     summary.append(f"[Unlinked Error Message] {msg} (not associated with any field)")
 
-
+            # --- ATTRIBUTE CHANGES ---
             if m.get("type") == "attributes":
                 attr = m.get("attributeChanged")
                 val = m.get("newValue")
                 note = "Validation-related attribute changed." if m.get("validationFlag") else ""
 
                 if attr in ["style", "class"] and not m.get("validationFlag"):
-                    warning_notes.append("Style change not accompanied by semantic cues (e.g., ARIA).")
+                    summary.append("[Warning] Style/class change not accompanied by semantic cues (e.g., ARIA).")
 
                 if attr in ["aria-invalid", "aria-describedby"]:
                     note = "Semantic attribute updated."
@@ -92,13 +93,11 @@ class InteractiveCuesEvaluator(dspy.Module):
                 for msg in m.get("possibleErrorMessages", []):
                     summary.append(f"[Message Revealed] {msg}{field_info}")
                     if not field_label and not field_name:
-                        warning_notes.append("Unlinked message: not programmatically associated with any input field.")
+                        summary.append("[Warning] Unlinked message: not programmatically associated with any input field.")
 
                 summary.append(f"[Attribute Change] {target} → '{attr}' updated to '{val}'{field_info}. {note}".strip())
-                if warning_notes:
-                    for w in warning_notes:
-                        summary.append(f"[Warning] {w}")
 
+            # --- CHILD LIST CHANGES ---
             elif m.get("type") == "childList":
                 added = m.get("addedNodes", [])
                 removed = m.get("removedNodes", [])
@@ -107,7 +106,7 @@ class InteractiveCuesEvaluator(dspy.Module):
                 for msg in messages:
                     summary.append(f"[Visible Message] {msg}{field_info}")
                     if not field_label and not field_name:
-                        summary.append(f"[Warning] Message not programmatically linked to any input field.")
+                        summary.append("[Warning] Message not programmatically linked to any input field.")
 
                 for node_html in added:
                     snippet = node_html.strip().replace("\n", " ")[:200]
@@ -284,7 +283,7 @@ def run_evaluation(html_before, mutations, url, submit_clicked, evaluation_mode=
             for f in html_before["fields"]
         ]
     )
-    if evaluation_mode == "3.3.3":
+    if evaluation_mode in ["3.3.3", "1.4.1"]:
         if invalid_inputs is None:
             llm = dspy.Predict(SuggestInvalidInputsForTesting)
             invalid_inputs = get_invalid_inputs_for_fields(html_before["fields"], llm=llm)
@@ -293,13 +292,6 @@ def run_evaluation(html_before, mutations, url, submit_clicked, evaluation_mode=
             html_snippet_before=formatted_html,
             mutations=mutations,
             invalid_inputs=invalid_inputs,
-        )
-    elif evaluation_mode == "1.4.1":
-        return compiled(
-            html_snippet_before=html_before,
-            mutations=mutations,
-            interaction_type=interaction_type, 
-            invalid_inputs=invalid_inputs or [],  
         )
 
     else:

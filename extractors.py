@@ -15,7 +15,7 @@ def extract_form_html(driver):
         return []
 
 
-#Extracts the fields from the form, with their attributes and also errors  TODO doesnt exclude visibility:hidden as of now
+#Extracts the fields from the form, with their attributes and also errors 
 def extract_fields(driver):
 
     soup = BeautifulSoup(driver.page_source, 'html.parser')
