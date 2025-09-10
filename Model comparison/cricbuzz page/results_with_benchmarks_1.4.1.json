@@ -1,0 +1,354 @@
+[
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "A visible error container displayed the message “Name — This is not a valid Name.” providing textual feedback in addition to red styling; not color-only. Note: message not programmatically linked to the field.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "Error text “Email — This is not a valid Email-Id.” (plus browser hint) provides textual feedback alongside red styling; not color-only. Note: not programmatically linked to the field.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "Error text “Subject — Subject should be minimum of 6 characters.” provides textual feedback; despite red styling, error is not color-only. Note: not programmatically linked to the field.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Upload Screenshot (jpg,png,gif,bmp) (file)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Captcha",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "mistral/mistral-large-latest",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (color or otherwise) were directly tied to the Name field after invalid input. No validation feedback was triggered.\n\n---",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "A red-colored error message (\"Inclua um '@'...\") appeared, but the error is not conveyed by color alone—textual content is present. Thus, it passes WCAG 1.4.1.\n\n---",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues or validation feedback were triggered for the Subject field.\n\n---",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues or validation feedback were triggered for the textarea.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Upload Screenshot (jpg,png,gif,bmp) (file)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Captcha",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-mini-2024-07-18",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "The error message 'This is not a valid Name.' is linked to the field, providing programmatic support alongside visual indicators. This passes WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error message 'This is not a valid Email-Id.' is linked to the field, providing programmatic support alongside visual indicators. This passes WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The error message 'Only alphanumeric and some special characters(! @ & : ? - .) are allowed.' is linked to the field, providing programmatic support alongside visual indicators. This passes WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "pass",
+                "reasoning": "The error message related to the input is linked to the field, providing programmatic support alongside visual indicators. This passes WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Upload Screenshot (jpg,png,gif,bmp) (file)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Captcha",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "An error message 'This is not a valid Name.' is displayed, indicating the error through text, not color alone. However, it lacks programmatic association.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Inclua um \"@\" no endereço de email. Falta um \"@\" em \"user.com\".' is displayed, indicating the error through text, not color alone. However, it lacks programmatic association.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Subject should be minimum of 6 characters.' is displayed, indicating the error through text, not color alone. However, it lacks programmatic association.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Message should be minimum of 30 characters.' is displayed, indicating the error through text, not color alone. However, it lacks programmatic association.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Upload Screenshot (jpg,png,gif,bmp) (file)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Captcha",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4.1-2025-04-14",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "Error messages are displayed in visible text after invalid input, so error is not indicated by color alone. This passes WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "Error messages are displayed in visible text after invalid input, so error is not indicated by color alone. This passes WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "Error messages are displayed in visible text after invalid input, so error is not indicated by color alone. This passes WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "pass",
+                "reasoning": "Error messages are displayed in visible text after invalid input, so error is not indicated by color alone. This passes WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Upload Screenshot (jpg,png,gif,bmp) (file)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Captcha",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4.1-mini-2025-04-14",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "The error message for Name is shown in a general error container with red text but is not programmatically linked to the input via aria-describedby or aria-invalid. The error relies on color and a general message, failing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The Email field error is displayed in a general error container with red text and no programmatic association to the input. The error relies on color and a general message, failing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "The Subject field error is indicated only by a general error message container with red text and no programmatic linkage to the input. This reliance on color and unlinked text fails WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "fail",
+                "reasoning": "The No Label textarea error is shown only in a general error container with red text, without programmatic association to the field. This reliance on color and unlinked text fails WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Upload Screenshot (jpg,png,gif,bmp) (file)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Captcha",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

@@ -268,5 +268,59 @@
                 "reasoning_mismatch": false
             }
         ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "An error message is displayed after submission, but the input is not programmatically associated to it (no aria-describedby/aria-errormessage or aria-invalid).",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "An error message is displayed, but there is no programmatic association to the input (no aria-describedby/aria-errormessage or aria-invalid).",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "An error message is displayed, but no programmatic linkage to the specific input is provided.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "fail",
+                "reasoning": "An error message is displayed, but the field lacks a label and any ARIA association (no aria-describedby/aria-errormessage), so the error is not programmatically linked.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "(jpg,png,gif,bmp)",
+                "evaluation": "inapplicable",
+                "reasoning": "The file upload is optional, so no validation feedback is required when left empty.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Captcha",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
     }
 ]

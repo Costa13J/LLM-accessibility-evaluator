@@ -1,0 +1,237 @@
+[
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "mistral/mistral-large-latest",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "After invalid input, the field received `aria-invalid=\"true\"`, a descriptive error message (\"Name: First Name is not valid...\") was programmatically linked via `aria-describedby`, and an error icon was displayed. Since the error is not conveyed by color alone (textual and programmatic cues are present), this passes WCAG 1.4.1.\n\n---",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "After invalid input, the field received `aria-invalid=\"true\"`, a descriptive error message (\"Name: Last Name is not valid...\") was programmatically linked via `aria-describedby`, and an error icon was displayed. Since the error is not conveyed by color alone (textual and programmatic cues are present), this passes WCAG 1.4.1.\n\n---",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "After invalid input, the field received `aria-invalid=\"true\"`, a descriptive error message (\"Email is not valid...\") was programmatically linked via `aria-describedby`, and an error icon was displayed. Since the error is not conveyed by color alone (textual and programmatic cues are present), this passes WCAG 1.4.1.\n\n---",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No mutations or error cues (visual, textual, or programmatic) were detected after invalid input submission. Since no error state was triggered, this is inapplicable for WCAG 1.4.1.\n\n---",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "pass",
+                "reasoning": "After invalid input, the field received `aria-invalid=\"true\"`, a descriptive error message (\"Website is not valid...\") was programmatically linked via `aria-describedby`, and an error icon was displayed. Since the error is not conveyed by color alone (textual and programmatic cues are present), this passes WCAG 1.4.1.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-mini-2024-07-18",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "The field received visual indicators (red borders, error classes) but lacked programmatic support (no aria-invalid, no aria-describedby, and no error messages linked). Therefore, the error cues rely solely on color, which fails WCAG 1.4.1.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "The field received visual indicators (red borders, error classes) but lacked programmatic support (no aria-invalid, no aria-describedby, and no error messages linked). Therefore, the error cues rely solely on color, which fails WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "fail",
+                "reasoning": "The field received visual indicators (red borders, error classes) but lacked programmatic support (no aria-invalid, no aria-describedby, and no error messages linked). Therefore, the error cues rely solely on color, which fails WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "fail",
+                "reasoning": "The field received visual indicators (red borders, error classes) but lacked programmatic support (no aria-invalid, no aria-describedby, and no error messages linked). Therefore, the error cues rely solely on color, which fails WCAG 1.4.1.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "fail",
+                "reasoning": "The field received visual indicators (red borders, error classes) but lacked programmatic support (no aria-invalid, no aria-describedby, and no error messages linked). Therefore, the error cues rely solely on color, which fails WCAG 1.4.1.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was mentioned in the mutations, indicating a reliance on color or other non-textual cues, which would fail WCAG 1.4.1. However, since no specific color change or error class was mentioned, it is assumed to be inapplicable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Last Name is not valid' was added and programmatically associated with the field using aria-describedby and aria-invalid attributes. This ensures the error is not conveyed by color alone, passing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Email is not valid' was added and programmatically associated with the field using aria-describedby and aria-invalid attributes. This ensures the error is not conveyed by color alone, passing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was mentioned in the mutations, indicating a reliance on color or other non-textual cues, which would fail WCAG 1.4.1. However, since no specific color change or error class was mentioned, it is assumed to be inapplicable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was mentioned in the mutations, indicating a reliance on color or other non-textual cues, which would fail WCAG 1.4.1. However, since no specific color change or error class was mentioned, it is assumed to be inapplicable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4.1-2025-04-14",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "After invalid input, the field received aria-invalid=\"true\", an aria-describedby attribute pointing to a programmatically associated error message, and visible error text. Error is not indicated by color alone.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "After invalid input, the field received aria-invalid=\"true\", an aria-describedby attribute pointing to a programmatically associated error message, and visible error text. Error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "After invalid input, the field received aria-invalid=\"true\", an aria-describedby attribute pointing to a programmatically associated error message, and visible error text. Error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues or error messages were detected for this field after invalid input, so the criterion is inapplicable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "pass",
+                "reasoning": "After invalid input, the field received aria-invalid=\"true\", an aria-describedby attribute pointing to a programmatically associated error message, and visible error text. Error is not indicated by color alone.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "Error text was added and linked via aria-describedby, and aria-invalid=\"true\" was set; the error is not indicated by color alone.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "Error text was added and linked via aria-describedby, and aria-invalid=\"true\" was set; the error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "Error message added and programmatically associated via aria-describedby with aria-invalid=\"true\"; not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (textual or programmatic) were triggered for the invalid input, so no error state to assess.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "pass",
+                "reasoning": "Error message added and linked via aria-describedby with aria-invalid=\"true\"; the error is not conveyed by color alone.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

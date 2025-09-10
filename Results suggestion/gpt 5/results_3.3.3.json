@@ -1,0 +1,250 @@
+[
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "\"This is not a valid Name.\" is vague and does not provide corrective guidance (e.g., allowed characters or length)."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The browser message 'Inclua um \"@\" no endereço de email. Falta um \"@\" em \"user.com\".' clearly explains the issue (missing \"@\") and how to fix it."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "\"Subject should be minimum of 6 characters.\" provides a specific requirement and actionable fix."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "pass",
+                "reasoning": "\"Message is required.\" clearly indicates the field must be filled, guiding the user to provide content."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and no validation error was triggered, so no error suggestion is required."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional text field with no constraints; input '!' did not (and should not) trigger validation, so no error guidance is required."
+            },
+            {
+                "identification": "* Nome:",
+                "evaluation": "inapplicable",
+                "reasoning": "Required field was not empty ('!'); no validation triggered and no error messaging was expected."
+            },
+            {
+                "identification": "Organização:",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional text field with no constraints; input '!' did not trigger validation, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "* Email:",
+                "evaluation": "pass",
+                "reasoning": "Input 'userexample.com' triggered an email-format error. The message 'Inclua um \"@\" no endereço de email. Falta um \"@\" em \"userexample.com\".' clearly identifies the problem and how to fix it (add “@”), providing actionable guidance."
+            },
+            {
+                "identification": "Telefone:",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no constraints; input '!' did not trigger validation, so no error suggestion is needed."
+            },
+            {
+                "identification": "* Mensagem:",
+                "evaluation": "inapplicable",
+                "reasoning": "Required field was not empty ('!'); no validation error was triggered, so 3.3.3 is not applicable."
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email  *",
+                "evaluation": "pass",
+                "reasoning": "Input 'userexample.com' triggered native email validation. The message (\"Inclua um '@' no endereço de email. Falta um '@' em 'userexample.com'.\") clearly explains the issue (missing \"@\") and how to correct it, satisfying WCAG 3.3.3."
+            },
+            {
+                "identification": "Enter your website to explore",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'htp:/example..com' did not trigger validation (plain text field with no constraints), so no error message was expected; WCAG 3.3.3 is not applicable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "Input '!' triggered a linked error message: \"Name: First Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" This clearly states the problem and how to fix it, and it is programmatically associated via aria-describedby."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "Input '!' triggered a linked error message: \"Name: Last Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" The message specifies allowed characters and is linked via aria-describedby, guiding correction."
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "Input 'userexample.com' triggered a linked error message: \"Email is not valid. Email addresses should follow the format user@domain.com.\" This provides a clear example format and is programmatically linked."
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger any validation or error message; therefore, WCAG 3.3.3 does not apply here."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "fail",
+                "reasoning": "Input '!' triggered a linked error message: \"Website is not valid. Must be a valid URL.\" While the error is identified and linked, it lacks specific guidance or an example (e.g., https://example.com), so it does not adequately help users correct the input."
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome *",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger any validation or error message for this field; therefore WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Input 'userexample.com' triggered a visible error (error-msg-email-email). The message explains the issue (missing \"@\") and how to correct it (include \"@\"), giving clear, actionable guidance."
+            },
+            {
+                "identification": "Password *",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '1234' did not result in a visible validation error; the error element was hidden and no message was shown, so WCAG 3.3.3 does not apply."
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger validation; no error message appeared. Since no error was detected, WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "Control is disabled, so no user input or validation occurs; no error messaging is expected."
+            },
+            {
+                "identification": "Mobile number or email",
+                "evaluation": "fail",
+                "reasoning": "The invalid input 'userexample.com' triggered an error linked via aria-describedby; the message \"Wrong or Invalid email address or mobile phone number. Please correct and try again.\" is too generic and does not tell the user what to change (e.g., include \"@\") or provide an acceptable format, offering insufficient guidance."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "The input '1234' triggered an error \"Passwords must be at least 6 characters.\" (or \"Minimum 6 characters required\"), which clearly states the requirement and how to fix it (increase length to at least 6)."
+            },
+            {
+                "identification": "Re-enter password",
+                "evaluation": "inapplicable",
+                "reasoning": "No mismatch error was shown (alert hidden), so no validation error occurred for this field; WCAG 3.3.3 does not apply."
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "No user input or validation occurred and no error message was shown, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Search Players or Teams (search)",
+                "evaluation": "inapplicable",
+                "reasoning": "No user input or validation occurred and no error message was shown, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "No Label (email)",
+                "evaluation": "pass",
+                "reasoning": "A validation error was triggered for an empty value, and the message \"Email address is required.\" clearly identifies the issue and how to resolve it (enter an email address), providing actionable guidance."
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '1234' did not trigger any validation or error message, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The invalid input 'joao.silva.example.com' triggered validation. The message 'Inclua um \"@\" no endereço de email. Falta um \"@\" em \"joao.silva.example.com\".' clearly identifies the problem and how to fix it (add '@'), providing actionable guidance."
+            },
+            {
+                "identification": "Telemóvel (opcional)",
+                "evaluation": "fail",
+                "reasoning": "The message 'Indicar um número de telemóvel válido.' is too vague; it does not specify acceptable format or give an example, so it fails to guide the user toward correction."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "The error explains the exact requirements: length > 8, include uppercase, lowercase, a number, and a special character (except < > &). This is clear and actionable."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail",
+                "evaluation": "fail",
+                "reasoning": "Input '!' triggered a visual error (red border) and error container, but no specific error text was presented. The system did not explain the problem (invalid email format) or how to fix it (e.g., use user@example.com), so users lack actionable guidance."
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "evaluation": "fail",
+                "reasoning": "Input '!' triggered a visual error, but no explanatory message was shown. There was no suggestion to match a valid email or guidance on the required format, so the user cannot correct the input effectively."
+            },
+            {
+                "identification": "País de residência",
+                "evaluation": "inapplicable",
+                "reasoning": "No test input or validation activity was observed for this field; therefore, no error messaging was expected or triggered."
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve.",
+                "evaluation": "inapplicable",
+                "reasoning": "No test input or validation activity was observed for this checkbox; therefore, no error messaging was expected or triggered."
+            }
+        ]
+    }
+]

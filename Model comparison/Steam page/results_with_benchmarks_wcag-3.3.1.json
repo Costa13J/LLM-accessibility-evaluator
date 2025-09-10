@@ -263,5 +263,44 @@
                 "reasoning_mismatch": false
             }
         ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail",
+                "evaluation": "fail",
+                "reasoning": "Only a red border indicates the error; no specific error message is shown or programmatically associated (no aria-describedby/aria-errormessage, no aria-invalid). Any global error container is not linked to this field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "evaluation": "fail",
+                "reasoning": "Error indicated by red border only; no field-specific message or ARIA association (no aria-describedby/aria-errormessage, no aria-invalid).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "País de residência",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation/error triggered and the field appears optional; no error identification required.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve.",
+                "evaluation": "fail",
+                "reasoning": "The container (ssa_box) is outlined in red, but no error text is provided or linked to the checkbox (no aria-describedby/aria-errormessage, no aria-invalid), so assistive technologies cannot perceive the error.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
     }
 ]

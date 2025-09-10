@@ -397,5 +397,220 @@
                 "reasoning_mismatch": false
             }
         ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome * (1)",
+                "evaluation": "fail",
+                "reasoning": "A global error alert appears for name, but it is not programmatically linked to the input (no aria-describedby/aria-errormessage) nor inline with the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email * (1)",
+                "evaluation": "fail",
+                "reasoning": "A global error alert appears for email, but it is not programmatically associated to the input and not inline.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password * (1)",
+                "evaluation": "fail",
+                "reasoning": "A global error alert appears for password, but it is not programmatically associated to the input and not inline.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Nome do cliente embaixador",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no validation or errors shown.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Permissão de aparecer nos dados do amigo que o convidou (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no error shown or required status indicated.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Divulgação a terceiros (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no error shown or required status indicated.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal, como descrito na Política de Privacidade. (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no error shown or required status indicated.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (1)",
+                "evaluation": "fail",
+                "reasoning": "A global alert appears requiring acceptance, but it is not programmatically linked to the checkbox and not inline with the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Nome * (2)",
+                "evaluation": "fail",
+                "reasoning": "Same issue as (1): only a global alert; no programmatic or inline association to this instance.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email * (2)",
+                "evaluation": "fail",
+                "reasoning": "Same issue as (1): only a global alert; no programmatic or inline association.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password * (2)",
+                "evaluation": "fail",
+                "reasoning": "Same issue as (1): only a global alert; no programmatic or inline association.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Permissão de aparecer nos dados do amigo que o convidou (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no error shown or required status indicated.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Divulgação a terceiros (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no error shown or required status indicated.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal, como descrito na Política de Privacidade. (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no error shown or required status indicated.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (2)",
+                "evaluation": "fail",
+                "reasoning": "Global acceptance alert shown, but not programmatically linked or inline with the checkbox.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Nome * (3)",
+                "evaluation": "fail",
+                "reasoning": "Global alert for name, but no programmatic association (no aria-describedby/aria-errormessage) and not inline.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email * (3)",
+                "evaluation": "fail",
+                "reasoning": "Global alert for email, but no programmatic association and not inline.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password * (3)",
+                "evaluation": "fail",
+                "reasoning": "Global alert for password, but no programmatic association and not inline.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "NIF *",
+                "evaluation": "fail",
+                "reasoning": "Required by label, but no error message detected after submission; no programmatic or inline error provided.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Permissão de aparecer nos dados do amigo que o convidou (3)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no error shown or required status indicated.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Divulgação a terceiros (3)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no error shown or required status indicated.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal, como descrito na Política de Privacidade. (3)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no error shown or required status indicated.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (3)",
+                "evaluation": "fail",
+                "reasoning": "Global acceptance alert shown, but not programmatically linked or inline with the checkbox.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (checkbox) (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Appears optional; no error shown or required status indicated.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (checkbox) (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Appears optional; no error shown or required status indicated.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (checkbox) (3)",
+                "evaluation": "inapplicable",
+                "reasoning": "Appears optional; no error shown or required status indicated.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
     }
 ]

@@ -6,28 +6,28 @@
         "fields": [
             {
                 "identification": "First Name",
-                "evaluation": "fail",
-                "reasoning": "The test input '!' triggered a validation error. The message 'Captcha validation failed. Please try again.' was shown. However, this message is not relevant to the input field and does not guide the user on how to correct the input."
+                "evaluation": "pass",
+                "reasoning": "The test input `'!'` triggered a validation error. The message **\"Name: First Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\"** was displayed and programmatically linked via `aria-describedby`. This message clearly explains the problem and provides specific guidance on allowed characters, helping the user correct the input."
             },
             {
                 "identification": "Last Name",
-                "evaluation": "fail",
-                "reasoning": "The test input '!' triggered a validation error. The message 'Captcha validation failed. Please try again.' was shown. However, this message is not relevant to the input field and does not guide the user on how to correct the input."
+                "evaluation": "pass",
+                "reasoning": "The test input `'!'` triggered a validation error. The message **\"Name: Last Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\"** was displayed and programmatically linked via `aria-describedby`. This message clearly explains the problem and provides specific guidance on allowed characters, helping the user correct the input."
             },
             {
                 "identification": "Email(required)",
-                "evaluation": "fail",
-                "reasoning": "The test input 'userexample.com' triggered a validation error. The message 'Captcha validation failed. Please try again.' was shown. However, this message is not relevant to the input field and does not guide the user on how to correct the input."
+                "evaluation": "pass",
+                "reasoning": "The test input `'userexample.com'` triggered a validation error. The message **\"Email is not valid. Email addresses should follow the format user@domain.com.\"** was displayed and programmatically linked via `aria-describedby`. This message clearly explains the problem and provides a correct format example, helping the user correct the input."
             },
             {
                 "identification": "Organization(required)",
-                "evaluation": "fail",
-                "reasoning": "The test input '!' triggered a validation error. The message 'Captcha validation failed. Please try again.' was shown. However, this message is not relevant to the input field and does not guide the user on how to correct the input."
+                "evaluation": "inapplicable",
+                "reasoning": "No validation error was triggered for the input `'!'`. The form accepted the value without feedback, so no error message was expected."
             },
             {
                 "identification": "Website",
-                "evaluation": "inapplicable",
-                "reasoning": "The test input '!' did not trigger a validation error since the field is not required. No error message was expected or shown."
+                "evaluation": "fail",
+                "reasoning": "The test input `'!'` triggered a validation error. The message **\"Website is not valid. Must be a valid URL.\"** was displayed and programmatically linked via `aria-describedby`. However, the message lacks specific guidance on what constitutes a valid URL (e.g., \"http://example.com\"), making it less actionable for the user."
             }
         ]
     },
@@ -38,28 +38,28 @@
         "fields": [
             {
                 "identification": "First Name",
-                "evaluation": "fail",
-                "reasoning": "The input '12345' is not a valid name format, but no error message was shown, which is a failure to provide guidance."
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' is not a valid name format, but no error message was triggered, which is acceptable as the system did not identify it as invalid."
             },
             {
                 "identification": "Last Name",
-                "evaluation": "fail",
-                "reasoning": "The input '!@#$%' is invalid, but again, no error message was shown, indicating a lack of feedback."
+                "evaluation": "pass",
+                "reasoning": "The error message clearly states that valid names can only contain letters, numbers, spaces, apostrophes, or hyphens, helping the user understand how to correct their input."
             },
             {
-                "identification": "Email(required)",
-                "evaluation": "fail",
-                "reasoning": "The input 'user.com' is an invalid email format, but no error message was displayed, failing to inform the user of the issue."
+                "identification": "Email (required)",
+                "evaluation": "pass",
+                "reasoning": "The error message specifies that an '@' is missing, providing clear guidance on how to fix the issue."
             },
             {
-                "identification": "Organization(required)",
-                "evaluation": "fail",
-                "reasoning": "The input 'Org123!' may not meet expected criteria, but no error message was shown, indicating a lack of validation feedback."
+                "identification": "Organization (required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'Org123!' is not invalid based on the provided context, and thus no error message was triggered."
             },
             {
                 "identification": "Website",
-                "evaluation": "fail",
-                "reasoning": "The input 'http://invalid-url' is not a valid URL format, but no error message was displayed, failing to guide the user."
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'http://invalid-url' does not trigger an error message, which is acceptable as the system did not identify it as invalid."
             }
         ]
     },
@@ -70,8 +70,28 @@
         "fields": [
             {
                 "identification": "First Name",
-                "evaluation": "fail",
-                "reasoning": "No validation errors were triggered for the input '12345', which is not a typical first name, and no error message was displayed. This suggests a lack of validation or error messaging."
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Since no specific constraints were provided for the First Name field, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The input '@#$%^' triggered a validation error with the message 'Name: Last Name is not valid. Valid names contain only letters, numbers, spaces, \\', or - characters.' This message clearly explains the issue and how to correct it."
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error with the message 'Email is not valid. Email addresses should follow the format user@domain.com.' This message clearly explains the issue and how to correct it."
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' did not trigger any validation error or message. Since no specific constraints were provided for the Organization field, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'www.example' did not trigger any validation error or message. Since the field is not required and no specific constraints were provided, the lack of an error message is acceptable."
             }
         ]
     },
@@ -83,7 +103,7 @@
             {
                 "identification": "First Name",
                 "evaluation": "pass",
-                "reasoning": "The input '!' triggered a validation error. The message \"Name: First Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" is shown. This message clearly identifies the problem and provides specific guidance on what characters are allowed, helping the user correct their input."
+                "reasoning": "The test input was '!'. A validation error was triggered, and the message \"Name: First Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" clearly explains the problem and how to fix it."
             }
         ]
     },
@@ -95,7 +115,7 @@
             {
                 "identification": "First Name",
                 "evaluation": "pass",
-                "reasoning": "The input '!' triggered a validation error. The error message clearly states that valid names contain only letters, numbers, spaces, apostrophes, or hyphens, guiding the user on how to correct the input."
+                "reasoning": "The input '!' triggered a validation error. The error message clearly states that valid names contain only letters, numbers, spaces, apostrophes, or hyphens, helping the user understand how to correct the input."
             },
             {
                 "identification": "Last Name",
@@ -105,17 +125,49 @@
             {
                 "identification": "Email(required)",
                 "evaluation": "pass",
-                "reasoning": "The input 'userexample.com' triggered a validation error. The error message specifies that the email is not valid and must follow the format user@domain.com, which helps the user understand how to fix the input."
+                "reasoning": "The input 'userexample.com' triggered a validation error. The error message specifies that the email is not valid and should follow the format user@domain.com, which clearly guides the user to fix the input."
             },
             {
                 "identification": "Organization(required)",
-                "evaluation": "fail",
-                "reasoning": "The input '!' triggered a validation error, but no specific error message was observed in the mutations for this field, so it is unclear if the user received guidance on how to correct the input."
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' did not trigger any validation error or message, indicating no validation was applied or no error was detected for this input."
             },
             {
                 "identification": "Website",
                 "evaluation": "pass",
-                "reasoning": "The input '!' triggered a validation error. The error message clearly states that the website must be a valid URL, providing clear guidance for correction."
+                "reasoning": "The input '!' triggered a validation error. The error message states that the website is not valid and must be a valid URL, providing clear guidance for correction."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "Input '!' triggered a linked error with aria-invalid=true and aria-describedby. Message: \"Name: First Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" This clearly tells the user what characters are allowed and how to fix the input."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "Input '!' triggered a linked error with aria-invalid=true and aria-describedby. Message: \"Name: Last Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" The guidance is specific and actionable."
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "Input 'userexample.com' triggered a linked error (aria-invalid=true; aria-describedby). Message: \"Email is not valid. Email addresses should follow the format user@domain.com.\" This explains the issue and provides the expected format to correct it."
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger a field-level error (no aria-invalid or message), so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "pass",
+                "reasoning": "Input '!' triggered a linked error (aria-invalid=true; aria-describedby). Message: \"Website is not valid. Must be a valid URL.\" This states the requirement and tells the user to enter a valid URL, guiding correction."
             }
         ]
     }

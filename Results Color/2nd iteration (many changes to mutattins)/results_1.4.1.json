@@ -1,0 +1,1470 @@
+[
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail",
+                "empty_submit_evaluation": "Unknown",
+                "invalid_input_submit_evaluation": "Unknown",
+                "reasoning": "The error state was indicated by a red border, but a clear error message was also displayed in a separate error display area. This ensures the error is not conveyed by color alone, so it passes. (from empty_submit) | The border color changed to red after invalid input, but a clear error message 'Introduz um endereço de e-mail válido' was displayed. This provides textual support for the error state, ensuring it does not rely on color alone, so it passes. (from invalid_input_submit)"
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "empty_submit_evaluation": "Unknown",
+                "invalid_input_submit_evaluation": "Unknown",
+                "reasoning": "The error state was indicated by a red border, but a clear error message was also displayed in a separate error display area. This ensures the error is not conveyed by color alone, so it passes. (from empty_submit) | The border color changed to red after invalid input, but a clear error message 'Introduz o mesmo endereço em ambos os campos de e-mail' was displayed. This provides textual support for the error state, ensuring it does not rely on color alone, so it passes. (from invalid_input_submit)"
+            },
+            {
+                "identification": "País de residência",
+                "empty_submit_evaluation": "Unknown",
+                "invalid_input_submit_evaluation": "inapplicable",
+                "reasoning": "No error state was triggered for this field, making the evaluation inapplicable. (from empty_submit)"
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve.",
+                "empty_submit_evaluation": "Unknown",
+                "invalid_input_submit_evaluation": "inapplicable",
+                "reasoning": "No error state was triggered for this field, making the evaluation inapplicable. (from empty_submit)"
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail",
+                "empty_submit_evaluation": "pass",
+                "invalid_input_submit_evaluation": "pass",
+                "reasoning": "The error state was indicated by a red border, but a clear error message 'Introduz um endereço de e-mail válido. Preenche o campo \"Confirma o endereço de e-mail\". E vê outros erros destacados abaixo.' was also displayed. This ensures the error is not conveyed by color alone, so it passes. (from empty_submit) | The border turned red after invalid input, but a clear error message 'Introduz um endereço de e-mail válido.' was displayed. This provides textual support for the error state, ensuring it does not rely on color alone, so it passes. (from invalid_input_submit)"
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "empty_submit_evaluation": "pass",
+                "invalid_input_submit_evaluation": "pass",
+                "reasoning": "The error state was indicated by a red border, but a clear error message 'Introduz um endereço de e-mail válido. Preenche o campo \"Confirma o endereço de e-mail\". E vê outros erros destacados abaixo.' was also displayed. This ensures the error is not conveyed by color alone, so it passes. (from empty_submit) | The border turned red after invalid input, but a clear error message 'Introduz um endereço de e-mail válido.' was displayed. This provides textual support for the error state, ensuring it does not rely on color alone, so it passes. (from invalid_input_submit)"
+            },
+            {
+                "identification": "País de residência",
+                "empty_submit_evaluation": "inapplicable",
+                "invalid_input_submit_evaluation": "inapplicable",
+                "reasoning": "No error state was triggered for this field, making the evaluation inapplicable. (from empty_submit)"
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve.",
+                "empty_submit_evaluation": "inapplicable",
+                "invalid_input_submit_evaluation": "inapplicable",
+                "reasoning": "No error state was triggered for this field, making the evaluation inapplicable. (from empty_submit)"
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "empty_submit_evaluation": "inapplicable",
+                "invalid_input_submit_evaluation": "inapplicable",
+                "reasoning": "For this field, error messages were not displayed due to the 'display: none;' style, meaning no visible or programmatic error cues were provided. Since no error cues were presented, evaluation is inapplicable. (from empty_submit) | No error message or programmatic indication was provided for the invalid input. Since no error cue was presented, this is inapplicable. (from invalid_input_submit)"
+            },
+            {
+                "identification": "Email",
+                "empty_submit_evaluation": "inapplicable",
+                "invalid_input_submit_evaluation": "fail",
+                "reasoning": "For this field, error messages were not displayed due to the 'display: none;' style, meaning no visible or programmatic error cues were provided. Since no error cues were presented, evaluation is inapplicable. (from empty_submit) | The error message 'Verificar se o email está bem escrito e tentar novamente.' was not displayed due to CSS hiding. The error relies on color alone, so this fails. (from invalid_input_submit)"
+            },
+            {
+                "identification": "Password",
+                "empty_submit_evaluation": "inapplicable",
+                "invalid_input_submit_evaluation": "fail",
+                "reasoning": "For this field, error messages were not displayed due to the 'display: none;' style, meaning no visible or programmatic error cues were provided. Since no error cues were presented, evaluation is inapplicable. (from empty_submit) | The error message 'A password deve ter mais de 8 caracteres...' was not displayed due to CSS hiding. The error relies on color alone, so this fails. (from invalid_input_submit)"
+            },
+            {
+                "identification": "Telemóvel (opcional)",
+                "empty_submit_evaluation": "inapplicable",
+                "invalid_input_submit_evaluation": "inapplicable",
+                "reasoning": "For this field, error messages were not displayed due to the 'display: none;' style, meaning no visible or programmatic error cues were provided. Since no error cues were presented, evaluation is inapplicable. (from empty_submit) | No error message or programmatic indication was provided for the invalid input. Since no error cue was presented, this is inapplicable. (from invalid_input_submit)"
+            },
+            {
+                "identification": "Li e aceito as condições de utilização.",
+                "empty_submit_evaluation": "inapplicable",
+                "invalid_input_submit_evaluation": "inapplicable",
+                "reasoning": "For this field, error messages were not displayed due to the 'display: none;' style, meaning no visible or programmatic error cues were provided. Since no error cues were presented, evaluation is inapplicable. (from empty_submit)"
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your name",
+                "empty_submit_evaluation": "pass",
+                "invalid_input_submit_evaluation": "inapplicable",
+                "reasoning": "An error message 'Enter your name' is displayed and linked via `aria-describedby`, and `aria-invalid=\"true\"` is set, providing programmatic support. (from empty_submit)"
+            },
+            {
+                "identification": "Mobile number or email",
+                "empty_submit_evaluation": "pass",
+                "invalid_input_submit_evaluation": "inapplicable",
+                "reasoning": "An error message 'Enter your email or mobile phone number' is displayed and linked via `aria-describedby`, and `aria-invalid=\"true\"` is set, providing programmatic support. (from empty_submit)"
+            },
+            {
+                "identification": "Password",
+                "empty_submit_evaluation": "pass",
+                "invalid_input_submit_evaluation": "inapplicable",
+                "reasoning": "An error message 'Minimum 6 characters required' is displayed and linked via `aria-describedby`, and `aria-invalid=\"true\"` is set, providing programmatic support. (from empty_submit)"
+            },
+            {
+                "identification": "Re-enter password",
+                "empty_submit_evaluation": "inapplicable",
+                "invalid_input_submit_evaluation": "inapplicable",
+                "reasoning": "The field did not trigger an error cue, making it inapplicable. (from empty_submit)"
+            },
+            {
+                "identification": "Insira seu número de celular ou endereço de e-mail",
+                "empty_submit_evaluation": "inapplicable",
+                "invalid_input_submit_evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered or detected after submitting invalid input. There were no visual changes, error messages, or programmatic indicators like aria-invalid. Since no error state was presented, this case is inapplicable. (from invalid_input_submit)"
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your name",
+                "empty_submit_evaluation": "pass",
+                "invalid_input_submit_evaluation": "N/A",
+                "reasoning": "The 'Your name' field has an error message 'Enter your name' linked via `aria-describedby`, and `aria-invalid=\"true\"` is set, providing programmatic support. This passes. (from empty_submit)"
+            },
+            {
+                "identification": "Mobile number or email",
+                "empty_submit_evaluation": "pass",
+                "invalid_input_submit_evaluation": "N/A",
+                "reasoning": "The 'Mobile number or email' field has an error message 'Enter your email or mobile phone number' linked via `aria-describedby`, and `aria-invalid=\"true\"` is set, providing programmatic support. This passes. (from empty_submit)"
+            },
+            {
+                "identification": "Password",
+                "empty_submit_evaluation": "pass",
+                "invalid_input_submit_evaluation": "N/A",
+                "reasoning": "The 'Password' field has an error message 'Minimum 6 characters required' linked via `aria-describedby`, and `aria-invalid=\"true\"` is set, providing programmatic support. This passes. (from empty_submit)"
+            },
+            {
+                "identification": "Re-enter password",
+                "empty_submit_evaluation": "inapplicable",
+                "invalid_input_submit_evaluation": "N/A",
+                "reasoning": "The 'Re-enter password' field did not trigger an error state, so it is inapplicable. (from empty_submit)"
+            },
+            {
+                "identification": "Country Code",
+                "empty_submit_evaluation": "inapplicable",
+                "invalid_input_submit_evaluation": "N/A",
+                "reasoning": "The 'Country Code' field is disabled and did not trigger an error state, so it is inapplicable. (from empty_submit)"
+            },
+            {
+                "identification": "Insira seu número de celular ou endereço de e-mail",
+                "empty_submit_evaluation": "N/A",
+                "invalid_input_submit_evaluation": "inapplicable",
+                "reasoning": "No error cues (color, text, or semantic) were triggered after submitting invalid input. Since no error state was presented, this case is inapplicable. (from invalid_input_submit)"
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "name",
+                "empty_submit_evaluation": "pass",
+                "invalid_input_submit_evaluation": "N/A",
+                "reasoning": "Submitting with the field empty triggered the error message 'O campo nome é de preenchimento obrigatório.' This message provides a clear textual error cue, ensuring the error is not conveyed by color alone, resulting in a pass. (from empty_submit)"
+            },
+            {
+                "identification": "email",
+                "empty_submit_evaluation": "pass",
+                "invalid_input_submit_evaluation": "N/A",
+                "reasoning": "Submitting with the field empty triggered the error message 'O campo email é de preenchimento obrigatório.' This message provides a clear textual error cue, ensuring the error is not conveyed by color alone, resulting in a pass. (from empty_submit)"
+            },
+            {
+                "identification": "password",
+                "empty_submit_evaluation": "pass",
+                "invalid_input_submit_evaluation": "N/A",
+                "reasoning": "Submitting with the field empty triggered the error message 'O campo password é de preenchimento obrigatório.' This message provides a clear textual error cue, ensuring the error is not conveyed by color alone, resulting in a pass. (from empty_submit)"
+            },
+            {
+                "identification": "accept_terms",
+                "empty_submit_evaluation": "pass",
+                "invalid_input_submit_evaluation": "N/A",
+                "reasoning": "Submitting without agreeing to terms triggered the error message 'Para concluir o seu registo, é necessário concordar com a Política de Privacidade.' This message provides a clear textual error cue, ensuring the error is not conveyed by color alone, resulting in a pass. (from empty_submit)"
+            },
+            {
+                "identification": "Nome *",
+                "empty_submit_evaluation": "N/A",
+                "invalid_input_submit_evaluation": "inapplicable",
+                "reasoning": "No specific error message was detected for the 'Nome *' field, so the error cue is inapplicable. (from invalid_input_submit)"
+            },
+            {
+                "identification": "Email *",
+                "empty_submit_evaluation": "N/A",
+                "invalid_input_submit_evaluation": "pass",
+                "reasoning": "An error message 'O formato de e-mail introduzido não é válido.' was displayed, providing textual support, resulting in a pass. (from invalid_input_submit)"
+            },
+            {
+                "identification": "Password *",
+                "empty_submit_evaluation": "N/A",
+                "invalid_input_submit_evaluation": "pass",
+                "reasoning": "An error message 'A password não alcança o número mínimo de 8 caracteres.' was displayed, providing textual support, resulting in a pass. (from invalid_input_submit)"
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "email",
+                "empty_submit_evaluation": "pass",
+                "invalid_input_submit_evaluation": "N/A",
+                "reasoning": "For the 'Email' field, an error message 'Email is required' was added with a role=\"alert\", providing textual support for the error state. This ensures the error is not conveyed by color alone, resulting in a pass. (from empty_submit)"
+            },
+            {
+                "identification": "insights-search",
+                "empty_submit_evaluation": "inapplicable",
+                "invalid_input_submit_evaluation": "N/A",
+                "reasoning": "The 'Enter your website to explore' field did not trigger any error cues, making it inapplicable. (from empty_submit)"
+            },
+            {
+                "identification": "Email *",
+                "empty_submit_evaluation": "N/A",
+                "invalid_input_submit_evaluation": "pass",
+                "reasoning": "An error message 'Email must be a valid email address.' was added, providing textual support for the error state. This ensures the error is not conveyed by color alone, resulting in a pass. (from invalid_input_submit)"
+            },
+            {
+                "identification": "Enter your website to explore",
+                "empty_submit_evaluation": "N/A",
+                "invalid_input_submit_evaluation": "pass",
+                "reasoning": "An error message 'Enter your website to explore must be a valid URL.' was added, providing textual support for the error state. This ensures the error is not conveyed by color alone, resulting in a pass. (from invalid_input_submit)"
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "empty_submit_evaluation": "pass",
+                "invalid_input_submit_evaluation": "N/A",
+                "reasoning": "For the 'Nome', 'Email', and 'Mensagem' fields, a red border was applied, and a message 'Preencha os campos obrigatórios!' was displayed. The message provides textual support, ensuring the error is not conveyed by color alone, resulting in a pass. (from empty_submit)"
+            },
+            {
+                "identification": "Email",
+                "empty_submit_evaluation": "pass",
+                "invalid_input_submit_evaluation": "N/A",
+                "reasoning": "For the 'Nome', 'Email', and 'Mensagem' fields, a red border was applied, and a message 'Preencha os campos obrigatórios!' was displayed. The message provides textual support, ensuring the error is not conveyed by color alone, resulting in a pass. (from empty_submit)"
+            },
+            {
+                "identification": "Mensagem",
+                "empty_submit_evaluation": "pass",
+                "invalid_input_submit_evaluation": "N/A",
+                "reasoning": "For the 'Nome', 'Email', and 'Mensagem' fields, a red border was applied, and a message 'Preencha os campos obrigatórios!' was displayed. The message provides textual support, ensuring the error is not conveyed by color alone, resulting in a pass. (from empty_submit)"
+            },
+            {
+                "identification": "No Label",
+                "empty_submit_evaluation": "N/A",
+                "invalid_input_submit_evaluation": "inapplicable",
+                "reasoning": "The field 'No Label' did not trigger any error cues, as no visual or textual feedback was provided. Since no error state was presented, this case is inapplicable. (from invalid_input_submit)"
+            },
+            {
+                "identification": "* Nome:",
+                "empty_submit_evaluation": "N/A",
+                "invalid_input_submit_evaluation": "inapplicable",
+                "reasoning": "The field '* Nome:' did not show any error cues related to the invalid numeric input. No visual or textual feedback was provided, making this case inapplicable. (from invalid_input_submit)"
+            },
+            {
+                "identification": "Organização:",
+                "empty_submit_evaluation": "N/A",
+                "invalid_input_submit_evaluation": "inapplicable",
+                "reasoning": "The field 'Organização:' did not trigger any error cues for the special characters input. No visual or textual feedback was provided, making this case inapplicable. (from invalid_input_submit)"
+            },
+            {
+                "identification": "* Email:",
+                "empty_submit_evaluation": "N/A",
+                "invalid_input_submit_evaluation": "pass",
+                "reasoning": "The field '* Email:' displayed an error message 'Verifique se o email inserido está correto!' and added a red border to the input field. The error message provides textual support, ensuring the error is not conveyed by color alone, so this passes. (from invalid_input_submit)"
+            },
+            {
+                "identification": "Telefone:",
+                "empty_submit_evaluation": "N/A",
+                "invalid_input_submit_evaluation": "inapplicable",
+                "reasoning": "The field 'Telefone:' did not trigger any error cues for the invalid input. No visual or textual feedback was provided, making this case inapplicable. (from invalid_input_submit)"
+            },
+            {
+                "identification": "* Mensagem:",
+                "empty_submit_evaluation": "N/A",
+                "invalid_input_submit_evaluation": "inapplicable",
+                "reasoning": "The field '* Mensagem:' did not trigger any error cues for the empty input. No visual or textual feedback was provided, making this case inapplicable. (from invalid_input_submit)"
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email(Required)",
+                "empty_submit_evaluation": "inapplicable",
+                "invalid_input_submit_evaluation": "fail",
+                "reasoning": "No error cues were detected for any of the fields after submitting the form empty. There were no visual changes, error messages, or programmatic indicators like aria-invalid. Since no error states were presented, evaluation is inapplicable. (from empty_submit) | The aria-invalid attribute was not set to true, and no error messages were added or linked programmatically. The absence of these indicators means that any error state relies solely on the visual presentation, which is not compliant with WCAG 1.4.1. (from invalid_input_submit)"
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "empty_submit_evaluation": "inapplicable",
+                "invalid_input_submit_evaluation": "fail",
+                "reasoning": "No error cues were detected for any of the fields after submitting the form empty. There were no visual changes, error messages, or programmatic indicators like aria-invalid. Since no error states were presented, evaluation is inapplicable. (from empty_submit) | The aria-invalid attribute was not set to true, and no error messages were added or linked programmatically. The absence of these indicators means that any error state relies solely on the visual presentation, which is not compliant with WCAG 1.4.1. (from invalid_input_submit)"
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "empty_submit_evaluation": "inapplicable",
+                "invalid_input_submit_evaluation": "fail",
+                "reasoning": "No error cues were detected for any of the fields after submitting the form empty. There were no visual changes, error messages, or programmatic indicators like aria-invalid. Since no error states were presented, evaluation is inapplicable. (from empty_submit) | The aria-invalid attribute was not set to true, and no error messages were added or linked programmatically. The absence of these indicators means that any error state relies solely on the visual presentation, which is not compliant with WCAG 1.4.1. (from invalid_input_submit)"
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "empty_submit_evaluation": "inapplicable",
+                "invalid_input_submit_evaluation": "fail",
+                "reasoning": "No error cues were detected for any of the fields after submitting the form empty. There were no visual changes, error messages, or programmatic indicators like aria-invalid. Since no error states were presented, evaluation is inapplicable. (from empty_submit) | The aria-invalid attribute was not set to true, and no error messages were added or linked programmatically. The absence of these indicators means that any error state relies solely on the visual presentation, which is not compliant with WCAG 1.4.1. (from invalid_input_submit)"
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "empty_submit_evaluation": "inapplicable",
+                "invalid_input_submit_evaluation": "fail",
+                "reasoning": "No error cues were detected for any of the fields after submitting the form empty. There were no visual changes, error messages, or programmatic indicators like aria-invalid. Since no error states were presented, evaluation is inapplicable. (from empty_submit) | The aria-invalid attribute was not set to true, and no error messages were added or linked programmatically. The absence of these indicators means that any error state relies solely on the visual presentation, which is not compliant with WCAG 1.4.1. (from invalid_input_submit)"
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "name",
+                "empty_submit_evaluation": "pass",
+                "invalid_input_submit_evaluation": "N/A",
+                "reasoning": "An error message 'Name is required.' was added, providing a clear, non-color-based error cue. (from empty_submit)"
+            },
+            {
+                "identification": "email",
+                "empty_submit_evaluation": "pass",
+                "invalid_input_submit_evaluation": "N/A",
+                "reasoning": "An error message 'Email-Id is required.' was added, providing a clear, non-color-based error cue. (from empty_submit)"
+            },
+            {
+                "identification": "subject",
+                "empty_submit_evaluation": "pass",
+                "invalid_input_submit_evaluation": "N/A",
+                "reasoning": "An error message 'Subject is required.' was added, providing a clear, non-color-based error cue. (from empty_submit)"
+            },
+            {
+                "identification": "message",
+                "empty_submit_evaluation": "pass",
+                "invalid_input_submit_evaluation": "N/A",
+                "reasoning": "An error message 'Message is required.' was added, providing a clear, non-color-based error cue. (from empty_submit)"
+            },
+            {
+                "identification": "Name",
+                "empty_submit_evaluation": "N/A",
+                "invalid_input_submit_evaluation": "pass",
+                "reasoning": "The error message 'This is not a valid Name.' is displayed in text, providing a clear indication of the error without relying on color alone. This passes. (from invalid_input_submit)"
+            },
+            {
+                "identification": "Email",
+                "empty_submit_evaluation": "N/A",
+                "invalid_input_submit_evaluation": "pass",
+                "reasoning": "The error message 'This is not a valid Email-Id.' is displayed in text, ensuring the error is not conveyed by color alone. This passes. (from invalid_input_submit)"
+            },
+            {
+                "identification": "Subject",
+                "empty_submit_evaluation": "N/A",
+                "invalid_input_submit_evaluation": "pass",
+                "reasoning": "The error message 'Subject should be minimum of 6 characters.' is displayed in text, providing a clear indication of the error without relying on color alone. This passes. (from invalid_input_submit)"
+            },
+            {
+                "identification": "No Label (Message)",
+                "empty_submit_evaluation": "N/A",
+                "invalid_input_submit_evaluation": "pass",
+                "reasoning": "The error message 'Message should be minimum of 30 characters.' is displayed in text, ensuring the error is not conveyed by color alone. This passes. (from invalid_input_submit)"
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (File Upload)",
+                "empty_submit_evaluation": "N/A",
+                "invalid_input_submit_evaluation": "inapplicable",
+                "reasoning": "No error was triggered for this optional field, making the evaluation inapplicable. (from invalid_input_submit)"
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "empty_submit_evaluation": "pass",
+                "invalid_input_submit_evaluation": "pass",
+                "reasoning": "An error message 'Name is required.' was displayed, providing textual support for the error state, ensuring it does not rely on color alone, resulting in a pass. (from empty_submit) | An error message 'This is not a valid Name.' is displayed, providing textual support for the error state, so it passes. (from invalid_input_submit)"
+            },
+            {
+                "identification": "Email",
+                "empty_submit_evaluation": "pass",
+                "invalid_input_submit_evaluation": "pass",
+                "reasoning": "An error message 'Email-Id is required.' was displayed, providing textual support for the error state, ensuring it does not rely on color alone, resulting in a pass. (from empty_submit) | An error message 'This is not a valid Email-Id.' is displayed, providing textual support for the error state, so it passes. (from invalid_input_submit)"
+            },
+            {
+                "identification": "Subject",
+                "empty_submit_evaluation": "pass",
+                "invalid_input_submit_evaluation": "pass",
+                "reasoning": "An error message 'Subject is required.' was displayed, providing textual support for the error state, ensuring it does not rely on color alone, resulting in a pass. (from empty_submit) | An error message 'Subject should be minimum of 6 characters.' is displayed, providing textual support for the error state, so it passes. (from invalid_input_submit)"
+            },
+            {
+                "identification": "No Label (textarea)",
+                "empty_submit_evaluation": "pass",
+                "invalid_input_submit_evaluation": "N/A",
+                "reasoning": "An error message 'Message is required.' was displayed, providing textual support for the error state, ensuring it does not rely on color alone, resulting in a pass. (from empty_submit)"
+            },
+            {
+                "identification": "(jpg,png,gif,bmp)",
+                "empty_submit_evaluation": "inapplicable",
+                "invalid_input_submit_evaluation": "N/A",
+                "reasoning": "No specific error message related to the file format was detected, and since it is not required, the evaluation is inapplicable. (from empty_submit)"
+            },
+            {
+                "identification": "No Label",
+                "empty_submit_evaluation": "N/A",
+                "invalid_input_submit_evaluation": "fail",
+                "reasoning": "No specific error message or programmatic association was detected, so it fails as it relies on color alone. (from invalid_input_submit)"
+            },
+            {
+                "identification": "file",
+                "empty_submit_evaluation": "N/A",
+                "invalid_input_submit_evaluation": "inapplicable",
+                "reasoning": "The field is optional and no error state was triggered, so it is inapplicable. (from invalid_input_submit)"
+            }
+        ]
+    },
+    {
+        "url": "https://www.ilovepdf.com/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your Name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues or dynamic changes were detected for this field after invalid input. Since no error state was presented, the evaluation is inapplicable."
+            },
+            {
+                "identification": "Your Email",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues or dynamic changes were detected for this field after invalid input. Since no error state was presented, the evaluation is inapplicable."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues or dynamic changes were detected for this field after invalid input. Since no error state was presented, the evaluation is inapplicable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Localidade",
+                "evaluation": "inapplicable",
+                "reasoning": "No visual or semantic changes were detected after invalid input, and no error cues were presented, making this case inapplicable."
+            },
+            {
+                "identification": "Arruamento",
+                "evaluation": "inapplicable",
+                "reasoning": "No visual or semantic changes were detected after invalid input, and no error cues were presented, making this case inapplicable."
+            },
+            {
+                "identification": "N° Porta",
+                "evaluation": "pass",
+                "reasoning": "An error message was added after invalid input, providing textual support and ensuring the error is not indicated by color alone, resulting in a pass."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "An error message 'This is not a valid Name.' is displayed in red text, providing textual support for the error state. This passes as it does not rely on color alone."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'This is not a valid Email-Id.' is displayed in red text, providing textual support for the error state. This passes as it does not rely on color alone."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Subject should be minimum of 6 characters.' is displayed in red text, providing textual support for the error state. This passes as it does not rely on color alone."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Message should be minimum of 30 characters.' is displayed in red text, providing textual support for the error state. This passes as it does not rely on color alone."
+            },
+            {
+                "identification": "File",
+                "evaluation": "inapplicable",
+                "reasoning": "No error was triggered for invalid input, making this inapplicable."
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "For this field, no error messages or programmatic indicators (e.g., aria-invalid) were detected after invalid input. Since no error cues were presented, this case is inapplicable."
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "For this field, no error messages or programmatic indicators (e.g., aria-invalid) were detected after invalid input. Since no error cues were presented, this case is inapplicable."
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "For this field, no error messages or programmatic indicators (e.g., aria-invalid) were detected after invalid input. Since no error cues were presented, this case is inapplicable."
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "For this field, no error messages or programmatic indicators (e.g., aria-invalid) were detected after invalid input. Since no error cues were presented, this case is inapplicable."
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "For this field, no error messages or programmatic indicators (e.g., aria-invalid) were detected after invalid input. Since no error cues were presented, this case is inapplicable."
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error messages or programmatic cues were detected for any of the fields after invalid input. The absence of any error indication means that the error state is not conveyed, making it inapplicable for evaluation against WCAG 1.4.1."
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error messages or programmatic cues were detected for any of the fields after invalid input. The absence of any error indication means that the error state is not conveyed, making it inapplicable for evaluation against WCAG 1.4.1."
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error messages or programmatic cues were detected for any of the fields after invalid input. The absence of any error indication means that the error state is not conveyed, making it inapplicable for evaluation against WCAG 1.4.1."
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error messages or programmatic cues were detected for any of the fields after invalid input. The absence of any error indication means that the error state is not conveyed, making it inapplicable for evaluation against WCAG 1.4.1."
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error messages or programmatic cues were detected for any of the fields after invalid input. The absence of any error indication means that the error state is not conveyed, making it inapplicable for evaluation against WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for any of the fields after invalid input. There were no visual changes, error messages, or semantic attributes like aria-invalid. Since no error states were presented, all cases are inapplicable."
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for any of the fields after invalid input. There were no visual changes, error messages, or semantic attributes like aria-invalid. Since no error states were presented, all cases are inapplicable."
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for any of the fields after invalid input. There were no visual changes, error messages, or semantic attributes like aria-invalid. Since no error states were presented, all cases are inapplicable."
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for any of the fields after invalid input. There were no visual changes, error messages, or semantic attributes like aria-invalid. Since no error states were presented, all cases are inapplicable."
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for any of the fields after invalid input. There were no visual changes, error messages, or semantic attributes like aria-invalid. Since no error states were presented, all cases are inapplicable."
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for any of the fields after invalid input submissions. There were no visual changes, error messages, or semantic attributes like `aria-invalid` or `aria-describedby` added. Since no error states were presented, these cases are inapplicable."
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for any of the fields after invalid input submissions. There were no visual changes, error messages, or semantic attributes like `aria-invalid` or `aria-describedby` added. Since no error states were presented, these cases are inapplicable."
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for any of the fields after invalid input submissions. There were no visual changes, error messages, or semantic attributes like `aria-invalid` or `aria-describedby` added. Since no error states were presented, these cases are inapplicable."
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for any of the fields after invalid input submissions. There were no visual changes, error messages, or semantic attributes like `aria-invalid` or `aria-describedby` added. Since no error states were presented, these cases are inapplicable."
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for any of the fields after invalid input submissions. There were no visual changes, error messages, or semantic attributes like `aria-invalid` or `aria-describedby` added. Since no error states were presented, these cases are inapplicable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Localidade",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after invalid input, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "Arruamento",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after invalid input, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "N° Porta",
+                "evaluation": "pass",
+                "reasoning": "An error message was displayed and programmatically associated with the field, and the aria-invalid attribute was set to true. These provide text and semantic cues beyond color, ensuring the error is not conveyed by color alone, thus passing WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for any of the fields after invalid input. There were no visual changes, semantic attributes, or error messages added. Since no error states were triggered, these cases are inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for any of the fields after invalid input. There were no visual changes, semantic attributes, or error messages added. Since no error states were triggered, these cases are inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for any of the fields after invalid input. There were no visual changes, semantic attributes, or error messages added. Since no error states were triggered, these cases are inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for any of the fields after invalid input. There were no visual changes, semantic attributes, or error messages added. Since no error states were triggered, these cases are inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for any of the fields after invalid input. There were no visual changes, semantic attributes, or error messages added. Since no error states were triggered, these cases are inapplicable for WCAG 1.4.1 evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues or programmatic associations were mentioned in the mutations for any of the fields. Without any indication of error messages, aria-invalid attributes, or other programmatic cues, it is assumed that no error states were triggered or visually indicated. Therefore, the evaluation is inapplicable for all fields."
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues or programmatic associations were mentioned in the mutations for any of the fields. Without any indication of error messages, aria-invalid attributes, or other programmatic cues, it is assumed that no error states were triggered or visually indicated. Therefore, the evaluation is inapplicable for all fields."
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues or programmatic associations were mentioned in the mutations for any of the fields. Without any indication of error messages, aria-invalid attributes, or other programmatic cues, it is assumed that no error states were triggered or visually indicated. Therefore, the evaluation is inapplicable for all fields."
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues or programmatic associations were mentioned in the mutations for any of the fields. Without any indication of error messages, aria-invalid attributes, or other programmatic cues, it is assumed that no error states were triggered or visually indicated. Therefore, the evaluation is inapplicable for all fields."
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues or programmatic associations were mentioned in the mutations for any of the fields. Without any indication of error messages, aria-invalid attributes, or other programmatic cues, it is assumed that no error states were triggered or visually indicated. Therefore, the evaluation is inapplicable for all fields."
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues or programmatic associations were detected for any of the fields after invalid input. There were no changes in visual styling, no aria-invalid attributes, and no error messages linked to the fields. Since no error cues were triggered, this case is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues or programmatic associations were detected for any of the fields after invalid input. There were no changes in visual styling, no aria-invalid attributes, and no error messages linked to the fields. Since no error cues were triggered, this case is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues or programmatic associations were detected for any of the fields after invalid input. There were no changes in visual styling, no aria-invalid attributes, and no error messages linked to the fields. Since no error cues were triggered, this case is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues or programmatic associations were detected for any of the fields after invalid input. There were no changes in visual styling, no aria-invalid attributes, and no error messages linked to the fields. Since no error cues were triggered, this case is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues or programmatic associations were detected for any of the fields after invalid input. There were no changes in visual styling, no aria-invalid attributes, and no error messages linked to the fields. Since no error cues were triggered, this case is inapplicable for WCAG 1.4.1 evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues or dynamic changes were detected after invalid input. Since no error states were triggered, this case is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues or dynamic changes were detected after invalid input. Since no error states were triggered, this case is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues or dynamic changes were detected after invalid input. Since no error states were triggered, this case is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues or dynamic changes were detected after invalid input. Since no error states were triggered, this case is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues or dynamic changes were detected after invalid input. Since no error states were triggered, this case is inapplicable for WCAG 1.4.1 evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for this field. Since no error state occurred, this case is inapplicable under WCAG 1.4.1."
+            },
+            {
+                "identification": "* Nome",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for this field. Since no error state occurred, this case is inapplicable under WCAG 1.4.1."
+            },
+            {
+                "identification": "Organização",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for this field. Since no error state occurred, this case is inapplicable under WCAG 1.4.1."
+            },
+            {
+                "identification": "* Email",
+                "evaluation": "fail",
+                "reasoning": "An error message 'Verifique se o email inserido está correto!' was displayed, but it was not programmatically associated with the field. The error is indicated through color and an unlinked message, failing WCAG 1.4.1."
+            },
+            {
+                "identification": "Telefone",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for this field. Since no error state occurred, this case is inapplicable under WCAG 1.4.1."
+            },
+            {
+                "identification": "* Mensagem",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for this field. Since no error state occurred, this case is inapplicable under WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected after invalid input. Since no error state was triggered, this case is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "* Nome",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected after invalid input. Since no error state was triggered, this case is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Organização",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected after invalid input. Since no error state was triggered, this case is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "* Email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Verifique se o email inserido está correto!' was displayed, providing a textual cue. This ensures the error is not conveyed by color alone, passing WCAG 1.4.1."
+            },
+            {
+                "identification": "Telefone",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected after invalid input. Since no error state was triggered, this case is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "* Mensagem",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected after invalid input. Since no error state was triggered, this case is inapplicable for WCAG 1.4.1 evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected after invalid input, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "* Nome:",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected after invalid input, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "Organização:",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected after invalid input, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "* Email:",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Verifique se o email inserido está correto!' was displayed, providing a textual cue, thus passing WCAG 1.4.1."
+            },
+            {
+                "identification": "Telefone:",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected after invalid input, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "* Mensagem:",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected after invalid input, making it inapplicable for evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues or changes were detected for any of the fields after invalid input. There were no visual changes, error messages, or programmatic indicators like aria-invalid or aria-describedby. Since no error states were triggered, this evaluation is inapplicable for WCAG 1.4.1."
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues or changes were detected for any of the fields after invalid input. There were no visual changes, error messages, or programmatic indicators like aria-invalid or aria-describedby. Since no error states were triggered, this evaluation is inapplicable for WCAG 1.4.1."
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues or changes were detected for any of the fields after invalid input. There were no visual changes, error messages, or programmatic indicators like aria-invalid or aria-describedby. Since no error states were triggered, this evaluation is inapplicable for WCAG 1.4.1."
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues or changes were detected for any of the fields after invalid input. There were no visual changes, error messages, or programmatic indicators like aria-invalid or aria-describedby. Since no error states were triggered, this evaluation is inapplicable for WCAG 1.4.1."
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues or changes were detected for any of the fields after invalid input. There were no visual changes, error messages, or programmatic indicators like aria-invalid or aria-describedby. Since no error states were triggered, this evaluation is inapplicable for WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues or changes were detected for any of the fields after invalid input. There were no visual changes, error messages, or programmatic indicators like aria-invalid or aria-describedby. Since no error states were triggered, this evaluation is inapplicable for WCAG 1.4.1."
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues or changes were detected for any of the fields after invalid input. There were no visual changes, error messages, or programmatic indicators like aria-invalid or aria-describedby. Since no error states were triggered, this evaluation is inapplicable for WCAG 1.4.1."
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues or changes were detected for any of the fields after invalid input. There were no visual changes, error messages, or programmatic indicators like aria-invalid or aria-describedby. Since no error states were triggered, this evaluation is inapplicable for WCAG 1.4.1."
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues or changes were detected for any of the fields after invalid input. There were no visual changes, error messages, or programmatic indicators like aria-invalid or aria-describedby. Since no error states were triggered, this evaluation is inapplicable for WCAG 1.4.1."
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues or changes were detected for any of the fields after invalid input. There were no visual changes, error messages, or programmatic indicators like aria-invalid or aria-describedby. Since no error states were triggered, this evaluation is inapplicable for WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues or programmatic changes were detected for any of the fields after invalid input. Without any visual or semantic changes indicating an error, it is impossible to evaluate reliance on color alone. Therefore, these cases are inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues or programmatic changes were detected for any of the fields after invalid input. Without any visual or semantic changes indicating an error, it is impossible to evaluate reliance on color alone. Therefore, these cases are inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues or programmatic changes were detected for any of the fields after invalid input. Without any visual or semantic changes indicating an error, it is impossible to evaluate reliance on color alone. Therefore, these cases are inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues or programmatic changes were detected for any of the fields after invalid input. Without any visual or semantic changes indicating an error, it is impossible to evaluate reliance on color alone. Therefore, these cases are inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues or programmatic changes were detected for any of the fields after invalid input. Without any visual or semantic changes indicating an error, it is impossible to evaluate reliance on color alone. Therefore, these cases are inapplicable for WCAG 1.4.1 evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations related to color or programmatic support for this field."
+            },
+            {
+                "identification": "* Nome",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations related to color or programmatic support for this field."
+            },
+            {
+                "identification": "Organização",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations related to color or programmatic support for this field."
+            },
+            {
+                "identification": "* Email",
+                "evaluation": "inapplicable",
+                "reasoning": "An error message was detected, but it was not programmatically associated with the input. No color or programmatic cues were observed."
+            },
+            {
+                "identification": "Telefone",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations related to color or programmatic support for this field."
+            },
+            {
+                "identification": "* Mensagem",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations related to color or programmatic support for this field."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for this field, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "Nome",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered for this field, making it inapplicable."
+            },
+            {
+                "identification": "Organização",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for this field, making it inapplicable."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "A visible error message 'Verifique se o email inserido está correto!' was associated with the field, providing a textual cue, thus passing."
+            },
+            {
+                "identification": "Telefone",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for this field, making it inapplicable."
+            },
+            {
+                "identification": "Mensagem",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for this field, making it inapplicable."
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email  *",
+                "evaluation": "fail",
+                "reasoning": "For the \"Email *\" field, the border color changed to red, indicating an error state. However, no error message or programmatic support (like aria-invalid or aria-describedby) was provided. The error is indicated only through color, failing WCAG 1.4.1."
+            },
+            {
+                "identification": "Enter your website to explore",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Enter your website to explore\" field, no visual or semantic changes were detected after invalid input. Since no error state was triggered, this case is inapplicable for WCAG 1.4.1 evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email  *",
+                "evaluation": "fail",
+                "reasoning": "For the \"Email *\" field, the border color changes to red when invalid input is submitted, but no error message or programmatic support (like aria-invalid) is provided. This relies solely on color to indicate an error, failing WCAG 1.4.1."
+            },
+            {
+                "identification": "Enter your website to explore",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Enter your website to explore\" field, no visual or semantic changes were detected after invalid input. Since no error state was triggered, this case is inapplicable for WCAG 1.4.1 evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email  *",
+                "evaluation": "fail",
+                "reasoning": "For the \"Email *\" field, the border color changed to red, indicating an error state. However, no error message or programmatic support (like aria-invalid or aria-describedby) was provided. The error is indicated only through color, failing WCAG 1.4.1."
+            },
+            {
+                "identification": "Enter your website to explore",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Enter your website to explore\" field, no error cues were triggered, as there were no changes in visual or semantic attributes. Since no error state occurred, this case is inapplicable under WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email  *",
+                "evaluation": "pass",
+                "reasoning": "For the \"Email *\" field, the border color changes to red, and an error message 'Inclua um \"@\" no endereço de email. Falta um \"@\" em \"userexample.com\".' is provided. This message is programmatically associated with the field, ensuring the error is not conveyed by color alone, thus passing WCAG 1.4.1."
+            },
+            {
+                "identification": "Enter your website to explore",
+                "evaluation": "fail",
+                "reasoning": "For the \"Enter your website to explore\" field, there is no indication of an error message or programmatic association. The border color change is the only indicator, which relies solely on color, failing WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email  *",
+                "evaluation": "pass",
+                "reasoning": "For the \"Email *\" field, the border color changed to red, and a possible error message was detected, indicating that the error is not conveyed by color alone. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Enter your website to explore",
+                "evaluation": "fail",
+                "reasoning": "For the \"Enter your website to explore\" field, the border color changed to red, but no error message or programmatic support was detected. The error is conveyed only through color, failing WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Localidade",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected after invalid input. The only mutation observed was related to a class change on the body, but no programmatic or textual error indicators were associated with the field itself. Since no error cues were triggered, this case is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Arruamento",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected after invalid input. The only mutation observed was related to a class change on the body, but no programmatic or textual error indicators were associated with the field itself. Since no error cues were triggered, this case is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "N° Porta",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected after invalid input. The only mutation observed was related to a class change on the body and the addition of an error label, but no programmatic or textual error indicators were associated with the field itself. Since no error cues were triggered, this case is inapplicable for WCAG 1.4.1 evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome *",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected, and no color change was noted, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Inclua um \"@\" no endereço de email. Falta um \"@\" em \"user.com\".' was displayed, providing textual support, thus passing WCAG 1.4.1."
+            },
+            {
+                "identification": "Password *",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected, and no color change was noted, making it inapplicable for evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your name",
+                "evaluation": "fail",
+                "reasoning": "No error message or programmatic indication was provided, relying solely on color changes, which fails WCAG 1.4.1."
+            },
+            {
+                "identification": "Mobile number or email",
+                "evaluation": "pass",
+                "reasoning": "An error message was displayed and programmatically associated with the field using aria-invalid and aria-describedby, passing WCAG 1.4.1."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "An error message was displayed and programmatically associated with the field, passing WCAG 1.4.1."
+            },
+            {
+                "identification": "Re-enter password",
+                "evaluation": "pass",
+                "reasoning": "An error message was displayed and programmatically associated with the field, passing WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your name",
+                "evaluation": "fail",
+                "reasoning": "No error message or programmatic indication was provided, only a visual change. This fails WCAG 1.4.1 as it relies on color alone."
+            },
+            {
+                "identification": "Mobile number or email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Wrong or Invalid email address or mobile phone number. Please correct and try again.' was displayed and programmatically associated with the field using aria-describedby. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Passwords must be at least 6 characters.' was displayed and programmatically associated with the field. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Re-enter password",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Passwords must match' was displayed and programmatically associated with the field. This passes WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "model": "mistral/mistral-large-latest",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your name",
+                "evaluation": "inapplicable",
+                "reasoning": "No mutations or error cues detected after invalid input submission. Since no error state was triggered, this is inapplicable.\n\n---"
+            },
+            {
+                "identification": "Mobile number or email",
+                "evaluation": "pass",
+                "reasoning": "After invalid input, the field received `aria-invalid=\"true\"`, an error class (`a-form-error`), and a visible error message (\"Wrong or Invalid email address or mobile phone number. Please correct and try again.\") was programmatically associated via `aria-describedby`. No reliance on color alone was detected. This passes WCAG 1.4.1.\n\n---"
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "After invalid input, the field received an error class and a visible error message (\"Passwords must be at least 6 characters.\") displayed in a `DIV` with error classes (`a-alert-inline-error`). No reliance on color alone was detected. This passes WCAG 1.4.1.\n\n---"
+            },
+            {
+                "identification": "Re-enter password",
+                "evaluation": "inapplicable",
+                "reasoning": "No mutations or error cues detected after invalid input submission. Since no error state was triggered, this is inapplicable."
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "mistral/mistral-large-latest",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email(Required)",
+                "evaluation": "pass",
+                "reasoning": "A descriptive error message (\"Inclua um '@' no endereço de email...\") was programmatically added. No reliance on color alone. Passes WCAG 1.4.1.\n\n---"
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered for invalid input. Inapplicable under WCAG 1.4.1.\n\n---"
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered for invalid input. Inapplicable under WCAG 1.4.1.\n\n---"
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered for invalid input. Inapplicable under WCAG 1.4.1.\n\n---"
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered for invalid input. Inapplicable under WCAG 1.4.1.\n\n---"
+            }
+        ]
+    },
+    {
+        "url": "https://www.business.reddit.com/speak-with-a-reddit-ads-expert?utm_product=ads-register-landing-page_product&utm_source=web3x_consumer",
+        "model": "mistral/mistral-large-latest",
+        "submit_clicked": false,
+        "fields": []
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "mistral/mistral-large-latest",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email(Required)",
+                "evaluation": "pass",
+                "reasoning": "The error message \"Inclua um '@' no endereço de email...\" is programmatically linked, providing textual feedback. No reliance on color alone.\n\n---"
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (color, text, or semantic) were triggered after invalid input.\n\n---"
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after invalid input.\n\n---"
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after invalid input.\n\n---"
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after invalid input.\n\n---"
+            }
+        ]
+    },
+    {
+        "url": "https://go.webmdcare.com/claim-profile",
+        "model": "mistral/mistral-large-latest",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name *",
+                "evaluation": "inapplicable",
+                "reasoning": "No dynamic error cues were triggered after invalid input. Evaluation of WCAG 1.4.1 is inapplicable."
+            },
+            {
+                "identification": "Last Name *",
+                "evaluation": "inapplicable",
+                "reasoning": "No dynamic error cues were triggered after invalid input. Evaluation of WCAG 1.4.1 is inapplicable."
+            },
+            {
+                "identification": "Practice Name *",
+                "evaluation": "inapplicable",
+                "reasoning": "No dynamic error cues were triggered after invalid input. Evaluation of WCAG 1.4.1 is inapplicable."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "inapplicable",
+                "reasoning": "No dynamic error cues were triggered after invalid input. Evaluation of WCAG 1.4.1 is inapplicable."
+            },
+            {
+                "identification": "Phone Number *",
+                "evaluation": "inapplicable",
+                "reasoning": "No dynamic error cues were triggered after invalid input. Evaluation of WCAG 1.4.1 is inapplicable.\n\n---"
+            }
+        ]
+    },
+    {
+        "url": "https://doctor.webmd.com/learnmore/profile",
+        "model": "mistral/mistral-large-latest",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email(Required)",
+                "evaluation": "pass",
+                "reasoning": "An error message (\"Inclua um '@' no endereço de email...\") was programmatically added to the DOM. Since the error is not conveyed by color alone, this passes WCAG 1.4.1.\n\n---"
+            },
+            {
+                "identification": "Practice Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (visual or programmatic) were triggered after invalid input. Thus, this case is inapplicable for WCAG 1.4.1.\n\n---"
+            },
+            {
+                "identification": "Provider First Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (visual or programmatic) were triggered after invalid input. Thus, this case is inapplicable for WCAG 1.4.1.\n\n---"
+            },
+            {
+                "identification": "Provider Last Name(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (visual or programmatic) were triggered after invalid input. Thus, this case is inapplicable for WCAG 1.4.1.\n\n---"
+            },
+            {
+                "identification": "Direct Phone Number(Required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (visual or programmatic) were triggered after invalid input. Thus, this case is inapplicable for WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "A visible error message (“Name — This is not a valid Name.”) is shown in an error summary. No aria attributes detected, but textual feedback is present, so the error is not conveyed by color alone."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "A visible error message (“Email — This is not a valid Email-Id.”) and a native browser message are shown. Even without aria attributes, text is provided, so it’s not color-only."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "A visible error message (“Subject should be minimum of 6 characters.”) appears in the error summary. Despite no programmatic linkage, text is present, so it’s not color-only."
+            }
+        ]
+    }
+]

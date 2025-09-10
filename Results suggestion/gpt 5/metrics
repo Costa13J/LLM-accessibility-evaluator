@@ -1,0 +1,21 @@
+=== Evaluation Report ===
+Model: openai/gpt-5
+True Positives: 5
+True Negatives: 15
+False Positives: 1
+False Negatives: 0
+Accuracy: 0.952
+Precision: 0.833
+Recall: 1.000
+F1-score: 0.909
+Coverage: 21/45 (46.7%)
+Total samples used: 21
+
+Pred counts: {1: 6, 0: 15}
+Gold counts: {1: 5, 0: 16}
+
+=== Most Common Issues ===
+- False violation (pass → fail): 1
+
+=== Flagged Cases (examples) ===
+- URL: https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62 | Field: Confirma o teu endereço | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)

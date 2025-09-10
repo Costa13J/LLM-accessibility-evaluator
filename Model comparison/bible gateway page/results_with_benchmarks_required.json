@@ -24,8 +24,8 @@
                 "identification": "Email(required) (email)",
                 "evaluation": "pass",
                 "reasoning": "The field is correctly marked as required and triggers an error message when left empty, meeting accessibility expectations.",
-                "benchmark": "N/A",
-                "match": "",
+                "benchmark": "pass",
+                "match": "✅",
                 "reasoning_mismatch": false
             },
             {
@@ -40,15 +40,8 @@
                 "identification": "Website (text)",
                 "evaluation": "inapplicable",
                 "reasoning": "The field is intentionally optional and no validation logic is triggered on submit.",
-                "benchmark": "pass",
-                "match": "❌",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "Email",
-                "evaluation": "absent",
-                "benchmark": "pass",
-                "match": "absent",
+                "benchmark": "inapplicable",
+                "match": "✅",
                 "reasoning_mismatch": false
             }
         ]
@@ -94,8 +87,8 @@
                 "identification": "Website",
                 "evaluation": "inapplicable",
                 "reasoning": "The field is not marked as required and is therefore optional.",
-                "benchmark": "pass",
-                "match": "❌",
+                "benchmark": "inapplicable",
+                "match": "✅",
                 "reasoning_mismatch": false
             }
         ]
@@ -141,8 +134,8 @@
                 "identification": "Website",
                 "evaluation": "inapplicable",
                 "reasoning": "The \"Website\" field is optional and does not trigger any required validation.",
-                "benchmark": "pass",
-                "match": "❌",
+                "benchmark": "inapplicable",
+                "match": "✅",
                 "reasoning_mismatch": false
             }
         ]
@@ -172,8 +165,8 @@
                 "identification": "Email(required) (email)",
                 "evaluation": "pass",
                 "reasoning": "The field is required and uses a required attribute or equivalent (aria-required), as shown in the DOM mutations. This is an appropriate use of a required indicator.",
-                "benchmark": "N/A",
-                "match": "",
+                "benchmark": "pass",
+                "match": "✅",
                 "reasoning_mismatch": false
             },
             {
@@ -188,15 +181,8 @@
                 "identification": "Website (text)",
                 "evaluation": "inapplicable",
                 "reasoning": "The field is not required and does not use a required attribute or equivalent. No error is triggered after submission, so the field is optional.",
-                "benchmark": "pass",
-                "match": "❌",
-                "reasoning_mismatch": false
-            },
-            {
-                "identification": "Email",
-                "evaluation": "absent",
-                "benchmark": "pass",
-                "match": "absent",
+                "benchmark": "inapplicable",
+                "match": "✅",
                 "reasoning_mismatch": false
             }
         ]
@@ -242,8 +228,8 @@
                 "identification": "Website",
                 "evaluation": "inapplicable",
                 "reasoning": "The field is optional and does not trigger required validation or use the 'required' attribute.",
-                "benchmark": "pass",
-                "match": "❌",
+                "benchmark": "inapplicable",
+                "match": "✅",
                 "reasoning_mismatch": false
             }
         ]

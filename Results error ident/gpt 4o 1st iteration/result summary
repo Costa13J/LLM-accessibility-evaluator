@@ -27,3 +27,29 @@ Total Fields Evaluated: 34
 Absent Matches: 10 (29.41%)
 Benchmarked as N/A: 0 (0.00%)
 Reasoning mismatches: 1 (2.94%)
+
+=== Evaluation Report ===
+Model: 4o
+True Positives: 11
+True Negatives: 11
+False Positives: 1
+False Negatives: 2
+Accuracy: 0.880
+Precision: 0.917
+Recall: 0.846
+F1-score: 0.880
+Coverage: 25/34 (73.5%)
+Total samples used: 25
+
+Pred counts: {1: 12, 0: 13}
+Gold counts: {1: 13, 0: 12}
+
+=== Most Common Issues ===
+- Missed violation (fail → pass/inapplicable): 1
+- Missed violation (fail → absent): 1
+- False violation (pass → fail): 1
+
+=== Flagged Cases (examples) ===
+- URL: https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62 | Field: Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve. | Benchmark: fail | Eval: inapplicable | Issue: Missed violation (fail → pass/inapplicable)
+- URL: https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0 | Field: Re-enter password | Benchmark: fail | Eval: absent | Issue: Missed violation (fail → absent)
+- URL: https://www.cricbuzz.com/info/contact | Field: No Label (textarea) | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)

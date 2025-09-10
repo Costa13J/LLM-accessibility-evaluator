@@ -211,8 +211,8 @@
                 "identification": "Email(required) (email)",
                 "evaluation": "fail",
                 "reasoning": "Required field but no error message or indication of validation failure is shown after submission, so fails accessible error identification.",
-                "benchmark": "N/A",
-                "match": "",
+                "benchmark": "pass",
+                "match": "❌",
                 "reasoning_mismatch": false
             },
             {
@@ -230,12 +230,52 @@
                 "benchmark": "inapplicable",
                 "match": "✅",
                 "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "aria-describedby was set but points to a non-matching id (…-fname-error) not observed; the only message added (\"Name is required.\") uses a different id, so the error is not programmatically associated with this input.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "aria-describedby was set to …-lname-error but no corresponding error element or specific last-name error text was observed; no programmatic association is present.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
             },
             {
                 "identification": "Email",
-                "evaluation": "absent",
+                "evaluation": "pass",
+                "reasoning": "\"Email is required.\" was inserted and referenced by aria-describedby on the email input; aria-invalid=\"true\" indicates error state.",
                 "benchmark": "pass",
-                "match": "absent",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "\"Organization is required.\" was inserted and referenced by aria-describedby on the organization input; aria-invalid=\"true\" indicates error state.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation or error message is expected when left empty.",
+                "benchmark": "inapplicable",
+                "match": "✅",
                 "reasoning_mismatch": false
             }
         ]

@@ -1,0 +1,390 @@
+[
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation is expected. No error message appeared or was programmatically linked."
+            },
+            {
+                "identification": "* Nome:",
+                "evaluation": "fail",
+                "reasoning": "Only a visual error class was added; no field-specific error text and no ARIA association (aria-describedby/aria-errormessage). No aria-invalid present."
+            },
+            {
+                "identification": "Organização:",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation is expected. No error message appeared or was programmatically linked."
+            },
+            {
+                "identification": "* Email:",
+                "evaluation": "fail",
+                "reasoning": "Only a visual error class was added; no field-specific error text and no ARIA association (aria-describedby/aria-errormessage). No aria-invalid present."
+            },
+            {
+                "identification": "Telefone:",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation is expected. No error message appeared or was programmatically linked."
+            },
+            {
+                "identification": "Assunto:",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional select; no validation is expected. No error message appeared or was programmatically linked."
+            },
+            {
+                "identification": "Tema:",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional select; no validation is expected. No error message appeared or was programmatically linked."
+            },
+            {
+                "identification": "* Mensagem:",
+                "evaluation": "fail",
+                "reasoning": "Only a visual error class was added; no field-specific error text and no ARIA association (aria-describedby/aria-errormessage). No aria-invalid present."
+            },
+            {
+                "identification": "No Label (reset)",
+                "evaluation": "inapplicable",
+                "reasoning": "Reset button is not a data input requiring validation feedback."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "An error message is displayed after submission, but the input is not programmatically associated to it (no aria-describedby/aria-errormessage or aria-invalid)."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "An error message is displayed, but there is no programmatic association to the input (no aria-describedby/aria-errormessage or aria-invalid)."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "An error message is displayed, but no programmatic linkage to the specific input is provided."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "fail",
+                "reasoning": "An error message is displayed, but the field lacks a label and any ARIA association (no aria-describedby/aria-errormessage), so the error is not programmatically linked."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp)",
+                "evaluation": "inapplicable",
+                "reasoning": "The file upload is optional, so no validation feedback is required when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email *",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message appeared and no ARIA error linkage is present. The field is optional (no required attribute), so error identification is not expected."
+            },
+            {
+                "identification": "Enter your website to explore",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message appeared and no ARIA error linkage is present. The field is optional (no required attribute), so error identification is not expected."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "aria-describedby was set but points to a non-matching id (…-fname-error) not observed; the only message added (\"Name is required.\") uses a different id, so the error is not programmatically associated with this input."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "aria-describedby was set to …-lname-error but no corresponding error element or specific last-name error text was observed; no programmatic association is present."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "\"Email is required.\" was inserted and referenced by aria-describedby on the email input; aria-invalid=\"true\" indicates error state."
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "\"Organization is required.\" was inserted and referenced by aria-describedby on the organization input; aria-invalid=\"true\" indicates error state."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation or error message is expected when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome * (1)",
+                "evaluation": "fail",
+                "reasoning": "A global error alert appears for name, but it is not programmatically linked to the input (no aria-describedby/aria-errormessage) nor inline with the field."
+            },
+            {
+                "identification": "Email * (1)",
+                "evaluation": "fail",
+                "reasoning": "A global error alert appears for email, but it is not programmatically associated to the input and not inline."
+            },
+            {
+                "identification": "Password * (1)",
+                "evaluation": "fail",
+                "reasoning": "A global error alert appears for password, but it is not programmatically associated to the input and not inline."
+            },
+            {
+                "identification": "Nome do cliente embaixador",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no validation or errors shown."
+            },
+            {
+                "identification": "Permissão de aparecer nos dados do amigo que o convidou (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no error shown or required status indicated."
+            },
+            {
+                "identification": "Divulgação a terceiros (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no error shown or required status indicated."
+            },
+            {
+                "identification": "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal, como descrito na Política de Privacidade. (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no error shown or required status indicated."
+            },
+            {
+                "identification": "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (1)",
+                "evaluation": "fail",
+                "reasoning": "A global alert appears requiring acceptance, but it is not programmatically linked to the checkbox and not inline with the field."
+            },
+            {
+                "identification": "Nome * (2)",
+                "evaluation": "fail",
+                "reasoning": "Same issue as (1): only a global alert; no programmatic or inline association to this instance."
+            },
+            {
+                "identification": "Email * (2)",
+                "evaluation": "fail",
+                "reasoning": "Same issue as (1): only a global alert; no programmatic or inline association."
+            },
+            {
+                "identification": "Password * (2)",
+                "evaluation": "fail",
+                "reasoning": "Same issue as (1): only a global alert; no programmatic or inline association."
+            },
+            {
+                "identification": "Permissão de aparecer nos dados do amigo que o convidou (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no error shown or required status indicated."
+            },
+            {
+                "identification": "Divulgação a terceiros (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no error shown or required status indicated."
+            },
+            {
+                "identification": "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal, como descrito na Política de Privacidade. (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no error shown or required status indicated."
+            },
+            {
+                "identification": "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (2)",
+                "evaluation": "fail",
+                "reasoning": "Global acceptance alert shown, but not programmatically linked or inline with the checkbox."
+            },
+            {
+                "identification": "Nome * (3)",
+                "evaluation": "fail",
+                "reasoning": "Global alert for name, but no programmatic association (no aria-describedby/aria-errormessage) and not inline."
+            },
+            {
+                "identification": "Email * (3)",
+                "evaluation": "fail",
+                "reasoning": "Global alert for email, but no programmatic association and not inline."
+            },
+            {
+                "identification": "Password * (3)",
+                "evaluation": "fail",
+                "reasoning": "Global alert for password, but no programmatic association and not inline."
+            },
+            {
+                "identification": "NIF *",
+                "evaluation": "fail",
+                "reasoning": "Required by label, but no error message detected after submission; no programmatic or inline error provided."
+            },
+            {
+                "identification": "Permissão de aparecer nos dados do amigo que o convidou (3)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no error shown or required status indicated."
+            },
+            {
+                "identification": "Divulgação a terceiros (3)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no error shown or required status indicated."
+            },
+            {
+                "identification": "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal, como descrito na Política de Privacidade. (3)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no error shown or required status indicated."
+            },
+            {
+                "identification": "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (3)",
+                "evaluation": "fail",
+                "reasoning": "Global acceptance alert shown, but not programmatically linked or inline with the checkbox."
+            },
+            {
+                "identification": "No Label (checkbox) (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Appears optional; no error shown or required status indicated."
+            },
+            {
+                "identification": "No Label (checkbox) (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Appears optional; no error shown or required status indicated."
+            },
+            {
+                "identification": "No Label (checkbox) (3)",
+                "evaluation": "inapplicable",
+                "reasoning": "Appears optional; no error shown or required status indicated."
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your name",
+                "evaluation": "pass",
+                "reasoning": "Error message \"Enter your name\" is visibly shown and programmatically linked via aria-describedby=\"auth-customerName-missing-alert\"; aria-invalid=\"true\" indicates error state."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is disabled and not required, so no validation or error identification is expected."
+            },
+            {
+                "identification": "Mobile number or email",
+                "evaluation": "pass",
+                "reasoning": "Error message \"Enter your email or mobile phone number\" is shown and programmatically linked via aria-describedby=\"auth-email-missing-alert\"; aria-invalid=\"true\" is set."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "Although \"Minimum 6 characters required\" is displayed, the password input lacks a programmatic association (no aria-describedby/aria-errormessage) and aria-invalid was not observed."
+            },
+            {
+                "identification": "Re-enter password",
+                "evaluation": "fail",
+                "reasoning": "No specific error message appeared for this field and no programmatic association was provided."
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no error message or validation triggered, so error identification is not expected."
+            },
+            {
+                "identification": "Search Players or Teams",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional search field; no error message or validation triggered, so error identification is not expected."
+            },
+            {
+                "identification": "email",
+                "evaluation": "fail",
+                "reasoning": "Error text was rendered as a sibling <p data-error=\"true\"> without being referenced by the input (no aria-describedby/aria-errormessage) and no aria-invalid update; thus the error is not programmatically associated per WCAG 3.3.1."
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "evaluation": "fail",
+                "reasoning": "Error span exists but is hidden; no aria-describedby/aria-errormessage linkage; data-error on label is not exposed; no aria-invalid."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "Error span exists but is hidden; no programmatic association (no aria-describedby/aria-errormessage); data-error on label only; no aria-invalid."
+            },
+            {
+                "identification": "Country code (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is not required; no validation expected when left empty; no error behavior to assess."
+            },
+            {
+                "identification": "Telemóvel (opcional)",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked optional; leaving empty should not trigger validation; no error message required."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "Validator span toggled but is hidden; no aria-describedby/aria-errormessage linkage; only nonstandard data-error on label; no aria-invalid."
+            },
+            {
+                "identification": "Li e aceito as condições de utilização.",
+                "evaluation": "fail",
+                "reasoning": "Validator span toggled but is hidden; no programmatic association to the checkbox; data-error on label only; no aria-invalid."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail",
+                "evaluation": "fail",
+                "reasoning": "Only a red border indicates the error; no specific error message is shown or programmatically associated (no aria-describedby/aria-errormessage, no aria-invalid). Any global error container is not linked to this field."
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "evaluation": "fail",
+                "reasoning": "Error indicated by red border only; no field-specific message or ARIA association (no aria-describedby/aria-errormessage, no aria-invalid)."
+            },
+            {
+                "identification": "País de residência",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation/error triggered and the field appears optional; no error identification required."
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve.",
+                "evaluation": "fail",
+                "reasoning": "The container (ssa_box) is outlined in red, but no error text is provided or linked to the checkbox (no aria-describedby/aria-errormessage, no aria-invalid), so assistive technologies cannot perceive the error."
+            }
+        ]
+    }
+]

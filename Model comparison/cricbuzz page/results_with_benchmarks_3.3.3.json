@@ -265,5 +265,59 @@
                 "reasoning_mismatch": false
             }
         ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "\"This is not a valid Name.\" is vague and does not provide corrective guidance (e.g., allowed characters or length).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The browser message 'Inclua um \"@\" no endereço de email. Falta um \"@\" em \"user.com\".' clearly explains the issue (missing \"@\") and how to fix it.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "\"Subject should be minimum of 6 characters.\" provides a specific requirement and actionable fix.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "pass",
+                "reasoning": "\"Message is required.\" clearly indicates the field must be filled, guiding the user to provide content.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and no validation error was triggered, so no error suggestion is required.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Captcha",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
     }
 ]

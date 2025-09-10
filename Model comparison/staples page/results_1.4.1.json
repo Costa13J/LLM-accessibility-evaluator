@@ -1,0 +1,124 @@
+[
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "model": "openai/gpt-4o-mini-2024-07-18",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome *",
+                "evaluation": "fail",
+                "reasoning": "A red border was applied, but no programmatic support (like aria-invalid or an error message) was provided. This relies solely on color, which fails WCAG 1.4.1."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "fail",
+                "reasoning": "A red border was applied, and an error message indicating the need for an \"@\" was displayed. However, the error message was not programmatically associated with the input field, which fails WCAG 1.4.1."
+            },
+            {
+                "identification": "Password *",
+                "evaluation": "fail",
+                "reasoning": "A red border was applied, but no programmatic support or error message was provided. This also relies solely on color, which fails WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome *",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected, and no color change was noted, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Inclua um \"@\" no endereço de email. Falta um \"@\" em \"user.com\".' was displayed, providing textual support, thus passing WCAG 1.4.1."
+            },
+            {
+                "identification": "Password *",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected, and no color change was noted, making it inapplicable for evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "model": "openai/gpt-4.1-2025-04-14",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome *",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message or programmatic error cue is shown in the mutations for invalid input; no evidence of a text or semantic error indicator, so error cue status is unknown and cannot be evaluated for color reliance."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Multiple error messages are shown in visible alert boxes after invalid input. These are textual and not color-only, so error is not indicated by color alone."
+            },
+            {
+                "identification": "Password *",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message or programmatic error cue is shown in the mutations for invalid input; no evidence of a text or semantic error indicator, so error cue status is unknown and cannot be evaluated for color reliance."
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "model": "openai/gpt-4.1-mini-2025-04-14",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome *",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message or programmatic error indication was observed; only a red asterisk in the label indicates required, but no error cue triggered on invalid input, so inapplicable."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "An error message is displayed visibly in a styled alert box with textual content explaining the error (\"Inclua um '@' no endereço de email...\"). This message is programmatic and textual, not relying on color alone, so passes."
+            },
+            {
+                "identification": "Password *",
+                "evaluation": "pass",
+                "reasoning": "An error message is displayed in an alert-danger div with textual content indicating the error. This is a programmatic and textual cue, so passes."
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome *",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered for the invalid input; no text or semantic indicators appeared, so there is no error state to assess."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "A visible error message (alert-danger) with explanatory text appeared (and browser hint about missing “@”); even if not programmatically linked, the error isn’t conveyed by color alone."
+            },
+            {
+                "identification": "Password *",
+                "evaluation": "inapplicable",
+                "reasoning": "The password error container was hidden and no other error indicators (text or aria) appeared; no error cue to evaluate."
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "model": "mistral/mistral-large-latest",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "The email field received a descriptive error message 'Inclua um \"@\" no endereço de email. Falta um \"@\" em \"userexample.com\".' after invalid input. Since the error is not conveyed by color alone, this passes WCAG 1.4.1."
+            }
+        ]
+    }
+]

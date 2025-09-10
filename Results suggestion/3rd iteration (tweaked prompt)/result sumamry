@@ -29,3 +29,29 @@ Total Fields Evaluated: 53
 Absent Matches: 19 (35.84%)
 Benchmarked as N/A: 2 (3.77%)
 Reasoning mismatches: 1 (1.88%)
+
+=== Evaluation Report ===
+Model: Unknown
+True Positives: 5
+True Negatives: 9
+False Positives: 4
+False Negatives: 0
+Accuracy: 0.778
+Precision: 0.556
+Recall: 1.000
+F1-score: 0.714
+Coverage: 18/51 (35.3%)
+Total samples used: 18
+
+Pred counts: {1: 9, 0: 9}
+Gold counts: {1: 5, 0: 13}
+
+=== Most Common Issues ===
+- False violation (inapplicable → fail): 3
+- False violation (pass → fail): 1
+
+=== Flagged Cases (examples) ===
+- URL: https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b | Field: Password | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)   
+- URL: https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta | Field: Email * | Benchmark: inapplicable | Eval: fail | Issue: False violation (inapplicable → fail)
+- URL: https://www.ipma.pt/pt/siteinfo/contactar.jsp | Field: * Mensagem | Benchmark: inapplicable | Eval: fail | Issue: False violation (inapplicable → fail)   
+- URL: https://doctor.webmd.com/learnmore/profile | Field: Email(Required) | Benchmark: inapplicable | Eval: fail | Issue: False violation (inapplicable → fail)

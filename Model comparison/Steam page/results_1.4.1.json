@@ -1,0 +1,109 @@
+[
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "mistral/mistral-large-latest",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail",
+                "evaluation": "fail",
+                "reasoning": "After invalid input, the field received a red border and an error class, but no descriptive error message, `aria-invalid`, or programmatic association was provided. Since the error is indicated only through color, this fails WCAG 1.4.1.\n\n---"
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "evaluation": "fail",
+                "reasoning": "After invalid input, the field received a red border and an error class, but no descriptive error message, `aria-invalid`, or programmatic association was provided. Since the error is indicated only through color, this fails WCAG 1.4.1.\n\n---"
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "openai/gpt-4o-mini-2024-07-18",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail",
+                "evaluation": "fail",
+                "reasoning": "For both the email fields, after invalid input, a red border was applied, and an error class was added. However, there was no programmatic support (aria-invalid, aria-describedby) or visible error messages linked to the fields. Since the error indication relies solely on color without textual support, this fails WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail",
+                "evaluation": "fail",
+                "reasoning": "For the field 'Endereço de e-mail', the only changes after invalid input were a red border and an error class applied. No aria-invalid attribute, no linked error message, and no programmatic association were provided. Since the error is conveyed only through color, this fails WCAG 1.4.1."
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "evaluation": "fail",
+                "reasoning": "For the field 'Confirma o teu endereço', the only changes after invalid input were a red border and an error class applied. No aria-invalid attribute, no linked error message, and no programmatic association were provided. Since the error is conveyed only through color, this fails WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "openai/gpt-4.1-2025-04-14",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail",
+                "evaluation": "fail",
+                "reasoning": "After invalid input, the only error cue is a red border on the input. There is no programmatic association between any error message and the field, nor are semantic attributes like aria-invalid present. The error is indicated only by color, which fails WCAG 1.4.1."
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "evaluation": "fail",
+                "reasoning": "After invalid input, the only error cue is a red border on the input. There is no programmatic association between any error message and the field, nor are semantic attributes like aria-invalid present. The error is indicated only by color, which fails WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "openai/gpt-4.1-mini-2025-04-14",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail",
+                "evaluation": "fail",
+                "reasoning": "The field shows a red border after invalid input, but no aria-invalid attribute or aria-describedby linking an error message was detected. The error message appears in a separate error display area not programmatically associated with the input. The error cue relies primarily on color and unlinked messages, failing WCAG 1.4.1."
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "evaluation": "fail",
+                "reasoning": "The field shows a red border after invalid input, but no aria-invalid attribute or aria-describedby linking an error message was detected. The error message appears in a separate error display area not programmatically associated with the input. The error cue relies primarily on color and unlinked messages, failing WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail",
+                "evaluation": "fail",
+                "reasoning": "Only a red border was applied after invalid input; no aria-invalid, no aria-describedby, and no error text. Error is conveyed by color alone."
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "evaluation": "fail",
+                "reasoning": "Only a red border was applied after invalid input; no aria-invalid, no aria-describedby, and no error text. Error is conveyed by color alone."
+            },
+            {
+                "identification": "País de residência",
+                "evaluation": "inapplicable",
+                "reasoning": "No error state was triggered for this field."
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve. (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error state was triggered for this field."
+            }
+        ]
+    }
+]
