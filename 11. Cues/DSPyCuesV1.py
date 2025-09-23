@@ -6,7 +6,7 @@ from dspy.evaluate.evaluate import Evaluate
 counter = 0  # Initialize the global counter
 
 # Set up the API key
-os.environ["MISTRAL_API_KEY"] = "vZYsFYM6r2E9JWyD3GYPdLfR34kI2EcO"
+os.environ["MISTRAL_API_KEY"] = ""
 
 # Configure DSPy with the model and retriever
 mini = dspy.LM('mistral/mistral-large-latest')
