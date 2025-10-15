@@ -1,0 +1,272 @@
+[
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "The error message 'This is not a valid Name' is vague and does not provide guidance on what constitutes a valid name or how to correct the input."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" clearly explains the problem and suggests how to fix it by including an '@' symbol."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The error message 'Subject should be minimum of 6 characters' clearly explains the problem and provides guidance on how to correct the input by specifying the minimum character requirement."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "fail",
+                "reasoning": "The error message 'Message should be minimum of 30 characters' is clear and provides guidance on how to correct the input by specifying the minimum character requirement. However, the lack of a label for this field is a usability issue, as it does not meet WCAG 3.3.2 guidelines for labels or instructions."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "The error message 'This is not a valid Name' is vague and does not provide guidance on what constitutes a valid name or how to correct the input."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error message \"Please include an '@' in the email address. 'user.com' is missing an '@'\" clearly explains the problem and suggests how to fix it, aligning with WCAG 3.3.3."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The error message 'Subject should be minimum of 6 characters' clearly explains the problem and provides a specific requirement to correct the input."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "pass",
+                "reasoning": "The error message 'Message should be minimum of 30 characters' is clear and provides specific guidance on how to correct the input. However, the lack of a label for the field is a separate issue related to WCAG 3.3.2."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "The input '12345' was submitted, but the error message 'This is not a valid Name' is vague and does not provide guidance on what constitutes a valid name."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered an error message: \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" This message clearly explains the problem and how to fix it."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The input '!' triggered an error message: 'Subject should be minimum of 6 characters.' This message clearly explains the problem and how to fix it."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "pass",
+                "reasoning": "The input '!' triggered an error message: 'Message should be minimum of 30 characters.' This message clearly explains the problem and how to fix it."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "The error message 'This is not a valid Name' is vague and does not provide guidance on what constitutes a valid name. It fails to help the user correct their input."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error message \"Please include an '@' in the email address. 'user.com' is missing an '@'\" clearly explains the problem and suggests how to fix it, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The error message 'Subject should be minimum of 6 characters' clearly explains the problem and provides a suggestion for correction, helping the user understand how to fix their input."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "pass",
+                "reasoning": "The error message 'Message should be minimum of 30 characters' is clear and provides guidance on how to correct the input. However, the lack of a label for the field is a separate issue related to WCAG 3.3.2."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "The error message 'This is not a valid Name' is vague and does not provide guidance on what constitutes a valid name or how to correct the input."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error message \"Please include an '@' in the email address. 'user.com' is missing an '@'\" clearly explains the problem and how to fix it, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The error message 'Subject should be minimum of 6 characters' clearly explains the problem and how to fix it, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "pass",
+                "reasoning": "The error message 'Message should be minimum of 30 characters' clearly explains the problem and how to fix it, aligning with WCAG 3.3.3 guidelines."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "The error message 'This is not a valid Name' is vague and does not provide guidance on what constitutes a valid name or how to correct the input."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error message \"Please include an '@' in the email address. 'user.com' is missing an '@'\" clearly explains the problem and how to fix it, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The error message 'Subject should be minimum of 6 characters' clearly explains the problem and how to fix it, providing specific guidance on the minimum character requirement."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "pass",
+                "reasoning": "The error message 'Message should be minimum of 30 characters' clearly explains the problem and how to fix it, providing specific guidance on the minimum character requirement."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "The error message 'This is not a valid Name' is vague and does not provide guidance on what constitutes a valid name or how to correct the input."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error message \"Please include an '@' in the email address. 'user.com' is missing an '@'\" clearly explains the problem and how to fix it, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The error message 'Subject should be minimum of 6 characters' clearly explains the problem and how to fix it, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "pass",
+                "reasoning": "The error message 'Message should be minimum of 30 characters' is clear and provides guidance on how to correct the input, but the lack of a label for the field is a separate issue related to WCAG 3.3.2."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "The error message 'This is not a valid Name' is vague and does not provide guidance on what constitutes a valid name or how to correct the input."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error message \"Please include an '@' in the email address. 'user.com' is missing an '@'\" clearly explains the problem and how to fix it, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The error message 'Subject should be minimum of 6 characters' clearly explains the problem and how to fix it, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "fail",
+                "reasoning": "The error message 'Message should be minimum of 30 characters' is clear, but the lack of a label makes it difficult to associate the message with the field, which is a failure of WCAG 3.3.2."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "The error message 'This is not a valid Name' is vague and does not provide guidance on what constitutes a valid name or how to correct the input."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error message \"Please include an '@' in the email address. 'user.com' is missing an '@'\" clearly explains the problem and how to fix it, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The error message 'Subject should be minimum of 6 characters' clearly explains the problem and how to fix it, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "pass",
+                "reasoning": "The error message 'Message should be minimum of 30 characters' clearly explains the problem and how to fix it, aligning with WCAG 3.3.3 guidelines."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "The error message 'This is not a valid Name' is vague and does not provide guidance on what constitutes a valid name. It fails to help the user correct their input."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error message \"Please include an '@' in the email address. 'user.com' is missing an '@'\" clearly explains the problem and how to fix it, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The error message 'Subject should be minimum of 6 characters' clearly explains the problem and how to fix it, providing clear guidance to the user."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "pass",
+                "reasoning": "The error message 'Message should be minimum of 30 characters' clearly explains the problem and how to fix it, providing clear guidance to the user."
+            }
+        ]
+    }
+]

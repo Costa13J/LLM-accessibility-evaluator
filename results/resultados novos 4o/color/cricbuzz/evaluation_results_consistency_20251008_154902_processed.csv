@@ -1,0 +1,7 @@
+URL,Model,Field,Runs,Most common,Consistency ratio,Benchmark,absent_count,inapplicable_count,pass_count,field_accuracy,is_consistent
+cricbuzz,gpt-4,Name,10,pass,1.0,pass,0,0,10,1.0,True
+cricbuzz,gpt-4,Email,10,pass,1.0,pass,0,0,10,1.0,True
+cricbuzz,gpt-4,Subject,10,pass,1.0,pass,0,0,10,1.0,True
+cricbuzz,gpt-4,No Label,10,pass,1.0,pass,0,0,10,1.0,True
+cricbuzz,gpt-4,"Upload Screenshot (jpg,png,gif,bmp) (file)",10,absent,0.9,inapplicable,9,1,0,0.1,False
+cricbuzz,gpt-4,Message,10,absent,1.0,pass,10,0,0,0.0,True

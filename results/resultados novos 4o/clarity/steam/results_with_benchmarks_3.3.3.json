@@ -1,0 +1,452 @@
+[
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The input \"<script>alert('test')</script>\" did not trigger any validation error or message. This field is not expected to have validation for such input, as it is a search field and not a form field requiring specific input formats. Therefore, no error message is necessary.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The input 'user.com' is invalid for an email field, but the only feedback was a style change (border color) without a specific error message. According to WCAG 3.3.1, an error message should be displayed to inform the user of the invalid email format and suggest a correction.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '123 Fake St. @@@' did not trigger any validation error or message. This field is not expected to have specific validation for address format, so no error message is necessary.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.  (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence (select)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The input \"<script>alert('test')</script>\" did not trigger any validation error or message. This field is not expected to validate script tags, as it is a search field and not a form input requiring specific data types. Therefore, no error message is necessary.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The input 'user.com' is not a valid email format, but no specific error message was provided. The only mutation was a style change indicating an error, but without a clear message, the user is not informed of the specific issue or how to correct it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '123 Fake St. @@@' did not trigger any validation error or message. This field does not have specific validation requirements, so no error message is necessary.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.  (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence (select)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The input \"<script>alert('test')</script>\" did not trigger any validation error or message. This field is not expected to validate script tags as it is a search field, not a form input requiring specific data types. Therefore, no error message is necessary or expected.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The input 'user.com' is not a valid email format, but no specific error message was provided. The only mutation was a style change indicating an error, but without a clear message, the user is not informed of the specific issue or how to correct it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '123 Fake St. @@@' did not trigger any validation error or message. This field does not have specific validation requirements, so no error message is necessary or expected.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.  (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence (select)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The input \"<script>alert('test')</script>\" did not trigger any validation error or message. This field is not expected to validate script tags as it is a search field, not a form input requiring specific data types. Therefore, no error message is necessary.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The input 'user.com' is an invalid email format, but no specific error message was shown. The only mutation was a style change indicating an error, but without a descriptive message, the user is not informed of the specific issue or how to correct it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '123 Fake St. @@@' did not trigger any validation error or message. This field does not have specific validation requirements, so no error message is necessary.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.  (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence (select)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The input \"<script>alert('test')</script>\" did not trigger any validation error or message. This field is not expected to validate script tags, as it is a search field and not a form input requiring specific data types. Therefore, no error message is necessary.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The input 'user.com' is invalid for an email field, but no specific error message was shown. The only mutation was a style change indicating an error, but without a descriptive message. According to WCAG 3.3.1, email fields should display error messages when input is invalid, and the message should guide the user to correct the input.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '123 Fake St. @@@' did not trigger any validation error or message. This field does not have specific validation requirements, and the input, while unusual, is not necessarily invalid. Therefore, no error message is necessary.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.  (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence (select)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The input \"<script>alert('test')</script>\" did not trigger any validation error or message. This field is not expected to validate script tags, as it is a search field and not a form input requiring specific data types. Therefore, no error message is necessary.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The input 'user.com' is not a valid email format, but no specific error message was shown. The only mutation was a style change indicating an error, but without a clear message, the user is not informed of the specific issue or how to correct it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '123 Fake St. @@@' did not trigger any validation error or message. This field does not have specific validation requirements, so no error message is necessary.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.  (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence (select)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The input \"<script>alert('test')</script>\" did not trigger any validation error or message. This field is not expected to validate script tags, as it is a search field and not a form input requiring specific data types.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The input 'user.com' did not trigger a specific error message, but the border style changed to indicate an error. However, no message was provided to guide the user on how to correct the input, which is necessary for WCAG 3.3.1 compliance.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '123 Fake St. @@@' did not trigger any validation error or message. This field is not expected to validate address formats, as it is a text input without specific constraints.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.  (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence (select)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The input \"<script>alert('test')</script>\" did not trigger any validation error or message. This field is not required and does not have specific validation constraints, so no error message is expected or necessary.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The input 'user.com' is not a valid email format. The mutation indicates a style change to the input field, suggesting a validation error was detected, but no specific error message was provided. According to WCAG 3.3.1, a clear error message should be displayed to guide the user in correcting the input.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '123 Fake St. @@@' did not trigger any validation error or message. This field is not required and does not have specific validation constraints, so no error message is expected or necessary.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.  (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence (select)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The input \"<script>alert('test')</script>\" did not trigger any validation error or message. This field is not expected to validate script tags, as it is a search field and not a form input requiring specific data types.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The input 'user.com' is invalid for an email field, but no specific error message was shown. The only mutation was a style change indicating an error, but without a descriptive message, it does not help the user correct the input.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '123 Fake St. @@@' did not trigger any validation error or message. This field does not have specific validation requirements, so no error message is expected.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.  (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence (select)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The input \"<script>alert('test')</script>\" did not trigger a validation error or message. This field is not expected to validate script tags, as it is a search field, not a form input requiring specific data types. Therefore, no error message is necessary.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The input 'user.com' is not a valid email format. The mutation indicates a style change to the input field, suggesting an error was detected, but no specific error message was provided. According to WCAG 3.3.1, a clear error message should be displayed to guide the user in correcting the input.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '123 Fake St. @@@' did not trigger a validation error or message. This field does not have specific validation requirements, so no error message is necessary.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.  (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence (select)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

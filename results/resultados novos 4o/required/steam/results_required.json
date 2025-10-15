@@ -1,0 +1,262 @@
+[
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail",
+                "evaluation": "fail",
+                "reasoning": "The field is visually indicated as required through styling changes after submission, but it lacks the 'required' attribute."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The field does not have a 'required' attribute, yet it triggers a validation error, indicating it is treated as required. The lack of a 'required' attribute or equivalent semantic indicator is a failure."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "fail",
+                "reasoning": "The field is not marked with the 'required' attribute, yet it triggers validation feedback, indicating it is treated as required. This suggests a failure to use the 'required' attribute appropriately."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The field is not marked with the 'required' attribute, yet it triggers validation feedback, indicating it is treated as required. This suggests a failure to use the 'required' attribute appropriately."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The field is not marked with the 'required' attribute, yet it triggers validation feedback, indicating it is treated as required. This suggests a failure to use the 'required' attribute appropriately."
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "fail",
+                "reasoning": "The field is not marked with the 'required' attribute, yet it triggers validation feedback, indicating it is treated as required. This suggests a failure to use the 'required' attribute appropriately."
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "fail",
+                "reasoning": "The field is not marked with the 'required' attribute, yet it triggers validation feedback, indicating it is treated as required. This suggests a failure to use the 'required' attribute appropriately."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute and no validation feedback is triggered, indicating it is optional."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The field does not have a required attribute but triggers a validation style change, indicating it is treated as required without proper semantic indication."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The field does not have a required attribute but triggers a validation style change, indicating it is treated as required without proper semantic indication."
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have a required attribute and no validation feedback is triggered, indicating it is optional."
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "fail",
+                "reasoning": "The checkbox does not have a required attribute but triggers a validation style change, indicating it is treated as required without proper semantic indication."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "fail",
+                "reasoning": "The field is not marked with the 'required' attribute, yet it triggers validation feedback, indicating it is treated as required. This suggests a mismatch between the form's behavior and its semantic markup."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The field is not marked with the 'required' attribute, yet it triggers validation feedback, indicating it is treated as required. This suggests a mismatch between the form's behavior and its semantic markup."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The field is not marked with the 'required' attribute, yet it triggers validation feedback, indicating it is treated as required. This suggests a mismatch between the form's behavior and its semantic markup."
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "fail",
+                "reasoning": "The field is not marked with the 'required' attribute, yet it triggers validation feedback, indicating it is treated as required. This suggests a mismatch between the form's behavior and its semantic markup."
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "fail",
+                "reasoning": "The field is not marked with the 'required' attribute, yet it triggers validation feedback, indicating it is treated as required. This suggests a mismatch between the form's behavior and its semantic markup."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "fail",
+                "reasoning": "The field is required based on the observed validation behavior, but it lacks the 'required' attribute or an equivalent semantic indicator."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The field is required based on the observed validation behavior, but it lacks the 'required' attribute or an equivalent semantic indicator."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The field is required based on the observed validation behavior, but it lacks the 'required' attribute or an equivalent semantic indicator."
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "fail",
+                "reasoning": "The field is required based on the observed validation behavior, but it lacks the 'required' attribute or an equivalent semantic indicator."
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "fail",
+                "reasoning": "The field is required based on the observed validation behavior, but it lacks the 'required' attribute or an equivalent semantic indicator."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not treated as required, as no validation feedback is triggered."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "fail",
+                "reasoning": "The field is required based on the observed validation behavior, but it lacks the 'required' attribute or any equivalent semantic indicator. The error messages are not programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The field is required based on the observed validation behavior, but it lacks the 'required' attribute or any equivalent semantic indicator. The error messages are not programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The field is required based on the observed validation behavior, but it lacks the 'required' attribute or any equivalent semantic indicator. The error messages are not programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "fail",
+                "reasoning": "The field is required based on the observed validation behavior, but it lacks the 'required' attribute or any equivalent semantic indicator. The error messages are not programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "fail",
+                "reasoning": "The field is required based on the observed validation behavior, but it lacks the 'required' attribute or any equivalent semantic indicator. The error messages are not programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "fail",
+                "reasoning": "The field is not marked with the 'required' attribute, yet it triggers validation feedback, indicating it is treated as required. This inconsistency suggests a failure in using the 'required' attribute appropriately."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The field is not marked with the 'required' attribute, yet it triggers validation feedback, indicating it is treated as required. This inconsistency suggests a failure in using the 'required' attribute appropriately."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The field is not marked with the 'required' attribute, yet it triggers validation feedback, indicating it is treated as required. This inconsistency suggests a failure in using the 'required' attribute appropriately."
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "fail",
+                "reasoning": "The field is not marked with the 'required' attribute, yet it triggers validation feedback, indicating it is treated as required. This inconsistency suggests a failure in using the 'required' attribute appropriately."
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "fail",
+                "reasoning": "The field is not marked with the 'required' attribute, yet it triggers validation feedback, indicating it is treated as required. This inconsistency suggests a failure in using the 'required' attribute appropriately."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not have any indication of being required and no validation feedback is triggered, indicating it is optional."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The field shows a validation style change, suggesting it is treated as required, but it lacks the 'required' attribute."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The field shows a validation style change, indicating it is treated as required, but it lacks the 'required' attribute."
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "The field does not show any validation feedback, indicating it is optional."
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy",
+                "evaluation": "fail",
+                "reasoning": "The checkbox shows a validation style change, suggesting it is treated as required, but it lacks the 'required' attribute."
+            }
+        ]
+    }
+]

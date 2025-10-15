@@ -1,0 +1,277 @@
+[
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "An error message 'This is not a valid Name.' is displayed, providing textual feedback beyond color. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Please include an '@' in the email address. 'user.com' is missing an '@'.' is displayed, providing textual feedback beyond color. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Subject should be minimum of 6 characters.' is displayed, providing textual feedback beyond color. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Message should be minimum of 30 characters.' is displayed, providing textual feedback beyond color. This passes WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "For the Name field, an error message 'This is not a valid Name.' is displayed, providing textual feedback. The error is not conveyed by color alone, passing WCAG 1.4.1."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "For the Email field, an error message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" is displayed, providing textual feedback. The error is not conveyed by color alone, passing WCAG 1.4.1."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "For the Subject field, an error message 'Subject should be minimum of 6 characters.' is displayed, providing textual feedback. The error is not conveyed by color alone, passing WCAG 1.4.1."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "pass",
+                "reasoning": "For the No Label field, an error message 'Message should be minimum of 30 characters.' is displayed, providing textual feedback. The error is not conveyed by color alone, passing WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "An error message 'This is not a valid Name.' is displayed, but it is not programmatically associated with the input field. The error is not conveyed by color alone, but the lack of programmatic association is noted."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" is displayed. This message is not programmatically associated with the input field, but the error is not conveyed by color alone."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Subject should be minimum of 6 characters.' is displayed, but it is not programmatically associated with the input field. The error is not conveyed by color alone, but the lack of programmatic association is noted."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Message should be minimum of 30 characters.' is displayed, but it is not programmatically associated with the input field. The error is not conveyed by color alone, but the lack of programmatic association is noted."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "For the Name field, an error message 'This is not a valid Name.' is displayed, providing textual feedback beyond color. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "For the Email field, an error message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" is displayed, providing textual feedback beyond color. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "For the Subject field, an error message 'Subject should be minimum of 6 characters.' is displayed, providing textual feedback beyond color. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "pass",
+                "reasoning": "For the No Label field, an error message 'Message should be minimum of 30 characters.' is displayed, providing textual feedback beyond color. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "file",
+                "evaluation": "inapplicable",
+                "reasoning": "The file input field was not tested with invalid input, so it is inapplicable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "For the Name field, an error message 'This is not a valid Name.' is displayed, providing textual feedback beyond color. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "For the Email field, an error message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" is displayed, providing textual feedback beyond color. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "For the Subject field, an error message 'Subject should be minimum of 6 characters.' is displayed, providing textual feedback beyond color. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "pass",
+                "reasoning": "For the No Label field, an error message 'Message should be minimum of 30 characters.' is displayed, providing textual feedback beyond color. This passes WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "An error message 'This is not a valid Name.' is displayed, but it is not programmatically associated with the field. The error is not conveyed by color alone, but the lack of programmatic association is noted."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" is displayed. The error is not conveyed by color alone, but the lack of programmatic association is noted."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Subject should be minimum of 6 characters.' is displayed, but it is not programmatically associated with the field. The error is not conveyed by color alone, but the lack of programmatic association is noted."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Message should be minimum of 30 characters.' is displayed, but it is not programmatically associated with the field. The error is not conveyed by color alone, but the lack of programmatic association is noted."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "An error message 'This is not a valid Name.' is displayed, providing textual feedback beyond color. This passes WCAG 1.4.1 as the error is not indicated by color alone."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Please include an '@' in the email address. 'user.com' is missing an '@'.' is displayed, providing textual feedback beyond color. This passes WCAG 1.4.1 as the error is not indicated by color alone."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Subject should be minimum of 6 characters.' is displayed, providing textual feedback beyond color. This passes WCAG 1.4.1 as the error is not indicated by color alone."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Message should be minimum of 30 characters.' is displayed, providing textual feedback beyond color. This passes WCAG 1.4.1 as the error is not indicated by color alone."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "An error message 'This is not a valid Name.' is displayed, but it is not programmatically associated with the input field. The error is not conveyed by color alone, but the lack of programmatic association is noted."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" is displayed. This message is not programmatically associated with the input field, but the error is not conveyed by color alone."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Subject should be minimum of 6 characters.' is displayed. This message is not programmatically associated with the input field, but the error is not conveyed by color alone."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Message should be minimum of 30 characters.' is displayed. This message is not programmatically associated with the input field, but the error is not conveyed by color alone."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "An error message 'This is not a valid Name.' is displayed, providing textual feedback beyond color."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" is displayed, providing textual feedback."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The error message 'Subject should be minimum of 6 characters.' is displayed, providing textual feedback."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "pass",
+                "reasoning": "The error message 'Message should be minimum of 30 characters.' is displayed, providing textual feedback."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "For the \"Name\" field, an error message 'This is not a valid Name.' is displayed, providing textual feedback. This ensures the error is not conveyed by color alone, passing WCAG 1.4.1."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "For the \"Email\" field, an error message 'Please include an '@' in the email address. 'user.com' is missing an '@'.' is displayed, providing textual feedback. This ensures the error is not conveyed by color alone, passing WCAG 1.4.1."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "For the \"Subject\" field, an error message 'Subject should be minimum of 6 characters.' is displayed, providing textual feedback. This ensures the error is not conveyed by color alone, passing WCAG 1.4.1."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "pass",
+                "reasoning": "For the \"No Label\" field, an error message 'Message should be minimum of 30 characters.' is displayed, providing textual feedback. This ensures the error is not conveyed by color alone, passing WCAG 1.4.1."
+            }
+        ]
+    }
+]

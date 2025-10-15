@@ -1,0 +1,2 @@
+model,issue,n_pages,n_fields_total,mean_accuracy,std_dev,consistency_rate
+gpt-5,required,10,69,0.983050847,0.1290809,0.971014493

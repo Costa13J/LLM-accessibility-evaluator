@@ -1,0 +1,167 @@
+[
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "The field triggers a validation error message indicating it is required, but it lacks the 'required' attribute."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "There is no indication of a validation error or required status, and it lacks the 'required' attribute."
+            },
+            {
+                "identification": "Please select a subject",
+                "evaluation": "fail",
+                "reasoning": "The field triggers a validation error message indicating it is required, but it lacks the 'required' attribute."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "The field triggers a validation error message indicating it is required, but it lacks the 'required' attribute."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address (text)",
+                "evaluation": "fail",
+                "reasoning": "The email address field triggers a validation error message when left empty, indicating it is required, but it lacks the 'required' attribute or equivalent semantic indicator."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "The select field triggers a validation error message when no option is selected, indicating it is required, but it lacks the 'required' attribute or equivalent semantic indicator."
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "fail",
+                "reasoning": "The checkbox field triggers a validation error message when no option is selected, indicating it is required, but it lacks the 'required' attribute or equivalent semantic indicator."
+            },
+            {
+                "identification": "Message (textarea)",
+                "evaluation": "fail",
+                "reasoning": "The textarea field triggers a validation error message when left empty, indicating it is required, but it lacks the 'required' attribute or equivalent semantic indicator."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address (text)",
+                "evaluation": "fail",
+                "reasoning": "The field is required based on the error message shown after submission, but it lacks the 'required' attribute or any equivalent semantic indicator."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address (text)",
+                "evaluation": "fail",
+                "reasoning": "The field is required as indicated by the error message, but it lacks a 'required' attribute or equivalent semantic indicator."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "The field is required as indicated by the error message, but it lacks a 'required' attribute or equivalent semantic indicator."
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "fail",
+                "reasoning": "The field is required as indicated by the error message, but it lacks a 'required' attribute or equivalent semantic indicator."
+            },
+            {
+                "identification": "Message (textarea)",
+                "evaluation": "fail",
+                "reasoning": "The field is required as indicated by the error message, but it lacks a 'required' attribute or equivalent semantic indicator."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address (text)",
+                "evaluation": "fail",
+                "reasoning": "The field is required based on the error message shown after submission, but it lacks the 'required' attribute or any equivalent semantic indicator."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address (text)",
+                "evaluation": "fail",
+                "reasoning": "The field is required based on the error message shown after submission, but it lacks the 'required' attribute or an equivalent semantic indicator."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address (text)",
+                "evaluation": "fail",
+                "reasoning": "The field is required based on the error message shown after submission, but it lacks the 'required' attribute or an equivalent semantic indicator."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "The field is required based on the error message triggered when left empty, but it lacks the 'required' attribute or any equivalent semantic indicator."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address (text)",
+                "evaluation": "fail",
+                "reasoning": "The field is required based on the error message shown after submission, but it lacks the 'required' attribute or an equivalent semantic indicator."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address (text)",
+                "evaluation": "fail",
+                "reasoning": "The field is required based on the error message shown after submission, but it lacks the 'required' attribute or an equivalent semantic indicator."
+            }
+        ]
+    }
+]

@@ -1,0 +1,5 @@
+URL,Model,Field,Runs,Eval counts,Most common,Consistency ratio,Benchmark
+livescore,gpt-5,Email address,10,10×inapplicable,inapplicable,1,pass
+livescore,gpt-5,Message,10,"10×inapplicable, 1×unknown",inapplicable,1,inapplicable
+livescore,gpt-5,No Label (select) [Subject],10,"7×absent, 3×inapplicable",absent,1,pass
+livescore,gpt-5,Please select a subject (checkbox),3,3×inapplicable,inapplicable,1,n/a

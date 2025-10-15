@@ -1,0 +1,24 @@
+=== Evaluation Report ===
+Model: openai/gpt-5
+True Positives: 5
+True Negatives: 13
+False Positives: 2
+False Negatives: 2
+Accuracy: 0.818
+Precision: 0.714
+Recall: 0.714
+F1-score: 0.714
+Coverage: 22/50 (44.0%)
+Total samples used: 22
+Pred counts: {1: 7, 0: 15}
+Gold counts: {1: 7, 0: 15}
+
+=== Most Common Issues ===
+- Missed violation (fail → pass/inapplicable): 2
+- False violation (pass → fail): 2
+
+=== Flagged Cases (examples) ===
+- URL: https://www.ipma.pt/pt/siteinfo/contactar.jsp | Field: * Email: | Benchmark: fail | Eval: pass | Issue: Missed violation (fail → pass/inapplicable)
+- URL: https://www.infinite.media/bible-gateway/ | Field: Website | Benchmark: fail | Eval: pass | Issue: Missed violation (fail → pass/inapplicable)
+- URL: https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62 | Field: Confirma o teu endereço | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)
+- URL: https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel | Field: N° Porta | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)

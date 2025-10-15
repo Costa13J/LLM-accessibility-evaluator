@@ -1,0 +1,23 @@
+=== Evaluation Report ===
+Model: openai/gpt-4.1-2025-04-14
+True Positives: 6
+True Negatives: 15
+False Positives: 1
+False Negatives: 2
+Accuracy: 0.875
+Precision: 0.857
+Recall: 0.750
+F1-score: 0.800
+Coverage: 24/31 (77.4%)
+Total samples used: 24
+Pred counts: {0: 17, 1: 7}
+Gold counts: {0: 16, 1: 8}
+
+=== Most Common Issues ===
+- Missed violation (fail → pass/inapplicable): 2
+- False violation (pass → fail): 1
+
+=== Flagged Cases (examples) ===
+- URL: https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel | Field: Localidade | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)
+- URL: https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62 | Field: País de residência (select) | Benchmark: fail | Eval: inapplicable | Issue: Missed violation (fail → pass/inapplicable)
+- URL: https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62 | Field: Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve. (checkbox) | Benchmark: fail | Eval: inapplicable | Issue: Missed violation (fail → pass/inapplicable)

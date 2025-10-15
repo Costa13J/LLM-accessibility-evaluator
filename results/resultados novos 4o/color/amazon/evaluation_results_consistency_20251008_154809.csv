@@ -1,0 +1,5 @@
+URL,Model,Field,Runs,Eval counts,Most common,Consistency ratio,Benchmark
+amazon,gpt-4,Your name,10,"8×fail, 2×inapplicable",fail,0.8,inapplicable
+amazon,gpt-4,Mobile number or email,10,10×pass,pass,1.0,pass
+amazon,gpt-4,Password,10,10×pass,pass,1.0,pass
+amazon,gpt-4,Re-enter password,10,10×pass,pass,1.0,pass

@@ -1,0 +1,6 @@
+URL,Model,Field,Runs,Most common,Consistency ratio,Benchmark,absent_count,inapplicable_count,pass_count,field_accuracy,is_consistent
+zomato,gpt-5,Please enter phone number,10,pass,1.0,pass,0,0,10,1.0,True
+zomato,gpt-5,Please enter name,10,inapplicable,1.0,inapplicable,0,10,0,1.0,True
+zomato,gpt-5,I hereby consent to receiving communications from Zomato for any relevant opportunities.,10,absent,0.9,inapplicable,9,1,0,0.1,False
+zomato,gpt-5,Select city,10,absent,0.9,inapplicable,9,1,0,0.1,False
+zomato,gpt-5,Filter By City,1,inapplicable,1.0,,0,1,0,,True

@@ -1,0 +1,12 @@
+Model,URL,True Positives,True Negatives,False Positives,False Negatives,Accuracy,Precision,Recall,F1-score,Coverage,Total samples used,Run ID
+gpt-5,pexels,4,0,0,0,1,1,1,1,4/4 (100.0%),4,1
+gpt-5,pexels,4,0,0,0,1,1,1,1,4/4 (100.0%),4,2
+gpt-5,pexels,4,0,0,0,1,1,1,1,4/4 (100.0%),4,3
+gpt-5,pexels,4,0,0,0,1,1,1,1,4/4 (100.0%),4,4
+gpt-5,pexels,4,0,0,0,1,1,1,1,4/4 (100.0%),4,5
+gpt-5,pexels,4,0,0,0,1,1,1,1,4/4 (100.0%),4,6
+gpt-5,pexels,4,0,0,0,1,1,1,1,4/4 (100.0%),4,7
+gpt-5,pexels,4,0,0,0,1,1,1,1,4/4 (100.0%),4,8
+gpt-5,pexels,4,0,0,0,1,1,1,1,4/4 (100.0%),4,9
+gpt-5,pexels,4,0,0,0,1,1,1,1,4/4 (100.0%),4,10
+ALL,ALL,40,0,0,0,1,1,1,1,N/A,40,TOTAL

@@ -1,0 +1,28 @@
+=== Evaluation Report ===
+Model: openai/gpt-5
+True Positives: 16
+True Negatives: 7
+False Positives: 7
+False Negatives: 1
+Accuracy: 0.742
+Precision: 0.696
+Recall: 0.941
+F1-score: 0.800
+Coverage: 31/77 (40.3%)
+Total samples used: 31
+Pred counts: {1: 31, 0: 8}
+Gold counts: {1: 25, 0: 14}
+
+=== Most Common Issues ===
+- False violation (pass → fail): 7
+- Missed violation (fail → pass/inapplicable): 1
+
+=== Flagged Cases (examples) ===
+- URL: https://www.cricbuzz.com/info/contact | Field: Name | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)
+- URL: https://www.cricbuzz.com/info/contact | Field: Email | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)
+- URL: https://www.cricbuzz.com/info/contact | Field: Subject | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)
+- URL: https://www.cricbuzz.com/info/contact | Field: No Label (textarea) | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)
+- URL: https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta | Field: Email * | Benchmark: fail | Eval: inapplicable | Issue: Missed violation (fail → pass/inapplicable)
+- URL: https://www.infinite.media/bible-gateway/ | Field: First Name | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)
+- URL: https://www.infinite.media/bible-gateway/ | Field: Last Name | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)
+- URL: https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0 | Field: Password | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)

@@ -1,0 +1,6 @@
+URL,Model,Field,Runs,Eval counts,Most common,Consistency ratio,Benchmark
+infinite,gpt-5,First Name,10,"9×pass, 1×inapplicable",pass,0.9,pass
+infinite,gpt-5,Last Name,10,"9×pass, 1×inapplicable",pass,0.9,pass
+infinite,gpt-5,Email(required),10,"9×pass, 1×inapplicable",pass,0.9,pass
+infinite,gpt-5,Organization(required),10,10×inapplicable,inapplicable,1.0,inapplicable
+infinite,gpt-5,Website,10,"9×pass, 1×inapplicable",pass,0.9,inapplicable

@@ -1,0 +1,12 @@
+URL,Model,Field,Runs,Eval counts,Most common,Consistency ratio,Benchmark
+uh.edu,gpt-5,Search Field (1),10,10×inapplicable,inapplicable,1,inapplicable
+uh.edu,gpt-5,Search Field (2),10,10×inapplicable,inapplicable,1,inapplicable
+uh.edu,gpt-5,First Name*,10,10×fail,fail,1,fail
+uh.edu,gpt-5,Last Name*,10,10×fail,fail,1,fail
+uh.edu,gpt-5,Month,10,10×fail,fail,1,fail
+uh.edu,gpt-5,Day,10,10×fail,fail,1,fail
+uh.edu,gpt-5,Year,10,10×fail,fail,1,fail
+uh.edu,gpt-5,Email Address*,10,10×fail,fail,1,fail
+uh.edu,gpt-5,Mobile Phone Number*,10,10×fail,fail,1,fail
+uh.edu,gpt-5,You plan to enroll as a:*,10,10×fail,fail,1,fail
+uh.edu,gpt-5,When would you like to start classes at UH?*,10,10×fail,fail,1,fail

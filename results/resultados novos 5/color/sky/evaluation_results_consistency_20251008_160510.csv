@@ -1,0 +1,15 @@
+URL,Model,Field,Runs,Eval counts,Most common,Consistency ratio,Benchmark
+adsmartfromsky,gpt-5,Your first name,10,10×inapplicable,inapplicable,1,inapplicable
+adsmartfromsky,gpt-5,Your surname,10,10×inapplicable,inapplicable,1,inapplicable
+adsmartfromsky,gpt-5,Company name,10,10×inapplicable,inapplicable,1,inapplicable
+adsmartfromsky,gpt-5,Location,10,10×inapplicable,inapplicable,1,inapplicable
+adsmartfromsky,gpt-5,Telephone,10,10×pass,pass,1,pass
+adsmartfromsky,gpt-5,Email (email),10,10×pass,pass,1,pass
+adsmartfromsky,gpt-5,Phone (radio),10,10×pass,pass,1,pass
+adsmartfromsky,gpt-5,Email (radio),10,"8×pass, 2×absent",pass,0.8,pass
+adsmartfromsky,gpt-5,Agency (radio),10,10×pass,pass,1,pass
+adsmartfromsky,gpt-5,Direct advertiser (radio),10,10×pass,pass,1,pass
+adsmartfromsky,gpt-5,Other (radio),10,10×pass,pass,1,pass
+adsmartfromsky,gpt-5,Any comments regarding AdSmart or your business?,10,"9×inapplicable, 1×pass",inapplicable,0.9,inapplicable
+adsmartfromsky,gpt-5,AdSmart from Sky updates (checkbox),10,10×absent,absent,1,inapplicable
+adsmartfromsky,gpt-5,How did you hear about AdSmart? (select),10,10×absent,absent,1,pass

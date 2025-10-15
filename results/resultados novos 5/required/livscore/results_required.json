@@ -1,0 +1,272 @@
+[
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address (text)",
+                "evaluation": "fail",
+                "reasoning": "The field behaves as required (error shown) but lacks the 'required' or 'aria-required' attribute."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "The field behaves as required (error shown) but lacks the 'required' or 'aria-required' attribute."
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "No required behavior observed after submission and no 'required' or 'aria-required' attribute, indicating the field is optional."
+            },
+            {
+                "identification": "Message (textarea)",
+                "evaluation": "fail",
+                "reasoning": "The field behaves as required (error shown) but lacks the 'required' or 'aria-required' attribute."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "The field behaves as required after submission but lacks the required or aria-required attribute."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "The select behaves as required after submission but lacks the required or aria-required attribute."
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "No required behavior was detected on submit, indicating this checkbox is optional."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "The textarea behaves as required after submission but lacks the required or aria-required attribute."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address (text)",
+                "evaluation": "fail",
+                "reasoning": "An error appears after submission indicating the field is required, but it lacks a required or aria-required attribute."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "An error appears after submission (“Please select a subject from the dropdown”), indicating the field is required, but it lacks a required or aria-required attribute."
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "No required behavior occurs after submission and no required/aria-required attribute is present, so the field is optional."
+            },
+            {
+                "identification": "Message (textarea)",
+                "evaluation": "fail",
+                "reasoning": "An error appears after submission indicating the field is required, but it lacks a required or aria-required attribute."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address (text)",
+                "evaluation": "fail",
+                "reasoning": "Treated as required after submission (error shown) but lacks a required attribute or aria-required."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "Treated as required after submission (error shown) but lacks a required attribute or aria-required."
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "No required behavior observed after submission, so it is optional."
+            },
+            {
+                "identification": "Message (textarea)",
+                "evaluation": "fail",
+                "reasoning": "Treated as required after submission (error shown) but lacks a required attribute or aria-required."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "Required behavior is shown after submission, but the field has no required or aria-required attribute."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "Required behavior is shown after submission, but the field has no required or aria-required attribute."
+            },
+            {
+                "identification": "Please select a subject",
+                "evaluation": "inapplicable",
+                "reasoning": "No required behavior was triggered after submission, so the field is optional."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "Required behavior is shown after submission, but the field has no required or aria-required attribute."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "A required cue appears after submission, but the field lacks required or aria-required, so the required status is not semantically declared."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "Treated as required after submission (“Please select a subject from the dropdown”) but no required or aria-required attribute is present."
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "No required behavior observed and no required attribute; the field is optional."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "Treated as required after submission (“Please enter your message”) but lacks required or aria-required."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address (text)",
+                "evaluation": "fail",
+                "reasoning": "Behaved as required (error shown) but has no required or aria-required attribute."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "Behaved as required (error shown) but has no required or aria-required attribute."
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "No required cues after submission and no required or aria-required attribute."
+            },
+            {
+                "identification": "Message (textarea)",
+                "evaluation": "fail",
+                "reasoning": "Behaved as required (error shown) but has no required or aria-required attribute."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "The field shows a required error after submission but lacks the required or aria-required attribute."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "The select behaves as required (error displayed), but it does not have the required or aria-required attribute."
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "No required behavior is indicated after submission, so the checkbox appears optional and does not need a required attribute."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "The textarea behaves as required (error displayed), but it lacks the required or aria-required attribute."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "The field behaved as required after submission (error shown) but lacks a required or aria-required attribute."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "An error indicated the field is required (“Please select a subject”), yet no required or aria-required attribute is present."
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "No post-submit required cues were detected, so the field is treated as optional and does not need a required attribute."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "The field behaved as required after submission (error shown) but lacks a required or aria-required attribute."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "Required behavior is shown via an error on submit, but the field lacks the required or aria-required attribute."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "The field behaves as required (error shown) but does not include required or aria-required."
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "No required behavior is indicated; the field appears optional and does not need a required attribute."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "The field behaves as required (error shown) but lacks the required or aria-required attribute."
+            }
+        ]
+    }
+]

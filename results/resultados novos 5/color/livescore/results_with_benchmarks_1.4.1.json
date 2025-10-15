@@ -1,0 +1,329 @@
+[
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (color, icon, text, or ARIA) appeared after invalid input; no error was triggered, so this is inapplicable for WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (color, icon, text, or ARIA) appeared after invalid input; no error was triggered, so this is inapplicable for WCAG 1.4.1.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered for this field after invalid input; there were no color, text, or programmatic indicators.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no validation cues triggered; no color, text, or programmatic indicators.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after invalid input; no text or programmatic indicators and no new color-based error state were detected, so there is no error cue to assess.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field was not submitted with invalid input in this test; per scope, no error cue to assess.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please select a subject",
+                "evaluation": "inapplicable",
+                "reasoning": "This checkbox was not submitted with invalid input in this test; per scope, no error cue to assess.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after invalid input; no text or programmatic indicators and no color-based error state were detected, so there is no error cue to assess.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "inapplicable",
+                "reasoning": "Invalid input produced no color, text, or programmatic error cues (no aria-invalid, no linked message). No error state was triggered, so this is inapplicable for WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "Invalid input produced no color, text, or programmatic error cues (no aria-invalid, no linked message). No error state was triggered, so this is inapplicable for WCAG 1.4.1.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered for this field; the only change was a separate DIV showing a subject-related message not associated with the email input.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (color, text, or programmatic) were triggered after invalid input, so no error state to evaluate.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "inapplicable",
+                "reasoning": "Invalid input caused no error cues (no color change, no aria-invalid, no error text). No error state was triggered, so not applicable.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field was not part of the invalid submissions; therefore, no error cue to evaluate.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please select a subject",
+                "evaluation": "inapplicable",
+                "reasoning": "This field was not part of the invalid submissions; therefore, no error cue to evaluate.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "Invalid input caused no error cues (no color change, no aria-invalid, no error text). No error state was triggered, so not applicable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "inapplicable",
+                "reasoning": "Invalid input was entered, but no error cues (color, text, or aria) appeared. No error state was triggered, so this is inapplicable.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "No invalid input was submitted for this field. A dropdown-related message appeared elsewhere, but not as a result of this field’s invalid submission, so it is inapplicable.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please select a subject",
+                "evaluation": "inapplicable",
+                "reasoning": "No invalid input was submitted and no error cues were triggered, so this is inapplicable.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "Invalid input was entered, but no error cues (color, text, or aria) appeared. No error state was triggered, so this is inapplicable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered for this field after invalid input—no color change, aria-invalid, or error text—so WCAG 1.4.1 is inapplicable.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered for this field after invalid input—no color change, aria-invalid, or error text—so WCAG 1.4.1 is inapplicable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "inapplicable",
+                "reasoning": "Invalid input did not trigger any visual, textual, or programmatic error indicators; no error state occurred, so color-only evaluation is inapplicable.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "Invalid input did not trigger any visual, textual, or programmatic error indicators; no error state occurred, so color-only evaluation is inapplicable.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "inapplicable",
+                "reasoning": "No error indicators were triggered for this input; no color change or programmatic/text message observed, so no error cue to evaluate.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no validation feedback; no color or programmatic/text cues were triggered, so no error cue to evaluate.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

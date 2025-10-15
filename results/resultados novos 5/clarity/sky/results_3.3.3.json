@@ -1,0 +1,637 @@
+[
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'J0hn3' did not trigger validation or an error message, so WCAG 3.3.3 is not applicable."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '12345' did not trigger validation or an error message, so WCAG 3.3.3 is not applicable."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!!!' did not trigger validation or an error message, so WCAG 3.3.3 is not applicable."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'Narnia#@$' did not trigger validation or an error message, so WCAG 3.3.3 is not applicable."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "fail",
+                "reasoning": "Input '12ABCD' triggered a linked error (\"Telephone number seems invalid.\") with aria-invalid=true and aria-describedby. However, the message is vague and does not suggest how to fix the number (e.g., digits only, country code, example), so it does not provide actionable guidance."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "Input 'user.com' triggered a linked error (\"Email address seems invalid.\") with aria-invalid=true and aria-describedby. The message does not explain what is wrong (missing '@') or give a correct format/example, so it lacks actionable guidance."
+            },
+            {
+                "identification": "Preferred Contact Method (Phone/Email)",
+                "evaluation": "pass",
+                "reasoning": "Attempting an invalid value ('Both') resulted in no valid selection and triggered \"Please fill in the required field.\" The message clearly indicates the need to complete the required group (select one option), guiding the user to fix the issue."
+            },
+            {
+                "identification": "Agency/Direct advertiser/Other",
+                "evaluation": "pass",
+                "reasoning": "Invalid option attempts ('Freelancer', 'Reseller', 'Unknown') left the group unselected and triggered \"Please fill in the required field.\" This instructs the user to choose one of the provided options, which is actionable."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '<script>alert(1)</script>' did not trigger validation or an error message, so WCAG 3.3.3 is not applicable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'J0hn3' did not trigger validation; no error message was shown, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '12345' did not trigger validation; no error message was shown, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!!!' did not trigger validation; no error message was shown, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'Narnia#@$' did not trigger validation; no error message was shown, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "fail",
+                "reasoning": "Input '12ABCD' triggered an error: \"Telephone number seems invalid.\" This identifies there is a problem but gives no actionable guidance (e.g., allowed characters or format), so it does not clearly help the user correct the input."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "fail",
+                "reasoning": "Input 'user.com' triggered an error: \"Email address seems invalid.\" The message is vague and does not suggest the fix (e.g., include '@' or example like user@example.com), so it lacks clear corrective guidance."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "fail",
+                "reasoning": "No valid option was selected; message shown was \"Please fill in the required field.\" This is generic and does not tell the user what action to take (e.g., “Select Phone or Email”), providing insufficient guidance."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "fail",
+                "reasoning": "No valid option was selected; message shown was \"Please fill in the required field.\" It does not direct the user to select one of the available options, so guidance is unclear."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "fail",
+                "reasoning": "No valid option was selected; message shown was \"Please fill in the required field.\" It fails to suggest the correction (choose Agency, Direct advertiser, or Other)."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "fail",
+                "reasoning": "No valid option was selected; message shown was \"Please fill in the required field.\" The message is generic and does not instruct the user to select one of the listed options."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "fail",
+                "reasoning": "No valid option was selected; message shown was \"Please fill in the required field.\" This lacks specific corrective action."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '<script>alert(1)</script>' did not trigger validation or an error message; since no error was detected, WCAG 3.3.3 does not apply."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'J0hn3' did not trigger a validation error or message. Since no error was detected, WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '12345' did not trigger a validation error or message. No error detected, so no suggestion required."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!!!' did not trigger a validation error or message. No error detected, so no suggestion required."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'Narnia#@$' did not trigger a validation error or message. No error detected, so no suggestion required."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "fail",
+                "reasoning": "Input '12ABCD' triggered an error (\"Telephone number seems invalid.\") linked to the field. The message identifies a problem but does not explain how to correct it (e.g., digits only, required format), so it is not sufficiently actionable."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "fail",
+                "reasoning": "Input 'user.com' triggered an error (\"Email address seems invalid.\") linked to the field, but it does not state what to change (e.g., include '@' and a domain) or provide an example, offering insufficient guidance."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "pass",
+                "reasoning": "No valid option was selected; the group displayed \"Please fill in the required field.\" This clearly indicates the action needed (select an option), providing actionable guidance."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "pass",
+                "reasoning": "No valid option was selected; the group displayed \"Please fill in the required field.\" This clearly indicates the action needed (select an option), providing actionable guidance."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "pass",
+                "reasoning": "No valid option was selected; the group displayed \"Please fill in the required field.\" This directs the user to choose one of the provided options."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "pass",
+                "reasoning": "No valid option was selected; the group displayed \"Please fill in the required field.\" This directs the user to choose one of the provided options."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "pass",
+                "reasoning": "No valid option was selected; the group displayed \"Please fill in the required field.\" This directs the user to choose one of the provided options."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '<script>alert(1)</script>' did not trigger a validation error or message. Since no error was detected, WCAG 3.3.3 does not apply."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'J0hn3' did not trigger validation; no error message was shown, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '12345' did not trigger validation; no error message was shown, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!!!' did not trigger validation; no error message was shown, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'Narnia#@$' did not trigger validation; no error message was shown, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "fail",
+                "reasoning": "Input '12ABCD' triggered an error: \"Telephone number seems invalid.\" While linked to the field, it does not explain how to correct the issue (e.g., numbers only, required format or example), so it lacks actionable guidance."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "Input 'user.com' triggered an error: \"Email address seems invalid.\" The message is vague and does not suggest the fix (e.g., include “@”, like user@example.com)."
+            },
+            {
+                "identification": "Preferred Contact Method (Phone/Email)",
+                "evaluation": "fail",
+                "reasoning": "No valid selection was made; error shown: \"Please fill in the required field.\" The message does not tell the user to select one of the options (Phone or Email), so it isn’t sufficiently instructive."
+            },
+            {
+                "identification": "Company type (Agency/Direct advertiser/Other)",
+                "evaluation": "fail",
+                "reasoning": "No valid option was selected; error shown: \"Please fill in the required field.\" This generic message lacks a clear instruction to choose one of the listed options."
+            },
+            {
+                "identification": "How did you hear about AdSmart?",
+                "evaluation": "fail",
+                "reasoning": "Required selection missing; error shown: \"Please fill in the required field.\" It does not suggest the corrective action (“Select an option from the list”)."
+            },
+            {
+                "identification": "Please specify",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation error was present in the final state (likely conditional requirement); no message shown, so 3.3.3 does not apply."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '<script>alert(1)</script>' did not trigger client-side validation; no error message was shown, so 3.3.3 does not apply."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no validation error occurred, so 3.3.3 does not apply."
+            },
+            {
+                "identification": "Please leave this field empty.",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional honeypot; no validation error occurred, so 3.3.3 does not apply."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'J0hn3' did not trigger any validation error or message; the value was accepted. Since no error was detected, WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '12345' did not trigger any validation error or message; the value was accepted. With no error, error-suggestion requirements are not applicable."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!!!' did not trigger a validation error or message. No error, so WCAG 3.3.3 is inapplicable."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'Narnia#@$' did not trigger any validation error or message. No error, so WCAG 3.3.3 is inapplicable."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "Input 'user.com' triggered an error with the message \"Please fill in the required field.\" This is vague and does not explain the actual problem (invalid email format) or how to fix it (e.g., enter an address like user@example.com), so it does not provide clear, actionable guidance."
+            },
+            {
+                "identification": "Agency",
+                "evaluation": "fail",
+                "reasoning": "Attempted non-option value led to a group validation error with the message \"Please fill in the required field.\" The message does not instruct the user to select one of the available options (Agency, Direct advertiser, or Other), providing insufficient guidance."
+            },
+            {
+                "identification": "Direct advertiser",
+                "evaluation": "fail",
+                "reasoning": "Attempted non-option value resulted in the same group error \"Please fill in the required field.\" The message is generic and does not guide the user to select a valid option."
+            },
+            {
+                "identification": "Other",
+                "evaluation": "fail",
+                "reasoning": "Attempted non-option value resulted in the group error \"Please fill in the required field.\" The message lacks instruction on selecting a valid choice, so it is not actionable."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '<script>alert(1)</script>' did not trigger a validation error or message; the field appears to accept free text. Without an error, WCAG 3.3.3 does not apply."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'J0hn3' did not trigger any validation or error message; WCAG 3.3.3 applies only when errors are identified."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '12345' did not trigger any validation or error message; no guidance needed under WCAG 3.3.3."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!!!' produced no error message; WCAG 3.3.3 not applicable."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'Narnia#@$' produced no validation error; no error guidance expected."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "fail",
+                "reasoning": "Input '12ABCD' triggered \"Telephone number seems invalid.\" The message identifies a failure but gives no actionable fix (e.g., digits only, allowed separators, or an example), so it lacks corrective guidance."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "fail",
+                "reasoning": "Input 'user.com' triggered \"Email address seems invalid.\" The message is vague and does not suggest adding an '@' or provide an example format, offering no clear path to correction."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "fail",
+                "reasoning": "Invalid selection led to a group-level message \"Please fill in the required field.\" It does not advise selecting one option (Phone or Email) or indicate the valid choices."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "fail",
+                "reasoning": "Group-level error \"Please fill in the required field.\" is generic and does not instruct the user to choose one valid option."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "fail",
+                "reasoning": "Group-level message \"Please fill in the required field.\" gives no guidance to select one of the provided options (Agency, Direct advertiser, or Other)."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "fail",
+                "reasoning": "Same generic required message without specific corrective action (select a valid option)."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "fail",
+                "reasoning": "Same generic required message with no suggestion of valid choices."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '<script>alert(1)</script>' did not trigger validation or an error message; WCAG 3.3.3 does not apply."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'J0hn3' did not trigger any validation or message; no error state observed, so WCAG 3.3.3 is not applicable."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '12345' did not trigger validation; no message shown, so 3.3.3 does not apply."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!!!' did not trigger validation; no error message, so 3.3.3 does not apply."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'Narnia#@$' did not trigger validation; no message, so 3.3.3 does not apply."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "fail",
+                "reasoning": "Input '12ABCD' triggered an error with message \"Telephone number seems invalid.\" While the error is identified, it lacks specific guidance (e.g., \"Use digits only, e.g., 01234 567890\"), so it does not provide a clear correction."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "Input 'user.com' triggered an error with message \"Email address seems invalid.\" The message does not suggest a fix (e.g., “Include an '@' like user@example.com”), so it is not actionable."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "fail",
+                "reasoning": "Attempted 'Both' led to a group error \"Please fill in the required field.\" This is generic and does not instruct the user to select one valid option (Phone or Email)."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "fail",
+                "reasoning": "Entered an invalid value resulted in the same group error \"Please fill in the required field.\" It fails to explain acceptable choices or that a single selection is required."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "fail",
+                "reasoning": "Input 'Freelancer' produced group error \"Please fill in the required field.\" The message is not descriptive (e.g., “Select one: Agency, Direct advertiser, or Other”)."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "fail",
+                "reasoning": "Input 'Reseller' produced the same group error \"Please fill in the required field.\" Lacks guidance on valid options."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "fail",
+                "reasoning": "Input 'Unknown' produced the same group error \"Please fill in the required field.\" Does not suggest choosing one of the provided options."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '<script>alert(1)</script>' did not trigger a validation error or message; therefore 3.3.3 is not applicable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'J0hn3' did not trigger a validation error; no message was shown, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '12345' did not trigger a validation error; no message was shown, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!!!' did not trigger a validation error; no message was shown, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'Narnia#@$' did not trigger a validation error; no message was shown, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "fail",
+                "reasoning": "Input '12ABCD' triggered an error: \"Telephone number seems invalid.\" While programmatically linked, the message lacks actionable guidance (e.g., expected digits-only pattern or example format), so it does not help the user correct the input."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "Input 'user.com' triggered an error: \"Email address seems invalid.\" The message does not explain what’s wrong (e.g., missing '@') or provide an example like user@example.com, offering insufficient guidance."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "fail",
+                "reasoning": "No option was selected; the group displayed \"Please fill in the required field.\" This generic text does not identify the group or instruct users to select one option, providing limited corrective guidance."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "fail",
+                "reasoning": "No option was selected; the group displayed \"Please fill in the required field.\" The message is generic and does not guide the user to select a preferred contact method."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "fail",
+                "reasoning": "No option was selected; the group displayed \"Please fill in the required field.\" The message is non-specific and does not direct the user to select one of the available options."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "fail",
+                "reasoning": "No option was selected; the group displayed \"Please fill in the required field.\" The message lacks specificity and corrective instruction."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "fail",
+                "reasoning": "No option was selected; the group displayed \"Please fill in the required field.\" The message is generic and does not guide the user to make a selection."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '<script>alert(1)</script>' did not trigger a validation error; no message was shown, so WCAG 3.3.3 does not apply."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'J0hn3' did not trigger any validation or error message, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '12345' did not trigger any validation or error message, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!!!' did not trigger any validation or error message, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'Narnia#@$' did not trigger any validation or error message, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "fail",
+                "reasoning": "Input '12ABCD' triggered \"Telephone number seems invalid.\" The message is vague and does not specify the required format or acceptable characters, offering no clear correction."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "Input 'user.com' triggered \"Email address seems invalid.\" The message does not explain how to fix the issue (e.g., include an '@' and domain format), so it lacks actionable guidance."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "pass",
+                "reasoning": "Invalid entry led to a group error \"Please fill in the required field.\" This clearly suggests the corrective action: select one of the available options."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "pass",
+                "reasoning": "Invalid entry led to a group error \"Please fill in the required field.\" The message directs the user to make a selection, which is actionable."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "pass",
+                "reasoning": "Invalid entry resulted in \"Please fill in the required field.\" The message indicates the needed action: choose one of the listed options."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "pass",
+                "reasoning": "Invalid entry resulted in \"Please fill in the required field.\" This provides clear direction to select an option."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "pass",
+                "reasoning": "Invalid entry resulted in \"Please fill in the required field.\" This tells the user to make a selection, which is actionable."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '<script>alert(1)</script>' did not trigger validation or an error message, so WCAG 3.3.3 does not apply."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'J0hn3' did not trigger any validation error or message; WCAG 3.3.3 applies only when an error is raised."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '12345' did not trigger any validation error or message; no guidance needed."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!!!' did not trigger any validation error or message; no guidance needed."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'Narnia#@$' did not trigger any validation error or message; no guidance needed."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "fail",
+                "reasoning": "Input '12ABCD' triggered an error with the message \"Telephone number seems invalid.\" The message is vague and does not tell the user how to correct the input (e.g., required digits-only format or an example), so it lacks actionable guidance."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "Input 'user.com' triggered an error with the message \"Email address seems invalid.\" It does not explain the specific issue (e.g., missing '@') or provide the expected format/example, so it fails to guide correction."
+            },
+            {
+                "identification": "Preferred contact method (Phone/Email) [radio group]",
+                "evaluation": "pass",
+                "reasoning": "No valid option was selected; the error \"Please fill in the required field.\" was shown and programmatically associated with the group, clearly indicating the action needed: select one option."
+            },
+            {
+                "identification": "Agency/Direct advertiser/Other [radio group]",
+                "evaluation": "pass",
+                "reasoning": "No valid option was selected; the error \"Please fill in the required field.\" was shown and linked to the group, guiding the user to choose one of the provided options."
+            },
+            {
+                "identification": "How did you hear about AdSmart?",
+                "evaluation": "pass",
+                "reasoning": "Missing selection triggered \"Please fill in the required field.\" This clearly instructs the user to make a selection to proceed."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '<script>alert(1)</script>' did not trigger a validation error or message; therefore, no error guidance applies."
+            }
+        ]
+    }
+]

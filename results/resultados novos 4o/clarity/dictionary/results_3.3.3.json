@@ -1,0 +1,372 @@
+[
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error, and the field was marked as valid. Since no specific validation rules were applied to this field, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '@#$%^' did not trigger any validation error, and the field was marked as valid. Similar to the 'First' field, no specific validation rules were applied, so the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error, and the message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" was shown. This message clearly explains the problem and how to fix it, aligning with WCAG 3.3.1 guidelines."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '<img src=\"invalid.jpg\" onerror=\"alert(\\'error\\')\">' did not trigger any validation error. Since this field is not required and no specific validation rules were applied, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' did not trigger any validation error, and the field was marked as valid. Since no specific validation rules were applied, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '123abc' did not trigger any validation error, and the field was marked as valid. Since no specific validation rules were applied, the lack of an error message is acceptable."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error, and the field was marked as valid. Since no specific validation rules were applied to this field, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '@#$%^' did not trigger any validation error, and the field was marked as valid. Similar to the 'First' field, no specific validation rules were applied, so the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error, and the message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" was shown. This message clearly explains the problem and how to fix it, aligning with WCAG 3.3.1 guidelines."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '<img src=\"invalid.jpg\" onerror=\"alert(\\'error\\')\">' did not trigger any validation error. Since this field is not required and no specific validation rules were applied, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' did not trigger any validation error, and the field was marked as valid. No specific validation rules were applied, so the lack of an error message is acceptable."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '123abc' did not trigger any validation error, and the field was marked as valid. Since no specific validation rules were applied, the lack of an error message is acceptable."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error, and the field was marked as valid. Since no specific validation rules were applied to this field, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '@#$%^' did not trigger any validation error, and the field was marked as valid. Similar to the 'First' field, no specific validation rules were applied, so the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error, and the message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" was shown. This message clearly explains the problem and how to fix it, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '<img src=\"invalid.jpg\" onerror=\"alert(\\'error\\')\">' did not trigger any validation error. Since this field is not required and no specific validation rules were applied, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' did not trigger any validation error, and the field was marked as valid. No specific validation rules were applied, so the lack of an error message is acceptable."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '123abc' did not trigger any validation error, and the field was marked as valid. Since no specific validation rules were applied, the lack of an error message is acceptable."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' was accepted without triggering a validation error, indicating that no specific constraints were violated. Therefore, no error message was expected or needed."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '@#$%^' was accepted without triggering a validation error, indicating that no specific constraints were violated. Therefore, no error message was expected or needed."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error, and the message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" was shown. This message clearly explains the problem and how to fix it, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '<img src=\"invalid.jpg\" onerror=\"alert(\\'error\\')\">' was accepted without triggering a validation error, indicating that no specific constraints were violated. Therefore, no error message was expected or needed."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' was accepted without triggering a validation error, indicating that no specific constraints were violated. Therefore, no error message was expected or needed."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '123abc' was accepted without triggering a validation error, indicating that no specific constraints were violated. Therefore, no error message was expected or needed."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error, and the field was marked as valid. Since no specific validation rules were applied to this field, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '@#$%^' did not trigger any validation error, and the field was marked as valid. Similar to the 'First' field, no specific validation rules were applied, so the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error, and the message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" was shown. This message clearly explains the problem and how to fix it, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '<img src=\"invalid.jpg\" onerror=\"alert(\\'error\\')\">' did not trigger any validation error. Since this field is not required and no specific validation rules were applied, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' did not trigger any validation error, and the field was marked as valid. Since no specific validation rules were applied, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '123abc' did not trigger any validation error, and the field was marked as valid. Since no specific validation rules were applied, the lack of an error message is acceptable."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error, and no error message was shown. Since the input was accepted, no error message was necessary."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '@#$%^' did not trigger any validation error, and no error message was shown. Since the input was accepted, no error message was necessary."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error, and the message \"Please enter a valid email address.\" was shown. This message clearly explains the problem and suggests that the user needs to include an '@' in the email address."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '<img src=\"invalid.jpg\" onerror=\"alert(\\'error\\')\">' did not trigger any validation error, and no error message was shown. Since the input was accepted, no error message was necessary."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' did not trigger any validation error, and no error message was shown. Since the input was accepted, no error message was necessary."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '123abc' did not trigger any validation error, and no error message was shown. Since the input was accepted, no error message was necessary."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' was accepted without triggering a validation error. Since no specific validation rules were applied to this field, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '@#$%^' was accepted without triggering a validation error. Similar to the 'First' field, no specific validation rules were applied, so the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error with the message \"Please enter a valid email address.\" This message is clear and helps the user understand that the input is missing an '@' symbol, aligning with WCAG 3.3.1 guidelines."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '<img src=\"invalid.jpg\" onerror=\"alert(\\'error\\')\">' was accepted without triggering a validation error. Since this field is not required and no specific validation rules were applied, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' was accepted without triggering a validation error. Since no specific validation rules were applied to this field, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '123abc' was accepted without triggering a validation error. Since no specific validation rules were applied to this field, the lack of an error message is acceptable."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error, and the field was marked as valid. Since no specific validation rules were applied to this field, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '@#$%^' did not trigger any validation error, and the field was marked as valid. Similar to the 'First' field, no specific validation rules were applied, so the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error, and the message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" was shown. This message clearly explains the problem and how to fix it, aligning with WCAG 3.3.1 guidelines."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '<img src=\"invalid.jpg\" onerror=\"alert(\\'error\\')\">' did not trigger any validation error. Since this field is not required and no specific validation rules were applied, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' did not trigger any validation error, and the field was marked as valid. Since no specific validation rules were applied, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '123abc' did not trigger any validation error. Since this field is not required and no specific validation rules were applied, the lack of an error message is acceptable."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error, and the field was marked as valid. Since no specific validation rules were violated, no error message was expected or needed."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '@#$%^' did not trigger any validation error, and the field was marked as valid. Since no specific validation rules were violated, no error message was expected or needed."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error, and the message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" was shown. This message clearly explains the problem and how to fix it, aligning with WCAG 3.3.1 guidelines."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '<img src=\"invalid.jpg\" onerror=\"alert(\\'error\\')\">' did not trigger any validation error, and the field was marked as valid. Since no specific validation rules were violated, no error message was expected or needed."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' did not trigger any validation error, and the field was marked as valid. Since no specific validation rules were violated, no error message was expected or needed."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '123abc' did not trigger any validation error, and the field was marked as valid. Since no specific validation rules were violated, no error message was expected or needed."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error, and the field was marked as valid. Since no specific validation rules were applied to this field, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '@#$%^' did not trigger any validation error, and the field was marked as valid. Similar to the 'First' field, no specific validation rules were applied, so the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error, and the message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" was shown. This message clearly explains the problem and how to fix it, aligning with WCAG 3.3.1 guidelines."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '<img src=\"invalid.jpg\" onerror=\"alert(\\'error\\')\">' did not trigger any validation error. Since this field is not required and no specific validation rules were applied, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' did not trigger any validation error, and the field was marked as valid. No specific validation rules were applied, so the lack of an error message is acceptable."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '123abc' did not trigger any validation error, and the field was marked as valid. Since no specific validation rules were applied, the lack of an error message is acceptable."
+            }
+        ]
+    }
+]

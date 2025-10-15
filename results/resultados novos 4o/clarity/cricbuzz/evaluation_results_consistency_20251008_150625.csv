@@ -1,0 +1,6 @@
+URL,Model,Field,Runs,Eval counts,Most common,Consistency ratio,Benchmark
+cricbuzz,gpt-4,Name,10,10×fail,fail,1,fail
+cricbuzz,gpt-4,Email,10,10×pass,pass,1,fail
+cricbuzz,gpt-4,Subject,10,10×pass,pass,1,pass
+cricbuzz,gpt-4,No Label (textarea),10,"2×fail, 8×pass",pass,0.8,pass
+cricbuzz,gpt-4,"Upload Screenshot (jpg,png,gif,bmp) (file)",10,10×absent,absent,1,inapplicable

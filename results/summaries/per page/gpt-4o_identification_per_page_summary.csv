@@ -1,0 +1,11 @@
+page,n_fields,mean_accuracy,std_accuracy,consistency_rate
+amazon,5,1,0,1
+bible,5,0.6,0.489897949,1
+cricbuz,5,1,0,1
+dictionary,9,0.672222222,0.10613874,0.333333333
+houston,10,0.96,0.091651514,0.8
+livescore,4,1,0,0.75
+pexels,4,1,0,1
+sky,15,0.571428571,0.494871659,1
+steam,5,0.5,0.353553391,0.6
+zomato,5,1,0,1

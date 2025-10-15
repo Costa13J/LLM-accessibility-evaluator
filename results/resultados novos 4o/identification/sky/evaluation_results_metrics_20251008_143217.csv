@@ -1,0 +1,12 @@
+Model,URL,True Positives,True Negatives,False Positives,False Negatives,Accuracy,Precision,Recall,F1-score,Coverage,Total samples used,Run ID
+gpt-4,adsmartfromsky,0,8,0,0,1.0,0.0,0.0,0.0,8/15 (53.3%),8,1
+gpt-4,adsmartfromsky,0,8,0,0,1.0,0.0,0.0,0.0,8/15 (53.3%),8,2
+gpt-4,adsmartfromsky,0,8,0,0,1.0,0.0,0.0,0.0,8/15 (53.3%),8,3
+gpt-4,adsmartfromsky,0,8,0,0,1.0,0.0,0.0,0.0,8/15 (53.3%),8,4
+gpt-4,adsmartfromsky,0,8,0,0,1.0,0.0,0.0,0.0,8/15 (53.3%),8,5
+gpt-4,adsmartfromsky,0,8,0,0,1.0,0.0,0.0,0.0,8/15 (53.3%),8,6
+gpt-4,adsmartfromsky,0,8,0,0,1.0,0.0,0.0,0.0,8/15 (53.3%),8,7
+gpt-4,adsmartfromsky,0,8,0,0,1.0,0.0,0.0,0.0,8/15 (53.3%),8,8
+gpt-4,adsmartfromsky,0,8,0,0,1.0,0.0,0.0,0.0,8/15 (53.3%),8,9
+gpt-4,adsmartfromsky,0,8,0,0,1.0,0.0,0.0,0.0,8/15 (53.3%),8,10
+ALL,ALL,0,80,0,0,1.0,0.0,0.0,0.0,N/A,80,TOTAL

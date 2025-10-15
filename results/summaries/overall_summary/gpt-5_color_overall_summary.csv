@@ -1,0 +1,2 @@
+model,issue,n_pages,n_fields_total,mean_accuracy,std_dev,consistency_rate
+gpt-5,color,10,64,0.62,0.45269563,0.703125

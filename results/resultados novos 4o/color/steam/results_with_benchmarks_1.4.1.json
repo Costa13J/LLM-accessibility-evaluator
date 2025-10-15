@@ -1,0 +1,452 @@
+[
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after invalid input, making it inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red, but no programmatic or textual error cues were provided, resulting in a fail.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red without any programmatic or textual error cues, resulting in a fail.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.  (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence (select)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after invalid input, making it inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red, but no programmatic or textual error cues were provided, resulting in a fail.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red without any programmatic or textual error cues, resulting in a fail.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.  (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence (select)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after invalid input, making it inapplicable for evaluation.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "A red border was applied, but no programmatic or textual error cues were provided, resulting in a fail.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "A red border was applied without any programmatic or textual error cues, resulting in a fail.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.  (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence (select)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after invalid input, making it inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red, but no programmatic or textual error cues were provided, resulting in a fail.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red without any programmatic or textual error cues, resulting in a fail.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.  (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence (select)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No error state was triggered as the input was processed as a search query, not a validation error. Therefore, this is inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red, but no programmatic support like aria-invalid or error message was provided. The error is indicated only through color, failing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red, but no programmatic support like aria-invalid or error message was provided. The error is indicated only through color, failing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.  (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence (select)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after invalid input, making it inapplicable for evaluation.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The only change was a border color change to red, with no programmatic or textual error cues, resulting in a fail.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The only change was a border color change to red, with no programmatic or textual error cues, resulting in a fail.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.  (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence (select)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after invalid input, making it inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red, but no programmatic or textual error cues were provided, resulting in a fail.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red, but no programmatic or textual error cues were provided, resulting in a fail.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.  (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence (select)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after invalid input, making it inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red, but no programmatic or textual error cues were provided, resulting in a fail.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red without any programmatic or textual error cues, resulting in a fail.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.  (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence (select)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after invalid input, making it inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The only change was a red border, with no programmatic or textual error cues, resulting in a fail.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The only change was a red border, with no programmatic or textual error cues, resulting in a fail.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.  (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence (select)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after invalid input, making it inapplicable for evaluation.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red, but no programmatic or textual error cues were provided, resulting in a fail.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red without any programmatic or textual error cues, resulting in a fail.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.  (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence (select)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

@@ -1,0 +1,29 @@
+=== Evaluation Report ===
+Model: openai/gpt-4o-mini-2024-07-18
+True Positives: 0
+True Negatives: 7
+False Positives: 9
+False Negatives: 0
+Accuracy: 0.438
+Precision: 0.000
+Recall: 0.000
+F1-score: 0.000
+Coverage: 16/22 (72.7%)
+Total samples used: 16
+Pred counts: {1: 9, 0: 7}
+Gold counts: {0: 16}
+
+=== Most Common Issues ===
+- False violation (inapplicable → fail): 5
+- False violation (pass → fail): 4
+
+=== Flagged Cases (examples) ===
+- URL: https://www.infinite.media/bible-gateway/ | Field: First Name | Benchmark: inapplicable | Eval: fail | Issue: False violation (inapplicable → fail)       
+- URL: https://www.infinite.media/bible-gateway/ | Field: Last Name | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)
+- URL: https://www.infinite.media/bible-gateway/ | Field: Email(required) | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)
+- URL: https://www.infinite.media/bible-gateway/ | Field: Organization(required) | Benchmark: inapplicable | Eval: fail | Issue: False violation (inapplicable → fail)
+- URL: https://www.infinite.media/bible-gateway/ | Field: Website | Benchmark: inapplicable | Eval: fail | Issue: False violation (inapplicable → fail)
+- URL: https://www.staples.pt/pt/pt/registo | Field: Nome * | Benchmark: inapplicable | Eval: fail | Issue: False violation (inapplicable → fail)
+- URL: https://www.staples.pt/pt/pt/registo | Field: Email * | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)
+- URL: https://www.staples.pt/pt/pt/registo | Field: Password * | Benchmark: inapplicable | Eval: fail | Issue: False violation (inapplicable → fail)
+- URL: https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62 | Field: Endereço de e-mail | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)

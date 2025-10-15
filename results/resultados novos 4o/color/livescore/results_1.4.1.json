@@ -1,0 +1,172 @@
+[
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Email address\" field, no error cues were detected after invalid input. There were no visual changes, error messages, or programmatic indicators like aria-invalid. Since no error state was triggered, this is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Message\" field, no error cues were detected after leaving the textarea empty. There were no visual changes, error messages, or programmatic indicators like aria-invalid. Since no error state was triggered, this is inapplicable for WCAG 1.4.1 evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "For the \"Email address\" field, no error message or programmatic indication (like aria-invalid) was provided after invalid input. The error state is not conveyed through color or any other visual change, so this fails WCAG 1.4.1."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Message\" field, no error cues were triggered after leaving the textarea empty. Since no error state occurred, this case is inapplicable under WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Email address\" field, no error cues were detected after invalid input. There were no visual changes, error messages, or programmatic indicators like aria-invalid. Since no error state was triggered, this is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Message\" field, no error cues were detected after invalid input. There were no visual changes, error messages, or programmatic indicators like aria-invalid. Since no error state was triggered, this is inapplicable for WCAG 1.4.1 evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Email address\" field, no error cues were detected after invalid input. There were no changes in color, no error messages, and no programmatic attributes like aria-invalid were set. Since no error state was triggered, this is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Message\" field, no error cues were detected after invalid input. There were no changes in color, no error messages, and no programmatic attributes like aria-invalid were set. Since no error state was triggered, this is inapplicable for WCAG 1.4.1 evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Email address\" field, no error cues were detected after invalid input. There were no visual changes, error messages, or programmatic indicators like aria-invalid. Since no error state was triggered, this is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Message\" field, no error cues were detected after invalid input. There were no visual changes, error messages, or programmatic indicators like aria-invalid. Since no error state was triggered, this is inapplicable for WCAG 1.4.1 evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "For the \"Email address\" field, no error message or programmatic indication (like aria-invalid) was provided after invalid input. The error state is not indicated by color or any other visual change, so it fails WCAG 1.4.1 due to lack of any error indication."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Message\" field, no error cues were triggered as the field is optional and no validation was applied. Therefore, this case is inapplicable under WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "For the \"Email address\" field, no error message or programmatic support (e.g., aria-invalid) was detected after invalid input. The error state relies solely on color, failing WCAG 1.4.1."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Message\" field, no error cues were triggered as it is optional, making it inapplicable for evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "For the \"Email address\" field, no error message or programmatic indication (like aria-invalid) was provided after invalid input. The error state relies solely on color, which fails WCAG 1.4.1."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Message\" field, no error was triggered as it is optional, making it inapplicable for evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "For the \"Email address\" field, no programmatic error cues were detected, and no error message was displayed. The only indication of an error was a change in display style, which is not sufficient. This fails WCAG 1.4.1 as the error is not communicated with text or programmatic support."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Message\" field, no error cues were triggered, and no validation was applied. Since no error state occurred, this case is inapplicable under WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "For the \"Email address\" field, no error message or programmatic indication (like aria-invalid) was provided after invalid input. The error state relies solely on color, failing WCAG 1.4.1."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Message\" field, no error cues were triggered as the field is optional, making it inapplicable for evaluation."
+            }
+        ]
+    }
+]

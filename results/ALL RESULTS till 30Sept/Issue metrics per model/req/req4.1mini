@@ -1,0 +1,26 @@
+=== Evaluation Report ===
+Model: openai/gpt-4.1-mini-2025-04-14
+True Positives: 2
+True Negatives: 18
+False Positives: 0
+False Negatives: 6
+Accuracy: 0.769
+Precision: 1.000
+Recall: 0.250
+F1-score: 0.400
+Coverage: 26/33 (78.8%)
+Total samples used: 26
+Pred counts: {0: 24, 1: 2}
+Gold counts: {0: 18, 1: 8}
+
+=== Most Common Issues ===
+- Missed violation (fail → pass/inapplicable): 5
+- Missed violation (fail → absent): 1
+
+=== Flagged Cases (examples) ===
+- URL: https://www.staples.pt/pt/pt/registo | Field: Nome * | Benchmark: fail | Eval: inapplicable | Issue: Missed violation (fail → pass/inapplicable)
+- URL: https://www.staples.pt/pt/pt/registo | Field: Email * | Benchmark: fail | Eval: inapplicable | Issue: Missed violation (fail → pass/inapplicable)
+- URL: https://www.staples.pt/pt/pt/registo | Field: Password * | Benchmark: fail | Eval: inapplicable | Issue: Missed violation (fail → pass/inapplicable)      
+- URL: https://www.staples.pt/pt/pt/registo | Field: Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. | Benchmark: fail | Eval: inapplicable | Issue: Missed violation (fail → pass/inapplicable)
+- URL: https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62 | Field: Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve. | Benchmark: fail | Eval: inapplicable | Issue: Missed violation (fail → pass/inapplicable)
+- URL: https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62 | Field: País de residência (select) | Benchmark: fail | Eval: absent | Issue: Missed violation (fail → absent)

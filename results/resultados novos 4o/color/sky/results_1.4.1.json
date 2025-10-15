@@ -1,0 +1,462 @@
+[
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for invalid input. The error is not conveyed through color alone, but no specific error cue was identified."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for invalid input. The error is not conveyed through color alone, but no specific error cue was identified."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for invalid input. The error is not conveyed through color alone, but no specific error cue was identified."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for invalid input. The error is not conveyed through color alone, but no specific error cue was identified."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Telephone number seems invalid.' is associated with the field, and aria-invalid is set to true. This provides programmatic support, passing WCAG 1.4.1."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Email address seems invalid.' is associated with the field, and aria-invalid is set to true. This provides programmatic support"
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed through color alone, but no error message was linked."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed through color alone, but no error message was linked."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed through color alone, but no error message was linked."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed through color alone, but no error message was linked."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Telephone number seems invalid.' is programmatically associated with the field using aria-describedby. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Email address seems invalid.' is programmatically associated with the field using aria-describedby. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or"
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations. The possible error messages listed do not indicate any programmatic or textual error cues being triggered for this field. Therefore, this case is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations. The possible error messages listed do not indicate any programmatic or textual error cues being triggered for this field. Therefore, this case is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations. The possible error messages listed do not indicate any programmatic or textual error cues being triggered for this field. Therefore, this case is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations. The possible error messages listed do not indicate any programmatic or textual error cues being triggered for this field. Therefore, this case is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations. The possible error messages listed do not indicate any programmatic or textual error cues being triggered for this field. Therefore, this case is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations. The possible error messages listed do not indicate any programmatic or textual error cues being triggered for this field. Therefore, this case is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Phone",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations. The possible error messages listed do not indicate any programmatic or textual error cues being triggered for this field. Therefore, this case is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations. The possible error messages listed do not indicate any programmatic or textual error cues being triggered for this field. Therefore, this case is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Agency",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations. The possible error messages listed do not indicate any programmatic or textual error cues being triggered for this field. Therefore, this case is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Direct advertiser",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations. The possible error messages listed do not indicate any programmatic or textual error cues being triggered for this field. Therefore, this case is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Other",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations. The possible error messages listed do not indicate any program"
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no error cue was triggered."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no error cue was triggered."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no error cue was triggered."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no error cue was triggered."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Telephone number seems invalid.' is programmatically associated with the field using aria-describedby, and aria-invalid is set to true. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Email address seems invalid.' is programmatically associated with the field using aria-describedby, and aria-invalid is set to true. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cue was triggered for invalid input."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cue was triggered for invalid input."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cue was triggered for invalid input."
+            },
+            {
+                "identification": "Unknown",
+                "evaluation": "Unknown",
+                "reasoning": "No reasoning provided"
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed through color alone, but no error cue was triggered."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed through color alone, but no error cue was triggered."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed through color alone, but no error cue was triggered."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed through color alone, but no error cue was triggered."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Telephone number seems invalid.' is associated with the field, and aria-invalid is set to true. This provides programmatic support, so it passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Email address seems invalid.' is associated with the field, and aria-invalid is set to true. This provides programmatic support, so it passes WCAG 1"
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed through color alone, but no error cues were triggered."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed through color alone, but no error cues were triggered."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed through color alone, but no error cues were triggered."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed through color alone, but no error cues were triggered."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Telephone number seems invalid.' is programmatically associated with the field using aria-describedby. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Email address seems invalid.' is programmatically associated with the field using aria-describedby. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered for invalid input. This is inapplicable."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered for invalid input. This is inapplicable."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "Unknown",
+                "reasoning": "No reasoning provided"
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no specific error cue was identified."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no specific error cue was identified."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no specific error cue was identified."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no specific error cue was identified."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Telephone number seems invalid.' is programmatically associated with the field using aria-describedby, and aria-invalid is set to true. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Email address seems invalid.' is programmatically associated with the field using aria-describedby, and aria-invalid is set to true."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no error cue was triggered."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no error cue was triggered."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no error cue was triggered."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no error cue was triggered."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Telephone number seems invalid.' is programmatically associated with the field using aria-describedby. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Email address seems invalid.' is programmatically associated with the field using aria-describedby. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or"
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "fail",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error cue relies solely on color changes, failing WCAG 1.4.1."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "fail",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error cue relies solely on color changes, failing WCAG 1.4.1."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "fail",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error cue relies solely on color changes, failing WCAG 1.4.1."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "fail",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error cue relies solely on color changes, failing WCAG 1.4.1."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Telephone number seems invalid.' is programmatically associated with the field using aria-describedby, passing WCAG 1.4.1."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Email address seems invalid.' is programmatically associated with the field using aria-describedby, passing WCAG 1.4.1."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error was triggered for invalid input, making this inapplicable."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error was triggered for invalid input, making this inapplicable."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No reasoning provided"
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no specific error cue was triggered."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no specific error cue was triggered."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no specific error cue was triggered."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no specific error cue was triggered."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Telephone number seems invalid.' is programmatically associated with the field using aria-describedby, ensuring the error is not conveyed by color alone."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Email address seems invalid.' is programmatically associated with the field using aria-describedby, ensuring the error is not conveyed by color alone."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No reasoning provided"
+            }
+        ]
+    }
+]

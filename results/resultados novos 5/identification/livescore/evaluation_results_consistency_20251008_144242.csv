@@ -1,0 +1,5 @@
+URL,Model,Field,Runs,Eval counts,Most common,Consistency ratio,Benchmark
+livescore,gpt-5,Email address,10,10×fail,fail,1,fail
+livescore,gpt-5,No Label (select),10,10×fail,fail,1,fail
+livescore,gpt-5,Please select a subject (checkbox),10,10×inapplicable,inapplicable,1,n/a
+livescore,gpt-5,Message,10,10×fail,fail,1,fail

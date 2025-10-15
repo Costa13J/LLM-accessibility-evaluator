@@ -1,0 +1,322 @@
+[
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Phone number",
+                "evaluation": "fail",
+                "reasoning": "The field is required, as indicated by the error message, but it lacks a 'required' attribute."
+            },
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required, as indicated by the error message, but it lacks a 'required' attribute."
+            },
+            {
+                "identification": "City",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, as there is no indication of required status or error message."
+            },
+            {
+                "identification": "Consent",
+                "evaluation": "fail",
+                "reasoning": "The field is required, as indicated by the error message, but it lacks a 'required' attribute."
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, as there is no indication of required status or error message."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Phone Number",
+                "evaluation": "fail",
+                "reasoning": "The phone number field is required and triggers an error message when left empty, but it lacks a 'required' attribute."
+            },
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "The name field is required and triggers an error message when left empty, but it lacks a 'required' attribute."
+            },
+            {
+                "identification": "City Selection",
+                "evaluation": "inapplicable",
+                "reasoning": "The city selection field is not required, as indicated by the absence of a 'required' attribute and no error message."
+            },
+            {
+                "identification": "Consent Checkbox",
+                "evaluation": "fail",
+                "reasoning": "The consent checkbox is required and should trigger an error if left unchecked, but the presence of a 'required' attribute is not confirmed."
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "The filter by city field is not required, as indicated by the absence of a 'required' attribute and no error message."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Phone Number",
+                "evaluation": "fail",
+                "reasoning": "The phone number field is required and triggers an error message when left empty, but it lacks a 'required' attribute."
+            },
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "The name field is required and triggers an error message when left empty, but it lacks a 'required' attribute."
+            },
+            {
+                "identification": "City",
+                "evaluation": "inapplicable",
+                "reasoning": "The city input field is not required, as indicated by the absence of a 'required' attribute and no error message."
+            },
+            {
+                "identification": "Consent",
+                "evaluation": "fail",
+                "reasoning": "The consent checkbox is required and should trigger an error if left unchecked, but the presence of a 'required' attribute is not confirmed."
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "The filter by city input field is not required, as indicated by the absence of a 'required' attribute and no error message."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Phone Number",
+                "evaluation": "fail",
+                "reasoning": "The phone number field is required and triggers an error message when left empty, but it lacks a 'required' attribute."
+            },
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "The name field is required and triggers an error message when left empty, but it lacks a 'required' attribute."
+            },
+            {
+                "identification": "City",
+                "evaluation": "inapplicable",
+                "reasoning": "The city input is not required and does not trigger an error message."
+            },
+            {
+                "identification": "Consent",
+                "evaluation": "fail",
+                "reasoning": "The consent checkbox is required and should trigger an error message if left unchecked, but no specific error message is mentioned."
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "The filter by city input is not required and does not trigger an error message."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Phone number",
+                "evaluation": "fail",
+                "reasoning": "The field is required, as indicated by the error message, but it lacks a 'required' attribute."
+            },
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required, as indicated by the error message, but it lacks a 'required' attribute."
+            },
+            {
+                "identification": "City",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, as there is no indication of it being mandatory."
+            },
+            {
+                "identification": "Consent",
+                "evaluation": "fail",
+                "reasoning": "The field is required, as indicated by the error message, but it lacks a 'required' attribute."
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, as there is no indication of it being mandatory."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "phone number",
+                "evaluation": "fail",
+                "reasoning": "The phone number field is required and triggers an error message when left empty, but it lacks a 'required' attribute."
+            },
+            {
+                "identification": "name",
+                "evaluation": "fail",
+                "reasoning": "The name field is required and triggers an error message when left empty, but it lacks a 'required' attribute."
+            },
+            {
+                "identification": "city",
+                "evaluation": "inapplicable",
+                "reasoning": "The city input is not required and does not trigger an error message, which is appropriate."
+            },
+            {
+                "identification": "consent",
+                "evaluation": "fail",
+                "reasoning": "The consent checkbox is required and should trigger an error if left unchecked, but no specific error message is mentioned."
+            },
+            {
+                "identification": "filter by city",
+                "evaluation": "inapplicable",
+                "reasoning": "The filter by city input is not required and does not trigger an error message, which is appropriate."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Phone number",
+                "evaluation": "fail",
+                "reasoning": "The field is required, as indicated by the error message, but lacks a 'required' attribute."
+            },
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required, as indicated by the error message, but lacks a 'required' attribute."
+            },
+            {
+                "identification": "City",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, as indicated by the absence of a 'required' attribute and no error message."
+            },
+            {
+                "identification": "Consent",
+                "evaluation": "fail",
+                "reasoning": "The field is required, as indicated by the error message, but lacks a 'required' attribute."
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, as indicated by the absence of a 'required' attribute and no error message."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Phone Number",
+                "evaluation": "fail",
+                "reasoning": "The phone number field is required and triggers an error message when left empty, but it lacks a visible 'required' attribute in the HTML snippet provided."
+            },
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "The name field is required and triggers an error message, but similarly lacks a visible 'required' attribute."
+            },
+            {
+                "identification": "City Selection",
+                "evaluation": "inapplicable",
+                "reasoning": "The city selection input is not required, as indicated by the absence of a 'required' attribute and no error message."
+            },
+            {
+                "identification": "Consent Checkbox",
+                "evaluation": "fail",
+                "reasoning": "The consent checkbox is required and should trigger an error if left unchecked, but no specific error message is mentioned in the mutations."
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "The filter by city input is not required, as indicated by the absence of a 'required' attribute and no error message."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "phone number",
+                "evaluation": "fail",
+                "reasoning": "The phone number field is required and triggers an error message when left empty, but it lacks a visible 'required' attribute in the HTML snippet provided."
+            },
+            {
+                "identification": "name",
+                "evaluation": "fail",
+                "reasoning": "The name field is required and triggers an error message, but similarly lacks a visible 'required' attribute."
+            },
+            {
+                "identification": "city",
+                "evaluation": "inapplicable",
+                "reasoning": "The city input is not required, as indicated by the absence of a required attribute and no error message."
+            },
+            {
+                "identification": "consent",
+                "evaluation": "fail",
+                "reasoning": "The consent checkbox is required and should trigger an error if left unchecked, but no specific error message is mentioned in the mutations."
+            },
+            {
+                "identification": "filter by city",
+                "evaluation": "inapplicable",
+                "reasoning": "The filter by city input is not required, as indicated by the absence of a required attribute and no error message."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Phone Number",
+                "evaluation": "fail",
+                "reasoning": "The phone number field is required and triggers an error message when left empty, but it lacks a 'required' attribute or equivalent semantic indicator."
+            },
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "The name field is required and triggers an error message when left empty, but it lacks a 'required' attribute or equivalent semantic indicator."
+            },
+            {
+                "identification": "City",
+                "evaluation": "inapplicable",
+                "reasoning": "The city selection field is not marked as required and does not trigger any validation, which is appropriate for an optional field."
+            },
+            {
+                "identification": "Consent",
+                "evaluation": "fail",
+                "reasoning": "The consent checkbox is required and should trigger an error if left unchecked, but there is no indication of validation feedback in the mutations."
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "The filter by city field is not marked as required and does not trigger any validation, which is appropriate for an optional field."
+            }
+        ]
+    }
+]

@@ -1,0 +1,202 @@
+[
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and triggers an error message when left empty, which is programmatically linked via 'aria-describedby'."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The \"First Name\" field is required and triggers an error message when left empty, with 'aria-describedby' linking the error message, which is appropriate."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The \"Last Name\" field is required and also triggers an error message with 'aria-describedby', which is appropriate."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The \"Email\" field is required, triggers an error message, and uses 'aria-describedby', which is appropriate."
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The \"Organization\" field is required, triggers an error message, and uses 'aria-describedby', which is appropriate."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"Website\" field is optional and does not trigger any validation, which is appropriate."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The \"First Name\" field is required and triggers an error message when left empty, with 'aria-describedby' linking the error message, which is appropriate."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The \"Last Name\" field is required and also triggers an error message with 'aria-describedby', which is appropriate."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The \"Email\" field is required, triggers an error message, and uses 'aria-describedby', which is appropriate."
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The \"Organization\" field is required, triggers an error message, and uses 'aria-describedby', which is appropriate."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The \"Website\" field is optional and does not trigger any validation, which is appropriate."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The First Name field is required and triggers an error message when left empty. The error message is programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and correctly triggers an error message when left empty. The error message is programmatically linked using 'aria-describedby', which aligns with best practices for accessibility."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and correctly triggers an error message when left empty. The error message is programmatically linked using 'aria-describedby', which aligns with best practices for accessibility."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and correctly triggers an error message when left empty. The error message is programmatically linked using 'aria-describedby', which aligns with best practices for accessibility."
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and correctly triggers an error message when left empty. The error message is programmatically linked using 'aria-describedby', which aligns with best practices for accessibility."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not trigger any validation errors, which is appropriate."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and triggers an error message when left empty, which is programmatically linked via 'aria-describedby'."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and correctly triggers an error message when left empty. The error message is programmatically linked via 'aria-describedby', ensuring accessibility compliance."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and triggers an error message when left empty. The error message is programmatically linked via 'aria-describedby', ensuring accessibility compliance."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and triggers an error message when left empty. The error message is programmatically linked via 'aria-describedby', ensuring accessibility compliance."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and triggers an error message when left empty, which is programmatically linked via 'aria-describedby'."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and triggers an error message when left empty, which is programmatically linked via 'aria-describedby'."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and triggers an error message when left empty, which is programmatically linked via 'aria-describedby'."
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and triggers an error message when left empty, which is programmatically linked via 'aria-describedby'."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not trigger any validation errors."
+            }
+        ]
+    }
+]

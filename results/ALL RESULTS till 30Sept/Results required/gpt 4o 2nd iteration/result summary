@@ -1,0 +1,20 @@
+True Positives: 13
+True Negatives: 22
+False Positives: 1
+False Negatives: 1
+Accuracy: 0.946
+Precision: 0.929
+Recall: 0.929
+F1-score: 0.929
+Coverage: 37/51 (72.5%)
+Total samples used: 37
+Pred counts: {0: 23, 1: 14}
+Gold counts: {0: 23, 1: 14}
+
+=== Most Common Issues ===
+- Missed violation (fail → absent): 1
+- False violation (inapplicable → fail): 1
+
+=== Flagged Cases (examples) ===
+- URL: https://www.staples.pt/pt/pt/registo | Field: Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (checkbox) | Benchmark: fail | Eval: absent | Issue: Missed violation (fail → absent)
+- URL: https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b | Field: Country | Benchmark: inapplicable | Eval: fail | Issue: False violation (inapplicable → fail)

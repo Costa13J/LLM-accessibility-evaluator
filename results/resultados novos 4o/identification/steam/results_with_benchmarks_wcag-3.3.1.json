@@ -1,0 +1,472 @@
+[
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, and no error messages are associated with it.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The field does not have a required attribute, and no error messages are programmatically or visually associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The field does not have a required attribute, and no error messages are programmatically or visually associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, and no error messages are associated with it.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is not required, and no error messages are associated with it.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, and no validation feedback is expected.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, and no validation feedback is expected.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, and no validation feedback is expected.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, and no validation feedback is expected.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, and no validation feedback is expected.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required, and no error messages are displayed or programmatically associated with it after form interaction.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required, and no error messages are displayed or programmatically associated with it after form interaction.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required, and no error messages are displayed or programmatically associated with it after form interaction.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required, and no error messages are displayed or programmatically associated with it after form interaction.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required, and no error messages are displayed or programmatically associated with it after form interaction.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, and no error messages are associated with it.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, and no error messages are associated with it.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, and no error messages are associated with it.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, and no error messages are associated with it.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, and no error messages are associated with it.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger any validation errors or messages.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The field does not display any error message or programmatic association with an error message after form interaction.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The field does not display any error message or programmatic association with an error message after form interaction.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger any validation errors or messages.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is not required and does not trigger any validation errors or messages.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger validation errors.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The field does not have a required attribute, and no error message is programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The field does not have a required attribute, and no error message is programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger validation errors.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is not required and does not trigger validation errors.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger validation errors.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The field does not display any error message when left empty, and no programmatic association is made.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The field does not display any error message when left empty, and no programmatic association is made.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger validation errors.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is not required and does not trigger validation errors.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, and no error messages are associated with it.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, and no error messages are associated with it.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, and no error messages are associated with it.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, and no error messages are associated with it.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is not required, and no error messages are associated with it.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger validation errors.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The field does not have a required attribute, and no error message is programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The field does not have a required attribute, and no error message is programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger validation errors.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is not required and does not trigger validation errors.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, and no error messages are displayed or programmatically associated with it after form interaction.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, and no error messages are displayed or programmatically associated with it after form interaction.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, and no error messages are displayed or programmatically associated with it after form interaction.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, and no error messages are displayed or programmatically associated with it after form interaction.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, and no error messages are displayed or programmatically associated with it after form interaction.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

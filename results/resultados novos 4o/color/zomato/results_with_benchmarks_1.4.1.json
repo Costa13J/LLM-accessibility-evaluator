@@ -1,0 +1,372 @@
+[
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "For the \"Please enter phone number\" field, after invalid input, an error message '*Please enter phoneNumber' was added. This message provides a textual indication of the error, ensuring the error is not conveyed by color alone, thus passing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Please enter name\" field, no specific error message or programmatic indication was mentioned in the mutations. Without additional information, it is assumed that no error cues were triggered, making this inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "For the \"Please enter phone number\" field, after invalid input, an error message '*Please enter phoneNumber' was added. This message provides a textual indication of the error, ensuring the error is not conveyed by color alone, thus passing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Please enter name\" field, no specific error message or programmatic indication was mentioned in the mutations. Without additional information, it is assumed that no error cue was triggered, making this inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "For the \"Please enter phone number\" field, after invalid input, an error message '*Please enter phoneNumber' was added. This message provides a textual indication of the error, ensuring the error is not conveyed by color alone, thus passing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Please enter name\" field, no specific error message or programmatic indication was mentioned in the mutations. Without additional information, it is assumed that no error cue was triggered, making this inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "For the \"Please enter phone number\" field, after invalid input, an error message '*Please enter phoneNumber' was added. This message provides a textual indication of the error, ensuring the error is not conveyed by color alone, thus passing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Please enter name\" field, no specific error message or programmatic indication was mentioned in the mutations. Without any textual or programmatic error indication, this would typically fail WCAG 1.4.1. However, since no specific error cue was described, it is assumed that no error was triggered, making it inapplicable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "For the \"Please enter phone number\" field, after invalid input, an error message '*Please enter phoneNumber' was added. This message provides a textual indication of the error, ensuring the error is not conveyed by color alone, thus passing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Please enter name\" field, no specific error message or programmatic indication was mentioned in the mutations. However, since the focus is on the phone number field, and no specific error cue was described for the name field, it is inapplicable for evaluation based on the provided data.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "For the \"Please enter phone number\" field, after invalid input, an error message '*Please enter phoneNumber' was added. This message provides a textual indication of the error, ensuring the error is not conveyed by color alone, thus passing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Please enter name\" field, no specific error message or programmatic indication was mentioned in the mutations. Without additional information, it is assumed that no error cue was triggered, making this inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "For the \"Please enter phone number\" field, after invalid input, an error message '*Please enter phoneNumber' was added. This message provides a textual indication of the error, ensuring the error is not conveyed by color alone, thus passing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Please enter name\" field, no specific error message or programmatic indication was mentioned in the mutations. However, since the focus is on the phone number field, and no color-based error indication was noted for the name field, it is inapplicable for this evaluation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "For the \"Please enter phone number\" field, after invalid input, an error message '*Please enter phoneNumber' was added. This message provides a textual indication of the error, ensuring it is not conveyed by color alone, thus passing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Please enter name\" field, no specific error message or programmatic indication was mentioned in the mutations. Without additional information, it is assumed that no error cue was triggered, making this inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "For the \"Please enter phone number\" field, after invalid input, an error message '*Please enter phoneNumber' was added. This message provides a textual indication of the error, ensuring the error is not conveyed by color alone, thus passing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Please enter name\" field, no specific error message or programmatic indication was mentioned in the mutations. Without additional information, it is assumed that no error cues were triggered, making this inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "For the \"Please enter phone number\" field, after invalid input, an error message '*Please enter phoneNumber' was added, providing a textual indication of the error. This ensures the error is not conveyed by color alone, passing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "For the \"Please enter name\" field, no specific error message or programmatic indication was mentioned in the mutations. Without additional information, it is assumed that no error cues were triggered, making this case inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

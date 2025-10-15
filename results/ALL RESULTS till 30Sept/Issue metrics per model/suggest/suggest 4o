@@ -1,0 +1,21 @@
+=== Evaluation Report ===
+Model: openai/gpt-4o-2024-08-06
+True Positives: 2
+True Negatives: 7
+False Positives: 0
+False Negatives: 2
+Accuracy: 0.818
+Precision: 1.000
+Recall: 0.500
+F1-score: 0.667
+Coverage: 11/26 (42.3%)
+Total samples used: 11
+Pred counts: {0: 9, 1: 2}
+Gold counts: {0: 7, 1: 4}
+
+=== Most Common Issues ===
+- Missed violation (fail → pass/inapplicable): 2
+
+=== Flagged Cases (examples) ===
+- URL: https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62 | Field: Endereço de e-mail | Benchmark: fail | Eval: pass | Issue: Missed violation (fail → pass/inapplicable)
+- URL: https://www.staples.pt/pt/pt/registo | Field: Email * | Benchmark: fail | Eval: pass | Issue: Missed violation (fail → pass/inapplicable)

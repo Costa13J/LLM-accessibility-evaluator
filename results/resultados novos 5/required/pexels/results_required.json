@@ -1,0 +1,272 @@
+[
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "The field behaves as required after submission (required error shown) but lacks a 'required' or 'aria-required' attribute."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "The field behaves as required after submission (required error shown) but lacks a 'required' or 'aria-required' attribute."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field behaves as required after submission (required error shown) but lacks a 'required' or 'aria-required' attribute."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The field behaves as required after submission (required error shown) but lacks a 'required' or 'aria-required' attribute."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "The field behaves as required after submission (required error shown) but does not include the required or aria-required attribute."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "The field behaves as required after submission (required error shown) but does not include the required or aria-required attribute."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field behaves as required after submission (required error shown) but does not include the required or aria-required attribute."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The field behaves as required after submission (required error shown) but does not include the required or aria-required attribute."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name (input)",
+                "evaluation": "fail",
+                "reasoning": "Treated as required after submission (required error shown), but lacks required or aria-required."
+            },
+            {
+                "identification": "Last name (input)",
+                "evaluation": "fail",
+                "reasoning": "Treated as required after submission (required error shown), but lacks required or aria-required."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "fail",
+                "reasoning": "Treated as required after submission (required error shown), but lacks required or aria-required."
+            },
+            {
+                "identification": "Password (password)",
+                "evaluation": "fail",
+                "reasoning": "Treated as required after submission (required error shown), but lacks required or aria-required."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "The field behaves as required after submission (error state shown) but lacks the required or aria-required attribute."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "The field behaves as required after submission (error state shown) but lacks the required or aria-required attribute."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field behaves as required after submission (error state shown) but lacks the required or aria-required attribute."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The field behaves as required after submission (error state shown) but lacks the required or aria-required attribute."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "Treated as required after submission (required error shown) but missing 'required' or 'aria-required'."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "Treated as required after submission (required error shown) but missing 'required' or 'aria-required'."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "Treated as required after submission (required error shown) but missing 'required' or 'aria-required'."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "Treated as required after submission (required error shown) but missing 'required' or 'aria-required'."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "Treated as required after submission (required error styles/messages observed) but missing the 'required' or 'aria-required' attribute."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "Treated as required after submission (required error styles/messages observed) but missing the 'required' or 'aria-required' attribute."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "Treated as required after submission (required error styles/messages observed) but missing the 'required' or 'aria-required' attribute."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "Treated as required after submission (required error styles/messages observed) but missing the 'required' or 'aria-required' attribute."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "Treated as required after submission (required error shown) but missing the required attribute or an equivalent aria-required indicator."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "Treated as required after submission (required error shown) but missing the required attribute or an equivalent aria-required indicator."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "Treated as required after submission (required error shown) but missing the required attribute or an equivalent aria-required indicator."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "Treated as required after submission (required error shown) but missing the required attribute or an equivalent aria-required indicator."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "The field behaves as required after submission (required message shown) but does not use 'required' or 'aria-required'."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "The field behaves as required after submission (required message shown) but does not use 'required' or 'aria-required'."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field behaves as required after submission (required message shown) but does not use 'required' or 'aria-required'."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The field behaves as required after submission (required message shown) but does not use 'required' or 'aria-required'."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "The field behaved as required (required error state/message shown) but lacked a required attribute or aria-required, so the required status was not semantically declared."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "The field behaved as required (required error state/message shown) but lacked a required attribute or aria-required, so the required status was not semantically declared."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field behaved as required (required error state/message shown) but lacked a required attribute or aria-required, so the required status was not semantically declared."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The field behaved as required (required error state/message shown) but lacked a required attribute or aria-required, so the required status was not semantically declared."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "Behaves as required after submission (error state observed) but lacks required or aria-required."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "Behaves as required after submission (error state observed) but lacks required or aria-required."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "Behaves as required after submission (error state observed) but lacks required or aria-required."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "Behaves as required after submission (error state observed) but lacks required or aria-required."
+            }
+        ]
+    }
+]

@@ -1,0 +1,869 @@
+[
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The search field is not required and does not trigger validation errors.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association and aria-required attribute.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association and aria-required attribute.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association and aria-required attribute.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association and aria-required attribute.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association and aria-required attribute.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association and aria-required attribute.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association and aria-required attribute.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a:",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association and aria-required attribute.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association and aria-required attribute.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, and no error message is expected or shown. It is inapplicable for error validation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please fill in this field.\" is not linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please fill in this field.\" is not linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please select an item in the list.\" is not linked to the field.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please select an item in the list.\" is not linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please select an item in the list.\" is not linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please fill in this field.\" is not linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please fill in this field.\" is not linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please select an item in the list.\"",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?(select)",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "fail",
+                "reasoning": "The form field is required but does not have programmatic associations for error messages. The error messages are not linked to specific fields using aria-describedby or similar attributes, and the field lacks aria-required for programmatic indication of its required status.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "The form field is required but does not have programmatic associations for error messages. The error messages are not linked to specific fields using aria-describedby or similar attributes, and the field lacks aria-required for programmatic indication of its required status.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "The form field is required but does not have programmatic associations for error messages. The error messages are not linked to specific fields using aria-describedby or similar attributes, and the field lacks aria-required for programmatic indication of its required status.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month",
+                "evaluation": "fail",
+                "reasoning": "The form field is required but does not have programmatic associations for error messages. The error messages are not linked to specific fields using aria-describedby or similar attributes, and the field lacks aria-required for programmatic indication of its required status.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day",
+                "evaluation": "fail",
+                "reasoning": "The form field is required but does not have programmatic associations for error messages. The error messages are not linked to specific fields using aria-describedby or similar attributes, and the field lacks aria-required for programmatic indication of its required status.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year",
+                "evaluation": "fail",
+                "reasoning": "The form field is required but does not have programmatic associations for error messages. The error messages are not linked to specific fields using aria-describedby or similar attributes, and the field lacks aria-required for programmatic indication of its required status.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The form field is required but does not have programmatic associations for error messages. The error messages are not linked to specific fields using aria-describedby or similar attributes, and the field lacks aria-required for programmatic indication of its required status.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number",
+                "evaluation": "fail",
+                "reasoning": "The form field is required but does not have programmatic associations for error messages. The error messages are not linked to specific fields using aria-describedby or similar attributes, and the field lacks aria-required for programmatic indication of its required status.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a:",
+                "evaluation": "fail",
+                "reasoning": "The form field is required but does not have programmatic associations for error messages. The error messages are not linked to specific fields using aria-describedby or similar attributes, and the field lacks aria-required for programmatic indication of its required status.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?",
+                "evaluation": "fail",
+                "reasoning": "The form field is required but does not have programmatic associations for error messages. The error messages are not linked to specific fields using aria-describedby or similar attributes, and the field lacks aria-required for programmatic indication of its required status.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required and does not trigger validation errors.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association. The error message is generic and not linked to this specific field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association. The error message is generic and not linked to this specific field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association. The error message is generic and not linked to this specific field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association. The error message is generic and not linked to this specific field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association. The error message is generic and not linked to this specific field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association. The error message is generic and not linked to this specific field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association. The error message is generic and not linked to this specific field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a:",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association. The error message is generic and not linked to this specific field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association. The error message is generic and not linked to this specific field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "The search field is not required and does not trigger validation errors.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association. The error message is not linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association. The error message is not linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association. The error message is not linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association. The error message is not linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association. The error message is not linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association. The error message is not linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association. The error message is not linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a:",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association. The error message is not linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?",
+                "evaluation": "fail",
+                "reasoning": "The field is required but lacks programmatic error message association. The error message is not linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is expected or necessary.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please fill in this field.\" is not linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "Similar to First Name, this required field does not have a specific error message programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month",
+                "evaluation": "fail",
+                "reasoning": "This required select field does not have a specific error message programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day",
+                "evaluation": "fail",
+                "reasoning": "This required select field does not have a specific error message programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year",
+                "evaluation": "fail",
+                "reasoning": "This required select field does not have a specific error message programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "This required field does not have a specific error message programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number",
+                "evaluation": "fail",
+                "reasoning": "This required field does not have a specific error message programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a",
+                "evaluation": "fail",
+                "reasoning": "This required select field does not have a specific error message programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?",
+                "evaluation": "fail",
+                "reasoning": "This required select field does not have a specific error message programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is expected or necessary.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please fill in this field.\" is not linked to this specific field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please fill in this field.\" is not linked to this specific field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please select an item in the list.\" is not linked to this specific field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please select an item in the list.\" is not linked to this specific field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please select an item in the list.\" is not linked to this specific field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please fill in this field.\" is not linked to this specific field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please fill in this field.\" is not linked to this specific field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please select an item in the list.\" is not",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?(select)",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is expected or necessary.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please fill in this field.\" is not linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "Similar to First Name, this required field does not have a specific error message programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month",
+                "evaluation": "fail",
+                "reasoning": "This required select field does not have a specific error message programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day",
+                "evaluation": "fail",
+                "reasoning": "This required select field does not have a specific error message programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year",
+                "evaluation": "fail",
+                "reasoning": "This required select field does not have a specific error message programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a",
+                "evaluation": "fail",
+                "reasoning": "This required select field does not have a specific error message programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?",
+                "evaluation": "fail",
+                "reasoning": "This required select field does not have a specific error message programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is expected or necessary.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is expected or necessary.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please fill in this field\" is not linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please fill in this field\" is not linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please select an item in the list\" is not linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please select an item in the list\" is not linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please select an item in the list\" is not linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please fill in this field\" is not linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please fill in this field\" is not linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a",
+                "evaluation": "fail",
+                "reasoning": "The field is required, but no specific error message is programmatically associated with it. The general error message \"Please select an item in the list\" is not linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?(select)",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

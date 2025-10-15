@@ -1,0 +1,406 @@
+[
+    {
+        "url": "https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Endereço de e-mail",
+                "evaluation": "fail",
+                "reasoning": "The only changes after invalid input were a red border and an error class applied. No aria-invalid attribute, no linked error message, and no programmatic association were provided. Since the error is indicated only through color, this fails WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Confirma o teu endereço",
+                "evaluation": "fail",
+                "reasoning": "The only changes after invalid input were a red border and an error class applied. No aria-invalid attribute, no linked error message, and no programmatic association were provided. Since the error is indicated only through color, this fails WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "País de residência (select)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve. (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://login.telecom.pt/Public/Register.aspx?appKey=Xa6qa5wG2b",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message or programmatic indication was provided after invalid input. The error state relies solely on color changes, which were not detected, making it inapplicable for evaluation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message indicating the absence of \"@\" was displayed and associated with the field. This provides a textual cue, passing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telemóvel (opcional)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message or programmatic indication was provided after invalid input. The error state relies solely on color changes, which were not detected, making it inapplicable for evaluation.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "An error message was displayed, indicating the password requirements. This provides a textual cue, passing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Checkbox:Li e aceito as condições de utilização.",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "(+)351 (Portugal) (select)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.nba.com/account/sign-up",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "No invalid inputs were submitted, and no error states were triggered for any of the fields. Therefore, no evaluation of error cues is applicable under WCAG 1.4.1.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Search Players or Teams",
+                "evaluation": "inapplicable",
+                "reasoning": "No invalid inputs were submitted, and no error states were triggered for any of the fields. Therefore, no evaluation of error cues is applicable under WCAG 1.4.1.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (email)",
+                "evaluation": "inapplicable",
+                "reasoning": "No invalid inputs were submitted, and no error states were triggered for any of the fields. Therefore, no evaluation of error cues is applicable under WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message or programmatic support was detected for the invalid input. The error state is not indicated by color alone, but no error indication was provided, making it inapplicable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile number or email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Wrong or Invalid email address or mobile phone number. Please correct and try again.' is displayed and programmatically associated with the field using aria-describedby. This provides a textual cue, passing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Passwords must be at least 6 characters.' is displayed and programmatically associated with the field. This provides a textual cue, passing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Re-enter password",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Passwords must match' is displayed and programmatically associated with the field. This provides a textual cue, passing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.staples.pt/pt/pt/registo",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Nome *",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message or programmatic indication was provided for the invalid input. The error state is not conveyed through color or any other visual change, making it inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Inclua um \"@\" no endereço de email. Falta um \"@\" em \"user.com\".' was displayed, providing textual feedback. This ensures the error is not conveyed by color alone, passing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password *",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was provided for the invalid input. The error state is not conveyed through color or any other visual change, making it inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Divulgação a terceiros (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Sim, eu gostaria de receber as comunicações comerciais da Staples Portugal, como descrito na Política de Privacidade. (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected, indicating a reliance on color or other non-textual cues, which would fail WCAG 1.4.1. However, since no specific color change or visual cue was mentioned, this evaluation is inapplicable.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Last Name is not valid' was added and programmatically associated with the field using aria-describedby and aria-invalid attributes. This provides sufficient non-color-based error indication, passing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Email is not valid' was added and programmatically associated with the field using aria-describedby and aria-invalid attributes. This provides sufficient non-color-based error indication, passing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected, indicating a reliance on color or other non-textual cues, which would fail WCAG 1.4.1. However, since no specific color change or visual cue was mentioned, this evaluation is inapplicable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "No error was triggered, making this evaluation inapplicable under WCAG 1.4.1.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email  *",
+                "evaluation": "pass",
+                "reasoning": "For the \"Email *\" field, the error message 'Inclua um \"@\" no endereço de email. Falta um \"@\" em \"userexample.com\".' is provided, indicating the error is not conveyed by color alone. This passes WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Enter your website to explore",
+                "evaluation": "fail",
+                "reasoning": "For the \"Enter your website to explore\" field, no error message or programmatic indication was detected, and the only change was a border color change. This fails WCAG 1.4.1 as it relies solely on color.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.ipma.pt/pt/siteinfo/contactar.jsp",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered for this field, making it inapplicable for evaluation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "* Nome",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered for this field, making it inapplicable for evaluation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organização",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered for this field, making it inapplicable for evaluation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "* Email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Verifique se o email inserido está correto!' was displayed, providing textual support. This passes WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telefone",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered for this field, making it inapplicable for evaluation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "* Mensagem",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered for this field, making it inapplicable for evaluation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Assunto",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Tema",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "An error message 'This is not a valid Name.' is displayed, indicating the error through text, not color alone. However, it lacks programmatic association.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Inclua um \"@\" no endereço de email. Falta um \"@\" em \"user.com\".' is displayed, indicating the error through text, not color alone. However, it lacks programmatic association.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Subject should be minimum of 6 characters.' is displayed, indicating the error through text, not color alone. However, it lacks programmatic association.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Message should be minimum of 30 characters.' is displayed, indicating the error through text, not color alone. However, it lacks programmatic association.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Upload Screenshot (jpg,png,gif,bmp) (file)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Captcha",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

@@ -1,0 +1,245 @@
+[
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "A visible error message (\"This field is required.\") appears after submission, but there is no aria-describedby/aria-errormessage and no aria-invalid; the message is not programmatically associated with the field."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "A visible error message (\"This field is required.\") appears after submission, but the input lacks aria-describedby/aria-errormessage and aria-invalid; the message is not programmatically associated with the field."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "A visible error message (\"This field is required.\") appears after submission, but there is no ARIA linkage (no aria-describedby/aria-errormessage) and no aria-invalid; the message is not programmatically associated with the field."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "A visible error message (\"This field is required.\") appears after submission, but the input lacks aria-describedby/aria-errormessage and aria-invalid; the message is not programmatically associated with the field."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "A visible “This field is required.” message is shown via a P element, but it is not programmatically associated to the input (no aria-describedby/aria-errormessage, no aria-invalid). Only visual class changes were detected."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "A visible “This field is required.” message is shown via a P element, but it is not programmatically associated to the input (no aria-describedby/aria-errormessage, no aria-invalid). Only visual class changes were detected."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "A visible “This field is required.” message is shown via a P element, but it is not programmatically associated to the input (no aria-describedby/aria-errormessage, no aria-invalid). Only visual class changes were detected."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "A visible “This field is required.” message is shown via a P element, but it is not programmatically associated to the input (no aria-describedby/aria-errormessage, no aria-invalid). Only visual class changes were detected."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "A visible error message appears after submission, but it is not programmatically associated to the input (no aria-describedby/aria-errormessage and no aria-invalid), so assistive technologies will not announce it."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "A visible error message appears after submission, but it is not programmatically associated to the input (no aria-describedby/aria-errormessage and no aria-invalid), so assistive technologies will not announce it."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "A visible error message appears after submission, but it is not programmatically associated to the input (no aria-describedby/aria-errormessage and no aria-invalid), so assistive technologies will not announce it."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "A visible error message appears after submission, but it is not programmatically associated to the input (no aria-describedby/aria-errormessage and no aria-invalid), so assistive technologies will not announce it."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "A visible error message is shown (\"This field is required.\"), but there is no aria-describedby/aria-errormessage or aria-invalid on the input, so the error is not programmatically associated."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "A visible error message is shown, but there is no aria-describedby/aria-errormessage or aria-invalid on the input, so the error is not programmatically associated."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "A visible error message is shown, but there is no aria-describedby/aria-errormessage or aria-invalid on the input, so the error is not programmatically associated."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "A visible error message is shown, but there is no aria-describedby/aria-errormessage or aria-invalid on the input, so the error is not programmatically associated."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "An error message is shown (\"This field is required.\") but there is no programmatic association (no aria-describedby/aria-errormessage, no aria-invalid), so assistive technologies may not announce it."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "An error message is shown (\"This field is required.\") but there is no programmatic association (no aria-describedby/aria-errormessage, no aria-invalid), so assistive technologies may not announce it."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "An error message is shown (\"This field is required.\") but there is no programmatic association (no aria-describedby/aria-errormessage, no aria-invalid), so assistive technologies may not announce it."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "An error message is shown (\"This field is required.\") but there is no programmatic association (no aria-describedby/aria-errormessage, no aria-invalid), so assistive technologies may not announce it."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "A visible “This field is required.” message appears (error classes and P element), but the input has no aria-describedby/aria-errormessage and no aria-invalid. The error is not programmatically associated."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "A visible “This field is required.” message appears (error classes and P element), but the input has no aria-describedby/aria-errormessage and no aria-invalid. The error is not programmatically associated."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "A visible “This field is required.” message appears (error classes and P element), but the input has no aria-describedby/aria-errormessage and no aria-invalid. The error is not programmatically associated."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "A visible “This field is required.” message appears (error classes and P element), but the input has no aria-describedby/aria-errormessage and no aria-invalid. The error is not programmatically associated."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "A visible \"This field is required.\" error is shown, but there is no programmatic association to the input (no aria-describedby/aria-errormessage) and no aria-invalid indicator."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "A visible \"This field is required.\" error is shown, but there is no programmatic association to the input (no aria-describedby/aria-errormessage) and no aria-invalid indicator."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "A visible \"This field is required.\" error is shown, but there is no programmatic association to the input (no aria-describedby/aria-errormessage) and no aria-invalid indicator."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "A visible \"This field is required.\" error is shown, but there is no programmatic association to the input (no aria-describedby/aria-errormessage) and no aria-invalid indicator."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "An error message \"This field is required.\" is displayed, but the input lacks aria-describedby/aria-errormessage or any ID-based linkage to the message, and no aria-invalid is set."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "The error text appears, but it is not programmatically associated with the input (no aria-describedby/aria-errormessage) and aria-invalid is not used."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The error message is visible after submission, but there is no programmatic linkage to the input (no aria-describedby/aria-errormessage) and no aria-invalid indicator."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "A visible error is shown, but it is not programmatically tied to the input (no aria-describedby/aria-errormessage) and no aria-invalid is present."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "A visible error message is shown (P element with error classes) and the container gets error styling, but there is no programmatic association to the input (no aria-describedby/aria-errormessage, not inside the label) and no aria-invalid."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "A visible error message is shown (P element with error classes) and the container gets error styling, but there is no programmatic association to the input (no aria-describedby/aria-errormessage, not inside the label) and no aria-invalid."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "A visible error message is shown (P element with error classes) and the container gets error styling, but there is no programmatic association to the input (no aria-describedby/aria-errormessage, not inside the label) and no aria-invalid."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "A visible error message is shown (P element with error classes) and the container gets error styling, but there is no programmatic association to the input (no aria-describedby/aria-errormessage, not inside the label) and no aria-invalid."
+            }
+        ]
+    }
+]

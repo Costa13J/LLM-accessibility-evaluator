@@ -1,0 +1,20 @@
+=== Evaluation Report ===
+Model: openai/gpt-4o-2024-08-06
+True Positives: 0
+True Negatives: 16
+False Positives: 1
+False Negatives: 0
+Accuracy: 0.941
+Precision: 0.000
+Recall: 0.000
+F1-score: 0.000
+Coverage: 17/40 (42.5%)
+Total samples used: 17
+Pred counts: {0: 16, 1: 1}
+Gold counts: {0: 17}
+
+=== Most Common Issues ===
+- False violation (pass → fail): 1
+
+=== Flagged Cases (examples) ===
+- URL: https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta | Field: Email  * | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)

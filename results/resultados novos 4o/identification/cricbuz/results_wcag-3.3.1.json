@@ -1,0 +1,322 @@
+[
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "name",
+                "evaluation": "fail",
+                "reasoning": "The error message is part of a general error block and is not programmatically associated with the input field."
+            },
+            {
+                "identification": "email",
+                "evaluation": "fail",
+                "reasoning": "The error message is part of a general error block and is not programmatically associated with the input field."
+            },
+            {
+                "identification": "subject",
+                "evaluation": "fail",
+                "reasoning": "The error message is part of a general error block and is not programmatically associated with the input field."
+            },
+            {
+                "identification": "textarea",
+                "evaluation": "fail",
+                "reasoning": "The error message is part of a general error block and is not programmatically associated with the input field."
+            },
+            {
+                "identification": "file",
+                "evaluation": "inapplicable",
+                "reasoning": "The file input is optional and does not require validation when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "name",
+                "evaluation": "fail",
+                "reasoning": "The error message is part of a general error block and is not programmatically associated with the input field."
+            },
+            {
+                "identification": "email",
+                "evaluation": "fail",
+                "reasoning": "The error message is part of a general error block and is not programmatically associated with the input field."
+            },
+            {
+                "identification": "subject",
+                "evaluation": "fail",
+                "reasoning": "The error message is part of a general error block and is not programmatically associated with the input field."
+            },
+            {
+                "identification": "textarea",
+                "evaluation": "fail",
+                "reasoning": "The error message is part of a general error block and is not programmatically associated with the input field."
+            },
+            {
+                "identification": "file",
+                "evaluation": "inapplicable",
+                "reasoning": "The file input is optional and does not require validation when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "name",
+                "evaluation": "fail",
+                "reasoning": "The error message is part of a general error block and is not programmatically associated with the input field."
+            },
+            {
+                "identification": "email",
+                "evaluation": "fail",
+                "reasoning": "The error message is part of a general error block and is not programmatically associated with the input field."
+            },
+            {
+                "identification": "subject",
+                "evaluation": "fail",
+                "reasoning": "The error message is part of a general error block and is not programmatically associated with the input field."
+            },
+            {
+                "identification": "textarea",
+                "evaluation": "fail",
+                "reasoning": "The error message is part of a general error block and is not programmatically associated with the input field."
+            },
+            {
+                "identification": "file",
+                "evaluation": "inapplicable",
+                "reasoning": "The file input is optional and does not require validation when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "The error message \"Name is required\" is shown, but there is no indication that it is programmatically linked to the input field. The field lacks aria-describedby or similar attributes to associate the error message."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The error message \"Email-Id is required\" is shown, but there is no programmatic association with the input field. The field lacks aria-describedby or similar attributes to associate the error message."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "The error message \"Subject is required\" is shown, but there is no programmatic association with the input field. The field lacks aria-describedby or similar attributes to associate the error message."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "fail",
+                "reasoning": "The error message \"Message is required\" is shown, but there is no programmatic association with the input field. The field lacks aria-describedby or similar attributes to associate the error message."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "name",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field. It is part of a general error message block without specific linkage to the field."
+            },
+            {
+                "identification": "email",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field. It is part of a general error message block without specific linkage to the field."
+            },
+            {
+                "identification": "subject",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field. It is part of a general error message block without specific linkage to the field."
+            },
+            {
+                "identification": "textarea",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field. It is part of a general error message block without specific linkage to the field."
+            },
+            {
+                "identification": "file",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name (name)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field. It is displayed in a separate DIV and lacks aria-describedby or similar attributes."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field. It is displayed in a separate DIV and lacks aria-describedby or similar attributes."
+            },
+            {
+                "identification": "Subject (subject)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field. It is displayed in a separate DIV and lacks aria-describedby or similar attributes."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field. It is displayed in a separate DIV and lacks aria-describedby or similar attributes."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "name",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input. It is displayed in a separate DIV without aria-describedby or similar attributes."
+            },
+            {
+                "identification": "email",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input. It is displayed in a separate DIV without aria-describedby or similar attributes."
+            },
+            {
+                "identification": "subject",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input. It is displayed in a separate DIV without aria-describedby or similar attributes."
+            },
+            {
+                "identification": "textarea",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input. It is displayed in a separate DIV without aria-describedby or similar attributes."
+            },
+            {
+                "identification": "file",
+                "evaluation": "inapplicable",
+                "reasoning": "The file input is optional and does not require validation when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name (name)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field. It is displayed in a separate DIV and not linked via aria-describedby or similar attributes."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field. It is displayed in a separate DIV and not linked via aria-describedby or similar attributes."
+            },
+            {
+                "identification": "Subject (subject)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field. It is displayed in a separate DIV and not linked via aria-describedby or similar attributes."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field. It is displayed in a separate DIV and not linked via aria-describedby or similar attributes."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "name",
+                "evaluation": "fail",
+                "reasoning": "The error message is visible but not programmatically associated with the input using aria-describedby or similar methods."
+            },
+            {
+                "identification": "email",
+                "evaluation": "fail",
+                "reasoning": "The error message is visible but not programmatically associated with the input using aria-describedby or similar methods."
+            },
+            {
+                "identification": "subject",
+                "evaluation": "fail",
+                "reasoning": "The error message is visible but not programmatically associated with the input using aria-describedby or similar methods."
+            },
+            {
+                "identification": "textarea",
+                "evaluation": "fail",
+                "reasoning": "The error message is visible but not programmatically associated with the input using aria-describedby or similar methods. Additionally, the field lacks a visible label."
+            },
+            {
+                "identification": "file",
+                "evaluation": "inapplicable",
+                "reasoning": "The file input is optional and does not require validation when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "name",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field. It is presented as separate text without using aria-describedby or similar attributes to link it to the field."
+            },
+            {
+                "identification": "email",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field. It is presented as separate text without using aria-describedby or similar attributes to link it to the field."
+            },
+            {
+                "identification": "subject",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field. It is presented as separate text without using aria-describedby or similar attributes to link it to the field."
+            },
+            {
+                "identification": "textarea",
+                "evaluation": "fail",
+                "reasoning": "The error message is not programmatically associated with the input field. It is presented as separate text without using aria-describedby or similar attributes to link it to the field."
+            },
+            {
+                "identification": "file",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation when left empty."
+            }
+        ]
+    }
+]

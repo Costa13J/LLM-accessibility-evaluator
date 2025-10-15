@@ -1,0 +1,262 @@
+[
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "The field is required and triggers an error message when left empty, indicating it is correctly identified as required. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The field is required and triggers an error message when left empty, indicating it is correctly identified as required. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The field is required and triggers an error message when left empty, indicating it is correctly identified as required. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "pass",
+                "reasoning": "The field is required and triggers an error message when left empty, indicating it is correctly identified as required. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not trigger an error message, which is appropriate."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "The field is required and triggers an error message when left empty, indicating proper use of the 'required' attribute."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The field is required and triggers an error message when left empty, indicating proper use of the 'required' attribute."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The field is required and triggers an error message when left empty, indicating proper use of the 'required' attribute."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "pass",
+                "reasoning": "The field is required and triggers an error message when left empty, indicating proper use of the 'required' attribute."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not trigger an error message when left empty, indicating correct handling of optional status."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "The field is required and triggers an error message when left empty, indicating it is treated as required. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "The field is required and triggers an error message when left empty, indicating it is treated as required. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and triggers an error message when left empty, indicating it is treated as required. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "The 'Name' field is required and triggers an error message when left empty, but it lacks programmatic linking of error messages via 'aria-describedby'."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The 'Email' field is required and triggers an error message when left empty, but it lacks programmatic linking of error messages via 'aria-describedby'."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "The 'Subject' field is required and triggers an error message when left empty, but it lacks programmatic linking of error messages via 'aria-describedby'."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "fail",
+                "reasoning": "The 'No Label' field is required and triggers an error message when left empty, but it lacks programmatic linking of error messages via 'aria-describedby'."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp)",
+                "evaluation": "inapplicable",
+                "reasoning": "The 'file' input is optional and does not trigger an error message, which is appropriate."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "The 'Name' field is required and triggers an error message when left empty, indicating it is correctly identified as required."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The 'Email' field is required and triggers an error message when left empty, indicating it is correctly identified as required."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The 'Subject' field is required and triggers an error message when left empty, indicating it is correctly identified as required."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "pass",
+                "reasoning": "The 'No Label (textarea)' field is required and triggers an error message when left empty, indicating it is correctly identified as required."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp)",
+                "evaluation": "inapplicable",
+                "reasoning": "The 'file' input is optional and does not trigger an error message, which is appropriate."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "The field is required and triggers an error message when left empty, indicating it is correctly identified as required. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The field is required and triggers an error message when left empty, indicating it is correctly identified as required. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The field is required and triggers an error message when left empty, indicating it is correctly identified as required. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "pass",
+                "reasoning": "The field is required and triggers an error message when left empty, indicating it is correctly identified as required. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not trigger an error message, which is appropriate."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and triggers an error message when left empty, indicating it is correctly identified as required. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and triggers an error message when left empty, indicating it is correctly identified as required. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and triggers an error message when left empty, indicating it is correctly identified as required. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and triggers an error message when left empty, indicating it is correctly identified as required. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not trigger an error message, which is appropriate."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "The field is required and triggers an error message when left empty, indicating correct use of the 'required' attribute."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The field is required and triggers an error message when left empty, indicating correct use of the 'required' attribute."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The field is required and triggers an error message when left empty, indicating correct use of the 'required' attribute."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "pass",
+                "reasoning": "The field is required and triggers an error message when left empty, indicating correct use of the 'required' attribute."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not trigger an error message when left empty, indicating correct use of the absence of the 'required' attribute."
+            }
+        ]
+    }
+]

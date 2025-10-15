@@ -1,0 +1,252 @@
+[
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "Input '12345' triggered the message \"This is not a valid Name.\" This is vague and does not tell the user what is allowed or how to correct the value (e.g., use letters only), so it does not provide actionable guidance."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "Input 'user.com' triggered the message \"This is not a valid Email-Id.\" It does not explain the error or how to fix it (e.g., include an '@' and a domain like user@example.com), so guidance is insufficient."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "Input '!!!' triggered \"Subject should be minimum of 6 characters.\" This clearly states the requirement and how to correct it (increase length to at least 6)."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "pass",
+                "reasoning": "The required field was left blank and triggered \"Message is required.\" This clearly indicates the problem and the corrective action (enter a message)."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and no validation was triggered; no error messaging was expected."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "Input '12345' triggered the message \"This is not a valid Name.\" This is too vague and does not explain what rules to meet or how to correct the entry."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "Input 'user.com' triggered \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" This clearly explains the problem and how to fix it."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "Input '!!!' triggered \"Subject should be minimum of 6 characters.\" This provides a specific requirement that guides correction."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "Input '12345' triggered the message \"This is not a valid Name.\" The message is vague (no rules or examples), so it does not guide the user on how to correct the input."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "Input 'user.com' triggered \"This is not a valid Email-Id.\" This does not explain what’s wrong or how to fix it (e.g., include '@' or provide an example format), so it lacks actionable guidance."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "Input '!!!' triggered \"Subject should be minimum of 6 characters.\" This clearly states the requirement and how to correct the input."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "pass",
+                "reasoning": "The empty required field triggered \"Message is required.\" This clearly tells the user what action to take (enter a message)."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp)",
+                "evaluation": "inapplicable",
+                "reasoning": "The file upload is optional and did not trigger validation, so no error guidance was expected."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "Input '12345' triggered \"This is not a valid Name.\" This is not specific about the rule violated and gives no correction advice (e.g., letters only, minimum length), so it lacks actionable guidance."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "Input '12345' triggered \"This is not a valid Name.\" This is vague and does not state the rule (e.g., letters only, minimum length), so it does not guide correction."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "Input 'user.com' triggered \"This is not a valid Email-Id.\" The message does not explain the specific issue (missing '@') or show the correct format, offering no actionable fix."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!!!' triggered \"Subject should be minimum of 6 characters.\" This clearly identifies the problem and how to fix it (add characters to reach at least 6)."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "Input '12345' triggered the error \"This is not a valid Name.\" This is too vague and does not tell the user what format is required (e.g., letters/spaces only, minimum length), so it does not guide correction."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "Input 'user.com' triggered the message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" This clearly states the problem and the fix (add '@'), providing actionable guidance."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "Input '!!!' triggered \"Subject should be minimum of 6 characters.\" This specifies the requirement and how to correct it (use at least 6 characters), offering clear guidance."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "Input '12345' triggered \"This is not a valid Name.\" This is too vague and does not tell the user what criteria to meet (e.g., letters only, min/max length), so it lacks clear guidance."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "Input 'user.com' triggered the native message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" This clearly explains the problem and how to correct it."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "Input '!!!' triggered \"Subject should be minimum of 6 characters,\" which specifies the rule and the fix (make it at least 6 characters)."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "Test input '12345' triggered an error message \"This is not a valid Name.\" The message is vague and does not explain what constitutes a valid name or how to correct the input."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "Test input 'user.com' triggered an error message \"This is not a valid Email-Id.\" This does not explain the problem or suggest a fix (e.g., include an '@' and domain components), providing insufficient guidance."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "Test input '!!!' triggered \"Subject should be minimum of 6 characters.\" This clearly states the requirement and how to correct the input (use at least 6 characters)."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "pass",
+                "reasoning": "Left empty; message \"Message is required.\" clearly identifies the issue (missing required input) and instructs the user to fill it."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no validation triggered; no error message expected or required."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "Input '12345' triggered an error: \"This is not a valid Name.\" This message is vague and does not tell the user what rules apply (e.g., letters only, minimum characters) or how to correct it."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "Input 'user.com' triggered an error. The visible message is generic (\"This is not a valid Email-Id.\") and does not suggest the fix. Without a clear instruction like “Include an '@' (e.g., user@example.com),” the user is not guided to correct the input."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "Input '!!!' triggered the message \"Subject should be minimum of 6 characters,\" which clearly explains the requirement and what to change to resolve the error."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "Input '12345' triggered \"This is not a valid Name.\" This message is vague (no allowed characters or length guidance), so it does not help the user correct the input."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "Input 'user.com' triggered \"This is not a valid Email-Id.\" The message does not specify what is wrong (e.g., missing '@') or provide the expected format, so it lacks actionable guidance."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "Input '!!!' triggered \"Subject should be minimum of 6 characters.\" This clearly states the rule and how to fix it (add characters until at least 6)."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "pass",
+                "reasoning": "Left empty required field triggered \"Message is required.\" This clearly indicates the problem and the action needed (enter a message)."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no selection did not trigger validation; no error messaging was expected."
+            }
+        ]
+    }
+]

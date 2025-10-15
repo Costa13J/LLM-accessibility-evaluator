@@ -1,0 +1,952 @@
+[
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation or error message is expected when left empty.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Search Field (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation or error message is expected when left empty.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error text appeared; only a global dialog. The container gained a “required” class (visual cue) but there is no aria-describedby/aria-errormessage or aria-invalid linking an error to this input.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error text appeared; only a global dialog. The container gained a “required” class (visual cue) but there is no aria-describedby/aria-errormessage or aria-invalid linking an error to this input.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error text appeared; only a global dialog. The container gained a “required” class (visual cue) but there is no programmatic association (e.g., aria-describedby) to an error message.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error text appeared; only a global dialog. The container gained a “required” class (visual cue) but there is no programmatic association (e.g., aria-describedby) to an error message.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error text appeared; only a global dialog. The container gained a “required” class (visual cue) but there is no programmatic association (e.g., aria-describedby) to an error message.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error text appeared; only a global dialog. The container gained a “required” class (visual cue) but there is no aria-describedby/aria-errormessage or aria-invalid linking an error to this input.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error text appeared; only a global dialog. The container gained a “required” class (visual cue) but there is no aria-describedby/aria-errormessage or aria-invalid linking an error to this input.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error text appeared; only a global dialog. Visual highlight without programmatic association (no aria-describedby or similar).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error text appeared; only a global dialog. Visual highlight without programmatic association (no aria-describedby or similar).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation required and no error message expected.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Search Field (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation required and no error message expected.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "fail",
+                "reasoning": "No specific error message was shown for this field; only a global dialog appeared. The container gained a 'required' class/red styling, but there is no aria-describedby or aria-invalid linking an error to the input.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "fail",
+                "reasoning": "No specific error message was shown for this field; only a global dialog appeared. The container gained a 'required' class/red styling, but there is no aria-describedby or aria-invalid linking an error to the input.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month",
+                "evaluation": "fail",
+                "reasoning": "No specific field-level error text; only a global dialog and styling changes. No aria-describedby/aria-invalid present.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day",
+                "evaluation": "fail",
+                "reasoning": "No specific field-level error text; only a global dialog and styling changes. No aria-describedby/aria-invalid present.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year",
+                "evaluation": "fail",
+                "reasoning": "No specific field-level error text; only a global dialog and styling changes. No aria-describedby/aria-invalid present.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "No specific error message was shown for this field; only a global dialog appeared. No programmatic association (aria-describedby/aria-errormessage) or aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "fail",
+                "reasoning": "No specific error message was shown for this field; only a global dialog appeared. No programmatic association (aria-describedby/aria-errormessage) or aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "fail",
+                "reasoning": "No specific error message was shown for this field; only a global dialog appeared. No programmatic association (aria-describedby/aria-errormessage) or aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "fail",
+                "reasoning": "No specific error message was shown for this field; only a global dialog appeared. No programmatic association (aria-describedby/aria-errormessage) or aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation required and no error message expected or shown.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Search Field (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation required and no error message expected or shown.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "fail",
+                "reasoning": "No specific error message is shown or programmatically linked to the input (no aria-describedby/aria-errormessage); only a global alert and visual container highlight.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "fail",
+                "reasoning": "No specific error message is shown or programmatically linked to the input (no aria-describedby/aria-errormessage); only a global alert and visual container highlight.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month",
+                "evaluation": "fail",
+                "reasoning": "No field-level error text and no programmatic association; only global alert and container highlight.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day",
+                "evaluation": "fail",
+                "reasoning": "No field-level error text and no programmatic association; only global alert and container highlight.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year",
+                "evaluation": "fail",
+                "reasoning": "No field-level error text and no programmatic association; only global alert and container highlight.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "No field-level error text and no programmatic association; only global alert and container highlight.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "fail",
+                "reasoning": "No field-level error text and no programmatic association; only global alert and container highlight.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "fail",
+                "reasoning": "No field-level error text and no programmatic association; only global alert and container highlight.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "fail",
+                "reasoning": "No field-level error text and no programmatic association; only global alert and container highlight.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field #1",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation error is expected or required, and no error message appears.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Search Field #2",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation error is expected or required, and no error message appears.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "fail",
+                "reasoning": "Only visual highlighting and a global alert were used; no field-specific error message is shown or programmatically associated (no aria-describedby/aria-errormessage).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "fail",
+                "reasoning": "Only visual highlighting and a global alert were used; no field-specific error message is shown or programmatically associated (no aria-describedby/aria-errormessage).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month",
+                "evaluation": "fail",
+                "reasoning": "Only visual highlighting and a global alert were used; no field-specific error message is shown or programmatically associated (no aria-describedby/aria-errormessage).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day",
+                "evaluation": "fail",
+                "reasoning": "Only visual highlighting and a global alert were used; no field-specific error message is shown or programmatically associated (no aria-describedby/aria-errormessage).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year",
+                "evaluation": "fail",
+                "reasoning": "Only visual highlighting and a global alert were used; no field-specific error message is shown or programmatically associated (no aria-describedby/aria-errormessage).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "Only visual highlighting and a global alert were used; no field-specific error message is shown or programmatically associated (no aria-describedby/aria-errormessage).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "fail",
+                "reasoning": "Only visual highlighting and a global alert were used; no field-specific error message is shown or programmatically associated (no aria-describedby/aria-errormessage).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "fail",
+                "reasoning": "Only visual highlighting and a global alert were used; no field-specific error message is shown or programmatically associated (no aria-describedby/aria-errormessage).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "fail",
+                "reasoning": "Only visual highlighting and a global alert were used; no field-specific error message is shown or programmatically associated (no aria-describedby/aria-errormessage).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation required and no error state was triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Search Field (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation required and no error state was triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "fail",
+                "reasoning": "Only a global alert was shown and the container was styled as required; no field-specific error message was shown or programmatically linked (no aria-describedby/aria-errormessage, no aria-invalid change).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "fail",
+                "reasoning": "Only a global alert was shown and the container was styled as required; no field-specific error message was shown or programmatically linked (no aria-describedby/aria-errormessage, no aria-invalid change).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month",
+                "evaluation": "fail",
+                "reasoning": "Required select lacked a field-specific, programmatically associated error; only global dialog/visual highlighting occurred.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day",
+                "evaluation": "fail",
+                "reasoning": "Required select lacked a field-specific, programmatically associated error; only global dialog/visual highlighting occurred.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year",
+                "evaluation": "fail",
+                "reasoning": "Required select lacked a field-specific, programmatically associated error; only global dialog/visual highlighting occurred.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "No field-level error text was presented or linked via aria-describedby/aria-errormessage; only a global alert and styling were used.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "fail",
+                "reasoning": "No field-level error text was presented or linked via aria-describedby/aria-errormessage; only a global alert and styling were used.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "fail",
+                "reasoning": "Required select showed no specific, programmatically associated error message; only global dialog and visual indication.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "fail",
+                "reasoning": "Required select showed no specific, programmatically associated error message; only global dialog and visual indication.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation required, and no error message is expected or shown.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Search Field (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation required, and no error message is expected or shown.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "fail",
+                "reasoning": "Only a global dialog and visual highlighting were added; no field-specific error message and no programmatic association (no aria-describedby/aria-errormessage, no aria-invalid).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "fail",
+                "reasoning": "Only a global dialog and visual highlighting were added; no field-specific error message and no programmatic association (no aria-describedby/aria-errormessage, no aria-invalid).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month",
+                "evaluation": "fail",
+                "reasoning": "Required select lacks a specific, associated error; no aria-describedby/aria-errormessage and no aria-invalid; only global dialog/visual highlight.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day",
+                "evaluation": "fail",
+                "reasoning": "Required select lacks a specific, associated error; no aria-describedby/aria-errormessage and no aria-invalid; only global dialog/visual highlight.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year",
+                "evaluation": "fail",
+                "reasoning": "Required select lacks a specific, associated error; no aria-describedby/aria-errormessage and no aria-invalid; only global dialog/visual highlight.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error message is presented or programmatically linked; only a global dialog and visual highlight.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error message is presented or programmatically linked; only a global dialog and visual highlight.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "fail",
+                "reasoning": "Required select shows no programmatically associated error; only a global dialog/visual change; no aria-describedby/aria-errormessage, no aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "fail",
+                "reasoning": "Required select shows no programmatically associated error; only a global dialog/visual change; no aria-describedby/aria-errormessage, no aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation expected and no error message required or shown.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation expected and no error message required or shown.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "fail",
+                "reasoning": "Only a global alert appears and styling changes; no field-specific error message is shown or programmatically linked (no aria-describedby/aria-errormessage, no aria-invalid).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "fail",
+                "reasoning": "Only a global alert appears and styling changes; no field-specific error message is shown or programmatically linked (no aria-describedby/aria-errormessage, no aria-invalid).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month",
+                "evaluation": "fail",
+                "reasoning": "Part of a required group; only a global alert and container styling changes; no field-level error message or programmatic association to this select.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day",
+                "evaluation": "fail",
+                "reasoning": "Only a global alert and container styling changes; no field-level error message or programmatic association to this select.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year",
+                "evaluation": "fail",
+                "reasoning": "Only a global alert and container styling changes; no field-level error message or programmatic association to this select.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "Only a global alert and container styling changes; no field-specific error message or ARIA association (e.g., aria-describedby), and no aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "fail",
+                "reasoning": "Only a global alert and container styling changes; no field-specific error message or ARIA association.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a:",
+                "evaluation": "fail",
+                "reasoning": "Only a global alert and container styling changes; no field-specific error message or ARIA association to this select.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?",
+                "evaluation": "fail",
+                "reasoning": "Only a global alert and container styling changes; no field-specific error message or ARIA association to this select.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation required and no error expected. No error message or ARIA error association is present.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Search Field (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation required and no error expected. No error message or ARIA error association is present.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "fail",
+                "reasoning": "Only a visual highlight (required class/pink) was added; no field-specific error text appeared and no aria-describedby/aria-errormessage or aria-invalid was used. Only a global dialog announced errors.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "fail",
+                "reasoning": "Only a visual highlight (required class/pink) was added; no field-specific error text appeared and no aria-describedby/aria-errormessage or aria-invalid was used. Only a global dialog announced errors.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month",
+                "evaluation": "fail",
+                "reasoning": "Only a visual highlight was added; no field-specific error message and no programmatic association via aria-describedby/aria-errormessage; no aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day",
+                "evaluation": "fail",
+                "reasoning": "Only a visual highlight was added; no field-specific error message and no programmatic association via aria-describedby/aria-errormessage; no aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year",
+                "evaluation": "fail",
+                "reasoning": "Only a visual highlight was added; no field-specific error message and no programmatic association via aria-describedby/aria-errormessage; no aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "Only a visual highlight was added; no field-specific error message and no programmatic association via aria-describedby/aria-errormessage; no aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "fail",
+                "reasoning": "Only a visual highlight was added; no field-specific error message and no programmatic association via aria-describedby/aria-errormessage; no aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "fail",
+                "reasoning": "Only a visual highlight was added; no field-specific error message and no programmatic association via aria-describedby/aria-errormessage; no aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "fail",
+                "reasoning": "Only a visual highlight was added; no field-specific error message and no programmatic association via aria-describedby/aria-errormessage; no aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (text) [1]",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation required and no error message expected or shown.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Search Field (text) [2]",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation required and no error message expected or shown.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error message was shown or programmatically associated (no aria-describedby/aria-errormessage); only visual highlighting/general dialog and no aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error message was shown or programmatically associated (no aria-describedby/aria-errormessage); only visual highlighting/general dialog and no aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error message was shown or programmatically associated (no aria-describedby/aria-errormessage); only visual highlighting/general dialog and no aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error message was shown or programmatically associated (no aria-describedby/aria-errormessage); only visual highlighting/general dialog and no aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error message was shown or programmatically associated (no aria-describedby/aria-errormessage); only visual highlighting/general dialog and no aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error message was shown or programmatically associated (no aria-describedby/aria-errormessage); only visual highlighting/general dialog and no aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error message was shown or programmatically associated (no aria-describedby/aria-errormessage); only visual highlighting/general dialog and no aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error message was shown or programmatically associated (no aria-describedby/aria-errormessage); only visual highlighting/general dialog and no aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error message was shown or programmatically associated (no aria-describedby/aria-errormessage); only visual highlighting/general dialog and no aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation required and no error shown.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Search Field (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation required and no error shown.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error message appeared or was linked via aria-describedby/aria-errormessage; no aria-invalid set; only a global dialog and container styling.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error message appeared or was linked via aria-describedby/aria-errormessage; no aria-invalid set; only a global dialog and container styling.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month (select)",
+                "evaluation": "fail",
+                "reasoning": "No specific error text shown or programmatically associated with the select; no aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day (select)",
+                "evaluation": "fail",
+                "reasoning": "No specific error text shown or programmatically associated with the select; no aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year (select)",
+                "evaluation": "fail",
+                "reasoning": "No specific error text shown or programmatically associated with the select; no aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error message was exposed or linked; no aria-describedby/aria-errormessage or aria-invalid; only a global dialog.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error message was exposed or linked; no aria-describedby/aria-errormessage or aria-invalid; only a global dialog.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error message was exposed or linked; no programmatic association; only a global dialog.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error message was exposed or linked; no programmatic association; only a global dialog.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

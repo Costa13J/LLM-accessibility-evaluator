@@ -1,0 +1,31 @@
+=== Evaluation Report ===
+Model: openai/gpt-4.1-mini-2025-04-14
+True Positives: 2
+True Negatives: 6
+False Positives: 4
+False Negatives: 8
+Accuracy: 0.400
+Precision: 0.333
+Recall: 0.200
+F1-score: 0.250
+Coverage: 20/33 (60.6%)
+Total samples used: 20
+Pred counts: {1: 6, 0: 14}
+Gold counts: {0: 10, 1: 10}
+
+=== Most Common Issues ===
+- Missed violation (fail → pass/inapplicable): 6
+- False violation (pass → fail): 4
+- Missed violation (fail → absent): 2
+
+=== Flagged Cases (examples) ===
+- URL: https://www.infinite.media/bible-gateway/ | Field: First Name (text) | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)
+- URL: https://www.infinite.media/bible-gateway/ | Field: Last Name (text) | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)
+- URL: https://www.infinite.media/bible-gateway/ | Field: Email(required) (email) | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)
+- URL: https://www.infinite.media/bible-gateway/ | Field: Organization(required) (text) | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)    
+- URL: https://www.staples.pt/pt/pt/registo | Field: Nome * (text) | Benchmark: fail | Eval: inapplicable | Issue: Missed violation (fail → pass/inapplicable)   
+- URL: https://www.staples.pt/pt/pt/registo | Field: Email * (email) | Benchmark: fail | Eval: inapplicable | Issue: Missed violation (fail → pass/inapplicable) 
+- URL: https://www.staples.pt/pt/pt/registo | Field: Password * (password) | Benchmark: fail | Eval: inapplicable | Issue: Missed violation (fail → pass/inapplicable)
+- URL: https://www.staples.pt/pt/pt/registo | Field: Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (checkbox) | Benchmark: fail | Eval: inapplicable | Issue: Missed violation (fail → pass/inapplicable)
+- URL: https://www.staples.pt/pt/pt/registo | Field: Email * (email) | Benchmark: fail | Eval: inapplicable | Issue: Missed violation (fail → pass/inapplicable) 
+- URL: https://www.staples.pt/pt/pt/registo | Field: Password * (password) | Benchmark: fail | Eval: inapplicable | Issue: Missed violation (fail → pass/inapplicable)

@@ -1,0 +1,410 @@
+[
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number (number)",
+                "evaluation": "fail",
+                "reasoning": "Input 'abc123' triggered the message \"*Invalid phoneNumber, please enter valid phone number,\" which is vague and does not specify the required format or provide an example, offering no clear steps to correct the input.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "fail",
+                "reasoning": "Input 'abc123' produced the message \"*Invalid phoneNumber, please enter valid phone number,\" which is too vague and does not explain the required format (e.g., digits only, length, country code), so it does not guide the user to fix the error.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger a validation error, so no error suggestion is required under WCAG 3.3.3.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "fail",
+                "reasoning": "Input 'abc123' triggered an error message \"*Invalid phoneNumber, please enter valid phone number,\" which is too vague and does not specify the required format (e.g., digits only, length, country code), so it does not clearly guide correction.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger any validation error or message; without an error, WCAG 3.3.3 does not apply.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "inapplicable",
+                "reasoning": "No test input and the field is not required; no validation was triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "inapplicable",
+                "reasoning": "No test input was provided for the required checkbox and no error was observed for it; no validation was triggered in this run.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "No test input and the field is optional; no validation was triggered.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "fail",
+                "reasoning": "Input 'abc123' triggered the error \"*Invalid phoneNumber, please enter valid phone number,\" which states failure but does not explain the required format (e.g., digits only, length, or an example). Lacking corrective guidance, it fails WCAG 3.3.3.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger any validation error or message; without an error, WCAG 3.3.3 does not apply.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "inapplicable",
+                "reasoning": "No input was tested and no validation was triggered; no error messaging expected.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox was not tested and no validation error was reported; no error messaging expected.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "No interaction or validation occurred; WCAG 3.3.3 not applicable.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "fail",
+                "reasoning": "Input 'abc123' triggered the message \"*Invalid phoneNumber, please enter valid phone number,\" which is too vague and does not explain what format is required or how to correct it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger validation; the field seems only required and a non-empty value was provided, so no error messaging was expected.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no test input and no validation feedback; no error expected.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "inapplicable",
+                "reasoning": "Required checkbox was not tested and no error was shown, so WCAG 3.3.3 does not apply.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no test input and no validation feedback; no error expected.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "fail",
+                "reasoning": "Input 'abc123' triggered an error message: \"*Invalid phoneNumber, please enter valid phone number.\" This is too vague and does not specify the required format (e.g., digits only, expected length, whether country code is allowed) or give an example, so it does not guide the user to correct the input.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger validation. With only a required constraint, any non-empty text is accepted, so no error messaging was expected and WCAG 3.3.3 is not applicable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "fail",
+                "reasoning": "Input 'abc123' triggered the message \"*Invalid phoneNumber, please enter valid phone number,\" which does not specify the expected format or steps to correct the input, so it is not actionable.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "fail",
+                "reasoning": "Input 'abc123' triggered the error \"*Invalid phoneNumber, please enter valid phone number,\" which is vague and does not explain the required format (e.g., digits only, length, or country code). It fails to guide the user on how to fix the input.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger validation or an error message, so no guidance is required under WCAG 3.3.3.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "fail",
+                "reasoning": "Input 'abc123' triggered the message \"*Invalid phoneNumber, please enter valid phone number,\" which is too vague and does not specify the required format or steps to correct (e.g., digits only, length, country code, example).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger any validation error; without an error, WCAG 3.3.3 does not apply.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "inapplicable",
+                "reasoning": "No test input and the field is not required; no error was triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities. (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "Although required, no invalid interaction (e.g., leaving it unchecked during submission) was tested; no error was triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "No test input and the field is not required; no error was triggered.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "fail",
+                "reasoning": "Input 'abc123' triggered an error: \"*Invalid phoneNumber, please enter valid phone number.\" The message does not specify the required format (e.g., digits only, length, or country code) or provide an example, so it does not guide correction.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger validation or an error message, and no constraints beyond required were indicated. Since no error was detected, WCAG 3.3.3 does not apply.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

@@ -1,0 +1,4 @@
+URL,Model,Field,Runs,Eval counts,Most common,Consistency ratio,Benchmark,pass,fail,inapplicable,absent,Accuracy,is_consistent
+livescore,gpt-4,Email address,10,"4×inapplicable, 6×fail",fail,0.6,pass,0,6,4,0,0.0,False
+livescore,gpt-4,Message,10,10×inapplicable,inapplicable,1.0,inapplicable,0,0,10,0,1.0,True
+livescore,gpt-4,Subject (select),10,10×absent,absent,1.0,pass,0,0,0,10,0.0,True

@@ -1,0 +1,392 @@
+[
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "The field does not have a required attribute, and no error message is programmatically associated with it. The lack of autocomplete attributes also means the input purpose is not identified for assistive technologies.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "The field does not have a required attribute, and no error message is programmatically associated with it. The lack of autocomplete attributes also means the input purpose is not identified for assistive technologies.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field does not have a required attribute, and no error message is programmatically associated with it. The lack of autocomplete attributes also means the input purpose is not identified for assistive technologies.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The field does not have a required attribute, and no error message is programmatically associated with it. The lack of autocomplete attributes also means the input purpose is not identified for assistive technologies.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. The mutations indicate that error messages are shown, but without programmatic association, they are not accessible to assistive technologies.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. The mutations indicate that error messages are shown, but without programmatic association, they are not accessible to assistive technologies.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. The mutations indicate that error messages are shown, but without programmatic association, they are not accessible to assistive technologies.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. The mutations indicate that error messages are shown, but without programmatic association, they are not accessible to assistive technologies.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. Error messages are shown, but without programmatic association, they are not accessible to assistive technologies.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. Error messages are shown, but without programmatic association, they are not accessible to assistive technologies.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. Error messages are shown, but without programmatic association, they are not accessible to assistive technologies.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. Error messages are shown, but without programmatic association, they are not accessible to assistive technologies.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. The lack of autocomplete attributes also means the input purpose is not identified for assistive technologies.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. The lack of autocomplete attributes also means the input purpose is not identified for assistive technologies.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. The lack of autocomplete attributes also means the input purpose is not identified for assistive technologies.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. The lack of autocomplete attributes also means the input purpose is not identified for assistive technologies.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "The field does not have a required attribute, and no error message is programmatically associated with it. The mutations indicate that error messages are shown, but there is no indication of how they are linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "The field does not have a required attribute, and no error message is programmatically associated with it. The mutations indicate that error messages are shown, but there is no indication of how they are linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field does not have a required attribute, and no error message is programmatically associated with it. The mutations indicate that error messages are shown, but there is no indication of how they are linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The field does not have a required attribute, and no error message is programmatically associated with it. The mutations indicate that error messages are shown, but there is no indication of how they are linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "The field does not have a required attribute, and no error message is programmatically associated with it. The lack of autocomplete attributes means the input purpose is not identified for assistive technologies.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "The field does not have a required attribute, and no error message is programmatically associated with it. The lack of autocomplete attributes means the input purpose is not identified for assistive technologies.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field does not have a required attribute, and no error message is programmatically associated with it. The lack of autocomplete attributes means the input purpose is not identified for assistive technologies.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The field does not have a required attribute, and no error message is programmatically associated with it. The lack of autocomplete attributes means the input purpose is not identified for assistive technologies.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. Error messages are shown but not linked to the field using aria-describedby or similar methods.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. Error messages are shown but not linked to the field using aria-describedby or similar methods.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. Error messages are shown but not linked to the field using aria-describedby or similar methods.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. Error messages are shown but not linked to the field using aria-describedby or similar methods.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. The mutations indicate that error messages are shown, but without programmatic association, they are not accessible to assistive technologies.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. The mutations indicate that error messages are shown, but without programmatic association, they are not accessible to assistive technologies.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. The mutations indicate that error messages are shown, but without programmatic association, they are not accessible to assistive technologies.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. The mutations indicate that error messages are shown, but without programmatic association, they are not accessible to assistive technologies.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error message is programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error message is programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error message is programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error message is programmatically associated with it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. The mutations indicate that error messages are shown, but there is no indication of how they are linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. The mutations indicate that error messages are shown, but there is no indication of how they are linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. The mutations indicate that error messages are shown, but there is no indication of how they are linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Password",
+                "evaluation": "fail",
+                "reasoning": "The field does not have the required attribute, and no error messages are programmatically associated with it. The mutations indicate that error messages are shown, but there is no indication of how they are linked to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

@@ -1,0 +1,322 @@
+[
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation errors or messages were triggered; the field appears optional and did not present an error state."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "Only a red border style was applied with no visible, field-specific error message and no programmatic association (e.g., aria-describedby or aria-errormessage); aria-invalid not present."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "Only a red border style was applied with no visible, field-specific error message and no programmatic association (e.g., aria-describedby or aria-errormessage); aria-invalid not present."
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation errors or messages were triggered; the field appears optional and did not present an error state."
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "fail",
+                "reasoning": "The container received a red border indicating an error, but no field-specific error message was shown and no programmatic association to the checkbox (e.g., aria-describedby) or aria-invalid was observed."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation triggered and it’s not required; no error message appeared."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "Visual error indicated (red border) but no field-specific error message or ARIA linkage (e.g., aria-describedby/aria-invalid); only a general error container toggled."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "Visual error indicated (red border) but no programmatic association to an error message (no aria-describedby/aria-invalid); only a general error container toggled."
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation/error shown; appears optional and not validated when empty."
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "fail",
+                "reasoning": "Error indicated by styling on the container (ssa_box) but no field-level error text and no ARIA linkage to the checkbox."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation was triggered and no error message appeared. This optional search field does not require error identification."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "Only a red border was applied; no field-specific error message was shown or programmatically linked (no aria-describedby/aria-invalid). Any global error display is not associated to this input."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "Only a red border was applied; no field-specific error message was shown or programmatically linked (no aria-describedby/aria-invalid). Any global error display is not associated to this input."
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation changes or messages detected; treated as optional, so error identification is not required."
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "fail",
+                "reasoning": "Error indicated only by a red border on a container (ssa_box); no field-specific visible message and no programmatic linkage to the checkbox (no aria-describedby/aria-invalid)."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message appeared and the field is optional; no validation triggered when left empty, so error identification is not applicable."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "Only a red border indicated an error (input#email); no specific error message was shown or programmatically associated (no aria-describedby/aria-errormessage, no aria-invalid)."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "Only a red border indicated an error (input#reenter_email); no specific error message was shown or programmatically associated (no aria-describedby/aria-errormessage, no aria-invalid)."
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message appeared and the field is optional; no validation triggered when left empty, so error identification is not applicable."
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "fail",
+                "reasoning": "The container (ssa_box) showed an error border when unchecked, but no specific error text was presented or programmatically tied to the checkbox (no aria-describedby or inline error associated)."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message appeared and no ARIA indicators were used; the field is optional and does not require validation when left empty."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "Only a red border change was observed; no field-specific error message was shown or programmatically linked (no aria-describedby/aria-errormessage, no aria-invalid). A global error container changed but was not associated to this field."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "Only a red border change was observed; no field-specific error message was shown or programmatically linked (no aria-describedby/aria-errormessage, no aria-invalid)."
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message appeared and no ARIA indicators were used; the field appears optional and not validated when left empty."
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "fail",
+                "reasoning": "Only a red border was applied to the agreement box; no specific error text was presented or programmatically linked to the checkbox (no aria-describedby/aria-errormessage, no aria-invalid)."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation or error messaging was triggered for this optional field; no visual/programmatic error association present."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "Only a red border was applied; no specific error message was shown or programmatically associated (no aria-describedby/aria-errormessage or aria-invalid)."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "Only a red border was applied; no specific error message was shown or programmatically associated (no aria-describedby/aria-errormessage or aria-invalid)."
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation or error messaging was triggered for this optional field; no visual/programmatic error association present."
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "fail",
+                "reasoning": "A red border was applied to the container, but no specific error message was shown or linked to the checkbox programmatically (no aria-describedby/aria-errormessage or aria-invalid)."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message appeared or was associated programmatically; the field is optional, so error identification is not required."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "inapplicable",
+                "reasoning": "Only a red border style change was observed; no specific, programmatically associated error message. The field is optional per provided data, so validation feedback is not required."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "inapplicable",
+                "reasoning": "Only a red border style change was observed; no specific, programmatically associated error message. The field is optional per provided data, so validation feedback is not required."
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message appeared and no ARIA error indicators; the field is optional, so error identification is not required."
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "inapplicable",
+                "reasoning": "A container border change suggests visual emphasis, but no field-specific error message or ARIA association was observed; the control is marked optional, so error identification is not required."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation changes or error text observed and the field is not required, so no accessible error identification is expected."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "Only a red border was applied; no specific error message appeared or was programmatically associated (no aria-describedby/aria-invalid). A global error container was shown but not linked to this field."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "Only a red border was applied; no specific error message appeared or was programmatically associated (no aria-describedby/aria-invalid). A global error container was shown but not linked to this field."
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation changes or error text observed and the field is not required, so no accessible error identification is expected."
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "fail",
+                "reasoning": "Only a red border was applied to the container; no specific error message was shown or programmatically associated with the checkbox (no aria-describedby/aria-invalid). A global error container was shown but not linked to this field."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message appeared and the field appears optional; no validation triggered when left empty."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "Only visual styling (red border) indicated an error; no specific error message was shown or programmatically associated to the input (no aria-describedby/aria-errormessage, no aria-invalid). A global error container changed but was not linked to this field."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "Only visual styling (red border) indicated an error; no specific error message was shown or programmatically associated to the input (no aria-describedby/aria-errormessage, no aria-invalid). Global error container not linked to this field."
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message appeared and the field appears optional; no validation triggered when left empty."
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "fail",
+                "reasoning": "A red border on the container indicated an error, but no specific error message was shown or programmatically associated to the checkbox (no aria-describedby/aria-errormessage, no aria-invalid)."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no validation triggered and no error message or ARIA error attributes; no error identification expected."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "Only a red border was applied; no specific error message and no programmatic link (no aria-describedby/aria-errormessage, no aria-invalid)."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "Only a red border was applied; no specific error message and no programmatic link (no aria-describedby/aria-errormessage, no aria-invalid)."
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no validation triggered and no error message or ARIA error attributes; no error identification expected."
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "fail",
+                "reasoning": "Container showed an error border, but no field-specific error message was shown and no programmatic association to the checkbox was provided (no aria-describedby/aria-errormessage, no aria-invalid)."
+            }
+        ]
+    }
+]

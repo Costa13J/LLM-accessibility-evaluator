@@ -1,0 +1,25 @@
+=== Evaluation Report ===
+Model: mistral/mistral-large-latest
+True Positives: 4
+True Negatives: 8
+False Positives: 2
+False Negatives: 3
+Accuracy: 0.706
+Precision: 0.667
+Recall: 0.571
+F1-score: 0.615
+Coverage: 17/28 (60.7%)
+Total samples used: 17
+Pred counts: {1: 6, 0: 11}
+Gold counts: {0: 10, 1: 7}
+
+=== Most Common Issues ===
+- Missed violation (fail → absent): 3
+- False violation (pass → fail): 2
+
+=== Flagged Cases (examples) ===
+- URL: https://www.infinite.media/bible-gateway/ | Field: First Name | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)
+- URL: https://www.infinite.media/bible-gateway/ | Field: Last Name | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)
+- URL: https://www.staples.pt/pt/pt/registo | Field: Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (checkbox) | Benchmark: fail | Eval: absent | Issue: Missed violation (fail → absent)
+- URL: https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62 | Field: Confirma o teu endereço | Benchmark: fail | Eval: absent | Issue: Missed violation (fail → absent)
+- URL: https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62 | Field: Tenho 13 anos ou mais de idade e concordo com os termos do Acordo de Subscrição Steam e da Política de Privacidade da Valve. (checkbox) | Benchmark: fail | Eval: absent | Issue: Missed violation (fail → absent)\

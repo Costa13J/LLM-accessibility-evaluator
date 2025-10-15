@@ -1,0 +1,622 @@
+[
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no required attribute and no required behavior observed."
+            },
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no required attribute and no required behavior observed."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "pass",
+                "reasoning": "Uses the required attribute and behaves as required after submission."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "pass",
+                "reasoning": "Uses the required attribute and its container reflected a required state after submission."
+            },
+            {
+                "identification": "Month",
+                "evaluation": "pass",
+                "reasoning": "Select is marked required and part of a birthdate group that was flagged required after submission."
+            },
+            {
+                "identification": "Day",
+                "evaluation": "pass",
+                "reasoning": "Select is marked required and part of a birthdate group that was flagged required after submission."
+            },
+            {
+                "identification": "Year",
+                "evaluation": "pass",
+                "reasoning": "Select is marked required and part of a birthdate group that was flagged required after submission."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "Uses the required attribute and behaves as required after submission."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "pass",
+                "reasoning": "Uses the required attribute and its container reflected a required state after submission."
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "pass",
+                "reasoning": "Select uses the required attribute and its container reflected a required state after submission."
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "pass",
+                "reasoning": "Select uses the required attribute and its container reflected a required state after submission."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional; no required attribute and no required-behavior cues after submission."
+            },
+            {
+                "identification": "Search Field (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional; no required attribute and no required-behavior cues after submission."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute and behaves as required after submission."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute and behaves as required after submission."
+            },
+            {
+                "identification": "Month",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute and behaves as required after submission."
+            },
+            {
+                "identification": "Day",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute and behaves as required after submission."
+            },
+            {
+                "identification": "Year",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute and behaves as required after submission."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute and behaves as required after submission."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute and behaves as required after submission."
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute and behaves as required after submission."
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute and behaves as required after submission."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (text) [1]",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional with no required attribute and no required behavior cues after submission."
+            },
+            {
+                "identification": "Search Field (text) [2]",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional with no required attribute and no required behavior cues after submission."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "pass",
+                "reasoning": "The field has the native required attribute and behaves as required after submission."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "pass",
+                "reasoning": "The field has the native required attribute; its container was marked required after submission, confirming required behavior."
+            },
+            {
+                "identification": "Month",
+                "evaluation": "pass",
+                "reasoning": "The select has the required attribute and is treated as required post-submit (birthdate group marked required)."
+            },
+            {
+                "identification": "Day",
+                "evaluation": "pass",
+                "reasoning": "The select has the required attribute and is treated as required post-submit (birthdate group marked required)."
+            },
+            {
+                "identification": "Year",
+                "evaluation": "pass",
+                "reasoning": "The select has the required attribute and is treated as required post-submit (birthdate group marked required)."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "The input has the native required attribute and is included in the set of required fields flagged on submit."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "pass",
+                "reasoning": "The input has the native required attribute and shows required-state cues after submission."
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "pass",
+                "reasoning": "The select has the native required attribute and is treated as required after submission."
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "pass",
+                "reasoning": "The select has the native required attribute and is treated as required after submission."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no required attribute and no required behavior observed."
+            },
+            {
+                "identification": "Search Field (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no required attribute and no required behavior observed."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "pass",
+                "reasoning": "Has the required attribute and is treated as required after submission."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "pass",
+                "reasoning": "Has the required attribute and is treated as required after submission."
+            },
+            {
+                "identification": "Month (select)",
+                "evaluation": "pass",
+                "reasoning": "Has the required attribute; the birthdate group shows required-state cues after submission."
+            },
+            {
+                "identification": "Day (select)",
+                "evaluation": "pass",
+                "reasoning": "Has the required attribute; the birthdate group shows required-state cues after submission."
+            },
+            {
+                "identification": "Year (select)",
+                "evaluation": "pass",
+                "reasoning": "Has the required attribute; the birthdate group shows required-state cues after submission."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "Has the required attribute and is treated as required after submission."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "pass",
+                "reasoning": "Has the required attribute and is treated as required after submission."
+            },
+            {
+                "identification": "You plan to enroll as a:* (select)",
+                "evaluation": "pass",
+                "reasoning": "Has the required attribute and is treated as required after submission."
+            },
+            {
+                "identification": "When would you like to start classes at UH?* (select)",
+                "evaluation": "pass",
+                "reasoning": "Has the required attribute and is treated as required after submission."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional; no 'required' attribute and no required behavior observed after submission."
+            },
+            {
+                "identification": "Search Field (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional; no 'required' attribute and no required behavior observed after submission."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "pass",
+                "reasoning": "Uses the native 'required' attribute and is treated as required after submission."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "pass",
+                "reasoning": "Uses the native 'required' attribute and is treated as required after submission."
+            },
+            {
+                "identification": "Month",
+                "evaluation": "pass",
+                "reasoning": "Uses the native 'required' attribute and is treated as required after submission."
+            },
+            {
+                "identification": "Day",
+                "evaluation": "pass",
+                "reasoning": "Uses the native 'required' attribute and is treated as required after submission."
+            },
+            {
+                "identification": "Year",
+                "evaluation": "pass",
+                "reasoning": "Uses the native 'required' attribute and is treated as required after submission."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "Uses the native 'required' attribute and is treated as required after submission."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "pass",
+                "reasoning": "Uses the native 'required' attribute and is treated as required after submission."
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "pass",
+                "reasoning": "Uses the native 'required' attribute and is treated as required after submission."
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "pass",
+                "reasoning": "Uses the native 'required' attribute and is treated as required after submission."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "No required attribute and no post-submit cues indicating it is required; treated as optional."
+            },
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "No required attribute and no post-submit cues indicating it is required; treated as optional."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute and behaves as required after submission (form reports incomplete required fields)."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute and the field’s container is flagged as required after submission."
+            },
+            {
+                "identification": "Month",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute; the birthdate group is flagged as required after submission."
+            },
+            {
+                "identification": "Day",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute; the birthdate group is flagged as required after submission."
+            },
+            {
+                "identification": "Year",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute; the birthdate group is flagged as required after submission."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute and is marked required after submission."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute and is marked required after submission."
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute and is marked required after submission."
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute and is marked required after submission."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (first instance)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional (no required attribute) and does not behave as required after submission."
+            },
+            {
+                "identification": "Search Field (second instance)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional (no required attribute) and does not behave as required after submission."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "pass",
+                "reasoning": "Marked required in markup and treated as required after submission."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "pass",
+                "reasoning": "Marked required in markup and treated as required after submission."
+            },
+            {
+                "identification": "Month",
+                "evaluation": "pass",
+                "reasoning": "Select uses the required attribute and behaves as required after submission."
+            },
+            {
+                "identification": "Day",
+                "evaluation": "pass",
+                "reasoning": "Select uses the required attribute and behaves as required after submission."
+            },
+            {
+                "identification": "Year",
+                "evaluation": "pass",
+                "reasoning": "Select uses the required attribute and behaves as required after submission."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "Marked required in markup and treated as required after submission."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "pass",
+                "reasoning": "Marked required in markup and treated as required after submission."
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "pass",
+                "reasoning": "Select is marked required in markup and behaves as required after submission."
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "pass",
+                "reasoning": "Select is marked required in markup and behaves as required after submission."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is optional with no required attribute and no required behavior indicated post-submit."
+            },
+            {
+                "identification": "Search Field (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is optional with no required attribute and no required behavior indicated post-submit."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute and behaves as required after submission."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute and behaves as required after submission."
+            },
+            {
+                "identification": "Month",
+                "evaluation": "pass",
+                "reasoning": "Select has the native required attribute and is treated as required post-submit."
+            },
+            {
+                "identification": "Day",
+                "evaluation": "pass",
+                "reasoning": "Select has the native required attribute and is treated as required post-submit."
+            },
+            {
+                "identification": "Year",
+                "evaluation": "pass",
+                "reasoning": "Select has the native required attribute and is treated as required post-submit."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute and is validated as required post-submit."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute and is validated as required post-submit."
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "pass",
+                "reasoning": "Select uses the native required attribute and is treated as required post-submit."
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "pass",
+                "reasoning": "Select uses the native required attribute and is treated as required post-submit."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (text) [1]",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no required attribute and no required behavior after submission."
+            },
+            {
+                "identification": "Search Field (text) [2]",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no required attribute and no required behavior after submission."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "pass",
+                "reasoning": "Required field uses the native required attribute; required behavior is indicated after submission."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "pass",
+                "reasoning": "Required field uses the native required attribute; mutations show it was treated as required."
+            },
+            {
+                "identification": "Month",
+                "evaluation": "pass",
+                "reasoning": "Required select uses the required attribute; the birthdate group is flagged as required after submission."
+            },
+            {
+                "identification": "Day",
+                "evaluation": "pass",
+                "reasoning": "Required select uses the required attribute; the birthdate group is flagged as required after submission."
+            },
+            {
+                "identification": "Year",
+                "evaluation": "pass",
+                "reasoning": "Required select uses the required attribute; the birthdate group is flagged as required after submission."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "Required field uses the native required attribute; required validation is indicated."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "pass",
+                "reasoning": "Required field uses the native required attribute; mutations show it was treated as required."
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "pass",
+                "reasoning": "Required select uses the native required attribute; mutations show it was treated as required."
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "pass",
+                "reasoning": "Required select uses the native required attribute; mutations show it was treated as required."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no required attribute; no required behavior observed after submission."
+            },
+            {
+                "identification": "Search Field (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no required attribute; no required behavior observed after submission."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "pass",
+                "reasoning": "Uses the required attribute and is treated as required after submission."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "pass",
+                "reasoning": "Uses the required attribute and is treated as required after submission (required styling applied)."
+            },
+            {
+                "identification": "Month",
+                "evaluation": "pass",
+                "reasoning": "Select field uses the required attribute and behaves as required after submission."
+            },
+            {
+                "identification": "Day",
+                "evaluation": "pass",
+                "reasoning": "Select field uses the required attribute and behaves as required after submission."
+            },
+            {
+                "identification": "Year",
+                "evaluation": "pass",
+                "reasoning": "Select field uses the required attribute and behaves as required after submission."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "Uses the required attribute and is treated as required after submission."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "pass",
+                "reasoning": "Uses the required attribute and is treated as required after submission."
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "pass",
+                "reasoning": "Select field uses the required attribute and is treated as required after submission."
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "pass",
+                "reasoning": "Select field uses the required attribute and is treated as required after submission."
+            }
+        ]
+    }
+]

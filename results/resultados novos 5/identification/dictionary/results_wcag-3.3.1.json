@@ -1,0 +1,522 @@
+[
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional search field; no validation required and no error message shown."
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "Error message \"This field is required.\" appears and is programmatically associated via a label with a for attribute pointing to the input (wpforms-535-field_0); visually adjacent; no aria-invalid used."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "Error message \"This field is required.\" appears and is programmatically associated via a label with for=\"wpforms-535-field_0-last\"; visually adjacent; no aria-invalid used."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Error message \"This field is required.\" appears and is programmatically associated via a label with for=\"wpforms-535-field_1\"; visually adjacent; no aria-invalid used."
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "Error message \"This field is required.\" appears and is programmatically associated via a label with for=\"wpforms-535-field_11\"; visually adjacent; no aria-invalid used."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation required and no error message shown."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "Error message \"This field is required.\" appears and is programmatically associated via a label with for=\"wpforms-535-field_2\"; visually adjacent; no aria-invalid used."
+            },
+            {
+                "identification": "Email (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation required and no error message shown."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field without validation; no error message shown."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation triggered and no error message shown."
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "An error message \"This field is required.\" was added as a label with id \"wpforms-535-field_0-error\" and for=\"wpforms-535-field_0\", making it visually and programmatically associated with the input."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "An error message \"This field is required.\" was added as a label with id \"wpforms-535-field_0-last-error\" and for=\"wpforms-535-field_0-last\", creating a visual and programmatic association."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "An error message \"This field is required.\" was added as a label with id \"wpforms-535-field_1-error\" and for=\"wpforms-535-field_1\", visually and programmatically linking it to the input."
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "An error message \"This field is required.\" was added as a label with id \"wpforms-535-field_11-error\" and for=\"wpforms-535-field_11\", providing visual and programmatic association."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no error shown or required validation."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "An error message \"This field is required.\" was added as a label with id \"wpforms-535-field_2-error\" and for=\"wpforms-535-field_2\", visually and programmatically associating the message to the textarea."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no error message is expected when left empty."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation feedback required when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation or error message shown."
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "Error message \"This field is required.\" appeared and was programmatically linked via a label with a matching for attribute; visually adjacent; no aria-invalid used."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "Error message \"This field is required.\" appeared and was programmatically linked via a label with a matching for attribute; visually adjacent; no aria-invalid used."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Error message \"This field is required.\" appeared and was programmatically linked via a label with a matching for attribute; visually adjacent; no aria-invalid used."
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "Error message \"This field is required.\" appeared and was programmatically linked via a label with a matching for attribute; visually adjacent; no aria-invalid used."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation or error message shown."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "Error message \"This field is required.\" appeared and was programmatically linked via a label with a matching for attribute; visually adjacent; no aria-invalid used."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation or error message shown."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no visible error message; not required, so validation feedback is not expected."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field (required=no); no validation error is expected or shown."
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "Error message \"This field is required.\" is shown and programmatically linked via a label with a matching for attribute (for=\"wpforms-535-field_0\") targeting the input."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "Error message \"This field is required.\" is shown and programmatically linked via a label with for=\"wpforms-535-field_0-last\" targeting the input."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Error message \"This field is required.\" is shown and programmatically linked via a label with for=\"wpforms-535-field_1\" targeting the input."
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "Error message \"This field is required.\" is shown and programmatically linked via a label with for=\"wpforms-535-field_11\" targeting the select."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field (required=no); no validation error is expected or shown."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "Error message \"This field is required.\" is shown and programmatically linked via a label with for=\"wpforms-535-field_2\" targeting the textarea."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field (required=no); no validation error is expected or shown."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field (required=no) and no validation feedback is required."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional search field with no validation feedback required or shown."
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "Error message \"This field is required.\" added as a label with for pointing to the input, giving programmatic and visual association; no aria-invalid/aria-describedby used."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "Error message \"This field is required.\" added as a label with for pointing to the input, giving programmatic and visual association; no aria-invalid/aria-describedby used."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Error message \"This field is required.\" added as a label with for pointing to the input, giving programmatic and visual association; no aria-invalid/aria-describedby used."
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "Error message \"This field is required.\" added as a label with for pointing to the select, giving programmatic and visual association; no aria-invalid/aria-describedby used."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation feedback required or shown."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "Error message \"This field is required.\" added as a label with for pointing to the textarea, giving programmatic and visual association; no aria-invalid/aria-describedby used."
+            },
+            {
+                "identification": "Email (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation feedback required or shown."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no validation; no error message expected or shown."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation triggered and no error message shown."
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "Error label \"This field is required.\" was added with for=\"wpforms-535-field_0\", making it visible and programmatically associated with the input."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "Error label \"This field is required.\" was added with for=\"wpforms-535-field_0-last\", making it visible and programmatically associated with the input."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Error label \"This field is required.\" was added with for=\"wpforms-535-field_1\", making it visible and programmatically associated with the input."
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "Error label \"This field is required.\" was added with for=\"wpforms-535-field_11\", making it visible and programmatically associated with the select."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation or error message required when left empty."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "Error label \"This field is required.\" was added with for=\"wpforms-535-field_2\", making it visible and programmatically associated with the textarea."
+            },
+            {
+                "identification": "Email (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation or error message required when left empty."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation or error message required when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no validation; no error message expected or shown."
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "Error message \"This field is required.\" is shown and programmatically linked via a label element with a matching for attribute; also visually adjacent."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "Error message \"This field is required.\" is shown and programmatically linked via a label element with a matching for attribute; also visually adjacent."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Error message \"This field is required.\" is shown and programmatically linked via a label element with a matching for attribute; also visually adjacent."
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "Error message \"This field is required.\" is shown and programmatically linked via a label element with a matching for attribute; also visually adjacent."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no error state or message expected or shown."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "Error message \"This field is required.\" is shown and programmatically linked via a label element with a matching for attribute; also visually adjacent."
+            },
+            {
+                "identification": "Email (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no error state or message expected or shown."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no validation; no error message expected or shown."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is optional; no validation feedback is expected or shown."
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "An inline error label with text \"This field is required.\" was inserted and programmatically linked via its for attribute to the input, and is visibly shown next to the field."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "An error label \"This field is required.\" was added and associated to the input via for, and is visibly presented next to the field."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "An error label \"This field is required.\" was added and linked via for to the email input, providing visual and programmatic association."
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "An error label \"This field is required.\" was inserted and linked via for to the select control, and is visibly associated."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is optional; no error message is required or shown."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "An error label \"This field is required.\" was added and linked via for to the textarea, and is visibly shown."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is optional; no validation feedback is expected or shown."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is optional and unlabeled in the source list; no validation feedback is expected or shown."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation triggered and no error message shown."
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "A specific error message (\"This field is required.\") appeared and is visually adjacent; it is programmatically associated via a label element with a for attribute referencing the input."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "A specific error message (\"This field is required.\") appeared and is visually adjacent; it is programmatically associated via a label element with a for attribute referencing the input."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "A specific error message (\"This field is required.\") appeared and is visually adjacent; it is programmatically associated via a label element with a for attribute referencing the input."
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "A specific error message (\"This field is required.\") appeared and is visually adjacent; it is programmatically associated via a label element with a for attribute referencing the select."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation triggered and no error message shown."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "A specific error message (\"This field is required.\") appeared and is visually adjacent; it is programmatically associated via a label element with a for attribute referencing the textarea."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation triggered and no error message shown."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field without validation; no error message shown, so error identification is not applicable."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and no validation errors were triggered; no error message appeared."
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "An error message \"This field is required.\" was added and visually displayed. It is programmatically linked via a label element with for=\"wpforms-535-field_0\", and the input was marked aria-invalid=\"true\"."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "An error message \"This field is required.\" was added and visually displayed. It is programmatically linked via a label element with for=\"wpforms-535-field_0-last\"."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "An error message \"This field is required.\" was added and visually displayed. It is programmatically linked via a label element with for=\"wpforms-535-field_1\"."
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "An error message \"This field is required.\" was added and visually displayed. It is programmatically linked via a label element with for=\"wpforms-535-field_11\"."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional; no validation is required and no error is expected when left empty."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "An error message \"This field is required.\" was added and visually displayed. It is programmatically linked via a label element with for=\"wpforms-535-field_2\"."
+            },
+            {
+                "identification": "Email (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional; no validation is required and no error is expected when left empty."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional; no validation is required and no error is expected when left empty."
+            }
+        ]
+    }
+]

@@ -1,0 +1,322 @@
+[
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The First Name field has an error message programmatically associated using aria-describedby and aria-invalid is set to true, indicating an error state."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The Last Name field has an error message programmatically associated using aria-describedby and aria-invalid is set to true."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The Email field has an error message programmatically associated using aria-describedby and aria-invalid is set to true."
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The Organization field has an error message programmatically associated using aria-describedby and aria-invalid is set to true."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The Website field is optional and does not require validation when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, and the field is marked with aria-invalid when an error occurs."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, and the field is marked with aria-invalid when an error occurs."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, and the field is marked with aria-invalid when an error occurs."
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, and the field is marked with aria-invalid when an error occurs."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The First Name field is required and has an error message programmatically associated using aria-describedby. The field also uses aria-invalid to indicate an error state."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The Last Name field is required and has an error message programmatically associated using aria-describedby. The field also uses aria-invalid to indicate an error state."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The Email field is required and has an error message programmatically associated using aria-describedby. The field also uses aria-invalid to indicate an error state."
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The Organization field is required and has an error message programmatically associated using aria-describedby. The field also uses aria-invalid to indicate an error state."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The Website field is optional and does not require validation when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically associated using aria-describedby, and aria-invalid is set to true, indicating an error state."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically associated using aria-describedby, and aria-invalid is set to true, indicating an error state."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically associated using aria-describedby, and aria-invalid is set to true, indicating an error state."
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically associated using aria-describedby, and aria-invalid is set to true, indicating an error state."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The First Name field has an error message programmatically associated using aria-describedby and aria-invalid attributes, ensuring screen readers can announce the error."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The Last Name field uses aria-describedby and aria-invalid for error association, ensuring accessibility."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The Email field has an error message programmatically linked via aria-describedby and aria-invalid, making it accessible."
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The Organization field uses aria-describedby and aria-invalid to associate the error message, ensuring accessibility."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The Website field is optional and does not require validation when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The First Name field has an error message programmatically associated using aria-describedby, and the aria-invalid attribute is set to true, indicating an error state."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The Last Name field has an error message programmatically associated using aria-describedby, and the aria-invalid attribute is set to true."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The Email field has an error message programmatically associated using aria-describedby, and the aria-invalid attribute is set to true."
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The Organization field has an error message programmatically associated using aria-describedby, and the aria-invalid attribute is set to true."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The Website field is optional and does not require validation when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The First Name field has an error message programmatically linked via aria-describedby and marked with aria-invalid, ensuring screen readers can announce the error."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The Last Name field has an error message programmatically linked via aria-describedby and marked with aria-invalid."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The Email field has an error message programmatically linked via aria-describedby and marked with aria-invalid."
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The Organization field has an error message programmatically linked via aria-describedby and marked with aria-invalid."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The Website field is optional and does not require validation when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The First Name field has an error message programmatically associated using aria-describedby and aria-invalid attributes, ensuring screen readers can announce the error."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The Last Name field uses aria-describedby and aria-invalid for error association, meeting accessibility guidelines."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The Email field has an error message linked via aria-describedby and uses aria-invalid, ensuring proper error identification."
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The Organization field is linked with aria-describedby and aria-invalid, providing accessible error feedback."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The Website field is optional and does not require validation when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The First Name field has an error message programmatically associated using aria-describedby, and aria-invalid is set to true, indicating an error state."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The Last Name field has an error message programmatically associated using aria-describedby, and aria-invalid is set to true."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The Email field has an error message programmatically associated using aria-describedby, and aria-invalid is set to true."
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The Organization field has an error message programmatically associated using aria-describedby, and aria-invalid is set to true."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The Website field is optional and does not require validation when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "The First Name field has an error message programmatically associated using aria-describedby and aria-invalid attributes, ensuring screen readers can announce the error."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The Last Name field uses aria-describedby and aria-invalid for error association, ensuring accessibility."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The Email field has an error message programmatically linked via aria-describedby and aria-invalid, ensuring accessibility."
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The Organization field uses aria-describedby and aria-invalid to associate the error message with the input."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The Website field is optional and does not require validation when left empty."
+            }
+        ]
+    }
+]

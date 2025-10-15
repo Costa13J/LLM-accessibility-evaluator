@@ -1,0 +1,472 @@
+[
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "Input '!' triggered a linked error: \"Name: First Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" This clearly states what is wrong and which characters are allowed, enabling correction.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "Input '!' triggered a linked error: \"Name: Last Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" The message lists allowed characters, guiding the fix.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "Input 'userexample.com' triggered a linked error: \"Email is not valid. Email addresses should follow the format user@domain.com.\" It explains the issue and gives an example format to correct it.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger validation feedback; no error message or aria-invalid was set, so WCAG 3.3.3 does not apply.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "pass",
+                "reasoning": "Input '!' triggered a linked error: \"Website is not valid. Must be a valid URL.\" This directs the user to enter a valid URL, providing actionable guidance.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": true
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "Test input '!' triggered an error with aria-invalid=true and a linked message: \"Name: First Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" This clearly states what is wrong and how to fix it by specifying allowed characters.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "Test input '!' triggered an error with aria-invalid=true and a linked message: \"Name: Last Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" The message provides specific rules to correct the input.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "Test input 'userexample.com' triggered an error with aria-invalid=true and a linked message: \"Email is not valid. Email addresses should follow the format user@domain.com.\" This identifies the missing '@' and provides an example format to correct the entry.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "Test input '!' did not trigger any validation error or message. Since the field was non-empty, no error was expected; WCAG 3.3.3 applies only when an error is triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "pass",
+                "reasoning": "Test input '!' triggered an error with aria-invalid=true and a linked message: \"Website is not valid. Must be a valid URL.\" This informs the user of the problem and how to fix it by entering a valid URL.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": true
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "Input '!' triggered an error linked via aria-describedby: \"Name: First Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" This clearly states the problem and allowed characters, guiding the user to fix it.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "Input '!' triggered an error linked via aria-describedby: \"Name: Last Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" The message specifies allowed characters, providing actionable guidance.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "Input 'userexample.com' triggered an error linked via aria-describedby: \"Email is not valid. Email addresses should follow the format user@domain.com.\" It explains the issue and gives a concrete example format to correct it.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger any validation error or message for this field. Since no error was detected, error suggestion requirements (WCAG 3.3.3) do not apply.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "fail",
+                "reasoning": "Input '!' triggered an error linked via aria-describedby: \"Website is not valid. Must be a valid URL.\" While it identifies the problem, it lacks specific corrective guidance (e.g., an example like https://example.com), making it less actionable.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "Input '!' triggered a linked error message: \"Name: First Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" It specifies the allowed characters, guiding correction.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "Input '!' triggered a linked error message: \"Name: Last Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" It clearly lists permitted characters.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (required)",
+                "evaluation": "pass",
+                "reasoning": "Input 'userexample.com' triggered a linked error message: \"Email is not valid. Email addresses should follow the format user@domain.com.\" It identifies the problem and provides an example format to fix it.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization (required)",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger a validation error or message for this field; WCAG 3.3.3 applies only when an error is shown.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "fail",
+                "reasoning": "Input '!' triggered a linked error message: \"Website is not valid. Must be a valid URL.\" The message states the failure but does not suggest how to correct it (e.g., include https://example.com), so guidance is insufficient.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "Test input '!' triggered an error with aria-invalid=true and a linked message: \"Name: First Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" This clearly states the problem and the allowed characters, guiding correction.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "Test input '!' triggered an error with aria-invalid=true and a linked message: \"Name: Last Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" This explains what is wrong and how to fix it.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "Test input 'userexample.com' triggered an error with aria-invalid=true and a linked message: \"Email is not valid. Email addresses should follow the format user@domain.com.\" The example format clearly guides the user to include an @ and a domain.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "Test input '!' did not trigger any validation or error message; since no error was detected, WCAG 3.3.3 does not apply.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "pass",
+                "reasoning": "Test input '!' triggered an error with aria-invalid=true and a linked message: \"Website is not valid. Must be a valid URL.\" This indicates the problem and how to correct it by entering a valid URL.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": true
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "Input '!' triggered a linked error: \"Name: First Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" This clearly states the issue and allowed characters, guiding correction.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "Input '!' triggered a linked error: \"Name: Last Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" This provides specific allowed characters, enabling a fix.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "Input 'userexample.com' triggered: \"Email is not valid. Email addresses should follow the format user@domain.com.\" This identifies the missing format and gives a concrete example.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger validation or an error message; no aria-invalid/describedby changes. WCAG 3.3.3 applies only when an error is present.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "fail",
+                "reasoning": "Input '!' triggered: \"Website is not valid. Must be a valid URL.\" This is vague and lacks specific guidance or an example (e.g., https://example.com), so it does not clearly instruct how to fix the input.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "Input '!' triggered the error \"Name: First Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" The message specifies allowed characters, clearly guiding correction and is programmatically linked.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "Input '!' triggered the error \"Name: Last Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" This provides explicit rules for fixing the input and is programmatically linked.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "Input 'userexample.com' triggered \"Email is not valid. Email addresses should follow the format user@domain.com.\" The message explains the issue and gives a corrective example; aria-describedby and aria-invalid were set.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not produce a field-level validation error or linked message; no aria-invalid/aria-describedby changes were observed. Since no error was triggered, WCAG 3.3.3 does not apply.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "fail",
+                "reasoning": "Input '!' triggered \"Website is not valid. Must be a valid URL.\" While linked correctly, it lacks specific guidance (e.g., example like https://example.com or instruction to include a scheme), so it does not clearly tell the user how to fix the input.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "Test input '!'. Error shown and linked via aria-describedby; aria-invalid set to true. Message specifies allowed characters (\"letters, numbers, spaces, ', or -\"), clearly guiding the user to remove invalid characters.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "Test input '!'. Error shown and linked via aria-describedby; aria-invalid set to true. Message specifies allowed characters, providing clear steps to correct the input.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "Test input 'userexample.com'. Error shown and linked via aria-describedby; aria-invalid set to true. Message explains the issue and gives the correct format example (\"user@domain.com\"), enabling correction.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "Test input '!'. No validation error or message appeared, and no ARIA changes were observed. Since no error was triggered, WCAG 3.3.3 does not apply.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "pass",
+                "reasoning": "Test input '!'. Error shown and linked via aria-describedby; aria-invalid set to true. Message states the requirement (\"Must be a valid URL\"), which directs the user to provide a proper URL.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": true
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "Input '!' triggered an error linked via aria-describedby: \"Name: First Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" This clearly states what’s wrong and how to correct it.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "Input '!' triggered an error linked via aria-describedby: \"Name: Last Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" This provides specific, actionable rules.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "Input 'userexample.com' triggered an error linked via aria-describedby: \"Email is not valid. Email addresses should follow the format user@domain.com.\" The message identifies the issue and shows the correct format.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger validation or an error message. Since no error was detected, WCAG 3.3.3 does not apply.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "pass",
+                "reasoning": "Input '!' triggered an error linked via aria-describedby: \"Website is not valid. Must be a valid URL.\" This indicates the problem and the required correction (provide a valid URL).",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": true
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "Input '!' triggered an error with \"Name: First Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" The message is specific about allowed characters and linked via aria-describedby, clearly guiding correction.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "Input '!' triggered an error with \"Name: Last Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" The rule and how to fix it are explicit and the error is programmatically linked.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (required)",
+                "evaluation": "pass",
+                "reasoning": "Input 'userexample.com' triggered an error: \"Email is not valid. Email addresses should follow the format user@domain.com.\" This explains the issue and provides a correct format example; aria-invalid and aria-describedby confirm proper association.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization (required)",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger validation feedback and the field was not flagged; since no error was detected, WCAG 3.3.3 does not apply.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "pass",
+                "reasoning": "Input '!' triggered an error: \"Website is not valid. Must be a valid URL.\" The message identifies the problem and what to provide (a valid URL) and is linked via aria-describedby, aiding correction.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": true
+            }
+        ]
+    }
+]

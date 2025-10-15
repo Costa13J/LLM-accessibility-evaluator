@@ -1,0 +1,322 @@
+[
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "phone number",
+                "evaluation": "fail",
+                "reasoning": "The phone number field shows an error message \"*Please enter phoneNumber\" after submission, but it is not programmatically linked to the input field."
+            },
+            {
+                "identification": "name",
+                "evaluation": "fail",
+                "reasoning": "The name field shows a generic error message \"Please fill in this field.\" after submission, but it is not programmatically linked to the input field."
+            },
+            {
+                "identification": "city",
+                "evaluation": "inapplicable",
+                "reasoning": "The city selection input is not required and does not show any error message."
+            },
+            {
+                "identification": "consent",
+                "evaluation": "fail",
+                "reasoning": "The consent checkbox is required but does not show any specific error message after submission."
+            },
+            {
+                "identification": "filter by city",
+                "evaluation": "inapplicable",
+                "reasoning": "The filter by city input is not required and does not show any error message."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "phone number",
+                "evaluation": "fail",
+                "reasoning": "The phone number field is required and an error message is shown, but it is not programmatically linked to the input field."
+            },
+            {
+                "identification": "name",
+                "evaluation": "fail",
+                "reasoning": "The name field is required and an error message is shown, but it is not programmatically linked to the input field."
+            },
+            {
+                "identification": "city",
+                "evaluation": "inapplicable",
+                "reasoning": "The city selection input is not required, so no error message is necessary."
+            },
+            {
+                "identification": "consent",
+                "evaluation": "fail",
+                "reasoning": "The consent checkbox is required, but no specific error message is shown or linked."
+            },
+            {
+                "identification": "filter by city",
+                "evaluation": "inapplicable",
+                "reasoning": "The filter by city input is not required, so no error message is necessary."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "phone number",
+                "evaluation": "fail",
+                "reasoning": "The phone number field is required and an error message \"*Please enter phoneNumber\" is added, but it is not programmatically linked to the input field."
+            },
+            {
+                "identification": "name",
+                "evaluation": "fail",
+                "reasoning": "The name field is required, but no specific error message is programmatically linked or visually associated with it."
+            },
+            {
+                "identification": "city selection",
+                "evaluation": "inapplicable",
+                "reasoning": "The city selection input is not required, so no error message is necessary."
+            },
+            {
+                "identification": "consent checkbox",
+                "evaluation": "fail",
+                "reasoning": "The consent checkbox is required, but no specific error message is programmatically linked or visually associated with it."
+            },
+            {
+                "identification": "filter by city",
+                "evaluation": "inapplicable",
+                "reasoning": "The filter by city input is not required, so no error message is necessary."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "phone number",
+                "evaluation": "fail",
+                "reasoning": "An error message \"*Please enter phoneNumber\" is added, but it is not programmatically linked to the input field. The message is visible but lacks aria-describedby or similar attributes for screen reader accessibility."
+            },
+            {
+                "identification": "name",
+                "evaluation": "fail",
+                "reasoning": "The form indicates a validation error with \"Please fill in this field,\" but no specific error message is programmatically linked to the input field."
+            },
+            {
+                "identification": "city",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, and no validation error is expected or shown."
+            },
+            {
+                "identification": "consent checkbox",
+                "evaluation": "fail",
+                "reasoning": "The form indicates a validation error with \"Please fill in this field,\" but no specific error message is programmatically linked to the checkbox."
+            },
+            {
+                "identification": "filter by city",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, and no validation error is expected or shown."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "phone number",
+                "evaluation": "fail",
+                "reasoning": "The phone number field is required and an error message \"*Please enter phoneNumber\" is added, but it is not programmatically linked to the input field."
+            },
+            {
+                "identification": "name",
+                "evaluation": "fail",
+                "reasoning": "The name field is required, but no specific error message is shown or linked to the field."
+            },
+            {
+                "identification": "city",
+                "evaluation": "inapplicable",
+                "reasoning": "The city selection input is not required, so no error message is necessary."
+            },
+            {
+                "identification": "consent",
+                "evaluation": "fail",
+                "reasoning": "The consent checkbox is required, but no specific error message is shown or linked to the field."
+            },
+            {
+                "identification": "filter by city",
+                "evaluation": "inapplicable",
+                "reasoning": "The filter by city input is not required, so no error message is necessary."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "phone number",
+                "evaluation": "fail",
+                "reasoning": "The phone number field shows an error message \"*Please enter phoneNumber\" after submission, but it is not programmatically linked to the input field."
+            },
+            {
+                "identification": "name",
+                "evaluation": "fail",
+                "reasoning": "The name field shows a generic error message \"Please fill in this field,\" which is not specific or programmatically associated with the input."
+            },
+            {
+                "identification": "city",
+                "evaluation": "inapplicable",
+                "reasoning": "The city input is not required, so it does not show error messages."
+            },
+            {
+                "identification": "consent checkbox",
+                "evaluation": "fail",
+                "reasoning": "The checkbox is required but does not show any error message when left unchecked."
+            },
+            {
+                "identification": "filter by city",
+                "evaluation": "inapplicable",
+                "reasoning": "The filter by city input is not required, so it does not show error messages."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "phone number",
+                "evaluation": "fail",
+                "reasoning": "An error message \"*Please enter phoneNumber\" is added, but it is not programmatically linked to the input field. The error message is visible but lacks aria-describedby or similar attributes for screen reader accessibility."
+            },
+            {
+                "identification": "name",
+                "evaluation": "fail",
+                "reasoning": "The form indicates a validation error with \"Please fill in this field,\" but no specific error message is programmatically linked to the input field."
+            },
+            {
+                "identification": "city",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, and no validation errors are indicated."
+            },
+            {
+                "identification": "consent checkbox",
+                "evaluation": "fail",
+                "reasoning": "No specific error message is provided, and the field is required, but no validation feedback is given."
+            },
+            {
+                "identification": "filter by city",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, and no validation errors are indicated."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "phone number",
+                "evaluation": "fail",
+                "reasoning": "The phone number field is required and an error message is shown, but it is not programmatically linked to the input field."
+            },
+            {
+                "identification": "name",
+                "evaluation": "fail",
+                "reasoning": "The name field is required and an error message is shown, but it is not programmatically linked to the input field."
+            },
+            {
+                "identification": "city",
+                "evaluation": "inapplicable",
+                "reasoning": "The city selection input is not required, so no error message is necessary."
+            },
+            {
+                "identification": "consent",
+                "evaluation": "fail",
+                "reasoning": "The consent checkbox is required, but no specific error message is shown or linked."
+            },
+            {
+                "identification": "filter by city",
+                "evaluation": "inapplicable",
+                "reasoning": "The filter by city input is not required, so no error message is necessary."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "phone number",
+                "evaluation": "fail",
+                "reasoning": "The phone number field is required and an error message is added to the DOM when it is not filled. However, the error message is not programmatically linked to the input field."
+            },
+            {
+                "identification": "name",
+                "evaluation": "fail",
+                "reasoning": "The name field is required and an error message is added to the DOM when it is not filled. However, the error message is not programmatically linked to the input field."
+            },
+            {
+                "identification": "city selection",
+                "evaluation": "inapplicable",
+                "reasoning": "The city selection input is not required, so no error message is necessary."
+            },
+            {
+                "identification": "consent checkbox",
+                "evaluation": "fail",
+                "reasoning": "The consent checkbox is required, but there is no indication of an error message being added or linked."
+            },
+            {
+                "identification": "filter by city",
+                "evaluation": "inapplicable",
+                "reasoning": "The filter by city input is not required, so no error message is necessary."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "phone number",
+                "evaluation": "fail",
+                "reasoning": "An error message \"*Please enter phoneNumber\" is added, but it is not programmatically linked to the input field. The message is visible but lacks aria-describedby or similar attributes for screen reader accessibility."
+            },
+            {
+                "identification": "name",
+                "evaluation": "fail",
+                "reasoning": "The form indicates a validation error with \"Please fill in this field,\" but no specific error message is programmatically linked to the input field."
+            },
+            {
+                "identification": "city",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, and no validation error is triggered."
+            },
+            {
+                "identification": "consent checkbox",
+                "evaluation": "fail",
+                "reasoning": "No specific error message is provided, and the field is required, but no validation feedback is given."
+            },
+            {
+                "identification": "filter by city",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, and no validation error is triggered."
+            }
+        ]
+    }
+]

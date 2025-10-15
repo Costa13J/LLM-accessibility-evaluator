@@ -1,0 +1,472 @@
+[
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "fail",
+                "reasoning": "A visible error \"*Please enter phoneNumber\" was added, but there is no programmatic association (no aria-describedby/aria-errormessage, no aria-invalid) to link it to the input.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "fail",
+                "reasoning": "Required field shows only a native browser prompt (\"Please fill in this field.\") with no DOM error element and no ARIA linkage to the input.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "fail",
+                "reasoning": "Required checkbox shows no error message and has no programmatic error association.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is optional; no validation feedback is required when left empty.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is optional; no validation feedback is required when left empty.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "fail",
+                "reasoning": "The error “*Please enter phoneNumber” is visible but not programmatically linked to the input (no aria-describedby/aria-errormessage; no aria-invalid).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "fail",
+                "reasoning": "No dedicated error element appeared for this field; only a native tooltip (“Please fill in this field.”) with no programmatic association.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no validation feedback is expected when left empty.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "fail",
+                "reasoning": "Required checkbox shows no programmatically associated error message in the DOM (no aria-describedby/aria-errormessage) and no aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation feedback.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "fail",
+                "reasoning": "An error “*Please enter phoneNumber” appears, but it is not programmatically linked to the input (no aria-describedby, no aria-invalid), so screen readers may not announce it as belonging to this field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "fail",
+                "reasoning": "Required field with no specific error message shown after submission and no programmatic association (e.g., aria-describedby) or aria-invalid indicator.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is not required, so no error identification is expected.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "fail",
+                "reasoning": "Required checkbox without a specific, associated error message and no programmatic link (e.g., aria-describedby) or aria-invalid state.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is not required, so no error identification is expected.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "fail",
+                "reasoning": "An error message appears after submission (\"*Please enter phoneNumber\") but it is not programmatically linked to the input (no aria-describedby/aria-errormessage, no aria-invalid), so assistive technologies may not announce it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "fail",
+                "reasoning": "Required field shows only a generic browser message (\"Please fill in this field.\") with no DOM error element or ARIA association to the input.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is optional (required=no), so no validation feedback is expected when left empty.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "fail",
+                "reasoning": "Required checkbox lacks a specific error message that is programmatically associated (no aria-describedby/aria-errormessage, no aria-invalid); only a generic browser prompt is implied.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is optional (required=no), so no validation feedback is expected when left empty.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Phone number",
+                "evaluation": "fail",
+                "reasoning": "An error message appears (“*Please enter phoneNumber”) but it is not programmatically linked to the input (no aria-describedby/ids, no aria-invalid), so assistive technologies may not associate it with the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "Required field, but no specific DOM error message is shown or linked; browser-native message is not programmatically associated with the input.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation feedback when left empty.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "fail",
+                "reasoning": "Required checkbox with no visible, field-specific error message and no programmatic association (e.g., aria-describedby/aria-invalid).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation feedback when left empty.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "fail",
+                "reasoning": "An error message \"*Please enter phoneNumber\" appears after submission, but it is not programmatically associated with the input (no aria-describedby/aria-errormessage; not inside the label). aria-invalid not observed.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "fail",
+                "reasoning": "Required field with no specific, programmatically associated error message shown in the DOM after submission. Any native browser prompt is not exposed via ARIA relationships.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is not required; no validation feedback expected.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "fail",
+                "reasoning": "Required checkbox shows no specific error message after submission and has no programmatic association (no aria-describedby/aria-errormessage; aria-invalid not observed).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is optional; no validation feedback required.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "fail",
+                "reasoning": "An error message was shown (\"*Please enter phoneNumber\"), but it is not programmatically associated with the input (no aria-describedby/errormessage) and no aria-invalid is set; placement appears generic to the form rather than tied to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "fail",
+                "reasoning": "No specific, programmatically associated error message appears for this input; only a potential native browser prompt is indicated, with no aria-describedby/errormessage or aria-invalid.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required, so no validation feedback is expected when left empty.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "fail",
+                "reasoning": "The required checkbox shows no error message after submission and has no programmatic association (no aria-describedby/errormessage) or aria-invalid indicator.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional, so validation feedback is not required.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "fail",
+                "reasoning": "The error \"*Please enter phoneNumber\" appears, but there is no programmatic association to the input (no aria-describedby or id linkage) and no aria-invalid state, so assistive technologies cannot reliably associate it to this field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "fail",
+                "reasoning": "No field-specific error message is added to the DOM; potential native browser tooltip is not programmatically associated to the input.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation required when left empty.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "fail",
+                "reasoning": "Required checkbox shows no specific error message and no ARIA linkage (e.g., aria-describedby) or aria-invalid to identify the error programmatically.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no validation required when left empty.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Phone number",
+                "evaluation": "fail",
+                "reasoning": "Error \"*Please enter phoneNumber\" appeared but is not programmatically associated to the input (no aria-describedby/aria-errormessage, no aria-invalid). Browser-native prompts are not in the DOM.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "No specific, programmatically associated error was shown; no aria-describedby/aria-errormessage and no aria-invalid. Only possible browser-native messaging.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is optional; no validation feedback required when left empty.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "fail",
+                "reasoning": "Required checkbox shows no specific, programmatically associated error and no ARIA linking; only potential browser-native prompt.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is optional; no validation feedback required when left empty.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "fail",
+                "reasoning": "A visible error \"*Please enter phoneNumber\" appears, but it is not programmatically linked to the input (no aria-describedby/aria-errormessage or aria-invalid), so assistive technologies cannot reliably associate it with the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "fail",
+                "reasoning": "Required field with no specific, programmatically associated error message; only potential browser tooltip, which is not in the DOM and not announced by screen readers.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is optional; no validation feedback is required when left empty.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "fail",
+                "reasoning": "Required checkbox but no visible, specific error message and no ARIA association (e.g., aria-describedby/aria-errormessage).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is optional; no validation feedback is required when left empty.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

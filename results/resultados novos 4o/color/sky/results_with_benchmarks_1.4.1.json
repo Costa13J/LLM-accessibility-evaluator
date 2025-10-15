@@ -1,0 +1,1144 @@
+[
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for invalid input. The error is not conveyed through color alone, but no specific error cue was identified.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for invalid input. The error is not conveyed through color alone, but no specific error cue was identified.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for invalid input. The error is not conveyed through color alone, but no specific error cue was identified.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for invalid input. The error is not conveyed through color alone, but no specific error cue was identified.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Telephone number seems invalid.' is associated with the field, and aria-invalid is set to true. This provides programmatic support, passing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Email address seems invalid.' is associated with the field, and aria-invalid is set to true. This provides programmatic support",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed through color alone, but no error message was linked.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed through color alone, but no error message was linked.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed through color alone, but no error message was linked.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed through color alone, but no error message was linked.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Telephone number seems invalid.' is programmatically associated with the field using aria-describedby. This passes WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Email address seems invalid.' is programmatically associated with the field using aria-describedby. This passes WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations. The possible error messages listed do not indicate any programmatic or textual error cues being triggered for this field. Therefore, this case is inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations. The possible error messages listed do not indicate any programmatic or textual error cues being triggered for this field. Therefore, this case is inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations. The possible error messages listed do not indicate any programmatic or textual error cues being triggered for this field. Therefore, this case is inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations. The possible error messages listed do not indicate any programmatic or textual error cues being triggered for this field. Therefore, this case is inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations. The possible error messages listed do not indicate any programmatic or textual error cues being triggered for this field. Therefore, this case is inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations. The possible error messages listed do not indicate any programmatic or textual error cues being triggered for this field. Therefore, this case is inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations. The possible error messages listed do not indicate any programmatic or textual error cues being triggered for this field. Therefore, this case is inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations. The possible error messages listed do not indicate any programmatic or textual error cues being triggered for this field. Therefore, this case is inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations. The possible error messages listed do not indicate any programmatic or textual error cues being triggered for this field. Therefore, this case is inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations. The possible error messages listed do not indicate any programmatic or textual error cues being triggered for this field. Therefore, this case is inapplicable for WCAG 1.4.1 evaluation.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cues were detected in the mutations. The possible error messages listed do not indicate any program",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no error cue was triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no error cue was triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no error cue was triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no error cue was triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Telephone number seems invalid.' is programmatically associated with the field using aria-describedby, and aria-invalid is set to true. This passes WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Email address seems invalid.' is programmatically associated with the field using aria-describedby, and aria-invalid is set to true. This passes WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cue was triggered for invalid input.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cue was triggered for invalid input.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cue was triggered for invalid input.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Unknown",
+                "evaluation": "Unknown",
+                "reasoning": "No reasoning provided",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed through color alone, but no error cue was triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed through color alone, but no error cue was triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed through color alone, but no error cue was triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed through color alone, but no error cue was triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Telephone number seems invalid.' is associated with the field, and aria-invalid is set to true. This provides programmatic support, so it passes WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Email address seems invalid.' is associated with the field, and aria-invalid is set to true. This provides programmatic support, so it passes WCAG 1",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed through color alone, but no error cues were triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed through color alone, but no error cues were triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed through color alone, but no error cues were triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed through color alone, but no error cues were triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Telephone number seems invalid.' is programmatically associated with the field using aria-describedby. This passes WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Email address seems invalid.' is programmatically associated with the field using aria-describedby. This passes WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered for invalid input. This is inapplicable.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered for invalid input. This is inapplicable.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "Unknown",
+                "reasoning": "No reasoning provided",
+                "benchmark": "pass",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no specific error cue was identified.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no specific error cue was identified.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no specific error cue was identified.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no specific error cue was identified.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Telephone number seems invalid.' is programmatically associated with the field using aria-describedby, and aria-invalid is set to true. This passes WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Email address seems invalid.' is programmatically associated with the field using aria-describedby, and aria-invalid is set to true.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no error cue was triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no error cue was triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no error cue was triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no error cue was triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Telephone number seems invalid.' is programmatically associated with the field using aria-describedby. This passes WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Email address seems invalid.' is programmatically associated with the field using aria-describedby. This passes WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "fail",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error cue relies solely on color changes, failing WCAG 1.4.1.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "fail",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error cue relies solely on color changes, failing WCAG 1.4.1.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "fail",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error cue relies solely on color changes, failing WCAG 1.4.1.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Location",
+                "evaluation": "fail",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error cue relies solely on color changes, failing WCAG 1.4.1.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Telephone number seems invalid.' is programmatically associated with the field using aria-describedby, passing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Email address seems invalid.' is programmatically associated with the field using aria-describedby, passing WCAG 1.4.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error was triggered for invalid input, making this inapplicable.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error was triggered for invalid input, making this inapplicable.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No reasoning provided",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no specific error cue was triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no specific error cue was triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no specific error cue was triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic indication was detected for invalid input. The error is not conveyed by color alone, but no specific error cue was triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Telephone number seems invalid.' is programmatically associated with the field using aria-describedby, ensuring the error is not conveyed by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "An error message 'Email address seems invalid.' is programmatically associated with the field using aria-describedby, ensuring the error is not conveyed by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No reasoning provided",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

@@ -1,0 +1,10 @@
+URL,Model,Field,Runs,Most common,Consistency ratio,Benchmark,absent_count,fail_count,inapplicable_count,pass_count,field_accuracy,is_consistent
+blog.collinsdictionary.com,gpt-4,Search,9,inapplicable,1.0,,0,0,9,0,,True
+blog.collinsdictionary.com,gpt-4,First,10,pass,0.6,pass,0,4,0,6,0.6,False
+blog.collinsdictionary.com,gpt-4,Last,10,pass,0.6,pass,0,4,0,6,0.6,False
+blog.collinsdictionary.com,gpt-4,Email *,10,pass,0.6,pass,0,4,0,6,0.6,False
+blog.collinsdictionary.com,gpt-4,Subject *,9,pass,0.6,pass,0,4,0,6,0.6666666666666666,False
+blog.collinsdictionary.com,gpt-4,Add more subject detail,10,inapplicable,0.9,inapplicable,1,0,9,0,0.9,False
+blog.collinsdictionary.com,gpt-4,Comment or Message *,9,pass,0.6,pass,0,4,0,6,0.6666666666666666,False
+blog.collinsdictionary.com,gpt-4,Email (2),9,inapplicable,1.0,,0,0,9,0,,True
+blog.collinsdictionary.com,gpt-4,No Label,9,inapplicable,1.0,,0,0,9,0,,True

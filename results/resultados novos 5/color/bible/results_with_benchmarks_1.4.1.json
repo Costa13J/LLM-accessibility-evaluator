@@ -1,0 +1,472 @@
+[
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "Error text is present and linked via aria-describedby, and aria-invalid=\"true\" is set; the error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "Error text is present and linked via aria-describedby, and aria-invalid=\"true\" is set; the error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "Error text is present and linked via aria-describedby, and aria-invalid=\"true\" is set; the error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cue was triggered (no aria-invalid, no linked error text, no visual change), so there is no error state to evaluate for color reliance.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "pass",
+                "reasoning": "Error text is present and linked via aria-describedby, and aria-invalid=\"true\" is set; the error is not indicated by color alone.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "Error message was added and programmatically linked via aria-describedby, with aria-invalid=\"true\"; color change is not the sole indicator.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "Error message was added and programmatically linked via aria-describedby, with aria-invalid=\"true\"; color change is not the sole indicator.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "Error message was added and programmatically linked via aria-describedby, with aria-invalid=\"true\"; color change is not the sole indicator.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered (no aria-invalid, no linked error text, no new visual change), so there is nothing to evaluate under WCAG 1.4.1.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "pass",
+                "reasoning": "Error message was added and programmatically linked via aria-describedby, with aria-invalid=\"true\"; color change is not the sole indicator.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "inapplicable",
+                "reasoning": "No visual or programmatic error cues appeared after invalid input; no error text or aria attributes were added, so no error state to evaluate for color reliance.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "inapplicable",
+                "reasoning": "No visual or programmatic error cues appeared after invalid input; no error text or aria attributes were added, so no error state to evaluate for color reliance.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "Invalid email did not produce any field-level visual change or linked error text/aria; “possible” messages were not presented or associated, so no observable error cue.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No visual or semantic error indicators (no aria-invalid/aria-describedby, no error text). No error state triggered.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field and no error cues (color or text) were triggered; nothing to evaluate for color reliance.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "aria-invalid=\"true\" and aria-describedby link the field to a visible error message, so the error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "aria-invalid=\"true\" and aria-describedby link the field to a visible error message, so the error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "aria-invalid=\"true\" and aria-describedby point to a visible error message; error feedback uses text/programmatic cues, not color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (no aria-invalid, no described error text, no new visual change) were triggered after invalid input.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "pass",
+                "reasoning": "aria-invalid=\"true\" and aria-describedby reference a visible error message; error is not conveyed solely by color.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "Error message was added and programmatically linked via aria-describedby; aria-invalid=\"true\" set. Error not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "Error message was added and programmatically linked via aria-describedby; aria-invalid=\"true\" set. Error not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "Error message was added and programmatically linked via aria-describedby; aria-invalid=\"true\" set. Error not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No field-level error state or linked message detected after invalid input, so no error cue to assess for color reliance.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "pass",
+                "reasoning": "Error message was added and programmatically linked via aria-describedby; aria-invalid=\"true\" set. Error not indicated by color alone.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "Error text shown and linked via aria-describedby with aria-invalid=\"true\"; error not conveyed by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "Error text shown and linked via aria-describedby with aria-invalid=\"true\"; error not conveyed by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "Error text shown and linked via aria-describedby with aria-invalid=\"true\"; error not conveyed by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message or ARIA/state changes detected after invalid input; no error cue to evaluate.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "pass",
+                "reasoning": "Error text shown and linked via aria-describedby with aria-invalid=\"true\"; error not conveyed by color alone.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "aria-invalid=\"true\" and an error message linked via aria-describedby were added, so the error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "aria-invalid=\"true\" and an error message linked via aria-describedby were added, so the error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "aria-invalid=\"true\" and a linked error message via aria-describedby were provided, so the error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation error cue was triggered (no text or ARIA changes), so there is no error indication to assess against color-alone.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "pass",
+                "reasoning": "aria-invalid=\"true\" and an error message linked via aria-describedby were added, so the error is not indicated by color alone.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "Error text is displayed and programmatically associated via aria-describedby, with aria-invalid=\"true\"; therefore error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "Error text is displayed and programmatically associated via aria-describedby, with aria-invalid=\"true\"; therefore error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "Error text is displayed and programmatically associated via aria-describedby, with aria-invalid=\"true\"; therefore error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (no aria-invalid, no aria-describedby, no error text or visual change) were detected after submission, so no error state to evaluate.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "pass",
+                "reasoning": "Error text is displayed and programmatically associated via aria-describedby, with aria-invalid=\"true\"; therefore error is not indicated by color alone.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "Error text is displayed and programmatically linked via aria-describedby; aria-invalid=\"true\" is set, so the error is not conveyed by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "Error text is displayed and programmatically linked via aria-describedby; aria-invalid=\"true\" is set, so the error is not conveyed by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "Error text is displayed and programmatically linked via aria-describedby; aria-invalid=\"true\" is set, so the error is not conveyed by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error state was triggered for the invalid input (no aria-invalid, no error text, no programmatic association), so WCAG 1.4.1 evaluation is not applicable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "pass",
+                "reasoning": "Error text is displayed and programmatically linked via aria-describedby; aria-invalid=\"true\" is set, so the error is not conveyed by color alone.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "pass",
+                "reasoning": "aria-invalid=\"true\" and a linked error message via aria-describedby were added; error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "aria-invalid=\"true\" and a linked error message via aria-describedby were added; error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "aria-invalid=\"true\" and a linked error message via aria-describedby were added; error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (no color change, aria-invalid, or linked error text) were triggered for this field after invalid input.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "pass",
+                "reasoning": "aria-invalid=\"true\" and a linked error message via aria-describedby were added; error is not indicated by color alone.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

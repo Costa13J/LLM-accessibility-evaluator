@@ -1,0 +1,6 @@
+URL,Model,Field,Runs,Most common,Consistency ratio,Benchmark,fail_count,inapplicable_count,pass_count,field_accuracy,is_consistent
+infinite,gpt-4,First Name,10,inapplicable,0.8,pass,2,8,0,0.0,False
+infinite,gpt-4,Last Name,10,pass,1.0,pass,0,0,10,1.0,True
+infinite,gpt-4,Email(required),10,pass,1.0,pass,0,0,10,1.0,True
+infinite,gpt-4,Organization(required),10,inapplicable,0.8,inapplicable,2,8,0,0.8,False
+infinite,gpt-4,Website,10,inapplicable,1.0,inapplicable,0,10,0,1.0,True

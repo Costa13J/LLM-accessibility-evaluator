@@ -1,0 +1,322 @@
+[
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "The input \"<script>alert('test')</script>\" did not trigger any validation error or message. Since the field is not required and no validation is expected for this type of input, the lack of error messaging is acceptable."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Although numeric input is unusual for a name, no specific validation rules were applied, so no error message was expected."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '@@@@' did not trigger any validation error or message. Similar to the First Name field, no specific validation rules were applied, so no error message was expected."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error with the message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" This message clearly identifies the problem and suggests how to fix it, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "fail",
+                "reasoning": "The input 'abcdefg' did not trigger a specific error message related to the phone number format. The general message \"3 required fields were not completed and 1 field was not properly formatted\" is too vague and does not help the user understand the specific issue with the phone number input."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "The input \"<script>alert('test')</script>\" did not trigger any validation error or message. Since the field is not required and no validation is expected for this type of input, the lack of error message is acceptable."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Although unusual, numeric input is not inherently invalid for a name field unless specific constraints are set, which are not present here."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '@@@@' did not trigger any validation error or message. Similar to the First Name field, the input is unusual but not invalid without specific constraints."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error with the message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" This message clearly identifies the problem and suggests a correction, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "fail",
+                "reasoning": "The input 'abcdefg' did not trigger a specific error message related to the input format. The general message \"3 required fields were not completed and 1 field was not properly formatted\" is too vague and does not guide the user on how to correct the phone number format."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "The input \"<script>alert('test')</script>\" did not trigger any validation error or message. Since the field is not required and no validation is expected for this type of input, the lack of error messaging is acceptable."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Although numeric input is unusual for a name, no specific validation rules were applied, so no error message was expected."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '@@@@' did not trigger any validation error or message. Similar to the First Name field, no specific validation rules were applied, so no error message was expected."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error with the message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" This message clearly identifies the problem and suggests how to fix it, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "fail",
+                "reasoning": "The input 'abcdefg' did not trigger a specific error message related to the phone number format. The general message \"3 required fields were not completed and 1 field was not properly formatted\" is too vague and does not help the user understand the specific issue with the phone number input."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "The input \"<script>alert('test')</script>\" did not trigger any validation error or message. Since the field is not required and no validation is expected for this type of input, the lack of error message is acceptable."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Although numeric input is unusual for a name, no specific validation rules were applied, so no error message was expected."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '@@@@' did not trigger any validation error or message. Similar to the First Name field, no specific validation rules were applied, so no error message was expected."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error with the message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" This message clearly identifies the problem and suggests how to fix it, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "fail",
+                "reasoning": "The input 'abcdefg' did not trigger a specific error message related to the phone number format. The general message \"3 required fields were not completed and 1 field was not properly formatted\" is too vague and does not help the user understand the specific issue with the phone number input."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "The input \"<script>alert('test')</script>\" did not trigger any validation error or message. Since the field is not required and no validation is expected for this type of input, the lack of error message is acceptable."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Although numeric input is unusual for a name, no specific validation rules were applied, so no error message was expected."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '@@@@' did not trigger any validation error or message. Similar to the First Name field, no specific validation rules were applied, so no error message was expected."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error with the message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" This message clearly identifies the problem and suggests a correction, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "fail",
+                "reasoning": "The input 'abcdefg' did not trigger a specific error message related to the phone number format. The general message \"3 required fields were not completed and 1 field was not properly formatted\" is too vague and does not help the user understand the specific issue with the phone number input."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "The input \"<script>alert('test')</script>\" did not trigger any validation error or message. Since the field is not required and no validation is expected for such input, no error message is necessary."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Although numeric input is unusual for a name, no specific validation rules were applied, so no error message is necessary."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '@@@@' did not trigger any validation error or message. While the input is unusual, no specific validation rules were applied, so no error message is necessary."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error with the message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" This message clearly identifies the problem and suggests a correction, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "fail",
+                "reasoning": "The input 'abcdefg' did not trigger a specific error message related to the phone number format. The general message \"3 required fields were not completed and 1 field was not properly formatted\" is vague and does not provide specific guidance on correcting the phone number format."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "The input \"<script>alert('test')</script>\" did not trigger any validation error or message. Since the field is not required and no validation is expected for this type of input, the lack of error messaging is acceptable."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Although numeric input is unusual for a name, no specific validation rules were applied, so no error message was expected."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '@@@@' did not trigger any validation error or message. Similar to the First Name field, no specific validation rules were applied, so no error message was expected."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error with the message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" This message clearly identifies the problem and suggests a correction, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "fail",
+                "reasoning": "The input 'abcdefg' did not trigger a specific error message related to the phone number format. The general message \"3 required fields were not completed and 1 field was not properly formatted\" was shown, but it does not provide specific guidance on correcting the phone number format."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "The input \"<script>alert('test')</script>\" did not trigger any validation error or message. Since the field is not required and no validation is expected for this type of input, the lack of error message is acceptable."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Although numeric input is unusual for a name, no specific validation rules were applied, so no error message was expected."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '@@@@' did not trigger any validation error or message. Similar to the First Name field, no specific validation rules were applied, so no error message was expected."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error with the message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" This message clearly explains the problem and how to fix it, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "fail",
+                "reasoning": "The input 'abcdefg' did not trigger a specific error message related to the phone number format. The general message \"3 required fields were not completed and 1 field was not properly formatted\" was shown, but it does not provide specific guidance on correcting the phone number format, which is not helpful."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "The input \"<script>alert('test')</script>\" did not trigger any validation error or message. Since the field is not required and no validation is expected for this type of input, the lack of error message is acceptable."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Although numeric input is unusual for a name, no specific validation rules were applied, so no error message was expected."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '@@@@' did not trigger any validation error or message. Similar to the First Name field, no specific validation rules were applied, so no error message was expected."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error with the message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" This message clearly identifies the problem and suggests a correction, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "fail",
+                "reasoning": "The input 'abcdefg' did not trigger a specific error message related to the phone number format. The general message \"3 required fields were not completed and 1 field was not properly formatted\" was shown, but it does not specify the issue with the phone number, making it unclear."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "The input \"<script>alert('test')</script>\" did not trigger any validation error or message. Since the field is not required and no validation is expected for this type of input, the lack of error messaging is acceptable."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Although numeric input is unusual for a name, no specific validation rules were applied, so no error message was expected."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '@@@@' did not trigger any validation error or message. Similar to the First Name field, no specific validation rules were applied, so no error message was expected."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error with the message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" This message clearly identifies the problem and suggests a correction, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "fail",
+                "reasoning": "The input 'abcdefg' did not trigger a specific error message related to the phone number format. The general message \"3 required fields were not completed and 1 field was not properly formatted\" was shown, but it does not specify which field or how to correct it, making it unhelpful."
+            }
+        ]
+    }
+]

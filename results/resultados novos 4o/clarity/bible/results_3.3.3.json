@@ -1,0 +1,322 @@
+[
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation error was triggered for the input '12345', which is unusual for a name but not necessarily invalid. Since no error message was shown, the system did not provide guidance, but this is acceptable as no specific validation rules were violated."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The error message 'Last Name is not valid. Valid names contain only letters, numbers, spaces, \\', or - characters.' was shown, clearly explaining the issue and how to correct it."
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "The error message 'Email is not valid. Email addresses should follow the format user@domain.com.' was shown, clearly explaining the issue and how to correct it."
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation error was triggered for the input '!', which is unusual but not necessarily invalid. Since no error message was shown, the system did not provide guidance, but this is acceptable as no specific validation rules were violated."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation error was triggered for the input 'www.example', which is not a complete URL but the field is optional. Since no error message was shown, the system did not provide guidance, but this is acceptable as the field is not required."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Since the field is required, it would be beneficial to have a message indicating that the input should be a valid name, but no such message was provided."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The input '@#$%^' triggered a validation error with the message \"Name: Last Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" This message clearly explains the issue and how to correct it."
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error with the message \"Email is not valid. Email addresses should follow the format user@domain.com.\" This message clearly explains the issue and how to correct it."
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "fail",
+                "reasoning": "The input '!' did not trigger any validation error or message. Since the field is required, it would be beneficial to have a message indicating that the input should be a valid organization name, but no such message was provided."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'www.example' did not trigger any validation error or message. Since the field is not required, no validation was expected."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Since no specific validation rules for names were provided, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The input '@#$%^' triggered a validation error with the message 'Name: Last Name is not valid. Valid names contain only letters, numbers, spaces, \\', or - characters.' This message clearly explains the issue and how to correct it."
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error with the message 'Email is not valid. Email addresses should follow the format user@domain.com.' This message clearly explains the issue and how to correct it."
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' did not trigger any validation error or message. Since no specific validation rules for organization names were provided, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'www.example' did not trigger any validation error or message. As the field is optional and no specific validation rules were provided, the lack of an error message is acceptable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Since no specific constraints were provided for this field, the lack of error message is acceptable."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The input '@#$%^' triggered a validation error with the message 'Name: Last Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.' This message clearly explains the issue and how to correct it."
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error with the message 'Email is not valid. Email addresses should follow the format user@domain.com.' This message clearly explains the issue and how to correct it."
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' did not trigger any validation error or message. Since no specific constraints were provided for this field, the lack of error message is acceptable."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'www.example' did not trigger any validation error or message. Since this field is not required and no specific constraints were provided, the lack of error message is acceptable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Since no specific constraints were provided for this field, the lack of error message is acceptable."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The input '@#$%^' triggered a validation error with the message \"Name: Last Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" This message clearly explains the issue and how to correct it."
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error with the message \"Email is not valid. Email addresses should follow the format user@domain.com.\" This message clearly explains the issue and how to correct it."
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' did not trigger any validation error or message. Since no specific constraints were provided for this field, the lack of error message is acceptable."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'www.example' did not trigger any validation error or message. Since this field is not required and no specific constraints were provided, the lack of error message is acceptable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' for the First Name field did not trigger any validation error or message, indicating that the system does not enforce specific constraints for this field. Since no error was expected or triggered, the lack of a message is acceptable."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The input '@#$%^' for the Last Name field triggered a validation error with the message \"Name: Last Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" This message clearly explains the issue and provides guidance on acceptable characters, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' for the Email(required) field triggered a validation error with the message \"Email is not valid. Email addresses should follow the format user@domain.com.\" This message clearly explains the issue and provides guidance on the correct format, aligning with WCAG 3.3.3 guidelines."
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' for the Organization(required) field did not trigger any validation error or message, indicating that the system does not enforce specific constraints for this field. Since no error was expected or triggered, the lack of a message is acceptable."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'www.example' for the Website field did not trigger any validation error or message, indicating that the system does not enforce specific constraints for this field. Since no error was expected or triggered, the lack of a message is acceptable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Since no specific constraints were provided for this field, the lack of error message is acceptable."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The input '@#$%^' triggered a validation error with the message \"Name: Last Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" This message clearly explains the issue and how to correct it."
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error with the message \"Email is not valid. Email addresses should follow the format user@domain.com.\" This message clearly explains the issue and how to correct it."
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' did not trigger any validation error or message. Since no specific constraints were provided for this field, the lack of error message is acceptable."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'www.example' did not trigger any validation error or message. Since this field is optional and no specific constraints were provided, the lack of error message is acceptable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Since no specific validation rules for names were provided, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The input '@#$%^' triggered a validation error with the message \"Name: Last Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" This message clearly explains the issue and how to correct it."
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error with the message \"Email is not valid. Email addresses should follow the format user@domain.com.\" This message clearly explains the issue and how to correct it."
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' did not trigger any validation error or message. Since no specific validation rules for organization names were provided, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'www.example' did not trigger any validation error or message. As the field is not required and no specific validation rules were provided, the lack of an error message is acceptable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Since no specific validation rules for the content of the first name were provided, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The input '@#$%^' triggered a validation error with the message \"Name: Last Name is not valid. Valid names contain only letters, numbers, spaces, ', or - characters.\" This message clearly explains the issue and provides guidance on acceptable characters, aligning with WCAG 3.3.3."
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error with the message \"Email is not valid. Email addresses should follow the format user@domain.com.\" This message clearly explains the issue and provides guidance on the correct format, aligning with WCAG 3.3.3."
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' did not trigger any validation error or message. Since no specific validation rules for the content of the organization name were provided, the lack of an error message is acceptable."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'www.example' did not trigger any validation error or message. As the field is not required and no specific validation rules were provided, the lack of an error message is acceptable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "No validation error was triggered for the input '12345', which is unusual for a name field. Since no error message was shown, the system did not provide guidance on correcting the input."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "pass",
+                "reasoning": "The error message 'Name: Last Name is not valid. Valid names contain only letters, numbers, spaces, \\', or - characters.' was shown, clearly explaining the issue and how to correct it."
+            },
+            {
+                "identification": "Email(required)",
+                "evaluation": "pass",
+                "reasoning": "The error message 'Email is not valid. Email addresses should follow the format user@domain.com.' was shown, clearly explaining the issue and how to correct it."
+            },
+            {
+                "identification": "Organization(required)",
+                "evaluation": "fail",
+                "reasoning": "No validation error was triggered for the input '!', which is unusual for an organization name. Since no error message was shown, the system did not provide guidance on correcting the input."
+            },
+            {
+                "identification": "Website",
+                "evaluation": "fail",
+                "reasoning": "No validation error was triggered for the input 'www.example', which is not a complete URL. Since no error message was shown, the system did not provide guidance on correcting the input."
+            }
+        ]
+    }
+]

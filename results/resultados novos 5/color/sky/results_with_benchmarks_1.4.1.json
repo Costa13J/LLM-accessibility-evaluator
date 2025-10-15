@@ -1,0 +1,1226 @@
+[
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues appeared after invalid input; no color, text, or ARIA changes detected.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues appeared after invalid input; no color, text, or ARIA changes detected.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues appeared after invalid input; no color, text, or ARIA changes detected.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues appeared after invalid input; no color, text, or ARIA changes detected.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "Error text was displayed and programmatically linked (aria-invalid and aria-describedby), so the error isn’t conveyed by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "pass",
+                "reasoning": "Error text was displayed and programmatically linked (aria-invalid and aria-describedby), so the error isn’t conveyed by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "pass",
+                "reasoning": "The radio group received a linked error message (“Please fill in the required field.”) via aria-describedby; not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "pass",
+                "reasoning": "The radio group received a linked error message (“Please fill in the required field.”) via aria-describedby; not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "pass",
+                "reasoning": "Group error text was added and associated via ARIA; not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "pass",
+                "reasoning": "Group error text was added and associated via ARIA; not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "pass",
+                "reasoning": "Group error text was added and associated via ARIA; not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "inapplicable",
+                "reasoning": "No error state was triggered; no color or textual/ARIA indicators appeared.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (color, text, or ARIA) were triggered after invalid input, so there is nothing to evaluate against 1.4.1.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered; no reliance on color occurred.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered; no reliance on color occurred.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered; no reliance on color occurred.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "Error text “Telephone number seems invalid.” was shown and programmatically associated (aria-invalid + aria-describedby), so not color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "Error text “Email address seems invalid.” was shown and programmatically associated (aria-invalid + aria-describedby), so not color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "pass",
+                "reasoning": "Group received a textual error “Please fill in the required field.” and an aria-describedby link; error is not conveyed by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "pass",
+                "reasoning": "Group received a textual error “Please fill in the required field.” and an aria-describedby link; error is not conveyed by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "pass",
+                "reasoning": "Group received a textual error “Please fill in the required field.” and an aria-describedby link; error is not conveyed by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "pass",
+                "reasoning": "Group received a textual error “Please fill in the required field.” and an aria-describedby link; error is not conveyed by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after input; nothing to assess for color reliance.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (no text or ARIA) were triggered after invalid input; nothing relied on color alone.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered; no color-only indication to evaluate.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered; no text or programmatic indicators present.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (visual or semantic) were detected after submission.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "Error text “Telephone number seems invalid.” was added and linked via aria-describedby with aria-invalid=\"true\"; not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "pass",
+                "reasoning": "Error text “Email address seems invalid.” was added and linked via aria-describedby with aria-invalid=\"true\"; not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "pass",
+                "reasoning": "Radio group received a text error “Please fill in the required field.” and aria-describedby; not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "pass",
+                "reasoning": "Same radio group shows text error with aria-describedby; not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "pass",
+                "reasoning": "Group-level text error “Please fill in the required field.” with aria-describedby; not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "pass",
+                "reasoning": "Same group-level text error with aria-describedby; not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "pass",
+                "reasoning": "Same group-level text error with aria-describedby; not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "inapplicable",
+                "reasoning": "No error state or cues were triggered; no reliance on color to indicate error.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered; no visual, textual, or programmatic indicators changed after submission.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered; no visual, textual, or programmatic indicators changed after submission.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered; no visual, textual, or programmatic indicators changed after submission.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered; no visual, textual, or programmatic indicators changed after submission.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "aria-invalid=\"true\" and aria-describedby were set with a linked message (“Telephone number seems invalid.”); error is not conveyed by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "pass",
+                "reasoning": "aria-invalid=\"true\" and aria-describedby were set with a linked message (“Email address seems invalid.”); error is not conveyed by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "pass",
+                "reasoning": "Radio group received aria-describedby pointing to an error item and visible text (“Please fill in the required field.”); not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "pass",
+                "reasoning": "Same radio group error with linked message and aria-describedby; not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "pass",
+                "reasoning": "Radio group shows aria-describedby and visible error text (“Please fill in the required field.”); not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "pass",
+                "reasoning": "Same radio group error with linked message and aria-describedby; not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "pass",
+                "reasoning": "Same radio group error with linked message and aria-describedby; not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered; no visual, textual, or programmatic indicators changed after submission.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (color, text, or aria) were triggered for this field after invalid input.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (color, text, or aria) were triggered for this field after invalid input.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (color, text, or aria) were triggered for this field after invalid input.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (color, text, or aria) were triggered for this field after invalid input.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "Error text “Telephone number seems invalid.” is present and linked (aria-invalid and aria-describedby), so the error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "pass",
+                "reasoning": "Error text “Email address seems invalid.” is present and linked (aria-invalid and aria-describedby), so the error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "pass",
+                "reasoning": "The radio group shows visible error text (“Please fill in the required field.”) and is programmatically referenced (aria-describedby on the group), so not color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "pass",
+                "reasoning": "The radio group shows visible error text and programmatic reference; error is not conveyed by color only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "pass",
+                "reasoning": "Group error text (“Please fill in the required field.”) is shown and referenced; not color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "pass",
+                "reasoning": "Group error text is shown and referenced; not color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "pass",
+                "reasoning": "Group error text is shown and referenced; not color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after submission.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (color, text, or aria) were triggered after the invalid input, so no error state to evaluate.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (color, text, or aria) were triggered after the invalid input, so no error state to evaluate.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (color, text, or aria) were triggered after the invalid input, so no error state to evaluate.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (color, text, or aria) were triggered after the invalid input, so no error state to evaluate.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "Error indicated with aria-invalid=\"true\" and an error message programmatically linked via aria-describedby; not conveyed by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "Error indicated with aria-invalid=\"true\" and an error message programmatically linked via aria-describedby; not conveyed by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "pass",
+                "reasoning": "Radio group received aria-describedby pointing to a visible error (“Please fill in the required field.”); not color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "Same email submission triggered programmatic/text error cues (aria-invalid + aria-describedby with error text); not color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "pass",
+                "reasoning": "Group-level error text was added and referenced via aria-describedby; not color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "pass",
+                "reasoning": "Group-level error text was added and referenced via aria-describedby; not color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "pass",
+                "reasoning": "Group-level error text was added and referenced via aria-describedby; not color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "pass",
+                "reasoning": "No error cues (color, text, or aria) were triggered after the input, so no error state to evaluate.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected after submission (no color, aria-invalid, or error text), so no error state to evaluate.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected after submission, so inapplicable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected after submission, so inapplicable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected after submission, so inapplicable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "Error text “Telephone number seems invalid.” was added and linked via aria-describedby; aria-invalid=\"true\" was set, so the error is not conveyed by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "pass",
+                "reasoning": "Error text “Email address seems invalid.” was added and linked via aria-describedby; aria-invalid=\"true\" was set, so the error is not conveyed by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "pass",
+                "reasoning": "The radio group received a text error “Please fill in the required field.” programmatically linked via aria-describedby; not color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "pass",
+                "reasoning": "Same radio group error text programmatically linked via aria-describedby; not color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "pass",
+                "reasoning": "Group shows text error “Please fill in the required field.” linked via aria-describedby; not color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "pass",
+                "reasoning": "Group shows text error linked via aria-describedby; not color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "pass",
+                "reasoning": "Group shows text error linked via aria-describedby; not color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "inapplicable",
+                "reasoning": "No visual or semantic error cues were triggered (aria-invalid remained false; no error text), so inapplicable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (visual or semantic) were triggered after invalid input, so no error state to evaluate.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues triggered; no color, aria-invalid, or error text appeared.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No visual or programmatic error indicators were detected.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No error styling or error message was added.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "aria-invalid=\"true\" and aria-describedby link to \"Telephone number seems invalid.\" provide textual/programmatic feedback in addition to any visual change.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "pass",
+                "reasoning": "aria-invalid=\"true\" and aria-describedby link to \"Email address seems invalid.\" ensure the error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "pass",
+                "reasoning": "The radio group received aria-describedby and visible error text (\"Please fill in the required field.\"), so the cue is not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "pass",
+                "reasoning": "The same radio group exposes a linked error message via aria-describedby; not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "pass",
+                "reasoning": "Group-level error text with aria-describedby was added; error not communicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "pass",
+                "reasoning": "Group-level error text and programmatic association were provided.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "pass",
+                "reasoning": "Group-level error text with programmatic association present; not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "inapplicable",
+                "reasoning": "No error state occurred (no color change, aria attributes, or error text).",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error state was triggered; no color, text, or ARIA error cues appeared.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No error state was triggered; no color, text, or ARIA error cues appeared.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error state was triggered; no color, text, or ARIA error cues appeared.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No error state was triggered; no color, text, or ARIA error cues appeared.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "aria-invalid=\"true\" set and a linked error message (“Telephone number seems invalid.”) via aria-describedby; error not conveyed by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "pass",
+                "reasoning": "aria-invalid=\"true\" set and a linked error message (“Email address seems invalid.”) via aria-describedby; error not conveyed by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "pass",
+                "reasoning": "Radio group shows “Please fill in the required field.” and is linked via aria-describedby; not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "pass",
+                "reasoning": "Same radio group error (“Please fill in the required field.”) with aria-describedby; not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "pass",
+                "reasoning": "Group displays “Please fill in the required field.” and links it via aria-describedby; not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "pass",
+                "reasoning": "Group displays “Please fill in the required field.” and links it via aria-describedby; not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "pass",
+                "reasoning": "Group displays “Please fill in the required field.” and links it via aria-describedby; not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "inapplicable",
+                "reasoning": "No error state was triggered; no color, text, or ARIA error cues appeared.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (no color change, aria-invalid, or error text) were triggered; no dynamic error state to evaluate.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered; no dynamic error state occurred.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered; no dynamic error state occurred.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered; no dynamic error state occurred.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "Red styling occurred, and importantly aria-invalid=\"true\" and a linked error message (“Telephone number seems invalid.” via aria-describedby) were added, so the error is not conveyed by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "pass",
+                "reasoning": "Alongside any visual change, aria-invalid=\"true\" and a programmatically linked error message (“Email address seems invalid.” via aria-describedby) were present; not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "pass",
+                "reasoning": "A visible error message (“Please fill in the required field.”) appeared and the group wrapper received aria-describedby; error not indicated by color alone. Note: message may not be directly tied to individual radio inputs.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "pass",
+                "reasoning": "A visible error message (“Please fill in the required field.”) appeared with aria-describedby on the group wrapper; not color-only. Note: may not be programmatically tied to each option.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "pass",
+                "reasoning": "The group showed a visible error message with aria-describedby; not color-only. Note: may not be programmatically tied to each option.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "pass",
+                "reasoning": "The group showed a visible error message with aria-describedby; not color-only. Note: may not be programmatically tied to each option.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (visual or semantic) were triggered after input; nothing to evaluate for color reliance.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

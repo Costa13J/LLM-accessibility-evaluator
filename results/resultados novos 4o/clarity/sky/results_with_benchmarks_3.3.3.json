@@ -1,0 +1,1122 @@
+[
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Since no specific pattern or constraint is defined for this field, the lack of error message is acceptable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '@@@@' did not trigger any validation error or message. Similar to the first name, no specific pattern or constraint is defined, so the lack of error message is acceptable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!Company' did not trigger any validation error or message. No specific pattern or constraint is defined, so the lack of error message is acceptable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '1234' did not trigger any validation error or message. No specific pattern or constraint is defined, so the lack of error message is acceptable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "The input 'abcdefg' triggered a validation error with the message 'Telephone number seems invalid.' This message is clear and indicates the problem with the input.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error with the message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" This message is clear and provides guidance on how to correct the input.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'abc123' did not trigger any validation error or message. As a radio button, it is not expected to validate text input.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "Unknown",
+                "reasoning": "No reasoning provided",
+                "benchmark": "pass",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "fail",
+                "reasoning": "The input '12345' is unusual for a name, but no specific error message was provided to guide the user on acceptable input.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "fail",
+                "reasoning": "The input '@@@@' is not a valid surname, but no specific error message was provided to guide the user on acceptable input.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "fail",
+                "reasoning": "The input '!Company' is unusual for a company name, but no specific error message was provided to guide the user on acceptable input.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Location",
+                "evaluation": "fail",
+                "reasoning": "The input '1234' is unusual for a location, but no specific error message was provided to guide the user on acceptable input.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "fail",
+                "reasoning": "The input 'abcdefg' is not a valid telephone number, but the error message 'Telephone number seems invalid' does not specify that numbers are required.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The input 'user.com' is missing an '@', but the error message 'Email address seems invalid' does not guide the user on how to correct the format.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "The radio button input is not subject to the same validation as text inputs, and no error was expected.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "The radio button input is not subject to the same validation as text inputs, and no error was expected.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "The radio button input is not subject to the same validation as text inputs, and no error was expected.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "The radio button input is not subject to the same validation as text inputs, and no error was expected.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "The radio button input is not subject to the same validation as text inputs, and no error was expected.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "inapplicable",
+                "reasoning": "The field was left empty as instructed, so no validation error was expected.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' for 'Your first name' did not trigger any validation error or message, indicating that the form does not validate for non-alphabetic characters in this field. Since no error was expected or triggered, this is inapplicable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Location",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger a validation error, and no specific constraints were provided for this field. Therefore, no error message was expected or shown.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '@@@@' did not trigger a validation error, and no specific constraints were provided for this field. Therefore, no error message was expected or shown.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!Company' did not trigger a validation error, and no specific constraints were provided for this field. Therefore, no error message was expected or shown.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '1234' did not trigger a validation error, and no specific constraints were provided for this field. Therefore, no error message was expected or shown.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "fail",
+                "reasoning": "The input 'abcdefg' triggered a validation error with the message 'Telephone number seems invalid.' This message indicates the problem but does not provide guidance on the correct format.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The input 'user.com' triggered a validation error with the message 'Email address seems invalid.' This message indicates the problem but does not provide guidance on the correct format.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'abc123' did not trigger a validation error, and no specific constraints were provided for this field. Therefore, no error message was expected or shown.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "Unknown",
+                "reasoning": "No reasoning provided",
+                "benchmark": "pass",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Since no specific pattern or constraint is defined for this field, the lack of error message is acceptable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '@@@@' did not trigger any validation error or message. Similar to the first name, no specific pattern or constraint is defined, so the lack of error message is acceptable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!Company' did not trigger any validation error or message. No specific pattern or constraint is defined, so the lack of error message is acceptable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '1234' did not trigger any validation error or message. No specific pattern or constraint is defined, so the lack of error message is acceptable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "The input 'abcdefg' triggered a validation error with the message 'Telephone number seems invalid.' This message is clear and indicates the input is not a valid telephone number.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error with the message 'Email address seems invalid.' This message is clear and indicates the input is not a valid email address.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'abc123' did not trigger any validation error or message. As a radio button, it is not expected to have such validation.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'user.com' did not trigger",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "fail",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Since the field is required, a validation error should have been triggered for non-standard input, but it wasn't. This is a failure in error identification.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "fail",
+                "reasoning": "The input '@@@@' did not trigger any validation error or message. As a required field, it should have triggered a validation error for non-standard input, but it didn't. This is a failure in error identification.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "fail",
+                "reasoning": "The input '!Company' did not trigger any validation error or message. As a required field, it should have triggered a validation error for non-standard input, but it didn't. This is a failure in error identification.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Location",
+                "evaluation": "fail",
+                "reasoning": "The input '1234' did not trigger any validation error or message. As a required field, it should have triggered a validation error for non-standard input, but it didn't. This is a failure in error identification.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "The input 'abcdefg' triggered a validation error with the message 'Telephone number seems invalid.' This message is clear and helps the user understand the issue with their input.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error with the message 'Email address seems",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "fail",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Since the field is required, a validation error should have been triggered for non-standard input, but no feedback was provided.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "fail",
+                "reasoning": "The input '@@@@' did not trigger any validation error or message. As a required field, it should have provided feedback for non-standard input, but none was given.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "fail",
+                "reasoning": "The input '!Company' did not trigger any validation error or message. As a required field, it should have provided feedback for non-standard input, but none was given.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Location",
+                "evaluation": "fail",
+                "reasoning": "The input '1234' did not trigger any validation error or message. As a required field, it should have provided feedback for non-standard input, but none was given.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "The input 'abcdefg' triggered the error message 'Telephone number seems invalid.' This message is clear and helps the user understand the issue with their input.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered the error message 'Email address seems invalid.' This message is clear and helps the user understand the issue with their input.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation was expected or triggered as the input was not applicable to the radio button.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation was expected or triggered as the input was not applicable to the radio button.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation was expected or triggered as the input was not applicable to the radio button.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation was expected or triggered as the input was not applicable to the radio",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Since no specific pattern or constraint is defined for this field, the lack of error message is acceptable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '@@@@' did not trigger any validation error or message. Similar to the first name, no specific pattern or constraint is defined, so the lack of error message is acceptable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!Company' did not trigger any validation error or message. No specific pattern or constraint is defined, so the lack of error message is acceptable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Location",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '1234' did not trigger any validation error or message. No specific pattern or constraint is defined, so the lack of error message is acceptable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "fail",
+                "reasoning": "The input 'abcdefg' triggered a validation error with the message 'Telephone number seems invalid.' This message indicates the problem but does not provide specific guidance on the expected format.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The input 'user.com' triggered a validation error with the message 'Email address seems invalid.' This message indicates the problem but does not provide specific guidance on the expected format.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'abc123' did not trigger any validation error or message. As a radio button, it is not expected to validate text input.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'user.com",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "fail",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Since the field is required, a validation error should have been triggered for non-standard input, but no feedback was provided.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "fail",
+                "reasoning": "The input '@@@@' did not trigger any validation error or message. As a required field, it should have provided feedback for non-standard input, but it did not.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "fail",
+                "reasoning": "The input '!Company' did not trigger any validation error or message. As a required field, it should have provided feedback for non-standard input, but it did not.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Location",
+                "evaluation": "fail",
+                "reasoning": "The input '1234' did not trigger any validation error or message. As a required field, it should have provided feedback for non-standard input, but it did not.",
+                "benchmark": "inapplicable",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "The input 'abcdefg' triggered a validation error with the message 'Telephone number seems invalid.' This message is clear and helps the user understand the issue.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The input 'user.com' triggered a validation error with the message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" This message is clear and helps the user understand the issue.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": true
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'abc123' did not trigger any validation error or message. As a non-required field, no validation was expected.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'user.com' did not trigger",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' for 'Your first name' did not trigger any validation error or message, indicating that the system does not validate the content of this field beyond its presence. Since no error was expected for the input format, the lack of a message is acceptable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "AdSmart from Sky updates (checkbox)",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Location",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "absent",
+                "benchmark": "fail",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

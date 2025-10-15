@@ -1,0 +1,257 @@
+[
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "inapplicable",
+                "reasoning": "No visual or semantic error cues were triggered after invalid input, so this is inapplicable for WCAG 1.4.1."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "inapplicable",
+                "reasoning": "No visual or semantic error cues were triggered after invalid input, so this is inapplicable for WCAG 1.4.1."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "A visible error message (e.g., “Please include an '@'...”) was shown alongside error styling; not color alone. Programmatic association not confirmed."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "A visible error message (“6 characters minimum.”) was shown alongside error styling; not color alone. Programmatic association not confirmed."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (color, text, or semantic) were triggered after invalid input; no validation feedback occurred, so WCAG 1.4.1 is inapplicable."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (color, text, or semantic) were triggered after invalid input; no validation feedback occurred, so WCAG 1.4.1 is inapplicable."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "A visible error message (“Please include an '@'...”) was displayed with error classes; since text accompanies color styling, the error is not indicated by color alone. Programmatic linkage not confirmed."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "A visible error message (“6 characters minimum.”) was displayed with error classes; since text accompanies color styling, the error is not indicated by color alone. Programmatic linkage not confirmed."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues appeared after invalid input; no visual or textual indicators were added, so no error state to evaluate."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues appeared after invalid input; no visual or textual indicators were added, so no error state to evaluate."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "A visible error message was shown (e.g., “Please include an '@'…”), so the error is not indicated by color alone."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "A visible error message was shown (“6 characters minimum.”), so the error is not indicated by color alone."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "inapplicable",
+                "reasoning": "No visual or semantic error cues were triggered after invalid input; no color-only or textual indicators to evaluate."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "inapplicable",
+                "reasoning": "No visual or semantic error cues were triggered after invalid input; no color-only or textual indicators to evaluate."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "A visible error message (“Please include an '@'...”) appeared alongside error styling; even without detected ARIA linkage, the error is not conveyed by color alone."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "A visible error message (“6 characters minimum.”) appeared with error styling; despite no detected ARIA linkage, the error is not conveyed by color alone."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered (no visual change or error text). Since no error state occurred, this is inapplicable for color-reliance evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (no visual or text/semantic changes) were triggered after invalid input, so no error state to evaluate."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (no visual or text/semantic changes) were triggered after invalid input, so no error state to evaluate."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "A visible error message is shown (P with error text), so the error is not indicated by color alone."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "A visible error message is shown (“6 characters minimum.”), so the error is not indicated by color alone."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "inapplicable",
+                "reasoning": "No visual or semantic error indicators were triggered after invalid input; no error state to evaluate."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "inapplicable",
+                "reasoning": "No visual or semantic error indicators were triggered after invalid input; no error state to evaluate."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "A visible error message (“Please include an '@'...”) was shown alongside error styling, so the error is not conveyed by color alone; programmatic association not confirmed."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "A visible error message (“6 characters minimum.”) was shown alongside error styling, so the error is not conveyed by color alone; programmatic association not confirmed."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cue detected after invalid input—no visual or semantic changes or error text; thus no error state to evaluate for color-only."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cue detected after invalid input—no visual or semantic changes or error text; thus no error state to evaluate for color-only."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "A visible error message (“Please include an '@' in the email address...”) appeared, providing textual feedback beyond color; not color-only. No ARIA indicators were observed."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "A visible error message (“6 characters minimum.”) appeared, providing textual feedback beyond color; not color-only. No ARIA indicators were observed."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered (no visual or textual/semantic changes), so there is no error state to assess for color reliance."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered (no visual or textual/semantic changes), so there is no error state to assess for color reliance."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "A visible error message (“Please include an '@' ...”) was shown with color styling; since text accompanies the visual change, the error is not conveyed by color alone. Programmatic linkage not indicated."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "A visible error message (“6 characters minimum.”) was shown with color styling; since text accompanies the visual change, the error is not conveyed by color alone. Programmatic linkage not indicated."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "inapplicable",
+                "reasoning": "No visual or semantic error indicators were triggered after invalid input; no error cue to evaluate."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "inapplicable",
+                "reasoning": "No visual or semantic error indicators were triggered after invalid input; no error cue to evaluate."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "A visible error message was displayed (“Please include an '@'...”), so the error is not indicated by color/icon alone."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "A visible error message was displayed (“6 characters minimum.”), so the error is not indicated by color/icon alone."
+            }
+        ]
+    }
+]

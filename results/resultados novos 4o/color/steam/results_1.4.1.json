@@ -1,0 +1,222 @@
+[
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after invalid input, making it inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red, but no programmatic or textual error cues were provided, resulting in a fail."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red without any programmatic or textual error cues, resulting in a fail."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after invalid input, making it inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red, but no programmatic or textual error cues were provided, resulting in a fail."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red without any programmatic or textual error cues, resulting in a fail."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after invalid input, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "A red border was applied, but no programmatic or textual error cues were provided, resulting in a fail."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "A red border was applied without any programmatic or textual error cues, resulting in a fail."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after invalid input, making it inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red, but no programmatic or textual error cues were provided, resulting in a fail."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red without any programmatic or textual error cues, resulting in a fail."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No error state was triggered as the input was processed as a search query, not a validation error. Therefore, this is inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red, but no programmatic support like aria-invalid or error message was provided. The error is indicated only through color, failing WCAG 1.4.1."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red, but no programmatic support like aria-invalid or error message was provided. The error is indicated only through color, failing WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after invalid input, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The only change was a border color change to red, with no programmatic or textual error cues, resulting in a fail."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The only change was a border color change to red, with no programmatic or textual error cues, resulting in a fail."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after invalid input, making it inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red, but no programmatic or textual error cues were provided, resulting in a fail."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red, but no programmatic or textual error cues were provided, resulting in a fail."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after invalid input, making it inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red, but no programmatic or textual error cues were provided, resulting in a fail."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red without any programmatic or textual error cues, resulting in a fail."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after invalid input, making it inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The only change was a red border, with no programmatic or textual error cues, resulting in a fail."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The only change was a red border, with no programmatic or textual error cues, resulting in a fail."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered after invalid input, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red, but no programmatic or textual error cues were provided, resulting in a fail."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The border color changed to red without any programmatic or textual error cues, resulting in a fail."
+            }
+        ]
+    }
+]

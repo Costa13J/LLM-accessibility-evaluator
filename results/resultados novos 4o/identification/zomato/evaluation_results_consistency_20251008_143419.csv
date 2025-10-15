@@ -1,0 +1,6 @@
+URL,Model,Field,Runs,Eval counts,Most common,Consistency ratio,Benchmark
+zomato,gpt-4,phone number,10,10×fail,fail,1,fail
+zomato,gpt-4,name,10,10×fail,fail,1,fail
+zomato,gpt-4,city selection,10,10×inapplicable,inapplicable,1,inapplicable
+zomato,gpt-4,consent checkbox,10,10×fail,fail,1,fail
+zomato,gpt-4,filter by city,10,10×inapplicable,inapplicable,1,n/a

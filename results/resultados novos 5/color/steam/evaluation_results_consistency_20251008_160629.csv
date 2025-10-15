@@ -1,0 +1,6 @@
+URL,Model,Field,Runs,Eval counts,Most common,Consistency ratio,Benchmark
+store.steampowered.com,gpt-5,Search the store,10,10×inapplicable,inapplicable,1,n/a
+store.steampowered.com,gpt-5,Email Address,10,10×fail,fail,1,pass
+store.steampowered.com,gpt-5,Confirm your Address,10,10×fail,fail,1,pass
+store.steampowered.com,gpt-5,Country of Residence (select),10,"8×absent, 2×inapplicable",absent,0.8,inapplicable
+store.steampowered.com,gpt-5,I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.  (checkbox),10,"8×absent, 2×inapplicable",absent,0.8,inapplicable

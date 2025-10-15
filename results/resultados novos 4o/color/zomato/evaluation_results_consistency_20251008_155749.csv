@@ -1,0 +1,5 @@
+URL,Model,Field,Runs,Eval counts,Most common,Consistency ratio,Benchmark
+zomato,gpt-4,Please enter phone number,10,10×pass,pass,1.0,pass
+zomato,gpt-4,Please enter name,10,10×inapplicable,inapplicable,1.0,inapplicable
+zomato,gpt-4,I hereby consent to receiving communications from Zomato for any relevant opportunities.,10,10×absent,absent,1.0,inapplicable
+zomato,gpt-4,Select city,10,10×absent,absent,1.0,inapplicable

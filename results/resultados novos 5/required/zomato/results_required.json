@@ -1,0 +1,322 @@
+[
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "Marked as required (required=yes) and showed required behavior on submit (custom and browser required messages), indicating appropriate use of a required semantic."
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "pass",
+                "reasoning": "Marked as required (required=yes) and behaved as required after submission (browser “Please fill in this field.”), indicating appropriate required declaration."
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked as optional (required=no) and no required behavior occurred on submit."
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "pass",
+                "reasoning": "Declared as required (required=yes); despite no explicit error captured, the required status is semantically indicated with no conflicting behavior."
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked as optional (required=no) and exhibited no required behavior after submission."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "Has the required attribute and triggered a required error on submit, confirming appropriate required declaration."
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "pass",
+                "reasoning": "Has the required attribute and a generic required cue appeared on submit, confirming appropriate required declaration."
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked as not required and showed no required behavior after submission."
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "pass",
+                "reasoning": "Has the required attribute for a checkbox; validation activity indicates it is treated as required."
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked as not required and showed no required behavior after submission."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number (number)",
+                "evaluation": "pass",
+                "reasoning": "Treated as required after submission (custom error added), and marked as required beforehand."
+            },
+            {
+                "identification": "Please enter name (text)",
+                "evaluation": "pass",
+                "reasoning": "Native required validation message observed after submission, and marked as required beforehand."
+            },
+            {
+                "identification": "Select city (input)",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked as not required and no required behavior observed."
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities. (checkbox)",
+                "evaluation": "pass",
+                "reasoning": "Required behavior indicated by native validation messages, and marked as required beforehand."
+            },
+            {
+                "identification": "Filter By City (input)",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked as not required and no required behavior observed."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number (number)",
+                "evaluation": "pass",
+                "reasoning": "The field is marked required and, after submission, a specific phone-number error was added, confirming required behavior with a proper semantic indicator."
+            },
+            {
+                "identification": "Please enter name (text)",
+                "evaluation": "pass",
+                "reasoning": "The field is marked required and post-submit native validation messages were detected, indicating it behaves as required with the required attribute."
+            },
+            {
+                "identification": "Select city (input)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked required (required=no) and shows no required-related behavior; it is optional."
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities. (checkbox)",
+                "evaluation": "pass",
+                "reasoning": "The checkbox is marked required and overall validation with native messages occurred after submit, consistent with required behavior for this field."
+            },
+            {
+                "identification": "Filter By City (input)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked required (required=no) and exhibits no required-related behavior; it is optional."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "The field is required (per initial state) and a required error was shown after submission, confirming appropriate use of a semantic required cue."
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "pass",
+                "reasoning": "The field is marked required in the initial state, indicating use of the required attribute (or equivalent), even though no post-submit cue was detected."
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional (not required) and does not exhibit required behavior."
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "pass",
+                "reasoning": "The checkbox is marked required in the initial state, indicating use of the required attribute (or equivalent), even though no post-submit cue was detected."
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional (not required) and does not exhibit required behavior."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "The field has the required attribute and exhibited required behavior on submit (error shown), so the required status is correctly declared."
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "pass",
+                "reasoning": "The field has the required attribute and native required behavior occurred on submit, correctly indicating it is mandatory."
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required (no required attribute) and showed no required behavior, so it is optional."
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "pass",
+                "reasoning": "The checkbox is marked required via the required attribute, appropriately declaring it as mandatory."
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not required (no required attribute) and showed no required behavior, so it is optional."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "Marked required in the snippet and confirmed by both a custom phone error node and native required cues after submission, indicating a proper semantic required indicator."
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "pass",
+                "reasoning": "Marked required in the snippet and native \"Please fill in this field.\" appeared on submit, confirming proper use of the required attribute."
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked as not required and showed no required behavior after submission."
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "pass",
+                "reasoning": "Marked required in the snippet; validation was triggered on submit, indicating the field is treated as required and semantically indicated as such."
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked as not required and showed no required behavior after submission."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "The field is marked required and triggers an error on submit, confirming required behavior is correctly declared."
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "pass",
+                "reasoning": "The field is marked required and native validation is triggered on submit, indicating appropriate required declaration."
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional (not marked as required in the source) and does not behave as required after submission."
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "pass",
+                "reasoning": "The checkbox is marked required and behaves as required when left unchecked."
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional (not marked as required) and shows no required behavior on submit."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "Declared required and exhibited required behavior after submission (native and custom required messages observed)."
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "pass",
+                "reasoning": "Declared required and exhibited required behavior after submission (native “Please fill in this field.” observed)."
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "inapplicable",
+                "reasoning": "Declared not required and no required behavior was triggered after submission."
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "pass",
+                "reasoning": "Declared required via the native required attribute; no conflicting behavior observed."
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "Declared not required and no required behavior was triggered after submission."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "The field is required and shows required behavior after submission; the native required attribute is correctly used."
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "pass",
+                "reasoning": "The field is required and triggers native required validation after submission, indicating correct use of the required attribute."
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional (not required) and does not exhibit required behavior on submit."
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "pass",
+                "reasoning": "The checkbox is required and participates in form validation on submit; the required attribute is appropriately used."
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional (not required) and shows no required validation behavior."
+            }
+        ]
+    }
+]

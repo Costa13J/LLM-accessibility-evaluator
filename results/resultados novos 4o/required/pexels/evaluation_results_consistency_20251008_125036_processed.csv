@@ -1,0 +1,5 @@
+URL,Model,Field,Runs,Most common,Consistency ratio,Benchmark,absent_count,fail_count,field_accuracy,is_consistent
+pexels,gpt-4,First name,10,fail,1.0,fail,0,10,1.0,True
+pexels,gpt-4,Email,10,absent,1.0,fail,10,0,0.0,True
+pexels,gpt-4,Last name,10,absent,1.0,fail,10,0,0.0,True
+pexels,gpt-4,Password,10,absent,1.0,fail,10,0,0.0,True

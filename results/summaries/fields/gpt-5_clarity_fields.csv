@@ -1,0 +1,76 @@
+page,URL,Field,Runs,benchmark,field_accuracy,is_consistent
+amzon,amazon,Your name,10,inapplicable,1.0,True
+amzon,amazon,No Label (select),5,,,True
+amzon,amazon,Mobile number or email,10,fail,1.0,True
+amzon,amazon,Password,10,pass,1.0,True
+amzon,amazon,Re-enter password,10,pass,0.0,True
+bible,infinite,First Name,10,pass,1.0,True
+bible,infinite,Last Name,10,pass,1.0,True
+bible,infinite,Email(required),10,pass,1.0,True
+bible,infinite,Organization(required),10,inapplicable,1.0,True
+bible,infinite,Website,10,fail,0.4,False
+cricbuzz,cricbuzz,Name,10,fail,1.0,True
+cricbuzz,cricbuzz,Email,10,fail,0.6,False
+cricbuzz,cricbuzz,Subject,10,pass,0.8,False
+cricbuzz,cricbuzz,No Label (textarea) [Message],10,pass,0.4,False
+cricbuzz,cricbuzz,"(jpg,png,gif,bmp) (file)",10,inapplicable,0.4,False
+dictionary,blog.collinsdictionary.com,First,10,pass,0.0,True
+dictionary,blog.collinsdictionary.com,Last,10,pass,0.0,True
+dictionary,blog.collinsdictionary.com,Email *,10,fail,0.9,False
+dictionary,blog.collinsdictionary.com,Add more subject detail,10,inapplicable,1.0,True
+dictionary,blog.collinsdictionary.com,Comment or Message *,10,inapplicable,1.0,True
+dictionary,blog.collinsdictionary.com,No Label,10,,,True
+dictionary,blog.collinsdictionary.com,Subject *,10,pass,0.3,False
+houston,uh.edu,Search Field (1),10,inapplicable,1.0,True
+houston,uh.edu,Search Field (2),10,inapplicable,1.0,True
+houston,uh.edu,First Name*,10,inapplicable,0.9,False
+houston,uh.edu,Last Name*,10,inapplicable,0.9,False
+houston,uh.edu,Email Address*,10,fail,0.9,False
+houston,uh.edu,Mobile Phone Number*,10,inapplicable,0.9,False
+houston,uh.edu,Date of Birth (Day)(select),10,pass,0.0,True
+houston,uh.edu,When would you like to start classes at UH?(select),10,pass,0.0,True
+houston,uh.edu,You plan to enroll as a:(select),10,pass,0.0,True
+houston,uh.edu,Date of Birth (Year)(select),10,pass,0.0,True
+houston,uh.edu,Date of Birth (Month)(select),10,pass,0.0,True
+livescore,livescore,Email address (text),10,fail,1.0,True
+livescore,livescore,No Label (select) [Subject],10,pass,0.7,False
+livescore,livescore,Please select a subject (checkbox),8,,,True
+livescore,livescore,Message (textarea),10,inapplicable,1.0,True
+pexels,pexels,First name,10,inapplicable,1.0,True
+pexels,pexels,Last name,10,inapplicable,0.9,False
+pexels,pexels,Email,10,fail,0.0,False
+pexels,pexels,Password,10,pass,0.9,False
+pexels,pexels,First name,10,inapplicable,1.0,True
+pexels,pexels,Last name,10,inapplicable,0.9,False
+pexels,pexels,Email,10,fail,0.0,False
+pexels,pexels,Password,10,pass,0.9,False
+pexels,pexels,First name,10,inapplicable,1.0,True
+pexels,pexels,Last name,10,inapplicable,0.9,False
+pexels,pexels,Email,10,fail,0.0,False
+pexels,pexels,Password,10,pass,0.9,False
+sky,adsmartfromsky,Your first name,10,inapplicable,1.0,True
+sky,adsmartfromsky,Your surname,10,inapplicable,1.0,True
+sky,adsmartfromsky,Company name,10,inapplicable,1.0,True
+sky,adsmartfromsky,Location,10,inapplicable,1.0,True
+sky,adsmartfromsky,Telephone,10,fail,0.9,False
+sky,adsmartfromsky,Email,10,fail,1.0,True
+sky,adsmartfromsky,Phone (radio),10,pass,0.4,False
+sky,adsmartfromsky,Email (radio),10,pass,0.4,False
+sky,adsmartfromsky,Agency (radio),10,pass,0.4,False
+sky,adsmartfromsky,Direct advertiser (radio),10,pass,0.4,False
+sky,adsmartfromsky,Other (radio),10,pass,0.4,False
+sky,adsmartfromsky,Any comments regarding AdSmart or your business?,10,inapplicable,1.0,True
+sky,adsmartfromsky,How did you hear about AdSmart? (select),10,pass,0.1,False
+sky,adsmartfromsky,AdSmart from Sky updates (checkbox),10,inapplicable,0.1,False
+sky,adsmartfromsky,Please specify,1,,,True
+sky,adsmartfromsky,Please leave this field empty.,1,,,True
+steam,store.steampowered.com,Search the store,10,,,True
+steam,store.steampowered.com,Email Address,10,fail,1.0,True
+steam,store.steampowered.com,Confirm your Address,10,pass,0.0,True
+steam,store.steampowered.com,Country of Residence,10,inapplicable,0.6,False
+steam,store.steampowered.com,I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.,10,inapplicable,0.3,False
+zomato,zomato,Please enter phone number ,10,fail,1.0,True
+zomato,zomato,Please enter name,10,inapplicable,0.8,False
+zomato,zomato,I hereby consent to receiving communications from Zomato for any relevant opportunities.,10,inapplicable,0.4,False
+zomato,zomato,Select city,10,inapplicable,0.4,False
+zomato,zomato,Filter By City,4,,,True

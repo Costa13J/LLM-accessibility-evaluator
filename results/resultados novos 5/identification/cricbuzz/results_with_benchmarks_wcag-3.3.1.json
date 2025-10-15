@@ -1,0 +1,472 @@
+[
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name (name)",
+                "evaluation": "fail",
+                "reasoning": "An error message is shown in a general error container, but there is no programmatic association to the input (no aria-describedby/aria-errormessage) and no aria-invalid state indicated.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "fail",
+                "reasoning": "The message \"Email-Id is required.\" appears, but it is not programmatically linked to the input (no aria-describedby/aria-errormessage) and no aria-invalid state indicated.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject (subject)",
+                "evaluation": "fail",
+                "reasoning": "The message \"Subject is required.\" appears, but no programmatic association to the field is present (no aria-describedby/aria-errormessage) and no aria-invalid state indicated.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "fail",
+                "reasoning": "The message \"Message is required.\" is shown in the summary, but there is no programmatic association to the textarea, and it lacks a visible label, reducing visual association.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "The file input is optional, so accessible error identification when left empty is not required.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "Error messages become visible, but there is no programmatic link to the input (no aria-describedby/aria-errormessage, no aria-invalid), so assistive technologies won’t announce the error in context.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "An error is shown, but it is not programmatically associated with the input (no aria-describedby/aria-errormessage, no aria-invalid).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "The field shows an error state, but there is no programmatic association between the input and the error message.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "fail",
+                "reasoning": "The error (“Message is required.”) is displayed, but the field lacks a visible label and has no programmatic linkage to the error text.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation feedback when left empty.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "Error text appears in a form-level summary but is not programmatically associated to the input (no aria-describedby/aria-errormessage); no aria-invalid observed.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "Error text appears in a form-level summary but is not programmatically associated to the input (no aria-describedby/aria-errormessage); no aria-invalid observed.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "Error text appears in a form-level summary but is not programmatically associated to the input (no aria-describedby/aria-errormessage); no aria-invalid observed.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "fail",
+                "reasoning": "Error text appears in a form-level summary but is not programmatically associated to the field; the field lacks a visible label, further hindering association.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is optional and does not require validation feedback when left empty.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "Error text is shown in a general error container (“Name is required.”) but is not programmatically associated to the input (no aria-describedby/aria-errormessage and no aria-invalid).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "Error text (“Email-Id is required.”) appears in a general container with no programmatic linkage to the email input (no aria-describedby/aria-errormessage and no aria-invalid).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "Error text (“Subject is required.”) is not programmatically associated with the field; no aria-describedby/aria-errormessage and no aria-invalid on the input.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "fail",
+                "reasoning": "Error text (“Message is required.”) is shown globally and the field has no label or ARIA linkage (no aria-describedby/aria-errormessage), so assistive technologies cannot associate the error to this field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "The file upload is optional; no error identification is required when left empty.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "An error appears (“Name is required.”) but there is no programmatic association to the input (no aria-describedby/aria-errormessage) and no aria-invalid; a global summary alone does not ensure assistive technologies announce the error for the specific field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "An error appears (“Email-Id is required.”) but it is not programmatically linked to the field (no aria-describedby/aria-errormessage) and no aria-invalid indicator is present.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "An error appears (“Subject is required.”) but there is no programmatic association to the input (no aria-describedby/aria-errormessage) and no aria-invalid was observed.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "fail",
+                "reasoning": "An error appears (“Message is required.”) but the field lacks a visible label and has no programmatic association (no aria-describedby/aria-errormessage) or aria-invalid to identify the error for this specific textarea.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "The file upload is optional, so no error identification is required when it is left empty.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "An error appears in a general error container (\"Name is required\") but there is no programmatic association to the input (no aria-describedby/aria-errormessage or aria-invalid).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "An error appears in a general error container (\"Email-Id is required\") without programmatic linkage to the input (no aria-describedby/aria-errormessage or aria-invalid).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "An error appears in a general error container (\"Subject is required\") but there is no programmatic association to the input (no aria-describedby/aria-errormessage or aria-invalid).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "fail",
+                "reasoning": "The message \"Message is required\" appears in a general container, but the field has no label and lacks any programmatic error association (no aria-describedby/aria-errormessage or aria-invalid).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "The file input is optional (required=no), so no error identification is required when it is left empty.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "An error message appears after submission, but there is no programmatic association to the input (no aria-describedby/aria-errormessage; no aria-invalid), so assistive technologies would not announce it for this specific field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "The message “Email-Id is required.” is shown, but the input lacks ARIA linkage (no aria-describedby/aria-errormessage; no aria-invalid), so the error is not programmatically tied to the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "A visible error appears, but there is no evidence of programmatic association to the input (no aria-describedby/aria-errormessage; no aria-invalid).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "fail",
+                "reasoning": "Although “Message is required.” is shown, the field has no visible label and no programmatic association (no aria-describedby/aria-errormessage; no aria-invalid), so assistive technologies cannot reliably announce the error for this field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "The file upload is optional; accessible error identification on empty submission is not required.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "An error message is shown, but it is not programmatically linked to the input (no aria-describedby/aria-errormessage). No aria-invalid observed.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "An error message is shown, but it is not programmatically linked to the input (no aria-describedby/aria-errormessage). No aria-invalid observed.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "An error message is shown, but it is not programmatically linked to the input (no aria-describedby/aria-errormessage). No aria-invalid observed.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "fail",
+                "reasoning": "The error (\"Message is required.\") is shown in a container, but the field lacks a label and has no programmatic association to the error (no aria-describedby/aria-errormessage). No aria-invalid observed.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "This upload field is optional and does not require validation when left empty.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "\"Name is required.\" is shown after submission, but there is no programmatic association to the input (no aria-describedby/aria-errormessage and no aria-invalid). A global error list alone is insufficient.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "\"Email-Id is required.\" is displayed, but not programmatically linked to the input (no aria-describedby/aria-errormessage; no aria-invalid). Only visual feedback is indicated.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "\"Subject is required.\" appears, but no programmatic link to the field is provided (no aria-describedby/aria-errormessage; no aria-invalid).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "fail",
+                "reasoning": "\"Message is required.\" is shown, but the field has no visible label and there is no programmatic association to the input (no aria-describedby/aria-errormessage; no aria-invalid).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "The file field is optional (required=no), so no validation feedback is expected when left empty.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "fail",
+                "reasoning": "Error messages appear in a global container/visible DIVs, but there is no programmatic association to the input (no aria-describedby/aria-errormessage) and no aria-invalid, so screen readers won't announce the specific error for this field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "fail",
+                "reasoning": "Error message is shown but not programmatically linked to the input (no aria-describedby/aria-errormessage) and no aria-invalid, so the error is not announced for the field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "fail",
+                "reasoning": "Error message is shown but not programmatically linked to the input and no aria-invalid, failing accessible error identification.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "Error message is shown but not programmatically associated with the textarea (no aria-describedby/aria-errormessage) and no aria-invalid indicator.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Upload screenshot of error or issue (optional) (jpg,png,gif,bmp)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is optional and does not require validation when left empty, so accessible error identification is not applicable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

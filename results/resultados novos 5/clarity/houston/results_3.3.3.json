@@ -1,0 +1,342 @@
+[
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with input '!'; no validation error or message was triggered, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Search Field (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with input '!'; no validation error or message was triggered."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger a validation error or message; no guidance needed/applicable."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger a validation error or message; no guidance needed/applicable."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "Input 'userexample.com' caused a generic modal (“3 required fields were not completed and 1 field was not properly formatted.”) without field-specific guidance (e.g., “Please include an '@'”). The feedback did not explain the problem or how to fix it."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'abc123' did not trigger a validation error or message; WCAG 3.3.3 not applicable."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (first)",
+                "evaluation": "inapplicable",
+                "reasoning": "Test input '!'. No validation error or message was triggered for this optional field; WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Search Field (second)",
+                "evaluation": "inapplicable",
+                "reasoning": "Test input '!'. No validation error or message was triggered for this optional field; WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "Test input '!'. The required field was non-empty, no validation error or message was triggered; WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "Test input '!'. The required field was non-empty, no validation error or message was triggered; WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "Test input 'userexample.com' caused a validation error (global dialog: \"3 required fields were not completed and 1 field was not properly formatted.\"), but no field-specific, actionable message explained the issue (e.g., “include an @”) or how to correct it, and no programmatic association was evident."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "inapplicable",
+                "reasoning": "Test input 'abc123'. No validation error or message was triggered (no pattern specified and value is non-empty); WCAG 3.3.3 does not apply."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger validation; the field is not required and no error feedback appeared, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger validation and no error message was shown; without an error, 3.3.3 does not apply."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger validation and no error message was shown; without an error, 3.3.3 does not apply."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "Input 'userexample.com' triggered a formatting error (global dialog), but the only message shown was a vague count (“3 required fields... and 1 field...”), with no field-level explanation or suggestion (e.g., “Include an @, use format user@example.com”). This does not clearly explain the problem or how to fix it."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'abc123' did not surface a validation error or message in the mutations; without an error, 3.3.3 does not apply."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger any validation or error messaging on a non-required search field, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Search Field (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger any validation or error messaging on a non-required search field, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' produced no validation error or message; without an error, WCAG 3.3.3 is not triggered."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' produced no validation error or message; without an error, WCAG 3.3.3 is not triggered."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "Input 'userexample.com' triggered an error state signaled by a modal stating \"3 required fields were not completed and 1 field was not properly formatted,\" but no field-specific guidance was shown. The message does not identify the email field or explain the problem (missing '@') or how to fix it, so it lacks actionable instruction."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'abc123' did not surface a field-level validation error or message; with no triggered error, WCAG 3.3.3 does not apply."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (first)",
+                "evaluation": "inapplicable",
+                "reasoning": "The optional field accepted the input '!' without triggering validation; no error messaging was expected per WCAG 3.3.3."
+            },
+            {
+                "identification": "Search Field (second)",
+                "evaluation": "inapplicable",
+                "reasoning": "The optional field accepted the input '!' without triggering validation; no error messaging was expected per WCAG 3.3.3."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' did not trigger a validation error (no constraints indicated beyond “required”), so no error suggestion applies."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' did not trigger a validation error; without an error, WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "Entering 'userexample.com' triggered a generic dialog—\"3 required fields were not completed and 1 field was not properly formatted.\" This does not identify the email field, describe the issue (missing '@'), or suggest how to fix it (e.g., use format user@example.com)."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "inapplicable",
+                "reasoning": "No field-level validation error was shown for 'abc123'; without an error, no corrective guidance is required."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Entering '!' did not trigger validation or an error message for this optional field, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Search Field (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Entering '!' did not trigger validation or an error message for this optional field, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' did not trigger a validation error (field not empty), and no message was shown; therefore 3.3.3 is not applicable."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' did not trigger a validation error (field not empty), and no message was shown; therefore 3.3.3 is not applicable."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "The submission triggered a generic modal message—\"3 required fields were not completed and 1 field was not properly formatted.\" It does not identify the problematic field or provide corrective guidance (e.g., \"Please include an '@' in the email address\"). This lacks clear, actionable instructions."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'abc123' did not trigger a validation error or message; no guidance is expected under 3.3.3."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (first)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no constraints; input '!' triggered no validation, so no error message was expected."
+            },
+            {
+                "identification": "Search Field (second)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no constraints; input '!' triggered no validation, so no error message was expected."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' satisfied the required attribute; no additional validation evident and no message shown."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' satisfied the required attribute; no additional validation evident and no message shown."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "Invalid input 'userexample.com' triggered a generic modal (“3 required fields were not completed and 1 field was not properly formatted.”) without identifying the email field or explaining how to fix it (e.g., include “@”), so it did not provide clear, actionable guidance."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "inapplicable",
+                "reasoning": "No phone-specific validation error was triggered for 'abc123'; no error message was shown, so 3.3.3 does not apply."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "The optional field received '!' and no validation was triggered or expected, so no error message is required for WCAG 3.3.3."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger validation; no error message was shown. As the field is optional with no constraints triggered, WCAG 3.3.3 is not applicable."
+            },
+            {
+                "identification": "Search Field (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger validation; no error message was shown. As the field is optional with no constraints triggered, WCAG 3.3.3 is not applicable."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' was accepted and no validation error was triggered; therefore no error message was expected."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' was accepted and no validation error was triggered; therefore no error message was expected."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "Input 'userexample.com' triggered a modal message: \"3 required fields were not completed and 1 field was not properly formatted.\" This does not identify the email field or explain the specific issue (missing '@') or how to correct it, so it does not provide clear, actionable guidance."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'abc123' did not produce any field-specific error message; no validation was triggered for this field, so WCAG 3.3.3 is not applicable."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (first)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with input '!'; no validation was triggered and no message was expected."
+            },
+            {
+                "identification": "Search Field (second)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with input '!'; no validation was triggered and no message was expected."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "Value '!' supplied and no format constraints indicated; no validation error occurred."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "Value '!' supplied and no format constraints indicated; no validation error occurred."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "Input 'userexample.com' triggered a generic dialog—\"3 required fields were not completed and 1 field was not properly formatted.\" It does not identify the email field or provide a corrective suggestion (e.g., include an '@' or example format)."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "inapplicable",
+                "reasoning": "No phone-specific validation error or guidance was shown for 'abc123'; type=\"tel\" without a pattern typically does not enforce a format."
+            }
+        ]
+    }
+]

@@ -1,0 +1,2 @@
+model,issue,n_pages,n_fields_total,mean_accuracy,std_dev,consistency_rate
+gpt-4o,identification,10,67,0.79039548,0.361731078,0.835820896

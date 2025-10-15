@@ -1,0 +1,387 @@
+[
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '1234' produced no validation error (aria-invalid=false; wpforms-valid). Since no error was triggered, WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '-' produced no validation error (aria-invalid=false; wpforms-valid). Since no error was triggered, WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "fail",
+                "reasoning": "Input 'user.com' triggered an error (aria-invalid=true) with the message \"Please enter a valid email address.\" This is vague and does not explain what is wrong or how to fix it (e.g., noting the missing '@' or giving an example format), so it does not provide clear corrective guidance."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Input \"<script>alert('x')</script>\" produced no validation error (aria-invalid=false; wpforms-valid). Since no error was triggered, WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'Hi' produced no validation error (aria-invalid=false; wpforms-valid). Since no error was triggered, WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "A very long input string produced no observable validation error. Since no error was triggered, WCAG 3.3.3 does not apply."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '1234' was accepted with no error (aria-invalid=false, wpforms-valid). Since no validation error was triggered, WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '-' was accepted with no error (aria-invalid=false, wpforms-valid). No error messaging expected or required."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "fail",
+                "reasoning": "The invalid value 'user.com' triggered an error and an inline message: \"Please enter a valid email address.\" While it flags the error, it does not explain how to fix it (e.g., mention the missing '@' or give an example like user@example.com), so it lacks actionable guidance."
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "Leaving the field unselected triggered an inline message: \"This field is required.\" This clearly indicates the issue and the fix (select a value), providing actionable guidance."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "The input \"<script>alert('x')</script>\" did not trigger a validation error (aria-invalid=false, wpforms-valid). Without an error, WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'Hi' was accepted with no error (aria-invalid=false, wpforms-valid). No error messaging expected or required."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "The long input was accepted and no error was shown. Since no validation error occurred, WCAG 3.3.3 is not applicable."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '1234' produced no validation error (aria-invalid=\"false\", wpforms-valid). No error message was expected; WCAG 3.3.3 applies only when an error is triggered."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '-' produced no validation error (aria-invalid=\"false\", wpforms-valid). No error message was expected; WCAG 3.3.3 is not applicable."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "fail",
+                "reasoning": "Input 'user.com' triggered an error (aria-invalid=\"true\") with the message \"Please enter a valid email address.\" This is too generic and does not suggest how to correct the input (e.g., include an '@' or give an example like user@example.com), so it does not provide clear, actionable guidance."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Input \"<script>alert('x')</script>\" did not trigger a validation error (aria-invalid=\"false\", wpforms-valid). No error messaging is required under WCAG 3.3.3."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'Hi' was accepted (aria-invalid=\"false\", wpforms-valid). No validation error was raised, so error suggestion does not apply."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "A very long input string did not result in a validation error or message in the mutations. With no error triggered, WCAG 3.3.3 is not applicable."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '1234' was accepted with no error; no guidance needed because no validation error occurred."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '-' was accepted with no error; no guidance needed because no validation error occurred."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "fail",
+                "reasoning": "Input 'user.com' triggered an error: \"Please enter a valid email address.\" The message is vague and does not explain the specific issue or how to fix it (e.g., include '@' or provide an example), so it lacks actionable guidance."
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "Required field left unselected triggered: \"This field is required.\" This clearly tells the user to choose an option to proceed."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation error was triggered for the provided input; WCAG 3.3.3 applies only when an error occurs."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "The short message 'Hi' was accepted; no error or guidance was needed."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "The long input did not trigger validation; no error messaging was expected."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '1234' produced no validation error (aria-invalid=false), so no message was needed; WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '-' produced no validation error (aria-invalid=false), so no message was needed; WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "fail",
+                "reasoning": "Input 'user.com' triggered an error with the message \"Please enter a valid email address.\" This is vague and does not suggest how to fix the issue (e.g., include an '@' or show an example), so it does not provide clear corrective guidance."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Input \"<script>alert('x')</script>\" produced no validation error (aria-invalid=false), so no message was needed; WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'Hi' produced no validation error (aria-invalid=false), so no message was needed; WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "The very long input did not trigger any validation error, so no message was needed; WCAG 3.3.3 does not apply."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '1234' produced no validation error (marked valid). Since no error was triggered, WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '-' produced no validation error (marked valid). Since no error was triggered, WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "fail",
+                "reasoning": "Input 'user.com' triggered an error with the message \"Please enter a valid email address.\" This identifies the field as invalid but does not suggest how to correct it (e.g., include '@' or give an example), so it lacks actionable guidance."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Input \"<script>alert('x')</script>\" produced no validation error (marked valid). No error messaging expected."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'Hi' produced no validation error (marked valid). No error messaging expected."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "Long input was accepted with no validation error observed. No error messaging expected."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '1234' did not trigger a validation error (field marked valid and aria-invalid=false). Since no error was triggered, WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '-' did not trigger a validation error (field marked valid and aria-invalid=false). Since no error was triggered, WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "fail",
+                "reasoning": "Input 'user.com' triggered a validation error (aria-invalid=true) with the message \"Please enter a valid email address.\" The message identifies a problem but fails to suggest how to correct it (e.g., include an '@' or provide an example like user@example.com), so it is not sufficiently actionable."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Input \"<script>alert('x')</script>\" did not trigger a validation error (field marked valid and aria-invalid=false). Since no error was triggered, WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'Hi' did not trigger a validation error (field marked valid and aria-invalid=false). Since no error was triggered, WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "The very long input did not trigger a validation error (no error classes/messages observed). Since no error was triggered, WCAG 3.3.3 does not apply."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '1234' produced no validation error (aria-invalid=false). Since no error was triggered, WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '-' produced no validation error (aria-invalid=false). Since no error was triggered, WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "fail",
+                "reasoning": "Input 'user.com' triggered an error with the message \"Please enter a valid email address.\" This is too generic and does not suggest a specific fix (e.g., \"Include an '@' or use format name@example.com\"), so it lacks clear corrective guidance."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Input \"<script>alert('x')</script>\" produced no validation error (aria-invalid=false). No error shown, so WCAG 3.3.3 is not applicable."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'Hi' produced no validation error (aria-invalid=false). No error shown; WCAG 3.3.3 not applicable."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "Long input produced no validation error. No error shown; WCAG 3.3.3 not applicable."
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "Left empty; a validation error was triggered and the message \"This field is required.\" clearly identifies the problem and instructs the user to provide a selection, which is actionable guidance."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '1234' did not trigger validation; the field was marked valid (aria-invalid=false) and no error message appeared, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '-' did not trigger validation; the field was marked valid (aria-invalid=false) and no error message appeared, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "fail",
+                "reasoning": "Input 'user.com' triggered an error (aria-invalid=true) and displayed \"Please enter a valid email address.\" The message is vague and does not specify the problem (e.g., missing '@') or provide a corrective example (e.g., user@example.com), offering limited guidance."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Input \"<script>alert('x')</script>\" did not trigger validation; the field was marked valid (aria-invalid=false) and no error message appeared, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'Hi' did not trigger validation; the field was marked valid (aria-invalid=false) and no error message appeared, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "The long 'A' string did not produce any error mutations; no validation error or message was observed, so WCAG 3.3.3 does not apply."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '1234' produced no validation error (aria-invalid=false; wpforms-valid). No message expected; WCAG 3.3.3 not applicable."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '-' produced no validation error (aria-invalid=false; wpforms-valid). No message expected; WCAG 3.3.3 not applicable."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Input 'user.com' triggered an error (aria-invalid=true; error label injected) with the message \"Please enter a valid email address.\" This clearly indicates the problem and how to correct it (enter a valid email address), providing actionable guidance."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Input \"<script>alert('x')</script>\" produced no validation error (aria-invalid=false; wpforms-valid). No message expected; WCAG 3.3.3 not applicable."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "Input 'Hi' produced no validation error (aria-invalid=false; wpforms-valid). No message expected; WCAG 3.3.3 not applicable."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "The long 'A' string produced no validation error in the observed mutations. No message expected; WCAG 3.3.3 not applicable."
+            }
+        ]
+    }
+]

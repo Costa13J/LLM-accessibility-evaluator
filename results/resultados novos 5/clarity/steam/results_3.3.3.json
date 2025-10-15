@@ -1,0 +1,282 @@
+[
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' produced search suggestions (Search results) with no validation error or message. Since no error was triggered, WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "Input 'userexample.com' triggered an error state (red border on #email and a visible error panel), but no specific error message was provided explaining the problem (e.g., missing “@”) or how to fix it. Only visual styling changed, offering no corrective guidance."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "Input '!' triggered an error state (red border on #reenter_email), but no message explained what was wrong (e.g., “Must match the email address”) or how to correct it. The absence of text guidance fails WCAG 3.3.3."
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "No test input and no validation feedback were observed. No error was triggered, so error suggestion is not applicable."
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "fail",
+                "reasoning": "Left unchecked at submission. The ssa_box container gained a red border and a global error panel appeared, but no specific, linked message told the user they must accept the terms to proceed. Without clear instruction, this fails WCAG 3.3.3."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger validation; the interface displayed suggestions instead. As no error was detected or expected, WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "Input 'userexample.com' triggered a visual error (red border) but no specific, linked error message was presented. Without text explaining the problem and how to fix it (e.g., “Enter a valid email address like user@example.com”), the guidance is unclear and not actionable."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "Input '!' triggered a visual error (red border) but no descriptive message was provided (e.g., “Re-enter the same valid email address; it must match ‘Email Address’”). The absence of explicit instructions fails to guide correction."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' produced search results and no validation error; no message was expected. WCAG 3.3.3 is not applicable without an error state."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "Input 'userexample.com' triggered a visual error (red border) but no explanatory or corrective text. The system did not tell the user what was wrong or how to fix it (e.g., “Enter a valid email like user@example.com”), nor was any message programmatically linked."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "Input '!' triggered a visual error (red border) but no message. If this is an email confirmation, the message should state that it must match the email and instruct the user to re-enter the same address."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' updated search results without triggering validation; no error messaging is expected for an optional search field."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "Input 'userexample.com' led to a red error border and an error panel style change, but no clear error message or suggestion was presented. Without text explaining the issue and how to fix it (e.g., “Include ‘@’ and a domain, like user@example.com”), users lack guidance, failing WCAG 3.3.3."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "Input '!' triggered an error state (red border) but no message explaining whether it must match the email or meet an email format. The absence of corrective guidance makes it unclear how to resolve the error, failing WCAG 3.3.3."
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "No input was provided and no validation occurred; therefore WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is not required and no validation was triggered; no error messaging is expected."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' did not trigger validation; search results updated normally. No error was expected, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The input 'userexample.com' caused a visual error state (red border), but no clear error message was presented or linked to the field. The user is not told what’s wrong or how to fix it (e.g., “Enter an email in the format user@example.com”)."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The input '!' caused a visual error state (red border), but no message explained the issue or the correction (e.g., enter a valid email and/or match the first email address)."
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation was triggered for this select field; no error messaging expected."
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "fail",
+                "reasoning": "The terms checkbox container showed a red border (error state) but no message told the user to accept the terms to proceed. The absence of a specific, actionable message fails WCAG 3.3.3."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' caused search results to update, not a validation error. No message was expected for this optional free-text field, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "Input 'userexample.com' triggered a visual error state (red border) but no specific error message was shown or linked. The user is not told what’s wrong or how to fix it (e.g., use user@example.com), so the guidance is unclear."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "Input '!' triggered a visual error state (red border) with no explanatory message. The user is not told the requirement (valid email and/or must match the Email Address), so no corrective guidance is provided."
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "No test input and no validation was triggered; no error messaging expected."
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox was not required in the provided state and no validation occurred; no error messaging expected."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' produced search results and no validation error or message; WCAG 3.3.3 does not apply when no error is triggered."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "Input 'userexample.com' caused only a red border and an error panel style change; no specific message explaining the problem (e.g., missing “@”) or how to correct it was presented."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "Input '!' led to a red border with no message indicating the requirement (e.g., must match the email entered or use a valid email format), providing no actionable guidance."
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "Not tested and no validation behavior observed; no error messaging expected."
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "inapplicable",
+                "reasoning": "Not tested and no specific error message shown; WCAG 3.3.3 only applies when an error is triggered."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' updated results without triggering validation or an error message. Since no error was detected, WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "Input 'userexample.com' caused a visual error state (red border on input#email) but no error message explaining the issue or how to fix it (e.g., “Enter a valid email like name@example.com”). Lacks clear, actionable guidance."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "Input '!' caused a visual error state (red border on input#reenter_email) but no message indicating the problem (typically “Must match the email address”). No suggestion for correction."
+            },
+            {
+                "identification": "Country of Residence",
+                "evaluation": "inapplicable",
+                "reasoning": "No input was provided and no validation or error message was triggered, so WCAG 3.3.3 does not apply."
+            },
+            {
+                "identification": "I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.",
+                "evaluation": "fail",
+                "reasoning": "Left unchecked; UI showed a visual error state (red border on #ssa_box) but no clear message like “You must be at least 13 and agree to the terms to continue.” This fails to explain the problem or how to resolve it."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' returned search results and did not trigger validation; no error messaging was expected or shown, so WCAG 3.3.3 is not applicable."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The input 'userexample.com' caused a visual error state (red border, error panel shown) but no specific error text was presented. Without guidance like “Enter a valid email address, e.g., name@example.com,” the user is not told how to fix the issue."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The input '!' caused a visual error state (red border) but no explanatory message (e.g., “Email addresses must match” or “Enter a valid email”). The lack of guidance makes it unclear how to correct the input."
+            }
+        ]
+    },
+    {
+        "url": "https://store.steampowered.com/join/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search the store",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' changed search results without triggering any validation or error message. Since no error was detected or expected for this optional search field, WCAG 3.3.3 is not applicable."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "fail",
+                "reasoning": "The input 'userexample.com' caused visual error cues (red border and an error panel), but no clear, descriptive message was presented. Without text explaining the problem (e.g., missing '@') and how to fix it, the guidance is insufficient."
+            },
+            {
+                "identification": "Confirm your Address",
+                "evaluation": "fail",
+                "reasoning": "The input '!' resulted in a red border on the confirmation field, but no message explained the issue (e.g., must match the email address or use a valid format). The absence of corrective guidance fails WCAG 3.3.3."
+            }
+        ]
+    }
+]

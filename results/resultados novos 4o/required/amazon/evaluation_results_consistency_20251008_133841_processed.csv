@@ -1,0 +1,6 @@
+URL,Model,Field,Runs,Most common,Consistency ratio,Benchmark,absent_count,fail_count,inapplicable_count,pass_count,field_accuracy,is_consistent
+amazon,gpt-4,Your name (text),10,pass,0.75,pass,0,3,0,7,0.7,False
+amazon,gpt-4,No Label (select),8,inapplicable,1.0,,0,0,8,0,,True
+amazon,gpt-4,Mobile number or email ,10,pass,0.6,pass,2,2,0,6,0.6,False
+amazon,gpt-4,Password,10,pass,0.6,pass,2,2,0,6,0.6,False
+amazon,gpt-4,Re-enter password (password),10,pass,0.5,pass,2,3,0,5,0.5,False

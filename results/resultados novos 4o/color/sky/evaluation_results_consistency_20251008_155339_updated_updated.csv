@@ -1,0 +1,16 @@
+URL,Model,Field,Runs,Eval counts,Most common,Consistency ratio,Benchmark,pass,fail,inapplicable,absent,accuracy,pass,fail,inapplicable,absent
+adsmartfromsky,gpt-4,Your first name,10,"9×inapplicable, 1×fail",inapplicable,0.9,inapplicable,0,1,9,0,0.9,0,1,9,0
+adsmartfromsky,gpt-4,Your surname,10,"9×inapplicable, 1×fail",inapplicable,0.9,inapplicable,0,1,9,0,0.9,0,1,9,0
+adsmartfromsky,gpt-4,Company name,10,"9×inapplicable, 1×fail",inapplicable,0.9,inapplicable,0,1,9,0,0.9,0,1,9,0
+adsmartfromsky,gpt-4,Location,10,"9×inapplicable, 1×fail",inapplicable,0.9,inapplicable,0,1,9,0,0.9,0,1,9,0
+adsmartfromsky,gpt-4,Telephone,10,"9×pass, 1×inapplicable",pass,0.9,pass,9,0,1,0,0.9,9,0,1,0
+adsmartfromsky,gpt-4,Email,10,"9×pass, 1×inapplicable",pass,0.9,pass,9,0,1,0,0.9,9,0,1,0
+adsmartfromsky,gpt-4,Any comments regarding AdSmart or your business?,10,10×absent,absent,1.0,inapplicable,0,0,0,10,0.0,0,0,0,10
+adsmartfromsky,gpt-4,Agency (radio),10,"6×absent, 3×inapplicable, 1×unknown",absent,0.6,pass,0,0,3,6,0.0,0,0,3,6
+adsmartfromsky,gpt-4,AdSmart from Sky updates (checkbox),10,10×absent,absent,1.0,inapplicable,0,0,0,10,0.0,0,0,0,10
+adsmartfromsky,gpt-4,Other (radio),10,"9×absent, 1×inapplicable",absent,0.9,pass,0,0,1,9,0.0,0,0,1,9
+adsmartfromsky,gpt-4,Phone (radio),10,"4×absent, 6×inapplicable",inapplicable,0.6,pass,0,0,6,4,0.0,0,0,6,4
+adsmartfromsky,gpt-4,How did you hear about AdSmart? (select),10,10×absent,absent,1.0,pass,0,0,0,10,0.0,0,0,0,10
+adsmartfromsky,gpt-4,Email (radio),10,"6×absent, 4×inapplicable",absent,0.6,pass,0,0,4,6,0.0,0,0,4,6
+adsmartfromsky,gpt-4,Direct advertiser (radio),10,"9×absent, 1×inapplicable",absent,0.9,pass,0,0,1,9,0.0,0,0,1,9
+adsmartfromsky,gpt-4,Unknown,1,1×unknown,unknown,1.0,,0,0,0,0,,0,0,0,0

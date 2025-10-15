@@ -1,0 +1,2 @@
+model,issue,n_pages,n_fields_total,mean_accuracy,std_dev,consistency_rate
+gpt-4o,clarity,10,62,0.415254237,0.451293268,0.661290323

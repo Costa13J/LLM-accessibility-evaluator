@@ -1,0 +1,767 @@
+[
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input using a label with the 'for' attribute.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input using a label with the 'for' attribute.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input using a label with the 'for' attribute.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input using a label with the 'for' attribute.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input using a label with the 'for' attribute.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input via a label.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input via a label.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input via a label.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input via a label.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input via a label.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input using a label element.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input using a label element.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input using a label element.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input using a label element.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input using a label element.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First",
+                "evaluation": "fail",
+                "reasoning": "The field is required, and a generic error message \"Please fill in this field.\" is shown, but it is not programmatically linked to the input.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last",
+                "evaluation": "fail",
+                "reasoning": "The field is required, and a generic error message \"Please fill in this field.\" is shown, but it is not programmatically linked to the input.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "fail",
+                "reasoning": "The field is required, and a generic error message \"Please fill in this field.\" is shown, but it is not programmatically linked to the input.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "fail",
+                "reasoning": "The field is required, and a generic error message \"Please select an item in the list.\" is shown, but it is not programmatically linked to the input.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "fail",
+                "reasoning": "The field is required, and a generic error message \"Please fill in this field.\" is shown, but it is not programmatically linked to the input.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First",
+                "evaluation": "fail",
+                "reasoning": "The field is required, and a generic error message \"Please fill in this field.\" is shown, but it is not programmatically linked to the input.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last",
+                "evaluation": "fail",
+                "reasoning": "The field is required, and a generic error message \"Please fill in this field.\" is shown, but it is not programmatically linked to the input.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "fail",
+                "reasoning": "The field is required, and a generic error message \"Please fill in this field.\" is shown, but it is not programmatically linked to the input.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "fail",
+                "reasoning": "The field is required, and a generic error message \"Please select an item in the list.\" is shown, but it is not programmatically linked to the input.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "fail",
+                "reasoning": "The field is required, and a generic error message \"Please fill in this field.\" is shown, but it is not programmatically linked to the input.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First",
+                "evaluation": "fail",
+                "reasoning": "The field is required, and an error message is shown, but it is not programmatically linked to the input.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last",
+                "evaluation": "fail",
+                "reasoning": "The field is required, and an error message is shown, but it is not programmatically linked to the input.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email*",
+                "evaluation": "fail",
+                "reasoning": "The field is required, and an error message is shown, but it is not programmatically linked to the input.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject*",
+                "evaluation": "fail",
+                "reasoning": "The field is required, and an error message is shown, but it is not programmatically linked to the input.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Comment or Message*",
+                "evaluation": "fail",
+                "reasoning": "The field is required, and an error message is shown, but it is not programmatically linked to the input.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, and no error message is expected or shown.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input via a label.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input via a label.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input via a label.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input via a label.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, and no error message is expected or shown.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input via a label.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, and no error message is expected or shown.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, and no error message is expected or shown.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is expected or necessary.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input via a label, satisfying WCAG 3.3.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input via a label, satisfying WCAG 3.3.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input via a label, satisfying WCAG 3.3.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input via a label, satisfying WCAG 3.3.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is expected or necessary.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input via a label, satisfying WCAG 3.3.1.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is expected or necessary.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is expected or necessary.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input via a label.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input via a label.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input via a label.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input via a label.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "The field is required, and an error message \"This field is required.\" is programmatically associated with the input via a label.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "This field is not required, so no error message is necessary.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "fail",
+                "reasoning": "The field is required but did not display a specific error message when left empty. The generic message \"Please fill in this field.\" was noted, but it was not programmatically associated with this field.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last",
+                "evaluation": "fail",
+                "reasoning": "The field is required but did not display a specific error message when left empty. The generic message \"Please fill in this field.\" was noted, but it was not programmatically associated with this field.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "fail",
+                "reasoning": "The field is required but did not display a specific error message when left empty. The generic message \"Please fill in this field.\" was noted, but it was not programmatically associated with this field.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "fail",
+                "reasoning": "The field is required but did not display a specific error message when left empty. The generic message \"Please select an item in the list.\" was noted, but it was not programmatically associated with this field.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "fail",
+                "reasoning": "The field is required but did not display a specific error message when left empty. The generic message \"Please fill in this field.\" was noted, but it was not programmatically associated with this field.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

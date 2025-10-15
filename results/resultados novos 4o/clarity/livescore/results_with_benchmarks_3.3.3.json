@@ -1,0 +1,310 @@
+[
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "The input 'user.com' is not a valid email format, but no validation error or message was triggered. The lack of a required attribute means no validation was expected, but the absence of feedback when an invalid email is entered is a missed opportunity for user guidance.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "No invalid input was provided for this field, and no validation error was triggered. The mutation indicates a style change related to a dropdown, but without specific input, this is not applicable.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "No invalid input was provided for this field, and no validation error was triggered. The mutation suggests a message related to selecting a subject, but without specific input, this is not applicable.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message (textarea)",
+                "evaluation": "inapplicable",
+                "reasoning": "The textarea was left empty, but no validation error was triggered. Since the field is not required, no error message is expected.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "The input 'user.com' is not a valid email format, but no validation error or message was triggered. The lack of feedback does not help the user correct the input, which is a failure to meet WCAG 3.3.3 guidelines.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "The textarea was left empty, but since it is not marked as required, no validation error was expected or triggered. Therefore, the absence of an error message is appropriate.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'user.com' is not a valid email format, but no validation error or message was triggered. The lack of a required attribute means no validation was expected, making the absence of an error message acceptable.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "The textarea was left empty, but since it is not marked as required, no validation error was triggered. Therefore, no error message is expected or necessary.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "The input 'user.com' is not a valid email format, but no validation error was triggered, and no error message was shown. This is a failure because the user is not informed of the incorrect format or how to correct it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "The textarea was left empty, but no validation error was triggered, and no error message was shown. Since the field is not marked as required, this is acceptable, and no error message is needed.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "The input 'user.com' is not a valid email format, but no validation error or message was triggered. The lack of feedback does not help the user correct the input, which is a failure to meet WCAG 3.3.3 guidelines.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "The textarea was left empty, but since it is not marked as required, no validation error was expected or triggered. Therefore, the absence of an error message is appropriate.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "The input 'user.com' is not a valid email format, but no validation error was triggered, and no error message was shown. This indicates a lack of validation for the email format, which is necessary to guide users in correcting their input.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "The textarea was left empty, but since it is not marked as required, no validation error was expected or triggered. Therefore, the absence of an error message is appropriate.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "inapplicable",
+                "reasoning": "The input 'user.com' is not a valid email format, but no validation error or message was triggered. The lack of a required attribute means no validation was expected, making the absence of an error message acceptable.",
+                "benchmark": "fail",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "The textarea was left empty, but no validation error or message was triggered. Since the field is not marked as required, no validation was expected, and the absence of an error message is acceptable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "The input 'user.com' is not a valid email format, but no validation error or message was triggered. The lack of a required attribute or validation mechanism means no error message was expected or provided, which is a missed opportunity for user guidance.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "The textarea was left empty, but since it is not marked as required, no validation error was triggered, and no message was expected.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "The input 'user.com' is not a valid email format, but no validation error was triggered, and no error message was shown. This indicates a lack of validation for email format, which is a failure to provide necessary guidance to the user.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "The input 'user.com' is not a valid email format, but no validation error was triggered, and no error message was shown. This is a failure because the user is not informed of the incorrect format or how to correct it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "The textarea was left empty, but no validation error was triggered, and no error message was shown. Since the field is not marked as required, this is inapplicable as no error is expected.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

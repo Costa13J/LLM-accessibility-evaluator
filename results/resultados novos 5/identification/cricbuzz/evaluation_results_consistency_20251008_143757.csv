@@ -1,0 +1,6 @@
+URL,Model,Field,Runs,Eval counts,Most common,Consistency ratio,Benchmark
+cricbuzz,gpt-5,Name,10,10×fail,fail,1,fail
+cricbuzz,gpt-5,Email,10,10×fail,fail,1,fail
+cricbuzz,gpt-5,Subject,10,10×fail,fail,1,fail
+cricbuzz,gpt-5,No Label (textarea) [Message],10,10×fail,fail,1,fail
+cricbuzz,gpt-5,"(jpg,png,gif,bmp) (file)",10,10×inapplicable,inapplicable,1,inapplicable

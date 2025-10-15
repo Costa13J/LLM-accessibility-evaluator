@@ -1,0 +1,522 @@
+[
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search for:",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional; no required attribute and no required behavior after submission."
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "Uses the required attribute and exhibits required behavior on submit."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "Uses the required attribute and exhibits required behavior on submit."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Uses the required attribute and exhibits required behavior on submit."
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "Uses the required attribute and exhibits required behavior on submit."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional; no required attribute and no required behavior after submission."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "Uses the required attribute and exhibits required behavior on submit."
+            },
+            {
+                "identification": "Email (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional; no required attribute and no required behavior after submission."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional; no required attribute and no required behavior after submission."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search for:",
+                "evaluation": "inapplicable",
+                "reasoning": "Not marked required in HTML; no required behavior detected after submission."
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "Marked required in HTML and, when left empty, showed required-state cues (error classes/labels), confirming appropriate use of the required attribute."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "Marked required in HTML and, when left empty, showed required-state cues (error classes/labels), confirming appropriate use of the required attribute."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Marked required in HTML and, when left empty, showed required-state cues (error classes/labels), confirming appropriate use of the required attribute."
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "Marked required in HTML and, when left empty, showed required-state cues (error classes/labels), confirming appropriate use of the required attribute."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Not marked required in HTML; no required behavior detected after submission."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "Marked required in HTML and, when left empty, showed required-state cues (error classes/labels), confirming appropriate use of the required attribute."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "Not marked required in HTML; no required behavior detected after submission."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "Not marked required in HTML; no required behavior detected after submission."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional search field with no required attribute or equivalent and no required behavior observed."
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and behaves as required after submission, indicating appropriate use of the required attribute or equivalent."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and behaves as required after submission, indicating appropriate use of the required attribute or equivalent."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and behaves as required after submission, indicating appropriate use of the required attribute or equivalent."
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and behaves as required after submission, indicating appropriate use of the required attribute or equivalent."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no required attribute or equivalent and no required behavior observed."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and behaves as required after submission, indicating appropriate use of the required attribute or equivalent."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no required attribute or equivalent and no required behavior observed."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no required attribute or equivalent and no required behavior observed."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field (no required or aria-required) and no required behavior after submission."
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute and is treated as required after submission."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute and is treated as required after submission."
+            },
+            {
+                "identification": "Email * (email)",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute and is treated as required after submission."
+            },
+            {
+                "identification": "Subject * (select)",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute and is treated as required after submission."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field (no required or aria-required) and no required behavior after submission."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "Uses the native required attribute and is treated as required after submission."
+            },
+            {
+                "identification": "Email (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field (no required or aria-required) and no required behavior after submission."
+            },
+            {
+                "identification": "No Label (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field (no required or aria-required) and no required behavior after submission."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional per markup (no required attribute) and no required behavior observed."
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "Declared required in markup and behaved as required (error state/message appeared on submit)."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "Declared required in markup and behaved as required (error state/message appeared on submit)."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Declared required in markup and behaved as required (error state/message appeared on submit)."
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "Declared required in markup and behaved as required (error state/message appeared on submit)."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional per markup and no required behavior observed."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "Declared required in markup and behaved as required (error state/message appeared on submit)."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional per markup and no required behavior observed."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional per markup and no required behavior observed."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional; no required attribute and no required behavior was observed."
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "The field has the required attribute and was treated as required after submission."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "The field has the required attribute and was treated as required after submission."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "The field has the required attribute and was treated as required after submission."
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "The select uses the required attribute and was treated as required after submission."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional; no required attribute and no required behavior was observed."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "The textarea has the required attribute and was treated as required after submission."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional; no required attribute and no required behavior was observed."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional; no required attribute and no required behavior was observed."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search for:",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional; no required attribute or equivalent and no required behavior observed."
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "The field is required in behavior (error shown) and is marked required in the markup summary."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "The field is required in behavior (error shown) and is marked required in the markup summary."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "The field is required in behavior (error shown) and is marked required in the markup summary."
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "The field is required in behavior (error shown) and is marked required in the markup summary."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional; no required attribute or equivalent and no required behavior observed."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "The field is required in behavior (error shown) and is marked required in the markup summary."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional; no required attribute or equivalent and no required behavior observed."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional; no required attribute or equivalent and no required behavior observed."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search for:",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional with no required attribute and no required-behavior cues after submission."
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "Marked required (required attribute present) and treated as required after submission (“This field is required.”)."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "Marked required (required attribute present) and treated as required after submission."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Marked required (required attribute present) and treated as required after submission."
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "Marked required (required attribute present) and treated as required after submission."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional with no required attribute and no required-behavior cues after submission."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "Marked required (required attribute present) and treated as required after submission."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional with no required attribute and no required-behavior cues after submission."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional with no required attribute and no required-behavior cues after submission."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional; no required attribute and no required behavior observed."
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "Required attribute present and field behaved as required on submit."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "Required attribute present and field behaved as required on submit."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Required attribute present and field behaved as required on submit."
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "Required attribute present and field behaved as required on submit."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional; no required attribute and no required behavior observed."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "Required attribute present and field behaved as required on submit."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional; no required attribute and no required behavior observed."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional; no required attribute and no required behavior observed."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search for:",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked optional with no required attribute and no required behavior after submission."
+            },
+            {
+                "identification": "First",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and behaves as required after submission."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and behaves as required after submission."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and behaves as required after submission."
+            },
+            {
+                "identification": "Subject *",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and behaves as required after submission."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked optional and shows no required behavior after submission."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and behaves as required after submission."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked optional and shows no required behavior after submission."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked optional and shows no required behavior after submission."
+            }
+        ]
+    }
+]

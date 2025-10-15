@@ -1,0 +1,372 @@
+[
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "No error was triggered (aria-invalid=false, no error text), so there’s no error cue to assess for color reliance."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "No error was triggered (aria-invalid=false, no error text), so there’s no error cue to assess for color reliance."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Error indicated with aria-invalid=\"true\" and a linked error label (“Please enter a valid email address.”). Not conveyed by color alone."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered (aria-invalid=false, no error text), so no color-only issue to evaluate."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered (aria-invalid=false, no error text), so no color-only issue to evaluate."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered (no aria-invalid, no error text), so no color-only issue to evaluate."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "No error was triggered; aria-invalid is false and the field is marked valid, so no error cue to evaluate."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "No error was triggered; aria-invalid is false and the field is marked valid, so no error cue to evaluate."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Error indicated with aria-invalid=\"true\" and a linked error label ('Please enter a valid email address.'); not color-only."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "No error was triggered; aria-invalid is false and the field is marked valid."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "No error was triggered; aria-invalid is false and the field is marked valid."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues detected (no color change, aria-invalid, or error text), so no error state to evaluate."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked valid (aria-invalid=\"false\", wpforms-valid); no error cues were triggered."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked valid (aria-invalid=\"false\", wpforms-valid); no error cues were triggered."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Error indicated with aria-invalid=\"true\" and a visible error label inserted and linked to the input; not conveyed by color alone."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked valid (aria-invalid=\"false\", wpforms-valid); no error cues were triggered."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked valid (aria-invalid=\"false\", wpforms-valid); no error cues were triggered."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "No visual or semantic error indicators detected; no error state occurred."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "Input was marked valid (aria-invalid=\"false\", wpforms-valid); no error cues were triggered."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "Input was marked valid (aria-invalid=\"false\", wpforms-valid); no error cues were triggered."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Error state included aria-invalid=\"true\" and an inserted error message label linked to the field; error not conveyed by color alone."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Input was marked valid (aria-invalid=\"false\", wpforms-valid); no error cues were triggered."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "Input was marked valid (aria-invalid=\"false\", wpforms-valid); no error cues were triggered."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "No visual or programmatic error indicators (no aria-invalid, no error text) were detected after input."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked valid with aria-invalid=\"false\" and no error text; no error state was triggered."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked valid with aria-invalid=\"false\" and no error text; no error state was triggered."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Error indicated via aria-invalid=\"true\" and a linked error label with text; not conveyed by color alone."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked valid with aria-invalid=\"false\"; no error cues were shown."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked valid with aria-invalid=\"false\"; no error cues were shown."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (no aria-invalid, no error text, no visual change) were triggered."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "No error was triggered (aria-invalid=false; marked valid). No error cue to evaluate."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "No error was triggered (aria-invalid=false; marked valid). No error cue to evaluate."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Error state used aria-invalid=\"true\" and added an associated error label with explanatory text, so the error is not indicated by color alone."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "No error was triggered (aria-invalid=false; marked valid). No error cue to evaluate."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "No error was triggered (aria-invalid=false; marked valid). No error cue to evaluate."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "No visual or programmatic error indicators were detected after submission. No error cue to evaluate."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "Input was accepted as valid (aria-invalid=false) with no error text; no error cue occurred, so inapplicable."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "Input was accepted as valid (aria-invalid=false) with no error text; no error cue occurred, so inapplicable."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Invalid email set aria-invalid=\"true\" and added an associated error label with text; error not indicated by color alone."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Input was accepted as valid (aria-invalid=false) with no error text; no error cue occurred, so inapplicable."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "Input was accepted as valid (aria-invalid=false) with no error text; no error cue occurred, so inapplicable."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "No visual or semantic error indicators were triggered; no error cue occurred, so inapplicable."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "Input was marked valid (aria-invalid=\"false\"); no error cues were triggered, so no color-only issue to evaluate."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "Input was marked valid (aria-invalid=\"false\"); no error cues were triggered, so no color-only issue to evaluate."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Error indicated with aria-invalid=\"true\" and a linked error label showing text (“Please enter a valid email address.”); not color alone."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Input was marked valid (aria-invalid=\"false\"); no error cues were triggered."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "Input was marked valid (aria-invalid=\"false\"); no error cues were triggered."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "No error indicators (no aria-invalid, no error text) were detected after submission; no error cue to assess."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "Treated as valid (aria-invalid=\"false\", wpforms-valid); no error cues were triggered, so WCAG 1.4.1 is inapplicable."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "Treated as valid (aria-invalid=\"false\", wpforms-valid); no error cues were triggered, so WCAG 1.4.1 is inapplicable."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Error indicated with aria-invalid=\"true\" and a programmatically associated error label text; not reliant on color alone."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Treated as valid (aria-invalid=\"false\", wpforms-valid); no error cues were triggered."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "Treated as valid (aria-invalid=\"false\", wpforms-valid); no error cues were triggered."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "No visual or programmatic error indicators or messages were detected; no error cue to evaluate."
+            }
+        ]
+    },
+    {
+        "url": "https://blog.collinsdictionary.com/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked valid with aria-invalid=\"false\" and wpforms-valid; no error cues were triggered."
+            },
+            {
+                "identification": "Last",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked valid with aria-invalid=\"false\" and wpforms-valid; no error cues were triggered."
+            },
+            {
+                "identification": "Email *",
+                "evaluation": "pass",
+                "reasoning": "Error indicated with aria-invalid=\"true\" and an associated error label (for=\"wpforms-535-field_1\"); error is not conveyed by color alone."
+            },
+            {
+                "identification": "Add more subject detail",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked valid with aria-invalid=\"false\"; no error cues were triggered."
+            },
+            {
+                "identification": "Comment or Message *",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked valid with aria-invalid=\"false\"; no error cues were triggered."
+            },
+            {
+                "identification": "No Label",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked valid with aria-invalid=\"false\"; no error cues were triggered."
+            }
+        ]
+    }
+]

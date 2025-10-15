@@ -1,0 +1,372 @@
+[
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (first)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (no color, no aria-invalid, no error text) were triggered for this input; no validation error occurred."
+            },
+            {
+                "identification": "Search Field (second)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (no color, no aria-invalid, no error text) were triggered for this input; no validation error occurred."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "Submitting '!' did not produce field-level error cues; no color change or text/ARIA error shown, so no error state to evaluate."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "Submitting '!' did not produce field-level error cues; no color change or text/ARIA error shown, so no error state to evaluate."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "Invalid email triggered an error, but only visual highlighting was used; there was no aria-invalid, no aria-describedby, and no field-level error text. A general alert appeared but was not associated with this input. This relies on color alone."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "inapplicable",
+                "reasoning": "No field-level error cues (color, text, or ARIA) were detected after invalid input; no error state to evaluate."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (first)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (no color change, no aria-invalid, no error text) were detected after invalid input, so no error state to evaluate under 1.4.1."
+            },
+            {
+                "identification": "Search Field (second)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (no color change, no aria-invalid, no error text) were detected after invalid input, so no error state to evaluate under 1.4.1."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation error was triggered for the input; no color or programmatic indicators appeared."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation error was triggered for the input; no color or programmatic indicators appeared."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "Invalid email submitted; a generic role=\"alert\" dialog appeared but was not programmatically associated with the field. No aria-invalid or aria-describedby on the input; the only field-level indicator appears to be visual highlighting, so the error relies on color alone."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "inapplicable",
+                "reasoning": "No field-level error cues (no color change, no aria-invalid, no error text) were detected after input, so no error state to evaluate."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered (no visual, textual, or semantic indicators), so no error state to evaluate for color reliance."
+            },
+            {
+                "identification": "Search Field (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered (no visual, textual, or semantic indicators), so no error state to evaluate for color reliance."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "No field-level error cue detected after submission; no textual or programmatic error and no noted color change, so no error to assess for color reliance."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "No field-level error cue detected after submission; no textual or programmatic error and no noted color change, so no error to assess for color reliance."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "Error indicated without aria-invalid or linked error text; any indication appears to be visual-only (highlight). The global role=\"alert\" message is not associated with this field, so the error relies on color alone."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "fail",
+                "reasoning": "Visual error styling applied (pink background) with no aria-invalid and no aria-describedby/error text. Since the field’s error is signaled only by color, it fails WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (color, text, or ARIA) were triggered for this field after invalid input, so no error state to evaluate."
+            },
+            {
+                "identification": "Search Field (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (color, text, or ARIA) were triggered for this field after invalid input, so no error state to evaluate."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The field did not present any error indicators (no aria-invalid, no error text); input was accepted, so no error state occurred."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "The field did not present any error indicators (no aria-invalid, no error text); input was accepted, so no error state occurred."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "A global alert appeared but was not associated with the input; no aria-invalid or aria-describedby and no field-level error text. The field’s error is indicated only by visual styling (e.g., colored wrapper), so it relies on color alone."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "inapplicable",
+                "reasoning": "No error indicators (color, text, or ARIA) were triggered for this field after invalid input."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (color, text, or semantic) were triggered after input; therefore no error state to evaluate under 1.4.1."
+            },
+            {
+                "identification": "Search Field (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (color, text, or semantic) were triggered after input; therefore no error state to evaluate under 1.4.1."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "fail",
+                "reasoning": "Only a pink background highlight was applied; no aria-invalid and no field-specific error text or association detected. Error indication relies on color alone."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "fail",
+                "reasoning": "Only a pink background highlight was applied; no aria-invalid and no field-specific error text or association detected. Error indication relies on color alone."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "Section highlight (pink) but no aria-invalid or linked error text detected; the generic dialog was not associated with this field. Error indication relies on color alone."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "fail",
+                "reasoning": "Section highlight (pink) but no aria-invalid or linked error text detected. Error indication relies on color alone."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered; no visual, textual, or programmatic indicators appeared after invalid input."
+            },
+            {
+                "identification": "Search Field (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered; no visual, textual, or programmatic indicators appeared after invalid input."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered for this input; no aria-invalid or linked error text; no color change attributable to this field."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were triggered for this input; no aria-invalid or linked error text; no color change attributable to this field."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "Only visual highlighting (pink background) was observed; no aria-invalid, no aria-describedby, and no field-level error text. The global role=\"alert\" message is not associated with the input. Error is conveyed by color alone."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "inapplicable",
+                "reasoning": "No field-level error cues were detected after invalid input; no aria-invalid, no linked error text; no color-only change attributable to this field."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no error cues triggered; no color, text, or ARIA changes detected, so no error state to evaluate."
+            },
+            {
+                "identification": "Search Field (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no error cues triggered; no color, text, or ARIA changes detected, so no error state to evaluate."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "No field-level error cues were triggered (no aria-invalid or inline text). The global alert is not associated with this input."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "No field-level error cues were triggered (no aria-invalid or inline text). The global alert is not associated with this input."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "Only color-based highlighting on containers; no aria-invalid, no aria-describedby, and no inline error text for this field. The global role=\"alert\" is not tied to the input, so the field’s error relies on color alone."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "fail",
+                "reasoning": "Container background turned pink and a required/error class was applied, but no aria-invalid or inline error text. Error indication is via color alone."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no error cues (color, text, or ARIA) were triggered after input."
+            },
+            {
+                "identification": "Search Field (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no error cues (color, text, or ARIA) were triggered after input."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for this input after submission."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues were detected for this input after submission."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "Invalid input yielded only visual highlighting of the question container; no aria-invalid, no aria-describedby, and no field-level error text. A global role=\"alert\" message appeared but was not associated with the field, so the field’s error relies on color alone."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "inapplicable",
+                "reasoning": "No field-specific error cues (color, text, or ARIA) were detected for this input."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (first)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no visual, textual, or programmatic error cues were triggered after invalid input, so no error state to evaluate."
+            },
+            {
+                "identification": "Search Field (second)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no visual, textual, or programmatic error cues were triggered after invalid input, so no error state to evaluate."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cue detected for the provided value; no color change or programmatic/text error message occurred."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cue detected for the provided value; no color change or programmatic/text error message occurred."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "Error indicated via color/highlight on the group; no aria-invalid, no aria-describedby, and no field-level error text. A global role=\"alert\" appeared but was not associated with the field, so the cue relies on color alone."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error cue detected for this field; no color change or programmatic/textual indicator was observed."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (1)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no error cues (color, text, or semantic) were triggered after input, so no error state to evaluate."
+            },
+            {
+                "identification": "Search Field (2)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no error cues were triggered after input, so inapplicable."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "No field-level error indicators (no aria-invalid, no linked error text) were detected after input; no error state occurred."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "No field-level error indicators were detected after input; no error state occurred."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "fail",
+                "reasoning": "Only visual treatment appears to identify the problem; no aria-invalid, no aria-describedby, and no field-level error text is associated. A global alert exists but is not programmatically linked to the email input, so the error relies on color alone."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "inapplicable",
+                "reasoning": "No field-level error cues were detected (no aria-invalid, no error text), so no error state to evaluate."
+            }
+        ]
+    }
+]

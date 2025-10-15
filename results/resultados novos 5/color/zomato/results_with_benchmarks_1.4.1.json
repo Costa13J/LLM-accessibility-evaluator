@@ -1,0 +1,345 @@
+[
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "A visible error message was added after invalid input, providing a non-color cue. Even though no ARIA linkage was noted, the error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "No visual, textual, or semantic error indicators were triggered after invalid input, so there is no error cue to evaluate.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "A visible error message was added; although no ARIA linkage was detected, the text provides a non-color cue, so the error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (color, text, or ARIA) appeared after invalid input, so no error state to assess under WCAG 1.4.1.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "A visible error message was inserted (\"*Invalid phoneNumber, please enter valid phone number\"). Although not programmatically associated (no aria-invalid/aria-describedby), the presence of text means the error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (color, icon, text, or semantic attributes) were triggered after invalid input, so no error state to evaluate under 1.4.1.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "A visible error message was added (“*Invalid phoneNumber, please enter valid phone number”). Although no aria-invalid or aria-describedby was detected (message may not be programmatically associated), the error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (textual or programmatic) were triggered after invalid input, so there was no error state to evaluate for color reliance.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "A visible error message was shown, providing textual feedback beyond color; although not programmatically linked, it is not color-only.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (color, text, or semantic) were triggered after invalid input, so there is no error state to evaluate.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "A visible error message (“*Invalid phoneNumber, please enter valid phone number”) was added, providing textual feedback; the error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cue (color, text, or ARIA) was triggered after invalid input, so there is no error state to evaluate under 1.4.1.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "A visible error message was added for the field; even without programmatic linking, the error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (textual or color-based) appeared after invalid input, so no error state to evaluate.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "A visible text error message was added, so the error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (color, text, or semantic) were triggered for the submitted value.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "inapplicable",
+                "reasoning": "No invalid input or error cues were detected.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "inapplicable",
+                "reasoning": "No invalid input or error cues were detected.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Filter By City",
+                "evaluation": "inapplicable",
+                "reasoning": "No invalid input or error cues were detected.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "A visible error message was added (\"*Invalid phoneNumber, please enter valid phone number\"). Although not programmatically associated, the error is not indicated by color alone.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "No error cues (color, text, or ARIA) appeared after invalid input, so no error state occurred to evaluate.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "I hereby consent to receiving communications from Zomato for any relevant opportunities.",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Select city",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

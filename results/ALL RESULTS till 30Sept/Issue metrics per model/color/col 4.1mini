@@ -1,0 +1,25 @@
+=== Evaluation Report ===
+Model: openai/gpt-4.1-mini-2025-04-14
+True Positives: 0
+True Negatives: 3
+False Positives: 6
+False Negatives: 0
+Accuracy: 0.333
+Precision: 0.000
+Recall: 0.000
+F1-score: 0.000
+Coverage: 9/17 (52.9%)
+Total samples used: 9
+Pred counts: {1: 6, 0: 3}
+Gold counts: {0: 9}
+
+=== Most Common Issues ===
+- False violation (pass → fail): 6
+
+=== Flagged Cases (examples) ===
+- URL: https://www.cricbuzz.com/info/contact | Field: Name | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)
+- URL: https://www.cricbuzz.com/info/contact | Field: Email | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)
+- URL: https://www.cricbuzz.com/info/contact | Field: Subject | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)
+- URL: https://www.cricbuzz.com/info/contact | Field: No Label (textarea) | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)
+- URL: https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62 | Field: Endereço de e-mail | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)
+- URL: https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62 | Field: Confirma o teu endereço | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)

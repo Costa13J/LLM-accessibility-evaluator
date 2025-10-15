@@ -1,0 +1,322 @@
+[
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and shows required behavior after submission, indicating an appropriate semantic required indicator."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and shows required behavior after submission, indicating an appropriate semantic required indicator."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and shows required behavior after submission, indicating an appropriate semantic required indicator."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and shows required behavior after submission, indicating an appropriate semantic required indicator despite lacking a visible label."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not trigger required behavior; the required attribute is not applicable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "The field is treated as required after submission and is indicated as required in the provided attributes, showing an appropriate required mechanism."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The field is treated as required after submission and is indicated as required in the provided attributes, showing an appropriate required mechanism."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "The field is treated as required after submission and is indicated as required in the provided attributes, showing an appropriate required mechanism."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "pass",
+                "reasoning": "The field is treated as required after submission and is indicated as required in the provided attributes, showing an appropriate required mechanism."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and not treated as required after submission, so no required attribute is applicable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "Post-submit behavior shows it is treated as required, and the snippet marks it as required, indicating a proper required attribute/equivalent."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "Post-submit behavior shows it is treated as required, and the snippet marks it as required, indicating a proper required attribute/equivalent."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "Post-submit behavior shows it is treated as required, and the snippet marks it as required, indicating a proper required attribute/equivalent."
+            },
+            {
+                "identification": "Message (textarea)",
+                "evaluation": "pass",
+                "reasoning": "Post-submit behavior shows it is treated as required, and the snippet marks it as required, indicating a proper required attribute/equivalent."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional (required=no) and does not exhibit required validation behavior, so required semantics are not applicable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "Marked required in the snippet and treated as required after submission (error shown), indicating an appropriate required attribute or equivalent is used."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "Marked required in the snippet and treated as required after submission (error shown), indicating an appropriate required attribute or equivalent is used."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "Marked required in the snippet and treated as required after submission (error shown), indicating an appropriate required attribute or equivalent is used."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "pass",
+                "reasoning": "Marked required in the snippet and treated as required after submission (Message is required), indicating an appropriate required attribute or equivalent is used."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked optional and does not trigger required behavior; the required attribute is not applicable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "Marked required and behaves as required after submission; the required attribute is present."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "Marked required and behaves as required after submission; the required attribute is present."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "Marked required and behaves as required after submission; the required attribute is present."
+            },
+            {
+                "identification": "textarea",
+                "evaluation": "pass",
+                "reasoning": "Marked required and behaves as required after submission; the required attribute is present."
+            },
+            {
+                "identification": "file",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field (not required) and no required behavior is triggered, so a required attribute is not applicable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "Marked with required in the source and behaves as required after submission."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "Marked with required in the source and behaves as required after submission."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "Marked with required in the source and behaves as required after submission."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "pass",
+                "reasoning": "Marked with required in the source and behaves as required after submission."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional (no required indicator) and not treated as required."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and behaves as required after submission, indicating an appropriate required attribute or equivalent is used."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and behaves as required after submission, indicating an appropriate required attribute or equivalent is used."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and behaves as required after submission, indicating an appropriate required attribute or equivalent is used."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and behaves as required after submission (Message is required), indicating an appropriate required attribute or equivalent is used."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional (not required in behavior), so required semantics are not applicable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and assumed to include a required indicator; appropriate for a required field."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and assumed to include a required indicator; appropriate for a required field."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and assumed to include a required indicator; appropriate for a required field."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and assumed to include a required indicator; appropriate for a required field."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp)",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked as optional; no required or aria-required indicator is needed."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "Has the required attribute (required=yes) and is treated as required after submission."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "Has the required attribute (required=yes) and is treated as required after submission."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "Has the required attribute (required=yes) and is treated as required after submission."
+            },
+            {
+                "identification": "No Label (textarea)",
+                "evaluation": "pass",
+                "reasoning": "Has the required attribute (required=yes) and is treated as required after submission."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked optional (required=no) and not treated as required after submission."
+            }
+        ]
+    },
+    {
+        "url": "https://www.cricbuzz.com/info/contact",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Name",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and behaves as required after submission."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and behaves as required after submission."
+            },
+            {
+                "identification": "Subject",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and behaves as required after submission."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "pass",
+                "reasoning": "Marked as required and behaves as required after submission."
+            },
+            {
+                "identification": "(jpg,png,gif,bmp) (file)",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked as optional and not treated as required."
+            }
+        ]
+    }
+]

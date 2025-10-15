@@ -1,0 +1,872 @@
+[
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "pass",
+                "reasoning": "Treated as required (error shown) and noted as required=yes, indicating a required attribute or equivalent is present."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "pass",
+                "reasoning": "Treated as required (error shown) and noted as required=yes, indicating a required attribute or equivalent is present."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "pass",
+                "reasoning": "Treated as required (error shown) and noted as required=yes, indicating a required attribute or equivalent is present."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "pass",
+                "reasoning": "Treated as required (error shown) and noted as required=yes, indicating a required attribute or equivalent is present."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "Treated as required (error shown) and noted as required=yes, indicating a required attribute or equivalent is present."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "pass",
+                "reasoning": "Treated as required (error shown) and noted as required=yes, indicating a required attribute or equivalent is present."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group is required (error shown), but this option is marked required=no, so no required attribute/equivalent is declared on the control."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group is required (error shown), but this option is marked required=no, so no required attribute/equivalent is declared on the control."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group is required (error shown), but this option is marked required=no, so no required attribute/equivalent is declared on the control."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group is required (error shown), but this option is marked required=no, so no required attribute/equivalent is declared on the control."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group is required (error shown), but this option is marked required=no, so no required attribute/equivalent is declared on the control."
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "pass",
+                "reasoning": "Treated as required (error shown) and noted as required=yes, indicating a required attribute or equivalent is present."
+            },
+            {
+                "identification": "Please specify",
+                "evaluation": "inapplicable",
+                "reasoning": "No required behavior observed after submission, so it is optional in this context."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "pass",
+                "reasoning": "Treated as required (error shown) and noted as required=yes, indicating a required attribute or equivalent is present."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked as not required and no required behavior observed."
+            },
+            {
+                "identification": "Please leave this field empty.",
+                "evaluation": "inapplicable",
+                "reasoning": "Marked as not required and no required behavior observed."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name (text)",
+                "evaluation": "pass",
+                "reasoning": "Behaves as required after submission and is declared required (required=yes)."
+            },
+            {
+                "identification": "Your surname (text)",
+                "evaluation": "pass",
+                "reasoning": "Behaves as required after submission and is declared required (required=yes)."
+            },
+            {
+                "identification": "Company name (text)",
+                "evaluation": "pass",
+                "reasoning": "Behaves as required after submission and is declared required (required=yes)."
+            },
+            {
+                "identification": "Location (text)",
+                "evaluation": "pass",
+                "reasoning": "Behaves as required after submission and is declared required (required=yes)."
+            },
+            {
+                "identification": "Telephone (tel)",
+                "evaluation": "pass",
+                "reasoning": "Behaves as required after submission and is declared required (required=yes)."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "pass",
+                "reasoning": "Behaves as required after submission and is declared required (required=yes)."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group behaves as required but this input lacks a semantic required indicator (required or aria-required)."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group behaves as required but this input lacks a semantic required indicator (required or aria-required)."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group behaves as required but this input lacks a semantic required indicator (required or aria-required)."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group behaves as required but this input lacks a semantic required indicator (required or aria-required)."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group behaves as required but this input lacks a semantic required indicator (required or aria-required)."
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "pass",
+                "reasoning": "Behaves as required after submission and is declared required (required=yes)."
+            },
+            {
+                "identification": "Please specify (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "No required cues after submission; treated as optional in behavior."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business? (textarea)",
+                "evaluation": "pass",
+                "reasoning": "Behaves as required after submission and is declared required (required=yes)."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional; no required behavior observed."
+            },
+            {
+                "identification": "Please leave this field empty. (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional honeypot; no required behavior observed."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name (text)",
+                "evaluation": "pass",
+                "reasoning": "Required behavior was enforced and the field is indicated as having the required attribute in the before state."
+            },
+            {
+                "identification": "Your surname (text)",
+                "evaluation": "pass",
+                "reasoning": "Required behavior was enforced and the field is indicated as having the required attribute in the before state."
+            },
+            {
+                "identification": "Company name (text)",
+                "evaluation": "pass",
+                "reasoning": "Required behavior was enforced and the field is indicated as having the required attribute in the before state."
+            },
+            {
+                "identification": "Location (text)",
+                "evaluation": "pass",
+                "reasoning": "Required behavior was enforced and the field is indicated as having the required attribute in the before state."
+            },
+            {
+                "identification": "Telephone (tel)",
+                "evaluation": "pass",
+                "reasoning": "Required behavior was enforced and the field is indicated as having the required attribute in the before state."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "pass",
+                "reasoning": "Required behavior was enforced and the field is indicated as having the required attribute in the before state."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group behaved as required, but this option had no required attribute (or aria-required) indicated in the before state."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group behaved as required, but this option had no required attribute (or aria-required) indicated in the before state."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group behaved as required, but this option had no required attribute (or aria-required) indicated in the before state."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group behaved as required, but this option had no required attribute (or aria-required) indicated in the before state."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group behaved as required, but this option had no required attribute (or aria-required) indicated in the before state."
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "pass",
+                "reasoning": "Required behavior was enforced and the field is indicated as having the required attribute in the before state."
+            },
+            {
+                "identification": "Please specify (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "This field did not behave as required on submit (no required-state cues), so it is optional in this interaction."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business? (textarea)",
+                "evaluation": "pass",
+                "reasoning": "Required behavior was enforced and the field is indicated as having the required attribute in the before state."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no required behavior observed and no required attribute indicated."
+            },
+            {
+                "identification": "Please leave this field empty. (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional honeypot; no required behavior observed and no required attribute indicated."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name (text)",
+                "evaluation": "pass",
+                "reasoning": "Marked required in the snippet and treated as required after submission (aria-invalid set to true and required-tip shown), indicating appropriate use of a required indicator."
+            },
+            {
+                "identification": "Your surname (text)",
+                "evaluation": "pass",
+                "reasoning": "Marked required and behaved as required post-submit (required error cues observed), so the required status is appropriately declared."
+            },
+            {
+                "identification": "Company name (text)",
+                "evaluation": "pass",
+                "reasoning": "Marked required and treated as required in behavior (error/aria-invalid cues seen), so the required indication is appropriate."
+            },
+            {
+                "identification": "Location (text)",
+                "evaluation": "pass",
+                "reasoning": "Declared required and showed required behavior after submission (error cues present)."
+            },
+            {
+                "identification": "Telephone (tel)",
+                "evaluation": "pass",
+                "reasoning": "Declared required and behaved as required (post-submit required cues observed)."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "pass",
+                "reasoning": "Marked required and treated as required after submission (error/aria-invalid present), so required is appropriately indicated."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "fail",
+                "reasoning": "Part of a radio group that behaved as required after submission (group error added), but each option was listed as required=no (no required/aria-required), so the required status is not semantically indicated on the group via the radios."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "fail",
+                "reasoning": "In the same radio group that was treated as required, yet this option was listed without a required indicator; required status is not semantically declared."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "fail",
+                "reasoning": "Part of a second radio group that behaved as required, but the options were listed as not having required; required is not semantically indicated for the group via the radios."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "fail",
+                "reasoning": "Same required group behavior with no required/aria-required on the option; required status not declared."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "fail",
+                "reasoning": "Group behaved as required, but this option lacks required/aria-required; required status not semantically declared."
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "pass",
+                "reasoning": "Listed as required and showed required behavior post-submit (error entry added), indicating appropriate use of a required indicator."
+            },
+            {
+                "identification": "Please specify (text)",
+                "evaluation": "fail",
+                "reasoning": "Listed as required, but no post-submit required cues were observed for this field, indicating the required status is not reflected in behavior."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business? (textarea)",
+                "evaluation": "pass",
+                "reasoning": "Marked required and behaved as required after submission (error cues present), so the required indication is appropriately used."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "Listed as optional and no required behavior was observed; not subject to required validation."
+            },
+            {
+                "identification": "Please leave this field empty. (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "Listed as optional (honeypot) and no required behavior observed; not subject to required validation."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name (text)",
+                "evaluation": "pass",
+                "reasoning": "Declared required via attribute and treated as required after submission."
+            },
+            {
+                "identification": "Your surname (text)",
+                "evaluation": "pass",
+                "reasoning": "Declared required via attribute and treated as required after submission."
+            },
+            {
+                "identification": "Company name (text)",
+                "evaluation": "pass",
+                "reasoning": "Declared required via attribute and treated as required after submission."
+            },
+            {
+                "identification": "Location (text)",
+                "evaluation": "pass",
+                "reasoning": "Declared required via attribute and treated as required after submission."
+            },
+            {
+                "identification": "Telephone (tel)",
+                "evaluation": "pass",
+                "reasoning": "Declared required via attribute and treated as required after submission."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "pass",
+                "reasoning": "Declared required via attribute and treated as required after submission."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "fail",
+                "reasoning": "Group behaved as required after submission, but this radio input lacked a required or aria-required attribute."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "fail",
+                "reasoning": "Group behaved as required after submission, but this radio input lacked a required or aria-required attribute."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "fail",
+                "reasoning": "Group behaved as required after submission, but this radio input lacked a required or aria-required attribute."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "fail",
+                "reasoning": "Group behaved as required after submission, but this radio input lacked a required or aria-required attribute."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "fail",
+                "reasoning": "Group behaved as required after submission, but this radio input lacked a required or aria-required attribute."
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "pass",
+                "reasoning": "Declared required via attribute and treated as required after submission."
+            },
+            {
+                "identification": "Please specify (text)",
+                "evaluation": "pass",
+                "reasoning": "Declared required via attribute; no post-submit cue observed here, but the required status is semantically indicated."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business? (textarea)",
+                "evaluation": "pass",
+                "reasoning": "Declared required via attribute and treated as required after submission."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional; no required attribute and no required behavior."
+            },
+            {
+                "identification": "Please leave this field empty. (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional honeypot; no required attribute and no required behavior."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name (text)",
+                "evaluation": "pass",
+                "reasoning": "Treated as required after submission and indicated as required; appropriate required mechanism used."
+            },
+            {
+                "identification": "Your surname (text)",
+                "evaluation": "pass",
+                "reasoning": "Treated as required after submission and indicated as required; appropriate required mechanism used."
+            },
+            {
+                "identification": "Company name (text)",
+                "evaluation": "pass",
+                "reasoning": "Treated as required after submission and indicated as required; appropriate required mechanism used."
+            },
+            {
+                "identification": "Location (text)",
+                "evaluation": "pass",
+                "reasoning": "Treated as required after submission and indicated as required; appropriate required mechanism used."
+            },
+            {
+                "identification": "Telephone (tel)",
+                "evaluation": "pass",
+                "reasoning": "Treated as required after submission and indicated as required; appropriate required mechanism used."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "pass",
+                "reasoning": "Treated as required after submission and indicated as required; appropriate required mechanism used."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "fail",
+                "reasoning": "Group behaved as required, but this radio lacks a required attribute or equivalent."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "fail",
+                "reasoning": "Group behaved as required, but this radio lacks a required attribute or equivalent."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "fail",
+                "reasoning": "Group behaved as required, but this radio lacks a required attribute or equivalent."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "fail",
+                "reasoning": "Group behaved as required, but this radio lacks a required attribute or equivalent."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "fail",
+                "reasoning": "Group behaved as required, but this radio lacks a required attribute or equivalent."
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "pass",
+                "reasoning": "Treated as required after submission and indicated as required; appropriate required mechanism used."
+            },
+            {
+                "identification": "Please specify (text)",
+                "evaluation": "pass",
+                "reasoning": "No required behavior observed; treated as optional/conditional in this interaction."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business? (textarea)",
+                "evaluation": "pass",
+                "reasoning": "Treated as required after submission and indicated as required; appropriate required mechanism used."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional; no required behavior and no required indicator."
+            },
+            {
+                "identification": "Please leave this field empty. (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional honeypot; no required behavior and no required indicator."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name (text)",
+                "evaluation": "pass",
+                "reasoning": "Marked as required before submission and treated as required after submission, indicating appropriate use of a required attribute or equivalent."
+            },
+            {
+                "identification": "Your surname (text)",
+                "evaluation": "pass",
+                "reasoning": "Marked as required before submission and treated as required after submission, indicating appropriate required declaration."
+            },
+            {
+                "identification": "Company name (text)",
+                "evaluation": "pass",
+                "reasoning": "Marked as required before submission and treated as required after submission, indicating appropriate required declaration."
+            },
+            {
+                "identification": "Location (text)",
+                "evaluation": "pass",
+                "reasoning": "Marked as required before submission and treated as required after submission, indicating appropriate required declaration."
+            },
+            {
+                "identification": "Telephone (tel)",
+                "evaluation": "pass",
+                "reasoning": "Marked as required before submission and treated as required after submission, indicating appropriate required declaration."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "pass",
+                "reasoning": "Marked as required before submission and treated as required after submission, indicating appropriate required declaration."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group behaved as required after submission, but this option was not marked as required beforehand; no required attribute or aria-required indicated."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group behaved as required after submission, but this option was not marked as required beforehand; no required attribute or aria-required indicated."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group behaved as required after submission, but this option was not marked as required beforehand; no required attribute or aria-required indicated."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group behaved as required after submission, but this option was not marked as required beforehand; no required attribute or aria-required indicated."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group behaved as required after submission, but this option was not marked as required beforehand; no required attribute or aria-required indicated."
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "pass",
+                "reasoning": "Marked as required before submission and treated as required after submission, indicating appropriate required declaration."
+            },
+            {
+                "identification": "Please specify (text)",
+                "evaluation": "pass",
+                "reasoning": "Marked as required before submission; no conflicting behavior observed, so the required status is appropriately declared."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business? (textarea)",
+                "evaluation": "pass",
+                "reasoning": "Marked as required before submission and treated as required after submission, indicating appropriate required declaration."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; not subject to required validation."
+            },
+            {
+                "identification": "Please leave this field empty. (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional (honeypot) field; not subject to required validation."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "pass",
+                "reasoning": "Behaved as required after submission and is declared required."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "pass",
+                "reasoning": "Behaved as required after submission and is declared required."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "pass",
+                "reasoning": "Behaved as required after submission and is declared required."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "pass",
+                "reasoning": "Behaved as required after submission and is declared required."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "Behaved as required after submission and is declared required."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "Behaved as required after submission and is declared required."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group behaved as required after submission, but this option was not marked with a required attribute or equivalent."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group behaved as required after submission, but this option was not marked with a required attribute or equivalent."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group behaved as required after submission, but this option was not marked with a required attribute or equivalent."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group behaved as required after submission, but this option was not marked with a required attribute or equivalent."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group behaved as required after submission, but this option was not marked with a required attribute or equivalent."
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "pass",
+                "reasoning": "Behaved as required after submission and is declared required."
+            },
+            {
+                "identification": "Please specify",
+                "evaluation": "pass",
+                "reasoning": "Behaved as required after submission and is declared required."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business? (textarea)",
+                "evaluation": "pass",
+                "reasoning": "Behaved as required after submission and is declared required."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional and not treated as required after submission."
+            },
+            {
+                "identification": "Please leave this field empty. (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional and not treated as required after submission."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name (text)",
+                "evaluation": "pass",
+                "reasoning": "Behaved as required after submission and is indicated as required."
+            },
+            {
+                "identification": "Your surname (text)",
+                "evaluation": "pass",
+                "reasoning": "Behaved as required after submission and is indicated as required."
+            },
+            {
+                "identification": "Company name (text)",
+                "evaluation": "pass",
+                "reasoning": "Behaved as required after submission and is indicated as required."
+            },
+            {
+                "identification": "Location (text)",
+                "evaluation": "pass",
+                "reasoning": "Behaved as required after submission and is indicated as required."
+            },
+            {
+                "identification": "Telephone (tel)",
+                "evaluation": "pass",
+                "reasoning": "Behaved as required after submission and is indicated as required."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "pass",
+                "reasoning": "Behaved as required after submission and is indicated as required."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group was treated as required after submission, but this input was not marked required."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group was treated as required after submission, but this input was not marked required."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group was treated as required after submission, but this input was not marked required."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group was treated as required after submission, but this input was not marked required."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group was treated as required after submission, but this input was not marked required."
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "pass",
+                "reasoning": "Behaved as required after submission and is indicated as required."
+            },
+            {
+                "identification": "Please specify (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "No required behavior was triggered; treated as optional in this interaction."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business? (textarea)",
+                "evaluation": "pass",
+                "reasoning": "Behaved as required after submission and is indicated as required."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional; no required behavior observed."
+            },
+            {
+                "identification": "Please leave this field empty. (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional honeypot field; no required behavior observed."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name (text)",
+                "evaluation": "pass",
+                "reasoning": "Required behavior observed (error/aria-invalid), and the field is listed as required=yes, indicating a required attribute or equivalent is present."
+            },
+            {
+                "identification": "Your surname (text)",
+                "evaluation": "pass",
+                "reasoning": "Required behavior observed, and the field is listed as required=yes."
+            },
+            {
+                "identification": "Company name (text)",
+                "evaluation": "pass",
+                "reasoning": "Required behavior observed, and the field is listed as required=yes."
+            },
+            {
+                "identification": "Location (text)",
+                "evaluation": "pass",
+                "reasoning": "Required behavior observed, and the field is listed as required=yes."
+            },
+            {
+                "identification": "Telephone (tel)",
+                "evaluation": "pass",
+                "reasoning": "Required behavior observed, and the field is listed as required=yes."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "pass",
+                "reasoning": "Required behavior observed, and the field is listed as required=yes."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group is treated as required after submission, but this option is listed as required=no (no required/aria-required on the input)."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group is treated as required after submission, but this option is listed as required=no."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group is treated as required after submission, but this option is listed as required=no."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group is treated as required after submission, but this option is listed as required=no."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "fail",
+                "reasoning": "The radio group is treated as required after submission, but this option is listed as required=no."
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "pass",
+                "reasoning": "Required behavior observed, and the field is listed as required=yes."
+            },
+            {
+                "identification": "Please specify (text)",
+                "evaluation": "pass",
+                "reasoning": "No required behavior observed after submission, indicating the field is optional in behavior."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business? (textarea)",
+                "evaluation": "pass",
+                "reasoning": "Required behavior observed, and the field is listed as required=yes."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "No required behavior observed; the field is optional."
+            },
+            {
+                "identification": "Please leave this field empty. (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "No required behavior observed; the field is optional."
+            }
+        ]
+    }
+]

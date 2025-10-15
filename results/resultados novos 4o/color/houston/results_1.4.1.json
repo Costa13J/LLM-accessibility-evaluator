@@ -1,0 +1,322 @@
+[
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not clearly indicated, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not clearly indicated, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not clearly indicated, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "pass",
+                "reasoning": "An error message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" is provided, indicating the error with textual support. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Mobile Phone Number",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not clearly indicated, making it inapplicable for evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not clearly indicated, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not clearly indicated, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not clearly indicated, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "pass",
+                "reasoning": "An error message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" is provided, indicating the error with textual support. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Mobile Phone Number",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not clearly indicated, making it inapplicable for evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not clearly indicated, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not clearly indicated, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not clearly indicated, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "pass",
+                "reasoning": "An error message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" is provided, indicating the error with text, which passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Mobile Phone Number",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not clearly indicated, making it inapplicable for evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not clearly indicated, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not clearly indicated, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not clearly indicated, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "pass",
+                "reasoning": "An error message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" is associated with the field, providing textual support. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Mobile Phone Number",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not clearly indicated, making it inapplicable for evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected, and the error was not visually indicated, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected, and the error was not visually indicated, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected, and the error was not visually indicated, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "A specific error message was provided, indicating the missing '@', which is a textual cue, passing WCAG 1.4.1."
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected, and the error was not visually indicated, making it inapplicable for evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "fail",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state relies on color changes, which fails WCAG 1.4.1."
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state relies on color changes, which fails WCAG 1.4.1."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state relies on color changes, which fails WCAG 1.4.1."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "pass",
+                "reasoning": "An error message indicating the missing '@' was provided, which is programmatically associated with the field. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Mobile Phone Number",
+                "evaluation": "fail",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state relies on color changes, which fails WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not clearly indicated, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not clearly indicated, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not clearly indicated, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "pass",
+                "reasoning": "An error message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" is provided, indicating the error with textual support. This passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Mobile Phone Number",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not clearly indicated, making it inapplicable for evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not conveyed through color or text, making it inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not conveyed through color or text, making it inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not conveyed through color or text, making it inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "pass",
+                "reasoning": "An error message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" is associated with the field, providing textual feedback. This passes WCAG 1.4.1 as the error is not conveyed by color alone."
+            },
+            {
+                "identification": "Mobile Phone Number",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not conveyed through color or text, making it inapplicable for WCAG 1.4.1 evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not conveyed through color or text, making it inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not conveyed through color or text, making it inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not conveyed through color or text, making it inapplicable for WCAG 1.4.1 evaluation."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "pass",
+                "reasoning": "An error message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" is associated with the field. This provides a textual cue, passing WCAG 1.4.1."
+            },
+            {
+                "identification": "Mobile Phone Number",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for the invalid input. The error state is not conveyed through color or text, making it inapplicable for WCAG 1.4.1 evaluation."
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field",
+                "evaluation": "inapplicable",
+                "reasoning": "After invalid input, no specific error message or programmatic support was detected. The error is not conveyed through color alone, but no specific error message was associated with this field, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for this field. The error is not conveyed through color alone, but no specific error message was associated with this field, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for this field. The error is not conveyed through color alone, but no specific error message was associated with this field, making it inapplicable for evaluation."
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "pass",
+                "reasoning": "An error message \"Please include an '@' in the email address. 'user.com' is missing an '@'.\" was associated with the field. This provides textual support, so the error is not conveyed by color alone, passing WCAG 1.4.1."
+            },
+            {
+                "identification": "Mobile Phone Number",
+                "evaluation": "inapplicable",
+                "reasoning": "No specific error message or programmatic support was detected for this field. The error is not conveyed through color alone, but no specific error message was associated with this field, making it inapplicable for evaluation."
+            }
+        ]
+    }
+]

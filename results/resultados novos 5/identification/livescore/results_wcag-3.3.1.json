@@ -1,0 +1,272 @@
+[
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "An error message is shown (\"Please enter your email\") but there is no programmatic association (no aria-describedby/aria-errormessage, no ID reference) and no aria-invalid; visual linkage cannot be confirmed."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "An error message is shown (\"Please select a subject from the dropdown\") but the control has no label and no programmatic association to the message; visual linkage is not confirmed."
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message appeared and the field is not required; optional fields do not require validation feedback when left empty."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "An error message is shown (\"Please enter your message\") but there is no evidence of programmatic linkage (no aria-describedby/aria-errormessage) or aria-invalid; visual linkage is not confirmed."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address (text)",
+                "evaluation": "fail",
+                "reasoning": "Error message is shown, but there is no programmatic association to the input (no aria-describedby/aria-errormessage) and no aria-invalid; assistive technologies would not announce the error for this specific field."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "Error message is shown, but the field lacks a visible label and there is no programmatic association (no aria-describedby/aria-errormessage) or aria-invalid, so the error is not reliably tied to the control for assistive technologies."
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message appeared and the field is not required; optional fields are not expected to produce validation errors when left empty."
+            },
+            {
+                "identification": "Message (textarea)",
+                "evaluation": "fail",
+                "reasoning": "Error message is shown, but there is no evidence of programmatic association (no aria-describedby/aria-errormessage) and no aria-invalid, so the error is not announced for the field."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "An error message became visible (“Please enter your email”), but there is no evidence it was programmatically associated to the input (no aria-describedby/aria-errormessage or aria-invalid observed)."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "An error message became visible (“Please select a subject from the dropdown”), but the field lacks a visible label and shows no programmatic association to the error (no aria-describedby/aria-errormessage or aria-invalid observed)."
+            },
+            {
+                "identification": "Please select a subject",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message was shown for this checkbox after submission; it appears optional and not validated when left empty."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "An error message became visible (“Please enter your message”), but there is no evidence of programmatic association to the textarea (no aria-describedby/aria-errormessage or aria-invalid observed)."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "Error text is shown, but there is no evidence of programmatic association (no aria-describedby/aria-errormessage) or aria-invalid, so assistive technologies may not announce it."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "Error text is shown, but the control lacks a visible label and no programmatic association (no aria-describedby/aria-errormessage) was observed."
+            },
+            {
+                "identification": "Please select a subject",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is optional and did not present an error on empty submission, so error identification is not required."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "Error text is shown, but there is no evidence of programmatic association (no aria-describedby/aria-errormessage) or aria-invalid, so assistive technologies may not announce it."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "An error message became visible (“Please enter your email”), but there is no evidence of programmatic association (e.g., aria-describedby or aria-errormessage) or aria-invalid."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "An error message became visible (“Please select a subject from the dropdown”), but there is no evidence of programmatic association. The field also lacks a visible label."
+            },
+            {
+                "identification": "Please select a subject",
+                "evaluation": "inapplicable",
+                "reasoning": "No error appeared and the field is optional; no validation feedback was required."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "An error message became visible (“Please enter your message”), but no programmatic association (e.g., aria-describedby) or aria-invalid state was observed."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "An error message became visible, but no programmatic association (e.g., aria-describedby/aria-errormessage) or aria-invalid was observed."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "An error message became visible, but the control lacks a label and there is no observed programmatic association to the message."
+            },
+            {
+                "identification": "Please select a subject",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message appeared and the field is not required, so no validation feedback is expected."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "An error message became visible, but no programmatic link to the field (e.g., aria-describedby/aria-errormessage) or aria-invalid state was observed."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "Error message is shown but not programmatically associated to the input (no aria-describedby/aria-errormessage) and no aria-invalid."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "Error message appears but the field has no visible label and no programmatic linkage (no aria-describedby/aria-errormessage); no aria-invalid."
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error is shown and the control is optional; no validation feedback required when left empty."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "Error message is shown but not programmatically associated to the textarea (no aria-describedby/aria-errormessage) and no aria-invalid."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "An error message is shown, but there is no programmatic association (no aria-describedby/aria-errormessage or label-wrapped error) and no aria-invalid indicator."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "An error message is shown, but the select has no visible label and there is no programmatic association to the message."
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message appeared after submission and the field did not undergo validation, indicating it is optional for this interaction."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "An error message is shown, but there is no programmatic association (no aria-describedby/aria-errormessage) linking it to the textarea."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "Error text is shown (“Please enter your email”) but not programmatically associated to the input (no aria-describedby/aria-errormessage and not inside the label). No aria-invalid observed."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "Error text is shown (“Please select a subject from the dropdown”) but the select has no visible label and no programmatic association to the error (no aria-describedby/aria-errormessage). No aria-invalid observed."
+            },
+            {
+                "identification": "Please select a subject",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message appeared and the checkbox is not required, so no validation feedback is expected when left empty."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "Error text is shown (“Please enter your message”) but not programmatically associated to the textarea (no aria-describedby/aria-errormessage and not inside the label). No aria-invalid observed."
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "An error message becomes visible, but there is no programmatic association (no aria-describedby/aria-errormessage and not placed inside the label), and no aria-invalid is set."
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "An error message about selecting a subject is shown, but the control has no accessible label and no programmatic association to the message (no aria-describedby/aria-errormessage); no aria-invalid indicator."
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message appeared for this optional checkbox, so validation feedback is not required."
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "An error message becomes visible, but it is not programmatically associated with the textarea (no aria-describedby/aria-errormessage) and no aria-invalid is set."
+            }
+        ]
+    }
+]

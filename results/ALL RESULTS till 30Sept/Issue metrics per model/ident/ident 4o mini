@@ -1,0 +1,31 @@
+=== Evaluation Report ===
+Model: openai/gpt-4o-mini-2024-07-18
+True Positives: 2
+True Negatives: 8
+False Positives: 5
+False Negatives: 6
+Accuracy: 0.476
+Precision: 0.286
+Recall: 0.250
+F1-score: 0.267
+Coverage: 21/31 (67.7%)
+Total samples used: 21
+Pred counts: {0: 14, 1: 7}
+Gold counts: {0: 13, 1: 8}
+
+=== Most Common Issues ===
+- Missed violation (fail → absent): 6
+- False violation (inapplicable → fail): 3
+- False violation (pass → fail): 2
+
+=== Flagged Cases (examples) ===
+- URL: https://www.cricbuzz.com/info/contact | Field: No Label | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)
+- URL: https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel | Field: localidade | Benchmark: pass | Eval: fail | Issue: False violation (pass → fail)
+- URL: https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel | Field: numPorta | Benchmark: inapplicable | Eval: fail | Issue: False violation (inapplicable → fail)
+- URL: https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel | Field: arruamento | Benchmark: inapplicable | Eval: fail | Issue: False violation (inapplicable → fail)
+- URL: https://www.ctt.pt/feapl_2/app/open/postalCodeSearch/postalCodeSearch.jspx?lang=def#fndtn-postalCodeSearchPanel | Field: nPorta | Benchmark: inapplicable | Eval: fail | Issue: False violation (inapplicable → fail)
+- URL: https://www.staples.pt/pt/pt/registo | Field: Email | Benchmark: fail | Eval: absent | Issue: Missed violation (fail → absent)
+- URL: https://www.staples.pt/pt/pt/registo | Field: Nome | Benchmark: fail | Eval: absent | Issue: Missed violation (fail → absent)
+- URL: https://www.staples.pt/pt/pt/registo | Field: Eu concordo com os Termos e Condições da Staples e todos os outros Termos e Políticas que possam ser aplicáveis. (checkbox) | Benchmark: fail | Eval: absent | Issue: Missed violation (fail → absent)
+- URL: https://www.staples.pt/pt/pt/registo | Field: Password | Benchmark: fail | Eval: absent | Issue: Missed violation (fail → absent)
+- URL: https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62 | Field: Confirma o teu endereço | Benchmark: fail | Eval: absent | Issue: Missed violation (fail → absent)

@@ -1,0 +1,12 @@
+Model,URL,True Positives,True Negatives,False Positives,False Negatives,Accuracy,Precision,Recall,F1-score,Coverage,Total samples used,Run ID
+gpt-5,store.steampowered.com,0,0,2,0,0.0,0.0,0.0,0.0,2/5 (40.0%),2,1
+gpt-5,store.steampowered.com,0,0,2,0,0.0,0.0,0.0,0.0,2/5 (40.0%),2,2
+gpt-5,store.steampowered.com,0,0,2,0,0.0,0.0,0.0,0.0,2/5 (40.0%),2,3
+gpt-5,store.steampowered.com,0,0,2,0,0.0,0.0,0.0,0.0,2/5 (40.0%),2,4
+gpt-5,store.steampowered.com,0,0,2,0,0.0,0.0,0.0,0.0,2/5 (40.0%),2,5
+gpt-5,store.steampowered.com,0,0,2,0,0.0,0.0,0.0,0.0,2/5 (40.0%),2,6
+gpt-5,store.steampowered.com,0,0,2,0,0.0,0.0,0.0,0.0,2/5 (40.0%),2,7
+gpt-5,store.steampowered.com,0,0,2,0,0.0,0.0,0.0,0.0,2/5 (40.0%),2,8
+gpt-5,store.steampowered.com,0,0,2,0,0.0,0.0,0.0,0.0,2/5 (40.0%),2,9
+gpt-5,store.steampowered.com,0,0,2,0,0.0,0.0,0.0,0.0,2/5 (40.0%),2,10
+ALL,ALL,0,0,20,0,0.0,0.0,0.0,0.0,N/A,20,TOTAL

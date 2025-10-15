@@ -1,0 +1,27 @@
+=== Evaluation Report ===
+Model: openai/gpt-4.1-mini-2025-04-14
+True Positives: 0
+True Negatives: 9
+False Positives: 2
+False Negatives: 5
+Accuracy: 0.562
+Precision: 0.000
+Recall: 0.000
+F1-score: 0.000
+Coverage: 16/26 (61.5%)
+Total samples used: 16
+Pred counts: {0: 14, 1: 2}
+Gold counts: {0: 11, 1: 5}
+
+=== Most Common Issues ===
+- Missed violation (fail → pass/inapplicable): 5
+- False violation (inapplicable → fail): 2
+
+=== Flagged Cases (examples) ===
+- URL: https://www.infinite.media/bible-gateway/ | Field: Website | Benchmark: fail | Eval: pass | Issue: Missed violation (fail → pass/inapplicable)
+- URL: https://store.steampowered.com/join/?redir=app%2F2669320%2FEA_SPORTS_FC_25%2F%3Fsnr%3D1_4_4__129_1&snr=1_60_4__62 | Field: Endereço de e-mail | Benchmark: fail | Eval: pass | Issue: Missed violation (fail → pass/inapplicable)
+- URL: https://www.staples.pt/pt/pt/registo | Field: Nome * | Benchmark: inapplicable | Eval: fail | Issue: False violation (inapplicable → fail)
+- URL: https://www.staples.pt/pt/pt/registo | Field: Email * | Benchmark: fail | Eval: pass | Issue: Missed violation (fail → pass/inapplicable)
+- URL: https://www.cricbuzz.com/info/contact | Field: Name | Benchmark: fail | Eval: pass | Issue: Missed violation (fail → pass/inapplicable)
+- URL: https://www.cricbuzz.com/info/contact | Field: Email | Benchmark: fail | Eval: pass | Issue: Missed violation (fail → pass/inapplicable)
+- URL: https://www.cricbuzz.com/info/contact | Field: Subject | Benchmark: inapplicable | Eval: fail | Issue: False violation (inapplicable → fail)

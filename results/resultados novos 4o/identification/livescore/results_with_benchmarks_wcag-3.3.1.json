@@ -1,0 +1,392 @@
+[
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address (text)",
+                "evaluation": "fail",
+                "reasoning": "The error message \"Please enter your email\" is displayed, but there is no programmatic association with the input field, such as aria-describedby.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "The error message \"Please select a subject from the dropdown\" is displayed, but the field lacks a label and programmatic association with the error message.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message is associated with this checkbox, and it is not required.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message (textarea)",
+                "evaluation": "fail",
+                "reasoning": "The error message \"Please enter your message\" is displayed, but there is no programmatic association with the input field, such as aria-describedby.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "The email field displays an error message, but it is not programmatically associated with the input field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "The select field lacks a label, and the error message is not programmatically linked.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "fail",
+                "reasoning": "The checkbox field does not display an error message.",
+                "benchmark": "N/A",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "The textarea field displays an error message, but it is not programmatically linked.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "The email field displays an error message, but it is not programmatically linked to the input field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "The select field lacks a label, and the error message is not programmatically associated.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "fail",
+                "reasoning": "The checkbox field does not have a visible error message.",
+                "benchmark": "N/A",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "The textarea field displays an error message, but it is not programmatically linked.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "The error message is displayed but not programmatically linked to the input field, violating WCAG 3.3.1.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "The field lacks a label, and the error message is not programmatically associated, violating WCAG 3.3.2.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "fail",
+                "reasoning": "The error message is displayed but lacks programmatic association with the field, violating WCAG 3.3.1.",
+                "benchmark": "N/A",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "The error message is displayed but is not programmatically linked to the textarea, violating WCAG 3.3.1.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "The email field displays an error message, but it is not programmatically linked to the input field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "The select field lacks a label, and the error message is not programmatically associated.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "fail",
+                "reasoning": "The checkbox field does not have a programmatically associated error message.",
+                "benchmark": "N/A",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "The textarea field displays an error message, but it is not programmatically linked to the input field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "An error message is displayed, but there is no programmatic association with the input field, such as aria-describedby.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "The field lacks a visible label and programmatic association for the error message.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "fail",
+                "reasoning": "An error message is displayed, but there is no programmatic association with the input field.",
+                "benchmark": "N/A",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message (textarea)",
+                "evaluation": "fail",
+                "reasoning": "An error message is displayed, but there is no programmatic association with the input field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "The email field displays an error message, but it is not programmatically associated with the input field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "The select field lacks a label, and the error message is not programmatically linked.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "fail",
+                "reasoning": "The checkbox field does not have a visible error message.",
+                "benchmark": "N/A",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "The textarea field displays an error message but is not programmatically associated.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "The \"Email address\" field displays an error message, but there is no programmatic association with the input field, such as aria-describedby.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "The \"No Label\" select field has an error message displayed, but lacks a label or programmatic association, making it unclear which field the error pertains to.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "fail",
+                "reasoning": "The \"Please select a subject\" checkbox field displays an error message, but it is not programmatically linked to the checkbox.",
+                "benchmark": "N/A",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message (textarea)",
+                "evaluation": "fail",
+                "reasoning": "The \"Message\" textarea field displays an error message, but there is no programmatic association with the textarea, such as aria-describedby.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "The email field displays an error message, but it is not programmatically associated with the input field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "The select field lacks a label, and the error message is not programmatically linked.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "fail",
+                "reasoning": "The checkbox field has an error message, but it is not programmatically associated.",
+                "benchmark": "N/A",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "The textarea field displays an error message, but it is not programmatically linked to the input.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "The email field displays an error message, but it is not programmatically associated with the input field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "fail",
+                "reasoning": "The select field lacks a label, and the error message is not programmatically linked.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "fail",
+                "reasoning": "The checkbox field does not have a programmatically associated error message.",
+                "benchmark": "N/A",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "fail",
+                "reasoning": "The textarea field displays an error message, but it is not programmatically associated with the input field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

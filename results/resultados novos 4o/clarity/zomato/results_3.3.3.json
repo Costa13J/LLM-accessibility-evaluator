@@ -1,0 +1,167 @@
+[
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "The input 'abcdef' is invalid as it is not a number. The error message 'Please enter a number.' is clear and helps the user understand the requirement to input a numeric value."
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' is unusual for a name, but no validation error was triggered. Since the field does not have specific constraints beyond being required, the lack of an error message is acceptable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "The input 'abcdef' is invalid as it is not a number. The error message 'Please enter a number.' is shown, which clearly indicates the problem and guides the user to correct the input by entering a numeric value."
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' is unusual for a name but no specific validation error was triggered. Since the field does not have specific constraints that were violated, no error message is required."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "The input 'abcdef' triggered a validation error with the message 'Please enter a number.' This message clearly indicates the problem and suggests that a numeric input is required, aligning with WCAG 3.3.1 guidelines."
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' did not trigger any validation error or message. Since the field is required but no specific format is enforced, the lack of an error message is acceptable under the current guidelines."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "The input 'abcdef' is invalid as it is not a number. The error message 'Please enter a number.' is clear and helps the user understand the requirement to input a numeric value."
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' is unusual for a name, but no validation error was triggered. Since the field does not have specific constraints beyond being required, the lack of an error message is acceptable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "The input 'abcdef' is invalid as it is not a number. The error message 'Please enter a number.' is clear and guides the user to correct the input by specifying the expected input type."
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' is unusual for a name, but no specific validation error was triggered. Since the field does not have constraints that would trigger an error for numeric input, the lack of an error message is acceptable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "The input 'abcdef' is invalid as it is not a number. The error message 'Please enter a number.' is clear and helps the user understand the requirement to input a numeric value."
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' is unusual for a name, but no specific validation error was triggered. Since the field does not have constraints that would trigger an error for numeric input, the lack of an error message is acceptable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "The input 'abcdef' is invalid for a phone number field, and the error message 'Please enter a number.' clearly instructs the user on the correct input type, aligning with WCAG 3.3.1 guidelines."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "The input 'abcdef' is invalid as it is not a number. The error message 'Please enter a number.' is clear and helps the user understand the requirement to input a numeric value."
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' is unusual for a name, but no specific validation error was triggered. Since the field does not have constraints that would trigger an error for numeric input, the lack of an error message is acceptable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "The input 'abcdef' is invalid as it is not a number. The error message 'Please enter a number.' is clear and helps the user understand the requirement to input a numeric value."
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' is unusual for a name, but no validation error was triggered. Since the field does not have specific constraints beyond being required, the lack of an error message is acceptable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.zomato.com/deliver-food/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Please enter phone number",
+                "evaluation": "pass",
+                "reasoning": "The input 'abcdef' is invalid as it is not a number. The error message 'Please enter a number.' is clear and helps the user understand the requirement to input a numeric value."
+            },
+            {
+                "identification": "Please enter name",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '12345' is unusual for a name, but no specific validation error was triggered. Since the field does not have constraints that would trigger an error for numeric input, the lack of an error message is acceptable."
+            }
+        ]
+    }
+]

@@ -1,0 +1,878 @@
+[
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and does not trigger any validation, which is appropriate for an optional field.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation, which is appropriate for a required field.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation, which is appropriate for a required field.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month (select)",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation, which is appropriate for a required field.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day (select)",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation, which is appropriate for a required field.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year (select)",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation, which is appropriate for a required field.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation, which is appropriate for a required field.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation, which is appropriate for a required field.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a:",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation, which is appropriate for a required field.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation, which is appropriate for a required field.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The search fields are not marked as required and do not trigger any validation feedback, which is appropriate for optional fields.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, which is appropriate for required fields.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, which is appropriate for required fields.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, which is appropriate for required fields.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, which is appropriate for required fields.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, which is appropriate for required fields.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, which is appropriate for required fields.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, which is appropriate for required fields.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, which is appropriate for required fields.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, which is appropriate for required fields.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and does not trigger validation feedback, indicating it is optional.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Search Field (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and does not trigger validation feedback, indicating it is optional.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and triggers validation feedback when left empty, confirming its required status.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and triggers validation feedback when left empty, confirming its required status.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and triggers validation feedback when left empty, confirming its required status.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and triggers validation feedback when left empty, confirming its required status.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and triggers validation feedback when left empty, confirming its required status.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and triggers validation feedback when left empty, confirming its required status.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and triggers validation feedback when left empty, confirming its required status.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and triggers validation feedback when left empty, confirming its required status.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required and triggers validation feedback when left empty, confirming its required status.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and does not trigger any validation feedback, indicating it is optional.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is required.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is required.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month (select)",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is required.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day (select)",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is required.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year (select)",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is required.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is required.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is required.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is required.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is required.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The search fields are not marked as required and do not trigger any validation, which is appropriate for optional fields.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Search Field (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The search fields are not marked as required and do not trigger any validation, which is appropriate for optional fields.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, which is appropriate. However, the error messages are not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, which is appropriate. However, the error messages are not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, which is appropriate. However, the error messages are not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, which is appropriate. However, the error messages are not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, which is appropriate. However, the error messages are not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, which is appropriate. However, the error messages are not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, which is appropriate. However, the error messages are not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, which is appropriate. However, the error messages are not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, which is appropriate. However, the error messages are not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The search fields are not marked as required and do not trigger any validation, which is appropriate for optional fields.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is correctly identified as required. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is correctly identified as required. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is correctly identified as required. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is correctly identified as required. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is correctly identified as required. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is correctly identified as required. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is correctly identified as required. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is correctly identified as required. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is correctly identified as required. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked with the 'required' attribute and does not trigger any validation feedback, indicating it is not treated as required.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH? (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a: (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Date of Birth (Month) (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Date of Birth (Year)(select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Date of Birth (Day)(select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and does not trigger any validation, which is appropriate for an optional field.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation, which is appropriate for a required field.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation, which is appropriate for a required field.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month (select)",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation, which is appropriate for a required field.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day (select)",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation, which is appropriate for a required field.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year (select)",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation, which is appropriate for a required field.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation, which is appropriate for a required field.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation, which is appropriate for a required field.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation, which is appropriate for a required field.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation, which is appropriate for a required field.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required with the 'required' attribute and triggers validation feedback when left empty. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required with the 'required' attribute and triggers validation feedback when left empty. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required with the 'required' attribute and triggers validation feedback when left empty. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required with the 'required' attribute and triggers validation feedback when left empty. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required with the 'required' attribute and triggers validation feedback when left empty. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required with the 'required' attribute and triggers validation feedback when left empty. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required with the 'required' attribute and triggers validation feedback when left empty. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required with the 'required' attribute and triggers validation feedback when left empty. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked as required with the 'required' attribute and triggers validation feedback when left empty. However, the error message is not programmatically linked via 'aria-describedby', which is a best practice for accessibility.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Search Field",
+                "evaluation": "absent",
+                "benchmark": "inapplicable",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://uh.edu/undergraduate-admissions/apply/index",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Search Field (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is not marked as required and does not trigger any validation feedback, indicating it is optional.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "First Name*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is required.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is required.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Month",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is required.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Day",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is required.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Year",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is required.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email Address*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is required.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Mobile Phone Number*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is required.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "You plan to enroll as a:*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is required.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "When would you like to start classes at UH?*",
+                "evaluation": "pass",
+                "reasoning": "The field is marked with the required attribute and triggers validation feedback, indicating it is required.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

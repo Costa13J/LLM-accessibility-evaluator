@@ -1,0 +1,374 @@
+[
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address (text)",
+                "evaluation": "fail",
+                "reasoning": "The message \"Please enter your email\" does not explain the specific error (missing \"@\") or provide a correction suggestion (e.g., \"Format: user@example.com\"), violating WCAG 3.3.3.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "pass",
+                "reasoning": "A visible error appeared instructing \"Please select a subject\" / \"Please select a subject from the dropdown,\" which clearly states the problem and how to correct it (select a subject from the dropdown).",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation error or message was triggered for the checkbox.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message (textarea)",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger a validation error or message, so no guidance was required.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "Input 'userexample.com' triggered an error, but the message \"Please enter your email\" does not explain the problem (invalid format) or how to fix it (e.g., use user@example.com), so it is not actionable.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "pass",
+                "reasoning": "A validation error appeared with \"Please select a subject\" / \"Please select a subject from the dropdown,\" which clearly identifies the problem and tells the user how to correct it (choose an option in the dropdown).",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error was triggered for the checkbox; the shown message pertained to selecting from a dropdown, not checking a box.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' did not trigger any validation error or message, so no guidance was required.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "Input 'userexample.com' triggered an error message \"Please enter your email,\"; the message is vague and does not specify the problem (e.g., missing '@') or provide a corrective example (e.g., user@example.com), offering limited guidance.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger validation or an error message for this optional textarea; no guidance was expected since no error occurred (WCAG 3.3.3 applies only when an error is presented).",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "Input 'userexample.com' triggered an error message \"Please enter your email,\" which is vague and does not explain the format issue or how to correct it.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "pass",
+                "reasoning": "Leaving the dropdown unselected triggered an error container with the message \"Please select a subject\" (or similar), which clearly explains the issue and how to fix it (choose a subject).",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox was not required and no error was triggered or shown; therefore, WCAG 3.3.3 does not apply.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "Entering '!' did not trigger any validation or error message, so no error suggestion is required.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address (text)",
+                "evaluation": "fail",
+                "reasoning": "Input 'user.com' triggered an error message \"Please enter your email,\" which does not explain the format issue or suggest how to correct it (e.g., user@example.com). It implies the field is empty rather than indicating invalid format, so it does not provide actionable guidance.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "pass",
+                "reasoning": "A visible error appeared: \"Please select a subject\" / \"Please select a subject from the dropdown,\" which clearly explains the issue and how to fix it (choose a subject), providing actionable guidance.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation or error message was triggered for the checkbox; the displayed message referred to the dropdown, so 3.3.3 does not apply here.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message (textarea)",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger any validation or error message, so WCAG 3.3.3 does not apply.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address (text)",
+                "evaluation": "fail",
+                "reasoning": "Input 'userexample.com' triggered an error message \"Please enter your email,\" which does not explain the format problem or how to fix it (e.g., missing '@' and example format). This provides no actionable guidance.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' did not trigger validation or an error; the field is optional and has no constraints, so no error messaging is expected.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Subject (select)",
+                "evaluation": "absent",
+                "benchmark": "pass",
+                "match": "absent",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "Test input 'userexample.com' produced the message \"Please enter your email,\" which does not describe the issue (invalid format) or how to correct it. It suggests the field is empty, not incorrectly formatted, offering no actionable guidance.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "pass",
+                "reasoning": "An error appeared: \"Please select a subject\" / \"Please select a subject from the dropdown.\" This clearly explains the problem and how to resolve it (pick a subject from the dropdown).",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation error was triggered and no message was shown for this checkbox, so WCAG 3.3.3 does not apply.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger a validation error or message, so WCAG 3.3.3 does not apply.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address (text)",
+                "evaluation": "fail",
+                "reasoning": "Input 'userexample.com' triggered an error saying \"Please enter your email,\" which is inaccurate and provides no guidance on correcting the format (e.g., include \"@\"), so it does not help the user fix the input.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "pass",
+                "reasoning": "A validation error was displayed with the message \"Please select a subject\" / \"Please select a subject from the dropdown,\" which clearly states the problem and how to correct it (choose an option).",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "No validation error was triggered for this checkbox and no message was shown.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message (textarea)",
+                "evaluation": "inapplicable",
+                "reasoning": "The input '!' did not trigger validation or an error message; therefore, no error suggestion is required.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address (text)",
+                "evaluation": "fail",
+                "reasoning": "Input 'userexample.com' triggered an error panel with \"Email address — Please enter your email.\" This message is not actionable for the given input; it implies the field is empty rather than explaining the invalid email format or providing a correction (e.g., use user@example.com).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "inapplicable",
+                "reasoning": "No input or validation event occurred, and no error was shown.",
+                "benchmark": "pass",
+                "match": "❌",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please select a subject (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is not required and no validation was triggered, so no error messaging is expected.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message (textarea)",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger validation or an error message; therefore, no error suggestion is applicable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.livescore.com/en/contact/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Email address",
+                "evaluation": "fail",
+                "reasoning": "Input 'userexample.com' triggered the message \"Please enter your email,\" which does not explain the format issue or how to fix it (e.g., provide a valid email like user@example.com).",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "No Label (select)",
+                "evaluation": "pass",
+                "reasoning": "Left unselected; a validation message appeared (\"Please select a subject\" / \"Please select a subject from the dropdown\"), which clearly explains the problem and how to fix it (choose a subject from the dropdown).",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Please select a subject",
+                "evaluation": "inapplicable",
+                "reasoning": "The checkbox is not required and no error was triggered for leaving it unchecked; no error message was expected.",
+                "benchmark": "N/A",
+                "match": "",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Message",
+                "evaluation": "inapplicable",
+                "reasoning": "Input '!' did not trigger any validation or message, so no error suggestion was applicable.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

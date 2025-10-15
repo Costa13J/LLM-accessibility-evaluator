@@ -1,0 +1,272 @@
+[
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "No specific error messages or programmatic cues were detected, and the changes were limited to visual styles, indicating a reliance on color alone, which fails WCAG 1.4.1."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "No specific error messages or programmatic cues were detected, and the changes were limited to visual styles, indicating a reliance on color alone, which fails WCAG 1.4.1."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "A visible error message indicating the missing '@' was provided, which offers a textual cue, passing WCAG 1.4.1."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "A visible error message indicating the minimum character requirement was provided, which offers a textual cue, passing WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "The only changes were error-related classes applied, with no programmatic or textual error messages provided. This means the error is indicated only through color, failing WCAG 1.4.1."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "The only changes were error-related classes applied, with no programmatic or textual error messages provided. This means the error is indicated only through color, failing WCAG 1.4.1."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "A descriptive error message was displayed and associated with the field, providing a programmatic cue, which passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "A descriptive error message was displayed and associated with the field, providing a programmatic cue, which passes WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "For the \"First name\" field, no specific error messages were detected, and the only indication of an error was a change in background color. This reliance on color alone fails WCAG 1.4.1."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "For the \"Last name\" field, no specific error messages were detected, and the only indication of an error was a change in background color. This reliance on color alone fails WCAG 1.4.1."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "For the \"Email\" field, a descriptive error message was provided, indicating the missing '@' symbol, which passes WCAG 1.4.1."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "For the \"Password\" field, a visible error message indicating the minimum character requirement was provided, which passes WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "No specific error messages or programmatic cues were detected, and the changes were primarily visual (e.g., error class). Since the error is indicated only through color, this fails WCAG 1.4.1."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "No specific error messages or programmatic cues were detected, and the changes were primarily visual (e.g., error class). Since the error is indicated only through color, this fails WCAG 1.4.1."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "A descriptive error message was added and programmatically associated, ensuring the error is not conveyed by color alone, passing WCAG 1.4.1."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "A descriptive error message was added and programmatically associated, ensuring the error is not conveyed by color alone, passing WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "No specific error messages or programmatic cues were detected, and the changes were primarily visual (e.g., error class). Therefore, this field fails WCAG 1.4.1 as it relies on color alone."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "No specific error messages or programmatic cues were detected, and the changes were primarily visual (e.g., error class). Therefore, this field fails WCAG 1.4.1 as it relies on color alone."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "A visible error message indicating the missing '@' was provided and programmatically associated, thus passing WCAG 1.4.1."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "A visible error message indicating the minimum character requirement was provided and programmatically associated, thus passing WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "No specific error messages were detected, and the changes were primarily visual (background and border color changes). Since no programmatic or textual error cues were provided, this fails WCAG 1.4.1."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "No specific error messages were detected, and the changes were primarily visual (background and border color changes). Since no programmatic or textual error cues were provided, this fails WCAG 1.4.1."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "A descriptive error message was displayed, indicating the missing '@' in the email address. This message was programmatically associated with the field, ensuring the error is not conveyed by color alone, thus passing WCAG 1.4.1."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "Although visual changes occurred, a descriptive error message '6 characters minimum' was displayed and programmatically associated with the field. This ensures the error is not conveyed by color alone, passing WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "The only changes were error-related classes applied, with no programmatic or textual error messages provided. This indicates reliance on color alone, failing WCAG 1.4.1."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "The only changes were error-related classes applied, with no programmatic or textual error messages provided. This indicates reliance on color alone, failing WCAG 1.4.1."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "A visible error message 'Please include an '@' in the email address. 'user.com' is missing an '@'' was associated with the field, providing a textual cue, thus passing WCAG 1.4.1."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "A visible error message '6 characters minimum.' was associated with the field, providing a textual cue, thus passing WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "No specific error messages or programmatic cues were detected, and the changes were primarily visual, indicating a reliance on color alone, which fails WCAG 1.4.1."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "No specific error messages or programmatic cues were detected, and the changes were primarily visual, indicating a reliance on color alone, which fails WCAG 1.4.1."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "A visible error message indicating the missing '@' was provided, which offers a textual cue, passing WCAG 1.4.1."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "A visible error message indicating the minimum character requirement was provided, offering a textual cue, passing WCAG 1.4.1."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "No specific error messages were detected, and changes were limited to visual styles, indicating reliance on color alone."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "No specific error messages were detected, and changes were limited to visual styles, indicating reliance on color alone."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "A descriptive error message was displayed, providing textual support, ensuring the error is not conveyed by color alone."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "A descriptive error message was displayed, providing textual support, ensuring the error is not conveyed by color alone."
+            }
+        ]
+    },
+    {
+        "url": "https://www.pexels.com/join-contributor/?redirect_to=%2F",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First name",
+                "evaluation": "fail",
+                "reasoning": "No specific error messages or programmatic cues were detected, and the changes were primarily visual, relying on color."
+            },
+            {
+                "identification": "Last name",
+                "evaluation": "fail",
+                "reasoning": "No specific error messages or programmatic cues were detected, and the changes were primarily visual, relying on color."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "A descriptive error message was displayed, indicating the error was not conveyed by color alone."
+            },
+            {
+                "identification": "Password",
+                "evaluation": "pass",
+                "reasoning": "A descriptive error message was displayed, ensuring the error was not conveyed by color alone."
+            }
+        ]
+    }
+]

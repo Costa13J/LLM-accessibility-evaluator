@@ -1,0 +1,6 @@
+URL,Model,Field,Runs,Eval counts,Most common,Consistency ratio,Benchmark
+infinite,gpt-4,First Name,10,10×pass,pass,1,pass
+infinite,gpt-4,Organization,10,"6×absent, 4×pass",absent,0.6,pass
+infinite,gpt-4,Website,10,"6×absent, 4×inapplicable",absent,0.6,inapplicable
+infinite,gpt-4,Email,10,"6×absent, 4×pass",absent,0.6,pass
+infinite,gpt-4,Last Name,4,"4×pass, 6×absent",absent,0.6,pass

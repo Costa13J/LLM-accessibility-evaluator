@@ -1,0 +1,22 @@
+=== Evaluation Report ===
+Model: 4o
+True Positives: 8
+True Negatives: 13
+False Positives: 1
+False Negatives: 1
+Accuracy: 0.913
+Precision: 0.889
+Recall: 0.889
+F1-score: 0.889
+Coverage: 23/37 (62.2%)
+Total samples used: 23
+Pred counts: {1: 9, 0: 14}
+Gold counts: {1: 9, 0: 14}
+
+=== Most Common Issues ===
+- Missed violation (fail → absent): 1
+- False violation (inapplicable → fail): 1
+
+=== Flagged Cases (examples) ===
+- URL: https://www.amazon.com/ap/register?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fap%2Fcnep%3Fie%3DUTF8%26orig_return_to%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-account%26openid.assoc_handle%3Dusflex%26pageId%3Dusflex&prevRID=05AYRRNGN9PBHQCYWN7S&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0 | Field: Re-enter password | Benchmark: fail | Eval: absent | Issue: Missed violation (fail → absent)
+- URL: https://www.nba.com/account/sign-up | Field: No Label (checkbox) | Benchmark: inapplicable | Eval: fail | Issue: False violation (inapplicable → fail)

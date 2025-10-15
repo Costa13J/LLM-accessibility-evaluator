@@ -1,0 +1,872 @@
+[
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "pass",
+                "reasoning": "Error “Please fill in the required field.” shown; aria-invalid=\"true\" set; aria-describedby links to wpcf7-f76-o1-ve-your-forname; visually indicated."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "pass",
+                "reasoning": "Error shown; aria-invalid=\"true\"; aria-describedby=\"wpcf7-f76-o1-ve-your-surname\"; visually indicated."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "pass",
+                "reasoning": "Error shown; aria-invalid=\"true\"; aria-describedby=\"wpcf7-f76-o1-ve-agency-name\"; visually indicated."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "pass",
+                "reasoning": "Error shown; aria-invalid=\"true\"; aria-describedby=\"wpcf7-f76-o1-ve-location\"; visually indicated."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "Error shown; aria-invalid=\"true\"; aria-describedby=\"wpcf7-f76-o1-ve-your-telephone\"; visually indicated."
+            },
+            {
+                "identification": "Email (email field)",
+                "evaluation": "pass",
+                "reasoning": "Error shown; aria-invalid=\"true\"; aria-describedby=\"wpcf7-f76-o1-ve-your-email\"; visually indicated."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional choice; no validation required when left unselected."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional choice; no validation required when left unselected."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional choice; no validation required when left unselected."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional choice; no validation required when left unselected."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional choice; no validation required when left unselected."
+            },
+            {
+                "identification": "How did you hear about AdSmart?",
+                "evaluation": "fail",
+                "reasoning": "Error summary item and visual tip exist, but the select lacks aria-describedby/aria-invalid, so the message is not programmatically associated with the field."
+            },
+            {
+                "identification": "Please specify",
+                "evaluation": "fail",
+                "reasoning": "No specific error message or ARIA association observed for this required field after submission."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "pass",
+                "reasoning": "Error shown; aria-invalid=\"true\"; aria-describedby=\"wpcf7-f76-o1-ve-your-message\"; visually indicated."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no validation required when left unchecked."
+            },
+            {
+                "identification": "Please leave this field empty.",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional honeypot field; not expected to produce validation feedback."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "pass",
+                "reasoning": "Error \"Please fill in the required field.\" is shown; input has aria-invalid=\"true\" and aria-describedby referencing the error element, providing a programmatic association."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "pass",
+                "reasoning": "Error is shown; input has aria-invalid=\"true\" and aria-describedby pointing to the error element, so the message is programmatically linked."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "pass",
+                "reasoning": "Error is shown and programmatically associated via aria-describedby; input also marked aria-invalid=\"true\"."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "pass",
+                "reasoning": "Error is shown and programmatically associated via aria-describedby; input marked aria-invalid=\"true\"."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "Error is shown and programmatically associated via aria-describedby; input marked aria-invalid=\"true\"."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "Error is shown and programmatically associated via aria-describedby; input marked aria-invalid=\"true\"."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "This option is optional and not expected to produce validation feedback when left empty."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "This option is optional and not expected to produce validation feedback when left empty."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "This option is optional and not expected to produce validation feedback when left empty."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "This option is optional and not expected to produce validation feedback when left empty."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "This option is optional and not expected to produce validation feedback when left empty."
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "fail",
+                "reasoning": "A tip and summary entry appear, but no aria-describedby was applied to the select; the inline tip is aria-hidden=\"true\", so the error is not programmatically associated."
+            },
+            {
+                "identification": "Please specify",
+                "evaluation": "fail",
+                "reasoning": "No error message was shown for this required field and no aria-describedby was added, so there is no accessible association."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "pass",
+                "reasoning": "Error is shown and programmatically associated via aria-describedby; textarea marked aria-invalid=\"true\"."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no validation expected when left unchecked."
+            },
+            {
+                "identification": "Please leave this field empty.",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional honeypot text field; no validation expected when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "pass",
+                "reasoning": "Error shown and programmatically associated via aria-describedby to the error summary item; aria-invalid=\"true\" set. Visual tip exists but is aria-hidden."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "pass",
+                "reasoning": "Error shown and programmatically associated via aria-describedby to the error summary item; aria-invalid=\"true\" set. Visual tip exists but is aria-hidden."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "pass",
+                "reasoning": "Error shown and programmatically associated via aria-describedby to the error summary item; aria-invalid=\"true\" set. Visual tip exists but is aria-hidden."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "pass",
+                "reasoning": "Error shown and programmatically associated via aria-describedby to the error summary item; aria-invalid=\"true\" set. Visual tip exists but is aria-hidden."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "Error shown and programmatically associated via aria-describedby to the error summary item; aria-invalid=\"true\" set. Visual tip exists but is aria-hidden."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "Error shown and programmatically associated via aria-describedby to the error summary item; aria-invalid=\"true\" set. Visual tip exists but is aria-hidden."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is optional; no validation required when left empty."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is optional; no validation required when left empty."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is optional; no validation required when left empty."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is optional; no validation required when left empty."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is optional; no validation required when left empty."
+            },
+            {
+                "identification": "How did you hear about AdSmart?",
+                "evaluation": "fail",
+                "reasoning": "Error summary item and visual tip exist, but the select itself does not reference the message (no aria-describedby detected); the nearby tip is aria-hidden."
+            },
+            {
+                "identification": "Please specify",
+                "evaluation": "fail",
+                "reasoning": "Required field showed no error message and no programmatic association after submission."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "pass",
+                "reasoning": "Error shown and programmatically associated via aria-describedby to the error summary item; aria-invalid=\"true\" set. Visual tip exists but is aria-hidden."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no validation required when left empty."
+            },
+            {
+                "identification": "Please leave this field empty.",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional honeypot; no validation required when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "pass",
+                "reasoning": "Error message shown; aria-invalid=\"true\" set; programmatically associated via aria-describedby to a specific error item (wpcf7-f76-o1-ve-your-forname), and a visible inline error tip is present."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "pass",
+                "reasoning": "Error message shown; aria-invalid=\"true\" set; programmatic association via aria-describedby (wpcf7-f76-o1-ve-your-surname) plus a visible inline error tip."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "pass",
+                "reasoning": "Error message shown; aria-invalid=\"true\" set; programmatic association via aria-describedby (wpcf7-f76-o1-ve-agency-name) and a visible inline tip near the field."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "pass",
+                "reasoning": "Error message shown; aria-invalid=\"true\"; programmatic association via aria-describedby (wpcf7-f76-o1-ve-location) with visible inline error."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "Error message shown; aria-invalid=\"true\"; programmatic association via aria-describedby (wpcf7-f76-o1-ve-your-telephone) with visible inline error."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "Error message shown; aria-invalid=\"true\"; programmatic association via aria-describedby (wpcf7-f76-o1-ve-your-email) with visible inline error."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "This radio option is optional (not required) and does not require validation feedback when left empty."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "This radio option is optional (not required) and does not require validation feedback when left empty."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "This radio option is optional (not required) and does not require validation feedback when left empty."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "This radio option is optional (not required) and does not require validation feedback when left empty."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "This radio option is optional (not required) and does not require validation feedback when left empty."
+            },
+            {
+                "identification": "How did you hear about AdSmart?",
+                "evaluation": "fail",
+                "reasoning": "A summary error entry was added, but no aria-invalid or aria-describedby was observed on the select; the error is not programmatically associated with the field."
+            },
+            {
+                "identification": "Please specify",
+                "evaluation": "fail",
+                "reasoning": "No error message or programmatic association was observed for this required field after submission."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "pass",
+                "reasoning": "Error message shown; aria-invalid=\"true\"; programmatic association via aria-describedby (wpcf7-f76-o1-ve-your-message) with visible inline error."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no validation required when left unchecked."
+            },
+            {
+                "identification": "Please leave this field empty.",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional honeypot field; no validation required when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name (text)",
+                "evaluation": "pass",
+                "reasoning": "Error message shown and programmatically linked via aria-describedby to a visible error item; aria-invalid set to true."
+            },
+            {
+                "identification": "Your surname (text)",
+                "evaluation": "pass",
+                "reasoning": "Error message shown and programmatically linked via aria-describedby to a visible error item; aria-invalid set to true."
+            },
+            {
+                "identification": "Company name (text)",
+                "evaluation": "pass",
+                "reasoning": "Error message shown and programmatically linked via aria-describedby to a visible error item; aria-invalid set to true."
+            },
+            {
+                "identification": "Location (text)",
+                "evaluation": "pass",
+                "reasoning": "Error message shown and programmatically linked via aria-describedby to a visible error item; aria-invalid set to true."
+            },
+            {
+                "identification": "Telephone (tel)",
+                "evaluation": "pass",
+                "reasoning": "Error message shown and programmatically linked via aria-describedby to a visible error item; aria-invalid set to true."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "pass",
+                "reasoning": "Error message shown and programmatically linked via aria-describedby to a visible error item; aria-invalid set to true."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional radio option; no error identification required when left empty."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional radio option; no error identification required when left empty."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional radio option; no error identification required when left empty."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional radio option; no error identification required when left empty."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional radio option; no error identification required when left empty."
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "fail",
+                "reasoning": "Error shown only in a summary list; the select did not receive aria-describedby and the nearby tip is aria-hidden, so no programmatic association to the field."
+            },
+            {
+                "identification": "Please specify (text)",
+                "evaluation": "fail",
+                "reasoning": "Required field showed no error message and no programmatic association after submission."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business? (textarea)",
+                "evaluation": "pass",
+                "reasoning": "Error message shown and programmatically linked via aria-describedby to a visible error item; aria-invalid set to true."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no error identification required when left empty."
+            },
+            {
+                "identification": "Please leave this field empty. (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional honeypot field; no error identification required when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "pass",
+                "reasoning": "Error message shown; aria-invalid set to true and aria-describedby points to a visible error summary item, providing a programmatic association."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "pass",
+                "reasoning": "Error message shown; aria-invalid set to true and aria-describedby points to the summary list item; programmatically associated."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "pass",
+                "reasoning": "Error message shown; aria-invalid true and aria-describedby references a visible li error; programmatically associated."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "pass",
+                "reasoning": "Error message shown; aria-invalid true and aria-describedby points to the error summary item; programmatically associated."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "Error message shown; aria-invalid true and aria-describedby points to the corresponding summary li; programmatically associated."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "Error message shown; aria-invalid true and aria-describedby points to the error summary item; programmatically associated."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "fail",
+                "reasoning": "A group-level error exists, but aria-describedby was added to a wrapper span, not the radio inputs nor a radiogroup container with proper role/association; the individual option is not programmatically linked to the error."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "fail",
+                "reasoning": "Same as above; error not programmatically associated with the individual radio input."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "fail",
+                "reasoning": "Group error exists, but only the wrapper span received aria-describedby; no reliable programmatic link for the individual radio."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "fail",
+                "reasoning": "Same as above; individual radio lacks a programmatic association to the error."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "fail",
+                "reasoning": "Same as above; no programmatic association for the individual radio."
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "fail",
+                "reasoning": "Error summary item exists but the select did not receive aria-describedby; local tip is aria-hidden; no programmatic association to the field."
+            },
+            {
+                "identification": "Please specify",
+                "evaluation": "fail",
+                "reasoning": "Required field with no observed error message or programmatic association after validation."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "pass",
+                "reasoning": "Error “Please fill in the required field.” shown; aria-invalid=\"true\" set; aria-describedby links to wpcf7-f76-o1-ve-your-forname; visually indicated."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no validation required, so error identification is not applicable."
+            },
+            {
+                "identification": "Please leave this field empty.",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional honeypot field; no validation required when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name (text)",
+                "evaluation": "pass",
+                "reasoning": "Error message is shown; input has aria-invalid=\"true\" and aria-describedby pointing to its error summary item; a visible tip is also present."
+            },
+            {
+                "identification": "Your surname (text)",
+                "evaluation": "pass",
+                "reasoning": "Error message is shown; input has aria-invalid=\"true\" and aria-describedby set to the corresponding message; visible tip shown."
+            },
+            {
+                "identification": "Company name (text)",
+                "evaluation": "pass",
+                "reasoning": "Error message appears and is programmatically associated via aria-describedby; aria-invalid=\"true\" set; visual tip present."
+            },
+            {
+                "identification": "Location (text)",
+                "evaluation": "pass",
+                "reasoning": "Error message appears; input marked aria-invalid=\"true\" with aria-describedby referencing the message; visual tip present."
+            },
+            {
+                "identification": "Telephone (tel)",
+                "evaluation": "pass",
+                "reasoning": "Error message appears; input has aria-invalid=\"true\" and aria-describedby linking to the message; visual tip present."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "pass",
+                "reasoning": "Error message appears; input has aria-invalid=\"true\" and aria-describedby set to the message element; visual tip present."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "fail",
+                "reasoning": "Error shown for the group, but aria-describedby was applied to a container span, not the individual radio; no direct programmatic association for the specific radio, and the nearby tip is aria-hidden."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "fail",
+                "reasoning": "Same as above; error not programmatically tied to the individual radio input; only group container updated."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "fail",
+                "reasoning": "Error indicated at group level; no aria-describedby on the radio inputs themselves; visual tip is aria-hidden."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "fail",
+                "reasoning": "Error exists only at group container; no programmatic link from the individual radio to the error text."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "fail",
+                "reasoning": "Error exists only at group container; individual radio lacks aria-describedby to the error."
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "fail",
+                "reasoning": "Error message added in summary and a visual tip shown, but the select did not receive aria-describedby; visible tip is aria-hidden, so assistive tech won’t announce the error."
+            },
+            {
+                "identification": "Please specify (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "No error message or ARIA updates were triggered; appears conditionally required and not validated in this submission state."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business? (textarea)",
+                "evaluation": "pass",
+                "reasoning": "Error shown; textarea marked aria-invalid=\"true\" and aria-describedby points to its error message; visual tip present."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional control; no validation was required or triggered."
+            },
+            {
+                "identification": "Please leave this field empty. (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "Honeypot/optional field; no validation feedback expected or triggered."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name (text)",
+                "evaluation": "pass",
+                "reasoning": "Error message appeared; input has aria-invalid=\"true\" and aria-describedby=\"wpcf7-f76-o1-ve-your-forname\" linking to a visible list item."
+            },
+            {
+                "identification": "Your surname (text)",
+                "evaluation": "pass",
+                "reasoning": "Error message appeared; input has aria-invalid=\"true\" and aria-describedby=\"wpcf7-f76-o1-ve-your-surname\"."
+            },
+            {
+                "identification": "Company name (text)",
+                "evaluation": "pass",
+                "reasoning": "Error message appeared; input has aria-invalid=\"true\" and aria-describedby=\"wpcf7-f76-o1-ve-agency-name\"."
+            },
+            {
+                "identification": "Location (text)",
+                "evaluation": "pass",
+                "reasoning": "Error message appeared; input has aria-invalid=\"true\" and aria-describedby=\"wpcf7-f76-o1-ve-location\"."
+            },
+            {
+                "identification": "Telephone (tel)",
+                "evaluation": "pass",
+                "reasoning": "Error message appeared; input has aria-invalid=\"true\" and aria-describedby=\"wpcf7-f76-o1-ve-your-telephone\"."
+            },
+            {
+                "identification": "Email (email)",
+                "evaluation": "pass",
+                "reasoning": "Error message appeared; input has aria-invalid=\"true\" and aria-describedby=\"wpcf7-f76-o1-ve-your-email\"."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "fail",
+                "reasoning": "Error shown in a global list, but only the group wrapper received aria-describedby; the individual radio input lacks aria-describedby/aria-invalid and the nearby tip is aria-hidden, so the error is not programmatically associated to this option."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "fail",
+                "reasoning": "Same as above; no programmatic association on the radio input itself."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "fail",
+                "reasoning": "Error bound to the group wrapper (aria-describedby on span id 787966713), not to the individual radio control; adjacent tip is aria-hidden."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "fail",
+                "reasoning": "Same as above; no aria-describedby/aria-invalid on the individual option."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "fail",
+                "reasoning": "Same as above; error not programmatically associated with the radio input."
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "fail",
+                "reasoning": "A list item with the error was added and a local tip inserted, but the select did not receive aria-describedby or aria-invalid; the tip is aria-hidden, so the error is not programmatically associated."
+            },
+            {
+                "identification": "Please specify (text)",
+                "evaluation": "fail",
+                "reasoning": "Marked required but no error message appeared and no aria-invalid/aria-describedby was added after submission."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business? (textarea)",
+                "evaluation": "pass",
+                "reasoning": "Error message appeared; textarea has aria-invalid=\"true\" and aria-describedby=\"wpcf7-f76-o1-ve-your-message\"."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is optional and produced no validation error, so error identification does not apply."
+            },
+            {
+                "identification": "Please leave this field empty. (text)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional honeypot field; no validation required when left empty, so error identification is not applicable."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "pass",
+                "reasoning": "Error message shown and programmatically linked via aria-describedby (\"wpcf7-f76-o1-ve-your-forname\"); aria-invalid=\"true\" set."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "pass",
+                "reasoning": "Error message shown and programmatically linked via aria-describedby (\"wpcf7-f76-o1-ve-your-surname\"); aria-invalid=\"true\" set."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "pass",
+                "reasoning": "Error message shown and programmatically linked via aria-describedby (\"wpcf7-f76-o1-ve-agency-name\"); aria-invalid=\"true\" set."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "pass",
+                "reasoning": "Error message shown and programmatically linked via aria-describedby (\"wpcf7-f76-o1-ve-location\"); aria-invalid=\"true\" set."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "Error message shown and programmatically linked via aria-describedby (\"wpcf7-f76-o1-ve-your-telephone\"); aria-invalid=\"true\" set."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "Error message shown and programmatically linked via aria-describedby (\"wpcf7-f76-o1-ve-your-email\"); aria-invalid=\"true\" set."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional radio option; no validation is required when left empty."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional radio option; no validation is required when left empty."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional radio option; no validation is required when left empty."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional radio option; no validation is required when left empty."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional radio option; no validation is required when left empty."
+            },
+            {
+                "identification": "How did you hear about AdSmart?",
+                "evaluation": "fail",
+                "reasoning": "A summary item was added, but no aria-describedby/aria-invalid was observed on the select and the inline tip is aria-hidden, so the error is not programmatically associated with the select."
+            },
+            {
+                "identification": "Please specify",
+                "evaluation": "fail",
+                "reasoning": "No specific error message or ARIA association was observed for this required text field after submission."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "fail",
+                "reasoning": "Error message shown and programmatically linked via aria-describedby (\"wpcf7-f76-o1-ve-your-message\"); aria-invalid=\"true\" set."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no validation is required when left empty."
+            },
+            {
+                "identification": "Please leave this field empty.",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional/honeypot field; no validation is required when left empty."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "pass",
+                "reasoning": "Error shown and programmatically linked via aria-describedby=\"wpcf7-f76-o1-ve-your-forname\"; aria-invalid=\"true\" set."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "pass",
+                "reasoning": "Error shown and programmatically linked via aria-describedby=\"wpcf7-f76-o1-ve-your-surname\"; aria-invalid=\"true\" set."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "pass",
+                "reasoning": "Error shown and programmatically linked via aria-describedby=\"wpcf7-f76-o1-ve-agency-name\"; aria-invalid=\"true\" set."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "pass",
+                "reasoning": "Error shown and programmatically linked via aria-describedby=\"wpcf7-f76-o1-ve-location\"; aria-invalid=\"true\" set."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "Error shown and programmatically linked via aria-describedby=\"wpcf7-f76-o1-ve-your-telephone\"; aria-invalid=\"true\" set."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "Error shown and programmatically linked via aria-describedby=\"wpcf7-f76-o1-ve-your-email\"; aria-invalid=\"true\" set."
+            },
+            {
+                "identification": "Phone (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional radio option; no validation required when left empty."
+            },
+            {
+                "identification": "Email (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional radio option; no validation required when left empty."
+            },
+            {
+                "identification": "Agency (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional radio option; no validation required when left empty."
+            },
+            {
+                "identification": "Direct advertiser (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional radio option; no validation required when left empty."
+            },
+            {
+                "identification": "Other (radio)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional radio option; no validation required when left empty."
+            },
+            {
+                "identification": "How did you hear about AdSmart? (select)",
+                "evaluation": "fail",
+                "reasoning": "Only a summary list item was added; the select did not receive aria-describedby; the local tip is aria-hidden=\"true\". No programmatic association detected."
+            },
+            {
+                "identification": "Please specify",
+                "evaluation": "fail",
+                "reasoning": "Required per spec, but no error message appeared and no aria-invalid/aria-describedby were added after submission."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "pass",
+                "reasoning": "Error shown and programmatically linked via aria-describedby=\"wpcf7-f76-o1-ve-your-message\"; aria-invalid=\"true\" set."
+            },
+            {
+                "identification": "No Label (checkbox)",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional checkbox; no validation required when left empty."
+            },
+            {
+                "identification": "Please leave this field empty.",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional honeypot text field; no validation required when left empty."
+            }
+        ]
+    }
+]

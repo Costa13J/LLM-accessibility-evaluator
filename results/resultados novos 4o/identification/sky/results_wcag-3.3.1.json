@@ -1,0 +1,522 @@
+[
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "pass",
+                "reasoning": "The required fields have error messages that are programmatically linked using aria-describedby, ensuring that screen readers can announce the error messages. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "pass",
+                "reasoning": "The required fields have error messages that are programmatically linked using aria-describedby, ensuring that screen readers can announce the error messages. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "pass",
+                "reasoning": "The required fields have error messages that are programmatically linked using aria-describedby, ensuring that screen readers can announce the error messages. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "pass",
+                "reasoning": "The required fields have error messages that are programmatically linked using aria-describedby, ensuring that screen readers can announce the error messages. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "The required fields have error messages that are programmatically linked using aria-describedby, ensuring that screen readers can announce the error messages. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The required fields have error messages that are programmatically linked using aria-describedby, ensuring that screen readers can announce the error messages. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "How did you hear about AdSmart?",
+                "evaluation": "pass",
+                "reasoning": "The required fields have error messages that are programmatically linked using aria-describedby, ensuring that screen readers can announce the error messages. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Please specify",
+                "evaluation": "pass",
+                "reasoning": "The required fields have error messages that are programmatically linked using aria-describedby, ensuring that screen readers can announce the error messages. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "pass",
+                "reasoning": "The required fields have error messages that are programmatically linked using aria-describedby, ensuring that screen readers can announce the error messages. This satisfies WCAG 3.3.1 guidelines for error identification."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is used to indicate an error state."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is used to indicate an error state."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is used to indicate an error state."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is used to indicate an error state."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is used to indicate an error state."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is used to indicate an error state."
+            },
+            {
+                "identification": "How did you hear about AdSmart?",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is used to indicate an error state."
+            },
+            {
+                "identification": "Please specify",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is used to indicate an error state."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is used to indicate an error state."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "How did you hear about AdSmart?",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Please specify",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message that is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message that is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message that is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message that is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message that is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message that is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "How did you hear about AdSmart?",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message that is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Please specify",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message that is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message that is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "How did you hear about AdSmart?",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Please specify",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "How did you hear about AdSmart?",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Please specify",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "How did you hear about AdSmart?",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Please specify",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "How did you hear about AdSmart?",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Please specify",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message programmatically linked using aria-describedby, ensuring screen readers can announce it. The aria-invalid attribute is also used to indicate an error state."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "How did you hear about AdSmart?",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Please specify",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "pass",
+                "reasoning": "The error message is programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. This satisfies WCAG 3.3.1 guidelines for error identification."
+            }
+        ]
+    },
+    {
+        "url": "https://www.adsmartfromsky.co.uk/contact-us/",
+        "model": "openai/gpt-4o-2024-08-06",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "Your first name",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Your surname",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Company name",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Location",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Telephone",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "How did you hear about AdSmart?",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Please specify",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. The aria-invalid attribute is also used to indicate an error state."
+            },
+            {
+                "identification": "Any comments regarding AdSmart or your business?",
+                "evaluation": "pass",
+                "reasoning": "The required field has an error message programmatically linked using aria-describedby, ensuring that screen readers can announce the error message. The aria-invalid attribute is also used to indicate an error state."
+            }
+        ]
+    }
+]

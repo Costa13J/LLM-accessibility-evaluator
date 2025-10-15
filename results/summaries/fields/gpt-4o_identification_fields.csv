@@ -1,0 +1,68 @@
+page,URL,Field,Runs,benchmark,field_accuracy,is_consistent
+amazon,amazon,Your name,10,pass,1.0,True
+amazon,amazon,No Label,10,,,True
+amazon,amazon,Mobile number or email,10,pass,1.0,True
+amazon,amazon,Password,10,pass,1.0,True
+amazon,amazon,Re-enter password,10,fail,1.0,True
+bible,infinite,First Name,10,fail,0.0,True
+bible,infinite,Last Name,10,fail,0.0,True
+bible,infinite,Email,10,pass,1.0,True
+bible,infinite,Organization,10,pass,1.0,True
+bible,infinite,Website,10,inapplicable,1.0,True
+cricbuz,cricbuzz,name,10,fail,1.0,True
+cricbuz,cricbuzz,email,10,fail,1.0,True
+cricbuz,cricbuzz,subject,10,fail,1.0,True
+cricbuz,cricbuzz,No Label (textarea),10,fail,1.0,True
+cricbuz,cricbuzz,"(jpg,png,gif,bmp) (file)",10,inapplicable,1.0,True
+dictionary,blog.collinsdictionary.com,Search,9,,,True
+dictionary,blog.collinsdictionary.com,First,10,pass,0.6,False
+dictionary,blog.collinsdictionary.com,Last,10,pass,0.6,False
+dictionary,blog.collinsdictionary.com,Email *,10,pass,0.6,False
+dictionary,blog.collinsdictionary.com,Subject *,9,pass,0.6666666666666666,False
+dictionary,blog.collinsdictionary.com,Add more subject detail,10,inapplicable,0.9,False
+dictionary,blog.collinsdictionary.com,Comment or Message *,9,pass,0.6666666666666666,False
+dictionary,blog.collinsdictionary.com,Email (2),9,,,True
+dictionary,blog.collinsdictionary.com,No Label,9,,,True
+houston,uh.edu,Search Field (text),10,inapplicable,0.9,False
+houston,uh.edu,First Name,10,fail,1.0,True
+houston,uh.edu,Last Name,10,fail,1.0,True
+houston,uh.edu,Month,10,fail,1.0,True
+houston,uh.edu,Day,10,fail,1.0,True
+houston,uh.edu,Year,10,fail,1.0,True
+houston,uh.edu,Email Address,10,fail,1.0,True
+houston,uh.edu,Mobile Phone Number,10,fail,1.0,True
+houston,uh.edu,You plan to enroll as a:,10,fail,1.0,True
+houston,uh.edu,When would you like to start classes at UH?,10,fail,0.7,False
+livescore,livescore,Email address (text),10,fail,1.0,True
+livescore,livescore,No Label (select),10,fail,1.0,True
+livescore,livescore,Please select a subject (checkbox),10,,,False
+livescore,livescore,Message (textarea),10,fail,1.0,True
+pexels,pexels,First name,10,fail,1.0,True
+pexels,pexels,Last name,10,fail,1.0,True
+pexels,pexels,Email,10,fail,1.0,True
+pexels,pexels,Password,10,fail,1.0,True
+sky,adsmartfromsky,Your first name,10,pass,1.0,True
+sky,adsmartfromsky,Your surname,10,pass,1.0,True
+sky,adsmartfromsky,Company name,10,pass,1.0,True
+sky,adsmartfromsky,Location,10,pass,1.0,True
+sky,adsmartfromsky,Telephone,10,pass,1.0,True
+sky,adsmartfromsky,Email,10,pass,1.0,True
+sky,adsmartfromsky,How did you hear about AdSmart?,10,pass,1.0,True
+sky,adsmartfromsky,Please specify,10,,,True
+sky,adsmartfromsky,Any comments regarding AdSmart or your business?,10,pass,1.0,True
+sky,adsmartfromsky,AdSmart from Sky updates (checkbox),10,inapplicable,0.0,True
+sky,adsmartfromsky,Email (radio),10,pass,0.0,True
+sky,adsmartfromsky,Phone (radio),10,pass,0.0,True
+sky,adsmartfromsky,Direct advertiser (radio),10,pass,0.0,True
+sky,adsmartfromsky,Other (radio),10,pass,0.0,True
+sky,adsmartfromsky,Agency (radio),10,pass,0.0,True
+steam,store.steampowered.com,Search the store,10,,,True
+steam,store.steampowered.com,Email Address,10,fail,0.5,False
+steam,store.steampowered.com,Confirm your Address,10,fail,0.5,False
+steam,store.steampowered.com,Country of Residence,10,inapplicable,1.0,True
+steam,store.steampowered.com,I am 13 years of age or older and agree to the terms of the Steam Subscriber Agreement and the Valve Privacy Policy.,10,fail,0.0,True
+zomato,zomato,phone number,10,fail,1.0,True
+zomato,zomato,name,10,fail,1.0,True
+zomato,zomato,city selection,10,inapplicable,1.0,True
+zomato,zomato,consent checkbox,10,fail,1.0,True
+zomato,zomato,filter by city,10,,,True

@@ -1,0 +1,12 @@
+Model,URL,True Positives,True Negatives,False Positives,False Negatives,Accuracy,Precision,Recall,F1-score,Coverage,Total samples used,Run ID
+gpt-4,cricbuzz,0,4,0,0,1.0,0.0,0.0,0.0,4/6 (66.7%),4,1
+gpt-4,cricbuzz,0,4,0,0,1.0,0.0,0.0,0.0,4/6 (66.7%),4,2
+gpt-4,cricbuzz,0,4,0,0,1.0,0.0,0.0,0.0,4/6 (66.7%),4,3
+gpt-4,cricbuzz,0,4,0,0,1.0,0.0,0.0,0.0,4/6 (66.7%),4,4
+gpt-4,cricbuzz,0,4,0,0,1.0,0.0,0.0,0.0,4/6 (66.7%),4,5
+gpt-4,cricbuzz,0,4,0,0,1.0,0.0,0.0,0.0,4/6 (66.7%),4,6
+gpt-4,cricbuzz,0,4,0,0,1.0,0.0,0.0,0.0,4/6 (66.7%),4,7
+gpt-4,cricbuzz,0,4,0,0,1.0,0.0,0.0,0.0,4/6 (66.7%),4,8
+gpt-4,cricbuzz,0,4,0,0,1.0,0.0,0.0,0.0,4/6 (66.7%),4,9
+gpt-4,cricbuzz,0,4,0,0,1.0,0.0,0.0,0.0,4/6 (66.7%),4,10
+ALL,ALL,0,40,0,0,1.0,0.0,0.0,0.0,N/A,40,TOTAL

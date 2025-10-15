@@ -1,0 +1,472 @@
+[
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "Error text \"Name is required.\" is shown, aria-invalid=true is set, but aria-describedby points to a non-existent -fname-error element; the visible error has a different ID, so there’s no programmatic association to this field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "Error text exists only as a generic \"Name is required.\" message; aria-invalid=true is set, but aria-describedby references a -lname-error ID that was not added. No programmatic association to this field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "\"Email is required.\" is shown and referenced by aria-describedby on the email input; aria-invalid=true is set, providing both visual and programmatic association.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "\"Organization is required.\" is shown and referenced by aria-describedby on the organization input; aria-invalid=true is set, providing both visual and programmatic association.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is optional and does not trigger validation feedback when left empty.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "A generic \"Name is required.\" message appeared, but the input’s aria-describedby points to an id ('...-fname-error') not evidenced; no confirmed field-specific, programmatically associated error, despite aria-invalid=\"true\".",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "Only a generic \"Name is required.\" message is shown; the input’s aria-describedby points to an id ('...-lname-error') not evidenced in the DOM, so no confirmed programmatic association for this field, despite aria-invalid=\"true\".",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "\"Email is required.\" message was added and referenced via aria-describedby on the input; aria-invalid=\"true\" also indicates the error state.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "\"Organization is required.\" message was added and referenced via aria-describedby on the input; aria-invalid=\"true\" also indicates the error state.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is optional and not expected to produce validation feedback when left empty.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "aria-invalid is set, but the input’s aria-describedby points to a non-existent -fname-error element; the visible \"Name is required.\" message is not programmatically linked to this field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "aria-invalid is set, but the input’s aria-describedby points to a non-existent -lname-error element; the visible \"Name is required.\" message is not programmatically linked to this field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "Shows \"Email is required.\" after submission and is programmatically linked via aria-describedby to the visible error element; aria-invalid is set to true.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "Shows \"Organization is required.\" after submission and is programmatically linked via aria-describedby to the visible error element; aria-invalid is set to true.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no validation; error identification is not required.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "A group-level “Name is required.” message appeared, but no First Name–specific error node exists. The input has aria-invalid=\"true\" and aria-describedby set to a non-existent id, so there is no programmatic association to an error message.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "No Last Name–specific error node was added. Although aria-invalid=\"true\" and aria-describedby were set, the referenced id was not present; only a group-level message exists, not associated to this field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error “Email is required.” was inserted and referenced by the input via aria-describedby; aria-invalid=\"true\" indicates the error state, ensuring programmatic and visible association.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The error “Organization is required.” was inserted and referenced by the input via aria-describedby; aria-invalid=\"true\" indicates the error state, ensuring programmatic and visible association.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and not expected to produce validation errors when left empty.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "A generic message “Name is required.” was added with a different id than the one referenced by aria-describedby (…-fname-error). With no matching error element, the input lacks a programmatic association despite aria-invalid being set.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "aria-describedby was set to …-lname-error, but no corresponding error element is present. Only a group-level “Name is required.” message exists with a different id, so there’s no programmatic association for this specific field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error “Email is required.” is visible and referenced via aria-describedby to email-…-error; aria-invalid is true, providing a clear programmatic and visual link.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The error “Organization is required.” is visible and referenced via aria-describedby to text-…-error; aria-invalid is true, providing a clear programmatic and visual link.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and does not require validation feedback when left empty.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "A generic “Name is required.” message appeared, but the input’s aria-describedby points to a non-existent -fname-error element; no programmatic link to a specific error for this field, despite aria-invalid=\"true\".",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "aria-describedby was set to a -lname-error id with no corresponding error element detected; the generic “Name is required.” message is not programmatically associated to this input, despite aria-invalid=\"true\".",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error “Email is required.” is shown and programmatically linked via aria-describedby to the matching error element; aria-invalid=\"true\" is set.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The error “Organization is required.” is shown and programmatically linked via aria-describedby to the matching error element; aria-invalid=\"true\" is set.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field with no validation required or shown.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "A generic \"Name is required.\" message appeared, but the input’s aria-describedby points to a non-existent -fname-error element. aria-invalid=\"true\" alone does not convey the error text.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "No specific Last Name error element exists. aria-describedby points to a non-existent -lname-error element; aria-invalid=\"true\" is present but insufficient.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The message \"Email is required.\" was added and referenced via aria-describedby; aria-invalid=\"true\" indicates the error state.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The message \"Organization is required.\" was added and referenced via aria-describedby; aria-invalid=\"true\" indicates the error state.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and not expected to produce error feedback when empty.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "A generic “Name is required.” message was shown, but the input’s aria-describedby points to a non-existent id (…-fname-error). With no matching error element, the message is not programmatically associated; aria-invalid alone is insufficient.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "aria-describedby was set to …-lname-error, but no element with that id exists; only a generic “Name is required.” with a different id was added. No programmatic association to this field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "“Email is required.” was added with id email-…-error and referenced via aria-describedby; aria-invalid=\"true\" indicates error state. Visually and programmatically linked.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "“Organization is required.” was added with id text-…-error and referenced via aria-describedby; aria-invalid=\"true\" indicates error state. Visually and programmatically linked.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "Field is optional; no error required or shown.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "aria-invalid was set, but aria-describedby points to a non-existent \"-fname-error\" element; the visible \"Name is required.\" message is not programmatically associated to this field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "aria-invalid was set, but aria-describedby points to a non-existent \"-lname-error\" element; the visible \"Name is required.\" message is not programmatically associated to this field.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "A specific error \"Email is required.\" was added, and aria-describedby references that element; aria-invalid=\"true\" indicates error state.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "A specific error \"Organization is required.\" was added, and aria-describedby references that element; aria-invalid=\"true\" indicates error state.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "Optional field; no error expected or shown.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    },
+    {
+        "url": "https://www.infinite.media/bible-gateway/",
+        "model": "openai/gpt-5",
+        "submit_clicked": true,
+        "fields": [
+            {
+                "identification": "First Name",
+                "evaluation": "fail",
+                "reasoning": "A general error “Name is required.” appeared, but the input’s aria-describedby points to a -fname-error id with no corresponding error element observed; although aria-invalid=\"true\" was set, there is no confirmed programmatic link to a visible, field-specific error.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Last Name",
+                "evaluation": "fail",
+                "reasoning": "The input’s aria-describedby was set to a -lname-error id without a corresponding error element observed; aria-invalid=\"true\" is present, but there is no confirmed programmatic association to a visible, field-specific error.",
+                "benchmark": "fail",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Email",
+                "evaluation": "pass",
+                "reasoning": "The error “Email is required.” was shown and programmatically linked via aria-describedby to the error element; aria-invalid=\"true\" indicates the error state.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Organization",
+                "evaluation": "pass",
+                "reasoning": "The error “Organization is required.” was shown and programmatically linked via aria-describedby to the error element; aria-invalid=\"true\" indicates the error state.",
+                "benchmark": "pass",
+                "match": "✅",
+                "reasoning_mismatch": false
+            },
+            {
+                "identification": "Website",
+                "evaluation": "inapplicable",
+                "reasoning": "The field is optional and produced no error on submission, so error identification does not apply.",
+                "benchmark": "inapplicable",
+                "match": "✅",
+                "reasoning_mismatch": false
+            }
+        ]
+    }
+]

@@ -1,0 +1,12 @@
+Model,URL,True Positives,True Negatives,False Positives,False Negatives,Accuracy,Precision,Recall,F1-score,Coverage,Total samples used,Run ID
+gpt-4,livescore,2,0,1,1,0.5,0.6666666666666666,0.6666666666666666,0.6666666666666666,4/4 (100.0%),4,1
+gpt-4,livescore,3,0,1,0,0.75,0.75,1,0.8571428571428571,4/4 (100.0%),4,2
+gpt-4,livescore,1,0,0,0,1,1,1,1,1/3 (33.3%),1,3
+gpt-4,livescore,3,0,1,0,0.75,0.75,1,0.8571428571428571,4/4 (100.0%),4,4
+gpt-4,livescore,1,0,0,0,1,1,1,1,1/3 (33.3%),1,5
+gpt-4,livescore,1,0,0,0,1,1,1,1,1/3 (33.3%),1,6
+gpt-4,livescore,1,0,0,0,1,1,1,1,1/3 (33.3%),1,7
+gpt-4,livescore,1,0,0,0,1,1,1,1,1/3 (33.3%),1,8
+gpt-4,livescore,1,0,0,0,1,1,1,1,1/3 (33.3%),1,9
+gpt-4,livescore,1,0,0,0,1,1,1,1,1/3 (33.3%),1,10
+ALL,ALL,15,0,3,1,0.7894736842105263,0.8333333333333334,0.9375,0.8823529411764706,N/A,19,TOTAL
