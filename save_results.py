@@ -3,7 +3,7 @@ import os
 import re
 
 
-def save_to_json(prediction, url, submit_clicked, model="openai/gpt-4o", evaluation_mode="wcag-3.3.1"):
+def save_to_json(prediction, url, submit_clicked, model="openai/gpt-4o", evaluation_mode="wcag-3.3.1"): #model and eval mode deafualts set
     filename = f"results_{evaluation_mode}.json"
     structured_fields = []
 
@@ -66,7 +66,6 @@ def save_to_json(prediction, url, submit_clicked, model="openai/gpt-4o", evaluat
             for ident, data in merged.items()
         ]
 
-    # --- CASE 2: single-submit (legacy) ---
     else:
         structured_fields = parse_format(prediction.format)
 

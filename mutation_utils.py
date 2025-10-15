@@ -3,7 +3,7 @@ import time
 def extract_mutation_observer_results(driver):
     time.sleep(0.5)
     raw_mutations = driver.execute_script("return window.mutationRecords || []")
-
+    print(raw_mutations)
     structured_mutations = []
     for m in raw_mutations:
         record = {
@@ -36,7 +36,7 @@ def extract_mutation_observer_results(driver):
         if m.get("validationFlag", False):
             record["validationFlag"] = True
 
-        # Added/removed/error message text
+        # Added and removed nodes, also error message text 
         for list_key in ["addedNodes", "removedNodes", "possibleErrorMessages"]:
             items = m.get(list_key, [])
             if items:

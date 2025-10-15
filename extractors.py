@@ -1,21 +1,7 @@
 from bs4 import BeautifulSoup
 from selenium.webdriver.common.by import By
 
-def extract_form_html(driver):
-    """Extracts raw HTML of all <form> elements as strings."""
-    soup = BeautifulSoup(driver.page_source, 'html.parser')
-    forms = soup.find_all("form")
-    if forms:
-        html_list = [str(form) for form in forms]
-        for idx, html in enumerate(html_list, 1):
-            print(f"--- FORM #{idx} ---\n{html}\n")
-        return html_list
-    else:
-        print("No forms found on the page.")
-        return []
-
-
-#Extracts the fields from the form, with their attributes and also errors 
+#Extracts the fields from the form with their attributes and also errors 
 def extract_fields(driver):
 
     soup = BeautifulSoup(driver.page_source, 'html.parser')
@@ -31,32 +17,32 @@ def extract_fields(driver):
         if any(s in style for s in ["display: none", "display:none", "visibility:hidden", "visibility: hidden"]):
             continue
 
-        # Skip fields inside visually hidden containers
+        # Skip fields in hidden containers
         hidden_parent = input_field.find_parent(
             style=lambda s: s and any(x in s.lower() for x in ["display: none", "visibility: hidden"])
         )
         if hidden_parent:
             continue
 
-        # === Label Extraction with Source Annotation ===
+        ##Label extraction with souece
         label_text = None
         label_source = None
 
-        # 1. label[for=id]
+        #label[for=id]
         if input_field.has_attr("id"):
             label_elem = soup.find("label", {"for": input_field["id"]})
             if label_elem and label_elem.text.strip():
                 label_text = label_elem.text.strip()
                 label_source = "label[for]"
 
-        # 2. <label> wrapper
+        #label wrapper
         if not label_text:
             wrapping_label = input_field.find_parent("label")
             if wrapping_label and wrapping_label.text.strip():
                 label_text = wrapping_label.text.strip()
                 label_source = "label-wrapper"
 
-        # 3. aria-labelledby
+        #aria-labelledby
         if not label_text and input_field.has_attr("aria-labelledby"):
             ids = input_field["aria-labelledby"].split()
             parts = []
@@ -68,28 +54,28 @@ def extract_fields(driver):
                 label_text = " ".join(parts)
                 label_source = "aria-labelledby"
 
-        # 4. aria-label
+        #aria-label
         if not label_text and input_field.has_attr("aria-label"):
             label_text = input_field["aria-label"].strip()
             label_source = "aria-label"
 
-        # 5. placeholder
+        #placeholder
         if not label_text and input_field.has_attr("placeholder"):
             label_text = input_field["placeholder"].strip()
             label_source = "placeholder"
 
-        # 6. title
+        #title
         if not label_text and input_field.has_attr("title"):
             label_text = input_field["title"].strip()
             label_source = "title"
 
-        # 7. fallback
+        #fallback
         if not label_text:
             label_text = "No Label"
             label_source = "none"
 
 
-        # === Value Extraction ===
+        #Value Extraction
         value = input_field.get("value", "")
         if input_field.name == "select":
             selected_option = input_field.find("option", selected=True)
@@ -98,7 +84,7 @@ def extract_fields(driver):
         if input_field.get("type") in ["checkbox", "radio"]:
             value = "checked" if input_field.has_attr("checked") else "unchecked"
 
-        # === Field Metadata ===
+        #Field Metadata
         field_info = {
             "label": label_text,
             "label_source": label_source,
@@ -194,7 +180,7 @@ def extract_buttons_for_llm(driver):
             })
             button_index += 1
 
-    # Include other clickable elements with onclick (e.g., spans/divs)
+    # Include other clickable elements with onclick
     for elem in soup.find_all(onclick=True):
         tag = elem.name
         text = elem.get_text(strip=True)

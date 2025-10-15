@@ -7,7 +7,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import WebDriverException
 
-# LLM identifies the actual submit button 
+# LLM call to identify the submit button 
 class IdentifySubmitButton(dspy.Signature):
 
     buttons_info = dspy.InputField(desc="List of button elements on the page, including tag, text, title, id, name, type, value and onclick.")
@@ -15,15 +15,14 @@ class IdentifySubmitButton(dspy.Signature):
 
 identify_submit_button = dspy.ChainOfThought(IdentifySubmitButton)
 
-# Uses an LLM to predict which button is the submit button.
 def get_submit_button_id_from_llm(buttons):
 
     response = identify_submit_button(buttons_info=str(buttons))
-    print("====BUTTON XPATH GIVEN BY THE LLM====")
-    print(response.predicted_button_id)
+    #print("====BUTTON XPATH GIVEN BY THE LLM====") # debug print
+    #print(response.predicted_button_id) # debug print
     return response.predicted_button_id if response.predicted_button_id != "None" else None 
 
-# Loads and injects an external JavaScript file for mutation observation
+# Loads and injects mutation observer
 def inject_mutation_observer(driver, script_path="mutationObserver.js"):
     
     try:
@@ -37,20 +36,20 @@ def inject_mutation_observer(driver, script_path="mutationObserver.js"):
     except Exception as e:
         print(f"Unexpected error while injecting Mutation Observer: {e}")
 
-# Finds and clicks the submit button using an LLM to identify it.
+# Finds and clicks the submit button with the response from LLM
 def find_and_click_submit_button(driver):
     global clicked
 
     try:
-        inject_mutation_observer(driver)
+        
         buttons = extract_buttons_for_llm(driver)
-        print ("=============BUTTONS FOR LLM TO SELECT==============")
-        print(buttons)
+        #print ("=============BUTTONS FOR LLM TO SELECT==============") # debug print
+        #print(buttons) # debug print
         if not buttons:
             print("No buttons found on the page.")
             return None  # No interaction possible
 
-        # Ask LLM which button is the submit button
+        # Use func that retrieves the response of LLM for which button is the submit button
         submit_button_id = get_submit_button_id_from_llm(buttons)
 
         if not submit_button_id or submit_button_id == "None":
@@ -97,7 +96,7 @@ def find_and_click_submit_button(driver):
             print("Trying JavaScript click...")
 
             try:
-                driver.execute_script("arguments[0].click();", submit_button)
+                driver.execute_script("arguments[0].click();", submit_button) #fallback click attempt
                 print("JavaScript click executed successfully!")
                 clicked = True
                 return "clicked"
@@ -113,7 +112,7 @@ def find_and_click_submit_button(driver):
     
 
 
-
+# LLM call to suggest invalid inputs for the specific form's fields 
 class SuggestInvalidInputsForTesting(dspy.Signature):
     """Suggest invalid input values tailored to each field type, in order to trigger meaningful error messages."""
 
@@ -130,7 +129,8 @@ class SuggestInvalidInputsForTesting(dspy.Signature):
         "- Email: missing '@' or domain (e.g., 'user.com')\n"
         "- Password: too short, too simple, or missing required characters\n"
         "- Date: wrong format or invalid date (e.g., '32/13/2023')\n"
-        "- Numeric: letters instead of numbers\n\n"
+        "- Numeric: letters instead of numbers\n"
+        "- Radio or checkbox: leave unselected\n\n"
         "Return one suggested invalid value per field in a structured format:\n"
         "- Field(label or name): <field>\n"
         "- Suggested invalid input: <value>\n"
@@ -164,19 +164,19 @@ def get_invalid_inputs_for_fields(fields, llm):
                     field = None
                     value = None
 
-    print("================[DEBUG parsed suggestions]==================")
-    print(parsed)
+    #print("================[DEBUG parsed suggestions]==================") # debug print
+    #print(parsed) # debug print
     return parsed
     
 
 
 
-
+#Type suggested (or fallback) values into the form's fields
 def type_invalid_inputs(driver, html_before, predefined_values=None):
     typed_inputs = []
 
-    print("==========[DEBUG: Predefined Invalid Values]==========")
-    print(predefined_values)
+    #print("==========[DEBUG: Predefined Invalid Values]==========") # debug print
+    #print(predefined_values)# debug print
 
     for field in html_before["fields"]:
         label = field.get("label", "")
@@ -188,17 +188,16 @@ def type_invalid_inputs(driver, html_before, predefined_values=None):
 
 
         print(f"\n[FIELD] {label} ({field_type})")
-        print(f"  - disabled={is_disabled}, readonly={is_readonly}")
+        print(f"- disabled={is_disabled}, readonly={is_readonly}")
 
         if is_disabled or is_readonly:
-            print(f"  - Skipping: disabled or readonly")
+            print(f"- Skipping: disabled or readonly")
             continue
 
         if field_type in ["hidden", "submit", "button", "fieldset", "file", "select", "checkbox"]:
-            print(f"  - Skipping: unsupported field type")
+            print(f"- Skipping: unsupported field type")
             continue
 
-        # ✨ Pull from predefined values (LLM), else fallback
         if predefined_values:
             match = next((item for item in predefined_values if item["field"].strip().lower() == label.strip().lower()), None)
             invalid_value = match["value"] if match else fallback_invalid_input(field_type, label)
@@ -206,51 +205,51 @@ def type_invalid_inputs(driver, html_before, predefined_values=None):
             invalid_value = fallback_invalid_input(field_type, label)
 
         if not invalid_value.strip():
-            print(f"  - Skipping: no invalid input generated")
+            print(f"- Skipping: no invalid input generated")
             continue
 
         element = None
         try:
             if field_id:
-                print(f"  - Trying ID: {field_id}")
+                print(f"- Trying ID: {field_id}")
                 element = driver.find_element(By.ID, field_id)
             elif field_name:
-                print(f"  - Trying NAME: {field_name}")
+                print(f"- Trying NAME: {field_name}")
                 elements = driver.find_elements(By.NAME, field_name)
                 for el in elements:
                     if el.is_enabled() and el.is_displayed():
                         element = el
                         break
             else:
-                print("  - Skipping: no locator (id or name)")
+                print("- Skipping: no locator (id or name)")
                 continue
 
             if not element:
-                print("  - Skipping: element not found")
+                print("- Skipping: element not found")
                 continue
 
             if not element.is_enabled() or not element.is_displayed():
-                print("  - Skipping: element not visible")
+                print("- Skipping: element not visible")
                 continue
 
             try:
                 element.clear()
             except WebDriverException as e:
-                print(f"  - Warning: clear() failed: {e}")
+                print(f"- Warning: clear() failed: {e}")
 
             try:
                 element.send_keys(invalid_value)
                 driver.execute_script("arguments[0].blur();", element)
-                print(f"  - Typed: '{invalid_value}'")
+                print(f"- Typed: '{invalid_value}'")
                 typed_inputs.append({
                     "field": label or field_name or field_id,
                     "value": invalid_value
                 })
             except WebDriverException as e:
-                print(f"  - Typing failed: {e}")
+                print(f"- Typing failed: {e}")
 
         except WebDriverException as e:
-            print(f"  - Not interactable: {e}")
+            print(f"- Not interactable: {e}")
 
     print(f"\nTyped invalid values: {typed_inputs}")
     return typed_inputs

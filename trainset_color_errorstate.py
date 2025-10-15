@@ -191,105 +191,88 @@ trainset_color_errorstate = [
 ).with_inputs("html_snippet_before", "invalid_inputs", "mutations", "retrieved_guidelines"),
 
 
-    
-
-
-
-
-
-
-
 ]
 
 
 trainset_color_no_submit = [
 
-    # 1 FAIL + FAIL: Required & error cues both color-only, unlinked message
+    # 1 FAIL - Required & error cues both rely on color only
     dspy.Example(
         html_snippet_before="""
 <label for="email">Email</label>
 <input id="email" style="border: 2px solid red;" class="error">
 <span style="color: red;">Required</span>
 """,
-        interaction_type="no_submit",
         invalid_inputs="[]",
         mutations="""[ComputedStyle] <input>#email border-color: red
 [Visible Message] 'Required' (not programmatically linked)
 [No aria attributes or other semantic indicators detected]""",
         retrieved_guidelines="WCAG 1.4.1: Do not rely on color alone to indicate required or error state information.",
         identification="email",
-        evaluation="""-Required Cue Evaluation("fail")
--Error Cue Evaluation("fail")""",
-        reasoning="""Required cue: red border and red text 'Required', but the message is not programmatically linked and no semantic attributes are present. Error cue: same color-only styling with no semantic support.""",
+        evaluation="fail",
+        reasoning="""Both the required and error cues depend solely on red color styling and an unlinked visible message. No semantic attributes or programmatic associations are present, so this fails WCAG 1.4.1.""",
         format="""-Identification(label or name of the field): email
--Required Cue Evaluation("fail")
--Error Cue Evaluation("fail")
--Reasoning(explanation of the evaluation result): Required cue: red border and red text 'Required', but the message is not programmatically linked and no semantic attributes are present. Error cue: same color-only styling with no semantic support."""
-    ).with_inputs("html_snippet_before", "interaction_type", "invalid_inputs", "mutations", "retrieved_guidelines"),
+-Evaluation: fail
+-Reasoning(explanation of the evaluation result): Both the required and error cues depend solely on red color styling and an unlinked visible message. No semantic attributes or programmatic associations are present, so this fails WCAG 1.4.1."""
+    ).with_inputs("html_snippet_before", "invalid_inputs", "mutations", "retrieved_guidelines"),
 
-    # 2 PASS + FAIL: Proper required cue (aria-required + asterisk), error cue color-only
+
+    # 2 FAIL - Proper required cue, but error cue uses color only
     dspy.Example(
         html_snippet_before="""
 <label for="zip">ZIP <span aria-hidden="true">*</span></label>
 <input id="zip" aria-required="true" style="border: 2px solid red;">
 """,
-        interaction_type="no_submit",
         invalid_inputs="[]",
         mutations="""[ARIA Attribute] <input>#zip aria-required="true"
 [ComputedStyle] <input>#zip border-color: red (error state)
 [No error message or semantic error indicators detected]""",
         retrieved_guidelines="WCAG 1.4.1: Use semantic or textual cues in addition to color for both required and error states.",
         identification="zip",
-        evaluation="""-Required Cue Evaluation("pass")
--Error Cue Evaluation("fail")""",
-        reasoning="""Required cue: visible asterisk plus aria-required attribute. Error cue: only a red border is used, with no associated text or semantic indicators, so it fails.""",
+        evaluation="fail",
+        reasoning="""The required cue is correctly implemented using both a visible asterisk and the aria-required attribute. However, the error cue relies solely on color (red border) with no associated text or semantic indicators, so this fails WCAG 1.4.1.""",
         format="""-Identification(label or name of the field): zip
--Required Cue Evaluation("pass")
--Error Cue Evaluation("fail")
--Reasoning(explanation of the evaluation result): Required cue: visible asterisk plus aria-required attribute. Error cue: only a red border is used, with no associated text or semantic indicators, so it fails."""
-    ).with_inputs("html_snippet_before", "interaction_type", "invalid_inputs", "mutations", "retrieved_guidelines"),
+-Evaluation: fail
+-Reasoning(explanation of the evaluation result): The required cue is correctly implemented using both a visible asterisk and the aria-required attribute. However, the error cue relies solely on color (red border) with no associated text or semantic indicators, so this fails WCAG 1.4.1."""
+    ).with_inputs("html_snippet_before", "invalid_inputs", "mutations", "retrieved_guidelines"),
 
-    # 3 PASS + PASS: Proper required cue (aria-required), proper error cue (aria-invalid + linked message)
+
+    # 3 PASS - Proper required cue and error cue with semantic support
     dspy.Example(
         html_snippet_before="""
 <label for="password">Password *</label>
 <input id="password" aria-required="true" aria-invalid="true" aria-describedby="pw-err">
 <div id="pw-err" class="error" role="alert">Must be 8+ characters</div>
 """,
-        interaction_type="no_submit",
         invalid_inputs="[]",
         mutations="""[ARIA Attribute] <input>#password aria-required="true"
 [ARIA Attribute] <input>#password aria-invalid="true"
 [Linked Error Message] 'Must be 8+ characters' linked via aria-describedby""",
         retrieved_guidelines="WCAG 1.4.1: Provide semantic cues such as aria-required and aria-invalid with linked error messages.",
         identification="password",
-        evaluation="""-Required Cue Evaluation("pass")
--Error Cue Evaluation("pass")""",
-        reasoning="""Required cue: visible asterisk and aria-required attribute. Error cue: aria-invalid and a linked error message ensure the cue is not color-only.""",
+        evaluation="pass",
+        reasoning="""Both required and error cues are conveyed with semantic and visible indicators. The aria-required and aria-invalid attributes are used properly, and the descriptive error message is linked via aria-describedby. This passes WCAG 1.4.1.""",
         format="""-Identification(label or name of the field): password
--Required Cue Evaluation("pass")
--Error Cue Evaluation("pass")
--Reasoning(explanation of the evaluation result): Required cue: visible asterisk and aria-required attribute. Error cue: aria-invalid and a linked error message ensure the cue is not color-only."""
-    ).with_inputs("html_snippet_before", "interaction_type", "invalid_inputs", "mutations", "retrieved_guidelines"),
+-Evaluation: pass
+-Reasoning(explanation of the evaluation result): Both required and error cues are conveyed with semantic and visible indicators. The aria-required and aria-invalid attributes are used properly, and the descriptive error message is linked via aria-describedby. This passes WCAG 1.4.1."""
+    ).with_inputs("html_snippet_before", "invalid_inputs", "mutations", "retrieved_guidelines"),
 
-    # 4 INAPPLICABLE + INAPPLICABLE: Optional field with no cues
+
+    # 4 INAPPLICABLE - Optional field with no validation cues
     dspy.Example(
         html_snippet_before="""
 <label for="nickname">Nickname (optional)</label>
 <input id="nickname">
 """,
-        interaction_type="no_submit",
         invalid_inputs="[]",
         mutations="No visual or semantic changes detected after interaction.",
         retrieved_guidelines="WCAG 1.4.1: No required or error cues are needed for optional fields without validation.",
         identification="nickname",
-        evaluation="""-Required Cue Evaluation("inapplicable")
--Error Cue Evaluation("inapplicable")""",
-        reasoning="""Field is optional, and no required or error cues were detected. Criterion not applicable.""",
+        evaluation="inapplicable",
+        reasoning="""The field is optional, with no required or error cues detected. Since no validation or error state applies, this case is inapplicable under WCAG 1.4.1.""",
         format="""-Identification(label or name of the field): nickname
--Required Cue Evaluation("inapplicable")
--Error Cue Evaluation("inapplicable")
--Reasoning(explanation of the evaluation result): Field is optional, and no required or error cues were detected. Criterion not applicable."""
-    ).with_inputs("html_snippet_before", "interaction_type", "invalid_inputs", "mutations", "retrieved_guidelines"),
+-Evaluation: inapplicable
+-Reasoning(explanation of the evaluation result): The field is optional, with no required or error cues detected. Since no validation or error state applies, this case is inapplicable under WCAG 1.4.1."""
+    ).with_inputs("html_snippet_before", "invalid_inputs", "mutations", "retrieved_guidelines"),
 ]
 

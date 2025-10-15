@@ -1,6 +1,6 @@
 import dspy
 
-# Signature for evaluation
+# Signature for evaluation of Missing Programmatic Cues – Required
 class EvaluateInteractiveCues(dspy.Signature):
     """Evaluate whether form fields correctly use the 'required' attribute based on their behavior after submission."""
     html_snippet_before = dspy.InputField(desc=(
@@ -21,7 +21,7 @@ class EvaluateInteractiveCues(dspy.Signature):
         "- pass: The field is required and clearly uses the 'required' attribute or an equivalent semantic cue (e.g., aria-required).\n"
         "- fail: The field is required but lacks the 'required' attribute or any equivalent semantic indicator (e.g., aria-required).\n"
         "- inapplicable: The field is optional (not marked as required in behavior) or not subject to required validation.\n\n"
-        "**Do not fail a field for unrelated issues such as missing error messages or lack of ARIA descriptions. This evaluation is only about required status and how it is declared.**"
+        "Do not fail a field for unrelated issues such as missing error messages or lack of ARIA descriptions. This evaluation is only about required status and how it is declared."
     ))
     reasoning = dspy.OutputField(desc=(
         "For each field, explain why it was marked 'pass', 'fail', or 'inapplicable'.\n"
@@ -41,49 +41,11 @@ class EvaluateInteractiveCues(dspy.Signature):
     ))
 
 
-# Generate a search query to find relevant WCAG guidelines and techniques for interactive cues.
-class GenerateSearchRequired(dspy.Signature):
-    html_snippet = dspy.InputField(desc=(
-        "A structured HTML snippet representing form field attributes before user interaction. "
-        "This includes relevant states such as `required`, `disabled`, `readonly`, and associated validation feedback."
-    ))
-    query = dspy.OutputField(desc=(
-        "A well-formed search query designed to retrieve the most relevant examples from wcag and best practices. "
-        "The query should focus on accessibility issues related to form cues, ensuring proper use of `required` attributes."
-    ))
-
-# Generate a search query to find relevant WCAG guidelines and techniques for error identification.
-class GenerateSearchQuery(dspy.Signature):
-    html_snippet = dspy.InputField(desc=(
-        "A structured representation of form fields and their behavior before user interaction. "
-        "This includes validation-related attributes (e.g., `aria-invalid`, `aria-describedby`) and observed error messages."
-    ))
-    query = dspy.OutputField(desc=(
-        "A well-formed search query designed to retrieve the most relevant WCAG techniques and accessibility best practices. "
-        "The query should focus on how error messages should be identified and associated with form fields. "
-    ))
-
-
-class GenerateSearchQueryErrorClarity(dspy.Signature):
-    html_snippet = dspy.InputField(desc=(
-        "A structured list of form fields with types and invalid inputs used for testing error message clarity."
-    ))
-    query = dspy.OutputField(desc=(
-        "Search query focused on WCAG 3.3.3 and how error messages should guide users to correct mistakes."
-    ))
-
-class GenerateSearchQueryUseOfColor(dspy.Signature):
-    html_snippet = dspy.InputField(desc=(
-        "A structured list of form fields with labels, types, and attributes before user interaction. "
-        "Used to generate queries focused on how required or error cues may rely solely on color."
-    ))
-    query = dspy.OutputField(desc=(
-        "Search query focused on WCAG 1.4.1 and how forms must not rely only on color to convey required fields or validation errors."
-    ))
 
 
 
-#Failure to identify errors
+
+# Signature for evaluation of Failure to Identify Errors or Invalid Identification
 class EvaluateErrorIdentification(dspy.Signature):
     """Evaluate whether each form field provides accessible error identification, individually."""
 
@@ -101,8 +63,8 @@ class EvaluateErrorIdentification(dspy.Signature):
     ))
     evaluation = dspy.OutputField(desc=(
         "Individually assess each field for accessible error identification after submission, and classify each one as 'pass', 'fail', or 'inapplicable':\n"
-        "- pass: A specific error message is shown for this field, programmatically or visually associated.\n"
-        "- fail: No specific error message is shown, or the message is unlinked or too vague.\n"
+        "- pass: A specific error message is shown for this field, programmatically and visually associated.\n"
+        "- fail: No specific error message is shown, or the or the message is not programmatically or visually associated with the field.\n"
         "- inapplicable: The field is optional or does not require validation when left empty."
     ))
     reasoning = dspy.OutputField(desc=(
@@ -122,37 +84,31 @@ class EvaluateErrorIdentification(dspy.Signature):
     ))
 
 
-
+# Signature for evaluation of Ambiguous or Generic Error Messages
 class EvaluateErrorClarity(dspy.Signature):
     """Evaluate whether error messages clearly explain the input problem and guide the user toward correction (WCAG 3.3.3)."""
 
     html_snippet_before = dspy.InputField(desc=(
         "HTML structure of the form fields before user interaction. This includes each input’s label, type, constraints (e.g., pattern, minlength), and attributes like aria-describedby."
     ))
-
     invalid_inputs = dspy.InputField(desc=(
         "List of values submitted into specific fields to test error handling. These values are intentionally unusual, malformed, or nonstandard — but not necessarily guaranteed to trigger validation."
     ))
-
     mutations = dspy.InputField(desc=(
         "List of DOM mutations after form submission. Includes error messages shown, updated attributes (e.g., aria-invalid), and other relevant visual or programmatic feedback."
     ))
-
     retrieved_guidelines = dspy.InputField(desc=(
         "Relevant WCAG techniques and best practices for ensuring clear and actionable error messages (especially for WCAG 3.3.3)."
     ))
-
     identification = dspy.OutputField(desc=(
         "Identify each field by its visible label (preferred), or by name/id if no label is available. Each field must be evaluated separately."
     ))
-
     evaluation = dspy.OutputField(desc=(
         "Assess whether the system provided clear guidance when a validation error was triggered. Use these options per field:\n"
         "- pass: A validation error was triggered, and the message clearly explains the problem and how to fix it.\n"
         "- fail: A validation error was triggered, but the message was missing, vague, or unhelpful.\n"
         "- inapplicable: No validation was triggered, or no error was expected for the given input."
     ))
-
     reasoning = dspy.OutputField(desc=(
         "For each field, explain the evaluation:\n"
         "- What test input was used?\n"
@@ -163,7 +119,6 @@ class EvaluateErrorClarity(dspy.Signature):
         "  - For 'fail': explain what was missing or unclear\n"
         "  - For 'inapplicable': explain why no validation was expected or triggered"
     ))
-
     format = dspy.OutputField(desc=(
         "Provide a structured evaluation per field using exactly this format:\n\n"
         "-Identification(label or name of the field): <identification>\n"
@@ -173,109 +128,29 @@ class EvaluateErrorClarity(dspy.Signature):
     ))
 
 
-
-class EvaluateUseOfColorDual(dspy.Signature):
-    """
-    Evaluate whether error states in form fields rely solely on color,
-    in violation of WCAG 1.4.1. Required cues are not evaluated here.
-    """
-
-    html_snippet_before = dspy.InputField(desc=(
-        "A list of form fields and their HTML structure before user interaction. "
-        "This includes input elements, labels, and validation-related attributes."
-    ))
-
-    interaction_type = dspy.InputField(desc=(
-        "What kind of form interaction was simulated:\n"
-        "- 'empty_submit' → Submitting with all fields empty.\n"
-        "- 'invalid_input_submit' → Submitting with intentionally malformed values.\n"
-        "Both interactions can trigger error cues."
-    ))
-
-    invalid_inputs = dspy.InputField(desc=(
-        "List of intentionally malformed input values submitted to trigger errors. "
-        "Required only for 'invalid_input_submit'; otherwise leave empty."
-    ))
-
-    mutations = dspy.InputField(desc=(
-        "List of DOM mutations observed after interaction. Includes any visual changes "
-        "(e.g., red border, background color), attribute changes (e.g., aria-invalid), "
-        "and added messages (e.g., 'This field is required')."
-    ))
-
-    retrieved_guidelines = dspy.InputField(desc=(
-        "Relevant WCAG techniques and best practices for ensuring that errors are "
-        "not communicated using color alone."
-    ))
-
-    identification = dspy.OutputField(desc=(
-        "Individually identify each field by its visible label (preferred) or its name/id if no label is available. "
-        "Each field must be listed separately."
-    ))
-
-    evaluation = dspy.OutputField(desc=(
-        "For each field, classify the ERROR cue depending on the interaction_type. "
-        "Ignore required cues entirely (mark them as 'inapplicable').\n\n"
-        "Error cue classification:\n"
-        "   - PASS: Error is indicated with programmatic/textual support such as `aria-invalid=\"true\"`, "
-        "an error message linked via `aria-describedby`, a role=\"alert\" message associated with the input, "
-        "or visible text programmatically linked to the field.\n"
-        "   - FAIL: The only error indicator is a visual treatment (red border, color change) "
-        "or an unlinked message/icon that does not identify the field programmatically.\n"
-        "   - INAPPLICABLE: No error was triggered in this interaction.\n\n"
-        "**Only evaluate error cues in terms of reliance on color versus programmatic/textual alternatives. "
-        "Ignore required cues and unrelated accessibility issues.**"
-    ))
-
-    reasoning = dspy.OutputField(desc=(
-        "For each field, briefly explain why the error cue received its evaluation:\n"
-        "- State what indicators were detected for the error cue (e.g., aria-invalid, linked error message, red text).\n"
-        "- Connect each indicator to the classification (pass, fail, inapplicable).\n"
-        "- Explicitly say if the error cue relies only on color, or why it is inapplicable.\n"
-        "Keep explanations short and focused only on error cues and their use of color."
-    ))
-
-    format = dspy.OutputField(desc=(
-        "For each field, provide output in this exact format:\n\n"
-        "-Identification(label or name of the field): <identification>\n"
-        "-Error Cue Evaluation(\"pass\" or \"fail\" or \"inapplicable\"): <eval>\n"
-        "-Reasoning(explanation of the evaluation result): <reasoning>\n\n"
-        "Do not combine multiple fields. Each field must be evaluated and explained independently."
-    ))
-
-
+# Signature for evaluation of Error States Indicated Only by Color
 class EvaluateUseOfColor(dspy.Signature):
-    """
-    Evaluate whether error states in form fields rely solely on color,
-    in violation of WCAG 1.4.1. Required cues are not evaluated here.
-    Only invalid input submissions are considered.
-    """
-
+    """Evaluate whether error states in form fields rely solely on color"""
     html_snippet_before = dspy.InputField(desc=(
         "A list of form fields and their HTML structure before user interaction. "
         "This includes input elements, labels, and validation-related attributes."
     ))
-
     invalid_inputs = dspy.InputField(desc=(
         "List of intentionally malformed input values submitted to trigger errors."
     ))
-
     mutations = dspy.InputField(desc=(
         "List of DOM mutations observed after submitting invalid input. Includes any visual changes "
         "(e.g., red border, background color), attribute changes (e.g., aria-invalid), "
         "and added messages (e.g., 'Enter a valid email')."
     ))
-
     retrieved_guidelines = dspy.InputField(desc=(
         "Relevant WCAG techniques and best practices for ensuring that errors are "
         "not communicated using color alone."
     ))
-
     identification = dspy.OutputField(desc=(
         "Individually identify each field by its visible label (preferred) or its name/id if no label is available. "
         "Each field must be listed separately."
     ))
-
     evaluation = dspy.OutputField(desc=(
         "For each field, classify the ERROR cue based only on invalid input submissions.\n\n"
         "Error cue classification:\n"
@@ -288,7 +163,6 @@ class EvaluateUseOfColor(dspy.Signature):
         "**Only evaluate error cues in terms of reliance on color versus programmatic or textual alternatives. "
         "Don't evaluate wether there is programmatic association cues and other unrelated accessibility issues.**"
     ))
-
     reasoning = dspy.OutputField(desc=(
         "For each field, briefly explain why the error cue received its evaluation:\n"
         "- State what indicators were detected for the error cue (e.g., aria-invalid, linked error message, red text).\n"
@@ -297,7 +171,6 @@ class EvaluateUseOfColor(dspy.Signature):
         "- If the error message is not programmatically associated, mention it here\n"
         "Keep explanations short and focused only on error cues and their use of color."
     ))
-
     format = dspy.OutputField(desc=(
         "For each field, provide output in this exact format:\n\n"
         "-Identification(label or name of the field): <identification>\n"
@@ -308,5 +181,44 @@ class EvaluateUseOfColor(dspy.Signature):
 
 
 
+# Generate a search query to find relevant WCAG guidelines and techniques for Missing Programmatic Cues – Required
+class GenerateSearchRequired(dspy.Signature):
+    html_snippet = dspy.InputField(desc=(
+        "A structured HTML snippet representing form field attributes before user interaction. "
+        "This includes relevant states such as `required`, `disabled`, `readonly`, and associated validation feedback."
+    ))
+    query = dspy.OutputField(desc=(
+        "A well-formed search query designed to retrieve the most relevant examples from wcag and best practices. "
+        "The query should focus on accessibility issues related to form cues, ensuring proper use of `required` attributes."
+    ))
 
+# Generate a search query to find relevant WCAG guidelines and techniques for Failure to Identify Errors or Invalid Identification
+class GenerateSearchQuery(dspy.Signature):
+    html_snippet = dspy.InputField(desc=(
+        "A structured representation of form fields and their behavior before user interaction. "
+        "This includes validation-related attributes (e.g., `aria-invalid`, `aria-describedby`) and observed error messages."
+    ))
+    query = dspy.OutputField(desc=(
+        "A well-formed search query designed to retrieve the most relevant WCAG techniques and accessibility best practices. "
+        "The query should focus on how error messages should be identified and associated with form fields. "
+    ))
+
+# Generate a search query to find relevant WCAG guidelines and techniques for Ambiguous or Generic Error Messages
+class GenerateSearchQueryErrorClarity(dspy.Signature):
+    html_snippet = dspy.InputField(desc=(
+        "A structured list of form fields with types and invalid inputs used for testing error message clarity."
+    ))
+    query = dspy.OutputField(desc=(
+        "Search query focused on WCAG 3.3.3 and how error messages should guide users to correct mistakes."
+    ))
+
+# Generate a search query to find relevant WCAG guidelines and techniques for Error States Indicated Only by Color
+class GenerateSearchQueryUseOfColor(dspy.Signature):
+    html_snippet = dspy.InputField(desc=(
+        "A structured list of form fields with labels, types, and attributes before user interaction. "
+        "Used to generate queries focused on how required or error cues may rely solely on color."
+    ))
+    query = dspy.OutputField(desc=(
+        "Search query focused on WCAG 1.4.1 and how forms must not rely only on color to convey required fields or validation errors."
+    ))
 

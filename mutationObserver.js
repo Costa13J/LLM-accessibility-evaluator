@@ -33,7 +33,7 @@ function findAssociatedFieldInfo(target) {
     const type = field.getAttribute('type') || '';
     const autocomplete = field.getAttribute('autocomplete') || '';
 
-    // Filter: Skip metadata-like fields
+    // Skip metadata-like fields
     const noisyPatterns = ["token", "honeypot", "build"];
     if (
         type === "hidden" ||
@@ -43,7 +43,7 @@ function findAssociatedFieldInfo(target) {
         return { skip: true, reason: `Ignored: metadata field (${name || type})` };
     }
 
-    // Filter: Skip <select> with too many options
+    // Skip <select> with too many options (was problematic)
     if (field.tagName === 'SELECT' && field.options.length > 5) {
         return { skip: true, reason: "Ignored: select with too many options" };
     }
@@ -109,7 +109,7 @@ const observer = new MutationObserver(function (mutationsList) {
             computedColorStyles: {} // before/after
         };
 
-        // --- Attributes ---
+        // Attributes
         if (mutation.type === "attributes") {
             const attrName = mutation.attributeName;
             record.attributeChanged = attrName;
@@ -148,7 +148,7 @@ const observer = new MutationObserver(function (mutationsList) {
             }
         }
 
-        // --- ChildList (new error messages) ---
+        // ChildList (new error messages)
         if (mutation.type === "childList") {
             mutation.addedNodes.forEach(node => {
                 if (node.nodeType === Node.ELEMENT_NODE) {
@@ -168,7 +168,7 @@ const observer = new MutationObserver(function (mutationsList) {
             });
         }
 
-        // --- Extra: capture natively invalid fields after submit ---
+        // Capture natively invalid fields after submit
         if (mutation.type === "childList" || mutation.type === "attributes") {
             document.querySelectorAll("input:invalid, textarea:invalid, select:invalid")
                 .forEach(invalidEl => {
